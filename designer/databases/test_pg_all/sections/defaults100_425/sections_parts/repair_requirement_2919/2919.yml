@@ -1,0 +1,19 @@
+--- 
+id: 2919
+section_id: 425
+part_id: 670
+name: repair requirement
+created_at: 2013-09-12 14:05:03 Z
+updated_at: 2013-09-17 15:46:37 Z
+label: Requiere Reparo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3444\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

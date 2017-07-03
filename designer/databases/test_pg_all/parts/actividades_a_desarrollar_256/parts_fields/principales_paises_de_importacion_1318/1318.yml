@@ -1,0 +1,30 @@
+--- 
+id: 1318
+part_id: 256
+field_id: 100
+name: "Principales Pa\xC3\xADses de Importaci\xC3\xB3n"
+created_at: 2012-05-11 16:52:05 Z
+updated_at: 2017-06-04 00:28:07.418145 Z
+label: "Principales Pa\xC3\xADses de Importaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar los principales pa\xC3\xADses de importaci\xC3\xB3n "
+help: "Indicar los principales pa\xC3\xADses de importaci\xC3\xB3n "
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d1f7c29b-fa68-4322-9b99-ed026457bdc4
+version: 20170603-202807

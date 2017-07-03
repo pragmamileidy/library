@@ -1,0 +1,36 @@
+--- 
+id: 23
+name: Estado Civil
+description: "Campo de Selecci\xC3\xB3n simple que representa el estado civil de la persona Natural\r\n\
+  \r\n\
+  * Casado\r\n\
+  * Soltero\r\n\
+  * Unido\r\n\
+  * Divorciado\r\n\
+  * Viudo"
+version: 
+status: Draft
+label: Estado Civil
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-02 16:11:14 Z
+updated_at: 2013-09-09 13:24:41 Z
+values_list: "\" \",\"Casado(a)\",\"Soltero(a)\",\"Unido(a)\",\"Divorciado(a)\",\"Viudo(a)\""
+keys_list: "\" \",\"Casado(a)\",\"Soltero(a)\",\"Unido(a)\",\"Divorciado(a)\",\"Viudo(a)\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

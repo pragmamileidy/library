@@ -1,0 +1,19 @@
+--- 
+id: 487
+section_id: 93
+part_id: 118
+name: "Informaci\xC3\xB3n del Miembro"
+created_at: 2011-11-28 17:22:29 Z
+updated_at: 2017-03-01 01:46:36.257555 Z
+label: "Informaci\xC3\xB3n del Miembro"
+min_instances: 1
+max_instances: 3
+depends_on: ""
+manage_as_confidential: false
+include: "{\"528\":{},\"529\":{},\"530\":{},\"537\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

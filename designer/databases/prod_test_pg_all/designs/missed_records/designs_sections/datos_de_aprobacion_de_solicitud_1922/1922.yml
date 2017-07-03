@@ -1,0 +1,16 @@
+--- 
+id: 1922
+design_id: 143
+section_id: 335
+name: "Datos de Aprobaci\xC3\xB3n de Solicitud"
+created_at: 2012-08-28 23:46:33 Z
+updated_at: 2012-08-28 23:46:33 Z
+label: Datos de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2028\":{\"2076\":{\"required\":\"required\"},\"2077\":{\"required\":\"required\"},\"2075\":{\"required\":\"required\"},\"2078\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

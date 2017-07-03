@@ -1,0 +1,30 @@
+--- 
+id: 25
+name: "N\xC3\xBAmero de Licencia Piloto AAC"
+description: _
+version: 
+status: Draft
+label: "N\xC3\xBAmero de Licencia Piloto AAC"
+hint: 
+help: 
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2011-11-02 18:44:56 Z
+updated_at: 2012-05-16 20:56:09 Z
+values_list: 
+keys_list: 
+field_type: 
+view_class: 
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: 
+format: 
+kind_of_list: 
+list_code: 
+serial: 

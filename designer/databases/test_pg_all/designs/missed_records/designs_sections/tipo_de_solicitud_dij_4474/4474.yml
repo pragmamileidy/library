@@ -1,0 +1,16 @@
+--- 
+id: 4474
+design_id: 252
+section_id: 551
+name: Tipo de Solicitud DIJ
+created_at: 2014-07-03 01:51:19 Z
+updated_at: 2014-07-03 01:51:19 Z
+label: Tipo de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3212\":{\"3629\":{\"required\":\"required\"},\"3630\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

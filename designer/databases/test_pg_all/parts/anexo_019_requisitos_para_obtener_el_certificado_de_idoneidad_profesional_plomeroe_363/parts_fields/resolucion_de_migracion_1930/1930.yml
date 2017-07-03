@@ -1,0 +1,30 @@
+--- 
+id: 1930
+part_id: 363
+field_id: 31
+name: "Resoluci\xC3\xB3n de Migraci\xC3\xB3n "
+created_at: 2012-06-21 18:23:39 Z
+updated_at: 2017-06-04 00:30:19.374669 Z
+label: "Resoluci\xC3\xB3n de Migraci\xC3\xB3n "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cb39a510-f898-4ec3-afca-7704178f35e4
+version: 20170603-203019

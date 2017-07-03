@@ -1,0 +1,30 @@
+--- 
+id: 839
+part_id: 164
+field_id: 10
+name: "Nro de Certificaci\xC3\xB3n Sanitaria"
+created_at: 2012-03-26 19:04:29 Z
+updated_at: 2017-06-04 00:25:41.082751 Z
+label: "Nro. de Certificaci\xC3\xB3n Sanitaria MIDA"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Nro. de certificaci\xC3\xB3n sanitaria de la empresa importadora"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: /^[0-9]+$/
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9fb9a6d6-84d9-44ba-af7b-7d2a117d44f6
+version: 20170603-202541

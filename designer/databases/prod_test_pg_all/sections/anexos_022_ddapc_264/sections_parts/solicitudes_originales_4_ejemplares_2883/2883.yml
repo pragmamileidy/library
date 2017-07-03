@@ -1,0 +1,19 @@
+--- 
+id: 2883
+section_id: 264
+part_id: 38
+name: Solicitudes originales 4 ejemplares
+created_at: 2013-08-12 21:53:31 Z
+updated_at: 2013-08-12 21:53:31 Z
+label: "Solicitudes originales firmadas por el Arrendador seg\xC3\xBAn c\xC3\xA9dula (Se presentan cuatro (4) ejemplares de los formularios)"
+min_instances: 4
+max_instances: 4
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

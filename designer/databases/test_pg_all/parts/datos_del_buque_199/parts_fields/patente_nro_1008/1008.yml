@@ -1,0 +1,30 @@
+--- 
+id: 1008
+part_id: 199
+field_id: 1
+name: Patente Nro
+created_at: 2012-04-20 22:02:26 Z
+updated_at: 2017-06-04 00:28:04.880796 Z
+label: Patente Nro
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "N\xC3\xBAmero de patente del buque, previamente otorgado por la AMP"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: /^[0-9]+$/
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ef930696-97c9-402b-8e56-7e03c6410cf9
+version: 20170603-202804

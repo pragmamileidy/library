@@ -1,0 +1,18 @@
+--- 
+id: 62
+design_id: 6
+section_id: 6
+name: Mensajes Pago Generico
+created_at: 2017-03-24 14:47:03.387202 Z
+updated_at: 2017-03-24 14:47:03.387202 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  form_data.get("boletas_por_pagar.monto.motivo_de_la_multa") == "true" and
+  ["started", "created", "successfully", "error"].include? form_data.get("variables_pago_generico.variables_pago_generico.estatus")
+manage_as_confidential: false
+include: "{\"9\":{\"26\":{\"required\":\"unrequired\"},\"27\":{\"required\":\"unrequired\"}},\"10\":{\"28\":{\"required\":\"unrequired\"}},\"11\":{\"29\":{\"required\":\"unrequired\"},\"30\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 7

@@ -1,0 +1,30 @@
+--- 
+id: 3292
+part_id: 624
+field_id: 10
+name: Nombre Completo
+created_at: 2013-06-07 21:40:03 Z
+updated_at: 2017-06-04 00:25:03.639691 Z
+label: Nombre Completo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 100
+rows: 
+min_value: 
+max_value: 
+format: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s]+$/"
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3cdcd74f-8b39-4f7f-a9d2-ccd355eea7a2
+version: 20170603-202503

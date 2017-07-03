@@ -1,0 +1,16 @@
+--- 
+id: 2076
+design_id: 158
+section_id: 394
+name: Anexos021 - Permiso de Trabajo para el Trabajador Extranjero Dentro del 15% del Personal Especializado
+created_at: 2012-08-31 15:50:54 Z
+updated_at: 2013-09-06 19:39:25 Z
+label: Requisitos para Permiso de Trabajo para el Trabajador Extranjero Dentro del 15% del Personal Especializado
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2268\":{\"210\":{\"required\":\"required\"}},\"2269\":{\"210\":{\"required\":\"required\"}},\"2270\":{\"210\":{\"required\":\"required\"}},\"2271\":{\"210\":{\"required\":\"required\"}},\"2272\":{\"210\":{\"required\":\"required\"}},\"2273\":{\"210\":{\"required\":\"required\"}},\"2274\":{\"210\":{\"required\":\"required\"}},\"2275\":{\"210\":{\"required\":\"required\"}},\"2276\":{\"210\":{\"required\":\"required\"}},\"2277\":{\"210\":{\"required\":\"required\"}},\"2278\":{\"210\":{\"required\":\"required\"}},\"2279\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

@@ -1,0 +1,19 @@
+--- 
+id: 1216
+name: Paso 1
+label: Paso 1
+description: Paso 1
+fill_step_id: 606
+created_at: 2013-03-22 20:08:30 Z
+updated_at: 2013-03-22 20:08:30 Z
+include: 
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

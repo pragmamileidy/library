@@ -1,0 +1,30 @@
+--- 
+id: 63
+part_id: 13
+field_id: 25
+name: "N\xC3\xBAmero de Licencia"
+created_at: 2011-11-02 18:44:56 Z
+updated_at: 2017-06-04 00:25:31.131903 Z
+label: "N\xC3\xBAmero de Licencia"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: be715e18-af61-479d-8100-1d2c0c7fcabe
+version: 20170603-202531

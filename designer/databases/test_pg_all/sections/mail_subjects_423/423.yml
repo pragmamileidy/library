@@ -1,0 +1,17 @@
+--- 
+id: 423
+name: mail_subjects
+description: seccion que contiene diversos mensajes sujetos para informar el estado de un tramite o proceso
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 21:03:17 Z
+updated_at: 2013-01-14 21:03:17 Z
+status: Draft
+label: Correos Sujetos
+hint: ""
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 331
+name: fecha de solicitud
+description: Fecha de realizada la solicitud
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2014-11-06 14:49:51 Z
+updated_at: 2014-11-06 14:49:51 Z
+values_list: ""
+keys_list: ""
+field_type: date
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 0
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 3374-2821-7298-1737-9360

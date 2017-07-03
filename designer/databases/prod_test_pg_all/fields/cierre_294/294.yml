@@ -1,0 +1,30 @@
+--- 
+id: 294
+name: Cierre
+description: tipo de cierre diario o mensual para el onfig de los archivos de pago para la caja de ahorro
+version: 
+status: Draft
+label: "Seleccione una Opci\xC3\xB3n"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-07-10 17:13:27 Z
+updated_at: 2013-08-01 16:33:26 Z
+values_list: "\" \",\"Diario\", \"Mensual\""
+keys_list: "\" \",\"Diario\", \"Mensual\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

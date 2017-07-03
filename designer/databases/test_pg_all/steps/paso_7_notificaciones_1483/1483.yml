@@ -1,0 +1,36 @@
+--- 
+id: 1483
+name: Paso 7 - Notificaciones
+label: Notificaciones
+description: ""
+fill_step_id: 733
+created_at: 2013-09-06 16:34:41 Z
+updated_at: 2013-09-06 16:34:41 Z
+include: "{\"3186\":{\"2423\":{\"2638\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2639\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2640\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2641\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2424\":{\"2642\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2643\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2425\":{\"2644\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2645\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2646\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2647\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenar campos de la parte NOTIFICACION_RECEPCION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_recepcion.iniciofaserecepcion\", \"Formulario del Tr\xC3\xA1mite enviado a la entidad; en espera de recepci\xC3\xB3n \")\r\n\
+  form_data.set(\"notifications.notificacion_recepcion.finfaserecepcion\", \"FIN FASE RECEPCI\xC3\x93N\")\r\n\
+  form_data.set(\"notifications.notificacion_recepcion.iniciopasorecepcion\", \"Solicitud en espera de Recepci\xC3\xB3n en la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"notifications.notificacion_recepcion.finpasorecepcion\", \"Solicitud revisada en la Instituci\xC3\xB3n.\")\r\n\
+  \r\n\
+  #Llenar campo de la parte NOTIFICACION_REPARO\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_reparo.iniciopasoreparo\", \"Solicitud revisada en la Instituci\xC3\xB3n. Pendiente por reparo por parte del solicitante.\")\r\n\
+  form_data.set(\"notifications.notificacion_reparo.finpasoreparo\", \"Solicitud reparada por el solicitante.\")\r\n\
+  \r\n\
+  #Llenar los campos de la parte NOTIFICACION_CIERRE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciofasecierre\", \"INICIO FASE CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finfasecierre\", \"FIN FASE CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciopasocierre\", \"Solicitud en proceso de aprobaci\xC3\xB3n/rechazo en la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finpasocierre\", \"Solicitud procesada en la Instituci\xC3\xB3n.\")"
+on_transition: ""
+views: 
+back_step: Paso 6 - Notificaciones
+next_step: Paso 8 - Correos Sujetos
+position: 6
+ajax_calls: ""

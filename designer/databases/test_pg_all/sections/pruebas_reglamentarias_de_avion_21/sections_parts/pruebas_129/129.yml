@@ -1,0 +1,19 @@
+--- 
+id: 129
+section_id: 21
+part_id: 61
+name: Pruebas
+created_at: 2011-11-09 20:11:26 Z
+updated_at: 2012-04-10 18:42:29 Z
+label: Pruebas Reglamentarias
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"319\":{},\"318\":{}}"
+hint: ""
+help: ""
+rows_names: " \"Verificaci\xC3\xB3n Piloto Est\xC3\xA1tico\",\"Transpondedor Modo C\",\"Calibraci\xC3\xB3n Alt\xC3\xADmetro\",\"Extensi\xC3\xB3n de Emergencia de Tren de Aterrizaje\""
+rows_labels: " \"Verificaci\xC3\xB3n Pitot Est\xC3\xA1tico\",\"Transpondedor Modo C\",\"Calibraci\xC3\xB3n Alt\xC3\xADmetro\",\"Extensi\xC3\xB3n de Emergencia de Tren de Aterrizaje\""
+view_class: 
+order_input: 1

@@ -1,0 +1,19 @@
+--- 
+id: 2032
+section_id: 337
+part_id: 121
+name: "Ubicaci\xC3\xB3n Regional de la Finca"
+created_at: 2012-07-20 21:14:15 Z
+updated_at: 2012-07-20 21:14:15 Z
+label: "Ubicaci\xC3\xB3n Regional de la Finca"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

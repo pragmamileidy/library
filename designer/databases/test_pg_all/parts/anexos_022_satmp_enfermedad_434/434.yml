@@ -1,0 +1,17 @@
+--- 
+id: 434
+name: Anexos 022 - SATMP Enfermedad
+description: Anexos 022 - SATMP Enfermedad
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-13 13:46:27 Z
+updated_at: 2012-08-13 13:46:27 Z
+label: Documento sustentador por motivo de Enfermedad
+hint: ""
+view_class: horizontal
+serial: 

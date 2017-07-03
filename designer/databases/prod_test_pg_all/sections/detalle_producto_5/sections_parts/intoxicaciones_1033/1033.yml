@@ -1,0 +1,19 @@
+--- 
+id: 1033
+section_id: 5
+part_id: 188
+name: Intoxicaciones
+created_at: 2012-04-17 17:39:10 Z
+updated_at: 2012-04-17 17:39:10 Z
+label: Intoxicaciones
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 57

@@ -1,0 +1,23 @@
+--- 
+id: 3697
+section_id: 601
+part_id: 756
+name: Datos del Representante Legal o Apoderado Legal
+created_at: 2017-02-28 00:38:59.265810 Z
+updated_at: 2017-02-28 18:59:52.381658 Z
+label: Datos del Representante Legal / Apoderado Legal
+min_instances: 1
+max_instances: 1
+depends_on: |
+  _person = @application["person_id"]
+  _owner = @application["owner_person_id"]
+  _person != _owner
+
+manage_as_confidential: false
+include: 
+hint: Datos del Representante Legal o Apoderado Legal
+help: Favor ingresar los datos del Representante Legal o Apoderado Legal
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

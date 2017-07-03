@@ -1,0 +1,16 @@
+--- 
+id: 721
+design_id: 77
+section_id: 191
+name: Empleos Creados
+created_at: 2012-04-22 16:57:36 Z
+updated_at: 2012-09-19 19:46:47 Z
+label: Empleos Creados
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1162\":{\"2519\":{\"required\":\"required\"}},\"1163\":{\"633\":{\"required\":\"required\"},\"636\":{\"required\":\"required\"}},\"1164\":{\"2519\":{\"required\":\"required\"}},\"1165\":{\"1197\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

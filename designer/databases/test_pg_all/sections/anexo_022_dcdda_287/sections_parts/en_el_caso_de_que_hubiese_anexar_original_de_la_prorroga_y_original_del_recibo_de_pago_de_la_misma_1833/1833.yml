@@ -1,0 +1,19 @@
+--- 
+id: 1833
+section_id: 287
+part_id: 38
+name: "En el caso de que hubiese, anexar original de la pr\xC3\xB3rroga y original del recibo de pago de la misma"
+created_at: 2012-06-11 18:50:41 Z
+updated_at: 2013-08-14 00:03:11 Z
+label: "En el caso de que hubiese, anexar original de la pr\xC3\xB3rroga y original del recibo de pago de la misma"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

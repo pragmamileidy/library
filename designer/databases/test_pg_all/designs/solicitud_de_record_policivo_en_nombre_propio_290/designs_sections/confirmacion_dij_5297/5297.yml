@@ -1,0 +1,16 @@
+--- 
+id: 5297
+design_id: 290
+section_id: 553
+name: Confirmacion DIJ
+created_at: 2017-02-27 12:54:54.559461 Z
+updated_at: 2017-02-27 14:32:57.164165 Z
+label: Confirmar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3223\":{\"3653\":{\"required\":\"unrequired\"},\"3633\":{\"required\":\"required\"},\"3634\":{\"required\":\"required\"},\"3635\":{\"required\":\"required\"},\"3632\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 14

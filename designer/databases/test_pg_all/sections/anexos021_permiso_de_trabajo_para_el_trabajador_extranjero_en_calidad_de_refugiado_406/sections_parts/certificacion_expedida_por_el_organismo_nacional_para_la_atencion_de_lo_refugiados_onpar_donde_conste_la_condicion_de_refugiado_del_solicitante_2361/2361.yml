@@ -1,0 +1,19 @@
+--- 
+id: 2361
+section_id: 406
+part_id: 38
+name: "Certificaci\xC3\xB3n expedida por el Organismo Nacional Para la Atenci\xC3\xB3n de lo Refugiados (ONPAR), donde conste la condici\xC3\xB3n de Refugiado del solicitante."
+created_at: 2012-09-03 20:06:52 Z
+updated_at: 2013-08-30 19:00:37 Z
+label: "Certificaci\xC3\xB3n expedida por el Organismo Nacional Para la Atenci\xC3\xB3n de lo Refugiados (ONPAR), donde conste la condici\xC3\xB3n de Refugiado del solicitante."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

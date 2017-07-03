@@ -1,0 +1,19 @@
+--- 
+id: 3228
+section_id: 160
+part_id: 38
+name: Pago de B/. 12.00 en Compendio Legal de la JTIA
+created_at: 2014-06-11 18:57:18 Z
+updated_at: 2014-06-11 18:57:18 Z
+label: Pago de B/. 12.00 en Compendio Legal de la JTIA
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 15

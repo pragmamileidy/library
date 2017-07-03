@@ -1,0 +1,30 @@
+--- 
+id: 3191
+part_id: 605
+field_id: 276
+name: Lista de Estatus del Asegurado
+created_at: 2013-04-23 18:16:13 Z
+updated_at: 2017-06-04 00:22:48.301235 Z
+label: Lista de Estatus del Asegurado
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: eb22360b-0316-445e-b027-fc899a7de7c8
+version: 20170603-202248

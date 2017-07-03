@@ -1,0 +1,30 @@
+--- 
+id: 43
+part_id: 6
+field_id: 2
+name: campo_oculto_noti
+created_at: 2016-12-02 14:42:55.672208 Z
+updated_at: 2016-12-26 20:25:46.234014 Z
+label: campo_oculto_noti
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 733f98db-3453-4c8c-ac08-4549d365acd4
+version: 20161226-162546

@@ -1,0 +1,30 @@
+--- 
+id: 4003
+part_id: 746
+field_id: 60
+name: confirmacion entrega
+created_at: 2016-03-01 20:14:20.584685 Z
+updated_at: 2017-06-04 00:23:25.037631 Z
+label: "\xC2\xBFSe entreg\xC3\xB3 el reporte judicial en f\xC3\xADsico?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Seleccione \"SI\", para confirmar la entrega del reporte judicial en f\xC3\xADsico."
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 888ece21-439b-4283-8860-d154ec864dd2
+version: 20170603-202325

@@ -1,0 +1,30 @@
+--- 
+id: 4231
+part_id: 390
+field_id: 216
+name: Normas de Uso
+created_at: 2017-04-08 20:01:00.956936 Z
+updated_at: 2017-06-04 00:23:29.040061 Z
+label: Normas de Uso
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 12780a0c-34b5-4ace-8c01-b76807d1ed11
+version: 20170603-202329

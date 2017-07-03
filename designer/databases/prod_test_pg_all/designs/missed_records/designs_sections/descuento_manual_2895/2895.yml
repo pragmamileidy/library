@@ -1,0 +1,20 @@
+--- 
+id: 2895
+design_id: 2
+section_id: 503
+name: Descuento Manual
+created_at: 2013-05-28 20:10:39 Z
+updated_at: 2013-05-28 20:25:13 Z
+label: "Certificaci\xC3\xB3n de Descuentos"
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  anio_desde = form_data.get("periodo_de_descuento_consultado.desde.anio")
+  anio_hasta = form_data.get("periodo_de_descuento_consultado.hasta.anio")
+  
+  anio_desde.to_i <= 1999 || anio_hasta.to_i <= 1999
+manage_as_confidential: false
+include: "{\"2810\":{\"3264\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 10

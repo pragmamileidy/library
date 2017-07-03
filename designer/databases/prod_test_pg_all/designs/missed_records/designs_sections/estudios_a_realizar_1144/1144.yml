@@ -1,0 +1,16 @@
+--- 
+id: 1144
+design_id: 100
+section_id: 153
+name: Estudios a Realizar
+created_at: 2012-05-29 20:26:49 Z
+updated_at: 2012-07-25 15:24:12 Z
+label: Estudios a Realizar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"857\":{\"239\":{\"required\":\"required\"}},\"910\":{\"239\":{\"required\":\"required\"}},\"911\":{\"239\":{\"required\":\"required\"}},\"861\":{\"238\":{\"required\":\"required\"}},\"860\":{\"239\":{\"required\":\"required\"}},\"1637\":{\"158\":{\"required\":\"required\"}},\"862\":{\"239\":{\"required\":\"required\"}},\"863\":{\"239\":{\"required\":\"unrequired\"}},\"864\":{\"239\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 13

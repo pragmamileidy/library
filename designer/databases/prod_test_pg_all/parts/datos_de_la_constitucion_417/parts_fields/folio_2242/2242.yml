@@ -1,0 +1,30 @@
+--- 
+id: 2242
+part_id: 417
+field_id: 10
+name: Folio
+created_at: 2012-08-07 20:05:57 Z
+updated_at: 2017-06-04 00:29:40.679440 Z
+label: Folio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar el folio de la empresa
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 986ec3e4-3b9d-4ed3-8279-a7e7271a06c7
+version: 20170603-202940

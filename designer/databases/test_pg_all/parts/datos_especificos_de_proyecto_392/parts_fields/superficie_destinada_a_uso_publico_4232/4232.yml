@@ -1,0 +1,30 @@
+--- 
+id: 4232
+part_id: 392
+field_id: 27
+name: "Superficie Destinada a Uso P\xC3\xBAblico (%)"
+created_at: 2017-04-08 20:24:26.913197 Z
+updated_at: 2017-06-04 00:29:25.758302 Z
+label: "Superficie Destinada a Uso P\xC3\xBAblico (%)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Dar en porcentaje (%) la superficie
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f32a41e1-2daf-43b6-aa34-38128f374ac8
+version: 20170603-202925

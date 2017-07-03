@@ -1,0 +1,19 @@
+--- 
+id: 3147
+section_id: 448
+part_id: 547
+name: "Autor-gui\xC3\xB3n-juridico"
+created_at: 2014-04-24 20:04:47 Z
+updated_at: 2014-04-24 20:04:47 Z
+label: "Autor del Gui\xC3\xB3n"
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2951\":{},\"3345\":{},\"2950\":{},\"2952\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

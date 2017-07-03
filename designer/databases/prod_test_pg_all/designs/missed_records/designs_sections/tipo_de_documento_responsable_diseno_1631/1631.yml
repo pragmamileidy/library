@@ -1,0 +1,16 @@
+--- 
+id: 1631
+design_id: 131
+section_id: 271
+name: "Tipo de Documento Responsable Dise\xC3\xB1o"
+created_at: 2012-07-20 21:04:48 Z
+updated_at: 2014-05-28 16:00:16 Z
+label: "Datos del Profesional Responsable del Dise\xC3\xB1o"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1786\":{\"1632\":{\"required\":\"required\"},\"1633\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 11

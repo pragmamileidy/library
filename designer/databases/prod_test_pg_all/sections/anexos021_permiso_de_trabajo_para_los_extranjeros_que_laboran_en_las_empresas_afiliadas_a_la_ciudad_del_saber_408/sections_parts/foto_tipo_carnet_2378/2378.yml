@@ -1,0 +1,19 @@
+--- 
+id: 2378
+section_id: 408
+part_id: 38
+name: Foto tipo carnet
+created_at: 2012-09-03 21:55:20 Z
+updated_at: 2013-10-22 22:54:10 Z
+label: Foto tipo carnet
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: " Anexar dos fotos tama\xC3\xB1o carnet, escaneada en cualquier formato: pdf, jpg, bmp, etc. Puede agregarla de forma comprimida"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

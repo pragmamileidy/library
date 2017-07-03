@@ -1,0 +1,25 @@
+--- 
+id: 3160
+name: Paso 1- Datos del Solicitante
+label: Datos del Solicitante
+description: ""
+fill_step_id: 1690
+created_at: 2015-08-03 19:46:03 Z
+updated_at: 2016-07-07 14:18:40.082268 Z
+include: "{\"4867\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3941\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"610\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"545\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1182\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"548\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"552\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"763\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3614\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3615\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3714\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get('/consecutive/generador_prueba_jose/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+
+on_transition: ""
+views: 
+back_step: Paso 5 - Confirmacion de la solicitud
+next_step: Paso 2- Datos del Testigo
+position: 1
+ajax_calls: ""

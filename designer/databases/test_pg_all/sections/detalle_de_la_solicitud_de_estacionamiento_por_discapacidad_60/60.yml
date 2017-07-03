@@ -1,0 +1,17 @@
+--- 
+id: 60
+name: Detalle de la solicitud de estacionamiento por discapacidad
+description: "Secci\xC3\xB3n que contiene la informaci\xC3\xB3n de la discapacidad y el veh\xC3\xADculo de la solicitud"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-14 16:39:02 Z
+updated_at: 2011-11-14 18:44:37 Z
+status: Draft
+label: Detalle de la solicitud de estacionamiento por discapacidad
+hint: ""
+serial: 

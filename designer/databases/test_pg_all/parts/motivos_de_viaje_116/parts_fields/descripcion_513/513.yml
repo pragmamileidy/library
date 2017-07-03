@@ -1,0 +1,30 @@
+--- 
+id: 513
+part_id: 116
+field_id: 10
+name: "Descripci\xC3\xB3n"
+created_at: 2011-11-22 15:42:03 Z
+updated_at: 2017-06-04 00:28:00.263038 Z
+label: "Descripci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "#Se despliega si en el campo Tipo de Solicitud se selecciona \"Otro\""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a30d4f3a-2e78-4ef8-a9dd-4466a34ffbcf
+version: 20170603-202800

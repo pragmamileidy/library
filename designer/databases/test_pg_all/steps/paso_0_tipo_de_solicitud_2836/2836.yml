@@ -1,0 +1,59 @@
+--- 
+id: 2836
+name: Paso 0 - Tipo de Solicitud
+label: Tipo de Solicitud
+description: "Selecci\xC3\xB3n del tipo de la solicitud requerida"
+fill_step_id: 1528
+created_at: 2014-04-09 16:29:12 Z
+updated_at: 2014-04-09 16:29:12 Z
+include: "{\"588\":{\"1448\":{\"1381\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"357\":{\"595\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3342\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"358\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"773\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |
+  # Inicializacion de datos generales
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get( '/consecutive/generador_regsanitarioalimento/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+  
+  form_data.set("datos_del_solicitante.datos_de_la_empresa.ruc",@owner["tax_id"])   
+
+on_transition: |-
+  documento = form_data.get("datos_del_representante_legal.datos_de_la_persona.cedula")
+  result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + "#{documento}").parsed_response
+  data = result["response"]
+  if !data.nil?
+  	form_data.set("datos_del_representante_legal.datos_de_la_persona.primer_nombre",data["primerNombre"])
+  	form_data.set("datos_del_representante_legal.datos_de_la_persona.segundo_nombre",data["segundoNombre"])
+  	form_data.set("datos_del_representante_legal.datos_de_la_persona.primer_apellido",data["primerApellido"])
+  	form_data.set("datos_del_representante_legal.datos_de_la_persona.segundo_apellido",data["segundoApellido"])
+  	
+  	#form_data.set("datos_del_representante_legal.informacion_de_residencia_localizacion.direccion",data["direccion"])
+  	#form_data.set("datos_del_representante_legal.informacion_de_residencia_localizacion.direccion_postal",data["codigoPostal"])
+  	#form_data.set("datos_del_representante_legal.informacion_de_residencia_localizacion.numero_de_telefono",data["tlfLocal"])
+  	#form_data.set("datos_del_representante_legal.informacion_de_residencia_localizacion.correo_electronico",data["email"])
+  else
+  	transition_errors << "Los datos del representante legal no fueron encontrados, por favor verifique."
+  end
+  
+  	tipo_s = form_data.get ("datos_del_solicitante.datos_de_la_empresa.tipo_sociedad")
+  	_ruc = form_data.get("datos_del_solicitante.datos_de_la_empresa.ruc")
+  	result = WebserviceConsumer.get('/service/bdin_registro_publico_ruc/find.json?ruc=' + _ruc +'&tipo_sociedad=' + tipo_s).parsed_response
+  	data = result["response"]
+  	if !data.nil?
+  		form_data.set("datos_del_solicitante.datos_de_la_empresa.ruc",data["ruc"])
+  		form_data.set("datos_del_solicitante.datos_de_la_empresa.nombre",data["nombre_empresa"])
+  		form_data.set("datos_del_solicitante.direccion.numero_de_telefono",@owner["fixed_number"])
+  		#form_data.set("datos_del_solicitante.direccion.numero_de_fax",@owner["movil_number"])
+  		form_data.set("datos_del_solicitante.direccion.correo_electronico",@owner["email"])
+  		form_data.set("datos_del_solicitante.direccion.direccion",data["sociedad_domicilio"])
+  	else
+  		transition_errors << "Los datos no fueron no encontrados"
+  	end
+views: 
+back_step: ""
+next_step: Paso 1 - Datos Generales
+position: 0
+ajax_calls: ""

@@ -1,0 +1,19 @@
+--- 
+id: 8
+name: Propietario
+label: Datos del Propietario
+description: Datos del Propietario de la nave
+fill_step_id: 3
+created_at: 2012-03-07 19:36:33 Z
+updated_at: 2012-05-19 20:48:29 Z
+include: "{\"292\":{\"545\":{\"572\":{\"views\":\"default\"},\"573\":{\"views\":\"default\"},\"574\":{\"views\":\"default\"},\"577\":{\"views\":\"default\"},\"585\":{\"views\":\"default\"},\"594\":{\"views\":\"default\"},\"645\":{\"views\":\"default\"}},\"75\":{\"646\":{\"views\":\"default\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Datos Del Buque
+next_step: Datos Del Buque
+position: 0
+ajax_calls: 

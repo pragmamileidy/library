@@ -1,0 +1,30 @@
+--- 
+id: 1955
+part_id: 366
+field_id: 159
+name: Motivo de la solicitud
+created_at: 2012-06-21 21:43:14 Z
+updated_at: 2017-06-04 00:21:58.978390 Z
+label: Motivo de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f7bf06d4-1469-4aad-9501-de6591325d31
+version: 20170603-202158

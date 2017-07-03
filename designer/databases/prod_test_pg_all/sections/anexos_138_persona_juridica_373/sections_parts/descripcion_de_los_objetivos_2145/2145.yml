@@ -1,0 +1,19 @@
+--- 
+id: 2145
+section_id: 373
+part_id: 38
+name: "Descripci\xC3\xB3n de los objetivos"
+created_at: 2012-08-10 19:45:23 Z
+updated_at: 2017-03-20 21:27:21.245070 Z
+label: "Descripci\xC3\xB3n de los objetivos y proyecciones econ\xC3\xB3micas y financieras de la empresa"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 9

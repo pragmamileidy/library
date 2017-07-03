@@ -1,0 +1,19 @@
+--- 
+id: 3023
+section_id: 537
+part_id: 686
+name: Plano de Estructura p5
+created_at: 2014-02-20 18:45:05 Z
+updated_at: 2014-03-15 02:47:37 Z
+label: Plano de Estructura
+min_instances: 1
+max_instances: 15
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3517\":{},\"3518\":{}}"
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

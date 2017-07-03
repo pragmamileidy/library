@@ -1,0 +1,16 @@
+--- 
+id: 3443
+design_id: 241
+section_id: 412
+name: Plano Catastral
+created_at: 2014-01-20 16:31:22 Z
+updated_at: 2014-01-20 16:31:22 Z
+label: Plano Catastral
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2387\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 21

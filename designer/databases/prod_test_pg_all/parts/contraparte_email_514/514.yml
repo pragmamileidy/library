@@ -1,0 +1,17 @@
+--- 
+id: 514
+name: Contraparte_email
+description: Notificaciones para la contraparte. Proceso 4
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 20:54:42 Z
+updated_at: 2013-01-14 20:54:42 Z
+label: Mensajes para la Contraparte
+hint: ""
+view_class: horizontal
+serial: 

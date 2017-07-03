@@ -1,0 +1,16 @@
+--- 
+id: 5311
+design_id: 291
+section_id: 361
+name: Datos de la Empresa a Inscribir
+created_at: 2017-03-09 15:23:35.376174 Z
+updated_at: 2017-03-09 15:24:28.888531 Z
+label: Datos de la Empresa a Inscribir
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2080\":{\"2228\":{\"required\":\"required\"},\"3255\":{\"required\":\"required\"},\"2230\":{\"required\":\"required\"},\"2231\":{\"required\":\"required\"},\"2232\":{\"required\":\"required\"},\"2233\":{\"required\":\"required\"},\"2234\":{\"required\":\"required\"},\"3343\":{\"required\":\"required\"},\"2257\":{\"required\":\"required\"},\"4079\":{\"required\":\"required\"},\"2258\":{\"required\":\"required\"},\"2259\":{\"required\":\"unrequired\"},\"2260\":{\"required\":\"required\"},\"2261\":{\"required\":\"required\"},\"2295\":{\"required\":\"required\"},\"2263\":{\"required\":\"required\"},\"2229\":{\"required\":\"required\"}},\"2082\":{\"574\":{\"required\":\"required\"},\"2456\":{\"required\":\"required\"},\"632\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"633\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"578\":{\"required\":\"required\"},\"579\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

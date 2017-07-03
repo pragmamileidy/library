@@ -1,0 +1,30 @@
+--- 
+id: 3553
+part_id: 393
+field_id: 311
+name: institucion
+created_at: 2014-02-26 16:10:01 Z
+updated_at: 2017-06-04 00:27:43.446824 Z
+label: "Instituci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6edbd02a-62bf-46c1-a1e4-63682d126ef4
+version: 20170603-202743

@@ -1,0 +1,30 @@
+--- 
+id: 1630
+part_id: 299
+field_id: 68
+name: "Prestaci\xC3\xB3n de servicios a visitantes, pasajeros, tripulantes en tr\xC3\xA1nsito o con destino a pa\xC3\xADses extranjeros (Explique: si los servicios se prestar\xC3\xA1n a otro tipo de cliente)"
+created_at: 2012-06-08 00:22:49 Z
+updated_at: 2017-06-04 00:29:59.060434 Z
+label: "Prestaci\xC3\xB3n de servicios a visitantes, pasajeros, tripulantes en tr\xC3\xA1nsito o con destino a pa\xC3\xADses extranjeros (Explique: si los servicios se prestar\xC3\xA1n a otro tipo de cliente)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f650295d-2cc4-474c-9bba-bafb2462336b
+version: 20170603-202959

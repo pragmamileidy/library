@@ -1,0 +1,17 @@
+--- 
+id: 506
+name: mail_CorreccionDatos
+description: "Correo para la correci\xC3\xB3n de Datos. Solo proceso 3"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 19:04:42 Z
+updated_at: 2013-01-14 19:04:42 Z
+label: "Correo de Correci\xC3\xB3n de Datos"
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 2378
+part_id: 417
+field_id: 10
+name: "Fecha_strin de Constituci\xC3\xB3n"
+created_at: 2012-08-14 15:35:11 Z
+updated_at: 2017-06-04 00:22:14.599322 Z
+label: "Fecha de Constituci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Fecha de constituci\xC3\xB3n de la empresa"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c2d6db4a-8b8f-4707-a5e8-38092644352f
+version: 20170603-202214

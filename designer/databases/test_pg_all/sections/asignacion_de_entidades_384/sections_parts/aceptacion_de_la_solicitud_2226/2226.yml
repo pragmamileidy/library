@@ -1,0 +1,19 @@
+--- 
+id: 2226
+section_id: 384
+part_id: 445
+name: "Aceptaci\xC3\xB3n de la Solicitud"
+created_at: 2012-08-17 16:24:06 Z
+updated_at: 2013-03-06 19:31:47 Z
+label: "Aceptaci\xC3\xB3n de la Solicitud"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 1

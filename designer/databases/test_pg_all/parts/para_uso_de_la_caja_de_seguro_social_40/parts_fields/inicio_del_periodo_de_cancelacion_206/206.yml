@@ -1,0 +1,30 @@
+--- 
+id: 206
+part_id: 40
+field_id: 13
+name: "Inicio del periodo de cancelaci\xC3\xB3n"
+created_at: 2011-11-07 19:22:07 Z
+updated_at: 2017-06-04 00:29:27.469129 Z
+label: Fecha
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3047839d-adb8-4ca1-84c7-45a328c3ba8f
+version: 20170603-202927

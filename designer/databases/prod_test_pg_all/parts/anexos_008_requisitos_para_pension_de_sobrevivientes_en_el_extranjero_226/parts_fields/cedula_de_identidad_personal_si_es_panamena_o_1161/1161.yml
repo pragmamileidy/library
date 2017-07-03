@@ -1,0 +1,30 @@
+--- 
+id: 1161
+part_id: 226
+field_id: 31
+name: "C\xC3\xA9dula de identidad personal si es paname\xC3\xB1a /o"
+created_at: 2012-05-02 14:23:04 Z
+updated_at: 2017-06-04 00:21:34.633378 Z
+label: "C\xC3\xA9dula de identidad personal si es paname\xC3\xB1a /o"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6d7dcc9d-03be-4a4e-97a7-83e37d01f243
+version: 20170603-202134

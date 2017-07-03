@@ -1,0 +1,17 @@
+--- 
+id: 275
+name: "Datos B\xC3\xA1sicos de Persona Natural"
+description: "Datos B\xC3\xA1sicos de Persona Natural"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-31 01:46:58 Z
+updated_at: 2015-01-06 21:45:36 Z
+label: "Datos B\xC3\xA1sicos de Persona Natural"
+hint: ""
+view_class: horizontal
+serial: 1579-4627-3695-9062-9959

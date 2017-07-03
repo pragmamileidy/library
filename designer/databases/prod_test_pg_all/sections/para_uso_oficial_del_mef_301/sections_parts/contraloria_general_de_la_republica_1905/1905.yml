@@ -1,0 +1,19 @@
+--- 
+id: 1905
+section_id: 301
+part_id: 344
+name: "Contralor\xC3\xADa General de la Rep\xC3\xBAblica"
+created_at: 2012-06-14 19:55:10 Z
+updated_at: 2012-06-14 19:56:37 Z
+label: "Contralor\xC3\xADa General de la Rep\xC3\xBAblica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1820\":{}}"
+hint: ""
+help: "Firmas y Sellos por Registros y Autorizaci\xC3\xB3n Institucional"
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 4

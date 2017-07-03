@@ -1,0 +1,30 @@
+--- 
+id: 8
+name: "N\xC3\xBAmero de tel\xC3\xA9fono"
+description: "Campo con reglas para n\xC3\xBAmero de tel\xC3\xA9fono/fax"
+version: 
+status: Draft
+label: "N\xC3\xBAmero de tel\xC3\xA9fono"
+hint: "Introduzca el C\xC3\xB3digo de Pa\xC3\xADs y el N\xC3\xBAmero de Tel\xC3\xA9fono. Ejemplo: +507 9999999"
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-10-31 23:02:14 Z
+updated_at: 2017-04-11 16:18:54.950652 Z
+values_list: ""
+keys_list: ""
+field_type: phone
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 14
+rows: 
+min_value: 
+max_value: 
+char_set: /^(([+]?(507[\s\t|\-])?))((([0-9]{3,4}))([\s\t|\-]))((\d{4})|(\d{7,8}))$/
+format: /^(([+]?(507[\s\t|\-])?))((([0-9]{3,4}))([\s\t|\-]))((\d{4})|(\d{7,8}))$/
+kind_of_list: fix_values
+list_code: ""
+serial: 2764-3556-6064-5110-7697

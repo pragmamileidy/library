@@ -1,0 +1,26 @@
+--- 
+id: 1376
+name: " Paso 1 - Informacion de la Solicitud"
+label: "Informaci\xC3\xB3n de la Solicitud"
+description: Contiene, datos de la solicitud, del usuario, tipo de solicitud.
+fill_step_id: 690
+created_at: 2013-05-15 23:03:40 Z
+updated_at: 2013-05-20 21:53:18 Z
+include: "{\"2827\":{\"580\":{\"1981\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"610\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"581\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2828\":{\"595\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1282\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"571\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1544\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"597\":{\"573\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"930\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"596\":{\"95\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"96\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"97\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"99\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"100\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"735\":{\"1746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1264\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1268\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1272\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1546\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1283\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2829\":{\"598\":{\"2973\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1981\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2830\":{\"1783\":{\"1227\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2839\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |-
+  # Inicializacion de datos generales
+  _sexo=nil
+  if @owner["kind_of_user_type"] == "NaturalPerson"
+  	#inicializar datos del solicitante
+  	form_data.set("solicitante_natural.datos_de_la_persona.primer_nombre",@owner["first_name"])
+  	form_data.set("solicitante_natural.datos_de_la_persona.primer_apellido",@owner["last_name"])
+  end
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 2 - Datos del Apoderado General
+position: 1
+ajax_calls: ""

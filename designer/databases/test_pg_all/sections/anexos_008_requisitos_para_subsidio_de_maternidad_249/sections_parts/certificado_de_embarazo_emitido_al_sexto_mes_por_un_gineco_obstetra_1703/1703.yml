@@ -1,0 +1,21 @@
+--- 
+id: 1703
+section_id: 249
+part_id: 38
+name: Certificado de Embarazo, emitido al sexto mes, por un gineco-obstetra
+created_at: 2012-05-22 19:04:26 Z
+updated_at: 2012-08-13 15:05:26 Z
+label: Certificado de Embarazo, emitido al sexto mes, por un gineco-obstetra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: "Si se trata de una clinica privada o de alguna Institucion de Salud del Estado, que no sea la CSS, debe ser llevado a la Direccion Medica de la Policlinica mas cercana a su trabajo o residencia, para realizar la homologaci\xC3\xB3n.<br><br><br>\r\n\
+  \r\n\
+  El certificado debe contar con el nombre y especialidad del medico, sello legible que contenfa codigo y registro nombre de la Clinica en que expide el Certificado, fecha, direcci\xC3\xB3n y telefono.<br>"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

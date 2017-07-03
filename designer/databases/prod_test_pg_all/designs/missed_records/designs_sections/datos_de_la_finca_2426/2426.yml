@@ -1,0 +1,16 @@
+--- 
+id: 2426
+design_id: 141
+section_id: 432
+name: Datos de la Finca
+created_at: 2013-02-28 22:22:55 Z
+updated_at: 2015-11-30 18:45:24.761775 Z
+label: Datos de la Finca
+min_instances: 1
+max_instances: 10
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2485\":{\"3979\":{\"required\":\"required\"},\"3102\":{\"required\":\"required\"},\"3103\":{\"required\":\"required\"},\"367\":{\"required\":\"required\"},\"366\":{\"required\":\"required\"},\"2088\":{\"required\":\"required\"},\"2089\":{\"required\":\"unrequired\"},\"2090\":{\"required\":\"required\"},\"2091\":{\"required\":\"unrequired\"}},\"2486\":{\"3104\":{\"required\":\"required\"},\"3105\":{\"required\":\"required\"},\"3106\":{\"required\":\"required\"},\"3548\":{\"required\":\"required\"}},\"2488\":{\"2845\":{\"required\":\"unrequired\"},\"2846\":{\"required\":\"unrequired\"},\"2847\":{\"required\":\"unrequired\"},\"2848\":{\"required\":\"unrequired\"}},\"2792\":{\"3209\":{\"required\":\"required\"}},\"2791\":{\"3209\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 14

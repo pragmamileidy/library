@@ -1,0 +1,30 @@
+--- 
+id: 3264
+part_id: 616
+field_id: 279
+name: fieldgrid
+created_at: 2013-05-28 17:39:20 Z
+updated_at: 2017-06-04 00:22:50.726746 Z
+label: ""
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9bd4a57a-5bb8-4915-b2d3-19170d273ad1
+version: 20170603-202250

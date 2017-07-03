@@ -1,0 +1,19 @@
+--- 
+id: 365
+section_id: 43
+part_id: 63
+name: Observaciones
+created_at: 2011-11-16 19:37:39 Z
+updated_at: 2012-04-10 18:42:30 Z
+label: Observaciones del Inspector
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"331\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 5

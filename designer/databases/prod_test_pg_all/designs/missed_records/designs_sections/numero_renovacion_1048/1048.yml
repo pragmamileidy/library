@@ -1,0 +1,16 @@
+--- 
+id: 1048
+design_id: 54
+section_id: 242
+name: Numero renovacion
+created_at: 2012-05-19 22:19:46 Z
+updated_at: 2013-08-19 18:02:30 Z
+label: "N\xC3\xBAmero de renovaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: " s = form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_de_licencia_de_operaciones_de_farmacia.tipo_de_solicitud_de_registro_sanitario_de_alimentos\")\r\n s==\"Renovaci\xC3\xB3n\""
+manage_as_confidential: false
+include: "{\"1452\":{\"3435\":{\"required\":\"required\"}}}"
+hint: ""
+help: "Debe indicar el n\xC3\xBAmero de inscripci\xC3\xB3n a renovar."
+order_input: 3

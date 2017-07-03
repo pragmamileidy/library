@@ -1,0 +1,30 @@
+--- 
+id: 1327
+part_id: 152
+field_id: 27
+name: "Estimado de Inversi\xC3\xB3n Futura (proyectada)"
+created_at: 2012-05-11 23:02:48 Z
+updated_at: 2017-06-04 00:27:05.115711 Z
+label: "Estimado de Inversi\xC3\xB3n Futura (proyectada)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar en Balboas la inversi\xC3\xB3n inicial para el negocio."
+help: "Estimado de Inversi\xC3\xB3n Futura (proyectada). Indicar en Balboas la inversi\xC3\xB3n inicial para el negocio."
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fee77c3f-43af-48b2-bcfd-ba47a42730c6
+version: 20170603-202705

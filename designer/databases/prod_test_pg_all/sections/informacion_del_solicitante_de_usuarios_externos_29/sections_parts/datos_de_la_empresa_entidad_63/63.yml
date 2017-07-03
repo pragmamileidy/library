@@ -1,0 +1,19 @@
+--- 
+id: 63
+section_id: 29
+part_id: 120
+name: Datos de la Empresa/Entidad
+created_at: 2011-11-07 20:56:13 Z
+updated_at: 2012-04-10 18:42:28 Z
+label: "Datos de la Instituci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: "# if Tipo de Solicitud de Usuario Externo.value == Estad\xC3\xADsticas"
+manage_as_confidential: false
+include: "{\"566\":{},\"567\":{},\"569\":{},\"570\":{},\"571\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 1

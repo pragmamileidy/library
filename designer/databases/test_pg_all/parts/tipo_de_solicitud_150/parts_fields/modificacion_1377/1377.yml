@@ -1,0 +1,30 @@
+--- 
+id: 1377
+part_id: 150
+field_id: 60
+name: "Modificaci\xC3\xB3n"
+created_at: 2012-05-16 20:29:24 Z
+updated_at: 2017-06-04 00:25:51.036862 Z
+label: Checkbox
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: eaec27ab-5876-4048-90bd-652bc959ca9c
+version: 20170603-202551

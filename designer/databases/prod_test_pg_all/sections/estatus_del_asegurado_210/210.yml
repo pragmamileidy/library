@@ -1,0 +1,17 @@
+--- 
+id: 210
+name: Estatus del Asegurado
+description: Estatus del Asegurado
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-30 21:20:58 Z
+updated_at: 2012-05-16 20:46:24 Z
+status: Draft
+label: Estatus del Asegurado
+hint: ""
+serial: 

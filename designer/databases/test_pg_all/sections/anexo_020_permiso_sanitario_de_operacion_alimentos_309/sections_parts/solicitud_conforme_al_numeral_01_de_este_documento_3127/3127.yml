@@ -1,0 +1,20 @@
+--- 
+id: 3127
+section_id: 309
+part_id: 38
+name: Solicitud conforme al numeral 01 de este documento
+created_at: 2014-04-04 15:31:00 Z
+updated_at: 2014-04-04 15:31:00 Z
+label: Solicitud conforme al numeral 01 de este documento
+min_instances: 0
+max_instances: 1
+depends_on: "tipo_de_solicitud = form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_de_licencia_de_operaciones_de_farmacia.tipo_de_solicitud_de_registro_sanitario_de_alimentos\")\r\n\
+  tipo_de_solicitud == \"Renovaci\xC3\xB3n\""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

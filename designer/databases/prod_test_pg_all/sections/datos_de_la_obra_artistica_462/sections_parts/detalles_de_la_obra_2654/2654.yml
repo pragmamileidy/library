@@ -1,0 +1,19 @@
+--- 
+id: 2654
+section_id: 462
+part_id: 557
+name: Detalles de la Obra
+created_at: 2013-03-12 20:49:59 Z
+updated_at: 2013-03-12 20:50:54 Z
+label: Detalles de la Obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2993\":{},\"2994\":{},\"2995\":{},\"2996\":{},\"2997\":{},\"2998\":{},\"2999\":{},\"3000\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

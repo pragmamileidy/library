@@ -1,0 +1,17 @@
+--- 
+id: 13
+name: Datos de Propietario
+description: "Informaci\xC3\xB3n del propietario del veh\xC3\xADculo a\xC3\xA9reo"
+version: 
+help: "Indique la informaci\xC3\xB3n del propietario del veh\xC3\xADculo a\xC3\xA9reo"
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-03 19:58:40 Z
+updated_at: 2011-11-16 18:54:27 Z
+status: Draft
+label: Datos de Propietario
+hint: ""
+serial: 

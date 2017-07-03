@@ -1,0 +1,30 @@
+--- 
+id: 3579
+part_id: 708
+field_id: 10
+name: iniciopasocalculocosto
+created_at: 2014-03-14 05:44:28 Z
+updated_at: 2017-06-04 00:23:15.128776 Z
+label: "Inicio paso C\xC3\xA1lculo Costo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 078b6e5f-2c8e-4902-838e-1f0647ace520
+version: 20170603-202315

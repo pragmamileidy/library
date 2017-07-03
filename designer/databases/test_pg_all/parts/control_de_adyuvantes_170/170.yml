@@ -1,0 +1,17 @@
+--- 
+id: 170
+name: Control de adyuvantes
+description: "Control de adyuvantes para detallar controles sobre un biol\xC3\xB3gico terminado"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-27 02:13:03 Z
+updated_at: 2012-05-16 20:55:29 Z
+label: Control de adyuvantes
+hint: ""
+view_class: horizontal
+serial: 

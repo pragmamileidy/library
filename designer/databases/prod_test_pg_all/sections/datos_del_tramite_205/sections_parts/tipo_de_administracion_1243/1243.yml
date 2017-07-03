@@ -1,0 +1,19 @@
+--- 
+id: 1243
+section_id: 205
+part_id: 29
+name: "Tipo de Administraci\xC3\xB3n"
+created_at: 2012-04-30 16:13:35 Z
+updated_at: 2012-05-28 20:24:38 Z
+label: "Tipo de Administraci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: horizontal
+order_input: 4

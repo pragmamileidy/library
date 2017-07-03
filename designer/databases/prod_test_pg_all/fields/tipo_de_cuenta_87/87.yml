@@ -1,0 +1,30 @@
+--- 
+id: 87
+name: Tipo de Cuenta
+description: Tipo de Cuenta Corriente / Ahorro
+version: 
+status: Draft
+label: Tipo de Cuenta
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-07 18:21:42 Z
+updated_at: 2015-08-24 14:47:18 Z
+values_list: "\"\", \"Corriente\", \"Ahorro\""
+keys_list: "\"\", \"Corriente\", \"Ahorro\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 3024-3643-3381-1795-0476

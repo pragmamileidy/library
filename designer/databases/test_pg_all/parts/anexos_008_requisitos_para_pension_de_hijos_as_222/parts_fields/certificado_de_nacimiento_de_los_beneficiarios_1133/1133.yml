@@ -1,0 +1,30 @@
+--- 
+id: 1133
+part_id: 222
+field_id: 31
+name: Certificado de nacimiento de los  beneficiarios
+created_at: 2012-05-02 13:26:17 Z
+updated_at: 2017-06-04 00:28:05.249357 Z
+label: Certificado de nacimiento de los  beneficiarios
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d65bc3fe-2b6c-4e6b-a8f7-42fd2e9f9a56
+version: 20170603-202805

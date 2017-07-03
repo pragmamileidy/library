@@ -1,0 +1,30 @@
+--- 
+id: 1715
+part_id: 317
+field_id: 130
+name: Indique Otros
+created_at: 2012-06-10 16:49:58 Z
+updated_at: 2017-06-04 00:28:57.932949 Z
+label: Indique Otros
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique otro mobiliarios y equipos que ser\xC3\xA1n necesario utilizar para realizar el evento"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f890ebd5-c349-494a-8779-ae614fb5c0d8
+version: 20170603-202857

@@ -1,0 +1,19 @@
+--- 
+id: 733
+name: Paso 0 - Procesamiento de la Solicitud
+label: Procesamiento de la Solicitud
+description: Procesamiento de la Solicitud
+fill_step_id: 367
+created_at: 2012-07-24 04:34:39 Z
+updated_at: 2012-08-02 21:34:48 Z
+include: "{\"1622\":{\"2028\":{\"2076\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2077\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2075\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2078\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1623\":{\"2026\":{\"2079\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1624\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1625\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1627\":{\"2026\":{\"2080\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1628\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1629\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1630\":{\"2029\":{\"2083\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2084\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2085\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2030\":{\"2086\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2087\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1647\":{\"2047\":{\"1764\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2049\":{\"1764\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2048\":{\"1764\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1655\":{\"2044\":{\"2124\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2125\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2045\":{\"2126\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2127\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1662\":{\"2054\":{\"2164\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2165\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: form_data.set("evaluacion_del_mop_sede.datos_del_evaluador.entidad_evaluadora","MOP")
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

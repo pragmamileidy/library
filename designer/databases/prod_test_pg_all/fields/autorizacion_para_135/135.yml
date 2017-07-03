@@ -1,0 +1,30 @@
+--- 
+id: 135
+name: "Autorizaci\xC3\xB3n para"
+description: "Check para seleccionar entre \xE2\x80\x9CMiercolito\xE2\x80\x9D Dominical Gordito del Zod\xC3\xADaco Extraordinaria Otro Sorteo (LNB - Solicitud de Autorizaci\xC3\xB3n Temporal)\r\n"
+version: 
+status: Draft
+label: "Autorizaci\xC3\xB3n para:"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-05 14:38:07 Z
+updated_at: 2012-08-28 15:31:53 Z
+values_list: "\"Miercolito\", \"Dominical\", \"Gordito del Zod\xC3\xADaco\", \"Extraordinaria\", \"Otro Sorteo\"\r\n"
+keys_list: "\"Miercolito\", \"Dominical\", \"Gordito del Zod\xC3\xADaco\", \"Extraordinaria\", \"Otro Sorteo\""
+field_type: checkbox
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

@@ -1,0 +1,21 @@
+--- 
+id: 3259
+section_id: 552
+part_id: 38
+name: Nota de Solicitud firmada y sellada por la institucion
+created_at: 2014-06-23 20:52:31 Z
+updated_at: 2017-04-02 19:55:46.044171 Z
+label: "Carta de autorizaci\xC3\xB3n de solicitud firmada y sellada por la Instituci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  autoridades = form_data.get("tipo_de_persona_dij.tipo_de_solicitante_juridico.tipo_de_solicitante_juridico")
+  ((@owner["juridical_person_type"] == "national_go") and (autoridades != "Autoridades"))
+manage_as_confidential: false
+include: 
+hint: Favor adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

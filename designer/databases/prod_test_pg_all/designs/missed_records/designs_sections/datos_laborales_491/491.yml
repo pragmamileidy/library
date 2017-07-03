@@ -1,0 +1,16 @@
+--- 
+id: 491
+design_id: 63
+section_id: 107
+name: Datos Laborales
+created_at: 2012-03-28 23:16:53 Z
+updated_at: 2013-05-22 18:44:54 Z
+label: Datos Laborales
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"586\":{\"557\":{\"required\":\"unrequired\"},\"565\":{\"required\":\"unrequired\"},\"617\":{\"required\":\"unrequired\"},\"905\":{\"required\":\"unrequired\"}},\"581\":{\"585\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

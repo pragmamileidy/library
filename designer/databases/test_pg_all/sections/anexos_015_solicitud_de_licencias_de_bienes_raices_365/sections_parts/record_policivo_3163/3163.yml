@@ -1,0 +1,19 @@
+--- 
+id: 3163
+section_id: 365
+part_id: 38
+name: Record Policivo
+created_at: 2014-05-05 14:26:12 Z
+updated_at: 2015-11-02 19:06:40 Z
+label: Record Policivo
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

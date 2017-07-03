@@ -1,0 +1,30 @@
+--- 
+id: 1276
+part_id: 249
+field_id: 10
+name: Sueros
+created_at: 2012-05-08 15:36:22 Z
+updated_at: 2017-06-04 00:24:02.610377 Z
+label: "Sueros: Concentraci\xC3\xB3n en UI"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 44b1d490-5872-487c-b3f5-d7ae2c35db9c
+version: 20170603-202402

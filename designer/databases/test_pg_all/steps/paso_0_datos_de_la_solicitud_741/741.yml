@@ -1,0 +1,175 @@
+--- 
+id: 741
+name: Paso 0 - Datos de la Solicitud
+label: Datos de la Solicitud
+description: |-
+  Datos de la Solicitud<br>
+  Datos Generales del Proyecto
+fill_step_id: 374
+created_at: 2012-07-24 15:40:20 Z
+updated_at: 2013-05-14 21:14:23 Z
+include: "{\"1669\":{\"2028\":{\"2076\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2077\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2075\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2078\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1670\":{\"2026\":{\"2079\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1673\":{\"1786\":{\"1632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1633\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1677\":{\"2029\":{\"2083\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2084\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2085\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1678\":{\"1786\":{\"1632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1633\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1681\":{\"2031\":{\"365\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "#Datos del Solicitante Natural\r\n\
+  if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n\
+  \tif @owner[\"natural_person_type\"]==\"national_citizen\"\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.cedula_pasaporte\",@owner[\"national_id\"])\r\n\
+  \telse\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.cedula_pasaporte\",@owner[\"passport\"])\r\n\
+  \tend\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.primer_nombre\",@owner[\"first_name\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_nombre\",@owner[\"second_name\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.primer_apellido\",@owner[\"last_name\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_apellido\",@owner[\"second_last_name\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.apellido_de_casada\",@owner[\"married_name\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.telefono\",@owner[\"fixed_number\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.email\",@owner[\"email\"])\r\n\
+  \r\n\
+  \t#Usado para print design\r\n\
+  \tnombre_completo= \"#{@owner[\"first_name\"]} \"+\"#{@owner[\"second_name\"]} \"+\"#{@owner[\"last_name\"]} \"+\"#{@owner[\"second_last_name\"]} \"+\"#{@owner[\"married_name\"]}\"\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.nombre\",nombre_completo)\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #Datos del Solicitante Jur\xC3\xADdico\r\n\
+  if \t@owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.ruc\",@owner[\"tax_id\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.nombre\",@owner[\"name\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.telefono\",@owner[\"fixed_number\"])\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.email\",@owner[\"email\"])\r\n\
+  end"
+on_transition: "#Datos del Co-Solicitante/////////////////////////////////////////////////\r\n\
+  form_data.set(\"tipo_de_co_solicitante.tipo_de_solicitante.tipo_de_co_solicitante\",\"Tramitador Promotor\")\r\n\
+  tipo_cosolicitante = form_data.get(\"tipo_de_documento_co_solicitante.tipo_de_documento.tipo_de_documento\")\r\n\
+  nro_documento = form_data.get(\"tipo_de_documento_co_solicitante.tipo_de_documento.no_documento\")\r\n\
+  if tipo_cosolicitante == \"C\xC3\xA9dula\"\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  if tipo_cosolicitante == \"Pasaporte\"\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?pasaporte=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  if tipo_cosolicitante ==  \"RUC\"\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_registro_publico_empresas/find.json?ruc=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  cosolicitante = result[\"response\"]\r\n\
+  if cosolicitante.nil? \r\n\
+  \ttransition_errors << \"Los datos del cosolicitante no fueron encontrados, por favor verifique.\"\r\n\
+  else\r\n\
+  \tif tipo_cosolicitante == \"C\xC3\xA9dula\" or tipo_cosolicitante == \"Pasaporte\"\r\n\
+  \t\t#Co-Solicitante NATURAL\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.cedula_pasaporte\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.primer_nombre\",cosolicitante[\"primerNombre\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.segundo_nombre\",cosolicitante[\"segundoNombre\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.primer_apellido\",cosolicitante[\"primerApellido\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.segundo_apellido\",cosolicitante[\"segundoApellido\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.apellido_de_casada\",cosolicitante[\"apellidoCasada\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.telefono\",cosolicitante[\"tlfLocal\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.email\",cosolicitante[\"email\"])\r\n\
+  \r\n\
+  \t\t#Usado para print design\r\n\
+  \t\t_nombre =  \"#{cosolicitante[\"primerNombre\"]} \"+\"#{cosolicitante[\"segundoNombre\"]} \"+\"#{cosolicitante[\"primerApellido\"]} \"+\"#{cosolicitante[\"segundoApellido\"]} \"+\"#{cosolicitante[\"apellidoCasada\"]}\"\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_natural.nombres_completos.nombre\",_nombre)\r\n\
+  \tend \r\n\
+  \tif tipo_cosolicitante ==  \"RUC\"\r\n\
+  \t\t#Co-Solicitante JUR\xC3\x8DDICO\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_juridica.nombres_completos.ruc\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_juridica.nombres_completos.nombre\",cosolicitante[\"nombre_empresa\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_juridica.nombres_completos.telefono\",cosolicitante[\"tlf_movil\"])\r\n\
+  \t\tform_data.set(\"datos_del_co_solicitante_persona_juridica.nombres_completos.email\",cosolicitante[\"email\"])\r\n\
+  \tend\r\n\
+  end\t\t\r\n\
+  \r\n\
+  \r\n  \r\n  \r\n\
+  #Datos del Responsable del Dise\xC3\xB1o/////////////////////////////////////////////////\r\n\
+  tipo_responsable = form_data.get(\"tipo_de_documento_responsable_diseno.tipo_de_documento.tipo_de_documento\")\r\n\
+  nro_documento = form_data.get(\"tipo_de_documento_responsable_diseno.tipo_de_documento.no_documento\")\r\n\
+  if tipo_responsable == \"C\xC3\xA9dula\"\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  if tipo_responsable == \"Pasaporte\"\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?pasaporte=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  if tipo_responsable ==  \"RUC\"\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_registro_publico_empresas/find.json?ruc=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  responsable = result[\"response\"]\r\n\
+  if responsable.nil? \r\n\
+  \ttransition_errors << \"Los datos del responsable del dise\xC3\xB1o no fueron encontrados, por favor verifique.\"\r\n\
+  else\r\n\
+  \tif tipo_responsable == \"C\xC3\xA9dula\" or tipo_responsable == \"Pasaporte\"\r\n\
+  \t\t#Responsable NATURAL\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.cedula_pasaporte\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.primer_nombre\",responsable[\"primerNombre\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.segundo_nombre\",responsable[\"segundoNombre\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.primer_apellido\",responsable[\"primerApellido\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.segundo_apellido\",responsable[\"segundoApellido\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.apellido_de_casada\",responsable[\"apellidoCasada\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.telefono\",responsable[\"tlfLocal\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.email\",responsable[\"email\"])\r\n\
+  \r\n\
+  \t\t#Usado para print design\r\n\
+  \t\t_nombre =  \"#{responsable[\"primerNombre\"]} \"+\"#{responsable[\"segundoNombre\"]} \"+\"#{responsable[\"primerApellido\"]} \"+\"#{responsable[\"segundoApellido\"]} \"+\"#{responsable[\"apellidoCasada\"]}\"\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_natural.nombres_completos.nombre\",_nombre)\r\n\
+  \tend\r\n\
+  \tif tipo_responsable ==  \"RUC\"\r\n\
+  \t\t#Responsable JUR\xC3\x8DDICO\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_juridica.nombres_completos.ruc\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_juridica.nombres_completos.nombre\",responsable[\"nombre_empresa\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_juridica.nombres_completos.telefono\",responsable[\"tlf_movil\"])\r\n\
+  \t\tform_data.set(\"datos_del_responsable_del_diseno_persona_juridica.nombres_completos.email\",responsable[\"email\"])\r\n\
+  \tend\r\n\
+  end\t\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #FINCA/////////////////////////////////////////////////\r\n\
+  nro_finca = form_data.get(\"datos_de_la_finca.datos_de_finca.numero_de_finca\")\r\n\
+  result = WebserviceConsumer.get('/service/bdin_registro_publico_tupea/find.json?finca=' + \"#{nro_finca}\").parsed_response\r\n\
+  finca = result[\"response\"]\r\n\
+  if finca.nil?\r\n\
+  \ttransition_errors << \"Los datos de la finca no fueron encontrados, por favor verifique.\"\r\n\
+  else\r\n\
+  \t#Informaci\xC3\xB3n de la Finca\r\n\
+  \tform_data.set(\"datos_de_la_finca.datos_de_finca.folio\",finca[\"imagen-folio\"])\r\n\
+  \tform_data.set(\"datos_de_la_finca.datos_de_finca.tomo\",finca[\"rollo-tomo\"])\r\n\
+  \tform_data.set(\"datos_de_la_finca.datos_de_finca.numero_de_plano\",finca[\"nro_plano\"])\r\n\
+  \tform_data.set(\"datos_de_la_finca.datos_de_finca.valor_de_la_finca\",finca[\"valor_finca\"])\r\n\
+  \tform_data.set(\"datos_de_la_finca.datos_de_finca.superficie\",finca[\"superficie\"])\r\n\
+  \tform_data.set(\"datos_de_la_finca.datos_de_finca.linderos_y_medidas\",finca[\"linderos_medidas\"])\r\n\
+  \t\r\n\
+  \tform_data.set(\"datos_de_la_finca.ubicacion_regional_de_la_finca.provincia\",finca[\"provincia\"])\r\n\
+  \tform_data.set(\"datos_de_la_finca.ubicacion_regional_de_la_finca.distrito\",finca[\"distrito\"])\r\n\
+  \tform_data.set(\"datos_de_la_finca.ubicacion_regional_de_la_finca.corregimiento\",finca[\"corregimiento\"])\r\n\
+  \t\r\n\
+  \t#Propietarios de la finca (1)\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_1.nombres_completos.cedula_pasaporte\",finca[\"propietario1_cedula\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_1.nombres_completos.primer_nombre\",finca[\"propietario1_primerNombre\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_1.nombres_completos.segundo_nombre\",finca[\"propietario1_segundoNombre\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_1.nombres_completos.primer_apellido\",finca[\"propietario1_primerApellido\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_1.nombres_completos.segundo_apellido\",finca[\"propietario1_segundoApellido\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_1.nombres_completos.apellido_de_casada\",finca[\"propietario1_apellidoCasada\"])\r\n\
+  \t\t\r\n\
+  \t#Propietarios de la finca (2)\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_2.nombres_completos.cedula_pasaporte\",finca[\"propietario2_cedula\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_2.nombres_completos.primer_nombre\",finca[\"propietario2_primerNombre\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_2.nombres_completos.segundo_nombre\",finca[\"propietario2_segundoNombre\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_2.nombres_completos.primer_apellido\",finca[\"propietario2_primerApellido\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_2.nombres_completos.segundo_apellido\",finca[\"propietario2_segundoApellido\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_2.nombres_completos.apellido_de_casada\",finca[\"propietario2_apellidoCasada\"])\r\n\
+  \t\t\r\n\
+  \t#Propietarios de la finca (3)\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_3.nombres_completos.cedula_pasaporte\",finca[\"propietario3_cedula\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_3.nombres_completos.primer_nombre\",finca[\"propietario3_primerNombre\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_3.nombres_completos.segundo_nombre\",finca[\"propietario3_segundoNombre\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_3.nombres_completos.primer_apellido\",finca[\"propietario3_primerApellido\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_3.nombres_completos.segundo_apellido\",finca[\"propietario3_segundoApellido\"])\r\n\
+  \tform_data.set(\"propietarios_de_la_finca_instance_3.nombres_completos.apellido_de_casada\",finca[\"propietario3_apellidoCasada\"])\r\n\
+  end\r\n"
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

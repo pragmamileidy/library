@@ -1,0 +1,16 @@
+--- 
+id: 834
+design_id: 79
+section_id: 152
+name: "Datos de la Mercanc\xC3\xADa -2"
+created_at: 2012-04-27 23:09:29 Z
+updated_at: 2014-04-14 16:05:59 Z
+label: "Datos de la Mercanc\xC3\xADa"
+min_instances: 1
+max_instances: 20
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1721\":{\"1442\":{\"required\":\"required\"},\"1443\":{\"required\":\"required\"},\"1444\":{\"required\":\"required\"},\"1445\":{\"required\":\"required\"},\"1446\":{\"required\":\"required\"},\"1447\":{\"required\":\"required\"},\"3426\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 10

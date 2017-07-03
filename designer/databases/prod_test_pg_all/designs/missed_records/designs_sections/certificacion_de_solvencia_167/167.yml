@@ -1,0 +1,16 @@
+--- 
+id: 167
+design_id: 32
+section_id: 65
+name: "Certificaci\xC3\xB3n de Solvencia"
+created_at: 2011-11-14 20:10:37 Z
+updated_at: 2012-04-10 18:42:18 Z
+label: "Certificaci\xC3\xB3n de solvencia econ\xC3\xB3mica para participar como Oferente en los Actos de Licitaciones P\xC3\xBAblicas del Sector Salud del Estado Paname\xC3\xB1o"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{}"
+hint: ""
+help: ""
+order_input: 1

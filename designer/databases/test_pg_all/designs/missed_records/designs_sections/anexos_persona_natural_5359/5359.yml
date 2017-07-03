@@ -1,0 +1,16 @@
+--- 
+id: 5359
+design_id: 293
+section_id: 374
+name: Anexos Persona Natural
+created_at: 2017-03-24 21:15:27.989829 Z
+updated_at: 2017-03-24 21:15:27.989829 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: "{\"2149\":{\"210\":{\"required\":\"required\"}},\"2150\":{\"210\":{\"required\":\"required\"}},\"2151\":{\"210\":{\"required\":\"required\"}},\"3645\":{\"210\":{\"required\":\"required\"}},\"2152\":{\"210\":{\"required\":\"required\"}},\"2153\":{\"210\":{\"required\":\"required\"}},\"3649\":{\"210\":{\"required\":\"unrequired\"}},\"3646\":{\"210\":{\"required\":\"required\"}},\"2154\":{\"210\":{\"required\":\"required\"}},\"2155\":{\"210\":{\"required\":\"required\"}},\"2157\":{\"210\":{\"required\":\"required\"}},\"2156\":{\"210\":{\"required\":\"required\"}},\"3650\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

@@ -1,0 +1,30 @@
+--- 
+id: 992
+part_id: 196
+field_id: 31
+name: Si no es el propietario, copia de poder notariado
+created_at: 2012-04-20 16:22:13 Z
+updated_at: 2017-06-04 00:28:49.649648 Z
+label: Si no es el propietario, copia de poder notariado
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 13bfd310-0813-431c-922f-99adca72b2ee
+version: 20170603-202849

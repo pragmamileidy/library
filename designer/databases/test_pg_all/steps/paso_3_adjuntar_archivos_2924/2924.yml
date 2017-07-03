@@ -1,0 +1,19 @@
+--- 
+id: 2924
+name: Paso 3 - Adjuntar archivos
+label: Adjuntar archivos
+description: ""
+fill_step_id: 1566
+created_at: 2014-06-28 14:25:15 Z
+updated_at: 2014-06-28 14:25:15 Z
+include: "{\"4419\":{\"3214\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3215\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3216\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3217\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3218\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3219\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3220\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3221\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3222\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3259\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 2 - Datos del Solicitante
+next_step: "Paso 4 - Confirmaci\xC3\xB3n"
+position: 3
+ajax_calls: ""

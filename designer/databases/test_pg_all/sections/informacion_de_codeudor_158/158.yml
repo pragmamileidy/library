@@ -1,0 +1,17 @@
+--- 
+id: 158
+name: "Informaci\xC3\xB3n de Codeudor"
+description: "Tipo de Codeudor, Datos personales y ubicaci\xC3\xB3n de codeudor"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-28 21:01:32 Z
+updated_at: 2012-05-16 20:46:20 Z
+status: Draft
+label: "Informaci\xC3\xB3n de Codeudor"
+hint: ""
+serial: 

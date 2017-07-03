@@ -1,0 +1,17 @@
+--- 
+id: 1
+name: "Informaci\xC3\xB3n de Solicitud"
+description: "Contiene Fecha y N\xC3\xBAmero de la solicitud"
+version: 20161004-171408
+help: ""
+layout: 
+life_cycle: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-10-04 21:14:08.489581 Z
+updated_at: 2016-10-04 21:14:08.489581 Z
+status: Draft
+label: "Informaci\xC3\xB3n de Solicitud"
+hint: ""
+serial: ddf4654b-2b31-4642-b864-e5c0e87122bc

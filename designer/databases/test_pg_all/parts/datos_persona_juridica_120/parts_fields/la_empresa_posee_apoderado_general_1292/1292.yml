@@ -1,0 +1,30 @@
+--- 
+id: 1292
+part_id: 120
+field_id: 83
+name: La empresa posee Apoderado General
+created_at: 2012-05-08 21:48:22 Z
+updated_at: 2017-06-04 00:30:47.183729 Z
+label: La empresa posee Apoderado General
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indique si la empresa posee Apoderado General (SI/NO)
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d5f7b55d-6b26-45b2-a140-5a3109be775d
+version: 20170603-203047

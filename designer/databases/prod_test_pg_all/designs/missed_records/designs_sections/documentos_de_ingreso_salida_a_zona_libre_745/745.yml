@@ -1,0 +1,16 @@
+--- 
+id: 745
+design_id: 79
+section_id: 196
+name: Documentos de Ingreso-Salida a Zona Libre
+created_at: 2012-04-24 15:43:21 Z
+updated_at: 2012-06-07 21:43:52 Z
+label: Documentos de Ingreso-Salida a Zona Libre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1175\":{\"1023\":{\"required\":\"required\"},\"1024\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

@@ -1,0 +1,16 @@
+--- 
+id: 5153
+design_id: 284
+section_id: 549
+name: datos_del_titular_rp
+created_at: 2017-01-04 18:41:32.090840 Z
+updated_at: 2017-01-04 21:17:31.078645 Z
+label: Datos del Titular
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3208\":{\"3716\":{\"required\":\"required\"},\"3959\":{\"required\":\"unrequired\"},\"1973\":{\"required\":\"required\"},\"1469\":{\"required\":\"required\"},\"1470\":{\"required\":\"unrequired\"},\"1471\":{\"required\":\"required\"},\"1472\":{\"required\":\"unrequired\"},\"1473\":{\"required\":\"unrequired\"},\"1883\":{\"required\":\"required\"},\"1474\":{\"required\":\"unrequired\"},\"3715\":{\"required\":\"required\"},\"1475\":{\"required\":\"required\"},\"1479\":{\"required\":\"required\"},\"1477\":{\"required\":\"required\"},\"1476\":{\"required\":\"required\"},\"3694\":{\"required\":\"unrequired\"},\"3695\":{\"required\":\"unrequired\"},\"3717\":{\"required\":\"unrequired\"},\"3728\":{\"required\":\"unrequired\"}},\"3209\":{\"572\":{\"required\":\"required\"},\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}},\"3267\":{\"3651\":{\"required\":\"unrequired\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"}},\"3268\":{\"3651\":{\"required\":\"unrequired\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"}},\"3269\":{\"210\":{\"required\":\"required\"}},\"3294\":{\"210\":{\"required\":\"required\"}},\"3271\":{\"210\":{\"required\":\"required\"}},\"3272\":{\"210\":{\"required\":\"required\"}},\"3273\":{\"210\":{\"required\":\"required\"}},\"3369\":{\"3639\":{\"required\":\"unrequired\"},\"3699\":{\"required\":\"unrequired\"},\"3700\":{\"required\":\"unrequired\"},\"3701\":{\"required\":\"unrequired\"}},\"3370\":{\"758\":{\"required\":\"required\"},\"759\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

@@ -1,0 +1,19 @@
+--- 
+id: 826
+name: Paso 4 - Archivos Adjuntos
+label: Archivos Adjuntos
+description: ""
+fill_step_id: 407
+created_at: 2012-08-16 21:27:44 Z
+updated_at: 2012-08-24 16:32:30 Z
+include: "{\"1804\":{\"2205\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2206\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2207\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2208\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2209\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2210\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2211\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2212\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2213\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2214\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2215\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2216\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2217\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2218\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2219\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2220\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 3 - Datos del Proyecto
+next_step: "Ultimo Paso - Confirmaci\xC3\xB3n"
+position: 4
+ajax_calls: ""

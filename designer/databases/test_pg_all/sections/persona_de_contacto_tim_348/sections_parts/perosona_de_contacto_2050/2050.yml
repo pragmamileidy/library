@@ -1,0 +1,19 @@
+--- 
+id: 2050
+section_id: 348
+part_id: 403
+name: Perosona de Contacto
+created_at: 2012-07-23 19:53:45 Z
+updated_at: 2014-04-11 16:13:34 Z
+label: Perosona de Contacto
+min_instances: 1
+max_instances: 2
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

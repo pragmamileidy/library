@@ -1,0 +1,16 @@
+--- 
+id: 1134
+design_id: 100
+section_id: 107
+name: Fecha y Lugar de Nacimiento
+created_at: 2012-05-29 20:26:49 Z
+updated_at: 2012-05-29 20:26:49 Z
+label: Fecha y Lugar de Nacimiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"546\":{\"required\":\"required\"}},\"581\":{\"574\":{\"required\":\"unrequired\"},\"632\":{\"required\":\"unrequired\"},\"633\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 3

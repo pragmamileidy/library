@@ -1,0 +1,17 @@
+--- 
+id: 48
+name: Fecha Recibido Procesado
+description: Parte que contiene dos campos, fecha recibido y fecha procesado
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-08 17:10:06 Z
+updated_at: 2012-05-16 20:55:03 Z
+label: Fecha Recibido Procesado
+hint: ""
+view_class: 
+serial: 

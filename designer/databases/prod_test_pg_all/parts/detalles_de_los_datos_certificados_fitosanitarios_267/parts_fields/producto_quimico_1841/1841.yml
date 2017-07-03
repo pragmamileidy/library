@@ -1,0 +1,30 @@
+--- 
+id: 1841
+part_id: 267
+field_id: 130
+name: "Producto Qu\xC3\xADmico"
+created_at: 2012-06-14 22:18:13 Z
+updated_at: 2017-06-04 00:31:39.728530 Z
+label: "Producto Qu\xC3\xADmico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 20
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e356dec1-2bc3-4dfd-91a5-1bb49dfd56db
+version: 20170603-203139

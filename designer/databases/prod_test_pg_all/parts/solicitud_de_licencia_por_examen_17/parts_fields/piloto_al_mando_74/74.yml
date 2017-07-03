@@ -1,0 +1,30 @@
+--- 
+id: 74
+part_id: 17
+field_id: 1
+name: Piloto al Mando
+created_at: 2011-11-02 19:37:46 Z
+updated_at: 2017-06-04 00:25:31.287840 Z
+label: Indique las  Horas del tiempo de vuelo del Piloto al Mando
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: 
+help: 
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 56d01fe3-d452-4c0c-a765-cc50f508e67f
+version: 20170603-202531

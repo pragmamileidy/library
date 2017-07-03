@@ -1,0 +1,19 @@
+--- 
+id: 3670
+section_id: 596
+part_id: 38
+name: Poder otorgado a abogado
+created_at: 2017-02-27 00:21:32.277576 Z
+updated_at: 2017-02-27 00:21:32.277576 Z
+label: Poder otorgado a abogado
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

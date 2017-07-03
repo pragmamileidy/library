@@ -1,0 +1,30 @@
+--- 
+id: 304
+part_id: 59
+field_id: 10
+name: Modelo
+created_at: 2011-11-09 19:19:48 Z
+updated_at: 2017-06-04 00:23:33.992237 Z
+label: Modelo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3c3055d4-508b-4fa7-b502-e73118df63a1
+version: 20170603-202333

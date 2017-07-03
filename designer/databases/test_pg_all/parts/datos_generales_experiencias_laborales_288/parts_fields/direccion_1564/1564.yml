@@ -1,0 +1,30 @@
+--- 
+id: 1564
+part_id: 288
+field_id: 130
+name: "Direcci\xC3\xB3n"
+created_at: 2012-06-04 14:38:57 Z
+updated_at: 2017-06-04 00:24:08.857871 Z
+label: "Direcci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor introduzca la direcci\xC3\xB3n de la empresa donde labor\xC3\xB3."
+help: "Direcci\xC3\xB3n de la empresa"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 696a41ec-3fc4-4b0c-b97b-738901aa19d4
+version: 20170603-202408

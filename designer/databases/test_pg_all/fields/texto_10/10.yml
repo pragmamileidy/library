@@ -1,0 +1,30 @@
+--- 
+id: 10
+name: Texto
+description: Campo de texto
+version: 
+status: Draft
+label: Texto
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-10-31 23:08:05 Z
+updated_at: 2015-09-14 15:51:30 Z
+values_list: ""
+keys_list: ""
+field_type: string
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 2588-6518-7792-9379-0713

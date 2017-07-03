@@ -1,0 +1,30 @@
+--- 
+id: 2438
+part_id: 452
+field_id: 31
+name: "Foto  tama\xC3\xB1o carnet "
+created_at: 2012-08-17 19:40:27 Z
+updated_at: 2017-06-04 00:30:37.292487 Z
+label: "Dos (2) foto tama\xC3\xB1o carnet "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Escaneada en cualquier formato: pdf, jpg, bmp, etc. Puede agregarla de forma comprimida"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5b5a9680-d4ae-4ce0-96fc-be3a53a3f6ad
+version: 20170603-203037

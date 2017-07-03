@@ -1,0 +1,30 @@
+--- 
+id: 2895
+part_id: 533
+field_id: 10
+name: aproval_required3
+created_at: 2013-02-13 14:53:27 Z
+updated_at: 2017-06-04 00:26:18.396028 Z
+label: aproval_required3
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 245ef460-cd53-449d-b4cc-3a88d6e0c932
+version: 20170603-202618

@@ -1,0 +1,125 @@
+--- 
+id: 398
+position: 2
+selector: "{\"623\":{\"656\":{\"758\":{},\"759\":{}}},\"1049\":{\"1458\":{\"651\":{},\"652\":{},\"653\":{},\"654\":{},\"655\":{},\"656\":{},\"657\":{},\"658\":{},\"659\":{},\"660\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 68px;
+  	left: 684px;
+  	width: 339px;
+  	height: 15px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 42px;
+  	left: 684px;
+  	width: 339px;
+  	height: 16px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_formafarmacutica {
+  	position: absolute;
+  	top: 177px;
+  	left: 60px;
+  	width: 905px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_ingredientes {
+  	position: absolute;
+  	top: 238px;
+  	left: 59px;
+  	width: 905px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_frmuladelosingredientes {
+  	position: absolute;
+  	top: 326px;
+  	left: 58px;
+  	width: 905px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_propiedadesfarmacolgicas {
+  	position: absolute;
+  	top: 423px;
+  	left: 56px;
+  	width: 904px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_usorecomendadoporelfabricante {
+  	position: absolute;
+  	top: 521px;
+  	left: 60px;
+  	width: 904px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_especieparalaqueserecomienda {
+  	position: absolute;
+  	top: 609px;
+  	left: 62px;
+  	width: 901px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_contraindicaciones {
+  	position: absolute;
+  	top: 695px;
+  	left: 62px;
+  	width: 904px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_efectosindeseables {
+  	position: absolute;
+  	top: 788px;
+  	left: 62px;
+  	width: 903px;
+  	height: 22px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_dosificacinymododeaplicacin {
+  	position: absolute;
+  	top: 877px;
+  	left: 62px;
+  	width: 891px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoqumico_detalledeproductosquimicos_presentaciones {
+  	position: absolute;
+  	top: 954px;
+  	left: 63px;
+  	width: 894px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: 
+print_design_id: 27
+created_at: 2013-06-14 20:44:14 Z
+updated_at: 2015-10-18 03:19:08 Z
+instances_selector: "{\"623\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1049\":{\"value\":\"\",\"1458\":{\"value\":\"1,1\",\"651\":{\"value\":\"\"},\"652\":{\"value\":\"\"},\"653\":{\"value\":\"\"},\"654\":{\"value\":\"\"},\"655\":{\"value\":\"\"},\"656\":{\"value\":\"\"},\"657\":{\"value\":\"\"},\"658\":{\"value\":\"\"},\"659\":{\"value\":\"\"},\"660\":{\"value\":\"\"}}}}"
+size: ""

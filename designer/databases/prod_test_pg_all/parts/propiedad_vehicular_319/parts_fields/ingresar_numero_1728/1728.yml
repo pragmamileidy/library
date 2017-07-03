@@ -1,0 +1,30 @@
+--- 
+id: 1728
+part_id: 319
+field_id: 130
+name: "Ingresar N\xC3\xBAmero"
+created_at: 2012-06-11 14:00:27 Z
+updated_at: 2017-06-04 00:24:12.580647 Z
+label: "Ingresar N\xC3\xBAmero"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 096c2a39-29df-4277-8d1f-7866369dabab
+version: 20170603-202412

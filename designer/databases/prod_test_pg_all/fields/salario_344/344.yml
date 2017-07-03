@@ -1,0 +1,30 @@
+--- 
+id: 344
+name: Salario
+description: "Campo de Selecci\xC3\xB3n simple que representa si el salario devengado es semanal o quincenal"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2015-09-14 15:35:42 Z
+updated_at: 2015-09-14 15:35:42 Z
+values_list: "\"\",\"Semanal\",\"Quincenal\""
+keys_list: "\"\",\"Semanal\",\"Quincenal\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 6106-4683-5719-4636-0011

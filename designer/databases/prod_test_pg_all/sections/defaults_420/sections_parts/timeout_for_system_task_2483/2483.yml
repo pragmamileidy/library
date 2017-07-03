@@ -1,0 +1,19 @@
+--- 
+id: 2483
+section_id: 420
+part_id: 523
+name: timeout_for_system_task
+created_at: 2013-01-16 17:01:16 Z
+updated_at: 2013-03-22 19:58:11 Z
+label: Tiempos de Espera para tareas del sistema
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2793\":{},\"2794\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

@@ -1,0 +1,30 @@
+--- 
+id: 1571
+part_id: 288
+field_id: 130
+name: Funciones
+created_at: 2012-06-04 14:44:14 Z
+updated_at: 2017-06-04 00:30:17.419022 Z
+label: Funciones
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor indique las funciones que desempe\xC3\xB1\xC3\xB3 durante el ejercicio laboral en la empresa."
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a3b494b2-c341-432d-bf1a-35987f6470da
+version: 20170603-203017

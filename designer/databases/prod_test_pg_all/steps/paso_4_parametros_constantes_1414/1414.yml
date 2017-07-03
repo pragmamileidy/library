@@ -1,0 +1,60 @@
+--- 
+id: 1414
+name: Paso 4 - Parametros Constantes
+label: Parametros Contantes
+description: ""
+fill_step_id: 703
+created_at: 2013-05-24 18:35:49 Z
+updated_at: 2013-05-24 18:35:50 Z
+include: "{\"2883\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2886\":{\"2415\":{\"2571\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2572\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2573\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2576\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2577\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2578\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2579\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2588\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2589\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2590\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2591\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2592\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2593\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2416\":{\"2595\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2596\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2597\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2598\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2482\":{\"2795\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2796\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2483\":{\"2793\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2794\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #Llenado de campos en la parte DESCRIPCION_ESTRUCT
+  
+  form_data.set("descripcion_estruct.descripcion_estructura.nombre_estructura", "constant_parameters")
+  
+  form_data.set("defaults.fillstep_tramites.fillstep_solicitar", "Fillstep de Llenado")
+  
+  form_data.set("defaults.fillstep_tramites.fillstep_reparar", "Fillstep de Llenado")
+  
+  form_data.set("defaults.fillstep_tramites.fillstep_revisar", "Fillstep de Imprimir")
+  
+  form_data.set("defaults.fillstep_tramites.fillstep_pagar", "Fillstep de Pago Automatico")
+  form_data.set("defaults.fillstep_tramites.fillstep_recibir_pago", "Fillstep de Pago Manual")
+  form_data.set("defaults.fillstep_tramites.fillstep_recibir1", "Fillstep de Asignacion")
+  
+  form_data.set("defaults.fillstep_tramites.fillstep_recibir2", "Fillstep de Confirmacion")
+  form_data.set("defaults.fillstep_tramites.fillstep_recibir3", "Fillstep de Asignacion")
+  form_data.set("defaults.fillstep_tramites.fillstep_recibir4", "Fillstep de Revision")
+  form_data.set("defaults.fillstep_tramites.fillstep_recibir5", "Fillstep de ObservacionesJefeDAPyPC")
+  form_data.set("defaults.fillstep_tramites.fillstep_recibir6", "Fillstep de ObservacionesDirectorDAPyPC")
+  form_data.set("defaults.fillstep_tramites.fillstep_procesar", "Fillstep de Procesamiento")
+  
+  form_data.set("defaults.fillstep_tramites.fillstep_aprobar", "Fillstep de Aprobacion")
+  form_data.set("defaults.fillstep_tramites.fillstep_cerrar", "Fillstep de Cierre")
+  
+  
+  #Llenar campos de ROLES Y TAREAS
+  
+  form_data.set("defaults.roles_y_tareas.rolename_solicitar", "OWNER")
+  form_data.set("defaults.roles_y_tareas.rolename_admin", "PSP_ADMIN")
+  form_data.set("defaults.roles_y_tareas.retry_times_for_human_task", "5")
+  form_data.set("defaults.roles_y_tareas.retry_times_for_system_task", "3")
+  
+  #Llennar campos de SLA_FOR_SYSTEM_TASK
+  
+  form_data.set("defaults.sla_for_system_task.duration", "1")
+  form_data.set("defaults.sla_for_system_task.type", "calendar")
+  
+  #Llenar campos de TIMEOUT_FOR_SYSTEM_TASK
+  
+  form_data.set("defaults.timeout_for_system_task.duration", "1")
+  form_data.set("defaults.timeout_for_system_task.type", "calendar")
+on_transition: ""
+views: 
+back_step: Paso 3 - Por Defecto
+next_step: Paso 5  - Eventos
+position: 4
+ajax_calls: ""

@@ -1,0 +1,19 @@
+--- 
+id: 1433
+section_id: 237
+part_id: 157
+name: "\xC3\x81rea de Texto"
+created_at: 2012-05-11 22:37:05 Z
+updated_at: 2012-05-11 22:37:05 Z
+label: Comentarios
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

@@ -1,0 +1,19 @@
+--- 
+id: 1952
+section_id: 312
+part_id: 358
+name: Registro de Descuentos
+created_at: 2012-06-20 22:27:43 Z
+updated_at: 2014-03-20 17:31:29 Z
+label: Registro de Descuentos
+min_instances: 1
+max_instances: 10
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1892\":{},\"1893\":{},\"1894\":{},\"1895\":{},\"2205\":{},\"2204\":{},\"1898\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

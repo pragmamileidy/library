@@ -1,0 +1,19 @@
+--- 
+id: 2667
+section_id: 465
+part_id: 563
+name: "Juego de fotograf\xC3\xADas de los principales movimientos o escenas"
+created_at: 2013-03-13 17:09:47 Z
+updated_at: 2013-10-30 13:19:58 Z
+label: "Juego de fotograf\xC3\xADas de los principales movimientos o escenas"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: "Escaneada en cualquier formato: pdf, jpg, bmp, etc"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

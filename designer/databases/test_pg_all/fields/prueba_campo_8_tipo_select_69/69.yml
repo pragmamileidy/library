@@ -1,0 +1,30 @@
+--- 
+id: 69
+name: Prueba campo 8 tipo select
+description: Prueba campo 8 tipo select
+version: 
+status: Draft
+label: Prueba campo 8 tipo select
+hint: Prueba campo 8 tipo select
+help: Prueba campo 8 tipo select
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-13 14:02:09 Z
+updated_at: 2012-05-21 04:51:14 Z
+values_list: Seleccione, Valor 1, Valor 2, Valor 3, Valor 4\, Valor 5
+keys_list: "0,1,2,3,4,5"
+field_type: select
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

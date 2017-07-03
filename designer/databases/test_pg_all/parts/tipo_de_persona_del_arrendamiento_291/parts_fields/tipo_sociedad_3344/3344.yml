@@ -1,0 +1,30 @@
+--- 
+id: 3344
+part_id: 291
+field_id: 292
+name: tipo_sociedad
+created_at: 2013-06-20 14:18:11 Z
+updated_at: 2017-06-04 00:28:32.464711 Z
+label: Tipo de sociedad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ecd964b9-aac9-49f5-8762-2ccfd3ce257e
+version: 20170603-202832

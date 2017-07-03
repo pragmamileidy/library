@@ -1,0 +1,287 @@
+--- 
+id: 525
+position: 3
+selector: "{\"4491\":{\"656\":{\"758\":{},\"759\":{}}},\"4604\":{\"3149\":{\"3605\":{}},\"3151\":{\"1981\":{},\"1374\":{},\"545\":{},\"546\":{},\"2983\":{},\"763\":{}},\"3152\":{\"2979\":{},\"2980\":{}},\"3154\":{\"567\":{},\"1282\":{},\"3342\":{}},\"3153\":{\"572\":{},\"805\":{},\"585\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 80px;
+  	left: 654px;
+  	width: 321px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 53px;
+  	left: 654px;
+  	width: 320px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_tipodeidentificacion_tipoidentificaciontexto {
+  	position: absolute;
+  	top: 204px;
+  	left: 230px;
+  	width: 149px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 204px;
+  	left: 572px;
+  	width: 164px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 242px;
+  	left: 251px;
+  	width: 705px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 531px;
+  	left: 176px;
+  	width: 137px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelapersona_fechadenacimiento {
+  	position: absolute;
+  	top: 533px;
+  	left: 518px;
+  	width: 127px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 577px;
+  	left: 229px;
+  	width: 139px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelapersona_edad {
+  	position: absolute;
+  	top: 533px;
+  	left: 743px;
+  	width: 112px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_seudonimo_seudonimo {
+  	position: absolute;
+  	top: 450px;
+  	left: 140px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 576px;
+  	left: 511px;
+  	width: 281px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 204px;
+  	left: 568px;
+  	width: 171px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelaempresa_nombrecomercial {
+  	position: absolute;
+  	top: 242px;
+  	left: 245px;
+  	width: 711px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_datosdelaempresa_tipo_sociedad {
+  	position: absolute;
+  	top: 202px;
+  	left: 891px;
+  	width: 73px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 311px;
+  	left: 110px;
+  	width: 210px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 295px;
+  	left: 456px;
+  	width: 504px;
+  	height: 69px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_5_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 384px;
+  	left: 248px;
+  	width: 198px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_tipodeidentificacion_tipoidentificaciontexto {
+  	position: absolute;
+  	top: 708px;
+  	left: 239px;
+  	width: 147px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 706px;
+  	left: 575px;
+  	width: 165px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 744px;
+  	left: 271px;
+  	width: 695px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 1038px;
+  	left: 178px;
+  	width: 133px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelapersona_fechadenacimiento {
+  	position: absolute;
+  	top: 1038px;
+  	left: 517px;
+  	width: 135px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 1080px;
+  	left: 227px;
+  	width: 135px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelapersona_edad {
+  	position: absolute;
+  	top: 1038px;
+  	left: 751px;
+  	width: 86px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_seudonimo_seudonimo {
+      position:absolute;
+      top: 0px;
+      left: 0px;
+      width: 232px;
+      height: 20px;
+      overflow:hidden;
+    }
+    .datosdeautores_instance_6_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 1079px;
+  	left: 512px;
+  	width: 273px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 708px;
+  	left: 571px;
+  	width: 164px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelaempresa_nombrecomercial {
+  	position: absolute;
+  	top: 742px;
+  	left: 259px;
+  	width: 709px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_datosdelaempresa_tipo_sociedad {
+  	position: absolute;
+  	top: 707px;
+  	left: 902px;
+  	width: 57px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 820px;
+  	left: 100px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 802px;
+  	left: 457px;
+  	width: 503px;
+  	height: 70px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_6_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 892px;
+  	left: 245px;
+  	width: 210px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 166
+created_at: 2014-11-28 15:40:32 Z
+updated_at: 2014-11-28 19:32:29 Z
+instances_selector: "{\"4491\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4604\":{\"value\":\"5,6\",\"3149\":{\"value\":\"\",\"3605\":{\"value\":\"\"}},\"3151\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"545\":{\"value\":\"\"},\"546\":{\"value\":\"\"},\"2983\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"3152\":{\"value\":\"\",\"2979\":{\"value\":\"\"},\"2980\":{\"value\":\"\"}},\"3154\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"1282\":{\"value\":\"\"},\"3342\":{\"value\":\"\"}},\"3153\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"}}}}"
+size: 

@@ -1,0 +1,20 @@
+--- 
+id: 166
+name: Tipo de Solicitud
+description: "Sirve para detallar si es renovaci\xC3\xB3n modificaci\xC3\xB3n o primera vez, contiene a\xC3\xB1o fiscal y Nro. de Inscripci\xC3\xB3n a Renovar.\r\n\
+  Tambi\xC3\xA9n representa sin se solicita activaci\xC3\xB3n o desactivaci\xC3\xB3n de usuarios.\r\n\
+  Tipo de Empresa que realiza la solicitud.\r\n\
+  Tipo de solicitud para establecimientos no farmac\xC3\xA9uticos"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-05 13:11:27 Z
+updated_at: 2012-05-16 20:46:19 Z
+status: Draft
+label: Tipo de Solicitud
+hint: ""
+serial: 

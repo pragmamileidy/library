@@ -1,0 +1,19 @@
+--- 
+id: 696
+section_id: 139
+part_id: 38
+name: "Registro P\xC3\xBAblico de la Empresa"
+created_at: 2012-03-22 01:55:33 Z
+updated_at: 2012-04-09 20:58:40 Z
+label: "Registro P\xC3\xBAblico de la Empresa"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

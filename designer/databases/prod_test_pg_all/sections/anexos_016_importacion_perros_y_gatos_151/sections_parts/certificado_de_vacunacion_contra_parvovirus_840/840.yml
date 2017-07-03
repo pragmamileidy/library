@@ -1,0 +1,19 @@
+--- 
+id: 840
+section_id: 151
+part_id: 38
+name: "Certificado de vacunaci\xC3\xB3n contra parvovirus"
+created_at: 2012-03-28 11:49:09 Z
+updated_at: 2012-04-09 15:38:05 Z
+label: "Certificado de vacunaci\xC3\xB3n contra parvovirus"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

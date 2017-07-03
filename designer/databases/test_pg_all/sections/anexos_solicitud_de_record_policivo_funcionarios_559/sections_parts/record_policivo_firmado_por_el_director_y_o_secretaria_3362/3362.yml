@@ -1,0 +1,21 @@
+--- 
+id: 3362
+section_id: 559
+part_id: 38
+name: Record Policivo firmado por el Director y/o Secretaria
+created_at: 2014-07-05 19:00:58 Z
+updated_at: 2015-09-01 15:39:36 Z
+label: "R\xC3\xA9cord policivo firmado por el Director y/o Secretaria"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  sin_adjunto = form_data.get("anexos_solicitud_de_record_policivo_funcionarios.record_policivo_generado_sin_firma.anexo")
+  !sin_adjunto.blank?
+manage_as_confidential: false
+include: 
+hint: Favor adjuntar archivo correspondiente
+help: Favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

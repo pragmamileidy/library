@@ -1,0 +1,57 @@
+--- 
+id: 16
+name: Actividades de una empresa
+description: "Listado de Actividades predefinidas para selecci\xC3\xB3n m\xC3\xBAltiple\r\n\
+  \r\n\
+  * Actividad de Manufactura y/o Venta de Bienes (describir abajo)\r\n\
+  * Servicios de Centros de Llamadas para Uso Comercial\r\n\
+  * Actividades de procesamiento, fabricaci\xC3\xB3n, ensamblaje o manufactura de productos, componentes y partes en las cuales se utilicen procesos de alta tecnolog\xC3\xADa (Indique en qu\xC3\xA9 consiste el proceso)\r\n\
+  * Sede de Empresa Multinacional (indique si cuenta con Licencia de acuerdo a la Ley 41 de 2007)\r\n\
+  * Actividades cinematogr\xC3\xA1ficas y audiovisuales (fomentada por la Ley 36 de 2007)    \r\n\
+  * Captura, Procesamiento, Almacenamiento, Conmutaci\xC3\xB3n, Transmisi\xC3\xB3n y/o retransmisi\xC3\xB3n de Datos y/o Informaci\xC3\xB3n Digital      \r\n\
+  * Enlace de Se\xC3\xB1ales de Radio, Televisi\xC3\xB3n, Audio, Video y/o Datos       \r\n\
+  * Administraci\xC3\xB3n de Oficinas a Usuarios dentro del AEEPP o a usuarios establecidos fuera de Panam\xC3\xA1\r\n\
+  * Investigaci\xC3\xB3n y/o Desarrollo de Recursos.     \r\n\
+  * Aplicaciones digitales para uso en redes intranet y/o internet.       \r\n\
+  * Prestaci\xC3\xB3n de Servicio o Ventas a Visitantes, Pasajeros o Tripulantes en tr\xC3\xA1nsito  o con destino al extranjero (indique si los bienes a vender ser\xC3\xA1n manufacturados  por usted o una empresa de su mismo grupo ec\xC3\xB3nomico. Indique si adem\xC3\xA1s los servicios se prestar\xC3\xA1n o los bienes se vender\xC3\xA1n a otro tipo de cliente)        \r\n\
+  * Prestaci\xC3\xB3n de Servicio o Ventas a Naves que crucen el Canal de Panam\xC3\xA1 con destino al extranjero o que naveguen entre cualquier puerto habilitado de Panam\xC3\xA1 y Puertos Extranjeros  (indique si los bienes a vender ser\xC3\xA1n manufacturados por usted o una empresa de su mismo grupo ec\xC3\xB3nomico. Indique si adem\xC3\xA1s los servicios se prestar\xC3\xA1n o los bienes se vender\xC3\xA1n a otro tipo de cliente).       \r\n\
+  * Servicios Off Shore (indicar si tambi\xC3\xA9n se prestar\xC3\xA1n servicios en Panam\xC3\xA1).       \r\n\
+  * Importaci\xC3\xB3n y reexportaci\xC3\xB3n al por mayor de productos terminados (especificar tipo de productos, destinatario de los productos, v\xC3\xADa por la cual se reexportar\xC3\xA1n,  si los productos ser\xC3\xA1n de su propiedad o vendidos por usted)        \r\n\
+  * Servicios relacionados con la Aviaci\xC3\xB3n y Aeropuertos        \r\n\
+  * Transporte, manejo y/o almacenamiento de carga a\xC3\xA9rea.       \r\n\
+  * Reparaci\xC3\xB3n, Mantenimiento, Conversi\xC3\xB3n y/o Reconversi\xC3\xB3n de Aeronaves.       \r\n\
+  * Distribuci\xC3\xB3n, Mantenimiento, Conversi\xC3\xB3n y/o Manufactura de Partes y/o Piezas  de Aeronaves.       \r\n\
+  * Manufactura de Bienes de Alta Tecnolog\xC3\xADa.       \r\n\
+  * Servicios Multimodales y Log\xC3\xADsticos      \r\n\
+  * Servicios de Restaurante o Expendio de Bebidas o Alimentos.       \r\n\
+  * Centros Educativos       \r\n\
+  * Servicios Hospitalarios.    "
+version: 
+status: Draft
+label: Actividades de una empresa
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-02 14:15:42 Z
+updated_at: 2015-11-09 15:01:22 Z
+values_list: "\"Actividad de Manufactura y/o Venta de Bienes\",\"Administraci\xC3\xB3n de Oficinas a Usuarios dentro del AEEPP o a usuarios establecidos fuera de Panam\xC3\xA1\",\"Investigaci\xC3\xB3n y/o Desarrollo de Recursos.\",\r\n\
+  \"Aplicaciones digitales para uso en redes intranet y/o internet.\",\"Servicios Off Shore (indicar si tambi\xC3\xA9n se prestar\xC3\xA1n servicios en Panam\xC3\xA1).\",\"Servicios relacionados con la Aviaci\xC3\xB3n y Aeropuertos\",\"Transporte\", \"Manejo y/o Almacenamiento de Carga A\xC3\xA9rea\",\"Reparaci\xC3\xB3n, Mantenimiento, Conversi\xC3\xB3n y/o Reconversi\xC3\xB3n de Aeronaves.\",\"Manufactura de Bienes de Alta Tecnolog\xC3\xADa.\",\"Servicios Multimodales y Log\xC3\xADsticos\",\r\n\
+  \"Servicios de Restaurante o Expendio de Bebidas o Alimentos.\",\"Centros Educativos\",\r\n\
+  \"Servicios Hospitalarios.\""
+keys_list: ""
+field_type: select
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 9761-2380-5722-9652-4584

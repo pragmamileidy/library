@@ -1,0 +1,206 @@
+--- 
+id: 412
+position: 4
+selector: "{\"843\":{\"656\":{\"758\":{},\"759\":{}}},\"2898\":{\"1993\":{\"2194\":{},\"557\":{},\"613\":{},\"1168\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 53px;
+  	left: 676px;
+  	width: 313px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 28px;
+  	left: 676px;
+  	width: 313px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_1_informacinlaboral_nombredelaempresa {
+  	position: absolute;
+  	top: 164px;
+  	left: 330px;
+  	width: 608px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_1_informacinlaboral_cargo {
+  	position: absolute;
+  	top: 201px;
+  	left: 704px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_1_informacinlaboral_fechadeiniciodelabores {
+  	position: absolute;
+  	top: 200px;
+  	left: 331px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_1_informacinlaboral_fechaenquefinalizolaslabores {
+  	position: absolute;
+  	top: 238px;
+  	left: 331px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_2_informacinlaboral_nombredelaempresa {
+  	position: absolute;
+  	top: 366px;
+  	left: 333px;
+  	width: 607px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_2_informacinlaboral_cargo {
+  	position: absolute;
+  	top: 402px;
+  	left: 704px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_2_informacinlaboral_fechadeiniciodelabores {
+  	position: absolute;
+  	top: 401px;
+  	left: 327px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_2_informacinlaboral_fechaenquefinalizolaslabores {
+  	position: absolute;
+  	top: 439px;
+  	left: 328px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_3_informacinlaboral_nombredelaempresa {
+  	position: absolute;
+  	top: 569px;
+  	left: 329px;
+  	width: 606px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_3_informacinlaboral_cargo {
+  	position: absolute;
+  	top: 606px;
+  	left: 707px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_3_informacinlaboral_fechadeiniciodelabores {
+  	position: absolute;
+  	top: 606px;
+  	left: 330px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_3_informacinlaboral_fechaenquefinalizolaslabores {
+  	position: absolute;
+  	top: 641px;
+  	left: 328px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_4_informacinlaboral_nombredelaempresa {
+  	position: absolute;
+  	top: 771px;
+  	left: 331px;
+  	width: 606px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_4_informacinlaboral_cargo {
+  	position: absolute;
+  	top: 808px;
+  	left: 700px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_4_informacinlaboral_fechadeiniciodelabores {
+  	position: absolute;
+  	top: 807px;
+  	left: 329px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_4_informacinlaboral_fechaenquefinalizolaslabores {
+  	position: absolute;
+  	top: 842px;
+  	left: 329px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_5_informacinlaboral_nombredelaempresa {
+  	position: absolute;
+  	top: 976px;
+  	left: 331px;
+  	width: 611px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_5_informacinlaboral_cargo {
+  	position: absolute;
+  	top: 1010px;
+  	left: 705px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_5_informacinlaboral_fechadeiniciodelabores {
+  	position: absolute;
+  	top: 1010px;
+  	left: 330px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opcionesdatosdellaempresa_instance_5_informacinlaboral_fechaenquefinalizolaslabores {
+  	position: absolute;
+  	top: 1045px;
+  	left: 332px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 84
+created_at: 2013-08-15 18:39:14 Z
+updated_at: 2013-08-15 22:12:13 Z
+instances_selector: "{\"843\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2898\":{\"value\":\"1,5\",\"1993\":{\"value\":\"\",\"2194\":{\"value\":\"\"},\"557\":{\"value\":\"\"},\"613\":{\"value\":\"\"},\"1168\":{\"value\":\"\"}}}}"
+size: 

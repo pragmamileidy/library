@@ -1,0 +1,30 @@
+--- 
+id: 3200
+part_id: 606
+field_id: 10
+name: "No de Confirmaci\xC3\xB3n"
+created_at: 2013-04-24 21:46:04 Z
+updated_at: 2017-06-04 00:22:48.680995 Z
+label: "No. de Confirmaci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 19408f10-d514-44a3-9636-670d5ad1161e
+version: 20170603-202248

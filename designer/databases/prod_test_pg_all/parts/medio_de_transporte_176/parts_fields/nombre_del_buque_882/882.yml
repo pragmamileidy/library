@@ -1,0 +1,30 @@
+--- 
+id: 882
+part_id: 176
+field_id: 10
+name: Nombre del Buque
+created_at: 2012-03-27 22:52:47 Z
+updated_at: 2017-06-04 00:25:42.333986 Z
+label: Nombre del Buque
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 304fc8a8-f46a-41ac-a909-34cb388649d9
+version: 20170603-202542

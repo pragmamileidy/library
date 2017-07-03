@@ -1,0 +1,40 @@
+--- 
+id: 119
+name: Anios Adelante
+description: "Anio que va desde el a\xC3\xB1o actual para adelante"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-27 17:20:34 Z
+updated_at: 2012-11-22 20:27:52 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _lista = ""
+  t = Time.now
+  anio= t.year
+  _i = 0
+  15.times do
+      _lista = _lista + "," + (anio + _i).to_s
+      _i = _i +1
+  end
+  @values_of_list = _lista.split(",")
+  @keys_of_list =  _lista.split(",")
+serial: 

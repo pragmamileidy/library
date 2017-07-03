@@ -1,0 +1,16 @@
+--- 
+id: 1347
+design_id: 90
+section_id: 224
+name: "Anexos 001-Registro de Empresas y Declaraci\xC3\xB3n Jurada"
+created_at: 2012-06-09 15:26:29 Z
+updated_at: 2015-10-22 01:07:02 Z
+label: Requisitos de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1365\":{\"210\":{\"required\":\"required\"}},\"1366\":{\"210\":{\"required\":\"required\"}},\"1367\":{\"210\":{\"required\":\"required\"}},\"1368\":{\"210\":{\"required\":\"required\"}},\"1369\":{\"210\":{\"required\":\"unrequired\"}},\"1377\":{\"210\":{\"required\":\"unrequired\"}},\"1370\":{\"210\":{\"required\":\"required\"}},\"1371\":{\"210\":{\"required\":\"required\"}},\"1372\":{\"210\":{\"required\":\"required\"}},\"1373\":{\"210\":{\"required\":\"required\"}},\"1374\":{\"210\":{\"required\":\"unrequired\"}},\"1378\":{\"210\":{\"required\":\"unrequired\"}},\"1375\":{\"210\":{\"required\":\"unrequired\"}},\"1376\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 13

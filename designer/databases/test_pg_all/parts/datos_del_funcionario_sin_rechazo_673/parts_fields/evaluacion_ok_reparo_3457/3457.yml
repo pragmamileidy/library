@@ -1,0 +1,30 @@
+--- 
+id: 3457
+part_id: 673
+field_id: 234
+name: Evaluacion OK REPARO
+created_at: 2013-10-25 17:24:39 Z
+updated_at: 2017-06-04 00:27:41.304018 Z
+label: "Seleccione el resultado de la evaluaci\xC3\xB3n de su solicitud"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 58ff8b28-89cf-47b6-badf-766cf08a1687
+version: 20170603-202741

@@ -1,0 +1,30 @@
+--- 
+id: 1686
+part_id: 309
+field_id: 1
+name: Semanas
+created_at: 2012-06-08 16:26:30 Z
+updated_at: 2017-06-04 00:25:54.880394 Z
+label: Semanas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor introduzca el n\xC3\xBAmero de semanas del club de mercanc\xC3\xADa  comprado."
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8681ede1-14fb-44d7-8637-577cc8f00b00
+version: 20170603-202554

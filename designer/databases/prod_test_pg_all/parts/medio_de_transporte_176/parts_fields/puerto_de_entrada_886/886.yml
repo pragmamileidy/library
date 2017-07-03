@@ -1,0 +1,30 @@
+--- 
+id: 886
+part_id: 176
+field_id: 10
+name: Puerto de Entrada
+created_at: 2012-03-27 22:54:37 Z
+updated_at: 2017-06-04 00:28:48.867170 Z
+label: Puerto de Entrada
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c15863dd-f380-43ac-ae53-3b3f2e9df682
+version: 20170603-202848

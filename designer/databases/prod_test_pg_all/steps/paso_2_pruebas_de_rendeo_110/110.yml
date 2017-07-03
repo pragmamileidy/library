@@ -1,0 +1,19 @@
+--- 
+id: 110
+name: paso 2  -  pruebas de rendeo
+label: paso 2  -  pruebas de rendeo
+description: paso 2  -  pruebas de rendeo
+fill_step_id: 33
+created_at: 2012-04-10 14:05:20 Z
+updated_at: 2012-06-04 14:17:23 Z
+include: "{\"568\":{\"632\":{\"674\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"572\":{\"647\":{\"707\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"706\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"704\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"705\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"703\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ,Paso 1 - Pruebas 17mayo
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 1 - Pruebas 17mayo
+position: 0
+ajax_calls: 

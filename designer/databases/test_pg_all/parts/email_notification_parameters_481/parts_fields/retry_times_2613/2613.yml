@@ -1,0 +1,30 @@
+--- 
+id: 2613
+part_id: 481
+field_id: 10
+name: retry_times
+created_at: 2013-01-11 20:45:29 Z
+updated_at: 2017-06-04 00:29:43.919148 Z
+label: Reintentos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 95fdcd2a-4c37-4d0f-b318-fe0a59a15330
+version: 20170603-202943

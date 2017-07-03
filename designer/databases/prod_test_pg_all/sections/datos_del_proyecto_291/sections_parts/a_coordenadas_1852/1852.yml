@@ -1,0 +1,19 @@
+--- 
+id: 1852
+section_id: 291
+part_id: 323
+name: A Coordenadas
+created_at: 2012-06-12 22:19:57 Z
+updated_at: 2015-10-28 15:29:27 Z
+label: A. Coordenadas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Por favor indique las coordenadas de latitud y longitud donde se realizar\xC3\xA1 el proyecto"
+help: "Localizaci\xC3\xB3n del Sitio Propuesto/A. Coordenadas"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

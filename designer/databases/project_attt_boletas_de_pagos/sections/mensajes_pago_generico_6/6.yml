@@ -1,0 +1,17 @@
+--- 
+id: 6
+name: Mensajes Pago Generico
+description: Mensajes Pago Generico
+version: 20161006-104952
+help: ""
+layout: 
+life_cycle: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-10-06 14:49:52.730328 Z
+updated_at: 2016-10-06 14:49:52.730328 Z
+status: Draft
+label: ""
+hint: ""
+serial: 543cd285-336e-4b39-a759-651688df486a

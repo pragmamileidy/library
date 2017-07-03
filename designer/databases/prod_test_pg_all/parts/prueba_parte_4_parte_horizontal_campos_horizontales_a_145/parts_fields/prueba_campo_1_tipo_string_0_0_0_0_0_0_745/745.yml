@@ -1,0 +1,30 @@
+--- 
+id: 745
+part_id: 145
+field_id: 61
+name: Prueba campo 1 tipo string 0 0 0 0 0 0
+created_at: 2012-03-13 22:29:32 Z
+updated_at: 2017-06-04 00:23:45.365857 Z
+label: Prueba campo 1 tipo string
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Campo 1 de tipo string,  regexp  charset: ^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C0-9\\.\\-\\s]*$ format: ^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C0-9\\s]*$    No se configuro help en la relaci\xC3\xB3n parte campo.  Minima de instancia 3 m\xC3\xA1xima 5"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d087a8ba-ac6a-491c-9a32-385bf1434b93
+version: 20170603-202345

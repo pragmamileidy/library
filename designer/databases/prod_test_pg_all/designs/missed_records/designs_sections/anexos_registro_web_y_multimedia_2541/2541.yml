@@ -1,0 +1,16 @@
+--- 
+id: 2541
+design_id: 189
+section_id: 476
+name: Anexos - Registro Web y Multimedia
+created_at: 2013-03-14 21:49:16 Z
+updated_at: 2014-06-19 21:16:02 Z
+label: Registro Web y Multimedia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2913\":{\"210\":{\"required\":\"required\"}},\"2908\":{\"210\":{\"required\":\"required\"}},\"2725\":{\"2940\":{\"required\":\"required\"}},\"2909\":{\"210\":{\"required\":\"required\"}},\"2726\":{\"2937\":{\"required\":\"required\"}},\"2722\":{\"2938\":{\"required\":\"required\"}},\"3244\":{\"210\":{\"required\":\"unrequired\"}},\"3245\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 11

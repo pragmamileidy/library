@@ -1,0 +1,30 @@
+--- 
+id: 32
+name: "Acci\xC3\xB3n Activar/Desactivar"
+description: "Campo que muestra con check boxes las opciones de activar o desactivar, solo se puede seleccionar 1 opci\xC3\xB3n"
+version: 
+status: Draft
+label: "Acci\xC3\xB3n Activar/Desactivar"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-08 16:16:45 Z
+updated_at: 2012-05-16 20:56:43 Z
+values_list: "\"Activar\",\"Desactivar\""
+keys_list: ""
+field_type: select
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

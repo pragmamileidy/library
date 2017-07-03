@@ -1,0 +1,143 @@
+--- 
+id: 465
+position: 1
+selector: "{\"4202\":{\"656\":{\"758\":{},\"759\":{}}},\"4203\":{\"1725\":{\"1973\":{},\"1883\":{}},\"3552\":{\"585\":{},\"631\":{}}},\"4204\":{\"1725\":{\"1973\":{},\"1883\":{}}},\"4205\":{\"1995\":{\"2057\":{},\"2058\":{}},\"2021\":{\"2057\":{},\"2058\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 78px;
+  	left: 769px;
+  	width: 122px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 55px;
+  	left: 642px;
+  	width: 371px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitante_datosbsicos_cdulapasaporte {
+  	position: absolute;
+  	top: 361px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitante_datosbsicos_nombrecompleto {
+  	position: absolute;
+  	top: 327px;
+  	left: 274px;
+  	width: 674px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitante_datosdeubicacin_nmerodetelfono {
+  	position: absolute;
+  	top: 361px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitante_datosdeubicacin_nmerocelular {
+  	position: absolute;
+  	top: 395px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .representantedelsolicitante_datosbsicos_cdulapasaporte {
+  	position: absolute;
+  	top: 518px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .representantedelsolicitante_datosbsicos_nombrecompleto {
+  	position: absolute;
+  	top: 484px;
+  	left: 275px;
+  	width: 628px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .representantedelsolicitante_direccinactual_nmerodetelfono {
+  	position: absolute;
+  	top: 518px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .representantedelsolicitante_direccinactual_nmerocelular {
+  	position: absolute;
+  	top: 552px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .periododedescuentoconsultado_desde_meses {
+  	position: absolute;
+  	top: 640px;
+  	left: 281px;
+  	width: 116px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .periododedescuentoconsultado_desde_anio {
+  	position: absolute;
+  	top: 640px;
+  	left: 410px;
+  	width: 113px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .periododedescuentoconsultado_hasta_meses {
+  	position: absolute;
+  	top: 640px;
+  	left: 731px;
+  	width: 119px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .periododedescuentoconsultado_hasta_anio {
+  	position: absolute;
+  	top: 640px;
+  	left: 860px;
+  	width: 115px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: true
+html_render: ""
+print_design_id: 156
+created_at: 2014-03-20 01:16:54 Z
+updated_at: 2015-10-06 19:44:57 Z
+instances_selector: "{\"4202\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4203\":{\"value\":\"\",\"1725\":{\"value\":\"\",\"1973\":{\"value\":\"\"},\"1883\":{\"value\":\"\"}},\"3552\":{\"value\":\"\",\"585\":{\"value\":\"\"},\"631\":{\"value\":\"\"}}},\"4204\":{\"value\":\"\",\"1725\":{\"value\":\"\",\"1973\":{\"value\":\"\"},\"1883\":{\"value\":\"\"}}},\"4205\":{\"value\":\"\",\"1995\":{\"value\":\"\",\"2057\":{\"value\":\"\"},\"2058\":{\"value\":\"\"}},\"2021\":{\"value\":\"\",\"2057\":{\"value\":\"\"},\"2058\":{\"value\":\"\"}}}}"
+size: ""

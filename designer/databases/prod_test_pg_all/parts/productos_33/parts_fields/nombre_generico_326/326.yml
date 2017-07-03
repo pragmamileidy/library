@@ -1,0 +1,30 @@
+--- 
+id: 326
+part_id: 33
+field_id: 10
+name: "Nombre gen\xC3\xA9rico"
+created_at: 2011-11-10 13:59:24 Z
+updated_at: 2017-06-04 00:23:34.797526 Z
+label: "Nombre gen\xC3\xA9rico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4ff62fc7-c1ce-441a-b081-4236fa5185f3
+version: 20170603-202334

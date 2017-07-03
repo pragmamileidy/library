@@ -1,0 +1,30 @@
+--- 
+id: 3080
+part_id: 580
+field_id: 10
+name: SIGLAS
+created_at: 2013-03-18 18:27:20 Z
+updated_at: 2017-06-04 00:24:55.591703 Z
+label: SIGLAS
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f84d0d3e-b9b1-4f0d-96a6-c0ff4b46a6c6
+version: 20170603-202455

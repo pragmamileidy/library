@@ -1,0 +1,16 @@
+--- 
+id: 1643
+design_id: 131
+section_id: 182
+name: Datos de Pago
+created_at: 2012-07-23 15:25:14 Z
+updated_at: 2014-05-28 16:00:16 Z
+label: Datos de Pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1824\":{\"1366\":{\"required\":\"required\"},\"1367\":{\"required\":\"required\"},\"1368\":{\"required\":\"required\"},\"1369\":{\"required\":\"required\"},\"1370\":{\"required\":\"required\"},\"1371\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 22

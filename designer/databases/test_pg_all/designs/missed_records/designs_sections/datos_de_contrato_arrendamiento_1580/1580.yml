@@ -1,0 +1,16 @@
+--- 
+id: 1580
+design_id: 23
+section_id: 319
+name: Datos de Contrato arrendamiento
+created_at: 2012-06-22 00:27:37 Z
+updated_at: 2012-11-20 14:56:52 Z
+label: Datos de Contrato de arrendamiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1976\":{\"1957\":{\"required\":\"required\"},\"1958\":{\"required\":\"required\"}},\"1977\":{\"1959\":{\"required\":\"required\"},\"1960\":{\"required\":\"required\"},\"2526\":{\"required\":\"required\"},\"1962\":{\"required\":\"required\"},\"1963\":{\"required\":\"required\"},\"2189\":{\"required\":\"required\"},\"1965\":{\"required\":\"required\"},\"1966\":{\"required\":\"required\"}},\"1978\":{\"1968\":{\"required\":\"unrequired\"},\"1967\":{\"required\":\"unrequired\"},\"1969\":{\"required\":\"unrequired\"}},\"1979\":{\"1970\":{\"required\":\"unrequired\"},\"2218\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 7

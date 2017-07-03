@@ -1,0 +1,19 @@
+--- 
+id: 312
+name: Paso 1-Datos de la Empresa
+label: Datos de la Empresa
+description: Contiene datos generales de la empresa, del representante legal, del apoderado (si lo hay),de los directores y del abogado.
+fill_step_id: 186
+created_at: 2012-05-08 18:47:52 Z
+updated_at: 2012-05-19 19:51:53 Z
+include: 
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: 

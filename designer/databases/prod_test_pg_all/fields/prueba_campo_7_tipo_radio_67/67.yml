@@ -1,0 +1,30 @@
+--- 
+id: 67
+name: Prueba campo 7 tipo radio
+description: Prueba campo 7 tipo radio
+version: 
+status: Draft
+label: Prueba campo 7 tipo radio
+hint: Prueba campo 7 tipo radio
+help: Prueba campo 7 tipo radio
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-13 14:00:24 Z
+updated_at: 2012-03-13 14:01:46 Z
+values_list: "1,2,3,4,5"
+keys_list: Valor 1, Valor 2, Valor 3, Valor 4, Valor 5
+field_type: radio
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

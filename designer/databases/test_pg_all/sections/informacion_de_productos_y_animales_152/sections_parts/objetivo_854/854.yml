@@ -1,0 +1,19 @@
+--- 
+id: 854
+section_id: 152
+part_id: 181
+name: Objetivo
+created_at: 2012-03-28 16:12:44 Z
+updated_at: 2012-04-10 01:03:54 Z
+label: Objetivo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

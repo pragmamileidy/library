@@ -1,0 +1,16 @@
+--- 
+id: 903
+design_id: 87
+section_id: 211
+name: "Ubicaci\xC3\xB3n de Pago"
+created_at: 2012-05-03 16:20:41 Z
+updated_at: 2014-05-05 20:00:31 Z
+label: Informacion de Pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2787\":{\"3191\":{\"required\":\"required\"}},\"2063\":{\"1254\":{\"required\":\"unrequired\"},\"1255\":{\"required\":\"unrequired\"},\"1256\":{\"required\":\"unrequired\"}},\"1364\":{\"2175\":{\"required\":\"required\"},\"1233\":{\"required\":\"required\"},\"1234\":{\"required\":\"required\"},\"1235\":{\"required\":\"required\"},\"2145\":{\"required\":\"required\"},\"1240\":{\"required\":\"required\"},\"1241\":{\"required\":\"required\"},\"2132\":{\"required\":\"required\"},\"2151\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

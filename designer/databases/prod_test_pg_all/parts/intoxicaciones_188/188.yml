@@ -1,0 +1,17 @@
+--- 
+id: 188
+name: Intoxicaciones
+description: "Se usa para describir toxicidad y primeros auxilios de un producto qu\xC3\xADmico"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-17 17:37:57 Z
+updated_at: 2012-05-16 20:55:30 Z
+label: Intoxicaciones
+hint: ""
+view_class: horizontal
+serial: 

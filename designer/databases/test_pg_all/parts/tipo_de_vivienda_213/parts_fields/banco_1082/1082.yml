@@ -1,0 +1,30 @@
+--- 
+id: 1082
+part_id: 213
+field_id: 10
+name: Banco
+created_at: 2012-04-27 14:58:47 Z
+updated_at: 2017-06-04 00:27:02.028905 Z
+label: Banco
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indique el Banco con el cual mantiene la hipoteca
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b0cf2d2b-6fa3-4379-bd94-1459766c7e1c
+version: 20170603-202702

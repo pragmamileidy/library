@@ -1,0 +1,19 @@
+--- 
+id: 2518
+section_id: 239
+part_id: 38
+name: Copia del Pasaporte o Cedula Vigente
+created_at: 2013-01-21 20:15:44 Z
+updated_at: 2013-03-16 19:53:49 Z
+label: "Copia del Pasaporte o C\xC3\xA9dula  Vigente"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

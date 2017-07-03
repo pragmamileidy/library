@@ -1,0 +1,19 @@
+--- 
+id: 3375
+section_id: 107
+part_id: 546
+name: Autor Natural
+created_at: 2014-10-22 20:06:22 Z
+updated_at: 2014-12-08 15:29:13 Z
+label: Autor Natural
+min_instances: 1
+max_instances: 3
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 17

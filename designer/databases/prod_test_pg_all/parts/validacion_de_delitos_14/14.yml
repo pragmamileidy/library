@@ -1,0 +1,17 @@
+--- 
+id: 14
+name: "Validaci\xC3\xB3n de Delitos"
+description: "Esta parte contiene informaci\xC3\xB3n para la validaci\xC3\xB3n de delitos"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-02 15:12:14 Z
+updated_at: 2011-11-02 18:50:34 Z
+label: "Validaci\xC3\xB3n de Delitos"
+hint: ""
+view_class: 
+serial: 

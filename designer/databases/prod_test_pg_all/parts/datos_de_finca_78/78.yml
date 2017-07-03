@@ -1,0 +1,17 @@
+--- 
+id: 78
+name: Datos de Finca
+description: "Especifica los datos de una finca, usado normalmente para describir donde fue o va a ser hecha una construcci\xC3\xB3n"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-14 14:05:54 Z
+updated_at: 2015-01-06 14:30:16 Z
+label: Datos de Finca
+hint: ""
+view_class: horizontal
+serial: 3082-9586-8537-6271-2556

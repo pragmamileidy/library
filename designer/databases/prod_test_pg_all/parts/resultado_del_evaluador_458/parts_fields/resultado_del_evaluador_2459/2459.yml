@@ -1,0 +1,30 @@
+--- 
+id: 2459
+part_id: 458
+field_id: 223
+name: Resultado del evaluador
+created_at: 2012-08-20 18:37:31 Z
+updated_at: 2017-06-04 00:22:17.480544 Z
+label: Resultado
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Especifique si considera el plano aprobado "
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0fd6a962-f840-46f5-ad2b-c987ca697cb7
+version: 20170603-202217

@@ -1,0 +1,35 @@
+--- 
+id: 3074
+name: Paso 2 - Datos de Arrendatario
+label: Datos del Arrendatario
+description: Por favor seleccione el tipo de Arrendatario
+fill_step_id: 1646
+created_at: 2014-12-18 15:37:20 Z
+updated_at: 2015-02-03 15:27:27 Z
+include: "{\"4710\":{\"580\":{\"1981\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4711\":{\"595\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"568\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"598\":{\"1981\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2009\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"597\":{\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4712\":{\"1787\":{\"1641\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3180\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3181\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "nro_finca = form_data.get(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.nro_de_finca\").strip\r\n\
+  cod_ubi = form_data.get(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.cod_ubicacion\")\r\n\
+  tipo_p = form_data.get(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.tipo_propiedad\")\r\n\
+  \r\n\
+  result = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_tupea/find.json?finca=' + \"#{nro_finca}\" + '&codUbicacion=' + \"#{cod_ubi}\" + '&tipoPropiedad=' + \"#{tipo_p}\")).parsed_response\r\n\
+  finca = result[\"response\"]\r\n\
+  if finca.nil?\r\n\
+  \tform_data.set(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.nro_de_finca\",\"\")\r\n\
+  \tform_data.set(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.documento\",\"\")\r\n\
+  \tform_data.set(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.asiento\",\"\")\r\n\
+  \ttransition_errors << \"Los datos de la finca (Finca, Codigo de Ubucacion y Tipo de Propiedad) no fueron encontrados, por favor verifique. \"\r\n\
+  else\r\n\
+  \t#Informaci\xC3\xB3n de la Finca\r\n\
+  \t form_data.set(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.nro_de_finca\",nro_finca)\r\n\
+  \t form_data.set(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.documento\",finca[\"num_documento\"])\r\n\
+  \t form_data.set(\"datos_de_finca_en_arriendo.datos_de_finca_en_arriendo_generales.asiento\",finca[\"asiento\"])\r\n\
+  \tend"
+views: 
+back_step: Paso 1 - Datos del Arrendador
+next_step: Paso 3 - Finca de arriendo  y Contrato de Arrendamiento
+position: 2
+ajax_calls: ""

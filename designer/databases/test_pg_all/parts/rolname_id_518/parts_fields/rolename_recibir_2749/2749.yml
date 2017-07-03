@@ -1,0 +1,30 @@
+--- 
+id: 2749
+part_id: 518
+field_id: 10
+name: rolename_recibir
+created_at: 2013-01-15 16:39:37 Z
+updated_at: 2017-06-04 00:22:27.943887 Z
+label: Rolename Recibir
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Para todos los tramites 100 y todos los procesos
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5b8be7af-fde4-4176-b842-e2f7e27e9fc0
+version: 20170603-202227

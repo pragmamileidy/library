@@ -1,0 +1,19 @@
+--- 
+id: 1375
+section_id: 224
+part_id: 38
+name: Estados Financieros
+created_at: 2012-05-07 20:11:49 Z
+updated_at: 2012-05-07 20:11:49 Z
+label: Estados Financieros
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "S\xC3\xB3lo si es Empresa Multinacional/Estados financieros consolidados del grupo empresarial, correspondiente al \xC3\xBAltimo periodo fiscal"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 13

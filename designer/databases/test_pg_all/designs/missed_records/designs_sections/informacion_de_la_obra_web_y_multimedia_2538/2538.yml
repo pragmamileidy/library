@@ -1,0 +1,16 @@
+--- 
+id: 2538
+design_id: 189
+section_id: 477
+name: "Informaci\xC3\xB3n de la Obra - web y multimedia"
+created_at: 2013-03-14 21:49:16 Z
+updated_at: 2014-04-07 21:26:34 Z
+label: "Informaci\xC3\xB3n de la Obra "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2729\":{\"3065\":{\"required\":\"required\"},\"3066\":{\"required\":\"required\"},\"3067\":{\"required\":\"required\"},\"3068\":{\"required\":\"required\"},\"3069\":{\"required\":\"unrequired\"},\"3070\":{\"required\":\"required\"},\"3071\":{\"required\":\"required\"},\"3072\":{\"required\":\"unrequired\"},\"3073\":{\"required\":\"required\"},\"3074\":{\"required\":\"required\"},\"3075\":{\"required\":\"required\"},\"3076\":{\"required\":\"required\"},\"3077\":{\"required\":\"required\"}},\"2730\":{\"2969\":{\"required\":\"unrequired\"},\"2970\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

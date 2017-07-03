@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  background-image: url(RUTA_IMAGEN.png);
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+
+  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+	position: absolute;
+	top: 74px;
+	left: 664px;
+	width: 349px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+	position: absolute;
+	top: 48px;
+	left: 664px;
+	width: 348px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_cdulalitigante {
+	position: absolute;
+	top: 330px;
+	left: 266px;
+	width: 469px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_nombredelabogado {
+	position: absolute;
+	top: 365px;
+	left: 266px;
+	width: 711px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_idoneidaddelabogado {
+	position: absolute;
+	top: 401px;
+	left: 266px;
+	width: 710px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_nombredelafirma {
+	position: absolute;
+	top: 435px;
+	left: 266px;
+	width: 710px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_ubicacindelafirmaarea {
+	position: absolute;
+	top: 474px;
+	left: 266px;
+	width: 710px;
+	height: 51px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_nombredelasociedadaautorizar {
+	position: absolute;
+	top: 541px;
+	left: 266px;
+	width: 711px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_loquesedeseaoperar {
+	position: absolute;
+	top: 575px;
+	left: 266px;
+	width: 708px;
+	height: 21px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_deacuerdoalasolicitud_leycorrespondiente {
+	position: absolute;
+	top: 608px;
+	left: 266px;
+	width: 712px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_ruc {
+	position: absolute;
+	top: 729px;
+	left: 291px;
+	width: 437px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_fechadeinscripcin {
+	position: absolute;
+	top: 764px;
+	left: 291px;
+	width: 311px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_tomo {
+	position: absolute;
+	top: 765px;
+	left: 690px;
+	width: 263px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_folio {
+	position: absolute;
+	top: 800px;
+	left: 291px;
+	width: 311px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_asiento {
+	position: absolute;
+	top: 797px;
+	left: 690px;
+	width: 262px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_domiciliolegal {
+	position: absolute;
+	top: 829px;
+	left: 291px;
+	width: 705px;
+	height: 42px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_nombrecomercial {
+	position: absolute;
+	top: 696px;
+	left: 291px;
+	width: 708px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_sededicaraaofrecertexto {
+	position: absolute;
+	top: 921px;
+	left: 291px;
+	width: 440px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_dgitoverificador {
+	position: absolute;
+	top: 887px;
+	left: 291px;
+	width: 436px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_apartadopostal {
+	position: absolute;
+	top: 1062px;
+	left: 690px;
+	width: 257px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_telfonoocelular {
+	position: absolute;
+	top: 975px;
+	left: 291px;
+	width: 300px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_correoelectrnico {
+	position: absolute;
+	top: 1025px;
+	left: 291px;
+	width: 438px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_capitalsuscritoypagado {
+	position: absolute;
+	top: 974px;
+	left: 689px;
+	width: 260px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosgeneralesdeempresa_fechadeiniciodeoperaciones {
+	position: absolute;
+	top: 1062px;
+	left: 291px;
+	width: 303px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosdeubicacin_provincia_lista {
+	position: absolute;
+	top: 1147px;
+	left: 292px;
+	width: 442px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosdeubicacin_distrito_lista {
+	position: absolute;
+	top: 1182px;
+	left: 292px;
+	width: 440px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosdeubicacin_corregimiento_lista {
+	position: absolute;
+	top: 1215px;
+	left: 292px;
+	width: 440px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosdeubicacin_calleoavenida {
+	position: absolute;
+	top: 1248px;
+	left: 292px;
+	width: 443px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .solicitantejurdico_datosdeubicacin_edificiocasa {
+	position: absolute;
+	top: 1294px;
+	left: 292px;
+	width: 664px;
+	height: 23px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_presidente_nombre {
+	position: absolute;
+	top: 1374px;
+	left: 292px;
+	width: 707px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_presidente_cdula {
+	position: absolute;
+	top: 1410px;
+	left: 292px;
+	width: 352px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_presidente_pasaporte {
+	position: absolute;
+	top: 1410px;
+	left: 292px;
+	width: 350px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_vicepresidente_nombre {
+	position: absolute;
+	top: 1444px;
+	left: 292px;
+	width: 705px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_vicepresidente_cdula {
+	position: absolute;
+	top: 1481px;
+	left: 292px;
+	width: 347px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_vicepresidente_pasaporte {
+	position: absolute;
+	top: 1481px;
+	left: 292px;
+	width: 346px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_tesorero_nombre {
+	position: absolute;
+	top: 1512px;
+	left: 292px;
+	width: 706px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_tesorero_cdula {
+	position: absolute;
+	top: 1549px;
+	left: 292px;
+	width: 344px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .miembrosdelajuntadirectiva_tesorero_pasaporte {
+	position: absolute;
+	top: 1549px;
+	left: 292px;
+	width: 346px;
+	height: 20px;
+	overflow: hidden;
+  }

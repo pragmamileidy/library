@@ -1,0 +1,9 @@
+--- 
+id: 22
+name: "official-public_Licencia de Operaci\xC3\xB3n de Farmacias P\xC3\xBAblicas y Privadas"
+description: "Formulario de Solicitud Licencia de Operaci\xC3\xB3n de Farmacias P\xC3\xBAblicas y Privadas"
+created_at: 2012-04-14 15:10:34 Z
+updated_at: 2017-03-02 16:52:18.317147 Z
+design_id: 35
+label: "Formulario de Solicitud Licencia de Operaci\xC3\xB3n de Farmacias P\xC3\xBAblicas y Privadas"
+ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

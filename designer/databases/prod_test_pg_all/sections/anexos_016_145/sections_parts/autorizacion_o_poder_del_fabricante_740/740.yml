@@ -1,0 +1,19 @@
+--- 
+id: 740
+section_id: 145
+part_id: 38
+name: "Autorizaci\xC3\xB3n o poder del fabricante"
+created_at: 2012-03-26 22:14:18 Z
+updated_at: 2015-10-27 15:29:23 Z
+label: "Autorizaci\xC3\xB3n o poder del fabricante para solicitar el registro del producto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

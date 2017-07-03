@@ -1,0 +1,30 @@
+--- 
+id: 1890
+part_id: 357
+field_id: 130
+name: "N\xC3\xBAmero secuencial de descuento"
+created_at: 2012-06-19 21:31:48 Z
+updated_at: 2017-06-04 00:27:12.134750 Z
+label: "N\xC3\xBAmero \xC3\xBAnico asignado al compromiso de pago o descuento"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ec4955cd-8a4e-4cf9-b100-95aa4c020382
+version: 20170603-202712

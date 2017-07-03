@@ -1,0 +1,17 @@
+--- 
+id: 404
+name: Trabaja en otra empresa
+description: Trabaja en otra empresa
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 20:43:35 Z
+updated_at: 2012-07-23 20:43:35 Z
+label: Trabaja en otra empresa
+hint: ""
+view_class: horizontal
+serial: 

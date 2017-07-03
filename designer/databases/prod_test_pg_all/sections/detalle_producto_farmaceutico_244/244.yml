@@ -1,0 +1,17 @@
+--- 
+id: 244
+name: Detalle Producto Farmaceutico
+description: "Secci\xC3\xB3n que contiene los detalles de productos farmac\xC3\xA9uticos"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-20 15:39:16 Z
+updated_at: 2012-05-20 15:54:58 Z
+status: Draft
+label: "Detalle Producto  Farmac\xC3\xA9utico"
+hint: ""
+serial: 

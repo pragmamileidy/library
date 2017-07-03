@@ -1,0 +1,17 @@
+--- 
+id: 444
+name: Datos Generales del Proyecto de Planos
+description: Datos Generales del Proyecto
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-14 19:16:24 Z
+updated_at: 2015-01-05 20:03:41 Z
+label: Datos Generales del Proyecto
+hint: ""
+view_class: horizontal
+serial: 9753-5494-0439-0916-8169

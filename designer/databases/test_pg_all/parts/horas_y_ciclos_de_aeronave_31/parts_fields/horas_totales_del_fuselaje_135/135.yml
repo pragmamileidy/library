@@ -1,0 +1,30 @@
+--- 
+id: 135
+part_id: 31
+field_id: 27
+name: Horas Totales del Fuselaje
+created_at: 2011-11-03 21:06:59 Z
+updated_at: 2017-06-04 00:21:13.391288 Z
+label: Horas Totales del Fuselaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: 
+help: 
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5d80ed6f-6b04-4d67-a3e8-9c726886e9f6
+version: 20170603-202113

@@ -1,0 +1,19 @@
+--- 
+id: 1153
+name: Paso 5 - Anexos
+label: Anexos
+description: ""
+fill_step_id: 574
+created_at: 2013-03-13 17:34:55 Z
+updated_at: 2014-11-24 16:21:20 Z
+include: "{\"2485\":{\"2665\":{\"2936\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2898\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2670\":{\"2940\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2671\":{\"2937\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2899\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2666\":{\"2938\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2667\":{\"3016\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3238\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3239\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 4 - Datos del Solicitante
+next_step: "Paso 6 - Conformaci\xC3\xB3n de la Solicitud"
+position: 5
+ajax_calls: ""

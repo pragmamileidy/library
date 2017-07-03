@@ -1,0 +1,16 @@
+--- 
+id: 2159
+design_id: 166
+section_id: 414
+name: Datos del Estudiante
+created_at: 2012-09-28 21:37:59 Z
+updated_at: 2012-10-01 15:05:07 Z
+label: Datos del Estudiante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2392\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"},\"545\":{\"required\":\"required\"},\"2001\":{\"required\":\"required\"},\"548\":{\"required\":\"required\"},\"763\":{\"required\":\"required\"}},\"2393\":{\"608\":{\"required\":\"required\"}},\"2394\":{\"2185\":{\"required\":\"required\"},\"2515\":{\"required\":\"required\"},\"2516\":{\"required\":\"required\"},\"2517\":{\"required\":\"required\"}},\"2395\":{\"557\":{\"required\":\"required\"},\"565\":{\"required\":\"required\"},\"905\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

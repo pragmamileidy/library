@@ -1,0 +1,30 @@
+--- 
+id: 3813
+part_id: 410
+field_id: 3
+name: "Primer Apellido "
+created_at: 2014-11-06 16:59:49 Z
+updated_at: 2017-06-04 00:28:36.771742 Z
+label: Primer Apellido
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9dd87a3b-096e-4ec6-a440-bbc7bbca4891
+version: 20170603-202836

@@ -1,0 +1,263 @@
+--- 
+id: 1189
+name: "Paso 1 - Recepci\xC3\xB3n de la Solicitud"
+label: "Recepci\xC3\xB3n de la Solicitud"
+description: ""
+fill_step_id: 587
+created_at: 2013-03-14 19:11:10 Z
+updated_at: 2014-12-19 16:04:56 Z
+include: "{\"2520\":{\"2717\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3155\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2718\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3156\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2719\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3157\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2720\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3158\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2521\":{\"2620\":{\"1461\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1981\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2621\":{\"572\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2706\":{\"2977\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2522\":{\"2628\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2629\":{\"572\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2707\":{\"2977\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2523\":{\"2634\":{\"3051\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2976\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2955\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2956\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2524\":{\"2708\":{\"3052\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3053\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3054\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3055\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3056\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3057\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3058\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3059\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3060\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3061\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3062\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3063\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2525\":{\"2636\":{\"2969\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2970\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2526\":{\"580\":{\"1981\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"581\":{\"572\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2592\":{\"2925\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2926\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2527\":{\"595\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"597\":{\"572\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2593\":{\"2925\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2926\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2528\":{\"2710\":{\"2936\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2711\":{\"3014\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2903\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2714\":{\"2940\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2904\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2715\":{\"2937\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2712\":{\"2938\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2713\":{\"3064\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2716\":{\"3015\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2949\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3240\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3241\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2531\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1403\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3300\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3199\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  # Inicializacion de datos del agente
+  
+  _idagente = @task["agent_id"].to_s
+  
+                  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+                  _hash = result["hash"]
+                  _agente = _hash["response"]
+  
+  
+                  form_data.set("recibido_por.datos_del_funcionario_generico.usuario", _agente["name"])
+                  form_data.set("recibido.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: "##### RECEPCION DE SOLICITUD #####\r\n\
+  _obs = form_data.get(\"recibido_por.datos_del_funcionario_generico.observaciones\")\r\n\
+  if _obs.blank?\r\n\
+  \t_obs = form_data.get(\"recibido.datos_del_funcionario_generico.observaciones\")\r\n\
+  end\r\n\
+  \r\n\
+  _eval = form_data.get(\"recibido_por.datos_del_funcionario_generico.evaluacion\")\r\n\
+  if _eval.blank?\r\n\
+  \t_eval = form_data.get(\"recibido.datos_del_funcionario_generico.evaluacion_ok_rechazo\")\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  if (_eval ==\"REPARO\" and _obs.blank?) \r\n\
+  \ttransition_errors << \"Debe indicar el motivo del reparo en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end\r\n\
+  \r\n\
+  if (_eval ==\"RECHAZO\" and _obs.blank?) \r\n\
+  \ttransition_errors << \"Debe indicar el motivo del rechazo en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: |
+  //OCULTAR PARTE DEL DIRECTOR NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_director_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var director = "#field_datos_del_autor_es_persona_natural_director";
+  				var mod1 = director.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_director_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var director = "#field_datos_del_autor_es_persona_natural_director_juridico";
+  				var mod1 = director.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+  		
+  		//OCULTAR PARTE DEL AUTOR DE GUION NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_guion_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var guion = "#field_datos_del_autor_es_persona_natural_autor_guion";
+  				var mod1 = guion.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_guion_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var guion = "#field_datos_del_autor_es_persona_natural_autor_guion_juridico";
+  				var mod1 = guion.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+  		
+  		
+  		//OCULTAR PARTE DEL AUTOR DE MUSICA NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_musica_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var musica = "#field_datos_del_autor_es_persona_natural_autor_musica";
+  				var mod1 = musica.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_musica_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var musica = "#field_datos_del_autor_es_persona_natural_autor_musica_juridico";
+  				var mod1 = musica.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+  		
+  		
+  		//OCULTAR PARTE DEL AUTOR DE DIBUJO NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_dibujo_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var dibujo = "#field_datos_del_autor_es_persona_natural_autor_dibujo";
+  				var mod1 = dibujo.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_dibujo_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var dibujo = "#field_datos_del_autor_es_persona_natural_autor_dibujo_juridico";
+  				var mod1 = dibujo.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+  
+  /// OCULTAR SECCIONES PRODUCTOR NATURAL O JURIDICO ///
+  
+  $(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_productor_persona_natural_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var productor = "#field_datos_del_productor_persona_natural";
+  				var mod1 = productor.concat(pos)
+  				var docs = "_datos_de_la_persona_cedula_pasaporte";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".section-box").hide()
+  
+  						}
+  			});
+  
+  		
+  
+  			$.each( $('[id*=datos_del_productor_persona_juridica_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var productor = "#field_datos_del_productor_persona_juridica";
+  				var mod1 = productor.concat(pos)
+  	
+  				var docs = "_datos_personales_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".section-box").hide()
+  						}
+  			});
+  		});
+  		
+

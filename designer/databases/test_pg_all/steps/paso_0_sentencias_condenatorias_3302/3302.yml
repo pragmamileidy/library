@@ -1,0 +1,123 @@
+--- 
+id: 3302
+name: Paso 0 - Sentencias Condenatorias
+label: "<strong style=\"color:#900C3F\"> Revisi\xC3\xB3n de Sentencias </strong>"
+description: "<br/>\r\n\
+  <strong style=\"color:#FF5733\">Revisi\xC3\xB3n de Sentencias en la GAIP </strong>\r\n\
+  <br/>"
+fill_step_id: 1775
+created_at: 2017-01-06 20:36:01.711665 Z
+updated_at: 2017-02-22 14:54:43.195412 Z
+include: "{\"5152\":{\"3212\":{\"3629\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3630\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"5149\":{\"3209\":{\"2456\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"4042\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"5153\":{\"3208\":{\"3716\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1973\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1469\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1470\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1471\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1472\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1473\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1474\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1475\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1479\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1477\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3209\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3267\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3268\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3269\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3294\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3271\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3272\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3273\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"5159\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"5183\":{\"3227\":{\"3709\":{\"views\":\"hidden\",\"enabled\":\"enabled\"},\"3711\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3718\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}}},\"5184\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  #::: INICIALIZAR LOS DATOS DEL AGENTE :::#
+  _idagente = @task["agent_id"].to_s
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  form_data.set("recibido_sentencias.datos_del_funcionario_generico.usuario", _agente["name"])
+  
+  #::: MOSTRAR MENSAJE SENTENCIAS :::#
+  dato3 = "Para aplicar la ley 14, desmarque las sentencias que desee exonerar"
+  form_data.set("mensaje_dij.mensaje_dij.mensaje_sentencia",dato3)
+  
+  #::: OBTENER PROVINCIA DE REVISION DE LA SOLICITUD EN ATTACHMENT :::#
+  _app_id = @application["id"]
+  result = WebserviceConsumer.get('/service/dij_helper/call.json?method=provincia_print_design&app_id=' + "#{_app_id}").parsed_response
+  provincia = result["response"]["provincia"]
+  form_data.set("datos_del_solicitante.datos_de_ubicacion.provincia", provincia)
+on_transition: "#::: USADO PARA MOSTRAR O NO LA TABLA DE SENTENCIAS DEPENDIENDO SI EXONERAN O NO LAS SENTENCIAS EN EL PRINT DESIGNER :::#\r\n\
+  tipo_persona_juridico = form_data.get(\"tipo_de_persona_dij.tipo_de_solicitante_juridico.tipo_de_solicitante_juridico\")\r\n\
+  tipo_solicitud = form_data.get(\"tipo_de_solicitud_dij.tipo_de_solicitud_dij.tipo_de_solicitud_dij\")\r\n\
+  sentencias_seleccionadas = form_data.get(\"mensaje_dij.mensaje_dij.campo_data\")\r\n\
+  sentencias = sentencias_seleccionadas.blank? ? nil : ActiveSupport::JSON.decode(sentencias_seleccionadas)\r\n\
+  \r\n\
+  ####LP Validar si revis\xC3\xB3 la tabla y verific\xC3\xB3 las sentencias\r\n\
+  if sentencias.blank?\r\n\
+  \t\ttransition_errors << \"No es posible continuar, usted debe ver la tabla y aprobar las sentencias antes de enviar el formulario, por favor realice la verificaci\xC3\xB3n.\"\r\n\
+  end\r\n\
+  \r\n\
+  if !sentencias.blank?\r\n\
+  \tif tipo_persona_juridico == \"Autoridades\"\r\n\
+  \t\tif sentencias[\"data\"].blank?\r\n\
+  \t\t\t#::: NO HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA JURIDICA SEA AUTORIDADES :::#\r\n\
+  \t\t\timprimir_sin_sentencia_a = \"Si\"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_a)\r\n\
+  \t\telse\r\n\
+  \t\t\t#::: SI HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA JURIDICA SEA AUTORIDADES :::#\r\n\
+  \t\t\timprimir_sin_sentencia_a =\" \"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_a)\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif tipo_persona_juridico == \"MINREX\"\r\n\
+  \t\tif sentencias[\"data\"].blank?\r\n\
+  \t\t\t#::: NO HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA JURIDICA SEA MINREX :::#\r\n\
+  \t\t\timprimir_sin_sentencia_m = \"Si\"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_m)\r\n\
+  \t\telse\r\n\
+  \t\t\t#::: SI HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA JURIDICA SEA MINREX :::#\r\n\
+  \t\t\timprimir_sin_sentencia_m =\" \"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_m)\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif (tipo_solicitud == \"Laboral\") && (tipo_persona_juridico !=\"Autoridades\" && tipo_persona_juridico !=\"MINREX\")\r\n\
+  \t\tif sentencias[\"data\"].blank?\r\n\
+  \t\t\t#::: NO HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA PROPIO Y TIPO DE SOLICITUD SEA LABORAL :::#\r\n\
+  \t\t\timprimir_sin_sentencia_t = \"Si\"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_t)\r\n\
+  \t\telse\r\n\
+  \t\t\t#::: SI HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA PROPIO Y TIPO DE SOLICITUD SEA LABORAL :::#\r\n\
+  \t\t\timprimir_sin_sentencia_t =\" \"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_t)\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif (tipo_solicitud == \"Migraci\xC3\xB3n\") && (tipo_persona_juridico !=\"Autoridades\" && tipo_persona_juridico !=\"MINREX\")\r\n\
+  \t\tif sentencias[\"data\"].blank?\r\n\
+  \t\t\t#::: NO HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA PROPIO Y TIPO DE SOLICITUD SEA MIGRATORIA :::#\r\n\
+  \t\t\timprimir_sin_sentencia_mi = \"Si\"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_mi)\r\n\
+  \t\telse\r\n\
+  \t\t\t#::: SI HAY SENTENCIAS EN EL CAMPO Y TIPO DE PERSONA PROPIO Y TIPO DE SOLICITUD SEA MIGRATORIA :::#\r\n\
+  \t\t\timprimir_sin_sentencia_mi =\" \"\r\n\
+  \t\t\tform_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",imprimir_sin_sentencia_mi)\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  end\r\n\
+  #::: GENERAR C\xC3\x93DIGO UNICO Y DATOS PARA IMPRESI\xC3\x93N :::#\r\n\
+  codigo = form_data.get(\"codigo_unico_dij.codigo_unico_dij.dia\")\r\n\
+  \r\n\
+  #::: GENERAR FECHA PARA IMPRESION :::#\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n\
+  \r\n\
+  anno = Time.now.year\r\n\
+  mes = I18n.t(\"views.calendar.#{Time.now.strftime(\"%B\").downcase}\")\r\n\
+  dia = Time.now.day\r\n\
+  form_data.set(\"codigo_unico_dij.codigo_unico_dij.year\",anno)\r\n\
+  form_data.set(\"codigo_unico_dij.codigo_unico_dij.mes\",mes)\r\n\
+  form_data.set(\"codigo_unico_dij.codigo_unico_dij.dia\",dia)\r\n"
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: "/::: Mostrar Tabla de Sentencias :::/\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  function build_grib(elements, max_instances, table_name){\r\n    json_selector = $(\"#grid-saver\").val();\r\n    json_data = $(\"#\"+json_selector).html();\r\n    column_names = ['Seleccione'];\r\n    grid_data = [];\r\n    models = [{name:'Seleccione',index:4,sortable:false,editable:true,edittype:'checkbox',editoptions:{ value:\"true:false\"}, formatter: \"checkbox\", formatoptions: {disabled : false} }];\r\n    if(json_data.length != 0){\r\n      datatype = \"jsonstring\";\r\n      grid_data = JSON.parse(json_data)[\"data\"];\r\n      for(pos=0; pos < grid_data.length; pos++){\r\n        $.each(grid_data[pos], function(key,value){\r\n          column_name = key\r\n          if($.inArray(column_name,column_names) == -1){\r\n            column_names.push(column_name);\r\n            models.push({name:column_name,index:column_name.length,sortable:false,editable:false,edittype:'text'});\r\n          }\r\n        });\r\n      }\r\n    }else{\r\n    column = {'Seleccione':'true'};\r\n    ids = [];\r\n    datatype = \"local\";\r\n    for (i=1; i <= max_instances; i++){\r\n      for (pos=0; pos < elements.length; pos++){\r\n        for(pos2=0; pos2 < elements[pos].length; pos2++){\r\n          column_name = elements[pos][pos2][\"column_name\"]\r\n          if(typeof elements[pos][pos2][\"column_value\"] == \"undefined\"){\r\n            column_value = \"\";\r\n            selector = elements[pos][pos2][\"field_id\"].replace(\"instance_\",\"instance_\"+i);\r\n            if (selector.search(/[\\[\\]]/) != -1){\r\n              nodo = $(\"[name='\"+selector+\"']:checked\");\r\n              if (nodo.length > 0){\r\n                column_value = nodo.val();\r\n              }\r\n            }else{\r\n              column_value = $(\"#\"+selector).val();\r\n            }\r\n          }else{\r\n            column_value = elements[pos][pos2][\"column_value\"];\r\n            selector = elements[pos][pos2][\"field_id\"];\r\n          }\r\n          if(column_name.length != 0){\r\n            if ($.isEmptyObject(column[column_name])){\r\n              column[column_name] = column_value;\r\n            }\r\n            ids.push(selector);\r\n            if($.inArray(column_name,column_names) == -1){\r\n              column_names.push(column_name);\r\n              models.push({name:column_name,index:column_name.length,sortable:false,editable:elements[pos][pos2][\"editable\"],edittype:'text'});\r\n            }\r\n          }\r\n        }\r\n        if(! $.isEmptyObject(column)){\r\n          grid_data.push(column);\r\n        }\r\n        column = {'Seleccione':'true'};\r\n      }\r\n    }\r\n    }\r\n    if (grid_data.length != 0){\r\n      $(\"#grid\").jqGrid({\r\n      data: grid_data,\r\n      datastr: grid_data,\r\n      datatype: datatype,\r\n      height: 150,\r\n      rowNum: 800,\r\n      colNames: column_names,\r\n      multiboxonly: true,\r\n      altRows: true,\r\n      colModel: models,\r\n        viewrecords: true,\r\n        caption: table_name,\r\n        editurl: 'clientArray',\r\n        cellsubmit: 'clientArray',\r\n        cellEdit: true,\r\n        beforeEditCell:function(rowid,cellname,v,iRow,iCol){\r\n          lastrow = iRow;\r\n          lastcell = iCol;\r\n        }\r\n      });\r\n\
+  \r\n    }else{\r\n      $(\"#pager\").html(\"Disculpe, no existen datos para mostrar\");\r\n    }\r\n  }\r\n\
+  \r\n  function set_selected_rows(clean_hidden_field){\r\n    //alert('me estoy ejecutando');\r\n    var selected = [];\r\n    rows = $(\"#grid\").getRowData();\r\n    $.each(rows, function(_,value){\r\n      if(value[\"Seleccione\"] == \"true\"){\r\n        delete(value[\"Seleccione\"]);\r\n        selected.push(value);\r\n      }\r\n    });\r\n    json_grid_data = JSON.stringify({data:selected});\r\n    $(\"#\"+clean_hidden_field).html(json_grid_data);\r\n  }\r\n\
+  \r\n  function show_table(elements, max_instances, table_name, nodo_route, submit){\r\n    route = nodo_route.split(\".\");\r\n    switch(route.length){\r\n      case 1:\r\n        $(\"div#\"+route[0]+\".section-box\").after(\"<div class='dynamic-table'><a href='#' class='show-dinamic-table'><img class='table-ico' src='/assets/table.png'/>Ver en Tabla</a></div>\");\r\n        break;\r\n      case 2:\r\n        $(\"div#\"+route[0]+\".section-box\").find(\"div#\"+route[1]+\".part-box\").after(\"<div class='dynamic-table'><a href='#' class='show-dinamic-table'><img class='table-ico' src='/assets/table.png'/>Ver en Tabla</a></div>\");\r\n        break;\r\n      case 3:\r\n        $(\"div#\"+route[0]+\".section-box\").find(\"div#\"+route[1]+\".part-box\").find(\"#\"+route[2]).after(\"<div class='dynamic-table'><a href='#' class='show-dinamic-table'><img class='table-ico' src='/assets/table.png'/>Ver en Tabla</a></div>\");\r\n        break;\r\n    }\r\n    $(\".dynamic-table\").click(function() {\r\n      $( \"#dynamic-table\" ).dialog(\"open\");\r\n    });\r\n    $(\"#grid-saver\").val(submit);\r\n    $(\".show-dinamic-table\").on(\"click\", null, function(){\r\n      build_grib(elements, max_instances, table_name);\r\n    });\r\n  }\r\n\
+  \r\n  $( \"#dynamic-table\" ).dialog({\r\n    autoOpen: false,\r\n    show: \"blind\",\r\n    hide: \"explode\",\r\n    modal: true,\r\n    height: 'auto',\r\n    width: 'auto',\r\n    buttons: {\r\n      Ok: function() {\r\n        if(typeof(lastrow) != \"undefined\" && typeof(lastcell) != \"undefined\"){\r\n          $(\"#grid\").jqGrid(\"saveCell\",lastrow,lastcell);\r\n        }\r\n        grid_submit_data = $(\"#grid\").getRowData();\r\n        if (grid_submit_data.length != 0){\r\n          json_grid_data = JSON.stringify({data:grid_submit_data});\r\n          selector = $(\"#grid-saver\").val();\r\n          $(\"#\"+selector).html(json_grid_data);\r\n        }\r\n        set_selected_rows(\"field_mensaje_dij_mensaje_dij_campo_data\");\r\n        $(\"#dynamic-table\").html(\"<table id='grid'></table><div id='pager'></div>\");\r\n          $( this ).dialog( \"close\" );\r\n      }\r\n    }\r\n  });\r\n\
+  \r\n  show_table( {}, 1, \"Sentencias\", \"mensaje_dij\", \"field_mensaje_dij_mensaje_dij_campo_oculto\");\r\n\
+  });\r\n\
+  \r\n\
+  //::: DV: Cambiar nombre secci\xC3\xB3n y color  paso 1::://\r\n\
+  $(document).ready(function(){ \r\n   $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Tipo de Solicitud\") {  \r\n        $(this).html(\"Tipo de Solicitud\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Datos del Solicitante\") {  \r\n        $(this).html(\"Gesti\xC3\xB3n de Solicitud\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Datos del Titular\") {  \r\n        $(this).html(\"Informaci\xC3\xB3n del Titular\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Recepci\xC3\xB3n Ventanilla \xC3\x9Anica\") {  \r\n        $(this).html(\"Recepci\xC3\xB3n de Ventanilla \xC3\x9Anica\"); \r\n      }\r\n    });\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){ \r\n  TiDoc = $('#field_datos_del_titular_rp_datos_basicos_de_persona_natural_tipo_de_documento');\r\n  nacio = $('#field_datos_del_titular_rp_datos_basicos_de_persona_natural_nacionalidad');\r\n  if ($(TiDoc).html() == \"Cedula\") {\r\n    $(nacio).html(\"Nacional\");\r\n  } else if($(TiDoc).html() == \"Pasaporte\") {\r\n    $(nacio).html(\"Extranjero\");\r\n  }\r\n\
+  });"

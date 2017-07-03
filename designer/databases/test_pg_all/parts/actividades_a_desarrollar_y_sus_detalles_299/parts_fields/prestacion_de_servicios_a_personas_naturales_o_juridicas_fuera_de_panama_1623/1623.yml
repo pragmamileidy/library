@@ -1,0 +1,30 @@
+--- 
+id: 1623
+part_id: 299
+field_id: 68
+name: "Prestaci\xC3\xB3n de servicios a personas naturales o jur\xC3\xADdicas fuera de Panam\xC3\xA1"
+created_at: 2012-06-08 00:18:05 Z
+updated_at: 2017-06-04 00:21:48.839930 Z
+label: "Prestaci\xC3\xB3n de servicios a personas naturales o jur\xC3\xADdicas fuera de Panam\xC3\xA1"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 57ae4d43-6156-4942-a4a6-74904c6973f7
+version: 20170603-202148

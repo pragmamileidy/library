@@ -1,0 +1,24 @@
+--- 
+id: 3294
+section_id: 549
+part_id: 38
+name: "Copia de la p\xC3\xA1gina principal del pasaporte"
+created_at: 2014-07-05 14:07:46 Z
+updated_at: 2017-01-04 21:16:18.364608 Z
+label: "Copia de la p\xC3\xA1gina principal del pasaporte"
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  #tipo =  form_data.get("datos_del_titular_rp_instance_#{route.section.instance}.datos_basicos_de_persona_natural.tipo_de_documento")
+  #tipo1 =  form_data.get("datos_del_titular_rp.datos_basicos_de_persona_natural.tipo_de_documento")
+  #tipo == "Pasaporte" or tipo1 == "Pasaporte"
+  
+  @owner["natural_person_type"] == "foreign_citizen"
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

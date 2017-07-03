@@ -1,0 +1,30 @@
+--- 
+id: 515
+part_id: 116
+field_id: 10
+name: "\xC3\x81rea de Inversi\xC3\xB3n"
+created_at: 2011-11-22 15:42:03 Z
+updated_at: 2017-06-04 00:23:39.726225 Z
+label: "\xC3\x81rea de Inversi\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: "#Se despliega si en el Tipo de Solicitud se selecciona \"Viaje con Visa de Corta Estancia\" o \"Solicitud de Visa - Motivo de viaje\" y en Motivo de Viaje se selecciona \"Comerciantes e inversionistas de Leyes Especiales\""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d78d4b04-b007-4053-ba0d-58dae441abeb
+version: 20170603-202339

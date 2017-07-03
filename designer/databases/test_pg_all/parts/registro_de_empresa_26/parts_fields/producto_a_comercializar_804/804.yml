@@ -1,0 +1,30 @@
+--- 
+id: 804
+part_id: 26
+field_id: 10
+name: Producto a Comercializar
+created_at: 2012-03-22 14:21:14 Z
+updated_at: 2017-06-04 00:30:46.034700 Z
+label: Producto a Comercializar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Por favor introduzca el nombre del producto a comercializar
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6858e6e7-28da-4007-97ac-1fc2c58952ca
+version: 20170603-203046

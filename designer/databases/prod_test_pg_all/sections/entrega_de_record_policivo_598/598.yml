@@ -1,0 +1,17 @@
+--- 
+id: 598
+name: Entrega de Record Policivo
+description: "Secci\xC3\xB3n creada para los funcionarios de Ventanilla de la DIJ. Se coloca la opci\xC3\xB3n \"Confirmar Entrega\", donde el funcionario indica que realiz\xC3\xB3 la entrega"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2017-02-27 14:16:28.906265 Z
+updated_at: 2017-02-27 14:30:06.141474 Z
+status: Draft
+label: ""
+hint: ""
+serial: 8088-9757-6462-4162-8718

@@ -1,0 +1,30 @@
+--- 
+id: 2338
+part_id: 430
+field_id: 31
+name: "Carta o certificaci\xC3\xB3n de trabajo"
+created_at: 2012-08-13 13:41:26 Z
+updated_at: 2017-06-04 00:22:12.105860 Z
+label: "Carta o certificaci\xC3\xB3n de trabajo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 48fe41dd-44a7-4f26-b6ee-e51f008d5dbf
+version: 20170603-202212

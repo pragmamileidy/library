@@ -1,0 +1,16 @@
+--- 
+id: 2439
+design_id: 180
+section_id: 457
+name: Datos de la Obra
+created_at: 2013-03-07 13:52:16 Z
+updated_at: 2014-04-24 14:55:22 Z
+label: Datos de la Obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2635\":{\"2958\":{\"required\":\"required\"},\"2959\":{\"required\":\"required\"},\"2960\":{\"required\":\"required\"},\"2961\":{\"required\":\"unrequired\"},\"2962\":{\"required\":\"required\"},\"2963\":{\"required\":\"required\"},\"2964\":{\"required\":\"unrequired\"},\"2965\":{\"required\":\"required\"},\"2966\":{\"required\":\"required\"},\"2967\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 7

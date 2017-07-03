@@ -1,0 +1,477 @@
+--- 
+id: 100
+name: Paso 1 - Datos de la Empresa
+label: Datos de la Empresa
+description: "<br/>Datos de la solicitud, el usuario y la Empresa solicitante<br/>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 30
+created_at: 2012-04-05 10:24:58 Z
+updated_at: 2015-10-03 19:12:28 Z
+include: "{\"1200\":{\"1735\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3342\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"1737\":{\"1200\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1652\":{\"2050\":{\"2135\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2136\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2137\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2138\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2139\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2150\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2141\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2142\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2143\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2144\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1653\":{\"2053\":{\"2152\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: "#FTellez\r\n\
+  #integracion de usuarios\r\n\
+  _tim = form_data.get(\"solicitud_para.activacion_desactivacion.activacion_o_desactivacion_de_usuario_siga\")\r\n\
+  if (_tim==\"Activaci\xC3\xB3n\")\r\n\
+  _malas = []\r\n\
+  _buenas = []\r\n\
+  _ci_dupli = []\r\n\
+  _bol = false\r\n    #integracion de los 5 usuarios\r\n    (1..5).each do |_num|\r\n        _cedula = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.cedula\")\r\n        if !_cedula.blank?\r\n            result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula}\").parsed_response\r\n            _usuario = result[\"response\"]\r\n            if !_usuario.blank?\r\n                _buenas << _cedula\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.cedula\",_usuario[\"cedula\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.primer_nombre\",_usuario[\"primerNombre\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.segundo_nombre\",_usuario[\"segundoNombre\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.primer_apellido\",_usuario[\"primerApellido\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.segundo_apellido\",_usuario[\"segundoApellido\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.apellido_de_casada\",_usuario[\"apellidoCasada\"])\r\n                #Validaci\xC3\xB3n: c\xC3\xA9dula de director no sea de un difunto\r\n                difunto = _usuario[\"mensaje\"]\r\n                if (difunto != \"ND\")\r\n                    transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{_cedula} del director #{_num}, corresponde a un ciudadano Difunto. \"\r\n                end\r\n                _usuario = nil\r\n            else\r\n                _malas << _cedula\r\n            end\r\n        end\r\n    end\r\n    if !_malas.blank?\r\n        transition_errors << \"La(s) c\xC3\xA9dula(s) #{_malas.join(\",\")}, no se encuentran en el sistema. Por favor, verifique. \"\r\n    end\r\n    \r\n    #validacion de cedulas duplicadas\r\n    (0..4).each do |_pos|\r\n        (0..4).each do |_pos2|\r\n            if _pos != _pos2    \r\n                if !_buenas[_pos].blank? && !_buenas[_pos2].blank?\r\n                    if _buenas[_pos] == _buenas[_pos2] \r\n                        _ci_dupli << _buenas[_pos]\r\n                        _ci_dupli.uniq! \r\n                        _bol = true\r\n                    end\r\n                end\r\n            end\r\n        end\r\n    end\r\n    if _bol\r\n        transition_errors << \"La(s) c\xC3\xA9dula(s) #{_ci_dupli.join(\",\")} fueron ingresadas mas de una vez. Por favor, revisar el valor\"\r\n    end\r\n    \r\n\
+  else\r\n\
+  _malas_d = []\r\n\
+  _buenas_d = []\r\n\
+  _ci_dupli_d = []\r\n\
+  bol_d = false\r\n    (1..5).each do |_num|\r\n        _cedula = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.cedula\")\r\n\
+  \r\n        if !_cedula.blank?\r\n\
+  \r\n            result = WebserviceConsumer.get( '/service/bdin_autoridad_aduanas_obtener_datos_persona_natural/find.json?cedula=' + \"#{_cedula}\").parsed_response\r\n            _usuario = result[\"response\"]\r\n            if !_usuario.blank?\r\n                _buenas_d << _cedula\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.cedula\",_usuario[\"cedula\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.primer_nombre\",_usuario[\"primerNombre\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.segundo_nombre\",_usuario[\"segundoNombre\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.primer_apellido\",_usuario[\"primerApellido\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.segundo_apellido\",_usuario[\"segundoApellido\"])\r\n                form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_#{_num}.apellido_de_casada\",_usuario[\"apellidoCasada\"])\r\n                _usuario = nil\r\n            else\r\n                _malas_d << _cedula\r\n            end\r\n        end\r\n    end\r\n    if !_malas_d.blank?\r\n        transition_errors << \"La(s) c\xC3\xA9dula(s) #{_malas_d.join(\",\")} no se encuentran en el sistema. Por favor, verifique. \"\r\n    end\r\n    #validacion para que no se ingresen mas de una ves la misma cedula\r\n    (0..4).each do |_pos|\r\n        (0..4).each do |_pos2|\r\n            if _pos != _pos2\r\n                if !_buenas_d[_pos].blank? && !_buenas_d[_pos2].blank? \r\n                    if _buenas_d[_pos] == _buenas_d[_pos2]\r\n                    _ci_dupli_d << _buenas_d[_pos]\r\n                    _ci_dupli_d.uniq!\r\n                    bol_d = true\r\n                    end\r\n                end\r\n            end\r\n        end\r\n    end\r\n    if bol_d\r\n        transition_errors << \"La(s) cedula(s) #{_ci_dupli_d.join(\",\")} fueron ingresadas mas de una vez. Por favor, verifique. \"\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #aVargas\r\n\
+  #_tim = form_data.get(\"solicitud_para.activacion_desactivacion.activacion_o_desactivacion_de_usuario_siga\")\r\n\
+  #if (_tim==\"Activaci\xC3\xB3n\")\r\n\
+  \r\n\
+  #_cedula1 = #form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula1}\").parsed_response\r\n\
+  #_usuario1 = result[\"response\"]\r\n\
+  #if _usuario1.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario1\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.cedula\",_usuario1[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.primer_nombre\",_usuario1[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.segundo_nombre\",_usuario1[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.primer_apellido\",_usuario1[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.segundo_apellido\",_usuario1[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.apellido_de_casada\",_usuario1[\"apellidoCasada\"])\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula2 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula2}\").parsed_response\r\n\
+  #_usuario2 = result[\"response\"]\r\n\
+  #if _usuario2.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario2\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.cedula\",_usuario2[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.primer_nombre\",_usuario2[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.segundo_nombre\",_usuario2[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.primer_apellido\",_usuario2[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.segundo_apellido\",_usuario2[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.apellido_de_casada\",_usuario2[\"apellidoCasada\"])\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula3 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula3}\").parsed_response\r\n\
+  #_usuario3 = result[\"response\"]\r\n\
+  #if _usuario3.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario3\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.cedula\",_usuario3[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.primer_nombre\",_usuario3[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.segundo_nombre\",_usuario3[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.primer_apellido\",_usuario3[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.segundo_apellido\",_usuario3[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.apellido_de_casada\",_usuario3[\"apellidoCasada\"])\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula4 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula4}\").parsed_response\r\n\
+  #_usuario4 = result[\"response\"]\r\n\
+  #if _usuario4.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario4\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.cedula\",_usuario4[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.primer_nombre\",_usuario4[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.segundo_nombre\",_usuario4[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.primer_apellido\",_usuario4[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.segundo_apellido\",_usuario4[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.apellido_de_casada\",_usuario4[\"apellidoCasada\"])\r\n\
+  \t\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula5 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula5}\").parsed_response\r\n\
+  #_usuario5 = result[\"response\"]\r\n\
+  #if _usuario5.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario5\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.cedula\",_usuario5[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.primer_nombre\",_usuario5[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.segundo_nombre\",_usuario5[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.primer_apellido\",_usuario5[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.segundo_apellido\",_usuario5[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.apellido_de_casada\",_usuario5[\"apellidoCasada\"])\r\n\
+  \t\r\n\
+  #end\r\n\
+  \r\n\
+  #else\r\n\
+  #############ADUANAS######################\r\n\
+  \r\n\
+  #_cedula1 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_autoridad_aduanas_obtener_datos_persona_natural/find.json?cedula=' + \"#{_cedula1}\").parsed_response\r\n\
+  #_usuario1 = result[\"response\"]\r\n\
+  #if _usuario1.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario1\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.cedula\",_usuario1[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.primer_nombre\",_usuario1[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.segundo_nombre\",_usuario1[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.primer_apellido\",_usuario1[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.segundo_apellido\",_usuario1[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.apellido_de_casada\",_usuario1[\"apellidoCasada\"])\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula2 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_autoridad_aduanas_obtener_datos_persona_natural/find.json?cedula=' + \"#{_cedula2}\").parsed_response\r\n\
+  #_usuario2 = result[\"response\"]\r\n\
+  #if _usuario2.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario2\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.cedula\",_usuario2[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.primer_nombre\",_usuario2[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.segundo_nombre\",_usuario2[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.primer_apellido\",_usuario2[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.segundo_apellido\",_usuario2[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.apellido_de_casada\",_usuario2[\"apellidoCasada\"])\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula3 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_autoridad_aduanas_obtener_datos_persona_natural/find.json?cedula=' + \"#{_cedula3}\").parsed_response\r\n\
+  #_usuario3 = result[\"response\"]\r\n\
+  #if _usuario3.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario3\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.cedula\",_usuario3[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.primer_nombre\",_usuario3[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.segundo_nombre\",_usuario3[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.primer_apellido\",_usuario3[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.segundo_apellido\",_usuario3[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.apellido_de_casada\",_usuario3[\"apellidoCasada\"])\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula4 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_autoridad_aduanas_obtener_datos_persona_natural/find.json?cedula=' + \"#{_cedula4}\").parsed_response\r\n\
+  #_usuario4 = result[\"response\"]\r\n\
+  #if _usuario4.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario4\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.cedula\",_usuario4[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.primer_nombre\",_usuario4[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.segundo_nombre\",_usuario4[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.primer_apellido\",_usuario4[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.segundo_apellido\",_usuario4[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.apellido_de_casada\",_usuario4[\"apellidoCasada\"])\r\n\
+  \t\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #_cedula5 = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.cedula\")\r\n\
+  #_error = nil\r\n\
+  #Obtener datos de Contacto\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get( '/service/bdin_autoridad_aduanas_obtener_datos_persona_natural/find.json?cedula=' + \"#{_cedula5}\").parsed_response\r\n\
+  #_usuario5 = result[\"response\"]\r\n\
+  #if _usuario5.nil?\r\n\
+  \t#_error = \"#{_error}\" + \"EL numero de cedula que ingreso no se encuentra en el sistema. Favor verifique.\"\r\n\
+  #end\r\n\
+  \r\n\
+  #if !_error.nil?\t\r\n\
+  \t#transition_errors << \"#{_error}\"\r\n\
+  #else\r\n\
+  \r\n    #usuario5\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.cedula\",_usuario5[\"cedula\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.primer_nombre\",_usuario5[\"primerNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.segundo_nombre\",_usuario5[\"segundoNombre\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.primer_apellido\",_usuario5[\"primerApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.segundo_apellido\",_usuario5[\"segundoApellido\"])\r\n    #form_data.set(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.apellido_de_casada\",_usuario5[\"apellidoCasada\"])\r\n\
+  \t\r\n\
+  #end\r\n\
+  \r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  # Validaci\xC3\xB3n de duplicaci\xC3\xB3n de c\xC3\xA9dula\r\n\
+  \r\n\
+  \r\n\
+  #dato = Array.new\r\n\
+  \r\n\
+  #dato[0] = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_1.cedula\")\r\n\
+  #dato[1] = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_2.cedula\")\r\n\
+  #dato[2] = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_3.cedula\")\r\n\
+  #dato[3] = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_4.cedula\")\r\n\
+  #dato[4] = form_data.get(\"datos_de_usuarios_para_activacion_o_desactivacion.datos_de_usuarios_para_activacion_o_desactivacion_tim_instance_5.cedula\")\r\n\
+  #dato.length.times do\r\n #|x|\r\n #a=0\r\n #dato.length.times do\r\n # |y|\r\n # a=a+1 if dato[x-1]==dato[y-1]\r\n #end\r\n #if a>1 \r\n  #transition_errors << \"Esta agregando mas de una vez la cedula de un contacto\"\r\n #end\r\n\
+  #end\r\n"
+views: 
+back_step: Paso 0 - Ingresar Datos
+next_step: Paso 2 - Datos de Usuario(s)
+position: 1
+ajax_calls: |
+  $(document).ready(function(){
+      $.each( $('[id*=persona_de_contacto_perosona_de_contacto_]'), function(index, campo) {
+  
+         var pos = (this.id).match(/_instance_[\d][\d]/);
+         if (pos == null){
+          pos = (this.id).match(/_instance_[\d]/);
+       }
+  
+       var mod1 = "#field_persona_de_contacto_perosona_de_contacto";
+       var mod2 = "_cedula";
+       var nombre = "_segundo_nombre";
+       var apellido = "_segundo_apellido";
+  
+       var mod3 = mod1.concat(pos);
+       var dato = mod3.concat(mod2);
+       var nomb = mod3.concat(nombre);
+       var apell = mod3.concat(apellido);
+  
+      if($(nomb).val() == ""){
+           $(nomb).removeAttr("disabled");
+      }
+  
+      if($(apell).val() == ""){
+           $(apell).removeAttr("disabled");
+      }
+  
+      if($(dato).html() == ""){
+          $(dato).parents(".part-box").hide();
+      }else{
+          $(dato).parents(".part-box").show();
+      }
+  
+      $(dato).parents(".part-box").next().hide();
+  
+      });
+  
+  });
+

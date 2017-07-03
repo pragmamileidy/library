@@ -1,0 +1,105 @@
+--- 
+id: 3005
+name: Paso 1 - Datos del Solicitante
+label: Datos del Solicitante
+description: ""
+fill_step_id: 1614
+created_at: 2014-11-06 19:02:53 Z
+updated_at: 2014-12-19 21:33:51 Z
+include: "{\"4589\":{\"3378\":{\"3805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3812\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3814\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3813\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3815\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3806\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3807\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3379\":{\"572\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4602\":{\"3141\":{\"3601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3603\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4586\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |
+  # Inicializacion de datos generales
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get( '/consecutive/generador_permiso_prueba/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+  
+  
+  
+  form_data.set("datos_del_solicitante.datos_del_solicitante.cedula", @owner["national_id"])
+  form_data.set("datos_del_solicitante.datos_del_solicitante.primer_nombre", @owner["first_name"])
+  form_data.set("datos_del_solicitante.datos_del_solicitante.segundo_nombre", @owner["second_name"])
+  form_data.set("datos_del_solicitante.datos_del_solicitante.primer_apellido", @owner["last_name"])
+  form_data.set("datos_del_solicitante.datos_del_solicitante.segundo_apellido", @owner["second_last_name"])
+  
+  form_data.set("datos_del_solicitante.datos_de_ubicacion.direccion", @owner["full_address"])
+  form_data.set("datos_del_solicitante.datos_de_ubicacion.numero_de_telefono", @owner["fixed_number"])
+  form_data.set("datos_del_solicitante.datos_de_ubicacion.correo_electronico", @owner["email"])
+
+on_transition: "#On transition, paso 1\r\n\
+  #::: INTEGRACION PARA OBTENER LOS DATOS - DV :::#\r\n\
+  \r\n\
+  (1..3).each do |_num|\r\n\
+  \t_tipo = form_data.get(\"tipo_de_documento_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \tnro_documento = form_data.get(\"tipo_de_documento_instance_#{_num}.tipo_documento_mici.no_documento\")\r\n\
+  \t#::: TIPO DE DOCUMENTO CEDULA  :::#\r\n\
+  \tif _tipo != \"RUC\"\r\n\
+  \t\tif _tipo == \"C\xC3\xA9dula\"\r\n\
+  \t\t\tresult = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]\r\n\
+  \t\t\tif datos.blank? \r\n\
+  \t\t\t\ttransition_errors << \"La c\xC3\xA9dula suministrada no existe en el sistema, favor revise  el n\xC3\xBAmero especificado \" + \"#{_num}\"\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.tipo_de_documento.tipo_de_identificacion\",_tipo)\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.identificacion\",nro_documento)\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.primer_nombre\",datos[\"primerNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.primer_apellido\",datos[\"primerApellido\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.segundo_nombre\",datos[\"segundoNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.segundo_apellido\",datos[\"segundoApellido\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.fecha_de_nacimiento\",datos[\"fechaNacimiento\"])\r\n                form_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.edad\",datos[\"edad\"])\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \r\n\
+  \t#::: TIPO DE DOCUMENTO PASAPORTE  :::#\r\n\
+  \tif _tipo == \"Pasaporte\"\r\n\
+  \t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.tipo_de_documento.tipo_de_identificacion\",_tipo)\r\n\
+  \t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.identificacion\",nro_documento)\r\n\
+  \tend\r\n\
+  \r\n\
+  \t#::: TIPO DE DOCUMENTO RUC  :::#\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \t\ttipoSoc = form_data.get(\"tipo_de_documento_instance_#{_num}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_empresas/find.json?ruc=' + \"#{nro_documento}\" + '&tipo_sociedad=' + \"#{tipoSoc}\")).parsed_response\r\n\
+  \t\t\tdata = result[\"response\"] \r\n\
+  \t\t\tif data.blank? \r\n\
+  \t\t\t\ttransition_errors << \"El RUC suministrado no existe en el sistema, favor revise  el n\xC3\xBAmero especificado \" + \"#{_num}\"\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.tipo_de_documento.tipo_de_identificacion\",_tipo)\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_de_la_empresa.ruc\",nro_documento)\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_de_la_empresa.tipo_sociedad\",tipoSoc)\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_de_la_empresa.nombre\",data[\"nombre_empresa\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_de_la_empresa.numero_de_telefono\",data[\"tlf_celular\"])\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif _tipo == \"\"\r\n\
+  \t\tform_data.set(\"datos_de_la_persona_instance_#{_num}.tipo_de_documento.tipo_de_identificacion\", \"\")\r\n\
+  \tend\r\n\
+  \t#::: USADO PARA PRINT DESIGNS :::#\r\n\
+  \ta = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.primer_nombre\")\r\n\
+  \tb = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.segundo_nombre\")\r\n\
+  \tc = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.primer_apellido\")\r\n\
+  \td = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.segundo_apellido\")\r\n\
+  \te = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.apellido_de_casada\")\r\n\
+  \t_nom_c = \"#{a} #{b} #{c} #{d} #{e}\"\r\n\
+  \tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.nombre_completo\",_nom_c)\r\n\
+  end"
+views: 
+back_step: ""
+next_step: Paso 2- Datos de la Persona
+position: 1
+ajax_calls: "// OCULTAR CAMPO TIPO DE SOCIEDAD CUANDO CAMPO TIPO DE DOCUMENTO ES DISTINTO DE RUC //\r\n\
+  $.each( $('[id*=field_tipo_de_documento_]'), function(index, campo) {\r\n        ocultarcampos(this.value,this.id);\r\n        if ($(campo).attr('id').match(/tipo_documento_mici_tipo_de_documento/)) {\r\n                $(campo).attr('onchange', 'ocultarcampos(this.value,this.id);')\r\n        }\r\n\
+  });  \r\n\
+  function ocultarcampos(valorcampo, idcampo) \r\n        {\r\n        var coincide = idcampo.match(/[\\d]_tipo_documento_mici_tipo_de_documento/);\r\n        var pos = \"\";\r\n        if (coincide != undefined) {\r\n                pos = coincide[0].split('_');\r\n                var inicioRuta   = \"#field_tipo_de_documento_instance_\";\r\n                var campoTipoDoc = \"_tipo_documento_mici_tipo_de_documento\";\r\n                var campoTipoSoc = \"_tipo_documento_mici_tipo_sociedad\";\r\n                var campoNroDoc  = \"_tipo_documento_mici_no_documento\";\r\n\
+  \r\n                var coincide2  = inicioRuta.concat(pos)\r\n                var DocNum = coincide2.concat(campoNroDoc);\r\n\
+  \r\n                var Sociedad = inicioRuta + pos[0] + campoTipoSoc;\r\n                if (valorcampo == \"\") {\r\n                        $(Sociedad).parent().parent().hide();\r\n                        $(Sociedad).val(\"\");\r\n                } else if (valorcampo == \"C\xC3\xA9dula\" || valorcampo == \"Pasaporte\") {\r\n                       \r\n                        $(Sociedad).parent().parent().hide();\r\n                } else {\r\n                       \r\n                        $(Sociedad).parent().parent().show();\r\n                }\r\n        }\r\n\
+  }\r\n\
+  $(document).ready(function(){\r\n        $.each( $('[id*=_tipo_de_documento_]'), function(index, campo) {    \r\n                var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n                if (pos == null){\r\n                  pos = (this.id).match(/_instance_[\\d]/);\r\n                }\r\n                var inicRuta = \"#field_tipo_de_documento\";\r\n                var tDoc = \"_tipo_documento_mici_tipo_de_documento\";\r\n                var NumDoc = \"_tipo_documento_mici_no_documento\";\r\n                var coincide = inicRuta.concat(pos);\r\n                var TiDoc = coincide.concat(tDoc);\r\n                var NroDocu = coincide.concat(NumDoc);\r\n                $(TiDoc).change(function(){\r\n                        TiDoc = $(this).val();\r\n                        if(TiDoc == \"C\xC3\xA9dula\"){\r\n                                $(NroDocu).val(\"\");\r\n                        }\r\n                        if(TiDoc == \"Pasaporte\"){\r\n                                $(NroDocu).val(\"\");\r\n                        }\r\n                        if(TiDoc == \"RUC\"){\r\n                                $(NroDocu).val(\"\");\r\n                        }\r\n                });     \r\n        });\r\n\
+  });"

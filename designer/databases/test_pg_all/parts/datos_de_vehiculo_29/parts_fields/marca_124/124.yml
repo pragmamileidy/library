@@ -1,0 +1,30 @@
+--- 
+id: 124
+part_id: 29
+field_id: 10
+name: Marca
+created_at: 2011-11-03 21:00:23 Z
+updated_at: 2017-06-04 00:25:32.317837 Z
+label: Nombre de la Marca
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d32d3a55-b42a-4546-8491-a17b9c17fc7b
+version: 20170603-202532

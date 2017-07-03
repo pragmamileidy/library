@@ -1,0 +1,19 @@
+--- 
+id: 1234
+name: Paso 0 - Llenado
+label: Llenado
+description: ""
+fill_step_id: 615
+created_at: 2013-04-08 16:21:02 Z
+updated_at: 2013-04-09 16:52:19 Z
+include: "{\"2578\":{\"2756\":{\"3130\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2579\":{\"2760\":{\"3132\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3133\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3134\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3135\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3136\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3137\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3138\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2772\":{\"3125\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3126\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3128\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3129\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

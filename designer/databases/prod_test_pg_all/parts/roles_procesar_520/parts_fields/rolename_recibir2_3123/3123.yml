@@ -1,0 +1,30 @@
+--- 
+id: 3123
+part_id: 520
+field_id: 10
+name: rolename_recibir2
+created_at: 2013-04-04 15:36:34 Z
+updated_at: 2017-06-04 00:31:34.518361 Z
+label: rolename_recibir2
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 17
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1a50c357-1c3a-4a33-ad9d-1e3639dc7b81
+version: 20170603-203134

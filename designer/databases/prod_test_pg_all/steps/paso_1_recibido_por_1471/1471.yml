@@ -1,0 +1,19 @@
+--- 
+id: 1471
+name: Paso 1- Recibido por
+label: "Recepci\xC3\xB3n de la Solicitud"
+description: "Recepci\xC3\xB3n de la Solicitud"
+fill_step_id: 730
+created_at: 2013-07-18 14:40:26 Z
+updated_at: 2013-07-18 14:40:26 Z
+include: "{\"3175\":{\"2791\":{\"3209\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit,print_form
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

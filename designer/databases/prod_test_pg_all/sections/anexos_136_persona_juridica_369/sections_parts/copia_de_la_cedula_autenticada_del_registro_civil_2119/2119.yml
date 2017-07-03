@@ -1,0 +1,19 @@
+--- 
+id: 2119
+section_id: 369
+part_id: 38
+name: "Copia de la c\xC3\xA9dula  autenticada del Registro Civil"
+created_at: 2012-08-09 20:07:11 Z
+updated_at: 2017-02-15 17:23:36.647296 Z
+label: "C\xC3\xA9dula autenticada del Registro Civil de la Junta Directiva"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "C\xC3\xA9dula autenticada del Registro Civil de sus directores, dignatarios, representantes legales y apoderado general, si lo hubiese; en caso de extranjeros copia del pasaporte autenticado ante el respectivo consulado o embajada"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 22

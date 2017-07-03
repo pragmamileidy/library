@@ -1,0 +1,53 @@
+--- 
+id: 272
+name: Entidad Check PRUEBA  191
+description: Entidad Check PRUEBA  191
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-04-06 22:18:55 Z
+updated_at: 2013-04-06 22:18:55 Z
+values_list: ""
+keys_list: ""
+field_type: checkbox
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _value = ""
+  _key = ""
+  dat = @application["id"].to_s
+  result = WebserviceConsumer.get('/preconfigured_services/get_application_config.json?id='+dat).parsed_response
+  _resp = result["response"]
+  _listaent = _resp["EntidadesEvaluadoras"]
+  _pos = ""
+  if !_listaent.blank?      
+    _listaent.each {|_lista|
+      _e = _lista.last["evaluacion_de_la_entidad"]
+      if _e && !_e["siglas"].blank?
+        _value = _value + _e["entidad"] + ","
+        _key = _key + _e["siglas"] + ","
+      end
+    }
+  _value = _value.chop
+  _key= _key.chop
+  @values_of_list = _value.split(",")
+  @keys_of_list =  _key.split(",")
+  else
+   @values_of_list = [""]
+   @keys_of_list =  [""]
+  end
+serial: 

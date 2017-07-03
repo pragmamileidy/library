@@ -1,0 +1,30 @@
+--- 
+id: 194
+name: Conforme
+description: "\"Conforme\",\"No Conforme\""
+version: 
+status: Draft
+label: Conforme
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 16:06:52 Z
+updated_at: 2012-07-23 16:06:52 Z
+values_list: "\"Conforme\",\"No Conforme\""
+keys_list: "\"Conforme\",\"No Conforme\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

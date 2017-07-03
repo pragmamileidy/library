@@ -1,0 +1,30 @@
+--- 
+id: 3516
+part_id: 685
+field_id: 10
+name: Fecha
+created_at: 2014-02-18 15:26:22 Z
+updated_at: 2017-06-04 00:25:13.954191 Z
+label: Fecha
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Fecha de registro del adjunto en la solicitud
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 65dfa521-2c16-458d-bebe-ffad6da834dd
+version: 20170603-202513

@@ -1,0 +1,16 @@
+--- 
+id: 2124
+design_id: 164
+section_id: 185
+name: Cerrado por
+created_at: 2012-09-03 20:50:03 Z
+updated_at: 2014-03-18 05:58:40 Z
+label: Cierre de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1710\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

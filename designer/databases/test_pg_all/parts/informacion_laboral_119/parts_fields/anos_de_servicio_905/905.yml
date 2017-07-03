@@ -1,0 +1,30 @@
+--- 
+id: 905
+part_id: 119
+field_id: 1
+name: "A\xC3\xB1os de Servicio"
+created_at: 2012-03-28 22:52:22 Z
+updated_at: 2017-06-04 00:31:45.955614 Z
+label: "A\xC3\xB1os de Servicio"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 24
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 92a65381-050d-4286-aeac-bcfd49b35fff
+version: 20170603-203145

@@ -1,0 +1,30 @@
+--- 
+id: 2153
+part_id: 405
+field_id: 10
+name: Primer Nombre
+created_at: 2012-07-23 22:29:55 Z
+updated_at: 2017-06-04 00:24:29.914344 Z
+label: Primer Nombre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4de70989-a7b1-4683-892d-90f95c5e5c77
+version: 20170603-202429

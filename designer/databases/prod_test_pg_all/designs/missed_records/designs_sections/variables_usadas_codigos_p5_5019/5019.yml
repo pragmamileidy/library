@@ -1,0 +1,16 @@
+--- 
+id: 5019
+design_id: 276
+section_id: 495
+name: "Variables Usadas C\xC3\xB3digos P5"
+created_at: 2015-12-22 23:23:07.175556 Z
+updated_at: 2015-12-22 23:23:07.175556 Z
+label: Variables
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2784\":{\"3171\":{\"required\":\"required\"},\"3170\":{\"required\":\"required\"},\"3175\":{\"required\":\"required\"},\"3176\":{\"required\":\"required\"},\"3177\":{\"required\":\"required\"},\"3388\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 24

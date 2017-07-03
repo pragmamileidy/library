@@ -1,0 +1,16 @@
+--- 
+id: 4742
+design_id: 262
+section_id: 456
+name: tipo de Participantes de la Obra
+created_at: 2015-01-09 14:01:05 Z
+updated_at: 2015-09-30 18:11:59 Z
+label: tipo de Participantes de la Obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2634\":{\"3051\":{\"required\":\"required\"},\"2974\":{\"required\":\"required\"},\"2954\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 9

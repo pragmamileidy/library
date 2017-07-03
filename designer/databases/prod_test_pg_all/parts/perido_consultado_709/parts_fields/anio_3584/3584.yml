@@ -1,0 +1,30 @@
+--- 
+id: 3584
+part_id: 709
+field_id: 10
+name: Anio
+created_at: 2014-03-20 14:20:28 Z
+updated_at: 2017-06-04 00:26:34.896938 Z
+label: "A\xC3\xB1o"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 098cc5fc-602a-42c1-a5ce-8c8e66a0568e
+version: 20170603-202634

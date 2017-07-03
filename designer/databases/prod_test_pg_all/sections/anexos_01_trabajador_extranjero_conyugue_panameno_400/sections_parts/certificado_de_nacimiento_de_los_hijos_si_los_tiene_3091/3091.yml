@@ -1,0 +1,19 @@
+--- 
+id: 3091
+section_id: 400
+part_id: 38
+name: Certificado de nacimiento de los hijos (Si los tiene)
+created_at: 2014-03-28 19:49:01 Z
+updated_at: 2015-09-07 14:12:02 Z
+label: Certificado de nacimiento de los hijos (Si los tiene)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: En caso de Tener mas de un (1) hijo, favor comprimir las certificaciones y subirlas en un documento .rar
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

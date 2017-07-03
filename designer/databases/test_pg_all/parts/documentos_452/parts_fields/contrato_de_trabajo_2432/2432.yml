@@ -1,0 +1,30 @@
+--- 
+id: 2432
+part_id: 452
+field_id: 31
+name: "Contrato de trabajo "
+created_at: 2012-08-17 19:40:27 Z
+updated_at: 2017-06-04 00:24:37.396693 Z
+label: "Contrato de trabajo "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0679214e-ade3-4272-9de2-d95d89fd0e4c
+version: 20170603-202437

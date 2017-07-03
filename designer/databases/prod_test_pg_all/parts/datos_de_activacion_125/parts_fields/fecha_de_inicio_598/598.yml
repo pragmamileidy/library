@@ -1,0 +1,30 @@
+--- 
+id: 598
+part_id: 125
+field_id: 13
+name: Fecha de Inicio
+created_at: 2011-11-24 18:38:59 Z
+updated_at: 2017-06-04 00:21:21.795747 Z
+label: Fecha de Inicio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f207b5b4-0ac6-49b9-81c7-b504d2cdde64
+version: 20170603-202121

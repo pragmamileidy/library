@@ -1,0 +1,16 @@
+--- 
+id: 2163
+design_id: 167
+section_id: 177
+name: Tipo de Traspaso
+created_at: 2012-10-24 22:17:55 Z
+updated_at: 2012-10-24 22:17:55 Z
+label: Tipo de Traspaso
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1780\":{\"1612\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

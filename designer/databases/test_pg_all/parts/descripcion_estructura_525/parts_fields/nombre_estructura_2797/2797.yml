@@ -1,0 +1,30 @@
+--- 
+id: 2797
+part_id: 525
+field_id: 10
+name: nombre_estructura
+created_at: 2013-01-16 19:18:10 Z
+updated_at: 2017-06-04 00:22:29.552602 Z
+label: Nombre Estructura
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0aa0cdb2-d486-4b31-b447-22a34fa81e1f
+version: 20170603-202229

@@ -1,0 +1,19 @@
+--- 
+id: 1165
+section_id: 191
+part_id: 200
+name: Tipo de Negocio
+created_at: 2012-04-22 16:55:27 Z
+updated_at: 2012-04-22 16:55:27 Z
+label: Tipo de Negocio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

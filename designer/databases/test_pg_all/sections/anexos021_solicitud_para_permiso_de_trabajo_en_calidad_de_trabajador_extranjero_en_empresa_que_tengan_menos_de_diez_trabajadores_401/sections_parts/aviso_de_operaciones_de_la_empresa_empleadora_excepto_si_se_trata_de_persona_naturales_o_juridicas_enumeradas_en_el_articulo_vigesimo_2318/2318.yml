@@ -1,0 +1,19 @@
+--- 
+id: 2318
+section_id: 401
+part_id: 38
+name: "Aviso de Operaciones de la empresa empleadora, excepto si se trata de persona naturales o jur\xC3\xADdicas enumeradas en el art\xC3\xADculo vig\xC3\xA9simo"
+created_at: 2012-08-31 15:11:01 Z
+updated_at: 2013-04-22 14:22:17 Z
+label: Aviso de Operaciones de la empresa empleadora.
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Excepto si se trata de persona naturales o jur\xC3\xADdicas enumeradas en el art\xC3\xADculo vig\xC3\xA9simo"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

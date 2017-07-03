@@ -1,0 +1,19 @@
+--- 
+id: 3082
+section_id: 447
+part_id: 38
+name: "Reproducci\xC3\xB3n del fonograma"
+created_at: 2014-03-28 19:27:03 Z
+updated_at: 2015-11-05 19:53:08 Z
+label: "Reproducci\xC3\xB3n del fonograma"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Entregar f\xC3\xADsicamente 2 reproducciones a la entidad en un periodo de 3 d\xC3\xADas, de lo contrario no se proceder\xC3\xA1 con el tr\xC3\xA1mite."
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

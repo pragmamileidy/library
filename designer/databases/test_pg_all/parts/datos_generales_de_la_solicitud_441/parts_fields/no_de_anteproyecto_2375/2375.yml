@@ -1,0 +1,30 @@
+--- 
+id: 2375
+part_id: 441
+field_id: 10
+name: No. de anteproyecto
+created_at: 2012-08-14 14:47:21 Z
+updated_at: 2017-06-04 00:28:19.572232 Z
+label: No. de Anteproyecto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Es requerido solo s\xC3\xAD el Tipo de Plano es \xE2\x80\x9CPlano Original de Edificaci\xC3\xB3n\xE2\x80\x9D."
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1f1601ea-3839-456b-9af8-a007b5bb56df
+version: 20170603-202819

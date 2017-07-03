@@ -1,0 +1,55 @@
+--- 
+id: 910
+name: Recepcion de Solicitud
+label: Recepcion de Solicitud
+description: Recepcion de Solicitud
+fill_step_id: 464
+created_at: 2012-08-30 15:27:46 Z
+updated_at: 2015-09-17 18:48:42 Z
+include: "{\"4932\":{\"3481\":{\"1323\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1374\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3614\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3615\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1988\":{\"2237\":{\"1320\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2001\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"548\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"763\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2238\":{\"572\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"631\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1989\":{\"3104\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3105\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3106\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3107\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3108\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3109\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3110\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3194\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3195\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"3374\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3199\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1991\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1403\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  _idagente = @task["agent_id"].to_s
+  
+                  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+                  _hash = result["hash"]
+                  _agente = _hash["response"]
+  
+  
+                  form_data.set("recibido_por.datos_del_funcionario_generico.usuario", _agente["name"])
+                  form_data.set("recibido.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: "##### RECEPCION DE SOLICITUD #####\r\n\
+  _obs = form_data.get(\"recibido_por.datos_del_funcionario_generico.observaciones\")\r\n\
+  if _obs.blank?\r\n\
+  \t_obs = form_data.get(\"recibido.datos_del_funcionario_generico.observaciones\")\r\n\
+  end\r\n\
+  \r\n\
+  _eval = form_data.get(\"recibido_por.datos_del_funcionario_generico.evaluacion\")\r\n\
+  if _eval.blank?\r\n\
+  \t_eval = form_data.get(\"recibido.datos_del_funcionario_generico.evaluacion_ok_rechazo\")\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  if (_eval ==\"REPARO\" and _obs.blank?) \r\n\
+  \ttransition_errors << \"Debe indicar el motivo del reparo en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end\r\n\
+  \r\n\
+  if (_eval ==\"RECHAZO\" and _obs.blank?) \r\n\
+  \ttransition_errors << \"Debe indicar el motivo del rechazo en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: |-
+  $(document).ready(function(){
+  
+  	seccionDatosSolicitante = $("#field_datos_del_solicitante_datos_persona_natural_cedula");
+  	if ($(seccionDatosSolicitante).html() == ""){
+  		$("#datos_del_solicitante").hide();
+  	}else{
+  		$("#datos_del_solicitante").show();
+  	}
+  });

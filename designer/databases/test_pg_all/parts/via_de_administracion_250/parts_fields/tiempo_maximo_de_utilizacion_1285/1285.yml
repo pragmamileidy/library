@@ -1,0 +1,30 @@
+--- 
+id: 1285
+part_id: 250
+field_id: 10
+name: "Tiempo m\xC3\xA1ximo de utilizaci\xC3\xB3n"
+created_at: 2012-05-08 15:59:30 Z
+updated_at: 2017-06-04 00:24:02.778072 Z
+label: "Tiempo m\xC3\xA1ximo de utilizaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar el ttiempo m\xC3\xA1ximo de utilizaci\xC3\xB3n despu\xC3\xA9s de su preparaci\xC3\xB3n o reconstituci\xC3\xB3n "
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5add5397-052e-48ef-913b-91735c196932
+version: 20170603-202402

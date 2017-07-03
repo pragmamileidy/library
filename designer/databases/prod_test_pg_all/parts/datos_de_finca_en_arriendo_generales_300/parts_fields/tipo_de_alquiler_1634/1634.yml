@@ -1,0 +1,30 @@
+--- 
+id: 1634
+part_id: 300
+field_id: 140
+name: Tipo de alquiler
+created_at: 2012-06-08 14:40:06 Z
+updated_at: 2017-06-04 00:21:49.041204 Z
+label: Tipo de alquiler
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c963ee19-418c-4422-bf72-1a4255c1a9a0
+version: 20170603-202149

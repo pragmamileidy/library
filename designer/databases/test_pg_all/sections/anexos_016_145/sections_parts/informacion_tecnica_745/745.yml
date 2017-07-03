@@ -1,0 +1,19 @@
+--- 
+id: 745
+section_id: 145
+part_id: 38
+name: "Informaci\xC3\xB3n T\xC3\xA9cnica"
+created_at: 2012-03-26 22:14:18 Z
+updated_at: 2015-10-27 15:29:23 Z
+label: "Informaci\xC3\xB3n T\xC3\xA9cnica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Dossier t\xC3\xA9cnico: Farmacodinamia, Farmacocin\xC3\xA9tica, indicaciones, estudios toxicol\xC3\xB3gicos, control de residuos de medicamentos, etc"
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 12

@@ -1,0 +1,30 @@
+--- 
+id: 2105
+part_id: 393
+field_id: 27
+name: "Porcentaje de \xC3\x81rea Total"
+created_at: 2012-07-23 14:13:06 Z
+updated_at: 2017-06-04 00:29:39.483662 Z
+label: "Porcentaje de \xC3\x81rea Total"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "Proporci\xC3\xB3n del \xC3\xA1rea especificada con respecto al \xC3\xA1rea del pol\xC3\xADgono total"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5cdef884-4eae-4601-a68e-bd7299653799
+version: 20170603-202939

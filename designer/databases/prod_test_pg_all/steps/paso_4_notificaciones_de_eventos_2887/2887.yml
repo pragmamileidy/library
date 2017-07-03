@@ -1,0 +1,38 @@
+--- 
+id: 2887
+name: Paso 4 - Notificaciones de Eventos
+label: Notificaciones de Eventos
+description: ""
+fill_step_id: 1553
+created_at: 2014-06-16 14:48:59 Z
+updated_at: 2015-03-06 20:15:25 Z
+include: "{\"4358\":{\"2417\":{\"2601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2603\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2604\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2605\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2606\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2418\":{\"2607\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2608\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2609\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2610\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2611\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2612\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2613\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #Llenado de campos EVENT_NOTIFICATION_PARAMETERS
+  
+  form_data.set("defaults.event_notification_parameters.author", "FCProcess")
+  form_data.set("defaults.event_notification_parameters.sender", "no-reply@panamatramita.gob.pa")
+  form_data.set("defaults.event_notification_parameters.email", "false")
+  form_data.set("defaults.event_notification_parameters.notify", "false")
+  form_data.set("defaults.event_notification_parameters.event", "true")
+  form_data.set("defaults.event_notification_parameters.retry_times", "5")
+  
+  #Llenado de campos EMAIL_NOTIFICATION_PARAMETERS
+  
+  form_data.set("defaults.email_notification_parameters.author", "FCProcess")
+  form_data.set("defaults.email_notification_parameters.sender", "no-reply@panamatramita.gob.pa")
+  form_data.set("defaults.email_notification_parameters.email", "true")
+  form_data.set("defaults.email_notification_parameters.notify", "true")
+  form_data.set("defaults.email_notification_parameters.event", "true")
+  
+  form_data.set("defaults.email_notification_parameters.recipients", "dairen.valery@pragmagenia.com, Shantall@pragmagenia.com")
+  form_data.set("defaults.email_notification_parameters.retry_times", "5")
+on_transition: ""
+views: 
+back_step: Paso 3 - Parametro de Constantes
+next_step: Paso 5 - Pasos
+position: 3
+ajax_calls: ""

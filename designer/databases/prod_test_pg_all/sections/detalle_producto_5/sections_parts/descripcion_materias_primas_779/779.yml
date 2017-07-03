@@ -1,0 +1,19 @@
+--- 
+id: 779
+section_id: 5
+part_id: 172
+name: "Descripci\xC3\xB3n Materias Primas"
+created_at: 2012-03-27 17:50:00 Z
+updated_at: 2012-04-17 15:09:57 Z
+label: "Descripci\xC3\xB3n Materias Primas"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 47

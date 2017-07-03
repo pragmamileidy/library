@@ -1,0 +1,30 @@
+--- 
+id: 629
+part_id: 119
+field_id: 10
+name: Escolaridad
+created_at: 2011-11-29 18:49:05 Z
+updated_at: 2017-06-04 00:31:42.187930 Z
+label: Escolaridad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 22
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 20bd4bdc-36c9-49d2-8a87-968f9a564c28
+version: 20170603-203142

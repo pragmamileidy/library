@@ -1,0 +1,30 @@
+--- 
+id: 1548
+part_id: 286
+field_id: 132
+name: Conocimientos
+created_at: 2012-06-01 22:19:16 Z
+updated_at: 2017-06-04 00:21:46.482033 Z
+label: Conocimientos y habilidades
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 63892715-39a2-4c28-9650-cba8d4f86bdc
+version: 20170603-202146

@@ -1,0 +1,30 @@
+--- 
+id: 211
+name: Tipo de Solicitud MUNICIPIO
+description: Tipo de Solicitud MUNICIPIO
+version: 
+status: Draft
+label: Tipo de Solicitud
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-14 14:33:54 Z
+updated_at: 2015-01-05 19:33:55 Z
+values_list: "\"\",\"Aprobaci\xC3\xB3n\",\"Re-aprobaci\xC3\xB3n\""
+keys_list: "\"\",\"Aprobaci\xC3\xB3n\",\"Re-aprobaci\xC3\xB3n\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 2356-3656-6806-8813-1037

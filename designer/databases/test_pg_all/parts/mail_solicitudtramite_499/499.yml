@@ -1,0 +1,17 @@
+--- 
+id: 499
+name: mail_solicitudTramite
+description: "correo con diferentes notificaciones seg\xC3\xBAn vaya haciendose el ninicio del tramite o proceso seleccionado. NO todos los campos aplican a todos los tramites y prcesos"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 16:36:58 Z
+updated_at: 2015-04-28 17:51:30 Z
+label: Correo de Solicitud
+hint: ""
+view_class: horizontal
+serial: 3228-1559-6904-8779-8755

@@ -1,0 +1,30 @@
+--- 
+id: 875
+part_id: 175
+field_id: 17
+name: "Manipulaci\xC3\xB3n"
+created_at: 2012-03-27 18:13:10 Z
+updated_at: 2017-06-04 00:25:42.155140 Z
+label: "Manipulaci\xC3\xB3n (guantes, mascarillas y otros)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1702f685-3cc8-46d6-8c42-73b49c954fee
+version: 20170603-202542

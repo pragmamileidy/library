@@ -1,0 +1,30 @@
+--- 
+id: 1351
+part_id: 209
+field_id: 27
+name: Cantidad Otros Instrumentos
+created_at: 2012-05-14 16:44:52 Z
+updated_at: 2017-06-04 00:28:53.356033 Z
+label: Cantidad Otros Instrumentos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9ad8b5f9-9e5c-4554-9896-0e87e6b2f20e
+version: 20170603-202853

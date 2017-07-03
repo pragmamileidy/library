@@ -1,0 +1,17 @@
+--- 
+id: 752
+name: Mensaje hint
+description: Mensaje hint
+version: 
+status: Draft
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2017-02-27 01:50:04.907285 Z
+updated_at: 2017-02-27 01:50:04.907285 Z
+label: ""
+hint: No es requerido
+view_class: horizontal
+serial: 8339-6509-8962-7986-8757

@@ -1,0 +1,293 @@
+--- 
+id: 22
+name: Paso 2 - Datos de Boletas Pendientes de Pago
+label: Datos de Boletas Pendientes de Pago
+description: "<br><strong style=\"color:#0F698D\"> Revise la informaci\xC3\xB3n obtenida</strong>\r\n\
+  <br><strong style=\"color:#82DB28\"> Si tiene boletas pendientes por pago, Usted ser\xC3\xA1 dirigido a la Pasarela de Pagos al avanzar al siguiente paso.</strong>\r\n"
+fill_step_id: 11
+created_at: 2017-03-24 14:47:03.422320 Z
+updated_at: 2017-04-17 20:33:37.370278 Z
+include: "{\"58\":{\"7\":{\"66\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"58\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"59\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"60\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"61\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"62\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"63\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"64\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"65\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"17\":{\"views\":\"hidden\",\"enabled\":\"enabled\"},\"69\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"70\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}},\"21\":{\"14\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"16\":{\"views\":\"hidden\",\"enabled\":\"enabled\"},\"38\":{\"views\":\"hidden\",\"enabled\":\"enabled\"},\"41\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"15\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"67\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close
+on_becoming: "##### Agregado recientemente 10-02-2017 MT: Como cambio para poder tomar el actual\r\n\
+  #valor del campo \"es_deudor_o_no.datos_de_la_persona.dato_a_consultar\"\r\n\
+  \r\n\
+  tipo_docD = form_data.get(\"es_deudor_o_no.datos_de_la_persona.tipo_documento\")\r\n\
+  if tipo_docD == \"C\xC3\xA9dula\"\r\n    tipodDoc = \"CIP\"\r\n\
+  elsif tipo_docD == \"Pasaporte\"\r\n    tipodDoc = \"PAS\"\r\n\
+  elsif tipo_docD == \"Placa\"\r\n    tipodDoc = \"PLACA\"\r\n\
+  elsif tipo_docD == \"RUC\"\r\n    tipodDoc = \"RUC\"\r\n\
+  end\r\n\
+  nro_doc = form_data.get(\"es_deudor_o_no.datos_de_la_persona.dato_a_consultar\")\r\n\
+  if nro_doc.blank?\r\n    nro_doc = form_data.get(\"es_deudor_o_no.datos_de_la_persona.cedula\")\r\n    form_data.set(\"es_deudor_o_no.datos_de_la_persona.dato_a_consultar\",nro_doc)\r\n\
+  end\r\n\
+  Rails.logger.info(\">>>>>>>> PARAMETROS >>>>>>>>>>>>>>> #{nro_doc}\")\r\n\
+  #::: Sustituir la consulta del servicio :::#\r\n\
+  result = WebserviceConsumer.get(URI.escape('/service/proxy_bdin_pago_boletas_attt/call.json?method=findSelBoletasPendientesByDoc&nroDocumento=' + \"#{nro_doc}\" + '&tipoDocumento=' + \"#{tipodDoc}\")).parsed_response\r\n\
+  Rails.logger.info(\">>>>>>>> RESPONDE SERVICES>>>>>>>>>>>>>>> #{result}\")\r\n\
+  \r\n\
+  if result[\"response\"].present? && !result[\"response\"][\"error\"].present?\r\n  datos = result[\"response\"]\r\n\
+  else \r\n  Rails.logger.info(\"findSelBoletasPendientesByDoc con error >>>>>> #{result}\")\r\n  Rails.logger.info(\"findSelBoletasPendientesByDoc respuesta vac\xC3\xADa\") if !result[\"response\"].present?\r\n  datos = nil\r\n\
+  end\r\n  \r\n\
+  if datos.present?\r\n    datos.each_with_index do |data, index|\r\n        Rails.logger.info(\">>>>>>>> RESPONDE INDEX >>>>>>>>>>>>>>> #{index}\")\r\n        Rails.logger.info(\">>>>>>>> RESPONDE DATA >>>>>>>>>>>>>>> #{data}\")\r\n        index += 1\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.boleta\", data[\"infNroDeBoleta\"])\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.placa\", data[\"infNroDePlaca\"])\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.fecha\", data[\"infFechaDeBoleta\"])\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.faltas_json\", data[\"infFaltas\"]).to_json\r\n        #form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.motivo\", data[\"infDescripcionFalta\"])\r\n        #form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.imposicion\", data[\"infTipoImposicion\"])\r\n        #form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.monto_boleta\", data[\"infMontoBoleta\"])\r\n        #form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.monto_desacato\", data[\"infMontoDesacato\"])\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.monto_total\", data[\"infMontoBoletaTotal\"])\r\n        form_data.set(\"boletas_por_pagar.monto.motivo_de_la_multa\", \"true\")\r\n        # data[\"infFaltas\"].each do |detalle|\r\n        #     form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.motivo\", detalle[\"infDescripcionFalta\"])\r\n        #     form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.imposicion\", detalle[\"infTipoImposicion\"])\r\n        #     form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.monto_boleta\", detalle[\"infMontoBoleta\"])\r\n        #     form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.monto_desacato\", detalle[\"infMontoDesacato\"])\r\n        # end\r\n        faltas = \"<table>\"\r\n        data[\"infFaltas\"].each do |falta|\r\n            faltas += \"<tr><td><strong>Motivo Falta:</strong> </td> <td>#{falta[\"infDescripcionFalta\"]}</td></tr>\" \r\n            faltas += \"<tr><th>Imposici\xC3\xB3n: </th> <td>#{falta[\"infTipoImposicion\"]}</td></tr>\"\r\n            faltas += \"<tr><th>Monto Boleta: </th> <td>#{falta[\"infMontoBoleta\"]}</td></tr>\"\r\n            faltas += \"<tr><th>Monto Desacato: </th> <td>#{falta[\"infMontoDesacato\"]}</td></tr>\"\r\n            faltas += \"<tr><th>Monto Total: </th> <td>#{falta[\"infMontoTotal\"]}</td></tr>\"\r\n            faltas += \"<tr><td><hr></td><td><hr></td></tr>\"\r\n        end\r\n        faltas += \"</table>\"\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{index}.faltas_html\", faltas.html_safe)\r\n    end\r\n\
+  else\r\n    transition_errors << \"Ha ocurrido un error interno estamos trabajando para resolverlo, por favor intente m\xC3\xA1s tarde.\"\r\n    (1..20).each do |x|\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.boleta\",\"\")\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.placa\",\"\")\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.fecha\",\"\")\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.faltas_html\",\"\")\r\n        form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.faltas_json\",\"\")\r\n        # form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.motivo\",\"\")\r\n        # form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.imposicion\",\"\")\r\n        # form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.monto_boleta\", \"\")\r\n        # form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.monto_desacato\",\"\")\r\n        # form_data.set(\"boletas_por_pagar.boletas_instance_#{x}.monto_total\",\"\")\r\n    end\r\n    form_data.set(\"boletas_por_pagar.monto.monto_de_la_multa\",\"0\")\r\n    form_data.set(\"boletas_por_pagar.monto.motivo_de_la_multa\", \"false\")\r\n    form_data.set(\"boletas_por_pagar.monto.mensaje_notificacion\",\"Usted no tiene multas pendientes. Avance al pr\xC3\xB3ximo paso.\")\r\n\
+  end\r\n\
+  multa = form_data.get(\"boletas_por_pagar.monto.motivo_de_la_multa\")\r\n\
+  ##################################\r\n\
+  Rails.logger.info(\">>>>>... FIN DEL CICLO >> MULTA >> #{multa} >>>>>>>>\")\r\n\
+  #::: DV: 08/09/2016: Obtener valor del config :::#\r\n\
+  valor = @config.route(\"Rates-payment-payment-payment\")\r\n\
+  Rails.logger.info(\">>>>>... FIN DEL valor > #{valor} >>>>>>>>\")\r\n\
+  if valor == \"Electr\xC3\xB3nico\"\r\n  form_data.set(\"formas_de_pagos_generico.pago_electronico_mensaje.tipo_de_pago_electronico\", \"Pago Electr\xC3\xB3nico\")\r\n\
+  end\r\n\
+  \r\n\
+  #:::::::::::: DV: MOVIDO DEL ONTRANSITION DE ESTE PASO 17/04/2017 :::::::::::::::#\r\n\
+  #::: CODIGO PARA INVOCAR EL SERVICIO payment_computing_service :::#\r\n\
+  form_id = @task[\"form\"]\r\n\
+  monto_total = form_data.get(\"boletas_por_pagar.monto.oculto_multa\")\r\n\
+  result = WebserviceConsumer.get('/service/helper_update_payment/call.json?method=update_amount_payment&form_id=' + \"#{form_id}\" + '&amount=' + \"#{monto_total}\").parsed_response\r\n\
+  if result[\"response\"] == true\r\n    #::: CODIGO PARA INVOCAR EL SERVICIO payment_computing_service\r\n    _applicationId = @application[\"id\"]\r\n    _configRoute = \"Rates-rates\"\r\n    _formId = @task[\"form\"]\r\n\
+  \r\n    hash = {:application_id => \"#{_applicationId}\", \r\n            :config_route   => \"#{_configRoute}\",\r\n            :form_id        => \"#{_formId}\"}\r\n    result = PaymentProxy.payment_computing_service(hash)\r\n    Rails.logger.info(\"recibiendo result pago >>>>>>>>>>>>>>>>>>>> #{result}\")\r\n\
+  \r\n    _payment_id= result[\"response\"][\"payment_id\"]\r\n    _detail = result[\"response\"][\"detail\"]\r\n    _total = result[\"response\"][\"result\"][\"total\"]\r\n\
+  \r\n    form_data.set(\"variables_pago_generico.variables_pago_generico.payment\",_payment_id)\r\n    form_data.set(\"variables_pago_generico.variables_pago_generico.detail\",_detail)\r\n    form_data.set(\"datos_del_evaluador_generico.monto_total.monto_total\", _total)\r\n    #form_data.set(\"datos_del_evaluador_generico.monto_total.monto_total\",\"0.01\")\r\n\
+  \r\n    result[\"response\"][\"result\"][\"items\"].each do |key, value|\r\n        if(key =~ /item_instance_([\\d]+)/)\r\n            _i = $1.to_i - 1\r\n            form_data.set(\"datos_del_evaluador_generico.entidad_evaluadora_#{_i}.nombre_de_la_entidad\", value[\"name\"])\r\n            form_data.set(\"datos_del_evaluador_generico.entidad_evaluadora_#{_i}.pagada\", \"Iniciada\")\r\n            form_data.set(\"datos_del_evaluador_generico.entidad_evaluadora_#{_i}.monto_a_pagar\", value[\"formula\"])\r\n            #form_data.set(\"datos_del_evaluador_generico.entidad_evaluadora_#{_i}.monto_a_pagar\",\"0.01\")\r\n        end \r\n    end\r\n\
+  else\r\n    transition_errors << \"Ha ocurrido un error\"\r\n\
+  end\r\n\
+  \r\n\
+  #::::::::::::: DV: 17/04/2017 Movido del onbecoming del paso 3 ::::::::::::::::#\r\n\
+  if form_data.get(\"boletas_por_pagar.monto.motivo_de_la_multa\") == \"true\"\r\n\
+  \t#Si el pago es automatico se ejecuta las siguientes condiciones: \r\n\
+  \t#Verificar el estatus del pago. Para esto se debe invocar el servicio get payment status enviandole como parametro el Payment Id que devuelve el servicio #de computo (invocado en el On Becoming del paso 1) y el id de la transaccion (request_id)\r\n\
+  \t#Caso estatus Pendiente - Setear en el campo url el link del servicio Redirect to, pasandole como parametro el retorno del servicio Make Payment y mostrar el mensaje de pendiente\r\n\
+  \t#Caso estatus completado - Mostrar mensaje de exito sin url \r\n\
+  \r\n\
+  \t#CODIGO PARA INVOCAR get_payment_status\r\n\
+  \r\n\
+  \t#_url = form_data.get(\"variables_pago_generico.variables_pago_generico.url\")\r\n\
+  \t_datoRequest =  form_data.get(\"variables_pago_generico.variables_pago_generico.request\")\r\n\
+  \t_paymentId = form_data.get(\"variables_pago_generico.variables_pago_generico.payment\")\r\n\
+  \t_consecutiveId = form_data.get(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\")\r\n\
+  \t_id = @current_user.citizen_id_number\r\n\
+  \t_name = @current_user.name\r\n\
+  \t_email = @current_user.email\r\n\
+  \r\n\
+  \t# ***** Servicio nuevo ***** \r\n\
+  \t  hash = {:payment_id => \"#{_paymentId}\", \r\n\
+  \t          :request_id => \"#{_datoRequest}\",\r\n\
+  \t          :dummy      => \"true\"}\r\n\
+  \t  result = PaymentProxy.get_payment_status(hash)\r\n\
+  \t  #result = PaymentProxy.get_payment_status(hash)\r\n\
+  \t  \r\n\
+  \t#result = WebserviceConsumer.get(\"/payments/get_payment_status.json?payment_id=#{_paymentId}&request_id=#{_datoRequest}\").parsed_response\r\n\
+  \tstatus = result[\"response\"]\r\n\
+  \tRails.logger.info(\">>>>>>> params >>>>.. #{hash}\")\r\n\
+  \tRails.logger.info(\">>>>>>> STATUS >>>>.. #{status}\")\r\n\
+  \r\n\
+  \tif !status.nil?\r\n\
+  \t\t#transition_errors << \"Ha ocurrido un error al revisar el pago. Por favor intente m\xC3\xA1s tarde..\"\r\n\
+  \t#else\r\n\
+  \t\tform_data.set(\"variables_pago_generico.variables_pago_generico.estatus\",status)\r\n\
+  \tend\r\n\
+  \r\n\
+  \r\n\
+  \t#Status Started || Error\r\n\
+  \tif ((status == \"started\") || (status == \"error\") || (status == \"created\"))\r\n\
+  \t\t#_str = '/payments/make_payment.json?payment_id=' + \"#{_paymentId}\" + '&id=' + \"#{_id}\" + '&name=' + \"#{_name}\" + '&email=' + \"#{_email}\" + '&consecutive_id=' + \"#{_consecutiveId}\"\r\n\
+  \t    \r\n\
+  \t  hash = {:payment_id => \"#{_paymentId}\", \r\n\
+  \t          :id  => \"#{_id}\",\r\n\
+  \t          :name  => \"#{_name}\",\r\n\
+  \t\t\t  :email => \"#{_email}\",\r\n\
+  \t\t      :consecutive_id => \"#{_consecutiveId}\"}\r\n\
+  \t  #_resultMakeP = PaymentProxy.make_payment(hash)\r\n\
+  \t  _resultMakeP = PaymentProxy.make_payment(hash)\r\n\
+  \t  Rails.logger.info(\">>>>>>>>>>>>> _resultMakeP  #{_resultMakeP}\")\r\n\
+  \t  _error = _resultMakeP[\"error\"]\r\n\
+  \r\n\
+  \t\t_url = _resultMakeP[\"response\"]\r\n\
+  \t\t_datoReq = _resultMakeP[\"request_id\"]\r\n\
+  \t\t#_datoReq = \"\"\r\n\
+  \t\t_strurl = \"#{PEOPLE_URL}/tasks/force_redirect_to?task_id=#{@task[\"id\"]}&url=#{_url}\"\r\n\
+  \t\tform_data.set(\"variables_pago_generico.variables_pago_generico.url\",_strurl)\r\n\
+  \t\tform_data.set(\"variables_pago_generico.variables_pago_generico.request\", _datoReq)\r\n\
+  \t\tform_data.set(\"mensajes_pago_generico.mensaje_pendiente.texto_1\", _strurl)\r\n\
+  \t\tform_data.set(\"mensajes_pago_generico.mensaje_pendiente.texto_2\",@task[\"id\"])\r\n\
+  \t\tform_data.set(\"mensajes_pago_generico.mensaje_fallido.texto_1\", _strurl)\r\n\
+  \t\tform_data.set(\"mensajes_pago_generico.mensaje_fallido.texto_2\",@task[\"id\"])\r\n\
+  \tend\r\n\
+  \r\n\
+  \r\n\
+  \t#Status successfully\r\n\
+  \tif (status == \"successfully\")\r\n\
+  \t\t#result = WebserviceConsumer.get('/payments/get_payment_info.json?payment_id=' + \"#{_paymentId}\").parsed_response\r\n\
+  \r\n\
+  \t\t# ***** Servicio nuevo *****\r\n\
+  \t  hash = {:payment_id => \"#{_paymentId}\"}\r\n\
+  \t  result = PaymentProxy.get_payment_info(hash)\r\n\
+  \r\n          ## AGREGADO POR JURBANO\r\n          Rails.logger.info(\">>>>>>>>>> VERIFICANDO PAYMENT INFO DESDE PORTAL >>>>>> #{result}\")\r\n          ## FIN BLOQUE\r\n\
+  \t\r\n\
+  # CV\t\t_fecha_de_pago = result[\"response\"][\"payment_date\"]\r\n\
+  # CV\t\t_no_de_confirmacion = result[\"response\"][\"transaction_id\"]\r\n\
+  # CV\t\t_monto_del_pago = result[\"response\"][\"total\"]\r\n\
+  # CV\t\t_medio_utilizado = result[\"response\"][\"payment_method\"]\r\n\
+  \r\n\
+  # CV\t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.fecha_del_pago\", _fecha_de_pago)\r\n\
+  # CV\t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.no_de_confirmacion\", _no_de_confirmacion)\r\n\
+  # CV\t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.monto_del_pago\", _monto_del_pago)\r\n\
+  # CV\t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.medio_utilizado\", _medio_utilizado)\r\n\
+  \tend \r\n\
+  else\r\n    form_data.set(\"mensaje.confirmacion_culminacion_de_tramite.notificacion\", \"Estimado usuario, su solicitud est\xC3\xA1 por finalizar.\r\n    \t\\n Su Constancia fue enviada a su correo. En breves minutos dispondr\xC3\xA1 de la Constancia de su solicitud en la pesta\xC3\xB1a Formularios.\")\r\n\
+  end\r\n"
+on_transition: "#::: Validar se chequee la tabla para pagar el monto de la boleta :::#\r\n\
+  if form_data.get(\"boletas_por_pagar.monto.motivo_de_la_multa\") == \"true\"\r\n    boletas_selec = form_data.get(\"boletas_por_pagar.monto.field_oculto\")\r\n    boletas = boletas_selec.blank? ? nil : ActiveSupport::JSON.decode(boletas_selec)\r\n    if boletas.blank?\r\n        transition_errors << \"Para continuar Usted debe seleccionar al menos una boleta para pagar. Por favor, seleccione la(s) boleta(s) que desea pagar.\"\r\n    end\r\n\
+  end \r\n    \r\n\
+  if form_data.get(\"boletas_por_pagar.monto.motivo_de_la_multa\") == \"true\"\r\n\
+  #Verificar el estatus del pago. Para esto se debe invocar el servicio transaction search enviandole como parametro el Payment Id que devuelve el servicio #de computo (invocado en el On Becoming del paso 1)\r\n\
+  \r\n\
+  ###CODIGO PARA INVOCAR get_payment_status ###\r\n\
+  _paymentId = form_data.get(\"variables_pago_generico.variables_pago_generico.payment\")\r\n\
+  _dato2 =  form_data.get(\"variables_pago_generico.variables_pago_generico.request\")\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get(\"/payments/get_payment_status.json?payment_id=#{_paymentId}&request_id=#{_dato2}\").parsed_response\r\n\
+  \r\n\
+  # ***** Servicio nuevo *****\r\n  hash = {:payment_id => \"#{_paymentId}\", \r\n              :request_id   => \"#{_dato2}\"}\r\n  result = PaymentProxy.get_payment_status(hash)\r\n  \r\n\
+  status = result[\"response\"]\r\n\
+  if status.nil?\r\n\
+  \ttransition_errors << \"Ha ocurrido un error al revisar el pago. Por favor intente m\xC3\xA1s tarde.\"\r\n\
+  else\r\n\
+  \t#seteos\r\n\
+  \tform_data.set(\"variables_pago_generico.variables_pago_generico.estatus\",status)\r\n\
+  \r\n\
+  end\r\n\
+  \r\n\
+  ###  CODIGO PARA MENSAJE FALLIDO DE PAGO ###\r\n\
+  if (form_data.get(\"variables_pago_generico.variables_pago_generico.estatus\")!=\"successfully\")\r\n   transition_errors << \"Su pago no ha sido completado. Por favor verifique y complete la transacci\xC3\xB3n para enviar el formulario.\"\r\n\
+  end\r\n\
+  \r\n\
+  end \r\n\
+  \r\n\
+  #::: Condici\xC3\xB3n para notificar el mensaje para el recibo :::#\r\n\
+  if form_data.get(\"boletas_por_pagar.monto.motivo_de_la_multa\") == \"true\"\r\n    form_data.set(\"boletas_por_pagar.boletas.mensaje_notificacion\", \"Estimado usuario su pago ha sido reportado a SERTRACEN. Puede descargar su Constancia disponible en el campo Reporte de Pago.\r\n    \t\\n \\n\\ Su Constancia fue enviada a su correo. En breves minutos dispondr\xC3\xA1 de su Constancia de Pago en la pesta\xC3\xB1a Archivos Adjuntos.\")\r\n\
+  else\r\n    form_data.set(\"boletas_por_pagar.boletas.mensaje_notificacion\", \"Estimado usuario, puede descargar la Constancia de su solicitud disponible en el campo Reporte de Pago.\r\n    \t\\n \\n\\ Su Constancia fue enviada a su correo. En breves minutos dispondr\xC3\xA1 la Constancia de su solicitud en la pesta\xC3\xB1a Archivos Adjuntos.\")\r\n\
+  end"
+views: 
+back_step: Paso 1 - Consulta de Infracciones
+next_step: "Paso 3 \xE2\x80\x93 Realizaci\xC3\xB3n del Pago"
+position: 2
+ajax_calls: "$(document).ready(function(){ \r\n     \r\n  $(\"#field_boletas_por_pagar_monto_mensaje_notificacion\").css({'color':'#0F698D','font-size':'1.0em','text-align':'justify','font-weight:':'bold','white-space':'pre-line'});\r\n  $(\"#field_boletas_por_pagar_monto_motivo_de_la_multa\").parents(\".field-box\").hide();\r\n  $(\"#field_boletas_por_pagar_monto_field_oculto\").parents(\".field-box\").hide();\r\n  $(\"#field_boletas_por_pagar_monto_oculto_multa\").parents(\".field-box\").hide();\r\n  var boletasSel = $(\"#field_boletas_por_pagar_monto_motivo_de_la_multa\").val();\r\n  if (boletasSel == 'false'){\r\n    $('#field_boletas_por_pagar_monto_monto_de_la_multa').parents(\".field-box\").hide();\r\n     $.each( $('[id*=boletas_por_pagar_boletas_]'), function(index, campo) {    \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n          pos = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n        var InicioRuta  = \"#field_boletas_por_pagar_boletas\";\r\n        var boleta     = \"_boleta\";\r\n        var coincide  = InicioRuta.concat(pos);\r\n        var boleta2    = coincide.concat(boleta);\r\n        $(boleta2).parents(\".part-box\").hide();\r\n        $(boleta2).parents(\".part-box\").next().hide();\r\n    });\r\n  }else{\r\n    $(\"#field_boletas_por_pagar_monto_mensaje_notificacion\").parents(\".field-box\").hide();\r\n    $.each( $('[id*=boletas_por_pagar_boletas_]'), function(index, campo) {    \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n          pos = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n        var InicioRuta  = \"#field_boletas_por_pagar_boletas\";\r\n        var boleta     = \"_boleta\";\r\n        var coincide  = InicioRuta.concat(pos);\r\n        var boleta2    = coincide.concat(boleta);\r\n        $(boleta2).parents(\".part-box\").next().hide();\r\n    });\r\n  }\r\n\
+  \r\n  $( function() {\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Boletas por Pagar\") {  \r\n        $(this).html(\"Detalles de las Boletas\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    var hint = \"Detalles de las Boletas\";\r\n      $(\"div\").each (function(){\r\n      if ($(this).html().trim() == hint) {  \r\n        $(this).html(hint).css({'color':'#0F698D','font-weight':'bold'}); \r\n      }\r\n    });\r\n  })\r\n\
+  });\r\n\
+  \r\n\
+  /*\r\n\
+  \r\n\
+  Legend:\r\n\
+  \r\n\
+  ==== FIELDS ====\r\n\
+  \"0\": Check          (Position)\r\n\
+  \"1\": Nro de Boleta  (Position)\r\n\
+  \"2\": Nro de Placa   (Position)\r\n\
+  \"3\": Fecha          (Position)\r\n\
+  \"4\": Motivo         (Position)\r\n\
+  \"5\": Imposicion     (Position)\r\n\
+  \"6\": Monto Boleta   (Position)\r\n\
+  \"7\": Monto Desacato (Position)\r\n\
+  \"8\": Monto Total    (Position)\r\n\
+  \"9\": Campo Oculto   (Position)\r\n\
+  \r\n\
+  */\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  \r\n\
+  var show_tickets  = $(\"#boletas_por_pagar .section-body .vertical\").children(\".dynamic-element-show\");\r\n\
+  var acum          = 0;\r\n\
+  var group_tickets = [];\r\n\
+  var auxgp_tickets = [];\r\n\
+  var auxgp_amounts = [];\r\n\
+  var flagp_tickets = [];\r\n\
+  \r\n\
+  $.fn.hasAttr = function(name) {  \r\n  var attr = this.attr(name)\r\n  return (typeof attr !== typeof undefined && attr !== false);\r\n\
+  };\r\n\
+  \r\n\
+  // Check For Repeats\r\n\
+  \r\n\
+  function get_total_amount_by_ticket(ticket)\r\n\
+  {\r\n  var acum = 0;\r\n\
+  \r\n  for (var i = 0; i < auxgp_tickets.length; i++) {\r\n    acum +=  auxgp_tickets[i] === ticket ? auxgp_amounts[i] : 0;\r\n  }\r\n\
+  \r\n  return acum;\r\n\
+  }\r\n\
+  \r\n\
+  function set_checked_by_ticket(ticket, isChecked)\r\n\
+  {\r\n  $.each(show_tickets, function(index, item) {\r\n    var body       = $(item).children(\".part-body\");\r\n    var fields     = $($(body).children(\".vertical\")).children(\".field-box\");\r\n    var ticket_num = $(fields[1]).find(\"input\").val();\r\n    var checkboxes = $(fields[0]).find(\"input\");\r\n\
+  \r\n    if (ticket == ticket_num)\r\n    {\r\n      $(checkboxes[1]).prop(\"checked\", isChecked);\r\n      $(fields[9]).find(\"textarea\").val( isChecked ? \"true\" : \"false\");\r\n    }\r\n\
+  \r\n  });\r\n\
+  }\r\n\
+  \r\n\
+  $.each(show_tickets, function(index, item) {\r\n\
+  \r\n  var body          = $(item).children(\".part-body\");\r\n  var fields        = $($(body).children(\".vertical\")).children(\".field-box\");\r\n  var ticket_num    = $(fields[1]).find(\"input\").val();\r\n  var ticket_amount = parseFloat($(fields[8]).find(\"input\").val());\r\n\
+  \r\n  if ($.inArray(ticket_num, auxgp_tickets) !== -1 &&\r\n      $.inArray(ticket_num, group_tickets) === -1)\r\n  {\r\n    group_tickets.push(ticket_num);\r\n    flagp_tickets.push(true);\r\n  }\r\n  auxgp_tickets.push(ticket_num);\r\n  auxgp_amounts.push(ticket_amount);\r\n\
+  });\r\n\
+  \r\n\
+  // End Check For Repeats\r\n\
+  \r\n\
+  $.each(show_tickets, function(index, item) {\r\n  \r\n  var label      = $(item).children(\".label2\").find(\".panel-title\");\r\n  var body       = $(item).children(\".part-body\");\r\n  var fields     = $($(body).children(\".vertical\")).children(\".field-box\");\r\n  var ticket_num = $(fields[1]).find(\"input\").val();\r\n  var ticket_pos = $.inArray(ticket_num, group_tickets);\r\n  var check_hist = $(fields[9]).find(\"textarea\").val();\r\n  var checkboxes = $(fields[0]).find(\"input\");\r\n  var isChecked  = check_hist == \"\" ? true\r\n                                    : (check_hist == \"true\" && $(checkboxes[1]).hasAttr(\"checked\"));\r\n  \r\n  var check      = isChecked ? \"checked='checked'\" : \"\";\r\n  \r\n  $(checkboxes[1]).addClass(\"groupHeader\");\r\n  //$(checkboxes[1]).removeClass(\"groupHeader\");\r\n  //$(checkboxes[1]).attr('onClick','stopMoving()');\r\n  $(checkboxes[1]).prop(\"checked\", isChecked);\r\n\
+  \r\n  if (ticket_pos === -1)\r\n  {\r\n    acum = isChecked ? (acum + parseFloat($(fields[8]).find(\"input\").val())) \r\n                     : acum  + 0;\r\n\
+  \r\n    var label_str = \"\"; // <input  type='checkbox' class='groupHeader' \" + check +\"/> \r\n    label_str    += \"<h5 style='padding:2px;margin:0px;'>Nro. de Boleta: \" + ticket_num                       + \" </h5> \";\r\n    label_str    += \"<h4 style='padding:2px;margin:0px;'>Monto Total:\"    + format1(parseFloat($(fields[8]).find(\"input\").val()),\"\") + \"</h4>\";\r\n    label.html(label_str);\r\n  } else {\r\n    \r\n    if (flagp_tickets[ticket_pos])\r\n    {\r\n      var total_ticket = get_total_amount_by_ticket(ticket_num);\r\n      acum = isChecked ? acum + total_ticket\r\n                       : acum + 0;\r\n\
+  \r\n      var label_str = \"\"; // <input  type='checkbox' class='groupHeader' \" + check +\"/> \r\n      label_str    += \"<h5 style='padding:2px;margin:0px;'>Nro. de Boleta: <b>\" + ticket_num                       + \"</b></h5> \";\r\n      label_str    += \"<h4 style='padding:2px;margin:0px;'>Monto Total: \"    + format1(total_ticket,\"\") + \"</h4>\";\r\n      label.html(label_str);\r\n\
+  \r\n      flagp_tickets[ticket_pos] = false;\r\n    } else {\r\n      label.html(\"\");\r\n      $(fields[0]).css(\"display\",\"none\");\r\n    }\r\n    \r\n  }\r\n\
+  \r\n  // Set Amount\r\n  $(\"#field_boletas_por_pagar_monto_oculto_multa\").val(acum);\r\n  $(\"#field_boletas_por_pagar_monto_monto_de_la_multa\").html(format1((acum < 0 ? 0 : acum),\"\"));\r\n\
+  \r\n  //\r\n  $(fields[1]).css(\"display\",\"none\");\r\n  //$(fields[2]).css(\"display\",\"none\");\r\n  //$(fields[3]).css(\"display\",\"none\");\r\n  $(fields[4]).css(\"display\",\"none\");\r\n  $(fields[5]).css(\"display\",\"none\");\r\n  $(fields[6]).css(\"display\",\"none\");\r\n  $(fields[7]).css(\"display\",\"none\");\r\n  $(fields[8]).css(\"display\",\"none\");\r\n\
+  \r\n\
+  });\r\n\
+  \r\n\
+  $(\".groupHeader\").click(function(event) {\r\n  var item       = $(this).parents(\".part-box\");\r\n  var body       = $(item).children(\".part-body\");\r\n  var fields     = $($(body).children(\".vertical\")).children(\".field-box\");\r\n  var ticket_num = $(fields[1]).find(\"input\").val();\r\n  var checkboxes = $(fields[0]).find(\"input\");\r\n  var acum       = 0;\r\n\
+  \r\n  var acum_amount = parseFloat($(\"#field_boletas_por_pagar_monto_oculto_multa\").text());\r\n  var acum_amount = parseFloat($(\"#field_boletas_por_pagar_monto_monto_de_la_multa\").text());\r\n  var amount      = $.inArray(ticket_num, group_tickets) !== -1 ? get_total_amount_by_ticket(ticket_num)\r\n                                                                : parseFloat($(fields[8]).find(\"input\").val());\r\n\
+  \r\n\
+  \r\n  $(checkboxes[1]).prop(\"checked\", $(this).is(\":checked\"));\r\n\
+  \r\n  if ($.inArray(ticket_num, group_tickets) !== -1)\r\n  {\r\n    set_checked_by_ticket(ticket_num, $(this).is(\":checked\"));\r\n  }\r\n  \r\n\
+  \r\n  if ($(this).is(\":checked\")) {\r\n    acum = roundToTwo(acum_amount + amount);\r\n    $(fields[9]).find(\"textarea\").val(\"true\");\r\n    //$(checkboxes[0]).val(\"true\"); // Este valor no se esta guardando en DB\r\n  } else {\r\n    acum = roundToTwo(acum_amount - amount);\r\n    $(fields[9]).find(\"textarea\").val(\"false\");\r\n    //$(checkboxes[0]).val(\"false\"); // Este valor no se esta guardando en DB\r\n  }\r\n\
+  \r\n  $(\"#field_boletas_por_pagar_monto_oculto_multa\").val(acum);\r\n  $(\"#field_boletas_por_pagar_monto_monto_de_la_multa\").html(\"<h3>\"+format1((acum < 0 ? 0 : acum),\"\")+\"</h3>\"); //VDIAZ - estilo\r\n\
+  \r\n  build_json_data();\r\n  \r\n\
+  });\r\n\
+  \r\n\
+  function roundToTwo(value) {\r\n  return (Math.round(value * 100) / 100);\r\n\
+  }\r\n\
+  \r\n\
+  function format1(n, currency) {\r\n    return currency + \" \" + n.toFixed(2).replace(/./g, function(c, i, a) {\r\n        return i > 0 && c !== \".\" && (a.length - i) % 3 === 0 ? \"\" + c : c;\r\n    });\r\n\
+  }\r\n\
+  \r\n\
+  function format2(n, currency) {\r\n    return currency + \" \" + n.toFixed(2).replace(/(\\d)(?=(\\d{3})+\\.)/g, \"$1,\");\r\n\
+  }\r\n\
+  \r\n\
+  function build_json_data() {\r\n  var tickets   = $(\"#boletas_por_pagar .section-body .vertical\").children(\".dynamic-element-show\");\r\n  var grid_data = [];\r\n\
+  \r\n  $.each(tickets, function(index, item) {\r\n    var body       = $(item).children(\".part-body\");\r\n    var fields     = $($(body).children(\".vertical\")).children(\".field-box\");\r\n    var checkboxes = $(fields[0]).find(\"input\");\r\n    var isChecked  = $(checkboxes[1]).is(\":checked\");\r\n\
+  \r\n    if (isChecked) {\r\n      row = {};\r\n\
+  \r\n      //row['checkbox']       = $(checkboxes[0]).is(\":checked\");\r\n      row['Nro de Placa']   = $($(fields[2]).find(\".only_view_label\")).children(\"div\").text();\r\n      row['Nro Boleta']     = $(fields[1]).find(\"input\").val();\r\n      row['Fecha']          = $(fields[3]).find(\"input\").val();\r\n      row['Motivo']         = $($(fields[4]).find(\".only_view_label\")).children(\"div\").text();\r\n      row['Imposici\xC3\xB3n']     = $($(fields[5]).find(\".only_view_label\")).children(\"div\").text();\r\n      row['Monto Boleta']   = $($(fields[6]).find(\".only_view_label\")).children(\"div\").text();\r\n      row['Monto Desacato'] = $($(fields[7]).find(\".only_view_label\")).children(\"div\").text();\r\n      row['Monto Total']    = $(fields[8]).find(\"input\").val();\r\n      row['yml_data']       = \"- Nro de Placa: \" + row['Nro de Placa']      + \"\\n\" +\r\n                              \"  Nro Boleta: \" + row['Nro Boleta']          + \"\\n\" +\r\n                              \"  Fecha: \" + row['Fecha']                    + \"\\n\" +\r\n                              \"  Motivo: \" + row['Motivo']                  + \"\\n\" +\r\n                              \"  Imposici\xC3\xB3n: \" + row['Imposici\xC3\xB3n']          + \"\\n\" +\r\n                              \"  Monto Boleta: \" + row['Monto Boleta']      + \"\\n\" +\r\n                              \"  Monto Desacato: \" + row['Monto Desacato']  + \"\\n\" +\r\n                              \"  Monto Total: \" + row['Monto Total']        + \"\\n\";\r\n\
+  \r\n      grid_data.push(row);\r\n    }\r\n  });\r\n\
+  \r\n  $(\"#field_boletas_por_pagar_monto_campo_data\").val(JSON.stringify(grid_data));\r\n  $(\"#field_boletas_por_pagar_monto_field_oculto\").html(JSON.stringify(grid_data));\r\n\
+  }\r\n\
+  \r\n\
+  build_json_data();\r\n\
+  \r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  // VDIAZ - cambios de presentaci\xC3\xB3n\r\n  // elimina el boton de maximizar    \r\n  $(\".panel-control-fullscreen2\").remove();\r\n  $(\".panel-control-collapse-all\").remove();\r\n  $(\".section-box\").find(\".panel-controls2\")[0].remove();\r\n  \r\n  \r\n  // cambia estilo de bot\xC3\xB3n p\xC5\x95oximo\r\n  $('input[value=Pr\xC3\xB3ximo]').attr(\"style\", \"background: #aeb404; height: 40px; font-size: 16px;text-align: center; border-radius: 10px;\");\r\n\
+  \r\n  var multa = $(\"#field_boletas_por_pagar_monto_motivo_de_la_multa\").val();\r\n  if (multa == 'false'){\r\n     // Modifica el nombre del bot\xC3\xB3n pr\xC3\xB3ximo \r\n  \t$('input[value=Pr\xC3\xB3ximo]').val(\"Completar Solicitud\");\r\n  } else {\r\n  \t  // Modifica el nombre del bot\xC3\xB3n pr\xC3\xB3ximo \r\n  \t$('input[value=Pr\xC3\xB3ximo]').val(\"Ver Resumen de Pago\");\r\n  }\r\n  \r\n  //obtiene todas las partes de boletas\r\n  var boletas = $('.part-box[id*=\"boletas_instance_\"]');\r\n  \r\n  //colocar check para pagar todos\r\n  //var pagarTodos = '<br> <input type=\"checkbox\" id=\"check-all\" /> <span>Pagar todas las boletas</span> '; \r\n  var pagarTodos = '<div style=\"float:right;padding:15px\"><h3> <input type=\"checkbox\" id=\"check-all\" /> Pagar todas las boletas</h3></div> '; \r\n  \r\n  $(pagarTodos).prependTo($('#boletas_por_pagar').children(\".section-body\"));\r\n  var checkPagar = $(\"#check-all\")\r\n  var multa = $(\"#field_boletas_por_pagar_monto_motivo_de_la_multa\").val();\r\n  if (multa == 'false'){\r\n    $(checkPagar).hide();\r\n    $(checkPagar).parents(\"h3\").hide();\r\n  }\r\n  \r\n  // HANDLER change check-all\r\n  // se usa evento click() ya que fue el que implementaron para gestionar la sumatoria\r\n  $( \"#check-all\" ).on( \"change\", function() {\r\n      if ($(this).prop('checked')){    \r\n        $(\"input[class='checkclone']:checked\").click();  \r\n        $(\"input[class='checkclone']\").click();    \r\n      }else{         \r\n        $(\"input[class='checkclone']:checked\").click(); \r\n      }\r\n  });\r\n\
+  \r\n  // -----------------------------------------------\r\n  // Inyectar texto en control de minimizar y maximizar\r\n  //    Ocultar todas las partes de boleta\r\n  $(\".part-box\").find(\".ui-icon-minusthick\").click();\r\n  //    Mostrar la parte de Total General\r\n  $(\"#monto\").find(\".ui-icon-plusthick\").click(); \r\n  //    Eliminar controles de min-max de Total General\r\n  $(\"#monto\").find(\".label2\").remove()\r\n          \r\n  //    Agregar el texto\r\n  //    Para que se muestre en texto en la misma linea\r\n  $(\".part-box\").find(\".ui-icon-plusthick, .ui-icon-minusthick\").attr(\"style\",\"display: inherit;\");\r\n  $(\".part-box\").find(\".ui-icon-plusthick\").parent().attr(\"style\",\"width: inherit;text-decoration: none;background: #a6a9ad;color: #1b1a19;padding: 2px;\");\r\n  //    Agregando el texto\r\n  $(\".part-box\").find(\".ui-icon-plusthick\").parent().append($(\"<span> Ver detalle</span>\"));\r\n  $(\".part-box\").find(\".ui-icon-minusthick\").parent().append($(\"<span> Ocultar detalle</span>\"));\r\n  \r\n  //    Handler para reinyectar cuando cambie el icono del bot\xC3\xB3n  \r\n  $(\".panel-control-collapse\").on( \"click\", function() {\r\n     $(this).find(\".ui-icon-plusthick, .ui-icon-minusthick\").attr(\"style\",\"display: inherit;\");    \r\n     $(\"<span> Ocultar detalle</span>\").appendTo($(this).children(\".ui-icon-minusthick\").parent());\r\n     $(\"<span> Ver detalle</span>\").appendTo($(this).children(\".ui-icon-plusthick\").parent());\r\n  });\r\n  // -----------------------------------------------\r\n          \r\n  //Para cada boleta, cambiar presentaci\xC3\xB3n en html\r\n  $.each( boletas, function(k, v) {    \r\n    if ($(v).find(\".groupHeader\").length > 0){\r\n      var panel = $(v).find('.panel-title');    \r\n      var newfieldcheck = $(v).find(\"input[type='checkbox']\").parent().parent().clone();\r\n\
+  \r\n\
+  \r\n      $(newfieldcheck).find(\"input[type='hidden']\").remove();\r\n      var newcheck= newfieldcheck.find(\"input[key='Pagar boleta']\");\r\n\
+  \r\n      $(newfieldcheck).find(\".checkbox\").attr(\"style\", \"font-size: 16px;padding-top:10px;color: #088A08;\");    \r\n      $(newcheck).removeClass(\"groupHeader\").addClass(\"checkclone\").attr(\"name\",\"\").attr(\"key\",\"\").attr(\"id\",\"\");\r\n\
+  \r\n      $(v).find(\"input[type='checkbox']\").parent().parent().hide();\r\n\
+  \r\n      //se mueve el checkbox\r\n      $(newfieldcheck).appendTo($(panel));\r\n\
+  \r\n\
+  \r\n      //se agrega bot\xC3\xB3n de ver detalle\r\n      //var verDetalle = \"<a class='opener-dialog' id='\"+ $(v).attr('id') +\"' style='float: right;background: -webkit-gradient(linear, left top, left bottom, from(#eeeff1), to(#828384));border-radius: 200px;    text-decoration: none;margin-right: 3px;font-weight: bold;font-size: 1.0em;cursor: pointer;padding: .4em 1.4em .3em 1.3em;border: none;color: #3c3a3a;'>Ver Detalle</a><br>\";\r\n      //$(\".part-box .panel-control-collapse\").html($(verDetalle));\r\n\
+  \r\n      //$(verDetalle).appendTo($(panel));\r\n      }\r\n  });\r\n  \r\n  // Handler para sincronizar checkboxes\r\n  $( \".checkclone\" ).on( \"change\", function() {\r\n      var part = $(this).parent().parent().parent().parent().parent(); \r\n      $(part).find(\"input[key='Pagar boleta']\").click();\r\n      // Prende o apaga checkall\r\n      if ($('.checkclone:checked').length == $('.checkclone').length){\r\n        $(\"#check-all\").prop(\"checked\",true);\r\n      }else{\r\n        $(\"#check-all\").prop(\"checked\",false);\r\n      }\r\n      \r\n    \r\n  });\r\n  \r\n  //Valida la primera vez si debe marcar el checkall\r\n  //console.log(('.checkclone:checked').length +\" - \"+ $('.checkclone').length);\r\n  if ($('.checkclone:checked').length == $('.checkclone').length){\r\n    $(\"#check-all\").prop(\"checked\",true);\r\n  }else{\r\n    $(\"#check-all\").prop(\"checked\",false);\r\n  }\r\n\
+  \r\n  // Cambia estilo al resumen de la boleta        \r\n  $(\".part-box .label2\").attr(\"style\",\"background-color: #f1efef;padding-bottom: 15px;\");\r\n\
+  \r\n\
+  \r\n  var montoGlobal = $(\"#field_boletas_por_pagar_monto_monto_de_la_multa\").html();\r\n  \r\n  $(\"#field_boletas_por_pagar_monto_monto_de_la_multa\").html(\"<h3>\"+montoGlobal+\"</h3>\");\r\n  \r\n  $(window).scrollTop(0);\r\n  \r\n  //se agrega modal\r\n  /*\r\n  var dialog = '<div id=\"dialog\" title=\"Detalle de la Boleta\"></div>';    \r\n  $(dialog).appendTo($('input[value=PAGAR]').parent());\r\n\
+  \r\n  //Se inicializa el modal\r\n  $(function() {\r\n    $( \"#dialog\" ).dialog({\r\n      modal: true,\r\n      width: 650,\r\n      autoOpen: false,\r\n      buttons: {\r\n      Ok: function() {\r\n        $( this ).dialog( \"close\" );\r\n        }\r\n      },\r\n      show: {\r\n        effect: \"blind\",\r\n        duration: 500\r\n      },\r\n      hide: {\r\n        effect: \"explode\",\r\n        duration: 500\r\n      }\r\n    });\r\n\
+  \r\n    $( \".opener-dialog\" ).on( \"click\", function() {\r\n      var html = $('.part-box[id=\"'+$(this).attr(\"id\")+'\"]').children(\".part-body\");\r\n      $( \"#dialog\" ).html(html.show());          \r\n      $( \"#dialog\" ).dialog( \"open\" );\r\n    });\r\n    \r\n  });\r\n    \r\n  */\r\n  \r\n\
+  });\r\n  \r\n"

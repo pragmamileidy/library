@@ -1,0 +1,19 @@
+--- 
+id: 3584
+section_id: 584
+part_id: 410
+name: Tipo documento productor
+created_at: 2015-11-06 19:09:57 Z
+updated_at: 2015-11-06 19:11:36 Z
+label: "Tipo Documento del Productor Fonogr\xC3\xA1fico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

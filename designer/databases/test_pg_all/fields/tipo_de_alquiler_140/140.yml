@@ -1,0 +1,30 @@
+--- 
+id: 140
+name: Tipo de alquiler
+description: Seleccionar si el alquiler es de Cuarto, Apartamento o Casa
+version: 
+status: Draft
+label: Tipo de alquiler
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-08 14:23:27 Z
+updated_at: 2013-08-12 21:30:11 Z
+values_list: "\"Cuarto\", \"Apartamento\", \"Casa\", \"Local\""
+keys_list: "\"Cuarto\", \"Apartamento\", \"Casa\", \"Local\""
+field_type: radio
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

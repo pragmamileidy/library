@@ -1,0 +1,19 @@
+--- 
+id: 2110
+section_id: 368
+part_id: 38
+name: Certificacion expedida por un contador publico autorizado
+created_at: 2012-08-08 19:44:59 Z
+updated_at: 2017-02-26 14:05:58.895072 Z
+label: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico autorizado en la que conste el capital m\xC3\xADnimo pagado de cien mil balboas (B/. 100,000.00)."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 6

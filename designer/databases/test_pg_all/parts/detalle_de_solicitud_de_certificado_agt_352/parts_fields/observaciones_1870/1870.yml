@@ -1,0 +1,30 @@
+--- 
+id: 1870
+part_id: 352
+field_id: 17
+name: Observaciones
+created_at: 2012-06-18 14:29:38 Z
+updated_at: 2017-06-04 00:27:11.755126 Z
+label: " Observaciones"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: " "
+help: " "
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4830a8cd-6ea7-4f45-a1c2-513c6dbc08ad
+version: 20170603-202711

@@ -1,0 +1,19 @@
+--- 
+id: 3791
+section_id: 607
+part_id: 38
+name: Plano Catastral
+created_at: 2017-04-08 21:26:15.033704 Z
+updated_at: 2017-04-08 21:26:15.033704 Z
+label: Plano Catastral
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 3

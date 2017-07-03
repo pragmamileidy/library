@@ -1,0 +1,19 @@
+--- 
+id: 1739
+section_id: 258
+part_id: 279
+name: Primaria
+created_at: 2012-06-01 20:25:30 Z
+updated_at: 2012-06-01 20:25:30 Z
+label: Primaria
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

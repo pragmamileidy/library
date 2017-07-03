@@ -1,0 +1,30 @@
+--- 
+id: 845
+part_id: 27
+field_id: 24
+name: "Persona Jur\xC3\xADdica"
+created_at: 2012-03-26 23:36:53 Z
+updated_at: 2017-06-04 00:23:49.601795 Z
+label: "Persona Jur\xC3\xADdica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c6997835-034e-4130-80da-d10ad02fa039
+version: 20170603-202349

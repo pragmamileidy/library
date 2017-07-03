@@ -1,0 +1,16 @@
+--- 
+id: 1715
+design_id: 116
+section_id: 265
+name: Datos de Alquiler
+created_at: 2012-07-26 21:09:34 Z
+updated_at: 2013-08-16 20:43:09 Z
+label: Datos de Alquiler
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1775\":{\"1595\":{\"required\":\"required\"},\"1596\":{\"required\":\"required\"},\"3413\":{\"required\":\"required\"},\"3414\":{\"required\":\"required\"},\"3415\":{\"required\":\"required\"},\"1599\":{\"required\":\"required\"},\"1601\":{\"required\":\"required\"},\"1602\":{\"required\":\"required\"},\"1603\":{\"required\":\"required\"},\"1604\":{\"required\":\"required\"},\"1605\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 9

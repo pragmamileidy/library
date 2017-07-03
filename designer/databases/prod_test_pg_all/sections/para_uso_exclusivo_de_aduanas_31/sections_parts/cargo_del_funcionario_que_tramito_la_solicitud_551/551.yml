@@ -1,0 +1,19 @@
+--- 
+id: 551
+section_id: 31
+part_id: 119
+name: "Cargo del Funcionario que Tramit\xC3\xB3 la Solicitud"
+created_at: 2011-11-28 21:22:37 Z
+updated_at: 2012-04-10 18:42:29 Z
+label: "Cargo del Funcionario que Tramit\xC3\xB3 la Solicitud"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"557\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 2

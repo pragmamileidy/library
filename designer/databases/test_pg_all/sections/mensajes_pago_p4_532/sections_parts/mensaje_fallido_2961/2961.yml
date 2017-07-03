@@ -1,0 +1,19 @@
+--- 
+id: 2961
+section_id: 532
+part_id: 602
+name: Mensaje_Fallido
+created_at: 2013-11-04 17:04:33 Z
+updated_at: 2013-11-04 17:04:33 Z
+label: ""
+min_instances: 0
+max_instances: 1
+depends_on: form_data.get("variables_usadas_codigos_p4.variables_p4.estatus")== "error"
+manage_as_confidential: false
+include: 
+hint: "Su pago no ha podido ser procesado con \xC3\xA9xito. Por favor haga clik en el siguiente enlace <A HREF=\"http://www.w3schools.com/\" id=\"fallido\">Pagar Tramite</A>"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

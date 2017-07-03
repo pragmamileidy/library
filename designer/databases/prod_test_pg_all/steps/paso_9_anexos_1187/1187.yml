@@ -1,0 +1,19 @@
+--- 
+id: 1187
+name: Paso 9 - Anexos
+label: Anexos
+description: ""
+fill_step_id: 586
+created_at: 2013-03-14 18:40:29 Z
+updated_at: 2014-06-19 21:03:38 Z
+include: "{\"2528\":{\"2710\":{\"2936\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2711\":{\"3014\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2903\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2714\":{\"2940\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2904\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2715\":{\"2937\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2712\":{\"2938\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2713\":{\"3064\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2716\":{\"3015\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2949\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3240\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3241\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 8 - Datos del Solicitante
+next_step: "Paso 10 -confirmaci\xC3\xB3n"
+position: 9
+ajax_calls: ""

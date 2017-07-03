@@ -1,0 +1,30 @@
+--- 
+id: 810
+part_id: 158
+field_id: 10
+name: "Modo de Acci\xC3\xB3n"
+created_at: 2012-03-24 15:02:30 Z
+updated_at: 2017-06-04 00:26:57.959071 Z
+label: "Modo de Acci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Modo de acci\xC3\xB3n del producto al cual se le solicita registro"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 94d90ba3-a06a-40c3-8920-e9220513586b
+version: 20170603-202657

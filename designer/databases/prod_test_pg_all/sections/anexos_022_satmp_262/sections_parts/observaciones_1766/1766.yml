@@ -1,0 +1,19 @@
+--- 
+id: 1766
+section_id: 262
+part_id: 157
+name: Observaciones
+created_at: 2012-06-05 15:59:07 Z
+updated_at: 2015-10-21 13:06:52 Z
+label: Observaciones sobre los Archivos Adjuntos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"800\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 14

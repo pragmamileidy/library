@@ -1,0 +1,19 @@
+--- 
+id: 3168
+section_id: 365
+part_id: 38
+name: "Depositar en el Banco Nacional B/.5.00 para la confecci\xC3\xB3n del certificado  la cuenta 40003822119 a nombre del Se\xC3\xB1or Noel Gonz\xC3\xA1lez"
+created_at: 2014-05-05 14:26:12 Z
+updated_at: 2015-11-02 19:06:40 Z
+label: "Deposito en el Banco Nacional B/.5.00 para la confecci\xC3\xB3n del certificado  la cuenta 40003822119 a nombre del Se\xC3\xB1or Noel Gonz\xC3\xA1lez"
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

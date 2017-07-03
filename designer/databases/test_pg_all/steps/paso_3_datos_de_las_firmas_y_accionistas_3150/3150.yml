@@ -1,0 +1,24 @@
+--- 
+id: 3150
+name: Paso 3 -  Datos de las Firmas y Accionistas
+label: Datos de las Firmas y Accionistas
+description: Datos de las Firmas y Accionistas
+fill_step_id: 1684
+created_at: 2015-05-21 14:04:07 Z
+updated_at: 2015-05-25 20:21:30 Z
+include: "{\"4847\":{\"2814\":{\"3278\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3459\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3280\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4849\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4850\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "#:: Obtener valor del config\r\n\
+  valor = @config.route(\"Rates-payment-payment-payment\")\r\n\
+  if valor == \"Electr\xC3\xB3nico\"\r\n    form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")\r\n\
+  end\r\n\
+  if valor == \"Manual\"\r\n    form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")\r\n\
+  end"
+views: 
+back_step: Paso 2 -  Informacion Enmienda de Pacto Social
+next_step: Paso 4 - Adjuntar archivo
+position: 3
+ajax_calls: ""

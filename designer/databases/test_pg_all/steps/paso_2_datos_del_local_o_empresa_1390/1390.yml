@@ -1,0 +1,19 @@
+--- 
+id: 1390
+name: Paso 2 - Datos del Local o Empresa
+label: Datos del Local o Empresa
+description: Ingrese los Datos del Local o Empresa
+fill_step_id: 694
+created_at: 2013-05-17 15:02:13 Z
+updated_at: 2013-05-17 15:02:13 Z
+include: "{\"2842\":{\"2080\":{\"2228\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2229\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2230\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2231\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2232\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2233\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2234\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2257\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2258\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2259\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2260\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2261\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2295\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2263\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2081\":{\"2264\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2265\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2082\":{\"574\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"633\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"578\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"579\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2843\":{\"2096\":{\"2302\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2296\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2304\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2320\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2306\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2307\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2305\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2308\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2309\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 1 - Datos de la Solicitud
+next_step: Paso 3 - Archivos Adjuntos
+position: 2
+ajax_calls: ""

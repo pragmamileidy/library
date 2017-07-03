@@ -1,0 +1,16 @@
+--- 
+id: 5193
+design_id: 286
+section_id: 549
+name: Datos del Solicitante
+created_at: 2017-02-22 23:47:42.298407 Z
+updated_at: 2017-02-22 23:47:42.298407 Z
+label: "Datos del Solicitante "
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3208\":{\"1973\":{\"required\":\"required\"},\"1469\":{\"required\":\"required\"},\"1470\":{\"required\":\"unrequired\"},\"1471\":{\"required\":\"required\"},\"1472\":{\"required\":\"unrequired\"},\"1473\":{\"required\":\"unrequired\"},\"1883\":{\"required\":\"required\"},\"1474\":{\"required\":\"unrequired\"}},\"3209\":{\"2456\":{\"required\":\"required\"},\"4042\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 3

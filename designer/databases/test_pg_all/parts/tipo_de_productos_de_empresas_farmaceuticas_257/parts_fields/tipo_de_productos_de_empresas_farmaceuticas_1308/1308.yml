@@ -1,0 +1,30 @@
+--- 
+id: 1308
+part_id: 257
+field_id: 97
+name: Tipo de productos de empresas farmaceuticas
+created_at: 2012-05-11 15:38:01 Z
+updated_at: 2017-06-04 00:25:49.706243 Z
+label: Seleccione el tipo de producto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: eeb0d376-d696-4af8-91b8-f955fe8339bc
+version: 20170603-202549

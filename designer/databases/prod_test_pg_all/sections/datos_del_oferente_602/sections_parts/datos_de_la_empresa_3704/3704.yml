@@ -1,0 +1,19 @@
+--- 
+id: 3704
+section_id: 602
+part_id: 120
+name: Datos de la Empresa
+created_at: 2017-02-28 01:59:00.409456 Z
+updated_at: 2017-02-28 05:01:05.872208 Z
+label: Datos de la Empresa
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"567\":{},\"566\":{},\"568\":{},\"3342\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: horizontal
+order_input: 1

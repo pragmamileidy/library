@@ -1,0 +1,16 @@
+--- 
+id: 1282
+design_id: 112
+section_id: 274
+name: Datos del Solicitante Persona Natural
+created_at: 2012-06-08 15:12:31 Z
+updated_at: 2013-04-08 16:16:03 Z
+label: Datos del Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: "{\"1791\":{\"3116\":{\"required\":\"required\"},\"1983\":{\"required\":\"required\"},\"1656\":{\"required\":\"required\"},\"1657\":{\"required\":\"required\"},\"1658\":{\"required\":\"unrequired\"},\"1659\":{\"required\":\"required\"},\"1660\":{\"required\":\"unrequired\"},\"1661\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 5

@@ -1,0 +1,30 @@
+--- 
+id: 1727
+part_id: 319
+field_id: 146
+name: "Opci\xC3\xB3n a solicitar"
+created_at: 2012-06-11 13:59:44 Z
+updated_at: 2017-06-04 00:21:51.923927 Z
+label: "Opci\xC3\xB3n a solicitar"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 08793247-d3cd-4b08-972a-33e7977c889a
+version: 20170603-202151

@@ -1,0 +1,19 @@
+--- 
+id: 1458
+section_id: 243
+part_id: 139
+name: Detalle de productos Quimicos
+created_at: 2012-05-20 00:34:00 Z
+updated_at: 2012-05-20 00:34:00 Z
+label: "Detalle del Producto Qu\xC3\xADmicos"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Introduzca el detalle del producto qu\xC3\xADmico"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 4

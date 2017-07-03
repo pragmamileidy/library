@@ -1,0 +1,30 @@
+--- 
+id: 973
+part_id: 193
+field_id: 31
+name: "De estar hipotecado el veh\xC3\xADculo, traer  notariada y firmada por el banco o financiera donde autorice la salida del pa\xC3\xADs"
+created_at: 2012-04-20 16:06:16 Z
+updated_at: 2017-06-04 00:29:56.422248 Z
+label: "De estar hipotecado el veh\xC3\xADculo, traer  notariada y firmada por el banco o financiera donde autorice la salida del pa\xC3\xADs"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d8009346-e803-45c2-afd8-6dfdc9d60ad9
+version: 20170603-202956

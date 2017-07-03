@@ -1,0 +1,30 @@
+--- 
+id: 2656
+part_id: 491
+field_id: 10
+name: InicioFaseEvaluacion
+created_at: 2013-01-14 14:51:21 Z
+updated_at: 2017-06-04 00:22:26.044390 Z
+label: "Inicio Fase Evaluaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo  para los procesos 4 y 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3f558e50-4ecb-4637-9eb7-ddc52b2cb5b8
+version: 20170603-202226

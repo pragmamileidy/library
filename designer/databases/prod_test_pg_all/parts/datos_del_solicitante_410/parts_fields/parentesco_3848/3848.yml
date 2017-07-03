@@ -1,0 +1,30 @@
+--- 
+id: 3848
+part_id: 410
+field_id: 333
+name: Parentesco
+created_at: 2015-02-17 05:55:31 Z
+updated_at: 2017-06-04 00:29:50.906074 Z
+label: Parentesco
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a8f15394-9837-4c67-8587-34dec45c6c1a
+version: 20170603-202950

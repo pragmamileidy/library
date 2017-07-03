@@ -1,0 +1,19 @@
+--- 
+id: 416
+section_id: 51
+part_id: 121
+name: "Direcci\xC3\xB3n y Tel\xC3\xA9fono del Establecimiento"
+created_at: 2011-11-16 22:35:25 Z
+updated_at: 2013-04-04 19:04:38 Z
+label: "Direcci\xC3\xB3n y Tel\xC3\xA9fono del Establecimiento"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"577\":{},\"574\":{},\"576\":{},\"573\":{},\"583\":{},\"578\":{},\"579\":{},\"584\":{},\"580\":{},\"575\":{},\"585\":{},\"594\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

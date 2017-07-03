@@ -1,0 +1,30 @@
+--- 
+id: 3925
+part_id: 739
+field_id: 27
+name: view
+created_at: 2015-05-25 19:24:49 Z
+updated_at: 2017-06-04 00:23:22.041978 Z
+label: view
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 63fc9e09-ffb1-4e76-8720-9f7d8a857ebd
+version: 20170603-202322

@@ -1,0 +1,46 @@
+--- 
+id: 3021
+name: Paso 1 - Ingresar Datos
+label: Ingresar Datos
+description: Ingresar Datos
+fill_step_id: 1622
+created_at: 2014-12-03 21:48:51 Z
+updated_at: 2014-12-10 21:11:25 Z
+include: "{\"4610\":{\"3410\":{\"3805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3811\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3832\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4617\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |
+  #::::::::Generador del Cosecutivo para en Nro de Solicitud::::::::::#
+  
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get( '/consecutive/generador_subsidio_soscl/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+  
+  
+  #::::::::::Inicializacion de los Datos Generales del Solicitante:::::::::#
+  
+    form_data.set("informacion_del_beneficiario.datos_del_solicitante.cedula", @owner["national_id"])
+    form_data.set("informacion_del_beneficiario.datos_del_solicitante.primer_nombre", @owner["first_name"])
+    form_data.set("informacion_del_beneficiario.datos_del_solicitante.segundo_nombre", @owner["second_name"])
+    form_data.set("informacion_del_beneficiario.datos_del_solicitante.primer_apellido", @owner["last_name"])
+    form_data.set("informacion_del_beneficiario.datos_del_solicitante.segundo_apellido", @owner["second_last_name"])
+    form_data.set("informacion_del_beneficiario.datos_del_solicitante.nombre_completo", @owner["name"])
+    form_data.set("informacion_del_beneficiario.datos_del_solicitante.email", @owner["email"])
+
+on_transition: "cedula = form_data.get(\"informacion_del_beneficiario.datos_de_la_persona.cedula\")\r\n\
+  \r\n\
+  #::::::::::::::::Validar Datos en el Tribunal Electoral::::::::::::::::::::::::::::::::#\r\n\
+  \r\n\
+  result = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' +  \"#{cedula}\").parsed_response\r\n\
+  beneficiario = result[\"response\"]\r\n\
+  if !beneficiario.nil? \r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.cedula\",beneficiario[\"cedula\"])\r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.sexo\",beneficiario[\"sexo\"])\r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.primer_nombre\",beneficiario[\"primerNombre\"])\r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.segundo_nombre\",beneficiario[\"segundoNombre\"])\r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.primer_apellido\",beneficiario[\"primerApellido\"])\r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.segundo_apellido\",beneficiario[\"segundoApellido\"])\r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.apellido_de_casada\",beneficiario[\"apellidoCasada\"])\r\n        form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.numero_de_telefono\",beneficiario[\"tlfLocal\"])\r\n\
+  else\r\n  transition_errors << \"El n\xC3\xBAmero de c\xC3\xA9dula suministrada no existe en el sistema. Por favor revise el valor.\"\r\n\
+  end\r\n"
+views: 
+back_step: ""
+next_step: "Paso 2 - Informaci\xC3\xB3n de la Solicitud"
+position: 0
+ajax_calls: ""

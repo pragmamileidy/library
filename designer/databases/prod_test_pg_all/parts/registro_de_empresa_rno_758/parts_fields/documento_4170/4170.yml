@@ -1,0 +1,30 @@
+--- 
+id: 4170
+part_id: 758
+field_id: 10
+name: Documento
+created_at: 2017-02-28 02:16:06.182542 Z
+updated_at: 2017-06-04 00:25:28.876337 Z
+label: Documento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor introduzca un valor entero. Ejemplo: 1861976"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: /^[0-9]+$/
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6cbeff24-2dc2-4f4e-bca1-adda5b8155f1
+version: 20170603-202528

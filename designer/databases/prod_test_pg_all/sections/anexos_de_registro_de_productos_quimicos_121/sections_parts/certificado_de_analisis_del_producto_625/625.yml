@@ -1,0 +1,19 @@
+--- 
+id: 625
+section_id: 121
+part_id: 38
+name: "Certificado de an\xC3\xA1lisis del producto"
+created_at: 2012-03-08 15:19:52 Z
+updated_at: 2015-10-29 18:17:50 Z
+label: "Certificado de an\xC3\xA1lisis del producto expedido por el fabricante"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Por favor adjuntar el Certificado de an\xC3\xA1lisis del producto"
+help: "Por favor adjuntar el Certificado de an\xC3\xA1lisis del producto"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

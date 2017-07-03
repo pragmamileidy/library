@@ -1,0 +1,17 @@
+--- 
+id: 388
+name: Datos Generales Permiso de Trabajo en Calidad para Trabajador Extranjero
+description: Datos Generales Permiso de Trabajo en Calidad para Trabajador Extranjero, datos personales del usuario y especificacion de permisos de trabajo
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-18 21:08:09 Z
+updated_at: 2015-09-07 13:34:52 Z
+status: Draft
+label: "Datos Generales "
+hint: ""
+serial: 8566-9330-3623-3562-4762

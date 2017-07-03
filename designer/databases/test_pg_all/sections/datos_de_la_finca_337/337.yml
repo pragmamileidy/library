@@ -1,0 +1,17 @@
+--- 
+id: 337
+name: Datos de la Finca
+description: "Datos de la Finca "
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-20 21:14:15 Z
+updated_at: 2012-07-20 21:14:15 Z
+status: Draft
+label: Datos de la Finca
+hint: ""
+serial: 

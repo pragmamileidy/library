@@ -1,0 +1,39 @@
+--- 
+id: 1789
+name: Paso 1 - Recepcion de Pago
+label: "Recepci\xC3\xB3n de Pago"
+description: "Recepci\xC3\xB3n de Pago"
+fill_step_id: 903
+created_at: 2013-06-28 13:24:25 Z
+updated_at: 2014-01-06 21:48:00 Z
+include: "{\"3683\":{\"1824\":{\"1366\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1367\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1368\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1369\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1371\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2544\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"909\":{\"2054\":{\"2164\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2165\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3447\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  # Inicializacion de datos del agente - LG
+  
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  
+  form_data.set("recibido_por_pago.datos_del_funcionario_proceso.usuario", _agente["name"])
+  form_data.set("recibido_pago.datos_del_funcionario_proceso.usuario", _agente["name"])
+on_transition: |-
+  id_pago = form_data.get("variables_pago_generico.variables_pago_generico.payment")
+  
+  respuesta_del_agente = form_data.get("recibido_por_pago.datos_del_funcionario_proceso.seleccione_el_resultado_de_su_evaluacion")
+  
+  if respuesta_del_agente.blank?
+    respuesta_del_agente = form_data.get("recibido_pago.datos_del_funcionario_proceso.seleccione_el_resultado_de_su_evaluacion_ok_rechazo")
+  end
+  
+  PaymentProxy.payment_reception(id_pago, respuesta_del_agente)
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

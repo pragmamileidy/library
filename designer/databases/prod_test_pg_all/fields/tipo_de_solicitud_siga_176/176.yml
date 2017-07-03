@@ -1,0 +1,30 @@
+--- 
+id: 176
+name: Tipo de Solicitud Siga
+description: Tipo de Solicitud en la activacion y desactivacion de usuario siga
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-11 16:08:56 Z
+updated_at: 2013-04-12 22:17:26 Z
+values_list: "\"Consolidadores y Desconsolidadores\", \"Transportadores\", \"Exportadores\", \"Recintos Privados, Puertos y Dep\xC3\xB3sitos\", \"Transportistas de Carga A\xC3\xA9rea, Mar\xC3\xADtima y Terrestre\", \"Corredor de Aduanas\""
+keys_list: "\"Consolidadores y Desconsolidadores\", \"Transportadores\", \"Exportadores\", \"Recintos Privados, Puertos y Dep\xC3\xB3sitos\", \"Transportistas de Carga A\xC3\xA9rea, Mar\xC3\xADtima y Terrestre\", \"Corredor de Aduanas\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

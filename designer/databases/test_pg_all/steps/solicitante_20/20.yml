@@ -1,0 +1,19 @@
+--- 
+id: 20
+name: Solicitante
+label: Solicitante
+description: ""
+fill_step_id: 7
+created_at: 2012-03-09 03:57:34 Z
+updated_at: 2012-05-19 20:00:26 Z
+include: "{\"308\":{\"274\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"567\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ,Registrante
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: Registrante
+position: 0
+ajax_calls: 

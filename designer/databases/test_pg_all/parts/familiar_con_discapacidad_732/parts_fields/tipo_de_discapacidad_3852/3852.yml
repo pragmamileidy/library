@@ -1,0 +1,30 @@
+--- 
+id: 3852
+part_id: 732
+field_id: 334
+name: Tipo de discapacidad
+created_at: 2015-02-17 06:18:05 Z
+updated_at: 2017-06-04 00:27:47.962026 Z
+label: Tipo de discapacidad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 301d5c8f-dfd1-4113-a38d-7a18e36cd8b1
+version: 20170603-202747

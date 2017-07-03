@@ -1,0 +1,19 @@
+--- 
+id: 10
+section_id: 6
+part_id: 12
+name: Mensaje_Exito
+created_at: 2016-10-06 14:49:52.734090 Z
+updated_at: 2016-12-16 22:38:57.207447 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: form_data.get("variables_pago_generico.variables_pago_generico.estatus")== "successfully"
+manage_as_confidential: false
+include: 
+hint: "<strong style=\"color:#088A08\"><p> Su pago ha sido procesado exitosamente. </p><p> Por favor env\xC3\xADe el formulario para continuar con su tr\xC3\xA1mite. </p></strong>"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

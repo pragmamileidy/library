@@ -1,0 +1,19 @@
+--- 
+id: 1828
+section_id: 287
+part_id: 38
+name: "Solicitud generada por el portal PSP firmada seg\xC3\xBAn cedula por ambas partes (Se debe imprimir, escanear y adjuntar)"
+created_at: 2012-06-11 18:50:40 Z
+updated_at: 2012-06-11 19:03:39 Z
+label: "Solicitud generada por el portal PSP firmada seg\xC3\xBAn cedula por ambas partes (Se debe imprimir, escanear y adjuntar)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

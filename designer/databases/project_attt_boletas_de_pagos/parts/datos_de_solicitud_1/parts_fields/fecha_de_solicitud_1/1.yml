@@ -1,0 +1,30 @@
+--- 
+id: 1
+part_id: 1
+field_id: 1
+name: Fecha de Solicitud
+created_at: 2016-10-04 19:49:36.066729 Z
+updated_at: 2016-10-04 19:49:36.066729 Z
+label: Fecha de Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b5e89d57-d2b3-4746-91f8-fac2cb03ee05
+version: 20161004-154936

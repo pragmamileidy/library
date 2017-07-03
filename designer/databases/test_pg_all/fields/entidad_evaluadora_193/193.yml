@@ -1,0 +1,30 @@
+--- 
+id: 193
+name: Entidad Evaluadora
+description: Entidad Evaluadora
+version: 
+status: Draft
+label: Entidad Evaluadora
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 15:57:06 Z
+updated_at: 2012-07-23 15:57:06 Z
+values_list: "\"MOP\",\"IDAAN\",\"ATTT\",\"MINSA\",\"ANAM\",\"MIVIOT\""
+keys_list: "\"MOP\",\"IDAAN\",\"ATTT\",\"MINSA\",\"ANAM\",\"MIVIOT\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

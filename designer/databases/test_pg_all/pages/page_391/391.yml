@@ -1,0 +1,382 @@
+--- 
+id: 391
+position: 1
+selector: "{\"2486\":{\"656\":{\"758\":{},\"759\":{}}},\"2487\":{\"580\":{\"1461\":{},\"1981\":{},\"1374\":{},\"545\":{},\"2983\":{},\"763\":{}},\"2646\":{\"2980\":{}},\"581\":{\"572\":{},\"805\":{}}},\"2488\":{\"595\":{\"567\":{},\"566\":{},\"3606\":{}},\"597\":{\"572\":{},\"805\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 64px;
+  	left: 736px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 40px;
+  	left: 718px;
+  	width: 304px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_datosdelapersona_tipo_documento_string {
+  	position: absolute;
+  	top: 285px;
+  	left: 266px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 317px;
+  	left: 266px;
+  	width: 327px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 349px;
+  	left: 266px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 463px;
+  	left: 260px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 495px;
+  	left: 259px;
+  	width: 246px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_datosdelapersona_edad {
+  	position: absolute;
+  	top: 462px;
+  	left: 694px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 528px;
+  	left: 260px;
+  	width: 430px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_1_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 385px;
+  	left: 265px;
+  	width: 694px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+     .datosdelautorespersonanatural_instance_1_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 284px;
+  	left: 669px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_datosdelapersona_tipo_documento_string {
+  	position: absolute;
+  	top: 634px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 665px;
+  	left: 267px;
+  	width: 344px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 697px;
+  	left: 269px;
+  	width: 685px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 810px;
+  	left: 262px;
+  	width: 246px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 844px;
+  	left: 260px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_datosdelapersona_edad {
+  	position: absolute;
+  	top: 811px;
+  	left: 696px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 877px;
+  	left: 262px;
+  	width: 431px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 733px;
+  	left: 266px;
+  	width: 693px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_2_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 633px;
+  	left: 672px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_datosdelapersona_tipo_documento_string {
+  	position: absolute;
+  	top: 987px;
+  	left: 264px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 1018px;
+  	left: 263px;
+  	width: 247px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 1049px;
+  	left: 262px;
+  	width: 693px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 1164px;
+  	left: 258px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 1198px;
+  	left: 254px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_datosdelapersona_edad {
+  	position: absolute;
+  	top: 1164px;
+  	left: 691px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 1231px;
+  	left: 255px;
+  	width: 433px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 1085px;
+  	left: 263px;
+  	width: 697px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_instance_3_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 987px;
+  	left: 668px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_1_datosdelaempresa_tipodocumento {
+  	position: absolute;
+  	top: 285px;
+  	left: 268px;
+  	width: 250px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_1_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 317px;
+  	left: 268px;
+  	width: 341px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_1_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 349px;
+  	left: 266px;
+  	width: 692px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_1_direccin_pas {
+  	position: absolute;
+  	top: 285px;
+  	left: 669px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_1_direccin_direccin {
+  	position: absolute;
+  	top: 385px;
+  	left: 265px;
+  	width: 693px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_2_datosdelaempresa_tipodocumento {
+  	position: absolute;
+  	top: 634px;
+  	left: 268px;
+  	width: 250px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_2_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 665px;
+  	left: 268px;
+  	width: 346px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_2_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 698px;
+  	left: 268px;
+  	width: 692px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_2_direccin_pas {
+  	position: absolute;
+  	top: 633px;
+  	left: 672px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_2_direccin_direccin {
+  	position: absolute;
+  	top: 734px;
+  	left: 267px;
+  	width: 689px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_3_datosdelaempresa_tipodocumento {
+  	position: absolute;
+  	top: 987px;
+  	left: 264px;
+  	width: 250px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_3_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 1019px;
+  	left: 266px;
+  	width: 245px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_3_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 1050px;
+  	left: 261px;
+  	width: 695px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_3_direccin_pas {
+  	position: absolute;
+  	top: 987px;
+  	left: 668px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitularespersonajurdica_instance_3_direccin_direccin {
+  	position: absolute;
+  	top: 1086px;
+  	left: 263px;
+  	width: 694px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 144
+created_at: 2013-06-13 15:51:35 Z
+updated_at: 2015-10-26 00:46:11 Z
+instances_selector: "{\"2486\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2487\":{\"value\":\"1,3\",\"580\":{\"value\":\"\",\"1461\":{\"value\":\"\"},\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"545\":{\"value\":\"\"},\"2983\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"2646\":{\"value\":\"\",\"2980\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"}}},\"2488\":{\"value\":\"1,3\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"},\"3606\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"}}}}"
+size: ""

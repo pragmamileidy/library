@@ -1,0 +1,30 @@
+--- 
+id: 4128
+part_id: 757
+field_id: 225
+name: " Provincia_Lista"
+created_at: 2017-02-28 01:06:32.476860 Z
+updated_at: 2017-06-04 00:23:27.139711 Z
+label: " Provincia"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: " "
+help: " "
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: afabdf42-51d5-42f5-b1ce-56a2937b3d5a
+version: 20170603-202327

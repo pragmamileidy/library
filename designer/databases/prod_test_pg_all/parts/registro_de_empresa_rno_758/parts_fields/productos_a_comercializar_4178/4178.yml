@@ -1,0 +1,30 @@
+--- 
+id: 4178
+part_id: 758
+field_id: 17
+name: Productos a Comercializar
+created_at: 2017-02-28 02:23:30.218567 Z
+updated_at: 2017-06-04 00:27:54.416293 Z
+label: Productos que comercializa
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Debe indicar si va a comercializar algunos de estos productos: M\xC3\xA9dico-quir\xC3\xBArgicos, Laboratorios, Medicamentos, Imagenolog\xC3\xADa, Odontolog\xC3\xADa, Servicios"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 11eb4b29-0b68-4515-a923-442d9b81de63
+version: 20170603-202754

@@ -1,0 +1,19 @@
+--- 
+id: 3019
+section_id: 537
+part_id: 682
+name: "C\xC3\xA9dula del Representante Legal p5"
+created_at: 2014-02-20 18:45:05 Z
+updated_at: 2014-03-15 02:47:37 Z
+label: "C\xC3\xA9dula del Representante Legal del Solicitante"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

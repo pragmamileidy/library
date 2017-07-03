@@ -1,0 +1,19 @@
+--- 
+id: 671
+section_id: 134
+part_id: 153
+name: Tipo de Ayuda
+created_at: 2012-03-21 04:26:09 Z
+updated_at: 2012-05-21 16:31:34 Z
+label: Tipo de Ayuda
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1393\":{},\"1394\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

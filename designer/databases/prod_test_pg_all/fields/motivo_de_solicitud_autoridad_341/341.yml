@@ -1,0 +1,30 @@
+--- 
+id: 341
+name: motivo de solicitud autoridad
+description: motivo de solicitud autoridad dij
+version: 
+status: Draft
+label: motivo de solicitud autoridad
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2015-07-21 21:26:12 Z
+updated_at: 2015-08-12 14:46:56 Z
+values_list: "\"\",\"Trabajo\",\"Visas Migratorias\",\"Crisol de Razas\",\"Record para uso exclusivo en el extranjero\",\"Averiguaci\xC3\xB3n\",\"Otros\""
+keys_list: "\"\",\"Trabajo\",\"Visas Migratorias\",\"Crisol de Razas\",\"Record para uso exclusivo en el extranjero\",\"Averiguaci\xC3\xB3n\",\"Otros\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 3109-1816-5244-3827-4483

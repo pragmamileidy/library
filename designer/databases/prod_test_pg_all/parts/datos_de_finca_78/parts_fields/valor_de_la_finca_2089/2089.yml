@@ -1,0 +1,30 @@
+--- 
+id: 2089
+part_id: 78
+field_id: 10
+name: Valor de la Finca
+created_at: 2012-07-20 21:12:07 Z
+updated_at: 2017-06-04 00:30:50.959059 Z
+label: Valor de la Finca
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Favor introduzca un valor usando n\xC3\xBAmeros del cero (0) al nueve (9) . El caracter de separaci\xC3\xB3n de decimal es el punto (.) Ejemplo: 210.300"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /^[0-9]+(\.[0-9]+)?$/
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a08c29a6-8835-4700-8045-bd7b4c3f5b9f
+version: 20170603-203050

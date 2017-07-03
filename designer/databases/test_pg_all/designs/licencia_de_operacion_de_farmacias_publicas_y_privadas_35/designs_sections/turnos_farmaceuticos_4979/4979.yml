@@ -1,0 +1,16 @@
+--- 
+id: 4979
+design_id: 35
+section_id: 583
+name: "Turnos Farmac\xC3\xA9uticos"
+created_at: 2015-11-05 18:05:20 Z
+updated_at: 2017-03-01 02:45:21.435356 Z
+label: "Turnos Farmac\xC3\xA9uticos"
+min_instances: 1
+max_instances: 10
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3583\":{\"1439\":{\"required\":\"required\"},\"1440\":{\"required\":\"required\"},\"4193\":{\"required\":\"required\"},\"4194\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 8

@@ -1,0 +1,16 @@
+--- 
+id: 4750
+design_id: 265
+section_id: 265
+name: Datos del Deposito y alquiler
+created_at: 2015-01-13 15:39:10 Z
+updated_at: 2015-01-13 15:39:10 Z
+label: Datos del Deposito y alquiler
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1774\":{\"2213\":{\"required\":\"required\"},\"1587\":{\"required\":\"required\"},\"1588\":{\"required\":\"required\"}},\"1775\":{\"1595\":{\"required\":\"required\"},\"1596\":{\"required\":\"required\"},\"3413\":{\"required\":\"required\"},\"3414\":{\"required\":\"required\"},\"3415\":{\"required\":\"required\"},\"1599\":{\"required\":\"required\"},\"1601\":{\"required\":\"required\"},\"1602\":{\"required\":\"required\"},\"1603\":{\"required\":\"required\"},\"1604\":{\"required\":\"required\"},\"1605\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

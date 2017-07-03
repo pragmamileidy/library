@@ -1,0 +1,30 @@
+--- 
+id: 1141
+part_id: 223
+field_id: 31
+name: "Certificado de defunci\xC3\xB3n"
+created_at: 2012-05-02 13:36:33 Z
+updated_at: 2017-06-04 00:28:05.450284 Z
+label: "Certificado de defunci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 041691d3-e776-4b7a-8274-6341fa719ffb
+version: 20170603-202805

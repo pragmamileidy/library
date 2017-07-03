@@ -1,0 +1,9 @@
+--- 
+id: 133
+name: official-public_Registro de Fonogramas
+description: Registro de Fonogramas
+created_at: 2013-06-10 16:05:10 Z
+updated_at: 2015-11-06 18:44:28 Z
+design_id: 178
+label: Formulario de la Solicitud Registro de Fonogramas
+ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

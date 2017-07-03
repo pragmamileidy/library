@@ -1,0 +1,17 @@
+--- 
+id: 142
+name: "Datos de Plaguicida Qu\xC3\xADmico Formulado"
+description: "Informaci\xC3\xB3n detallada de un plaguicida qu\xC3\xADmico formulado "
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-24 15:17:03 Z
+updated_at: 2015-10-26 18:42:20 Z
+status: Draft
+label: "Datos del Plaguicida Qu\xC3\xADmico Formulado"
+hint: ""
+serial: 2484-4949-8953-8161-1509

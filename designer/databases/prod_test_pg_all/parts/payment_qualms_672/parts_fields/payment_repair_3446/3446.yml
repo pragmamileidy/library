@@ -1,0 +1,30 @@
+--- 
+id: 3446
+part_id: 672
+field_id: 305
+name: payment repair
+created_at: 2013-09-18 14:47:27 Z
+updated_at: 2017-06-04 00:23:06.344512 Z
+label: Reparo de Pago
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 76eb4b87-6e27-48d0-86af-c709169a4d8d
+version: 20170603-202306

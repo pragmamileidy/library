@@ -1,0 +1,74 @@
+--- 
+id: 1609
+name: Paso 0 - Especificacion de Costos
+label: "Especificaci\xC3\xB3n de Costos"
+description: ""
+fill_step_id: 795
+created_at: 2014-02-14 22:04:05 Z
+updated_at: 2014-02-14 22:04:05 Z
+include: "{\"3482\":{\"2798\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"3483\":{\"2549\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2550\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2551\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2552\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2553\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2554\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2555\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2558\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2559\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2560\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2561\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2562\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2563\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2564\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2565\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2567\":{\"3383\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3396\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit,print_form
+on_becoming: |-
+  form_data.set("entidad_evaluadora_revisiones.monto_total.costo", " ") 
+  #CODIGO PARA INVOCAR EL SERVICIO payment_computing_service
+   _applicationId = @application["id"]
+   _configRoute = "EntidadesEvaluadoras-rates"
+   _formId = @task["form"]
+   evaluacion = form_data.get("seccion_de_funcionario_jefe4.datos_del_funcionario_generico.evaluacion")
+  
+  
+  #result = WebserviceConsumer.get('/payments/payment_computing_service.json?application_id=' + "#{_applicationId}" + '&config_route=' + "#{_configRoute}" + '&form_id=' + "#{_formId}").parsed_response
+  
+    hash = {:application_id => "#{_applicationId}", 
+                :config_route   => "#{_configRoute}",
+                :form_id          => "#{_formId}"}
+    result = PaymentProxy.payment_computing_service(hash)
+  
+  _payment_id= result["response"]["payment_id"]
+  _detail = result["response"]["detail"]
+  _total  = result["response"]["result"]["total"] 
+  
+  
+  #form_data.set("variables_usadas_codigos_p5.variables_p5.payment",_payment_id)
+  #form_data.set("variables_usadas_codigos_p5.variables_p5.detail",_detail)
+  
+  if (evaluacion == "REPARO")
+  	form_data.set("entidad_evaluadora_revisiones.monto_total.monto_pagado", _total) 
+  else
+  	form_data.set("entidad_evaluadora_revisiones.monto_total.costo", _total) 
+  	form_data.set("entidad_evaluadora_revisiones.monto_total.total", _total) 
+  end
+  
+  
+  result["response"]["result"]["items"].each do |key, value|
+   if(key =~ /item_instance_([\d]+)/)
+    _i = $1.to_i - 1
+    if(value["description"] == "fija") 
+      form_data.set("entidades_fijas.entidad.nombre_de_la_entidad", value["name"])
+  
+      form_data.set("entidades_fijas.entidad.monto_a_pagar", value["formula"])
+       else
+      form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.nombre_de_la_entidad", value["name"])
+  
+      form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.monto_a_pagar", value["formula"])
+    end
+   end 
+  end
+on_transition: |-
+  # usado para print designs
+  evaluacion = form_data.get("seccion_de_funcionario_jefe4.datos_del_funcionario_generico.evaluacion")		  
+  if (evaluacion == "REPARO")
+  			suma3 = form_data.get("entidad_evaluadora_revisiones.monto_total.total") 
+  			suma2 = form_data.get("entidad_evaluadora_revisiones.monto_total.monto_pagado") 
+  			monto_total = suma3.to_i + suma2.to_i 
+  			form_data.set("entidad_evaluadora_revisiones.monto_total.total", monto_total)
+                          resta =  monto_total.to_i - suma2.to_i
+                          form_data.set("entidad_evaluadora_revisiones.monto_total.acumulado", resta)       
+  end
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

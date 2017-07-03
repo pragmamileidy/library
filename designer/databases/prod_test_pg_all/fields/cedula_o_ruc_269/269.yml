@@ -1,0 +1,30 @@
+--- 
+id: 269
+name: "c\xC3\xA9dula o RUC"
+description: "Campo de Selecci\xC3\xB3n entre c\xC3\xA9dula o RUC"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-19 14:53:05 Z
+updated_at: 2013-03-19 14:53:05 Z
+values_list: "\"C\xC3\xA9dula\", \"RUC\""
+keys_list: "\"C\xC3\xA9dula\", \"RUC\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 1716
+part_id: 318
+field_id: 145
+name: Mobilarios y Equipos
+created_at: 2012-06-10 17:20:35 Z
+updated_at: 2017-06-04 00:21:51.745007 Z
+label: Selecciones Mobilarios y Equipos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1c2dfd8c-878e-429c-bc64-93cfe64604bd
+version: 20170603-202151

@@ -1,0 +1,30 @@
+--- 
+id: 796
+part_id: 155
+field_id: 10
+name: "Pa\xC3\xADs de Origen"
+created_at: 2012-03-22 01:27:00 Z
+updated_at: 2017-06-04 00:26:57.623916 Z
+label: "Pa\xC3\xADs de Origen"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 60ea668b-9390-4744-a4c6-135f9f5a55ec
+version: 20170603-202657

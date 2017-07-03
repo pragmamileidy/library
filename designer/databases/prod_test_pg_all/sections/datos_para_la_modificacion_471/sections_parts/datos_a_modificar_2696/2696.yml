@@ -1,0 +1,19 @@
+--- 
+id: 2696
+section_id: 471
+part_id: 576
+name: Datos a Modificar
+created_at: 2013-03-13 22:59:32 Z
+updated_at: 2013-03-13 22:59:32 Z
+label: Datos a Modificar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

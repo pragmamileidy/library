@@ -1,0 +1,17 @@
+--- 
+id: 93
+name: "Secci\xC3\xB3n Mercantil del Registro P\xC3\xBAblico"
+description: "Contiene la ficha y el documento en el cual se encuentra inscrita una empresa en el Registro P\xC3\xBAblico"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-16 19:58:26 Z
+updated_at: 2012-05-16 20:55:12 Z
+label: "Secci\xC3\xB3n Mercantil del Registro P\xC3\xBAblico"
+hint: ""
+view_class: 
+serial: 

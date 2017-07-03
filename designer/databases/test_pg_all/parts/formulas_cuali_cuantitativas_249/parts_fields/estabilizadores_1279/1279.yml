@@ -1,0 +1,30 @@
+--- 
+id: 1279
+part_id: 249
+field_id: 10
+name: Estabilizadores
+created_at: 2012-05-08 15:36:22 Z
+updated_at: 2017-06-04 00:28:07.038646 Z
+label: Estabilizadores
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cc0bb666-0fed-4d36-a9e5-bfc012bf6afd
+version: 20170603-202807

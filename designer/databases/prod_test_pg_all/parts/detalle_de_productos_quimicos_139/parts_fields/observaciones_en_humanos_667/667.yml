@@ -1,0 +1,30 @@
+--- 
+id: 667
+part_id: 139
+field_id: 17
+name: Observaciones en humanos
+created_at: 2012-03-08 15:03:02 Z
+updated_at: 2017-06-04 00:31:33.267497 Z
+label: Observaciones en humanos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Registrar observaciones relacionados al producto qu\xC3\xADmico en los humanos"
+help: "Registrar observaciones relacionados al producto qu\xC3\xADmico en los humanos"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 17
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 743df1bd-c3ba-44c2-b4f3-f7b7a431e537
+version: 20170603-203133

@@ -1,0 +1,20 @@
+--- 
+id: 4406
+design_id: 248
+section_id: 185
+name: Director DIJ
+created_at: 2014-06-26 15:30:13 Z
+updated_at: 2016-01-22 02:01:40.864626 Z
+label: "Oficina de Direcci\xC3\xB3n de Investigaci\xC3\xB3n Judicial (DIJ)"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  # DV: VALOR A LA APROBACION AL DIRECTOR 20/10/2014 #
+  dato = form_data.get("director_dij.datos_del_funcionario_generico.usuario")
+  nombre_tarea = @task["name"].to_s.downcase
+  ['aprobacion de record policivo'].include? nombre_tarea or !dato.blank?
+manage_as_confidential: false
+include: "{\"1710\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"},\"3199\":{\"required\":\"required\"},\"2548\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 18

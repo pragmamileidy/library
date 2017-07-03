@@ -1,0 +1,21 @@
+--- 
+id: 697
+name: Paso 4 - confirmacion
+label: Fin de llenado de la solicitud
+description: "Usted ha culminado exitosamente el llenado de su solicitud,  favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de enviar al completar este paso para someter su solicitud a procesamiento.\r\n\
+  Todos los detalles y observaciones del procesamiento llegar\xC3\xA1n a su bandeja de notificaciones en la visualizaci\xC3\xB3n de este tr\xC3\xA1mite."
+fill_step_id: 16
+created_at: 2012-07-12 21:11:37 Z
+updated_at: 2015-09-04 17:58:35 Z
+include: "{\"1057\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit,print_form
+on_becoming: ""
+on_transition: "if form_data.get(\"confirmacion.confirmacion_de_formulario.si_no\")==\"NO\"\r\n   transition_errors << \"Para realizar el env\xC3\xADo del formulario debe confirmar con S\xC3\x8D el llenado del mismo.\"\r\n\
+  end"
+views: 
+back_step: "Paso 3 - Datos de Plaguicida Qu\xC3\xADmico "
+next_step: ""
+position: 4
+ajax_calls: ""

@@ -1,0 +1,16 @@
+--- 
+id: 1630
+design_id: 131
+section_id: 336
+name: Datos Generales de Proyecto
+created_at: 2012-07-20 21:04:48 Z
+updated_at: 2014-05-28 16:00:16 Z
+label: Datos Generales de Proyecto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2029\":{\"2083\":{\"required\":\"required\"},\"2084\":{\"required\":\"required\"},\"2085\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 10

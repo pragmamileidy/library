@@ -1,0 +1,43 @@
+--- 
+id: 72
+name: Prueba campo 12 tipo email
+description: Prueba campo 12 tipo email
+version: 
+status: Draft
+label: Prueba campo 12 tipo email
+hint: Prueba campo 12 tipo email,  ^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$
+help: ^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-13 21:58:20 Z
+updated_at: 2012-03-13 22:04:37 Z
+values_list: ""
+keys_list: ""
+field_type: email
+view_class: vertical
+java_script: ""
+java_script_validation: |-
+  <script type="text/javascript">
+  function validateEmail(campo) {
+      var RegExPattern = /^^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+      if (!(campo.value.match(RegExPattern))) {
+  	   campo.focus();
+         document.getElementById('error-'+campo.id).innerHTML = "Debe corregir el valor."; 
+  	   document.getElementById('error-'+campo.id).focus();
+      }else{
+  	   document.getElementById('error-'+campo.id).innerHTML = "";       
+      } 
+  }
+  <!-- onblur="validateEmail(this);"-->
+  </script>
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ^[a-zA-Z0-9\@\.\_]*$
+format: ^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$
+kind_of_list: 
+list_code: 
+serial: 

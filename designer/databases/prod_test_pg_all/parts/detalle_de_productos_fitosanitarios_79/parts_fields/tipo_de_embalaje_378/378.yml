@@ -1,0 +1,30 @@
+--- 
+id: 378
+part_id: 79
+field_id: 10
+name: Tipo de Embalaje
+created_at: 2011-11-14 15:54:26 Z
+updated_at: 2017-06-04 00:28:45.249769 Z
+label: Tipo de Embalaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6ae70173-32cb-4da0-b4ad-20559b81658a
+version: 20170603-202845

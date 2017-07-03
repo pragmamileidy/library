@@ -1,0 +1,30 @@
+--- 
+id: 2302
+part_id: 424
+field_id: 10
+name: Nombre Comercial
+created_at: 2012-08-08 18:33:53 Z
+updated_at: 2017-06-04 00:22:10.853033 Z
+label: Nombre Comercial
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar el Nombre comercial del Local "
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ebdc193d-3bd5-4e5a-80b5-4ee5e839a5bc
+version: 20170603-202210

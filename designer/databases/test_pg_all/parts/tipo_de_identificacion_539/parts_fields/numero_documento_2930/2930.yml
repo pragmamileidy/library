@@ -1,0 +1,30 @@
+--- 
+id: 2930
+part_id: 539
+field_id: 10
+name: numero documento
+created_at: 2013-02-28 18:24:35 Z
+updated_at: 2017-06-04 00:24:51.735079 Z
+label: "N\xC3\xBAmero de identificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 30
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ec5935a6-f59a-43ff-bf16-d02eaa0835d3
+version: 20170603-202451

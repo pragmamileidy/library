@@ -1,0 +1,19 @@
+--- 
+id: 3017
+name: Paso 2 - Datos prueba final
+label: Datos Prueba Final
+description: ""
+fill_step_id: 1621
+created_at: 2014-11-06 20:27:03 Z
+updated_at: 2014-11-06 20:27:03 Z
+include: "{\"4598\":{\"1825\":{\"2008\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1715\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 1 - Pedir Datos
+next_step: ""
+position: 2
+ajax_calls: ""

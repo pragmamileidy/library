@@ -1,0 +1,16 @@
+--- 
+id: 734
+design_id: 78
+section_id: 188
+name: Datos Generales del Buque
+created_at: 2012-04-24 13:13:17 Z
+updated_at: 2013-03-25 19:13:24 Z
+label: Datos Generales del Buque
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1140\":{\"1004\":{\"required\":\"required\"},\"1005\":{\"required\":\"unrequired\"},\"1006\":{\"required\":\"required\"},\"1007\":{\"required\":\"required\"},\"1008\":{\"required\":\"required\"},\"1009\":{\"required\":\"required\"},\"1032\":{\"required\":\"required\"},\"1382\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

@@ -1,0 +1,30 @@
+--- 
+id: 957
+part_id: 190
+field_id: 4
+name: Segundo Apellido
+created_at: 2012-04-18 15:36:15 Z
+updated_at: 2017-06-04 00:26:59.781027 Z
+label: Segundo Apellido
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b339afd4-d9e9-478d-ba24-50c7d08cd243
+version: 20170603-202659

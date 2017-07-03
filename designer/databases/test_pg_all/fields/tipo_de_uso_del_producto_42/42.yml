@@ -1,0 +1,30 @@
+--- 
+id: 42
+name: Tipo de uso del producto
+description: "Campo que contiene los tipos de uso de los productos de importaci\xC3\xB3n fitosanitarios"
+version: 
+status: Draft
+label: Tipo de uso del producto
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-14 15:59:31 Z
+updated_at: 2012-05-17 22:47:30 Z
+values_list: "\"Multiplicaci\xC3\xB3n\",\"Consumo/Alimentaci\xC3\xB3n\",\"Industrializaci\xC3\xB3n\",\"Producci\xC3\xB3n/Plantaci\xC3\xB3n\",\"Ornamentaci\xC3\xB3n\",\"Trang\xC3\xA9nico\",\"Otro\""
+keys_list: "\"Multiplicaci\xC3\xB3n\",\"Consumo/Alimentaci\xC3\xB3n\",\"Industrializaci\xC3\xB3n\",\"Producci\xC3\xB3n/Plantaci\xC3\xB3n\",\"Ornamentaci\xC3\xB3n\",\"Trang\xC3\xA9nico\",\"Otro\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

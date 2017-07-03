@@ -1,0 +1,103 @@
+--- 
+id: 198
+position: 1
+selector: "{\"2056\":{\"656\":{\"758\":{},\"759\":{}}},\"2057\":{\"2237\":{\"1320\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"2001\":{},\"548\":{},\"763\":{}},\"2238\":{\"572\":{},\"805\":{},\"585\":{},\"631\":{},\"594\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n  font-family: Verdana, Geneva, sans-serif;\r\n  font-size: 16px;\r\n\
+  }\r\n\
+  .main_pdf_content {\r\n  /* main_pdf_content: estos attributos seran ignorados en rendeo */\r\n  background-image: url(RUTA_IMAGEN.png);\r\n  top: 0px;\r\n  left: 0px;\r\n  height:1344px;\r\n  width: 1024px;\r\n  position: absolute;\r\n\
+  }\r\n\
+  \r\n\
+  /* Otras clases de formatos preestablecidos que a\xC3\xBAn no se han definido */\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 95px;\r\n\
+  \tleft: 689px;\r\n\
+  \twidth: 335px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 67px;\r\n\
+  \tleft: 690px;\r\n\
+  \twidth: 332px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 18px;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_pasaporte {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 368px;\r\n\
+  \tleft: 773px;\r\n\
+  \twidth: 237px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_primernombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 368px;\r\n\
+  \tleft: 291px;\r\n\
+  \twidth: 237px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_segundonombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 406px;\r\n\
+  \tleft: 290px;\r\n\
+  \twidth: 239px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_primerapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 449px;\r\n\
+  \tleft: 286px;\r\n\
+  \twidth: 241px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_segundoapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 486px;\r\n\
+  \tleft: 286px;\r\n\
+  \twidth: 241px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_sexostring {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 410px;\r\n\
+  \tleft: 773px;\r\n\
+  \twidth: 201px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_estadocivil {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 486px;\r\n\
+  \tleft: 773px;\r\n\
+  \twidth: 201px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_edad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 446px;\r\n\
+  \tleft: 773px;\r\n\
+  \twidth: 203px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_pas {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 524px;\r\n\
+  \tleft: 287px;\r\n\
+  \twidth: 238px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_direccin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 570px;\r\n\
+  \tleft: 287px;\r\n\
+  \twidth: 686px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 51px;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_nmerodetelfono {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 644px;\r\n\
+  \tleft: 286px;\r\n\
+  \twidth: 237px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_nmerocelular {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 642px;\r\n\
+  \tleft: 772px;\r\n\
+  \twidth: 202px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 20px;\r\n  }\r\n  .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_correoelectrnico {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 525px;\r\n\
+  \tleft: 772px;\r\n\
+  \twidth: 246px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }"
+override_render: false
+html_render: 
+print_design_id: 96
+created_at: 2012-08-30 21:51:20 Z
+updated_at: 2015-09-07 14:40:14 Z
+instances_selector: "{\"2056\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2057\":{\"value\":\"\",\"2237\":{\"value\":\"\",\"1320\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"2001\":{\"value\":\"\"},\"548\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"2238\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}}}"
+size: ""

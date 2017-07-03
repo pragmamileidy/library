@@ -1,0 +1,30 @@
+--- 
+id: 2097
+part_id: 392
+field_id: 1
+name: Cantidad de Lotes Residenciales
+created_at: 2012-07-23 01:44:26 Z
+updated_at: 2017-06-04 00:26:01.958147 Z
+label: Cantidad de Lotes Residenciales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Especifica la cantidad de lotes de uso residencial que est\xC3\xA1n considerados en la parcelaci\xC3\xB3n presentada"
+help: "Especifica la cantidad de lotes de uso residencial que est\xC3\xA1n considerados en la parcelaci\xC3\xB3n presentada"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2dddf10b-15d8-46fa-89b1-902ac35f3291
+version: 20170603-202601

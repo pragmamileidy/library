@@ -1,0 +1,30 @@
+--- 
+id: 11
+part_id: 4
+field_id: 4
+name: Nombre completo
+created_at: 2016-10-04 21:04:05.000003 Z
+updated_at: 2016-10-04 21:05:03.790156 Z
+label: Nombres y Apellidos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 129a9314-303e-47dc-9ffc-043dafd8a70e
+version: 20161004-170503

@@ -1,0 +1,153 @@
+--- 
+id: 1284
+name: Pago de la Solicitud
+label: Pago de la Solicitud
+description: Pago de la Solicitud
+fill_step_id: 646
+created_at: 2013-04-20 02:53:14 Z
+updated_at: 2016-01-15 20:08:51.328343 Z
+include: "{\"2695\":{\"2798\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2664\":{\"2549\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2550\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2551\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2552\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2553\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2554\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2555\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2558\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2559\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2560\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2561\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2562\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2563\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2564\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2565\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2567\":{\"2892\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "\r\n\
+  #CODIGO PARA INVOCAR EL SERVICIO payment_computing_service\r\n _applicationId = @application[\"id\"]\r\n _configRoute = \"EntidadesEvaluadoras-rates\"\r\n _formId = @task[\"form\"]\r\n \r\n\
+  #result = WebserviceConsumer.get('/payments/payment_computing_service.json?application_id=' + \"#{_applicationId}\" + '&config_route=' + \"#{_configRoute}\" + '&form_id=' + \"#{_formId}\").parsed_response\r\n\
+  \r\n  hash = {:application_id => \"#{_applicationId}\", \r\n              :config_route   => \"#{_configRoute}\",\r\n              :form_id          => \"#{_formId}\"}\r\n  result = PaymentProxy.payment_computing_service(hash)\r\n  \r\n\
+  _payment_id= result[\"response\"][\"payment_id\"]\r\n\
+  _detail = result[\"response\"][\"detail\"]\r\n\
+  _total  = result[\"response\"][\"result\"][\"total\"] \r\n\
+  \r\n\
+  \r\n\
+  form_data.set(\"variables_usadas_codigos_p5.variables_p5.payment\",_payment_id)\r\n\
+  form_data.set(\"variables_usadas_codigos_p5.variables_p5.detail\",_detail)\r\n\
+  form_data.set(\"entidad_evaluadora_revisiones.monto_total.monto_total\", _total) \r\n\
+  \r\n\
+  \r\n\
+  result[\"response\"][\"result\"][\"items\"].each do |key, value|\r\n if(key =~ /item_instance_([\\d]+)/)\r\n  _i = $1.to_i - 1\r\n  if(value[\"description\"] == \"fija\")\r\n    form_data.set(\"entidades_fijas.entidad.nombre_de_la_entidad\", value[\"name\"])\r\n    form_data.set(\"entidades_fijas.entidad.pagada\", \"Iniciada\")\r\n    form_data.set(\"entidades_fijas.entidad.monto_a_pagar\", value[\"formula\"])\r\n     else\r\n    form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.nombre_de_la_entidad\", value[\"name\"])\r\n    form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.pagada\", \"Iniciada\")\r\n    form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.monto_a_pagar\", value[\"formula\"])\r\n  end\r\n end \r\n\
+  end"
+on_transition: "\r\n\
+  \r\n\
+  #CODIGO PARA INVOCAR Make Payment, que nos retorna un url\r\n\
+  \r\n\
+  #_paymentId = form_data.get(\"variables_usadas_codigos_p5.variables_p5.payment\")\r\n\
+  #_consecutiveId = form_data.get(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\")\r\n\
+  \r\n\
+  #_id = @current_user.citizen_id_number\r\n\
+  #_name = @current_user.name\r\n\
+  #_email = @current_user.email\r\n\
+  \r\n\
+  #_str = '/payments/make_payment.json?payment_id=' + \"#{_paymentId}\" + '&id=' + \"#{_id}\" + '&name=' + \"#{_name}\" + '&email=' + \"#{_email}\" + '&consecutive_id=' + \"#{_consecutiveId}\"\r\n\
+  \r\n\
+  #_result = WebserviceConsumer.get(URI.escape(_str)).parsed_response\r\n\
+  #_error = _result[\"error\"]\r\n\
+  \r\n\
+  #if !_error.nil?\r\n  #   transition_errors << \"Ha ocurrido un error al intentar iniciar el pago.\"\r\n\
+  #else\r\n\
+  \t#seteos\r\n\
+  #    _url = _result[\"response\"] \r\n  # _dato = _result[\"request_id\"]\r\n  # _strurl = \"#{PEOPLE_URL}/tasks/force_redirect_to?task_id=#{@task[\"id\"]}&url=#{_url}\"\r\n\
+  #\tform_data.set(\"variables_usadas_codigos_p5.variables_p5.url\",_strurl)\r\n  #      form_data.set(\"variables_usadas_codigos_p5.variables_p5.request\", _dato)\r\n\
+  #end"
+views: 
+back_step: ""
+next_step: Ingresar Pago de la Solicitud
+position: 0
+ajax_calls: "$(document).ready(function(){\r\n\
+  \tentidad_evaluadora_0 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_0_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_1 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_1_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_2 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_2_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_3 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_3_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_4 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_4_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_5 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_5_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_6 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_6_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_7 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_7_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_8 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_8_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_9 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_9_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_10 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_10_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_11 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_11_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_12 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_12_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_13 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_13_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_14 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_14_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_16 = $(\"#field_entidades_fijas_entidad_nombre_de_la_entidad\").html(\"Registro P\xC3\xBAblico\");\r\n\
+  \tmonto_fijo = $(\"#field_entidades_fijas_entidad_monto_a_pagar\");\r\n\
+  \r\n\
+  \t//:::::::: Mnatener campos entre pasos y reparo :::::://\r\n\
+  \tif ($(monto_fijo).html() == \"\"){\r\n\
+  \t\t$(monto_fijo).html(\"0.00\");\r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_0).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_0).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_0).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_1).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_1).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_1).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_2).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_2).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_2).parents(\".part-box\").show();  \r\n\
+  \t}  \r\n\
+  \tif($(entidad_evaluadora_3).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_3).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_3).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_4).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_4).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_4).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_5).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_5).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_5).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_6).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_6).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_6).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_7).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_7).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_7).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_8).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_8).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_8).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_9).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_9).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_9).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_10).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_10).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_10).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_11).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_11).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_11).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_12).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_12).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_12).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_13).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_13).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_13).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_14).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_14).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_14).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  });"

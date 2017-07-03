@@ -1,0 +1,30 @@
+--- 
+id: 3650
+part_id: 722
+field_id: 10
+name: Mensaje
+created_at: 2014-06-13 16:21:55 Z
+updated_at: 2017-06-04 00:27:45.248578 Z
+label: Mensaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 499eca1b-b1c2-4961-9d69-18c293d9ff66
+version: 20170603-202745

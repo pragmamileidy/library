@@ -1,0 +1,16 @@
+--- 
+id: 1813
+design_id: 140
+section_id: 386
+name: Anexo - 001- Trabajador Extranjero V2
+created_at: 2012-08-18 23:08:33 Z
+updated_at: 2015-09-07 14:32:54 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3094\":{\"210\":{\"required\":\"required\"}},\"3095\":{\"210\":{\"required\":\"required\"}},\"3097\":{\"210\":{\"required\":\"required\"}},\"3098\":{\"210\":{\"required\":\"required\"}},\"3099\":{\"210\":{\"required\":\"unrequired\"}},\"3101\":{\"210\":{\"required\":\"required\"}},\"3102\":{\"210\":{\"required\":\"required\"}},\"3103\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

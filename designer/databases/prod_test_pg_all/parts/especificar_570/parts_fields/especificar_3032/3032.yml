@@ -1,0 +1,30 @@
+--- 
+id: 3032
+part_id: 570
+field_id: 17
+name: Especificar
+created_at: 2013-03-13 21:20:04 Z
+updated_at: 2017-06-04 00:22:40.932203 Z
+label: Especificar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar de forma breve cualquier particularidad sobre el Contrato o acto a registrar
+help: "Si se trata de un acto o contrato no listado en este formulario, utilizar este espacio para indicar que clase de acto o contrato est\xC3\xA1 siendo registrado."
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 30161121-1949-427f-ad71-5a17c865f052
+version: 20170603-202240

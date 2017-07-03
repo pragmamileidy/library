@@ -1,0 +1,19 @@
+--- 
+id: 1395
+section_id: 227
+part_id: 38
+name: "Certificado de defunci\xC3\xB3n del pa\xC3\xADs donde falleci\xC3\xB3 en el caso de extranjeros fallecidos en el exterior"
+created_at: 2012-05-09 19:52:07 Z
+updated_at: 2012-05-09 19:52:07 Z
+label: "Certificado de defunci\xC3\xB3n del pa\xC3\xADs donde falleci\xC3\xB3 en el caso de extranjeros fallecidos en el exterior"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

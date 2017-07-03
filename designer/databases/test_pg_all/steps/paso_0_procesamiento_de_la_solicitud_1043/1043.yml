@@ -1,0 +1,126 @@
+--- 
+id: 1043
+name: Paso 0 - Procesamiento de la Solicitud
+label: "Revisi\xC3\xB3n T\xC3\xA9cnica"
+description: "Revisi\xC3\xB3n T\xC3\xA9cnica"
+fill_step_id: 538
+created_at: 2013-01-23 15:11:02 Z
+updated_at: 2013-04-19 11:33:08 Z
+include: "{\"2332\":{\"2198\":{\"2371\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2372\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2373\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2374\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2375\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2376\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2333\":{\"2173\":{\"3124\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2174\":{\"954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2355\":{\"2544\":{\"3124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2418\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2335\":{\"2189\":{\"3078\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2387\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2388\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2389\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2390\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2391\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2392\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2190\":{\"954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2336\":{\"2197\":{\"2393\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2394\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2395\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2396\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2397\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2398\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2400\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2401\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2337\":{\"2485\":{\"365\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3102\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3103\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"367\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"366\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2089\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2090\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2091\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2402\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2486\":{\"3104\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3105\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3106\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2487\":{\"2461\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2488\":{\"2845\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2846\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2847\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2848\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2489\":{\"2093\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2094\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2338\":{\"2212\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2215\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2214\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2213\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2216\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2209\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2217\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2218\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2219\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2220\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2341\":{\"2570\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2571\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2572\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2573\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2574\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2575\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2576\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2577\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2578\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2579\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2580\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2581\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2582\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2583\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2584\":{\"2907\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2908\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2909\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2914\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2916\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2407\":{\"2549\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2550\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2551\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2552\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2553\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2554\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2555\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2558\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2559\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2560\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2561\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2562\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2563\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2564\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2565\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2342\":{\"2493\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2344\":{\"2493\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2345\":{\"2493\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |
+  #Nombres de entidades AV
+  dat = @application["id"].to_s
+  result = WebserviceConsumer.get('/preconfigured_services/get_application_config.json?id='+dat).parsed_response
+  entidades=[]
+  result["response"]["EntidadesEvaluadoras"].each do |le| 
+  
+  	entidades<<le.last["evaluacion_de_la_entidad"]
+  end
+  
+  
+  15.times do |i|
+   if entidades && entidades[i]
+    _nombre = entidades[i]["entidad"]
+    _nombref = entidades[i]["entidad"]
+  
+  
+    form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.nombre_de_la_entidad", _nombre)
+    form_data.set("entidad_evaluadora.funcionario_de_entidad_evaluadora_#{i}_de_2do_nivel.nombre_de_la_institucion", _nombref)
+   end
+  end
+  
+  # Inicializacion de datos del agente - LG
+  
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_0.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_1.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_2.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_3.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_4.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_5.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_6.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_7.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_8.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_9.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_10.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_11.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_12.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_13.usuario", _agente["name"])
+  
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_14.usuario", _agente["name"])
+  
+  
+  ####Fechas
+  
+  fechaInicio0 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_0.fecha_de_evaluacion",fechaInicio0)
+  
+  fechaInicio1 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_1.fecha_de_evaluacion",fechaInicio1)
+  
+  fechaInicio2 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_2.fecha_de_evaluacion",fechaInicio2)
+  
+  fechaInicio3 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_3.fecha_de_evaluacion",fechaInicio3)
+  
+  fechaInicio4 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_4.fecha_de_evaluacion",fechaInicio4)
+  
+  fechaInicio5 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_5.fecha_de_evaluacion",fechaInicio5)
+  
+  fechaInicio6 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_6.fecha_de_evaluacion",fechaInicio6)
+  
+  fechaInicio7 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_7.fecha_de_evaluacion",fechaInicio7)
+  
+  fechaInicio8 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_8.fecha_de_evaluacion",fechaInicio8)
+  
+  fechaInicio9 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_9.fecha_de_evaluacion",fechaInicio9)
+  
+  fechaInicio10 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_10.fecha_de_evaluacion",fechaInicio10)
+  
+  fechaInicio11 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_11.fecha_de_evaluacion",fechaInicio11)
+  
+  fechaInicio12 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_12.fecha_de_evaluacion",fechaInicio12)
+  
+  fechaInicio13 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_13.fecha_de_evaluacion",fechaInicio13)
+  
+  fechaInicio14 = Date.today
+  form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_14.fecha_de_evaluacion",fechaInicio14)
+
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

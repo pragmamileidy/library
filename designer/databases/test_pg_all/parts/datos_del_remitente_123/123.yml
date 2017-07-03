@@ -1,0 +1,17 @@
+--- 
+id: 123
+name: Datos del Remitente
+description: Datos del Funcionario del Ministerio que remite una carta
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-23 17:16:08 Z
+updated_at: 2012-05-16 20:55:19 Z
+label: Datos del Remitente
+hint: ""
+view_class: 
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 2184
+section_id: 378
+part_id: 38
+name: "Propuesta, cotizaci\xC3\xB3n o proforma"
+created_at: 2012-08-14 18:32:33 Z
+updated_at: 2017-02-24 16:31:08.098705 Z
+label: "Propuesta, cotizaci\xC3\xB3n o proforma, seg\xC3\xBAn art\xC3\xADculo 2 de la Ley 33 del 26 de junio de 2002, en concordancia con el \xC3\xBAltimo p\xC3\xA1rrafo del art\xC3\xADculo 8 del decreto ejecutivo 213 del 26 de octubre de 2010."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

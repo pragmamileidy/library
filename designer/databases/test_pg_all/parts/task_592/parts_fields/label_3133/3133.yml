@@ -1,0 +1,30 @@
+--- 
+id: 3133
+part_id: 592
+field_id: 10
+name: Label
+created_at: 2013-04-08 15:11:35 Z
+updated_at: 2017-06-04 00:24:56.518170 Z
+label: Label
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 229ab6bf-cfb9-423a-a153-ebcde1dedf69
+version: 20170603-202456

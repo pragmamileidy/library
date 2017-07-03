@@ -1,0 +1,30 @@
+--- 
+id: 654
+part_id: 139
+field_id: 17
+name: "Propiedades farmacol\xC3\xB3gicas"
+created_at: 2012-03-08 15:03:02 Z
+updated_at: 2017-06-04 00:26:56.046534 Z
+label: "Propiedades farmacol\xC3\xB3gicas"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Propiedades farmacol\xC3\xB3gicas"
+help: "Propiedades farmacol\xC3\xB3gicas"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 62e7b989-8c76-4d88-8f93-379e61825416
+version: 20170603-202656

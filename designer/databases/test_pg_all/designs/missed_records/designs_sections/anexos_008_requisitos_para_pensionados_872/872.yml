@@ -1,0 +1,16 @@
+--- 
+id: 872
+design_id: 83
+section_id: 217
+name: Anexos 008-Requisitos para Pensionados
+created_at: 2012-05-02 20:05:05 Z
+updated_at: 2015-09-25 15:10:31 Z
+label: Requisitos de la solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3521\":{\"210\":{\"required\":\"required\"}},\"3522\":{\"210\":{\"required\":\"required\"}},\"3523\":{\"210\":{\"required\":\"required\"}},\"3524\":{\"210\":{\"required\":\"required\"}},\"3525\":{\"210\":{\"required\":\"required\"}},\"3526\":{\"210\":{\"required\":\"required\"}},\"3527\":{\"210\":{\"required\":\"required\"}},\"3528\":{\"210\":{\"required\":\"required\"}},\"3529\":{\"210\":{\"required\":\"required\"}},\"3530\":{\"210\":{\"required\":\"required\"}},\"3531\":{\"210\":{\"required\":\"required\"}},\"3532\":{\"210\":{\"required\":\"required\"}},\"3533\":{\"210\":{\"required\":\"required\"}},\"3534\":{\"210\":{\"required\":\"required\"}},\"3535\":{\"210\":{\"required\":\"required\"}},\"3536\":{\"210\":{\"required\":\"required\"}},\"3537\":{\"210\":{\"required\":\"required\"}},\"3538\":{\"210\":{\"required\":\"required\"}},\"3539\":{\"210\":{\"required\":\"required\"}},\"3540\":{\"210\":{\"required\":\"required\"}},\"3541\":{\"210\":{\"required\":\"required\"}},\"3542\":{\"210\":{\"required\":\"required\"}},\"3543\":{\"210\":{\"required\":\"required\"}},\"3544\":{\"210\":{\"required\":\"required\"}},\"3545\":{\"210\":{\"required\":\"required\"}},\"3546\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 16

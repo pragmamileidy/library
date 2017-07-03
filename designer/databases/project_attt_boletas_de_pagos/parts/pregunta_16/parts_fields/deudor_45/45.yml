@@ -1,0 +1,30 @@
+--- 
+id: 45
+part_id: 16
+field_id: 5
+name: deudor
+created_at: 2016-12-26 14:52:18.388697 Z
+updated_at: 2017-01-17 14:41:37.008096 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: <strong style="color:#088A08"> Por favor indique si desea consultar las infracciones propias </strong>
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ea1b6de5-9a78-4651-8a1a-1a639bab34f0
+version: 20170117-144137

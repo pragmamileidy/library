@@ -1,0 +1,16 @@
+--- 
+id: 1429
+design_id: 110
+section_id: 301
+name: Para uso oficial del MEF
+created_at: 2012-06-14 20:00:09 Z
+updated_at: 2013-03-25 15:03:28 Z
+label: "Secci\xC3\xB3n de Funcionario"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1902\":{\"1821\":{\"required\":\"required\"},\"1822\":{\"required\":\"required\"}},\"1903\":{\"1817\":{\"required\":\"required\"},\"1818\":{\"required\":\"required\"},\"1819\":{\"required\":\"required\"}},\"1904\":{\"1817\":{\"required\":\"required\"},\"1818\":{\"required\":\"required\"}},\"1905\":{\"1820\":{\"required\":\"required\"}},\"1906\":{\"1819\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 8

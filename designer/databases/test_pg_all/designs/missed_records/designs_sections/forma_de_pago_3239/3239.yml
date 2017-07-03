@@ -1,0 +1,16 @@
+--- 
+id: 3239
+design_id: 141
+section_id: 511
+name: Forma de Pago
+created_at: 2013-09-12 14:58:45 Z
+updated_at: 2014-03-10 23:17:43 Z
+label: Forma de Pago
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2860\":{\"3374\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 34

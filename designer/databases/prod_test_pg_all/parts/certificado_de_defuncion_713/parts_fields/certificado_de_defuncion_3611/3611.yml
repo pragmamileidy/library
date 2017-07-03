@@ -1,0 +1,30 @@
+--- 
+id: 3611
+part_id: 713
+field_id: 31
+name: Certificado de Defuncion
+created_at: 2014-05-15 17:06:31 Z
+updated_at: 2017-06-04 00:23:16.416016 Z
+label: "Certificado de Defunci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Adjuntar archivo s\xC3\xB3lo en caso de que el autor est\xC3\xA9 fallecido"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b4a31e78-8dc0-4710-a68c-e6e320726cf1
+version: 20170603-202316

@@ -1,0 +1,19 @@
+--- 
+id: 3662
+section_id: 363
+part_id: 38
+name: Seguro de responsabilidad civil
+created_at: 2017-02-25 18:58:48.832097 Z
+updated_at: 2017-02-25 18:58:48.832097 Z
+label: Seguro de responsabilidad civil por un monto de doscientos mil balboas (B/.200,000.00), mientras realice la actividad.
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

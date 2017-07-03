@@ -1,0 +1,19 @@
+--- 
+id: 2983
+section_id: 160
+part_id: 38
+name: "Pago de B/.15.00 en Sello de Goma o B/.25.00 sello autom\xC3\xA1tico"
+created_at: 2013-12-12 21:28:01 Z
+updated_at: 2013-12-12 21:28:01 Z
+label: "Pago de B/.15.00 en Sello de Goma o B/.25.00 sello autom\xC3\xA1tico"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 13

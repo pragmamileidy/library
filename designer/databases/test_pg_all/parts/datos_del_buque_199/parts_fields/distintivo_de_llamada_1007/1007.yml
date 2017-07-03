@@ -1,0 +1,30 @@
+--- 
+id: 1007
+part_id: 199
+field_id: 10
+name: Distintivo de Llamada
+created_at: 2012-04-20 22:02:26 Z
+updated_at: 2017-06-04 00:27:01.157611 Z
+label: Distintivo de Llamada
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Distintivo de llamada del buque. Ejemplos: W6RO,  EA8267"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c22755b5-5755-435a-bb6f-446b4e982494
+version: 20170603-202701

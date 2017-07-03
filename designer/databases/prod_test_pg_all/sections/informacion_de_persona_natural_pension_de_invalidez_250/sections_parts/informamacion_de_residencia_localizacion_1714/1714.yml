@@ -1,0 +1,19 @@
+--- 
+id: 1714
+section_id: 250
+part_id: 121
+name: "Informamaci\xC3\xB3n de Residencia/Localizaci\xC3\xB3n"
+created_at: 2012-05-25 21:07:07 Z
+updated_at: 2014-06-02 15:15:19 Z
+label: "Informaci\xC3\xB3n de Residencia/Localizaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1123\":{},\"1124\":{},\"631\":{},\"594\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 3

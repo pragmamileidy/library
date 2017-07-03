@@ -1,0 +1,17 @@
+--- 
+id: 107
+name: "Informaci\xC3\xB3n de Persona Natural"
+description: "Contiene Datos Persona Natural, Datos de Ubicaci\xC3\xB3n, Datos adicionales de Persona Natural (religi\xC3\xB3n y rasgos f\xC3\xADsicos), indicaci\xC3\xB3n de que reside donde naci\xC3\xB3, Informaci\xC3\xB3n Laboral."
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-29 18:05:25 Z
+updated_at: 2014-10-22 20:06:22 Z
+status: Draft
+label: "Informaci\xC3\xB3n de Persona Natural"
+hint: ""
+serial: 2176-9772-8586-2824-1667

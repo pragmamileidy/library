@@ -1,0 +1,242 @@
+--- 
+id: 861
+name: Paso 1 - Datos del Solicitante y del Co-Participante
+label: Datos del Solicitante y del Co-Participante
+description: "<br/>\r\n\
+  Por favor verifique los Datos del Solicitante y de los Co-Participantes. Solo s\xC3\xAD es necesario realice modificaciones.\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 430
+created_at: 2012-08-21 21:00:19 Z
+updated_at: 2015-11-11 16:08:24.609560 Z
+include: "{\"1824\":{\"1791\":{\"1983\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2081\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3464\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1825\":{\"1791\":{\"1655\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3350\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3464\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4953\":{\"3558\":{\"2197\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3555\":{\"1983\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3963\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3557\":{\"2951\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3345\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"2950\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3823\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3964\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3966\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1832\":{\"1791\":{\"3116\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1983\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1659\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3464\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1905\":{\"1795\":{\"1679\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1680\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #:::: Usado para los nombres de co-participantes en el print designs ::::#
+  (1..7).each do |_num|
+  	a = form_data.get("datos_co_participante_instance_#{_num}.coparticipante_natural.primer_nombre")
+  	b = form_data.get("datos_co_participante_instance_#{_num}.coparticipante_natural.primer_apellido")
+  	c = form_data.get("datos_co_participante_instance_#{_num}.coparticipante_natural.segundo_nombre")
+  	d = form_data.get("datos_co_participante_instance_#{_num}.coparticipante_natural.segundo_apellido")
+  	nombre = a +" "+ b + " " + c +" "+ d
+  	form_data.set("datos_co_participante_instance_#{_num}.coparticipante_natural.nombre",nombre.squish)
+  end
+on_transition: "#::::::::::::::DV: Integraci\xC3\xB3n Datos del Coparticipante::::::::::::::#\r\n\
+  (1..7).each do |_num|\r\n\
+  \ttipodoc = form_data.get(\"datos_co_participante_instance_#{_num}.tipo_documento_coparticipante.tipo_de_identificacion\")\r\n\
+  \tif tipodoc == \"RUC\"\r\n\
+  \t    nro_doc_j = form_data.get(\"datos_co_participante_instance_#{_num}.coparticipante_juridico.ruc\")\r\n\
+  \t\tform_data.set(\"datos_co_participante_instance_#{_num}.coparticipante_juridico.doc_oculto\",nro_doc_j)\r\n\
+  \telse\r\n\
+  \t\tnro_doc_d = form_data.get(\"datos_co_participante_instance_#{_num}.coparticipante_natural.cedula_pasaporte\")\r\n\
+  \t\tform_data.set(\"datos_co_participante_instance_#{_num}.coparticipante_natural.doc_oculto\",nro_doc_d)\r\n\
+  \tend\r\n\
+  end"
+views: 
+back_step: Paso 0 - Datos de la Solicitud
+next_step: Paso 2 - Datos de la Finca
+position: 1
+ajax_calls: "//..:::::::::::DV: Validaciones varias PASO 2::::::::::..//\r\n\
+  $(document).ready(function(){\r\n    contraparte = $(\"#field_requiere_contraparte_datos_contraparte_requierecontraparte\");\r\n        $(contraparte).parents(\".field-box\").hide();    \r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n    //:::::::::::::Habilitar Campos Cuando el Tipo de Documento sea Pasaporte en COPARTICIPANTE::::::::::::::::://\r\n    $.each( $('[id*=datos_co_participante_]'), function director(index, campo) {       \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }   \r\n        var InicioRuta  = \"#field_datos_co_participante\";\r\n        var identif1    = \"_coparticipante_natural_cedula_pasaporte\";\r\n        var tipo_iden1  = \"_tipo_documento_coparticipante_tipo_de_identificacion\";\r\n        var ruc_direc1  = \"_coparticipante_juridico_ruc\";\r\n        var apelcasa1   = \"_coparticipante_natural_apellido_de_casada\";\r\n        var nom1        = \"_coparticipante_natural_primer_nombre\";\r\n        var nom2        = \"_coparticipante_natural_segundo_nombre\";\r\n        var ape1        = \"_coparticipante_natural_primer_apellido\";\r\n        var ape2        = \"_coparticipante_natural_segundo_apellido\";\r\n        var telf        = \"_coparticipante_natural_telefono\";\r\n        var email       = \"_coparticipante_natural_email\";\r\n        var idonei      = \"_coparticipante_natural_nro_idoneidad\";\r\n        var idonj       = \"_coparticipante_juridico_nro_idoneidad\";\r\n        var doc_c       = \"_coparticipante_natural_doc_oculto\";\r\n        var doc_j       = \"_coparticipante_juridico_doc_oculto\";\r\n        var coincide    = InicioRuta.concat(pos);\r\n        var identif2    = coincide.concat(identif1);\r\n        var tipo_iden2  = coincide.concat(tipo_iden1);\r\n        var ruc_direc2  = coincide.concat(ruc_direc1); \r\n        var apelcasa2   = coincide.concat(apelcasa1);\r\n        var nom1_1      = coincide.concat(nom1);\r\n        var nom2_2      = coincide.concat(nom2);\r\n        var ape1_1      = coincide.concat(ape1);\r\n        var ape2_2      = coincide.concat(ape2);\r\n        var docOculto   = coincide.concat(doc_c);\r\n        var docOcultj   = coincide.concat(doc_j);\r\n        var telf2       = coincide.concat(telf);\r\n        var email2      = coincide.concat(email);\r\n        var idonei2     = coincide.concat(idonei);\r\n        var idonj2      = coincide.concat(idonj);\r\n\
+  \r\n        if($(tipo_iden2).html() == \"RUC\"){\r\n            $(ruc_direc2).parents(\".part-box\").show();\r\n            $(identif2).parents(\".part-box\").hide();\r\n            $(docOcultj).parents(\".field-box\").hide();\r\n        }else{\r\n            $(identif2).parents(\".part-box\").show();\r\n            $(ruc_direc2).parents(\".part-box\").hide();\r\n            $(docOculto).parents(\".field-box\").hide();\r\n        }\r\n\
+  \r\n        if ($(tipo_iden2).html() == \"\"){\r\n            $(tipo_iden2).parents(\".section-box\").hide();\r\n        }else{\r\n            $(tipo_iden2).parents(\".section-box\").show();\r\n        }\r\n\
+  \r\n        if($(tipo_iden2).html() == \"Pasaporte\"){\r\n            $(nom1_1).removeAttr(\"disabled\");\r\n            $(nom2_2).removeAttr(\"disabled\");\r\n            $(ape1_1).removeAttr(\"disabled\");\r\n            $(ape2_2).removeAttr(\"disabled\");\r\n        }\r\n        if($(tipo_iden2).html() == \"Pasaporte\" && $(identif2).html() != $(docOculto).val()){\r\n            $(nom1_1).val(\"\");\r\n            $(nom2_2).val(\"\");\r\n            $(ape1_1).val(\"\");\r\n            $(ape2_2).val(\"\"); \r\n            $(apelcasa2).val(\"\");\r\n            $(telf2).val(\"\");\r\n            $(email2).val(\"\");\r\n            $(idonei2).val(\"\");\r\n        }\r\n        if($(tipo_iden2).html() == \"C\xC3\xA9dula\" && $(identif2).html() != $(docOculto).val()){\r\n            $(telf2).val(\"\");\r\n            $(email2).val(\"\");\r\n            $(idonei2).val(\"\");\r\n        }\r\n        if($(tipo_iden2).html() == \"RUC\" && $(ruc_direc2).html() != $(docOcultj).val()){\r\n            $(idonj2).val('');\r\n        }\r\n        $(tipo_iden2).parents(\".section-box\").next().hide();\r\n    });\r\n\
+  });"

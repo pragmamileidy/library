@@ -1,0 +1,17 @@
+--- 
+id: 377
+name: "Datos del Solicitante Jur\xC3\xADdico MUNICIPIO"
+description: "Datos del Solicitante Jur\xC3\xADdico MUNICIPIO"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-14 16:29:53 Z
+updated_at: 2012-08-14 16:29:53 Z
+status: Draft
+label: Datos del Solicitante
+hint: ""
+serial: 

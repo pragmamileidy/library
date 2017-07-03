@@ -1,0 +1,30 @@
+--- 
+id: 3160
+part_id: 597
+field_id: 17
+name: Formula
+created_at: 2013-04-08 21:40:58 Z
+updated_at: 2017-06-04 00:27:35.577848 Z
+label: Formula
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 78f5599f-2255-46a2-a4d2-4f30bfab6408
+version: 20170603-202735

@@ -1,0 +1,20 @@
+--- 
+id: 1870
+section_id: 289
+part_id: 328
+name: "Auto de adjudicaci\xC3\xB3n"
+created_at: 2012-06-13 01:26:23 Z
+updated_at: 2012-06-18 15:21:07 Z
+label: "Auto de adjudicaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: "traspaso = form_data.get(\"tipo_de_traspaso.tipo_de_traspaso.tipo_de_traspaso\")\r\n\
+  traspaso == \"Por juicio de sucesi\xC3\xB3n\" or traspaso == \"Ordenado por un juez\"\r\n"
+manage_as_confidential: false
+include: "{\"1764\":{},\"1765\":{}}"
+hint: Favor adjuntar en caso de ser necesario
+help: "Copia del auto de adjudicaci\xC3\xB3n emitido por un juez"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

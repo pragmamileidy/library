@@ -1,0 +1,16 @@
+--- 
+id: 1273
+design_id: 112
+section_id: 271
+name: Tipo de Documento Contraparte
+created_at: 2012-06-08 14:42:53 Z
+updated_at: 2015-10-19 20:44:24 Z
+label: Datos de la Contraparte
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1786\":{\"1632\":{\"required\":\"required\"},\"1633\":{\"required\":\"required\"},\"3352\":{\"required\":\"required\"},\"3118\":{\"required\":\"required\"}}}"
+hint: "Es obligatorio en caso de que el tipo de traspaso sea:<br>   - Regular<br>   - De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora<br>   - No efectuado durante el t\xC3\xA9rmino correspondiente"
+help: ""
+order_input: 6

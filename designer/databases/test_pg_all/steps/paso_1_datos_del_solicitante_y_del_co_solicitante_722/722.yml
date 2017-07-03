@@ -1,0 +1,21 @@
+--- 
+id: 722
+name: Paso 1 - Datos del Solicitante y del Co-Solicitante
+label: Datos del Solicitante y del Co-Solicitante
+description: "Datos del Solicitante<br>\r\n\
+  Datos del Co-Solicitante (Si existiese)<br>\r\n\
+  Datos del Responsable del Dise\xC3\xB1o"
+fill_step_id: 361
+created_at: 2012-07-23 20:18:20 Z
+updated_at: 2012-08-02 21:34:48 Z
+include: "{\"1624\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1625\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1627\":{\"2026\":{\"2080\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1628\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1629\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1632\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1633\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

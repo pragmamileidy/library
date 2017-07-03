@@ -1,0 +1,271 @@
+--- 
+id: 388
+position: 2
+selector: "{\"2475\":{\"656\":{\"758\":{},\"759\":{}}},\"4311\":{\"3149\":{\"3605\":{}},\"3162\":{\"3017\":{}},\"3151\":{\"1981\":{},\"1374\":{},\"545\":{},\"546\":{},\"2983\":{}},\"3152\":{\"2980\":{}},\"3154\":{\"567\":{},\"1282\":{}},\"3153\":{\"572\":{},\"805\":{},\"585\":{},\"594\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 69px;
+  	left: 718px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 42px;
+  	left: 656px;
+  	width: 334px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_tipodeidentificacion_tipoidentificaciontexto {
+  	position: absolute;
+  	top: 178px;
+  	left: 711px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_tipodeautor_tipo {
+  	position: absolute;
+  	top: 178px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 213px;
+  	left: 267px;
+  	width: 420px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 250px;
+  	left: 273px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 455px;
+  	left: 239px;
+  	width: 430px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_datosdelapersona_fechadenacimiento {
+  	position: absolute;
+  	top: 492px;
+  	left: 244px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 491px;
+  	left: 687px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 527px;
+  	left: 241px;
+  	width: 427px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 214px;
+  	left: 265px;
+  	width: 424px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_datosdelaempresa_nombrecomercial {
+  	position: absolute;
+  	top: 250px;
+  	left: 268px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 324px;
+  	left: 243px;
+  	width: 417px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 361px;
+  	left: 240px;
+  	width: 687px;
+  	height: 40px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 563px;
+  	left: 241px;
+  	width: 427px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_3_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 599px;
+  	left: 238px;
+  	width: 426px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_tipodeidentificacion_tipoidentificaciontexto {
+  	position: absolute;
+  	top: 728px;
+  	left: 711px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_tipodeautor_tipo {
+  	position: absolute;
+  	top: 728px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 764px;
+  	left: 265px;
+  	width: 420px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 799px;
+  	left: 266px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 1004px;
+  	left: 242px;
+  	width: 429px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_datosdelapersona_fechadenacimiento {
+  	position: absolute;
+  	top: 1040px;
+  	left: 239px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 1040px;
+  	left: 681px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 1077px;
+  	left: 238px;
+  	width: 432px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 764px;
+  	left: 265px;
+  	width: 421px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_datosdelaempresa_nombrecomercial {
+  	position: absolute;
+  	top: 799px;
+  	left: 264px;
+  	width: 685px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 874px;
+  	left: 249px;
+  	width: 412px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 906px;
+  	left: 248px;
+  	width: 671px;
+  	height: 43px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 1114px;
+  	left: 238px;
+  	width: 433px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautor_instance_4_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 1149px;
+  	left: 238px;
+  	width: 433px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 143
+created_at: 2013-06-13 14:30:31 Z
+updated_at: 2014-04-29 15:09:28 Z
+instances_selector: "{\"2475\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4311\":{\"value\":\"3,4\",\"3149\":{\"value\":\"\",\"3605\":{\"value\":\"\"}},\"3162\":{\"value\":\"\",\"3017\":{\"value\":\"\"}},\"3151\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"545\":{\"value\":\"\"},\"546\":{\"value\":\"\"},\"2983\":{\"value\":\"\"}},\"3152\":{\"value\":\"\",\"2980\":{\"value\":\"\"}},\"3154\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"1282\":{\"value\":\"\"}},\"3153\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}}}"
+size: 

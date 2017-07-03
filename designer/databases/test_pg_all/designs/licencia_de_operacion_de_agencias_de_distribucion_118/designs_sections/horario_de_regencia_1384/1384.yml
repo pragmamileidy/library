@@ -1,0 +1,16 @@
+--- 
+id: 1384
+design_id: 118
+section_id: 137
+name: Horario de Regencia
+created_at: 2012-06-11 19:10:08 Z
+updated_at: 2017-03-10 01:58:51.508998 Z
+label: Horario de Regencia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"679\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}},\"680\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}},\"681\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}},\"682\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}},\"710\":{\"2005\":{\"required\":\"required\"},\"4086\":{\"required\":\"required\"},\"4087\":{\"required\":\"required\"}},\"711\":{\"2005\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

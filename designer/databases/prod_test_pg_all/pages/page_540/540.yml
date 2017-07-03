@@ -1,0 +1,359 @@
+--- 
+id: 540
+position: 3
+selector: "{\"4645\":{\"656\":{\"758\":{},\"759\":{}}},\"4735\":{\"3438\":{\"2197\":{}},\"3434\":{\"1981\":{},\"1374\":{},\"2489\":{},\"3614\":{},\"3615\":{},\"3714\":{}},\"3437\":{\"1321\":{},\"1374\":{},\"2489\":{},\"3614\":{},\"3615\":{},\"3714\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 85px;
+  	left: 759px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 59px;
+  	left: 761px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_tipodedocumentoproductor_tipodeidentificacin {
+  	position: absolute;
+  	top: 204px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonanatural_cdulapasaporte {
+  	position: absolute;
+  	top: 240px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonanatural_nombrecompleto {
+  	position: absolute;
+  	top: 291px;
+  	left: 272px;
+  	width: 657px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonanatural_pasdeprocedencia {
+  	position: absolute;
+  	top: 243px;
+  	left: 591px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonanatural_email {
+  	position: absolute;
+  	top: 337px;
+  	left: 692px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonanatural_nmerodetelfono {
+  	position: absolute;
+  	top: 337px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonanatural_direccion {
+  	position: absolute;
+  	top: 380px;
+  	left: 269px;
+  	width: 658px;
+  	height: 50px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonajuridica_ruc {
+  	position: absolute;
+  	top: 240px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonajuridica_nombrecompleto {
+  	position: absolute;
+  	top: 291px;
+  	left: 272px;
+  	width: 655px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonajuridica_pasdeprocedencia {
+  	position: absolute;
+  	top: 242px;
+  	left: 590px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonajuridica_email {
+  	position: absolute;
+  	top: 336px;
+  	left: 691px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonajuridica_nmerodetelfono {
+  	position: absolute;
+  	top: 337px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_1_datosdelapersonajuridica_direccion {
+  	position: absolute;
+  	top: 380px;
+  	left: 268px;
+  	width: 658px;
+  	height: 50px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_tipodedocumentoproductor_tipodeidentificacin {
+  	position: absolute;
+  	top: 543px;
+  	left: 268px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonanatural_cdulapasaporte {
+  	position: absolute;
+  	top: 580px;
+  	left: 267px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonanatural_nombrecompleto {
+  	position: absolute;
+  	top: 631px;
+  	left: 265px;
+  	width: 676px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonanatural_pasdeprocedencia {
+  	position: absolute;
+  	top: 581px;
+  	left: 587px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonanatural_email {
+  	position: absolute;
+  	top: 676px;
+  	left: 686px;
+  	width: 251px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonanatural_nmerodetelfono {
+  	position: absolute;
+  	top: 677px;
+  	left: 264px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonanatural_direccion {
+  	position: absolute;
+  	top: 720px;
+  	left: 264px;
+  	width: 658px;
+  	height: 49px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonajuridica_ruc {
+  	position: absolute;
+  	top: 579px;
+  	left: 267px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonajuridica_nombrecompleto {
+  	position: absolute;
+  	top: 630px;
+  	left: 265px;
+  	width: 674px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonajuridica_pasdeprocedencia {
+  	position: absolute;
+  	top: 581px;
+  	left: 586px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonajuridica_email {
+  	position: absolute;
+  	top: 675px;
+  	left: 685px;
+  	width: 252px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonajuridica_nmerodetelfono {
+  	position: absolute;
+  	top: 676px;
+  	left: 263px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_2_datosdelapersonajuridica_direccion {
+  	position: absolute;
+  	top: 719px;
+  	left: 263px;
+  	width: 656px;
+  	height: 50px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_tipodedocumentoproductor_tipodeidentificacin {
+  	position: absolute;
+  	top: 879px;
+  	left: 266px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonanatural_cdulapasaporte {
+  	position: absolute;
+  	top: 916px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonanatural_nombrecompleto {
+  	position: absolute;
+  	top: 966px;
+  	left: 264px;
+  	width: 658px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonanatural_pasdeprocedencia {
+  	position: absolute;
+  	top: 917px;
+  	left: 585px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonanatural_email {
+  	position: absolute;
+  	top: 1012px;
+  	left: 683px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonanatural_nmerodetelfono {
+  	position: absolute;
+  	top: 1011px;
+  	left: 263px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonanatural_direccion {
+  	position: absolute;
+  	top: 1055px;
+  	left: 261px;
+  	width: 660px;
+  	height: 51px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonajuridica_ruc {
+  	position: absolute;
+  	top: 915px;
+  	left: 267px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonajuridica_nombrecompleto {
+  	position: absolute;
+  	top: 965px;
+  	left: 264px;
+  	width: 658px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonajuridica_pasdeprocedencia {
+  	position: absolute;
+  	top: 917px;
+  	left: 585px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonajuridica_email {
+  	position: absolute;
+  	top: 1012px;
+  	left: 682px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonajuridica_nmerodetelfono {
+  	position: absolute;
+  	top: 1011px;
+  	left: 263px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelproductorespersonanatural_instance_3_datosdelapersonajuridica_direccion {
+  	position: absolute;
+  	top: 1054px;
+  	left: 261px;
+  	width: 660px;
+  	height: 52px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 171
+created_at: 2015-01-07 14:45:24 Z
+updated_at: 2015-10-01 20:06:17 Z
+instances_selector: "{\"4645\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4735\":{\"value\":\"1,3\",\"3438\":{\"value\":\"\",\"2197\":{\"value\":\"\"}},\"3434\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"2489\":{\"value\":\"\"},\"3614\":{\"value\":\"\"},\"3615\":{\"value\":\"\"},\"3714\":{\"value\":\"\"}},\"3437\":{\"value\":\"\",\"1321\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"2489\":{\"value\":\"\"},\"3614\":{\"value\":\"\"},\"3615\":{\"value\":\"\"},\"3714\":{\"value\":\"\"}}}}"
+size: ""

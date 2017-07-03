@@ -1,0 +1,316 @@
+--- 
+id: 143
+position: 5
+selector: "{\"949\":{\"656\":{\"758\":{},\"759\":{}}},\"1247\":{\"598\":{\"1981\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"545\":{},\"1996\":{}},\"597\":{\"2000\":{},\"574\":{},\"632\":{},\"633\":{},\"578\":{},\"585\":{},\"631\":{},\"594\":{}},\"1778\":{\"331\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 66px;
+  	left: 709px;
+  	width: 314px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 40px;
+  	left: 711px;
+  	width: 316px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_representantelegal_cdulapasaporte {
+  	position: absolute;
+  	top: 159px;
+  	left: 281px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_representantelegal_primernombre {
+  	position: absolute;
+  	top: 157px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_representantelegal_segundonombre {
+  	position: absolute;
+  	top: 195px;
+  	left: 282px;
+  	width: 236px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_representantelegal_primerapellido {
+  	position: absolute;
+  	top: 193px;
+  	left: 727px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_representantelegal_segundoapellido {
+  	position: absolute;
+  	top: 231px;
+  	left: 278px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_representantelegal_nacionalidad {
+  	position: absolute;
+  	top: 230px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_representantelegal_fechadenacimientostring {
+  	position: absolute;
+  	top: 266px;
+  	left: 281px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_pas_string {
+  	position: absolute;
+  	top: 370px;
+  	left: 283px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_provincia {
+  	position: absolute;
+  	top: 369px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_distrito {
+  	position: absolute;
+  	top: 407px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_corregimiento {
+  	position: absolute;
+  	top: 406px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_calleoavenida {
+  	position: absolute;
+  	top: 441px;
+  	left: 280px;
+  	width: 233px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 442px;
+  	left: 729px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_nmerocelular {
+  	position: absolute;
+  	top: 478px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 477px;
+  	left: 732px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_2_nombresydatosregistralesdelasotrasempresasosociedadesenqueestvinculadocomorepresentantelegaldirectoryodignatarioyoapoderadoyfechadeiniciodelarelacin_areadetexto {
+  	position: absolute;
+  	top: 627px;
+  	left: 63px;
+  	width: 897px;
+  	height: 64px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_representantelegal_cdulapasaporte {
+  	position: absolute;
+  	top: 785px;
+  	left: 281px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_representantelegal_primernombre {
+  	position: absolute;
+  	top: 783px;
+  	left: 729px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_representantelegal_segundonombre {
+  	position: absolute;
+  	top: 819px;
+  	left: 282px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_representantelegal_primerapellido {
+  	position: absolute;
+  	top: 818px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_representantelegal_segundoapellido {
+  	position: absolute;
+  	top: 856px;
+  	left: 283px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_representantelegal_nacionalidad {
+  	position: absolute;
+  	top: 856px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_representantelegal_fechadenacimientostring {
+  	position: absolute;
+  	top: 891px;
+  	left: 282px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_pas_string {
+  	position: absolute;
+  	top: 993px;
+  	left: 282px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_provincia {
+  	position: absolute;
+  	top: 994px;
+  	left: 732px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_distrito {
+  	position: absolute;
+  	top: 1031px;
+  	left: 278px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_corregimiento {
+  	position: absolute;
+  	top: 1031px;
+  	left: 732px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_calleoavenida {
+  	position: absolute;
+  	top: 1066px;
+  	left: 280px;
+  	width: 236px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 1066px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_nmerocelular {
+  	position: absolute;
+  	top: 1102px;
+  	left: 276px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 1101px;
+  	left: 727px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelapoderadogeneral_instance_3_nombresydatosregistralesdelasotrasempresasosociedadesenqueestvinculadocomorepresentantelegaldirectoryodignatarioyoapoderadoyfechadeiniciodelarelacin_areadetexto {
+  	position: absolute;
+  	top: 1241px;
+  	left: 61px;
+  	width: 898px;
+  	height: 76px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_4.css\" />\r\n\
+  <title>Registro de Empresas y Declaraci\xC3\xB3n Jurada</title>\r\n\
+  </head>\r\n\
+  <body>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud\"] %>\r\n      </span>\r\n    </div>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud\"] %>\r\n      </span>\r\n    </div>\r\n    <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n    <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar1\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar6\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar7\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar2\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar3\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar4\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  </body>\r\n\
+  </html>\r\n"
+print_design_id: 66
+created_at: 2012-07-18 16:10:45 Z
+updated_at: 2015-10-22 01:06:32 Z
+instances_selector: "{\"949\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1247\":{\"value\":\"2,3\",\"598\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"545\":{\"value\":\"\"},\"1996\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"2000\":{\"value\":\"\"},\"574\":{\"value\":\"\"},\"632\":{\"value\":\"\"},\"633\":{\"value\":\"\"},\"578\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"1778\":{\"value\":\"\",\"331\":{\"value\":\"3,4\"}}}}"
+size: ""

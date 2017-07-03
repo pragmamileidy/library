@@ -1,0 +1,19 @@
+--- 
+id: 2354
+section_id: 405
+part_id: 38
+name: "Carn\xC3\xA9 emitido por el Servicio Nacional de Migraci\xC3\xB3n"
+created_at: 2012-09-03 15:46:45 Z
+updated_at: 2013-08-30 19:26:17 Z
+label: "Carnet emitido por el Servicio Nacional de Migraci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: "Copia debidamente autenticada  ante Notario P\xC3\xBAblico, del carn\xC3\xA9 emitido por el Servicio Nacional de Migraci\xC3\xB3n, en donde consta el permiso provisional de residencia por dos a\xC3\xB1os, a favor del solicitante"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

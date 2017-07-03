@@ -1,0 +1,30 @@
+--- 
+id: 282
+name: meses del animal
+description: "campo creado para la parte edad del formulario Solicitud de Importaci\xC3\xB3n de Perros y Gatos"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-05-03 18:56:07 Z
+updated_at: 2013-05-03 20:04:03 Z
+values_list: "\" \",1,2,3,4,5,6,7,8,9,10,11,12"
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

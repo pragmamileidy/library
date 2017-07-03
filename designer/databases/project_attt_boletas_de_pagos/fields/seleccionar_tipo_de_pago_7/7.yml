@@ -1,0 +1,30 @@
+--- 
+id: 7
+name: Seleccionar Tipo de Pago
+description: "campo para seleccionar el tipo de pago \"Pago Manual\", \"Pago Electr\xC3\xB3nico\""
+version: 20161004-154534
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-10-04 19:45:34.316986 Z
+updated_at: 2016-10-04 19:45:34.316986 Z
+values_list: "\"Pago Manual\", \"Pago Electr\xC3\xB3nico\""
+keys_list: "\"Pago Manual\", \"Pago Electr\xC3\xB3nico\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 05e30362-33b9-466a-9cd3-0da8543f720e

@@ -1,0 +1,30 @@
+--- 
+id: 1478
+part_id: 275
+field_id: 1
+name: "N\xC3\xBAmero de Seguro Social"
+created_at: 2012-05-31 01:46:59 Z
+updated_at: 2017-06-04 00:24:06.769375 Z
+label: "N\xC3\xBAmero de Seguro Social"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 50
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 98caab80-f794-44e8-901c-af442738878c
+version: 20170603-202406

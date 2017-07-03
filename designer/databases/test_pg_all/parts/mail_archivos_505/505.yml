@@ -1,0 +1,17 @@
+--- 
+id: 505
+name: mail_Archivos
+description: "Correos para archivos. Solo proceso 3 "
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 19:01:55 Z
+updated_at: 2013-01-14 19:01:55 Z
+label: "Correo de B\xC3\xBAsqueda de Archivos"
+hint: ""
+view_class: horizontal
+serial: 

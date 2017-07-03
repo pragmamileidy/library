@@ -1,0 +1,22 @@
+--- 
+id: 1847
+section_id: 290
+part_id: 38
+name: "Copia de la Licencia Comercial "
+created_at: 2012-06-12 15:10:32 Z
+updated_at: 2017-02-27 20:28:09.118198 Z
+label: "Aviso de Operaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: "tipo_solicitud = form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_de_licencia_de_operaciones_de_farmacia.tipo_de_solicitud\")\r\n\
+  motivos = [\"Modificaci\xC3\xB3n\", \"Renovaci\xC3\xB3n\"]\r\n\
+  \r\n\
+  motivos.include?(tipo_solicitud)"
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,17 @@
+--- 
+id: 462
+name: Antecedentes penales
+description: Antecedentes penales Familiares y Personales
+version: 
+status: Draft
+help: "En alg\xC3\xBAn momento usted o su familia ha tenido o tiene pendiente alg\xC3\xBAn tipo de problema legal, judicial o administrativo. Ha sido detenido por alguna instancia policial, judical o en alguna institucion del estado."
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-28 02:59:41 Z
+updated_at: 2012-08-28 02:59:41 Z
+label: Antecedentes penales Familiares y Personales
+hint: "(Si su respuesta es Si, indicar el antecedente y el a\xC3\xB1o)"
+view_class: horizontal
+serial: 

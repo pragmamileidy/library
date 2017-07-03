@@ -1,0 +1,30 @@
+--- 
+id: 3723
+part_id: 720
+field_id: 10
+name: Imprimir sin sentencia
+created_at: 2014-07-07 21:54:00 Z
+updated_at: 2017-06-04 00:30:55.112344 Z
+label: Imprimir sin sentencia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 15a109c0-3a92-4ae5-bc22-95594fd010d7
+version: 20170603-203055

@@ -1,0 +1,19 @@
+--- 
+id: 1331
+name: Paso 1 - Datos del Solicitante y del Co-Solicitante
+label: Datos del Solicitante y del Co-Solicitante
+description: "Ingrese los Datos del Solicitante, los Datos del Co-Solicitante (Si existiese) y los Datos del Responsable del Dise\xC3\xB1o"
+fill_step_id: 663
+created_at: 2013-05-08 14:40:58 Z
+updated_at: 2013-05-08 14:40:58 Z
+include: "{\"2738\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2739\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2742\":{\"2027\":{\"2080\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2743\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2744\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2748\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2749\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2771\":{\"1795\":{\"1679\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1680\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2207\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2208\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 0 - Datos de la Solicitud
+next_step: Paso 2 - Datos de la Finca
+position: 1
+ajax_calls: ""

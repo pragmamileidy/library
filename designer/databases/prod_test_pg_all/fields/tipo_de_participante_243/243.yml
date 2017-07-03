@@ -1,0 +1,30 @@
+--- 
+id: 243
+name: Tipo de Participante
+description: "Tipo de Presentadores (obras radiof\xC3\xB3nicas)- mici"
+version: 
+status: Draft
+label: Tipo de Participante
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-05 21:38:36 Z
+updated_at: 2013-03-11 17:25:12 Z
+values_list: "\"Presentador\", \"Animador\", \"Locutor Principal\""
+keys_list: ""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

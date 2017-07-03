@@ -1,0 +1,29 @@
+--- 
+id: 1006
+name: Paso 0 - Revision de Listado de Entidades
+label: "Revisi\xC3\xB3n de Listado de Entidades"
+description: "Revisi\xC3\xB3n de Listado de Entidades"
+fill_step_id: 527
+created_at: 2012-12-11 16:00:17 Z
+updated_at: 2013-01-22 18:46:33 Z
+include: "{\"1797\":{\"2173\":{\"2379\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2174\":{\"954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1798\":{\"2175\":{\"2379\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2418\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1800\":{\"2197\":{\"2393\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2394\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2395\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2396\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2397\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2398\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2400\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2401\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1804\":{\"2205\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2206\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2207\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2208\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2209\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2210\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2211\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2212\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2213\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2214\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2215\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2216\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2217\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2218\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2219\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2220\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1806\":{\"2227\":{\"2405\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2406\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2229\":{\"2428\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2550\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2426\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2301\":{\"2493\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2523\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  # Inicializacion de datos del agente - LG
+  
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  
+  form_data.set("seccion_de_funcionario_jefe3.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

@@ -1,0 +1,17 @@
+--- 
+id: 177
+name: Tipo de Traspaso
+description: "Tipo de Traspaso de Veh\xC3\xADculos para el proceso ATTT-Traspaso Vehicular"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-18 15:09:19 Z
+updated_at: 2015-01-26 20:07:37 Z
+status: Draft
+label: Tipo de Traspaso
+hint: ""
+serial: 4454-3553-1974-8974-0223

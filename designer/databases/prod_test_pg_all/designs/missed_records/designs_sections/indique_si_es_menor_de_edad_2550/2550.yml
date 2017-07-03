@@ -1,0 +1,16 @@
+--- 
+id: 2550
+design_id: 30
+section_id: 479
+name: Indique si es menor de edad
+created_at: 2013-03-19 23:26:28 Z
+updated_at: 2013-03-20 15:09:07 Z
+label: Indique si es menor de edad
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2739\":{\"2518\":{\"required\":\"required\"},\"3094\":{\"required\":\"unrequired\"},\"3095\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

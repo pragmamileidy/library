@@ -1,0 +1,30 @@
+--- 
+id: 1213
+part_id: 236
+field_id: 27
+name: Trimestre/Semestre
+created_at: 2012-05-06 05:04:51 Z
+updated_at: 2017-06-04 00:21:37.293638 Z
+label: Trimestre/Semestre B/.
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indique el monto a aportar semestral o trimestralmente
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8992063d-807f-4698-9f72-bbeb5447f133
+version: 20170603-202137

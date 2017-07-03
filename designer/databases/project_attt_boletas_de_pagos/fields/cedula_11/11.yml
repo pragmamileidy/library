@@ -1,0 +1,30 @@
+--- 
+id: 11
+name: "C\xC3\xA9dula"
+description: "Campo con reglas de validaci\xC3\xB3n para n\xC3\xBAmero de c\xC3\xA9dula"
+version: 20170210-185551
+status: Draft
+label: "C\xC3\xA9dula"
+hint: "Ejemplos: 8-442-445, (paname\xC3\xB1os extranjeros)PE-10-442, (nacionalizados)N-45-832, (extranjeros con c\xC3\xA9dula) E-12-342, (nacidos antes de vigencia)1AV-432-658, (ind\xC3\xADgenas)4PI-234-123"
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2017-02-10 18:55:51.582391 Z
+updated_at: 2017-02-10 18:55:51.582391 Z
+values_list: ""
+keys_list: ""
+field_type: string
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: /^((^([0-9]|[1][0-4]){1}(\-[A][V]|\-[P][I])?)|(^([P][E]|[N]|[E])){1}){1}\-(\d{1,4})\-(\d{1,5})$/
+kind_of_list: fix_values
+list_code: ""
+serial: 10ff571a-3c32-4025-9cae-d288a0deebf2

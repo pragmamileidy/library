@@ -1,0 +1,30 @@
+--- 
+id: 4180
+part_id: 760
+field_id: 10
+name: nombre usual
+created_at: 2017-02-28 19:11:57.017190 Z
+updated_at: 2017-06-04 00:25:29.421737 Z
+label: Nombre Usual
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7b212ce8-085c-4a81-9d80-e2716d725693
+version: 20170603-202529

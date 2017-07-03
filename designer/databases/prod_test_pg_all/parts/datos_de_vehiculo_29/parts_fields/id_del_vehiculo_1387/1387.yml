@@ -1,0 +1,30 @@
+--- 
+id: 1387
+part_id: 29
+field_id: 10
+name: "Id del Veh\xC3\xADculo"
+created_at: 2012-05-17 20:09:42 Z
+updated_at: 2017-06-04 00:31:56.821389 Z
+label: "Id del Veh\xC3\xADculo"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 30
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c3a6f210-eab2-4d17-996a-2b156c44edeb
+version: 20170603-203156

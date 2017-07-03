@@ -1,0 +1,19 @@
+--- 
+id: 3641
+section_id: 369
+part_id: 38
+name: "Escritura P\xC3\xBAblica o Contrato de Arrendamiento del local"
+created_at: 2017-02-15 17:23:36.678030 Z
+updated_at: 2017-02-20 20:39:51.752213 Z
+label: "Copia de la Escritura P\xC3\xBAblica o Contrato de Arrendamiento del local."
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor ver recuadro de ayuda.
+help: "Copia de la escritura p\xC3\xBAblica donde conste la propiedad o derecho de uso, o del contrato de arrendamiento del local comercial donde estar\xC3\xA1 ubicada la empresa, que presentar\xC3\xA1 al momento de la notificaci\xC3\xB3n de la resoluci\xC3\xB3n que autoriza las operaciones de la casa de empe\xC3\xB1o"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

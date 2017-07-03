@@ -1,0 +1,19 @@
+--- 
+id: 2210
+section_id: 383
+part_id: 38
+name: Certificado de Registro de la Propiedad
+created_at: 2012-08-15 21:22:20 Z
+updated_at: 2013-03-06 19:27:27 Z
+label: Certificado de Registro de la Propiedad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Este certificado no debe tener m\xC3\xA1s de un a\xC3\xB1o de expedido."
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 6

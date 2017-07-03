@@ -1,0 +1,30 @@
+--- 
+id: 2619
+design_id: 201
+section_id: 440
+name: Entidad Evaluadora Revisiones
+created_at: 2013-04-16 02:58:22 Z
+updated_at: 2013-04-16 02:58:22 Z
+label: Entidad Evaluadora
+min_instances: 0
+max_instances: 1
+depends_on: "dat = @application[\"id\"].to_s\r\n\
+  result = WebserviceConsumer.get('/preconfigured_services/get_application_config.json?id='+dat).parsed_response\r\n\
+  entidades=[]\r\n\
+  result[\"response\"][\"EntidadesEvaluadoras\"].each do |le| \r\n\
+  \tentidades<<le.last[\"evaluacion_de_la_entidad\"]\r\n\
+  end\r\n\
+  _i = (@task[\"name\"].to_s).split(' ')\r\n\
+  _datoObservacion = (_i[_i.length-1]).downcase\r\n\
+  _datoPago = _i[0].downcase\r\n\
+  _datoFinal = (_i[_i.length-1]).downcase\r\n\
+  _i = (_i[_i.length-1]).upcase\r\n\
+  a=false\r\n\
+  (0..14).each do |__i|\r\n a = true if ((entidades[__i] != nil and (entidades[__i][\"siglas\"]).upcase == _i) or _datoObservacion == \"dapypc\" or _datoPago == \"introducir\" or _datoFinal == \"t\xC3\xA9cnicas\")\r\n\
+  end\r\n\
+  a"
+manage_as_confidential: false
+include: "{\"2549\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2550\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2551\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2552\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2553\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2554\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2555\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2558\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2559\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2560\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2561\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2562\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2563\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2564\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"unrequired\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2565\":{\"3101\":{\"required\":\"required\"},\"2849\":{\"required\":\"required\"},\"2851\":{\"required\":\"required\"},\"2852\":{\"required\":\"required\"},\"2850\":{\"required\":\"required\"},\"2853\":{\"required\":\"unrequired\"},\"2854\":{\"required\":\"unrequired\"}},\"2567\":{\"2892\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 12

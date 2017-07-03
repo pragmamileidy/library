@@ -1,0 +1,19 @@
+--- 
+id: 1152
+section_id: 190
+part_id: 38
+name: "Certificado de Capacitaci\xC3\xB3n en Gesti\xC3\xB3n Empresarial"
+created_at: 2012-04-22 16:22:01 Z
+updated_at: 2012-04-22 16:28:23 Z
+label: "Certificado de Capacitaci\xC3\xB3n en Gesti\xC3\xB3n Empresarial"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

@@ -1,0 +1,30 @@
+--- 
+id: 857
+part_id: 170
+field_id: 10
+name: "M\xC3\xA9todos biol\xC3\xB3gicos"
+created_at: 2012-03-27 02:13:03 Z
+updated_at: 2017-06-04 00:25:41.440142 Z
+label: "c.- M\xC3\xA9todos biol\xC3\xB3gicos"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a21f689b-0b79-4a63-9a74-3f13e8f313bf
+version: 20170603-202541

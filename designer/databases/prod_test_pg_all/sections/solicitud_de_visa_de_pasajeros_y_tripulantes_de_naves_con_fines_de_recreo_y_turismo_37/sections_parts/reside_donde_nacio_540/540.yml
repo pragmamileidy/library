@@ -1,0 +1,19 @@
+--- 
+id: 540
+section_id: 37
+part_id: 49
+name: "Reside donde naci\xC3\xB3"
+created_at: 2011-11-28 20:31:55 Z
+updated_at: 2012-04-10 18:42:29 Z
+label: "\xC2\xBFEs usted residente de alg\xC3\xBAn pa\xC3\xADs, distinto al de su nacionalidad?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"237\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 20

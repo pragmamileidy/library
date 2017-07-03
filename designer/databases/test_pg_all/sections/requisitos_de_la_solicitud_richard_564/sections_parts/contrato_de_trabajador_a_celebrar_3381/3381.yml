@@ -1,0 +1,19 @@
+--- 
+id: 3381
+section_id: 564
+part_id: 38
+name: "contrato de trabajador a celebrar "
+created_at: 2014-11-04 16:05:01 Z
+updated_at: 2014-11-06 16:23:45 Z
+label: "contrato de trabajador a celebrar "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "contrato de trabajador a celebrar "
+help: "Contrato de trabajo a celebrar con el trabajador conforme lo indica el art\xC3\xADculo 68 de Decreto de Gabinete 252 de 30 de diciembre de 1971 "
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

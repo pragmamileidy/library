@@ -1,0 +1,16 @@
+--- 
+id: 4206
+design_id: 243
+section_id: 333
+name: Agente Financiero
+created_at: 2014-03-20 01:16:53 Z
+updated_at: 2015-10-06 14:37:01 Z
+label: Datos del Agente Financiero o Entidad Retenedora
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2023\":{\"2062\":{\"required\":\"required\"},\"2063\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

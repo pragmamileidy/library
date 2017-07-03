@@ -1,0 +1,30 @@
+--- 
+id: 3992
+part_id: 742
+field_id: 349
+name: Retiro Solvencia Policial
+created_at: 2016-03-01 15:37:21.971287 Z
+updated_at: 2017-06-04 00:25:24.813221 Z
+label: Retiro Solvencia Policial
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"juridical_person_type\"] == \"national_go\""
+manage_as_confidential: false
+hint: "Por favor indicar por qui\xC3\xA9n ser\xC3\xA1 retirado la solvencia policial"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 78ed72fe-be33-40b6-bdea-703c904b7d6d
+version: 20170603-202524

@@ -1,0 +1,30 @@
+--- 
+id: 20
+part_id: 10
+field_id: 12
+name: "C\xC3\xA9dula de Identidad"
+created_at: 2011-11-01 19:55:54 Z
+updated_at: 2017-06-04 00:27:54.941211 Z
+label: "C\xC3\xA9dula de Identidad"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: 
+help: 
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f782de65-c64e-4b43-a618-1efdeb72ef5c
+version: 20170603-202754

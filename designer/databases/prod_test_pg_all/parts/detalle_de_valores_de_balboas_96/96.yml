@@ -1,0 +1,17 @@
+--- 
+id: 96
+name: Detalle de Valores de Balboas
+description: "Parte que contiene los datos de valores en Balboas para una gesti\xC3\xB3n de cobro"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-16 19:59:45 Z
+updated_at: 2015-11-09 14:25:08 Z
+label: Detalle de Valores de Balboas
+hint: ""
+view_class: horizontal
+serial: 1744-3310-0348-3407-6496

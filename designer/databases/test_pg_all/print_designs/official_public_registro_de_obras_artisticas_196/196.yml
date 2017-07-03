@@ -1,0 +1,9 @@
+--- 
+id: 196
+name: "official-public_Registro de Obras Art\xC3\xADsticas"
+description: "Formulario de Registro de Obras Art\xC3\xADsticas"
+created_at: 2017-02-26 22:58:20.312518 Z
+updated_at: 2017-02-26 22:58:20.312518 Z
+design_id: 288
+label: "Formulario de Registro de Obras Art\xC3\xADsticas"
+ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

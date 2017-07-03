@@ -1,0 +1,348 @@
+--- 
+id: 3119
+name: Paso 4 - Archivos Adjuntos
+label: Requisitos de la Solicitud
+description: ""
+fill_step_id: 1666
+created_at: 2015-04-07 13:23:29 Z
+updated_at: 2015-11-11 16:04:12.288615 Z
+include: "{\"4799\":{\"3022\":{\"3515\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3516\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3023\":{\"3517\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3518\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3024\":{\"3519\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3520\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3025\":{\"3521\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3522\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3026\":{\"3523\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3524\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3027\":{\"3525\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3526\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3028\":{\"3527\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3528\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3029\":{\"3529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3530\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3030\":{\"3531\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3532\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3031\":{\"3533\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3534\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3033\":{\"3537\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3538\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3034\":{\"3539\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |
+  _numeroPlano = form_data.get("datos_generales_del_proyecto.categoria_del_proyecto.numero_de_plano")
+  form_data.set("asignacion_de_entidades.datos_especificados_por_el_analista.no_de_plano_asignado", _numeroPlano)
+  
+  _categoria = form_data.get("datos_generales_del_proyecto.categoria_del_proyecto.categoria_del_proyecto")
+  form_data.set("asignacion_de_entidades.datos_especificados_por_el_analista.categoria_del_proyecto", _categoria)
+
+on_transition: |-
+  fecha = Date.today
+  
+  (1..15).each do |x|
+     fecha_1 = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_arquitectura_p5_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_arquitectura_p5_instance_#{x}.plano_de_arquitectura")
+  	if (anexo != "") && (fecha_1 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.plano_de_arquitectura_p5_instance_#{x}.fecha",fecha)
+  	end     
+  #######################################################################################################################
+     fecha_2 = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_estructura_p5_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_estructura_p5_instance_#{x}.plano_de_estructura")
+  	if (anexo != "") && (fecha_2 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.plano_de_estructura_p5_instance_#{x}.fecha",fecha)
+  	end  	
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_electricidad_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_electricidad_instance_#{x}.plano_de_electricidad")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.plano_de_electricidad_instance_#{x}.fecha",fecha)
+  	end  
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_plomeria_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.plano_de_plomeria_instance_#{x}.plano_de_plomeria")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.plano_de_plomeria_instance_#{x}.fecha",fecha)
+  	end  
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.memoria_tecnica_por_especialidad_del_proyecto_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.memoria_tecnica_por_especialidad_del_proyecto_instance_#{x}.memoria_tecnica_por_especialidad_del_proyecto")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.memoria_tecnica_por_especialidad_del_proyecto_instance_#{x}.fecha",fecha)
+  	end  
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.certificado_de_registro_publico_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.certificado_de_registro_publico_instance_#{x}.certificado_de_registro_publico")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.certificado_de_registro_publico_instance_#{x}.fecha",fecha)
+  	end  
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.aprobacion_del_miviot_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.aprobacion_del_miviot_instance_#{x}.aprobacion_del_miviot")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.aprobacion_del_miviot_instance_#{x}.fecha",fecha)
+  	end  
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.certificacion_del_ingeniero_disenador_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.certificacion_del_ingeniero_disenador_instance_#{x}.certificacion_del_ingeniero_disenador")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.certificacion_del_ingeniero_disenador_instance_#{x}.fecha",fecha)
+  	end  													
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.escritura_o_contrato_de_arrendamiento_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.escritura_o_contrato_de_arrendamiento_instance_#{x}.escritura_o_contrato_de_arrendamiento")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.escritura_o_contrato_de_arrendamiento_instance_#{x}.fecha",fecha)
+  	end  
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.nota_de_autorizacion_del_profesional_original_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.nota_de_autorizacion_del_profesional_original_instance_#{x}.nota_de_autorizacion_del_profesional_original")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.nota_de_autorizacion_del_profesional_original_instance_#{x}.fecha",fecha)
+  	end  
+  #######################################################################################################################
+     fecha_3 = form_data.get("anexos_002_aprobacion_de_planos_2.anexos_adicionales_del_solicitante_p5_instance_#{x}.fecha")
+     anexo = form_data.get("anexos_002_aprobacion_de_planos_2.anexos_adicionales_del_solicitante_p5_instance_#{x}.anexos_adicionales_del_solicitante")
+  	if (anexo != "") && (fecha_3 == "")
+  	  form_data.set("anexos_002_aprobacion_de_planos_2.anexos_adicionales_del_solicitante_p5_instance_#{x}.fecha",fecha)
+  	end 
+  end
+views: 
+back_step: Paso 3 - Datos del Proyecto
+next_step: "Ultimo Paso - Confirmaci\xC3\xB3n"
+position: 4
+ajax_calls: "$(document).ready(function(){\r\n\
+  \r\n  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_parte_oculta]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta\";\r\n\
+  \tvar mod2 = \"_oculto\";\r\n \tvar mod3 = mod1.concat(mod2);\r\n\
+  \t\t$(mod3).parent().parent().parent().parent().hide();\r\n\
+  \r\n  });   \r\n\
+  \r\n\
+  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_plano_de_arquitectura_p5]'), function(index, campo) {\r\n\
+  \t\t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_plano_de_arquitectura_p5\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_plano_de_arquitectura\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n  });\r\n  \r\n  \r\n $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_plano_de_estructura_p5]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_plano_de_estructura_p5\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_plano_de_estructura\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  }); \r\n \r\n  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_plano_de_electricidad]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_plano_de_electricidad\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_plano_de_electricidad\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  });   \r\n \r\n  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_plano_de_plomeria]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_plano_de_plomeria\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_plano_de_plomeria\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  }); \r\n                \r\n $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_memoria_tecnica_por_especialidad_del_proyecto]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_memoria_tecnica_por_especialidad_del_proyecto\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_memoria_tecnica_por_especialidad_del_proyecto\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  }); \r\n\
+  \r\n  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_certificado_de_registro_publico]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_certificado_de_registro_publico\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_certificado_de_registro_publico\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  }); \r\n  \r\n $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_aprobacion_del_miviot]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_aprobacion_del_miviot\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_aprobacion_del_miviot\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  });\r\n                                          \r\n  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_certificacion_del_ingeniero_disenador]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_certificacion_del_ingeniero_disenador\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_certificacion_del_ingeniero_disenador\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  });\r\n\
+  \t\t\t\t\t\t\r\n  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_escritura_o_contrato_de_arrendamiento]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_escritura_o_contrato_de_arrendamiento\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_escritura_o_contrato_de_arrendamiento\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  });\r\n\
+  \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_nota_de_autorizacion_del_profesional_original]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_nota_de_autorizacion_del_profesional_original\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_nota_de_autorizacion_del_profesional_original\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  });\r\n\
+  \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r\n  $.each( $('[id*=field_anexos_002_aprobacion_de_planos_2_anexos_adicionales_del_solicitante_p5]'), function(index, campo) {\r\n\
+  \t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_anexos_002_aprobacion_de_planos_2_anexos_adicionales_del_solicitante_p5\";\r\n\
+  \tvar mod2 = \"_fecha\";\r\n\
+  \tvar mod4 = \"_anexos_adicionales_del_solicitante\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar ced = mod3.concat(mod4)\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \ttat1 = \"#field_anexos_002_aprobacion_de_planos_2_parte_oculta_oculto\"\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t\t//alert(ced);\r\n        if ($(lista_modelo).val() == ''){\r\n\
+  \t\t\t$(lista_modelo).parent().parent().hide();\r\n\
+  \t\t}  \r\n\
+  \tif ($(tat1).val() != 'llenar'){\r\n        if ($(ced).val() != ''){ \r\n\
+  \t\t\t$(ced).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(ced).parent().find('a.upload-document-task').unbind('click');\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n  });\r\n  \r\n\
+  }); "

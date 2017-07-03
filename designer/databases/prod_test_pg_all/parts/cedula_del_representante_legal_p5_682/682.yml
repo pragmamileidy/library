@@ -1,0 +1,17 @@
+--- 
+id: 682
+name: "C\xC3\xA9dula del Representante Legal p5"
+description: "C\xC3\xA9dula del Representante Legal del Solicitante"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-02-18 15:09:47 Z
+updated_at: 2015-02-25 15:04:41 Z
+label: "C\xC3\xA9dula del Representante Legal del Solicitante"
+hint: ""
+view_class: horizontal
+serial: 1023-6691-3677-5998-7502

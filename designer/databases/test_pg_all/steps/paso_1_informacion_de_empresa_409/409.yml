@@ -1,0 +1,295 @@
+--- 
+id: 409
+name: " Paso 1 - Informacion de Empresa"
+label: Informacion de Empresa
+description: "\r\n\
+  <br>Informacion de Empresa</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 216
+created_at: 2012-05-29 20:52:37 Z
+updated_at: 2015-10-19 14:02:41 Z
+include: "{\"1116\":{\"595\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"597\":{\"2000\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"574\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"573\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"575\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1723\":{\"1198\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1791\":{\"580\":{\"1323\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1320\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1790\":{\"2170\":{\"2347\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1120\":{\"580\":{\"1981\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1119\":{\"586\":{\"559\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1122\":{\"580\":{\"1981\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "#VERIFICACI\xC3\x92N NUMERO DE CEDULA DEL SOLICITANTE NO PERTENEZCA A UN DIFUNTO\r\n\
+  \r\n\
+  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n    numdoc = form_data.get(\"datos_del_solicitante_natural.datos_de_la_persona.cedula\")\r\n    result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{numdoc}\")).parsed_response\r\n    datosSol = result[\"response\"]\r\n    if datosSol.blank? \r\n        transition_errors << \"La C\xC3\xA9dula del solicitante no fue encontrada. Por favor, verifique.\" \r\n    else            \r\n        difunto = datosSol[\"mensaje\"]\r\n        if (difunto != \"ND\")\r\n            transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{numdoc} del solicitante, corresponde a un ciudadano Difunto.\"\r\n        end\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  ############################\r\n\
+  ############################\r\n\
+  \r\n\
+  \r\n\
+  # Si en la secci\xC3\xB3n TIPO DE SOLICITUD se selecciona CORREDOR DE ADUANAS, mostrar la secci\xC3\xB3n del #Datos del Corredor de lo contrario mostrar Datos de los Usuarios\r\n\
+  \r\n\
+  #avargas\r\n\
+  _error = nil\r\n\
+  if form_data.get(\"tipo_de_solicitud.tipo_de_solicitud.tipo_de_solicitud_siga\")== \"Corredor de Aduanas\"\r\n\
+  _licencia = form_data.get(\"datos_del_corredor.informacion_laboral.numero_de_licencia\")\r\n\
+  \r\n\
+  result = WebserviceConsumer.get( '/service/bdin_datos_corredor_siga/find.json?nunLicencia=' + \"#{_licencia}\").parsed_response\r\n\
+  _corredor = result[\"response\"]\r\n\
+  if _corredor.nil?\r\n    _error = \"#{_error}\" + \"El n\xC3\xBAmero de Licencia suministrada no existe en el sistema. Favor revise  el valor.\"\r\n\
+  end\r\n\
+  if !_error.nil? \r\n    transition_errors << \"#{_error}\"\r\n\
+  else\r\n    #datos del Corredor\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.cedula_pasaporte\",_corredor[\"cedulaPasaporte\"])\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.primer_nombre\",_corredor[\"primerNombre\"])\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.segundo_nombre\",_corredor[\"segundoNombre\"])\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.primer_apellido\",_corredor[\"primerApellido\"])\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.segundo_apellido\",_corredor[\"segundoApellido\"])\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.fecha_de_nacimiento\",_corredor[\"fechaNacimiento\"])\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.sexo_string\",_corredor[\"sexo\"])\r\n    form_data.set(\"datos_del_corredor.datos_de_la_persona.nacionalidad\",_corredor[\"nacionalidad\"])\r\n\
+  \r\n        form_data.set(\"datos_del_corredor.informacion_laboral.numero_de_resolucion_de_creacion\",_corredor[\"resolucion\"])\r\n    form_data.set(\"datos_del_corredor.informacion_de_residencia_localizacion.numero_de_telefono\",_corredor[\"telefono\"])\r\n    form_data.set(\"datos_del_corredor.informacion_de_residencia_localizacion.numero_de_fax\",_corredor[\"fax\"])\r\n    form_data.set(\"datos_del_corredor.informacion_de_residencia_localizacion.numero_celular\",_corredor[\"celular\"])\r\n    form_data.set(\"datos_del_corredor.informacion_de_residencia_localizacion.correo_electronico\",_corredor[\"email\"])\r\n\
+  \r\n\
+  end\r\n\
+  end\r\n\
+  \r\n\
+  # Si se selecciona AGREGAR, repetir la secci\xC3\xB3n DATOS DE LOS AUXILIARES. Permitir esto tantas veces \r\n\
+  # como el usuario necesite\r\n\
+  #FTellez\r\n\
+  #datos de los usuarios\r\n\
+  _ci_malas = []\r\n\
+  (1..20).each do |_num|\r\n    _ci = form_data.get(\"datos_de_los_usuarios_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\")\r\n    if !_ci.blank?\r\n        result = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_ci}\").parsed_response\r\n        datos = result[\"response\"]\r\n        if datos.blank?\r\n            _ci_malas << _ci\r\n        else\r\n            difunto = datos[\"mensaje\"]\r\n                    if (difunto != \"ND\")\r\n                        transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{_ci} del Usuario #{_num}, corresponde a un ciudadano Difunto. \"\r\n                    end\r\n            form_data.set(\"datos_de_los_usuarios_instance_#{_num}.datos_de_la_persona.primer_nombre\",datos[\"primerNombre\"])\r\n            form_data.set(\"datos_de_los_usuarios_instance_#{_num}.datos_de_la_persona.segundo_nombre\",datos[\"segundoNombre\"])\r\n            form_data.set(\"datos_de_los_usuarios_instance_#{_num}.datos_de_la_persona.primer_apellido\",datos[\"primerApellido\"])\r\n            form_data.set(\"datos_de_los_usuarios_instance_#{_num}.datos_de_la_persona.segundo_apellido\",datos[\"segundoApellido\"])\r\n            form_data.set(\"datos_de_los_usuarios_instance_#{_num}.datos_de_la_persona.nacionalidad\",datos[\"nacionalidad\"])\r\n            fecha = datos[\"fechaNacimiento\"]\r\n            fecha_n = Time.parse(fecha).strftime(\"%d-%m-%Y\")\r\n            form_data.set(\"datos_de_los_usuarios_instance_#{_num}.datos_de_la_persona.fecha_de_nacimiento_string\",fecha_n)\r\n            datos = nil \r\n        end\r\n    end\r\n\
+  end\r\n    if !_ci_malas.blank?\r\n        transition_errors << \"La cedula(s) suministrada(s) de usuario(s) #{_ci_malas.join(\",\")} no existe(n) en el sistema. Favor revise el valor.\"\r\n        _ci_malas = nil\r\n    end\r\n    \r\n\
+  \r\n\
+  #datos auxiliares\r\n\
+  _ci_malas = []\r\n\
+  (1..10).each do |_num|\r\n\
+  _ci = form_data.get(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\")\r\n    if !_ci.blank?\r\n  result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_ci}\").parsed_response\r\n  datos = result[\"response\"]\r\n    if datos.blank?\r\n    _ci_malas << _ci\r\n    else\r\n    difunto = datos[\"mensaje\"]\r\n            if (difunto != \"ND\")\r\n                transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{_ci} del Auxiliar #{_num}, corresponde a un ciudadano Difunto. \"\r\n            end\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\",datos[\"cedula\"])\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.primer_nombre\",datos[\"primerNombre\"])\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.segundo_nombre\",datos[\"segundoNombre\"])\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.primer_apellido\",datos[\"primerApellido\"])\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.segundo_apellido\",datos[\"segundoApellido\"])\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.nacionalidad\",datos[\"nacionalidad\"])\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.sexo\",datos[\"sexo\"])\r\n\
+  \r\n    fecha = datos[\"fechaNacimiento\"]\r\n            fecha_n = Time.parse(fecha).strftime(\"%d-%m-%Y\")\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.fecha_de_nacimiento_string\",fecha_n)\r\n    form_data.set(\"datos_de_los_auxiliares_instance_#{_num}.datos_de_la_persona.sexo\",datos[\"sexo\"])\r\n    datos = nil \r\n   end\r\n end\r\n end\r\n if !_ci_malas.blank?\r\n    transition_errors << \"La(s) cedula(s) suministrada(s) de auxiliar #{_ci_malas.join(\",\")} no existe(n) en el sistema. Favor revise el valor.\"\r\n    _ci_malas = nil\r\n end\r\n\
+  \r\n\
+  #datos de contacto\r\n\
+  _ci = form_data.get(\"datos_de_contacto.datos_de_contacto.cedula_pasaporte\")\r\n\
+  if !_ci.blank?\r\n  result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_ci}\").parsed_response\r\n  datos = result[\"response\"]\r\n  if !datos.nil?\r\n    difunto = datos[\"mensaje\"]\r\n                if (difunto != \"ND\")\r\n                    transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{_ci} del Contacto, corresponde a un ciudadano Difunto. \"\r\n                end\r\n    form_data.set(\"datos_de_contacto.datos_de_contacto.cedula_pasaporte\",datos[\"cedula\"])\r\n    form_data.set(\"datos_de_contacto.datos_de_contacto.primer_nombre\",datos[\"primerNombre\"])\r\n    form_data.set(\"datos_de_contacto.datos_de_contacto.segundo_nombre\",datos[\"segundoNombre\"])\r\n    form_data.set(\"datos_de_contacto.datos_de_contacto.primer_apellido\",datos[\"primerApellido\"])\r\n    form_data.set(\"datos_de_contacto.datos_de_contacto.segundo_apellido\",datos[\"segundoApellido\"])\r\n    form_data.set(\"datos_de_contacto.datos_de_contacto.sexo\",datos[\"sexo\"])\r\n    datos = nil\r\n  else\r\n    transition_errors << \"La cedula suministrada del contacto no existe en el sistema. Favor revise el valor.\"\r\n  end\r\n\
+  end"
+views: 
+back_step: " Paso 0 - Informacion de la Solicitud"
+next_step: " Paso 2 - Datos Generales"
+position: 1
+ajax_calls: "\r\n\
+  $(document).ready(function(){\r\n\
+  \r\n\
+  \tcedula = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_cedula\");\r\n\
+  \tif ($(cedula).html() == \"\"){\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_cedula\").parent().parent().hide();\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_pasaporte\").parent().parent().show();\r\n\
+  \t}\r\n\
+  \tpasaporte = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_pasaporte\");\r\n\
+  \tif ($(pasaporte).html() == \"\") {\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_cedula\").parent().parent().show();\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_pasaporte\").parent().parent().hide();\r\n\
+  \t}\r\n\
+  \r\n\
+  \t// Deshabilito o habilito campos segundo nombre, segundo apellido, dependiendo de si traen o no datos\r\n     \t\t\t\t\t\t\t\t\t\t\r\n\
+  \tsegundoNombre = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_segundo_nombre\");\r\n\
+  \tif ($(segundoNombre).val() == \"\"){\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_segundo_nombre\").removeAttr(\"disabled\");\r\n\
+  \t}else{\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_segundo_nombre\").attr(\"disabled\",\"disabled\");\r\n\
+  \t}\r\n\
+  \r\n\
+  \tsegundoApellido = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_segundo_apellido\");\r\n\
+  \tif ($(segundoApellido).val() == \"\"){\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_segundo_apellido\").removeAttr(\"disabled\");\r\n\
+  \t}else{\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_segundo_apellido\").attr(\"disabled\",\"disabled\");\r\n\
+  \t}\r\n\
+  \r\n\
+  \tapellidoCasada = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_apellido_de_casada\");\r\n\
+  \tif ($(apellidoCasada).val() == \"\"){\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_apellido_de_casada\").removeAttr(\"disabled\");\r\n\
+  \t}else{\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_apellido_de_casada\").attr(\"disabled\",\"disabled\");\r\n\
+  \t}\r\n\
+  \r\n\
+  });"

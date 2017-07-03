@@ -1,0 +1,30 @@
+--- 
+id: 497
+part_id: 95
+field_id: 27
+name: "Valor Total a Cobrar en N\xC3\xBAmeros"
+created_at: 2011-11-17 14:02:30 Z
+updated_at: 2017-06-04 00:30:13.751023 Z
+label: "Valor Total a Cobrar en N\xC3\xBAmeros"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 589c5059-2414-40bd-9944-3d4c33ea62e4
+version: 20170603-203013

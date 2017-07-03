@@ -1,0 +1,19 @@
+--- 
+id: 1303
+section_id: 216
+part_id: 38
+name: Factura de los lentes
+created_at: 2012-05-02 18:36:05 Z
+updated_at: 2012-05-02 18:36:05 Z
+label: Factura de los lentes
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

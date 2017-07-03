@@ -1,0 +1,30 @@
+--- 
+id: 216
+name: Uso de la Obra
+description: Uso de la Obra para el Plano (Municipio)
+version: 
+status: Draft
+label: Uso de la Obra
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-14 19:03:47 Z
+updated_at: 2015-01-05 19:44:57 Z
+values_list: "\"\",\"Residencial\",\"Industrial\",\"Comercial\",\"Turismo\",\"Servicio institucional\",\"Instalaciones recreativas\",\"Log\xC3\xADstico\",\"Otros\""
+keys_list: "\"\",\"Residencial\",\"Industrial\",\"Comercial\",\"Turismo\",\"Servicio institucional\",\"Instalaciones recreativas\",\"Log\xC3\xADstico\",\"Otros\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 7793-8364-4439-4399-8718

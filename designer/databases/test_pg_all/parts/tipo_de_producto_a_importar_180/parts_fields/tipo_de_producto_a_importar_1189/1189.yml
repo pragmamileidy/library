@@ -1,0 +1,30 @@
+--- 
+id: 1189
+part_id: 180
+field_id: 78
+name: Tipo de Producto a Importar
+created_at: 2012-05-05 16:21:53 Z
+updated_at: 2017-06-04 00:21:35.224760 Z
+label: Tipo de Producto a Importar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Seleccione el tipo de producto que desea importar
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cec495ba-6247-492c-beda-bae5fa155bba
+version: 20170603-202135

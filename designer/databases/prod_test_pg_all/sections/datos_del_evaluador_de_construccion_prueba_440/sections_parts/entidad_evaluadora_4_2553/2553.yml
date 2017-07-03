@@ -1,0 +1,39 @@
+--- 
+id: 2553
+section_id: 440
+part_id: 528
+name: Entidad Evaluadora 4
+created_at: 2013-01-31 13:58:38 Z
+updated_at: 2013-08-13 21:08:09 Z
+label: Entidad Evaluadora
+min_instances: 0
+max_instances: 1
+depends_on: "i = 4\r\n\
+  _app_id = @application[\"id\"].to_s\r\n\
+  result = WebserviceConsumer.get(\"/preconfigured_services/get_application_config.json?id=#{_app_id}\").parsed_response\r\n\
+  entidades=[]\r\n\
+  result[\"response\"][\"EntidadesEvaluadoras\"].each do |key, entidad_data|\r\n  next unless key =~ /entidades_instance/ \r\n  entidades << entidad_data[\"evaluacion_de_la_entidad\"]\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  name_words = (@task[\"name\"].to_s.downcase).split(' ')\r\n\
+  _dato_observacion = _dato_final = name_words.last\r\n\
+  _dato_pago_manual = _dato_pago_automatico = _dato_inicial = name_words.first\r\n\
+  _siglas = name_words.last.upcase\r\n\
+  \r\n\
+  seleccion = form_data.get(\"asignacion_de_entidades.entidad_evaluadora.entidad_evaluadora_check\")\r\n\
+  seleccion = JSON.parse(seleccion)\r\n\
+  \r\n\
+  entidad = entidades[i]\r\n\
+  if ((@task[\"name\"] == 'Introducir Pago Adicional') || (@task[\"name\"] == 'Revisar Liquidaci\xC3\xB3n de Costos') || (@task[\"name\"] == 'Ingresar Datos Pago Electr\xC3\xB3nico Adicional'))\r\n    res = (form_data.get(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.pagada\") != 'Si')\r\n\
+  else    \r\n  res =   (entidad && (seleccion.include? entidad[\"entidad\"])) &&\r\n      ((entidad[\"siglas\"].upcase == _siglas) || \r\n      ( _dato_observacion == 'dapypc') ||\r\n      ( _dato_inicial == 'observaciones') ||\r\n      ( _dato_pago_manual == 'introducir') ||\r\n      ( _dato_pago_automatico == 'ingresar') ||\r\n      ( ['tecnicas', 't\xC3\xA9cnicas'].include? _dato_final)) \r\n\
+  end\r\n\
+  res"
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

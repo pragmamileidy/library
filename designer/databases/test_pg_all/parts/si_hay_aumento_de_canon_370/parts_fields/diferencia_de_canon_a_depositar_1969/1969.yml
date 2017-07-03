@@ -1,0 +1,30 @@
+--- 
+id: 1969
+part_id: 370
+field_id: 27
+name: Diferencia de Canon a depositar
+created_at: 2012-06-22 00:14:44 Z
+updated_at: 2017-06-04 00:25:59.655136 Z
+label: Diferencia de Canon a depositar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b1c14aa7-2e39-42c6-8f76-e73690605e36
+version: 20170603-202559

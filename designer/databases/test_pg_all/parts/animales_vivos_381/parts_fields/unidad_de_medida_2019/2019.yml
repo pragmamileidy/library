@@ -1,0 +1,30 @@
+--- 
+id: 2019
+part_id: 381
+field_id: 10
+name: Unidad de Medida
+created_at: 2012-07-14 20:03:15 Z
+updated_at: 2017-06-04 00:30:49.931097 Z
+label: Unidad de Medida
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Introduzca la unidad de medida de la cantidad
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5bf288a8-6114-481d-a170-c8862da85cdf
+version: 20170603-203049

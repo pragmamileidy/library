@@ -1,0 +1,17 @@
+--- 
+id: 500
+name: mail_CierreTramite
+description: Notificaciones para el cierre de tramite
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 17:56:25 Z
+updated_at: 2015-07-31 14:42:09 Z
+label: Correo Coerre de  Tramites
+hint: ""
+view_class: horizontal
+serial: 3524-8563-3990-3672-1653

@@ -1,0 +1,19 @@
+--- 
+id: 2314
+section_id: 401
+part_id: 38
+name: "Certificado expedido por el Servicio Nacional de Migraci\xC3\xB3n y Naturalizaci\xC3\xB3n donde conste el estatus migratorio del solicitante"
+created_at: 2012-08-31 15:04:08 Z
+updated_at: 2013-04-22 14:22:17 Z
+label: "Certificado expedido por el Servicio Nacional de Migraci\xC3\xB3n y Naturalizaci\xC3\xB3n donde conste el estatus migratorio del solicitante"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

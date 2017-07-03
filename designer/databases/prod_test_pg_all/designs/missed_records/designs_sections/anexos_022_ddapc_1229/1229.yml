@@ -1,0 +1,16 @@
+--- 
+id: 1229
+design_id: 106
+section_id: 264
+name: Anexos 022-DDAPC
+created_at: 2012-06-05 17:25:05 Z
+updated_at: 2015-10-15 16:20:49 Z
+label: Requisitos de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2883\":{\"210\":{\"required\":\"required\"}},\"2884\":{\"210\":{\"required\":\"required\"}},\"1768\":{\"210\":{\"required\":\"required\"}},\"2885\":{\"210\":{\"required\":\"required\"}},\"1769\":{\"210\":{\"required\":\"required\"}},\"1770\":{\"210\":{\"required\":\"required\"}},\"1771\":{\"210\":{\"required\":\"required\"}},\"2886\":{\"210\":{\"required\":\"required\"}},\"1772\":{\"210\":{\"required\":\"unrequired\"}},\"2887\":{\"210\":{\"required\":\"required\"}},\"2888\":{\"210\":{\"required\":\"required\"}},\"1835\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 11

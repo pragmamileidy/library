@@ -1,0 +1,22 @@
+--- 
+id: 2204
+section_id: 289
+part_id: 328
+name: "Copia de C\xC3\xA9dula o Pasaporte Rep Legal (Adquiriente)"
+created_at: 2012-08-15 16:05:31 Z
+updated_at: 2013-06-17 15:14:39 Z
+label: "Copia de C\xC3\xA9dula o Pasaporte Vigente del Representante Legal (Adquiriente)"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  solicitante = form_data.get("tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante")
+  documento_contraparte = form_data.get("tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento")
+  (@owner["kind_of_user_type"] == "JuridicalPerson") && (solicitante == "Adquiriente") || (solicitante == "Vendedor" && documento_contraparte == "RUC" )
+manage_as_confidential: false
+include: 
+hint: ""
+help: Favor adjuntar en caso de ser necesario
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

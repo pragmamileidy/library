@@ -1,0 +1,30 @@
+--- 
+id: 3872
+part_id: 735
+field_id: 330
+name: apellidos
+created_at: 2015-02-18 20:02:31 Z
+updated_at: 2017-06-04 00:28:37.274421 Z
+label: Apellidos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: por favor ingrese su Apellido
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 84d21609-4c13-4fab-8c65-aa5f2d096362
+version: 20170603-202837

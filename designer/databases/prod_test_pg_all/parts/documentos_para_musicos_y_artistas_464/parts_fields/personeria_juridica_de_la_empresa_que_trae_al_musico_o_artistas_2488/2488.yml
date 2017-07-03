@@ -1,0 +1,30 @@
+--- 
+id: 2488
+part_id: 464
+field_id: 31
+name: " Personer\xC3\xADa jur\xC3\xADdica de la empresa que trae al m\xC3\xBAsico o artistas"
+created_at: 2012-08-30 18:47:46 Z
+updated_at: 2017-06-04 00:26:10.683021 Z
+label: " Personer\xC3\xADa jur\xC3\xADdica de la empresa que trae al m\xC3\xBAsico o artistas"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c225ccfa-a22a-4ab1-943a-e0d74c2d1cd6
+version: 20170603-202610

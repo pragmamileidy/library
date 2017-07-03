@@ -1,0 +1,16 @@
+--- 
+id: 2580
+design_id: 197
+section_id: 489
+name: Variables
+created_at: 2013-04-08 18:08:44 Z
+updated_at: 2013-04-12 17:38:21 Z
+label: Variables
+min_instances: 1
+max_instances: 50
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2763\":{\"3139\":{\"required\":\"required\"},\"3140\":{\"required\":\"required\"},\"3141\":{\"required\":\"required\"},\"3174\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

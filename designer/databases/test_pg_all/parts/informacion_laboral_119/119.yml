@@ -1,0 +1,17 @@
+--- 
+id: 119
+name: "Informaci\xC3\xB3n Laboral"
+description: "Datos asociadas a la profesi\xC3\xB3n o el trabajo de una persona natural (cargo, licencia, permisos, etc.)"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-22 19:31:35 Z
+updated_at: 2015-09-04 18:21:37 Z
+label: "Informaci\xC3\xB3n Laboral"
+hint: ""
+view_class: horizontal
+serial: 3208-2939-8172-8916-3945

@@ -1,0 +1,17 @@
+--- 
+id: 261
+name: datos_de_pago
+description: datos_de_pago
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-15 22:51:21 Z
+updated_at: 2016-04-01 17:48:17.867027 Z
+label: Datos de Pago
+hint: ""
+view_class: horizontal
+serial: 2113-2616-2992-7916-5944

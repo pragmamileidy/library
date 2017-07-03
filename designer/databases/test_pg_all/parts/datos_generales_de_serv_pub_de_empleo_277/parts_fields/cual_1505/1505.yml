@@ -1,0 +1,30 @@
+--- 
+id: 1505
+part_id: 277
+field_id: 10
+name: cual
+created_at: 2012-05-31 18:00:51 Z
+updated_at: 2017-06-04 00:30:31.503661 Z
+label: "\xC2\xBFCual?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 29c40bf8-3c05-4d25-97d3-67b4ed618dcd
+version: 20170603-203031

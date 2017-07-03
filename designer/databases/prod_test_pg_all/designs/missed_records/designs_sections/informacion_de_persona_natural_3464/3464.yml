@@ -1,0 +1,16 @@
+--- 
+id: 3464
+design_id: 222
+section_id: 107
+name: "Informaci\xC3\xB3n de Persona Natural"
+created_at: 2014-01-30 21:43:15 Z
+updated_at: 2014-02-26 16:27:22 Z
+label: "Informaci\xC3\xB3n de Persona Natural"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"546\":{\"required\":\"required\"},\"552\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 7

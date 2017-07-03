@@ -1,0 +1,30 @@
+--- 
+id: 3198
+part_id: 313
+field_id: 13
+name: Fecha
+created_at: 2013-04-24 20:34:34 Z
+updated_at: 2017-06-04 00:24:59.117933 Z
+label: "Fecha de Constituci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy.  Ejemplo: 01-12-2010"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2b59c9fd-765d-4dbc-b585-bedc56ed01ae
+version: 20170603-202459

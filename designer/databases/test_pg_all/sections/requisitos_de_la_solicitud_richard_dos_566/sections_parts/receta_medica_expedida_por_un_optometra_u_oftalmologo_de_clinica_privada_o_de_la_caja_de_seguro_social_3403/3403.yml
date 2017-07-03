@@ -1,0 +1,19 @@
+--- 
+id: 3403
+section_id: 566
+part_id: 38
+name: "Receta m\xC3\xA9dica expedida por un Opt\xC3\xB3metra u Oftalm\xC3\xB3logo de Cl\xC3\xADnica Privada o de la Caja de Seguro Social"
+created_at: 2014-12-03 21:52:29 Z
+updated_at: 2014-12-03 21:52:29 Z
+label: "Receta m\xC3\xA9dica expedida por un Opt\xC3\xB3metra u Oftalm\xC3\xB3logo de Cl\xC3\xADnica Privada o de la Caja de Seguro Social"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,9 @@
+--- 
+id: 165
+name: "Solicitud v\xC3\xADa web de Record Policivo Revisi\xC3\xB3n de Sentencias condenatorias Laboral"
+description: "Solicitud v\xC3\xADa web de Record Policivo Revisi\xC3\xB3n de Sentencias condenatorias Laboral"
+created_at: 2014-11-17 16:32:53 Z
+updated_at: 2015-10-05 21:40:21 Z
+design_id: 248
+label: "Formulario de la Solicitud v\xC3\xADa web de Record Policivo"
+ignored_fields: datosdeltitularrp_datosdesolicitud_fechadesolicitud,datosdeltitularrp_datosdesolicitud_numerodesolicitud,datosdeltitularrp_datosbsicosdepersonanatural_cdulapasaporte,datosdeltitularrp_datosbsicosdepersonanatural_nombrecompleto,codigounicodij_codigounicodij_year,codigounicodij_codigounicodij_mes,codigounicodij_codigounicodij_dia,directordij_datosdelfuncionariogenerico_usuario,directordij_datosdelfuncionariogenerico_usuario2,datosdeltitularrp_codigounicodij_codigounico,datosdelsolicitante_datosdeubicacin_provincia_lista,datosdelsolicitante_datosdeubicacin_provincia

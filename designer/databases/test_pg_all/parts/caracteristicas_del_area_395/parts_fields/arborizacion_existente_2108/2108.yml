@@ -1,0 +1,30 @@
+--- 
+id: 2108
+part_id: 395
+field_id: 24
+name: "Arborizaci\xC3\xB3n Existente"
+created_at: 2012-07-23 14:49:08 Z
+updated_at: 2017-06-04 00:22:05.844317 Z
+label: "Arborizaci\xC3\xB3n Existente"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Especifica la presencia de vegetaci\xC3\xB3n en el \xC3\xA1rea"
+help: "Especifica la presencia de vegetaci\xC3\xB3n en el \xC3\xA1rea"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e1d29875-e637-452c-921e-60f6318a4178
+version: 20170603-202205

@@ -1,0 +1,30 @@
+--- 
+id: 1435
+part_id: 29
+field_id: 118
+name: " Fecha (mes) de renovaci\xC3\xB3n de placa"
+created_at: 2012-05-27 17:23:52 Z
+updated_at: 2017-06-04 00:31:52.119101 Z
+label: " Fecha (mes) de renovaci\xC3\xB3n de placa"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 27
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a078acf2-7ee0-4c32-8926-afcf16c57851
+version: 20170603-203152

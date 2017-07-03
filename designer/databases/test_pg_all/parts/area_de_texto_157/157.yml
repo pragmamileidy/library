@@ -1,0 +1,17 @@
+--- 
+id: 157
+name: "\xC3\x81rea de Texto"
+description: "\xC3\x81rea de Texto a ser utilizada para distintos fines"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-22 01:32:38 Z
+updated_at: 2012-05-20 18:08:11 Z
+label: Introduzca el valor
+hint: ""
+view_class: horizontal
+serial: 

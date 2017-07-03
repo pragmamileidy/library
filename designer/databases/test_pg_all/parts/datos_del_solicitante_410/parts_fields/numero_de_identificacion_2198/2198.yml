@@ -1,0 +1,30 @@
+--- 
+id: 2198
+part_id: 410
+field_id: 10
+name: "N\xC3\xBAmero de Identificaci\xC3\xB3n"
+created_at: 2012-07-27 18:48:11 Z
+updated_at: 2017-06-04 00:24:30.618055 Z
+label: "N\xC3\xBAmero de Identificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2af3e4a8-10ff-4281-874e-a6a5961e64ec
+version: 20170603-202430

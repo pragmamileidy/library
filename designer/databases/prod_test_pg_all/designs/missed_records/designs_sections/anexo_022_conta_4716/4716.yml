@@ -1,0 +1,16 @@
+--- 
+id: 4716
+design_id: 264
+section_id: 277
+name: Anexo-022-CONTA
+created_at: 2014-12-18 15:37:20 Z
+updated_at: 2014-12-18 15:37:20 Z
+label: Anexos
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1802\":{\"210\":{\"required\":\"required\"}},\"1797\":{\"210\":{\"required\":\"required\"}},\"1804\":{\"210\":{\"required\":\"required\"}},\"2390\":{\"210\":{\"required\":\"required\"}},\"1803\":{\"210\":{\"required\":\"required\"}},\"1805\":{\"210\":{\"required\":\"required\"}},\"2391\":{\"210\":{\"required\":\"required\"}},\"1796\":{\"210\":{\"required\":\"unrequired\"}},\"1806\":{\"210\":{\"required\":\"unrequired\"}},\"1807\":{\"210\":{\"required\":\"unrequired\"}},\"1808\":{\"210\":{\"required\":\"unrequired\"}},\"1809\":{\"210\":{\"required\":\"unrequired\"}},\"1810\":{\"210\":{\"required\":\"unrequired\"}},\"2389\":{\"210\":{\"required\":\"unrequired\"}},\"2889\":{\"210\":{\"required\":\"required\"}},\"2890\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 11

@@ -1,0 +1,299 @@
+--- 
+id: 576
+name: Paso 2 - Datos Generales
+label: Datos Generales
+description: "<br>Datos Generales</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 220
+created_at: 2012-06-14 19:30:49 Z
+updated_at: 2015-11-06 19:56:10 Z
+include: "{\"1000\":{\"595\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"599\":{\"559\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"597\":{\"2456\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2457\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2458\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1418\":{\"1309\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2133\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1308\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1310\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2649\":{\"595\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"597\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1001\":{\"580\":{\"1323\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1320\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"586\":{\"791\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1004\":{\"1422\":{\"2146\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2046\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"679\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"680\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"681\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"682\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1011\":{\"443\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n  _ci = @owner[\"national_id\"]\r\n  result = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_ci}\").parsed_response\r\n  datos = result[\"response\"]\r\n  if !datos.nil?\r\n    form_data.set(\"datos_del_solicitante.datos_de_la_persona.cedula\",datos[\"cedula\"])\r\n    form_data.set(\"datos_del_solicitante.datos_de_la_persona.primer_nombre\",datos[\"primerNombre\"])\r\n    form_data.set(\"datos_del_solicitante.datos_de_la_persona.primer_apellido\",datos[\"primerApellido\"])\r\n\
+  \r\n    ### SI LOS DATOS DE SEGUNDO NOMBRE Y SEGUNDO APELLIDO NO VIENEN VAC\xC3\x8DOS, SE SETEAN LOS DATOS SINO, NO.\r\n    if datos[\"segundoNombre\"] != \"\"\r\n      form_data.set(\"datos_del_solicitante.datos_de_la_persona.segundo_nombre\",datos[\"segundoNombre\"])\r\n    end\r\n\
+  \r\n    if datos[\"segundoApellido\"] != \"\"\r\n      form_data.set(\"datos_del_solicitante.datos_de_la_persona.segundo_apellido\",datos[\"segundoApellido\"])\r\n    end\r\n    ### FIN VALIDACION\r\n\
+  \r\n    form_data.set(\"datos_del_solicitante.informacion_de_residencia_localizacion.direccion\",datos[\"direccion\"])\r\n  else\r\n    transition_errors << \"Los datos no fueron encontrados\"\r\n  end\r\n\
+  else\r\n  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"foreign_citizen\"))\r\n    form_data.set(\"datos_del_solicitante.datos_de_la_persona.pasaporte\",@owner[\"passport\"])\r\n    form_data.set(\"datos_del_solicitante.datos_de_la_persona.primer_nombre\",@owner[\"first_name\"])\r\n    form_data.set(\"datos_del_solicitante.datos_de_la_persona.primer_apellido\",@owner[\"last_name\"])\r\n\
+  \r\n    ### SI LOS DATOS DE SEGUNDO NOMBRE Y SEGUNDO APELLIDO NO VIENEN VAC\xC3\x8DOS, SE SETEAN LOS DATOS SINO, NO.\r\n    if @owner[\"second_name\"] != \"\"\r\n      form_data.set(\"datos_del_solicitante.datos_de_la_persona.segundo_nombre\",@owner[\"second_name\"])\r\n    end\r\n\
+  \r\n    if @owner[\"second_last_name\"] != \"\"\r\n      form_data.set(\"datos_del_solicitante.datos_de_la_persona.segundo_apellido\",@owner[\"second_last_name\"])\r\n    end\r\n    ### FIN VALIDACION\r\n\
+  \r\n    form_data.set(\"datos_del_solicitante.informacion_de_residencia_localizacion.direccion\",@owner[\"description\"])\r\n  end\r\n\
+  end"
+on_transition: "### VLIDACII\xC3\x93N DE NUMERO DE DOCUMENTO DEL SOLICITANTE LEGAL NO PERTENEZCA A UN DIFUNTO\r\n\
+  \r\n\
+  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n        numdoc = form_data.get(\"datos_del_solicitante.datos_de_la_persona.cedula\")\r\n        result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{numdoc}\")).parsed_response\r\n        datos = result[\"response\"]\r\n        if datos.blank? \r\n                transition_errors << \"La C\xC3\xA9dula del solicitante no fue encontrada. Por favor, verifique.\" \r\n        else\r\n                difunto = datos[\"cod_mensaje\"]\r\n                if (difunto == \"534\")\r\n                        transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{numdoc} corresponde a un ciudadano Difunto.\"\r\n                end\r\n        end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #Datos del regente farmac\xC3\xA9utico\r\n\
+  \r\n\
+  numDoc = form_data.get(\"datos_del_regente.regente_farmaceutico.cedula\")\r\n  \r\n\
+  #Para encontrar los datos de la persona natural\r\n\
+  result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{numDoc}\").parsed_response\r\n\
+  data = result[\"response\"]\r\n\
+  \r\n\
+  if !data.nil?\r\n    difuntore = data[\"cod_mensaje\"]\r\n      if (difuntore == \"534\")\r\n          transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{numDoc} del Regente, corresponde a un ciudadano Difunto.\"\r\n      end\r\n    form_data.set(\"datos_del_regente.regente_farmaceutico.cedula\",data[\"cedula\"])\r\n    form_data.set(\"datos_del_regente.regente_farmaceutico.primer_nombre\",data[\"primerNombre\"])\r\n    form_data.set(\"datos_del_regente.regente_farmaceutico.primer_apellido\",data[\"primerApellido\"])\r\n    \r\n    ### SI LOS DATOS DE SEGUNDO NOMBRE Y SEGUNDO APELLIDO NO VIENEN VAC\xC3\x8DOS, SE SETEAN LOS DATOS SINO, NO.\r\n    if data[\"segundoNombre\"] != \"\"\r\n      form_data.set(\"datos_del_regente.regente_farmaceutico.segundo_nombre\",data[\"segundoNombre\"])\r\n    end\r\n\
+  \r\n    if data[\"segundoApellido\"] != \"\"\r\n      form_data.set(\"datos_del_regente.regente_farmaceutico.segundo_apellido\",data[\"segundoApellido\"])\r\n    end\r\n    ### FIN VALIDACION\r\n    form_data.set(\"datos_del_regente.datos_de_ubicacion.provincia\",data[\"provincia\"])\r\n    form_data.set(\"datos_del_regente.datos_de_ubicacion.distrito\",data[\"distrito\"])\r\n    form_data.set(\"datos_del_regente.datos_de_ubicacion.corregimiento\",data[\"corregimiento\"])\r\n    #form_data.set(\"datos_del_regente.datos_de_ubicacion.direccion\",data[\"direccion\"])\r\n    #form_data.set(\"datos_del_regente.datos_de_ubicacion.numero_de_telefono\",data[\"tlfCelular\"])\r\n    #form_data.set(\"datos_del_regente.datos_de_ubicacion.correo_electronico\",data[\"email\"])\r\n\
+  end\r\n\
+  if data.nil?\r\n\
+  transition_errors << \"Los datos del Regente Farmac\xC3\xA9utico no fueron encontrados\"\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  _error = nil\r\n\
+  if form_data.get(\"datos_del_establecimiento.tipo_de_productos_de_empresas_farmaceuticas.dedicacion_de_la_empresa\") == \"Otro\" && form_data.get(\"datos_del_establecimiento.tipo_de_productos_de_empresas_farmaceuticas.otro_dedicacion\").blank?\r\n _error= \"Debe indicar la dedicaci\xC3\xB3n a la que pertenece la empresa en el campo de Otro\"\r\n\
+  end\r\n\
+  if !_error.nil?\r\n\
+  transition_errors << \"#{_error}\"\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  ############LP Dependencia de horarios\r\n  \r\n  hora1 = form_data.get(\"horario_de_operacion.lunes_a_viernes.hora_de_apertura\")\r\n  hora2 = form_data.get(\"horario_de_operacion.lunes_a_viernes.hora_de_cierre\")\r\n  hora3 = form_data.get(\"horario_de_operacion.sabados.hora_de_apertura\")\r\n  hora4 = form_data.get(\"horario_de_operacion.sabados.hora_de_cierre\")\r\n  hora5 = form_data.get(\"horario_de_operacion.domingos.hora_de_apertura\")\r\n  hora6 = form_data.get(\"horario_de_operacion.domingos.hora_de_cierre\")\r\n  hora7 = form_data.get(\"horario_de_operacion.feriados.hora_de_apertura\")\r\n  hora8 = form_data.get(\"horario_de_operacion.feriados.hora_de_cierre\")\r\n\
+  \r\n  if (Time.parse(hora1) > Time.parse(hora2))\r\n    transition_errors <<  \"Verifique la hora de apertura del horario de lunes a viernes. No puede ser mayor a la hora de cierre\"\r\n  end\r\n  \r\n  if (Time.parse(hora3) > Time.parse(hora4))\r\n    transition_errors <<  \"Verifique la hora de apertura del horario del S\xC3\xA1bado. No puede ser mayor a la hora de cierre\"\r\n  end\r\n  \r\n  if (Time.parse(hora5) > Time.parse(hora6))\r\n    transition_errors <<  \"Verifique la hora de apertura del horario del Domingo. No puede ser mayor a la hora de cierre\"\r\n  end\r\n  \r\n  if (Time.parse(hora7) > Time.parse(hora8))\r\n    transition_errors <<  \"Verifique la hora de apertura de los d\xC3\xADas Feriados. No puede ser mayor a la hora de cierre\"\r\n  end"
+views: 
+back_step: Paso 1 - Tipo de Solicitud
+next_step: Paso 3 - Datos de Regente Farmaceutico
+position: 2
+ajax_calls: "$(function() {\r\n    $('#id_del_combo_distritos').html(\"\");\r\n    $('#id_del_combo_corregimientos').html(\"\");\r\n\
+  })\r\n\
+  $( function() {\r\n    $(\"#field_datos_del_establecimiento_direccion_provincia_lista\").change(function(){\r\n        var prov = $(\"#field_datos_del_establecimiento_direccion_provincia_lista\").find(':selected').val();\r\n        distritos(prov);\r\n    });\r\n    $(\"#field_datos_del_establecimiento_direccion_distrito_lista\").change(function(){\r\n        var distrito = $(\"#field_datos_del_establecimiento_direccion_distrito_lista\").find(':selected').val();\r\n        corregimientos(distrito);\r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  function distritos(provincia) {\r\n    params = {\r\n        \"service_name\":\"ws_panama_distritos/where\",\r\n        \"provincia\":provincia\r\n    }\r\n    $.post(\r\n        \"/proxy_service/get_service\",\r\n        params,\r\n        function(data){\r\n            var dist;\r\n            var html_options = \"\";\r\n            for (x in data){\r\n                dist = data[x];\r\n                html_options = html_options+'<option value=\"'+dist[\"distrito\"] +'\">'+dist[\"distrito\"] +'</option>'\r\n            }   \r\n            $(\"#field_datos_del_establecimiento_direccion_distrito_lista\").html(html_options);\r\n            $(\"#field_datos_del_establecimiento_direccion_corregimiento_lista\").html(\"\");\r\n        }\r\n        );\r\n\
+  }\r\n\
+  function corregimientos(distrito) {\r\n    params = {\r\n        \"service_name\":\"ws_panama_corregimientos/where\",\r\n        \"distrito\":distrito\r\n    }\r\n    $.post(\r\n        \"/proxy_service/get_service\",\r\n        params,\r\n        function(data){\r\n            var corr;\r\n            var html_options = \"\";\r\n            for (x in data){\r\n                corr = data[x];\r\n                html_options = html_options+'<option value=\"'+corr[\"corregimiento\"] +'\">'+corr[\"corregimiento\"] +'</option>'\r\n            }   \r\n            $(\"#field_datos_del_establecimiento_direccion_corregimiento_lista\").html(html_options);\r\n        }\r\n        );\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  $( function() {\r\n\
+  \r\n   // $( \"input:radio\" ).click( check3 ).filter( \"[value='O']\" ).attr( \"checked\", \"checked\" );\r\n   $( \"input:radio\" ).click(function() {\r\n    check3(this);\r\n   });\r\n\
+  \r\n   $(document).ready(function(){\r\n\
+  \r\n    $(\"input[name='[field][datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_tipo_de_productos_de_empresas_farmaceuticas][]']\").click(function(event){\r\n            //alert($(\"input[name='[field][datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_tipo_de_productos_de_empresas_farmaceuticas][]']:checked\").val());\r\n            $(this).each(function(){\r\n                if (this.checked) {\r\n                    var dato = $(this).val();\r\n                    \r\n                    if(dato == 'Otros'){\r\n                        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_tipo_de_producto\").removeAttr(\"disabled\");\r\n                    }\r\n                    else{\r\n                        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_tipo_de_producto\").val('');\r\n                        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_tipo_de_producto\").attr(\"disabled\",\"disabled\");\r\n                    }   \r\n                }\r\n                                \r\n            });\r\n        });\r\n\
+  \r\n\
+  \r\n    //PARA SETEAR \"S\xC3\xAD\" EN EL CAMPO OCULTO QUE SE MOSTRARA SOLO EN EL PDF\r\n    $(\"input[name='[field][horario_de_operacion_horario_lunes_a_domingo_y_dias_feriados_24_horas][]']\").click(function(event){\r\n            \r\n            $(this).each(function(){\r\n                if (this.checked) {\r\n                    var dato = $(this).val();\r\n                    \r\n                    if(dato == 'Lunes a domingo y d\xC3\xADas feriados 24 horas'){\r\n                        $(\"#field_horario_de_operacion_horario_otro\").val(\"S\xC3\xAD\")\r\n                    }\r\n                }\r\n\
+  \r\n\
+  \r\n                if (!this.checked) {\r\n                    var dato = $(this).val();\r\n\
+  \r\n                    if(dato == 'Lunes a domingo y d\xC3\xADas feriados 24 horas'){\r\n                        $(\"#field_horario_de_operacion_horario_otro\").val(\"No\");\r\n                    }\r\n                }\r\n                                \r\n            });\r\n        });\r\n    //FIN\r\n\
+  \r\n   });\r\n\
+  \r\n\
+  });\r\n\
+  \r\n\
+  function check3(obj) {\r\n    if (obj.value == 'Otro' && obj.name  == \"[field][datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_dedicacion_de_la_empresa]\"){\r\n        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_dedicacion\").parent().parent().show();\r\n\
+  \r\n    } else{ \r\n        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_dedicacion\").val('');\r\n        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_dedicacion\").parent().parent().hide();                     \r\n\
+  \r\n    }\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  \r\n       \r\n    //OCULTO ESTE CAMPO, SOLO SE USA PARA SETEAR VALOR QUE SE VER\xC3\x81 EN EL PDF\r\n    $(\"#field_horario_de_operacion_horario_otro\").parent().parent().hide();\r\n\
+  \r\n\
+  \r\n    //PARA MANTENER LA SELECCION ENTRE LOS CAMPOS  \r\n\
+  \r\n    if ($(\"input[name='[field][datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_tipo_de_productos_de_empresas_farmaceuticas][]']:checked\").val() == \"Otros\"){\r\n        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_tipo_de_producto\").removeAttr(\"disabled\");\r\n        }else{\r\n\
+  \r\n            $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_tipo_de_producto\").attr(\"disabled\",\"disabled\");\r\n        }\r\n\
+  \r\n\
+  \r\n    if ($('input[name=\"[field][datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_dedicacion_de_la_empresa]\"]:checked').val() == \"Otro\"){\r\n        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_dedicacion\").parent().parent().show();\r\n    } else{ \r\n        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_dedicacion\").val('');\r\n        $(\"#field_datos_del_establecimiento_tipo_de_productos_de_empresas_farmaceuticas_otro_dedicacion\").parent().parent().hide();                     \r\n    }\r\n\
+  \r\n\
+  \r\n    cedula = $(\"#field_datos_del_solicitante_datos_de_la_persona_cedula\");\r\n    if ($(cedula).html() == \"\"){\r\n        $(\"#field_datos_del_solicitante_datos_de_la_persona_cedula\").parent().parent().hide();\r\n        $(\"#field_datos_del_solicitante_datos_de_la_persona_pasaporte\").parent().parent().show();\r\n    }\r\n    pasaporte = $(\"#field_datos_del_solicitante_datos_de_la_persona_pasaporte\");\r\n    if ($(pasaporte).html() == \"\") {\r\n        $(\"#field_datos_del_solicitante_datos_de_la_persona_cedula\").parent().parent().show();\r\n        $(\"#field_datos_del_solicitante_datos_de_la_persona_pasaporte\").parent().parent().hide();\r\n    }\r\n\
+  \r\n    // CAMPO OCULTO PARA SETEAR \"S\xC3\x8D\" EN CASO DE HABER SELECCIONADO LA OPCI\xC3\x93N \"DE LUNES A DOMINGO Y DIAS FERIADOS 24 HORAS\". ESTO CON LA FINALIDAD DE SETEARLO (EL \"S\xC3\x8D\") LUEGO EN PDF (PARA Q SE VEA ELEGANTE)\r\n    \r\n    if($('input[name=\"[field][horario_de_operacion_horario_lunes_a_domingo_y_dias_feriados_24_horas]\"]:checked').val() == \"Lunes a domingo y d\xC3\xADas feriados 24 horas\"){\r\n        $(\"#field_horario_de_operacion_horario_otro\").val(\"S\xC3\xAD\");\r\n    }else{\r\n        $(\"#field_horario_de_operacion_horario_otro\").val(\"No\");\r\n    }\r\n\
+  \r\n\
+  });"

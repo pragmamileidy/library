@@ -1,0 +1,30 @@
+--- 
+id: 693
+part_id: 141
+field_id: 64
+name: Prueba campo 5 tipo percentage 4 4 4
+created_at: 2012-03-13 22:20:12 Z
+updated_at: 2017-06-04 00:28:01.491566 Z
+label: Prueba campo 5 tipo percentage
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Prueba campo 5 tipo percentage,  "
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: dba90df4-0320-4050-bc17-a4d1ac8f9e1a
+version: 20170603-202801

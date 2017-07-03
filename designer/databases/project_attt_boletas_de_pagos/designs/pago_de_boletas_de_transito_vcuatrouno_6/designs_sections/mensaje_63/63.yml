@@ -1,0 +1,16 @@
+--- 
+id: 63
+design_id: 6
+section_id: 5
+name: Mensaje
+created_at: 2017-03-24 14:47:03.393856 Z
+updated_at: 2017-03-24 14:47:03.393856 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: form_data.get("boletas_por_pagar.monto.motivo_de_la_multa") != "true"
+manage_as_confidential: false
+include: "{\"8\":{\"52\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 8

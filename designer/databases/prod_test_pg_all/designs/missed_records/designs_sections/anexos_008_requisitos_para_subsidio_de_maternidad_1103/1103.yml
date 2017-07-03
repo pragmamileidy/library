@@ -1,0 +1,16 @@
+--- 
+id: 1103
+design_id: 97
+section_id: 249
+name: Anexos 008- Requisitos para Subsidio de Maternidad
+created_at: 2012-05-22 19:06:23 Z
+updated_at: 2015-09-14 17:43:13 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1703\":{\"210\":{\"required\":\"required\"}},\"1704\":{\"210\":{\"required\":\"required\"}},\"1705\":{\"210\":{\"required\":\"required\"}},\"1706\":{\"210\":{\"required\":\"required\"}},\"1707\":{\"210\":{\"required\":\"required\"}},\"1708\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

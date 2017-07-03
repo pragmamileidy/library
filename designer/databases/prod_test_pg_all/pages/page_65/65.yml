@@ -1,0 +1,104 @@
+--- 
+id: 65
+position: 2
+selector: "{\"545\":{\"580\":{\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"545\":{},\"546\":{}},\"581\":{\"585\":{},\"586\":{},\"631\":{},\"594\":{}}},\"808\":{\"1119\":{\"593\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n  background-image:url(img/page_65_Activar_Usuarios_SIGA_2.png); background-repeat:no-repeat;\r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xC3\xA1l es el formato b\xC3\xA1sico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xC3\xBAn no se han definido */\r\n\
+  \r\n  .DatosdelosUsuarios_DatosdelaPersona_PrimerNombre {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:330px;\r\n\
+  \tleft:247px;\r\n\
+  \twidth:255px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_DatosdelaPersona_SegundoNombre {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:330px;\r\n\
+  \tleft:708px;\r\n\
+  \twidth:255px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_DatosdelaPersona_PrimerApellido {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:365px;\r\n\
+  \tleft:247px;\r\n\
+  \twidth:255px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_DatosdelaPersona_SegundoApellido {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:365px;\r\n\
+  \tleft:708px;\r\n\
+  \twidth:255px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_DatosdelaPersona_Documento {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:399px;\r\n\
+  \tleft:708px;\r\n\
+  \twidth:226px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_DatosdelaPersona_Nacionalidad {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:434px;\r\n\
+  \tleft:338px;\r\n\
+  \twidth:170px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_DatosdelaPersona_FechadeNacimiento {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:399px;\r\n\
+  \tleft:308px;\r\n\
+  \twidth:169px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_DatosdelaPersona_Sexo {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:434px;\r\n\
+  \tleft:155px;\r\n\
+  \twidth:22px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_InformacindeResidenciaLocalizacin_Nmerodetelfono {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:471px;\r\n\
+  \tleft:181px;\r\n\
+  \twidth:193px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_InformacindeResidenciaLocalizacin_NmerodeFax {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:471px;\r\n\
+  \tleft:750px;\r\n\
+  \twidth:193px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_InformacindeResidenciaLocalizacin_NmeroCelular {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:471px;\r\n\
+  \tleft:471px;\r\n\
+  \twidth:193px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosdelosUsuarios_InformacindeResidenciaLocalizacin_CorreoElectrnico {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:508px;\r\n\
+  \tleft:280px;\r\n\
+  \twidth:663px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Autorizadopor_Usuario_NombreUsual {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:1169px;\r\n\
+  \tleft:241px;\r\n\
+  \twidth:355px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n"
+override_render: false
+html_render: ""
+print_design_id: 33
+created_at: 2012-04-27 00:37:44 Z
+updated_at: 2012-07-12 16:08:23 Z
+instances_selector: 
+size: 

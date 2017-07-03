@@ -1,0 +1,19 @@
+--- 
+id: 1982
+section_id: 320
+part_id: 38
+name: "fotocopia de c\xC3\xA9dula de Arrendador"
+created_at: 2012-06-22 00:57:10 Z
+updated_at: 2015-10-13 18:56:54 Z
+label: "C\xC3\xA9dula de Arrendador"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

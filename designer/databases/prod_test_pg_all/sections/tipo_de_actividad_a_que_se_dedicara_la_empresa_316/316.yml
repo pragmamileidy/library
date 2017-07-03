@@ -1,0 +1,17 @@
+--- 
+id: 316
+name: "Tipo de Actividad a que se dedicar\xC3\xA1 la Empresa"
+description: "Tipo de Actividad a que se dedicar\xC3\xA1 la Empresa"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-21 20:03:59 Z
+updated_at: 2012-06-21 20:03:59 Z
+status: Draft
+label: "Tipo de Actividad a que se dedicar\xC3\xA1 la Empresa"
+hint: ""
+serial: 

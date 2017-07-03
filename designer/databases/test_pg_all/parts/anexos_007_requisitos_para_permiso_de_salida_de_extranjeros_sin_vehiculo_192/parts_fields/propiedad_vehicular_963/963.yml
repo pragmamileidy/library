@@ -1,0 +1,30 @@
+--- 
+id: 963
+part_id: 192
+field_id: 31
+name: "Propiedad veh\xC3\xADcular"
+created_at: 2012-04-20 16:00:41 Z
+updated_at: 2017-06-04 00:25:42.836634 Z
+label: "Propiedad veh\xC3\xADcular"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3919468f-ffbb-4d19-86de-2e12940a6162
+version: 20170603-202542

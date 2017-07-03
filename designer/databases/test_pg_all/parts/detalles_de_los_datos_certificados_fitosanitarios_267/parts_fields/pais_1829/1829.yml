@@ -1,0 +1,30 @@
+--- 
+id: 1829
+part_id: 267
+field_id: 14
+name: "Pa\xC3\xADs"
+created_at: 2012-06-14 21:36:21 Z
+updated_at: 2017-06-04 00:30:18.848368 Z
+label: "Pa\xC3\xADs de Origen"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Puerto de entrada del env\xC3\xADo"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d3a90dec-da88-47bf-994a-ae75087123fd
+version: 20170603-203018

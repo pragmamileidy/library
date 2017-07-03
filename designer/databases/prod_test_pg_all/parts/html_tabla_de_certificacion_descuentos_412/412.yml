@@ -1,0 +1,17 @@
+--- 
+id: 412
+name: HTML - tabla de certificacion descuentos
+description: HTML - tabla de certificacion descuentos
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-28 16:33:31 Z
+updated_at: 2012-07-28 16:35:03 Z
+label: "Detalle de Certificaci\xC3\xB3n de Descuento"
+hint: ""
+view_class: horizontal
+serial: 

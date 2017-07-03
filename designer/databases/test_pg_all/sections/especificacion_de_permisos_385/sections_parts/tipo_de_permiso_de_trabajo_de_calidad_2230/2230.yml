@@ -1,0 +1,19 @@
+--- 
+id: 2230
+section_id: 385
+part_id: 450
+name: Tipo de Permiso de trabajo de calidad
+created_at: 2012-08-17 17:57:28 Z
+updated_at: 2012-08-17 17:57:28 Z
+label: Tipo de Permiso
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2429\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

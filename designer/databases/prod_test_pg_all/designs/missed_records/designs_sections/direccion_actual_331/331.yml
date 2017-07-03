@@ -1,0 +1,16 @@
+--- 
+id: 331
+design_id: 53
+section_id: 107
+name: "Direcci\xC3\xB3n Actual"
+created_at: 2012-03-20 02:14:51 Z
+updated_at: 2012-04-25 23:11:02 Z
+label: "Direcci\xC3\xB3n Actual"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"581\":{\"574\":{\"required\":\"required\"},\"632\":{\"required\":\"required\"},\"633\":{\"required\":\"required\"},\"583\":{\"required\":\"required\"},\"578\":{\"required\":\"required\"},\"581\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

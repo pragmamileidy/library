@@ -1,0 +1,30 @@
+--- 
+id: 3037
+part_id: 573
+field_id: 13
+name: Fecha en que fue firmado el contrato
+created_at: 2013-03-13 21:37:14 Z
+updated_at: 2017-06-04 00:24:54.651209 Z
+label: Fecha en que fue firmado el contrato
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy.  Ejemplo: 01-12-2010"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d300dacb-425b-4716-a7cc-6dbb35709d58
+version: 20170603-202454

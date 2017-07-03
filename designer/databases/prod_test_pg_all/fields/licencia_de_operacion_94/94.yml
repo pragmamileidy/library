@@ -1,0 +1,30 @@
+--- 
+id: 94
+name: licencia de operacion
+description: numero de licencia de operacion
+version: 
+status: Draft
+label: licencia de operacion
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-10 22:43:19 Z
+updated_at: 2012-05-17 00:33:48 Z
+values_list: ""
+keys_list: ""
+field_type: integer
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

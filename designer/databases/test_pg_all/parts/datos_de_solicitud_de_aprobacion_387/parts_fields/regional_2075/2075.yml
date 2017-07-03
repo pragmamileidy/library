@@ -1,0 +1,30 @@
+--- 
+id: 2075
+part_id: 387
+field_id: 183
+name: Regional
+created_at: 2012-07-20 15:57:00 Z
+updated_at: 2017-06-04 00:26:01.622991 Z
+label: Regional
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Regional donde desea tramitar
+help: "Identificaci\xC3\xB3n de la agencia regional del MIVIOT donde el solicitante desea tramitar"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1675adea-c6a4-4b51-bfcc-5774ce9a5922
+version: 20170603-202601

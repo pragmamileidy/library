@@ -1,0 +1,16 @@
+--- 
+id: 1427
+design_id: 120
+section_id: 298
+name: Datos del Producto
+created_at: 2012-06-14 18:45:31 Z
+updated_at: 2012-07-16 22:56:14 Z
+label: Datos del Producto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1891\":{\"1807\":{\"required\":\"required\"},\"1808\":{\"required\":\"required\"}}}"
+hint: ""
+help: "Nombre del Producto: Colocar el nombre del producto a registrar, Descripci\xC3\xB3n del producto: Describir el producto a registrar.\r\n"
+order_input: 6

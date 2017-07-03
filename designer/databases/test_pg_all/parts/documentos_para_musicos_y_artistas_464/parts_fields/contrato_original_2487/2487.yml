@@ -1,0 +1,30 @@
+--- 
+id: 2487
+part_id: 464
+field_id: 31
+name: Contrato Original
+created_at: 2012-08-30 14:08:11 Z
+updated_at: 2017-06-04 00:29:09.521956 Z
+label: Contrato Original
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 344ec3a8-9578-4759-b4a0-a0137274c41b
+version: 20170603-202909

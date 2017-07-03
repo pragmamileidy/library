@@ -1,0 +1,19 @@
+--- 
+id: 319
+section_id: 67
+part_id: 77
+name: Monto
+created_at: 2011-11-14 21:39:16 Z
+updated_at: 2012-04-10 18:42:31 Z
+label: "Monto del dep\xC3\xB3sito"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"364\":{},\"363\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 5

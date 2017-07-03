@@ -1,0 +1,30 @@
+--- 
+id: 8
+name: anexo
+description: campo para archivos adjuntos
+version: 20161205-114339
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-12-05 15:43:39.550757 Z
+updated_at: 2016-12-05 15:43:39.550757 Z
+values_list: ""
+keys_list: ""
+field_type: file
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 252a4e5d-467b-489c-ae67-0996cd9f2742

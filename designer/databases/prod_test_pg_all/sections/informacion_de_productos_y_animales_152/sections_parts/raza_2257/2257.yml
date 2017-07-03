@@ -1,0 +1,19 @@
+--- 
+id: 2257
+section_id: 152
+part_id: 451
+name: Raza
+created_at: 2012-08-27 16:43:44 Z
+updated_at: 2015-10-28 20:29:13 Z
+label: Raza
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor indicar raza del animal
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

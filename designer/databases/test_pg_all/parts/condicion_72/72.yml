@@ -1,0 +1,17 @@
+--- 
+id: 72
+name: "Condici\xC3\xB3n"
+description: "Condici\xC3\xB3n del solicitante (Representante Legal, Propietario o Apoderado)"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-12 20:23:55 Z
+updated_at: 2012-05-16 20:55:10 Z
+label: "Condici\xC3\xB3n"
+hint: ""
+view_class: 
+serial: 

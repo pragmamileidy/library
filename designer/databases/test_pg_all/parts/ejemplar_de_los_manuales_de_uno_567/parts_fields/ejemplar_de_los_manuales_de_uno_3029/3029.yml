@@ -1,0 +1,30 @@
+--- 
+id: 3029
+part_id: 567
+field_id: 31
+name: Ejemplar de los manuales de uno
+created_at: 2013-03-13 20:02:24 Z
+updated_at: 2017-06-04 00:22:40.385061 Z
+label: Ejemplar de los manuales de uno
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 42603259-9c15-4019-a5cc-9f05b803751d
+version: 20170603-202240

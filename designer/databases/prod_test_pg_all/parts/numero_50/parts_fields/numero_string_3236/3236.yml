@@ -1,0 +1,30 @@
+--- 
+id: 3236
+part_id: 50
+field_id: 10
+name: numero string
+created_at: 2013-05-13 13:40:11 Z
+updated_at: 2017-06-04 00:25:00.915084 Z
+label: Valor
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7705791f-b269-4cac-81c7-01089ceda1ec
+version: 20170603-202500

@@ -1,0 +1,19 @@
+--- 
+id: 1699
+section_id: 38
+part_id: 264
+name: Tipo de Paz y Salvo
+created_at: 2012-05-22 16:34:38 Z
+updated_at: 2012-05-22 16:34:38 Z
+label: Tipo de Paz y Salvo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Seleccione el tipo de Paz y Salvo
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

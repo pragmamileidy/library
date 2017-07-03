@@ -1,0 +1,17 @@
+--- 
+id: 129
+name: Tipo de Visa
+description: Sirve para seleccionar el tipo de visa que se tiene, que se solicita o que ha sido negada anteriormente.
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-28 20:25:11 Z
+updated_at: 2012-05-16 20:55:19 Z
+label: Tipo de Visa
+hint: ""
+view_class: 
+serial: 

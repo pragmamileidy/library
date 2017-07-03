@@ -1,0 +1,30 @@
+--- 
+id: 1044
+part_id: 206
+field_id: 10
+name: "Tiempo Permanencia en Panam\xC3\xA1"
+created_at: 2012-04-26 16:34:21 Z
+updated_at: 2017-06-04 00:28:50.196932 Z
+label: "Tiempo Permanencia en Panam\xC3\xA1"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e6bca673-9a4f-458b-827c-f7445bd15643
+version: 20170603-202850

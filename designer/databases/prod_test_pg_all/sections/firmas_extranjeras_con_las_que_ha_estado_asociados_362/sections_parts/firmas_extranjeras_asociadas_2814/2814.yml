@@ -1,0 +1,19 @@
+--- 
+id: 2814
+section_id: 362
+part_id: 619
+name: " Firmas Extranjeras Asociadas"
+created_at: 2013-06-07 18:58:15 Z
+updated_at: 2013-06-07 18:58:15 Z
+label: " Firmas Extranjeras Asociadas"
+min_instances: 1
+max_instances: 3
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: " "
+help: " "
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

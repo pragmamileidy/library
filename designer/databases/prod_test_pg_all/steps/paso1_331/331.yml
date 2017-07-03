@@ -1,0 +1,23 @@
+--- 
+id: 331
+name: paso1
+label: Prueba de intgeraciones paso 1
+description: paso 1
+fill_step_id: 199
+created_at: 2012-05-15 19:49:56 Z
+updated_at: 2012-05-19 20:00:32 Z
+include: "{\"930\":{\"653\":{\"746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"745\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"655\":{\"753\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"755\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"754\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"756\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"757\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: |-
+  response =  PreconfiguredService.post(:create_blank_form, nil, {template_id: "6a6eefd18c4c87979b8bae795bbefbf4"}.to_json)
+  result = response.body
+  
+  params["field"]["field_prueba_seccion_7_partes_verticales_2_7_prueba_parte_4_parte_horizontal_campos_horizontales_a_0_0_prueba_campo_2_tipo_text_1_1_1_1_1_1"] = result
+on_transition: ""
+views: 
+back_step: ""
+next_step: paso2
+position: 0
+ajax_calls: 

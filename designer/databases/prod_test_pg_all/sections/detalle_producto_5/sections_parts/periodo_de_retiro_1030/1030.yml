@@ -1,0 +1,19 @@
+--- 
+id: 1030
+section_id: 5
+part_id: 157
+name: "Per\xC3\xADodo de Retiro"
+created_at: 2012-04-17 15:09:57 Z
+updated_at: 2012-04-17 15:09:57 Z
+label: "Per\xC3\xADodo de Retiro"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 55

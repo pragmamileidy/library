@@ -1,0 +1,103 @@
+--- 
+id: 89
+position: 3
+selector: "{\"445\":{\"656\":{\"758\":{},\"759\":{}}},\"1060\":{\"1583\":{\"859\":{}},\"1627\":{\"870\":{},\"871\":{}},\"2112\":{\"2324\":{}},\"1591\":{\"864\":{}},\"1614\":{\"331\":{}},\"1606\":{\"331\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 77px;
+  	left: 693px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 52px;
+  	left: 693px;
+  	width: 306px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoalimenticio_presentacin_presentacindelproducto {
+  	position: absolute;
+  	top: 180px;
+  	left: 74px;
+  	width: 887px;
+  	height: 92px;
+  	overflow: hidden;
+    }
+    .detalleproductoalimenticio_fichatcnica_fichatcnica {
+  	position: absolute;
+  	top: 321px;
+  	left: 275px;
+  	width: 688px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoalimenticio_fichatcnica_anlisis {
+  	position: absolute;
+  	top: 357px;
+  	left: 278px;
+  	width: 685px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detalleproductoalimenticio_indicacionesdeusodelproducto_indicacionesdeuso {
+  	position: absolute;
+  	top: 460px;
+  	left: 61px;
+  	width: 902px;
+  	height: 106px;
+  	overflow: hidden;
+    }
+    .detalleproductoalimenticio_dosificacin_dosificacina {
+  	position: absolute;
+  	top: 665px;
+  	left: 54px;
+  	width: 899px;
+  	height: 115px;
+  	overflow: hidden;
+    }
+    .detalleproductoalimenticio_precaucionesyadvertenciasgeneraleslmitesmximosmanejo_areadetexto {
+  	position: absolute;
+  	top: 855px;
+  	left: 57px;
+  	width: 903px;
+  	height: 133px;
+  	overflow: hidden;
+    }
+    .detalleproductoalimenticio_factoresdevariacindecalidad_areadetexto {
+  	position: absolute;
+  	top: 1068px;
+  	left: 58px;
+  	width: 903px;
+  	height: 151px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: ""
+print_design_id: 43
+created_at: 2012-05-06 17:31:46 Z
+updated_at: 2015-11-04 14:47:23 Z
+instances_selector: "{\"445\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1060\":{\"value\":\"\",\"1583\":{\"value\":\"\",\"859\":{\"value\":\"\"}},\"1627\":{\"value\":\"\",\"870\":{\"value\":\"\"},\"871\":{\"value\":\"\"}},\"2112\":{\"value\":\"\",\"2324\":{\"value\":\"\"}},\"1591\":{\"value\":\"\",\"864\":{\"value\":\"\"}},\"1614\":{\"value\":\"\",\"331\":{\"value\":\"\"}},\"1606\":{\"value\":\"\",\"331\":{\"value\":\"\"}}}}"
+size: ""

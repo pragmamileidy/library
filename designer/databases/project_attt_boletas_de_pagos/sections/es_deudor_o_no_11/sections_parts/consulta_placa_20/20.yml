@@ -1,0 +1,19 @@
+--- 
+id: 20
+section_id: 11
+part_id: 16
+name: consulta_placa
+created_at: 2017-01-16 20:33:32.313929 Z
+updated_at: 2017-01-16 21:33:47.058354 Z
+label: "\xC2\xBFDesea realizar la consulta por medio de la placa?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

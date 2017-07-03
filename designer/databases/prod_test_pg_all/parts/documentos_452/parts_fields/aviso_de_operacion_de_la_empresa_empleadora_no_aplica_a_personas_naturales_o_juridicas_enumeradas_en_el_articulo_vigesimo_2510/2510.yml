@@ -1,0 +1,30 @@
+--- 
+id: 2510
+part_id: 452
+field_id: 31
+name: "Aviso de operaci\xC3\xB3n de la empresa empleadora.  (No aplica a personas naturales o jur\xC3\xADdicas, enumeradas en el art\xC3\xADculo vig\xC3\xA9simo)"
+created_at: 2012-08-31 17:26:59 Z
+updated_at: 2017-06-04 00:29:43.192852 Z
+label: "Aviso de operaci\xC3\xB3n de la empresa empleadora  (No aplica a personas naturales o jur\xC3\xADdicas, enumeradas en el art\xC3\xADculo vig\xC3\xA9simo)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 49a3b5cc-2664-493d-8404-ab1d51b32172
+version: 20170603-202943

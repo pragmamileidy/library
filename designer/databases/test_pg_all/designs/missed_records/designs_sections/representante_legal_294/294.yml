@@ -1,0 +1,16 @@
+--- 
+id: 294
+design_id: 47
+section_id: 35
+name: Representante Legal
+created_at: 2012-03-07 19:26:44 Z
+updated_at: 2013-04-09 20:03:10 Z
+label: Representante Legal
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"545\":{\"585\":{\"required\":\"required\"},\"586\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"required\"}}}"
+hint: Representante Legal del buque
+help: Representante Legal del buque
+order_input: 3

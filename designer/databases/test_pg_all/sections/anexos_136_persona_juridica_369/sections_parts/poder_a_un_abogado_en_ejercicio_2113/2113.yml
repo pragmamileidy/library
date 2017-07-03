@@ -1,0 +1,19 @@
+--- 
+id: 2113
+section_id: 369
+part_id: 38
+name: Poder a un abogado en ejercicio
+created_at: 2012-08-09 20:07:11 Z
+updated_at: 2017-03-20 19:39:56.964251 Z
+label: Poder a un abogado en ejercicio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Debe estar notariado.
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 1

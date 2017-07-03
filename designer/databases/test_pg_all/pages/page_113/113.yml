@@ -1,0 +1,470 @@
+--- 
+id: 113
+position: 2
+selector: "{\"1172\":{\"656\":{\"758\":{},\"759\":{}}},\"1196\":{\"1731\":{\"1497\":{},\"1498\":{},\"1499\":{},\"1500\":{},\"1501\":{},\"1502\":{},\"1503\":{},\"1504\":{},\"1505\":{},\"1507\":{},\"1508\":{},\"1510\":{},\"1511\":{},\"1512\":{},\"1995\":{},\"1514\":{},\"1515\":{},\"1516\":{},\"1517\":{},\"1518\":{},\"1520\":{},\"1521\":{},\"1522\":{},\"1523\":{},\"1524\":{},\"1525\":{},\"1527\":{},\"1987\":{}},\"1999\":{\"1984\":{},\"1985\":{},\"1986\":{}},\"2004\":{\"1984\":{},\"1985\":{},\"1986\":{}},\"2005\":{\"1984\":{},\"1985\":{},\"1986\":{}}},\"1206\":{\"1739\":{\"1531\":{},\"1545\":{}},\"1740\":{\"1532\":{},\"1533\":{}},\"1741\":{\"1534\":{},\"1535\":{}},\"1742\":{\"1536\":{},\"1537\":{}},\"1743\":{\"1538\":{},\"1539\":{}},\"1744\":{\"1540\":{},\"1541\":{}},\"1745\":{\"1542\":{},\"1543\":{}},\"1753\":{\"1548\":{},\"1549\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 63px;
+  	left: 722px;
+  	width: 278px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 38px;
+  	left: 722px;
+  	width: 300px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_puedetrabajarturnosrotativos {
+  	position: absolute;
+  	top: 151px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_tipodelicenciadeconducir {
+  	position: absolute;
+  	top: 150px;
+  	left: 721px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_nrodelicenciadeconducir {
+  	position: absolute;
+  	top: 186px;
+  	left: 720px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_tipodeautomovil {
+  	position: absolute;
+  	top: 220px;
+  	left: 721px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_pasatiempos {
+  	position: absolute;
+  	top: 256px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_fechaenquevencelalicenciadeconducir {
+  	position: absolute;
+  	top: 186px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_tieneautopropio {
+  	position: absolute;
+  	top: 220px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_enfermedadcronica_resp {
+  	position: absolute;
+  	top: 290px;
+  	left: 276px;
+  	width: 443px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_cual {
+  	position: absolute;
+  	top: 290px;
+  	left: 706px;
+  	width: 443px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_indicarmedicamentos {
+  	position: absolute;
+  	top: 325px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_medioporelcualseentero {
+  	position: absolute;
+  	top: 362px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_jornadaquedeseatrabajar {
+  	position: absolute;
+  	top: 396px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_viaje {
+  	position: absolute;
+  	top: 397px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_numerodepasaporte {
+  	position: absolute;
+  	top: 431px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_carnetdesalud {
+  	position: absolute;
+  	top: 431px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_fechadeexpiracion {
+  	position: absolute;
+  	top: 466px;
+  	left: 279px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_jefedefamilia {
+  	position: absolute;
+  	top: 466px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_nrodedependientes {
+  	position: absolute;
+  	top: 500px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_nrodehijos {
+  	position: absolute;
+  	top: 501px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_cantidaddepersonasensufamilia {
+  	position: absolute;
+  	top: 537px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_cantidaddepersonasquenolaboranensufamilia {
+  	position: absolute;
+  	top: 574px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_rangodeedadesdelosmiembrosdesufamilia {
+  	position: absolute;
+  	top: 573px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_esinmigrantelocal {
+  	position: absolute;
+  	top: 609px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_fechadeinmigracin {
+  	position: absolute;
+  	top: 608px;
+  	left: 722px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_necesitacapacitarse {
+  	position: absolute;
+  	top: 642px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_tipodecapacitacin {
+  	position: absolute;
+  	top: 643px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_tipodediscapacidadyodiagnsticomdico {
+  	position: absolute;
+  	top: 677px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_datosgeneralesdeserviciopblicodeempleo_numerodeidoneidadolicencia {
+  	position: absolute;
+  	top: 537px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_ingles_hablas {
+  	position: absolute;
+  	top: 1152px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_ingles_lees {
+  	position: absolute;
+  	top: 1152px;
+  	left: 523px;
+  	width: 179px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_ingles_escribes {
+  	position: absolute;
+  	top: 1151px;
+  	left: 736px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_espaol_hablas {
+  	position: absolute;
+  	top: 1116px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_espaol_lees {
+  	position: absolute;
+  	top: 1115px;
+  	left: 526px;
+  	width: 172px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_espaol_escribes {
+  	position: absolute;
+  	top: 1115px;
+  	left: 737px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_otro_hablas {
+  	position: absolute;
+  	top: 1187px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_otro_lees {
+  	position: absolute;
+  	top: 1185px;
+  	left: 528px;
+  	width: 173px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeserviciopblicodeempleo_otro_escribes {
+  	position: absolute;
+  	top: 1187px;
+  	left: 735px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_primaria_institucin {
+  	position: absolute;
+  	top: 814px;
+  	left: 216px;
+  	width: 340px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_primaria_ttuloobtenido {
+  	position: absolute;
+  	top: 814px;
+  	left: 564px;
+  	width: 395px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_secundaria_intitucin {
+  	position: absolute;
+  	top: 840px;
+  	left: 218px;
+  	width: 340px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_secundaria_ttuloobtenido {
+  	position: absolute;
+  	top: 838px;
+  	left: 564px;
+  	width: 399px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_tcnico_institucin {
+  	position: absolute;
+  	top: 867px;
+  	left: 216px;
+  	width: 340px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_tcnico_ttulo {
+  	position: absolute;
+  	top: 866px;
+  	left: 566px;
+  	width: 398px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_universidad_institucin {
+  	position: absolute;
+  	top: 894px;
+  	left: 217px;
+  	width: 340px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_universidad_ttuloobtenido {
+  	position: absolute;
+  	top: 893px;
+  	left: 565px;
+  	width: 398px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_estudiosactuales_institucin {
+  	position: absolute;
+  	top: 921px;
+  	left: 216px;
+  	width: 341px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_estudiosactuales_ttuloobtenido {
+  	position: absolute;
+  	top: 921px;
+  	left: 565px;
+  	width: 399px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_otrosestudios_institucin {
+  	position: absolute;
+  	top: 948px;
+  	left: 217px;
+  	width: 341px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_otrosestudios_ttuloobtenido {
+  	position: absolute;
+  	top: 949px;
+  	left: 565px;
+  	width: 400px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_cursososeminarios_institucin {
+  	position: absolute;
+  	top: 977px;
+  	left: 217px;
+  	width: 341px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_cursososeminarios_ttuloobtenido {
+  	position: absolute;
+  	top: 978px;
+  	left: 564px;
+  	width: 400px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_conocimiento_conocimientos {
+  	position: absolute;
+  	top: 1217px;
+  	left: 273px;
+  	width: 692px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallareducacin_conocimiento_indicarotrashabilidades {
+  	position: absolute;
+  	top: 1246px;
+  	left: 268px;
+  	width: 698px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 54
+created_at: 2012-07-15 03:53:27 Z
+updated_at: 2015-10-18 03:22:47 Z
+instances_selector: "{\"1172\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1196\":{\"value\":\"\",\"1731\":{\"value\":\"\",\"1497\":{\"value\":\"\"},\"1498\":{\"value\":\"\"},\"1499\":{\"value\":\"\"},\"1500\":{\"value\":\"\"},\"1501\":{\"value\":\"\"},\"1502\":{\"value\":\"\"},\"1503\":{\"value\":\"\"},\"1504\":{\"value\":\"\"},\"1505\":{\"value\":\"\"},\"1507\":{\"value\":\"\"},\"1508\":{\"value\":\"\"},\"1510\":{\"value\":\"\"},\"1511\":{\"value\":\"\"},\"1512\":{\"value\":\"\"},\"1995\":{\"value\":\"\"},\"1514\":{\"value\":\"\"},\"1515\":{\"value\":\"\"},\"1516\":{\"value\":\"\"},\"1517\":{\"value\":\"\"},\"1518\":{\"value\":\"\"},\"1520\":{\"value\":\"\"},\"1521\":{\"value\":\"\"},\"1522\":{\"value\":\"\"},\"1523\":{\"value\":\"\"},\"1524\":{\"value\":\"\"},\"1525\":{\"value\":\"\"},\"1527\":{\"value\":\"\"},\"1987\":{\"value\":\"\"}},\"1999\":{\"value\":\"\",\"1984\":{\"value\":\"\"},\"1985\":{\"value\":\"\"},\"1986\":{\"value\":\"\"}},\"2004\":{\"value\":\"\",\"1984\":{\"value\":\"\"},\"1985\":{\"value\":\"\"},\"1986\":{\"value\":\"\"}},\"2005\":{\"value\":\"\",\"1984\":{\"value\":\"\"},\"1985\":{\"value\":\"\"},\"1986\":{\"value\":\"\"}}},\"1206\":{\"value\":\"\",\"1739\":{\"value\":\"\",\"1531\":{\"value\":\"\"},\"1545\":{\"value\":\"\"}},\"1740\":{\"value\":\"\",\"1532\":{\"value\":\"\"},\"1533\":{\"value\":\"\"}},\"1741\":{\"value\":\"\",\"1534\":{\"value\":\"\"},\"1535\":{\"value\":\"\"}},\"1742\":{\"value\":\"\",\"1536\":{\"value\":\"\"},\"1537\":{\"value\":\"\"}},\"1743\":{\"value\":\"\",\"1538\":{\"value\":\"\"},\"1539\":{\"value\":\"\"}},\"1744\":{\"value\":\"\",\"1540\":{\"value\":\"\"},\"1541\":{\"value\":\"\"}},\"1745\":{\"value\":\"\",\"1542\":{\"value\":\"\"},\"1543\":{\"value\":\"\"}},\"1753\":{\"value\":\"\",\"1548\":{\"value\":\"\"},\"1549\":{\"value\":\"\"}}}}"
+size: ""

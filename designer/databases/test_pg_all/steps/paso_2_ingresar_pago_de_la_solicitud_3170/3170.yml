@@ -1,0 +1,55 @@
+--- 
+id: 3170
+name: Paso 2- Ingresar pago de la solicitud
+label: " Ingresar pago de la solicitud"
+description: ""
+fill_step_id: 1695
+created_at: 2015-08-04 20:28:49 Z
+updated_at: 2016-07-07 12:53:08.703483 Z
+include: "{\"4884\":{\"1824\":{\"1366\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1367\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1368\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1369\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1371\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2544\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit
+on_becoming: |-
+  form_data.set("datos_de_pago.datos_de_pago.numero_de_recibo_deposito", "")
+  form_data.set("datos_de_pago.datos_de_pago.fecha_del_pago", "")
+  form_data.set("datos_de_pago.datos_de_pago.monto_del_pago", "")
+  form_data.set("datos_de_pago.datos_de_pago.banco", "")
+  form_data.set("datos_de_pago.datos_de_pago.observaciones", "")
+  form_data.set("datos_de_pago.datos_de_pago.comprobante_de_pago", "")
+  form_data.routes.select{|r| r =~ /(\d+)\.pagada/}.each{ |pagada|
+  next unless form_data.get(pagada) == 'Iniciada'
+  form_data.set(pagada, 'Si')
+  }
+  _montoTotal = form_data.get("datos_del_evaluador_generico.monto_total.monto_total")
+  form_data.set("datos_de_pago.datos_de_pago.monto_del_pago",_montoTotal)
+on_transition: "_applicationId = @application[\"id\"]\r\n\
+  _taskId = @task[\"id\"]\r\n\
+  recibo = form_data.get(\"datos_de_pago.datos_de_pago.numero_de_recibo_deposito\")\r\n\
+  fecha = form_data.get(\"datos_de_pago.datos_de_pago.fecha_del_pago\")\r\n\
+  monto = form_data.get(\"datos_de_pago.datos_de_pago.monto_del_pago\")\r\n\
+  banco = form_data.get(\"datos_de_pago.datos_de_pago.banco\")\r\n\
+  comprobante = form_data.get(\"datos_de_pago.datos_de_pago.comprobante_de_pago\")\r\n\
+  \r\n\
+  pago = {\"reference_number\"=> \"#{recibo}\",\r\n\
+  \t\t\"payment_date\"=> \"#{fecha}\",\r\n\
+  \t\t\"bank\"=>\"#{banco}\",\"amount\"=>\"#{monto}\",\r\n\
+  \t\t\"attachment_id\"=>\"#{comprobante}\"\r\n\
+  \t\t}\r\n\
+  \r\n\
+  result = PaymentProxy.register_manual_payments(_applicationId,pago, _taskId)\r\n\
+  if (!result[:create])\r\n\
+  \ttransition_errors << \"El N\xC3\xBAmero de Deposito Introducido ya ha sido registrado. Su pago no puede ser procesado. Por Favor Verifique\"\r\n\
+  end\r\n\
+  \r\n\
+  ### Validaci\xC3\xB3n de Fecha#######\r\n\
+  fecha_pago = form_data.get(\"datos_de_pago.datos_de_pago.fecha_del_pago\")\r\n\
+  \r\n\
+  if (fecha_pago.to_date > Date.today)\r\n\
+  \ttransition_errors << \" La fecha del recibo del pago no debe ser mayor a la fecha actual\"\r\n\
+  end"
+views: 
+back_step: Paso 1- Pago Manual de la Solicitud
+next_step: ""
+position: 2
+ajax_calls: ""

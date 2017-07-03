@@ -1,0 +1,17 @@
+--- 
+id: 302
+name: Listado de personas - Finca de arrendamiento
+description: Listado de las personas que habitan en el inmueble seleccionado / datos de la finca de arriendo
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-08 14:44:36 Z
+updated_at: 2012-06-08 14:44:36 Z
+label: "Listado de personas que habitar\xC3\xA1n en el inmueble"
+hint: ""
+view_class: horizontal
+serial: 

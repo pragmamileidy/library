@@ -1,0 +1,16 @@
+--- 
+id: 1720
+design_id: 87
+section_id: 107
+name: Detalle de Dependientes
+created_at: 2012-07-27 16:05:04 Z
+updated_at: 2013-04-23 17:48:23 Z
+label: Detalle de Dependientes
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"1374\":{\"required\":\"required\"},\"546\":{\"required\":\"required\"},\"1182\":{\"required\":\"required\"},\"553\":{\"required\":\"required\"}},\"586\":{\"608\":{\"required\":\"required\"}}}"
+hint: "Detallar los Dependientes en el siguiente orden: Esposo(a), Compa\xC3\xB1ero(a), Hijo(s) menor(es) de 18 a\xC3\xB1os o mayores."
+help: ""
+order_input: 9

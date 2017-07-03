@@ -1,0 +1,19 @@
+--- 
+id: 216
+section_id: 5
+part_id: 51
+name: "Forma de Aplicaci\xC3\xB3n"
+created_at: 2011-11-10 16:43:22 Z
+updated_at: 2012-05-10 00:38:10 Z
+label: "Parental, oral, d\xC3\xA9rmica, pulverizaci\xC3\xB3n, atomizaci\xC3\xB3n, escarificaci\xC3\xB3n, ocular, nasal u otras"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"239\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 26

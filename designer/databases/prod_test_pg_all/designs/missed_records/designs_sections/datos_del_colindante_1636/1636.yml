@@ -1,0 +1,16 @@
+--- 
+id: 1636
+design_id: 131
+section_id: 338
+name: Datos del Colindante
+created_at: 2012-07-23 01:36:07 Z
+updated_at: 2014-05-28 16:00:16 Z
+label: Datos del Colindante
+min_instances: 1
+max_instances: 3
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2034\":{\"1656\":{\"required\":\"required\"}},\"2035\":{\"365\":{\"required\":\"required\"},\"367\":{\"required\":\"required\"},\"366\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 16

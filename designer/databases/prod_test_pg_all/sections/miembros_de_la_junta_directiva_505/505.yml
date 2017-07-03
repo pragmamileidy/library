@@ -1,0 +1,17 @@
+--- 
+id: 505
+name: Miembros de la Junta Directiva
+description: Miembros de la Junta Directiva
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-11 13:57:39 Z
+updated_at: 2013-06-11 13:57:39 Z
+status: Draft
+label: Miembros de la Junta Directiva
+hint: ""
+serial: 

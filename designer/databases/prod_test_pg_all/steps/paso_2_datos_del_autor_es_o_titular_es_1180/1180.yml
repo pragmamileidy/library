@@ -1,0 +1,627 @@
+--- 
+id: 1180
+name: Paso 2 - Datos del Autor (es) o Titular (es)
+label: Datos del Autor (es) o Titular (es)
+description: ""
+fill_step_id: 586
+created_at: 2013-03-14 18:40:29 Z
+updated_at: 2014-12-19 16:04:56 Z
+include: "{\"2520\":{\"2717\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3155\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2718\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3156\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2719\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3157\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2720\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3158\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #### BLANQUEAR CAMPO DE TIPO DE DOCUMENTO ####
+  
+  (1..5).each do |_num|
+  _tipo = form_data.get("tipo_de_documento_director_instance_#{_num}.tipo_documento_mici.tipo_de_documento")
+  	if _tipo == "RUC"
+  		form_data.set("datos_del_autor_es_persona_natural.director_instance_#{_num}.tipo_de_documento", "")
+  	end
+  end
+  
+  (1..5).each do |_num|
+  _tipo = form_data.get("tipo_de_documento_autor_guion_instance_#{_num}.tipo_documento_mici.tipo_de_documento")
+  	if _tipo == "RUC"
+  		form_data.set("datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.tipo_de_documento", "")
+  	end
+  end
+  
+  (1..5).each do |_num|
+  _tipo = form_data.get("tipo_de_documento_autor_musica_instance_#{_num}.tipo_documento_mici.tipo_de_documento")
+  	if _tipo == "RUC"
+  		form_data.set("datos_del_autor_es_persona_natural.autor_musica_instance_#{_num}.tipo_de_documento", "")
+  	end
+  end
+  
+  (1..5).each do |_num|
+  _tipo = form_data.get("tipo_de_documento_autor_dibujo_instance_#{_num}.tipo_documento_mici.tipo_de_documento")
+  	if _tipo == "RUC"
+  		form_data.set("datos_del_autor_es_persona_natural.autor_dibujo_instance_#{_num}.tipo_de_documento", "")
+  	end
+  end
+on_transition: |-
+  (1..5).each do |_num|
+  	a = form_data.get("datos_del_autor_es_persona_natural.director_instance_#{_num}.primer_nombre")
+  	b = form_data.get("datos_del_autor_es_persona_natural.director_instance_#{_num}.segundo_nombre")
+  	c = form_data.get("datos_del_autor_es_persona_natural.director_instance_#{_num}.primer_apellido")
+  	d = form_data.get("datos_del_autor_es_persona_natural.director_instance_#{_num}.segundo_apellido")
+  	e = form_data.get("datos_del_autor_es_persona_natural.director_instance_#{_num}.apellido_de_casada")
+  	_nom_c = a + " " + b + " " + c + " " + d + " " + e
+  	form_data.set("datos_del_autor_es_persona_natural.director_instance_#{_num}.nombre_completo",_nom_c)
+  	
+  	a = form_data.get("datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.primer_nombre")
+  	b = form_data.get("datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.segundo_nombre")
+  	c = form_data.get("datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.primer_apellido")
+  	d = form_data.get("datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.segundo_apellido")
+  	e = form_data.get("datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.apellido_de_casada")
+  	_nom_c = a + " " + b + " " + c + " " + d + " " + e
+  	form_data.set("datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.nombre_completo",_nom_c)
+  	
+  	a = form_data.get("datos_del_autor_es_persona_natural.autor_musica_instance_#{_num}.primer_nombre")
+  	b = form_data.get("datos_del_autor_es_persona_natural.autor_musica_instance_#{_num}.segundo_nombre")
+  	c = form_data.get("datos_del_autor_es_persona_natural.autor_musica_instance_#{_num}.primer_apellido")
+  	d = form_data.get("datos_del_autor_es_persona_natural.autor_musica_instance_#{_num}.segundo_apellido")
+  	e = form_data.get("datos_del_autor_es_persona_natural.autor_musica_instance_#{_num}.apellido_de_casada")
+  	_nom_c = a + " " + b + " " + c + " " + d + " " + e
+  	form_data.set("datos_del_autor_es_persona_natural.autor_musica_instance_#{_num}.nombre_completo",_nom_c)
+  	
+  	a = form_data.get("datos_del_autor_es_persona_natural.autor_dibujo_instance_#{_num}.primer_nombre")
+  	b = form_data.get("datos_del_autor_es_persona_natural.autor_dibujo_instance_#{_num}.segundo_nombre")
+  	c = form_data.get("datos_del_autor_es_persona_natural.autor_dibujo_instance_#{_num}.primer_apellido")
+  	d = form_data.get("datos_del_autor_es_persona_natural.autor_dibujo_instance_#{_num}.segundo_apellido")
+  	e = form_data.get("datos_del_autor_es_persona_natural.autor_dibujo_instance_#{_num}.apellido_de_casada")
+  	_nom_c = a + " " + b + " " + c + " " + d + " " + e
+  	form_data.set("datos_del_autor_es_persona_natural.autor_dibujo_instance_#{_num}.nombre_completo",_nom_c)
+  end
+views: 
+back_step: Paso 1 - Solicitud de datos del Autor (es) o Titular (es)
+next_step: Paso 3 -  Solicitud de Datos del Productor
+position: 2
+ajax_calls: |
+  // HABILITAR CAMPOS PARA DATOS CUANDO EL TIPO DE DOCUEMNTO ES PASAPORTE //
+  
+  $( function() {
+  	
+  		 $(document).ready(function(){
+  
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_director_instance_1_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_director_instance_1_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_1_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_1_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_1_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_1_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_director_instance_2_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_director_instance_2_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_2_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_2_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_2_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_2_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  											
+  					if($("#field_datos_del_autor_es_persona_natural_director_instance_3_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_director_instance_3_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_3_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_3_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_3_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_3_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  										
+  					if($("#field_datos_del_autor_es_persona_natural_director_instance_4_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_director_instance_4_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_4_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_4_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_4_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_4_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_director_instance_5_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_director_instance_5_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_5_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_5_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_5_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_director_instance_5_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_guion_instance_1_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_guion_instance_1_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_1_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_1_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_1_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_1_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_guion_instance_2_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_guion_instance_2_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_2_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_2_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_2_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_2_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_guion_instance_3_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_guion_instance_3_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_3_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_3_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_3_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_3_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  
+  					if($("#field_datos_del_autor_es_persona_natural_autor_guion_instance_4_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_guion_instance_4_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_4_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_4_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_4_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_4_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  				
+  					if($("#field_datos_del_autor_es_persona_natural_autor_guion_instance_5_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_guion_instance_5_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_5_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_5_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_5_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_guion_instance_5_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_musica_instance_1_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_musica_instance_1_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_1_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_1_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_1_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_1_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_musica_instance_2_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_musica_instance_2_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_2_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_2_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_2_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_2_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_musica_instance_3_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_musica_instance_3_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_3_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_3_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_3_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_3_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  			
+  					if($("#field_datos_del_autor_es_persona_natural_autor_musica_instance_4_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_musica_instance_4_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_4_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_4_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_4_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_4_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_musica_instance_5_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_musica_instance_5_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_5_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_5_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_5_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_musica_instance_5_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_1_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_1_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_1_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_1_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_1_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_1_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_2_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_2_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_2_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_2_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_2_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_2_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_3_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_3_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_3_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_3_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_3_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_3_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_4_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_4_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_4_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_4_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_4_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_4_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  					
+  					if($("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_5_tipo_de_documento").val() == 'Pasaporte'){
+  					    $("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_5_identificacion").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_5_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_5_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_5_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_autor_es_persona_natural_autor_dibujo_instance_5_segundo_apellido").removeAttr("disabled");
+  
+  					}
+  		});
+  	});
+  
+  // ELIMINAR BOTONES AGREGAR/ELIMINAR INSTANCIAS//
+  
+  //PARTE DE DIRECTOR NATURAL//
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_director_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_director";
+   var mod2 = "_identificacion";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  // DIRECTOR JURIDICO//
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_director_juridico_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_director_juridico";
+   var mod2 = "_ruc";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  // PARTE DEL AUTOR DE GUION NATURAL
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_autor_guion_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_autor_guion";
+   var mod2 = "_identificacion";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  // PARTE DEL AUTOR DE GUION JURIDICO//
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_autor_guion_juridico_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_autor_guion_juridico";
+   var mod2 = "_ruc";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  // PARTE DE AUTOR DE MUSICA NATURAL//
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_autor_musica_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_autor_musica";
+   var mod2 = "_identificacion";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  // PARTE DE AUTOR DE MUSICA JURIDICO//
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_autor_musica_juridico_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_autor_musica_juridico";
+   var mod2 = "_ruc";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  // PARTE DE AUTOR DE DIBUJO NATURAL//
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_autor_dibujo_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_autor_dibujo";
+   var mod2 = "_identificacion";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  // PARTE DE AUTOR DE DIBUJO JURIDICO//
+  
+  $(document).ready(function(){
+  $.each( $('[id*=datos_del_autor_es_persona_natural_autor_dibujo_juridico_]'), function(index, campo) {
+  
+   var pos = (this.id).match(/_instance_[\d][\d]/);
+   if (pos == null){
+     pos = (this.id).match(/_instance_[\d]/);
+   }
+   //alert(pos);
+   var mod1 = "#field_datos_del_autor_es_persona_natural_autor_dibujo_juridico";
+   var mod2 = "_ruc";
+   var mod3 = mod1.concat(pos);
+   var dato = mod3.concat(mod2);
+  
+     //alert(dato);
+  
+   $(dato).parents(".part-box").next().hide()
+  
+    });
+  
+  });
+  
+  
+  //OCULTAR PARTE DEL DIRECTOR NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_director_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var director = "#field_datos_del_autor_es_persona_natural_director";
+  				var mod1 = director.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_director_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var director = "#field_datos_del_autor_es_persona_natural_director_juridico";
+  				var mod1 = director.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+  		
+  		//OCULTAR PARTE DEL AUTOR DE GUION NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_guion_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var guion = "#field_datos_del_autor_es_persona_natural_autor_guion";
+  				var mod1 = guion.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_guion_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var guion = "#field_datos_del_autor_es_persona_natural_autor_guion_juridico";
+  				var mod1 = guion.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+  		
+  		
+  		//OCULTAR PARTE DEL AUTOR DE MUSICA NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_musica_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var musica = "#field_datos_del_autor_es_persona_natural_autor_musica";
+  				var mod1 = musica.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_musica_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var musica = "#field_datos_del_autor_es_persona_natural_autor_musica_juridico";
+  				var mod1 = musica.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+  		
+  		
+  		//OCULTAR PARTE DEL AUTOR DE DIBUJO NATURAL Y JURIDICO //
+  	
+  		$(document).ready(function(){
+  							
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_dibujo_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  	
+  				var dibujo = "#field_datos_del_autor_es_persona_natural_autor_dibujo";
+  				var mod1 = dibujo.concat(pos)
+  				var docs = "_tipo_de_documento";
+  				var documento_d = mod1.concat(docs);
+  
+  						if($(documento_d).val()== ''){
+  						
+  							$(documento_d).parents(".part-box").hide()
+  
+  						}
+  			});
+  			
+  			$.each( $('[id*=datos_del_autor_es_persona_natural_autor_dibujo_juridico_]'), function(index, campo) {
+  		
+  				var pos = (this.id).match(/_instance_[\d][\d]/);
+  				if (pos == null){
+  					pos = (this.id).match(/_instance_[\d]/);
+  				}	
+  				
+  				var dibujo = "#field_datos_del_autor_es_persona_natural_autor_dibujo_juridico";
+  				var mod1 = dibujo.concat(pos)
+  	
+  				var docs = "_ruc";
+  				var documento_d = mod1.concat(docs);
+  					
+  						if($(documento_d).val() ==''){
+  							$(documento_d).parents(".part-box").hide()
+  						}
+  			});
+  		});
+

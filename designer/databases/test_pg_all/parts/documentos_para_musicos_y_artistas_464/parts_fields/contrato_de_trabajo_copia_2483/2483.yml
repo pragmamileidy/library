@@ -1,0 +1,30 @@
+--- 
+id: 2483
+part_id: 464
+field_id: 31
+name: Contrato de Trabajo (Copia)
+created_at: 2012-08-30 14:08:11 Z
+updated_at: 2017-06-04 00:24:39.049366 Z
+label: Contrato de Trabajo (Copia)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9e6fd005-e43f-4a57-8cf5-5904c258f0e5
+version: 20170603-202439

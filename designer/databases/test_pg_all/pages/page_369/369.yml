@@ -1,0 +1,266 @@
+--- 
+id: 369
+position: 8
+selector: "{\"2446\":{\"656\":{\"758\":{},\"759\":{}}},\"4298\":{\"3150\":{\"2992\":{}},\"3151\":{\"1981\":{},\"1374\":{},\"545\":{},\"546\":{},\"2983\":{},\"763\":{}},\"3152\":{\"2980\":{}},\"3154\":{\"567\":{},\"566\":{}},\"3153\":{\"572\":{},\"573\":{},\"805\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n  font-family: Verdana, Geneva, sans-serif;\r\n  font-size: 16px;\r\n\
+  }\r\n\
+  \r\n\
+  .main_pdf_content {\r\n  /* main_pdf_content: estos attributos seran ignorados en rendeo */\r\n  background-image: url(RUTA_IMAGEN.png);\r\n  top: 0px;\r\n  left: 0px;\r\n  height:1344px;\r\n  width: 1024px;\r\n  position: absolute;\r\n\
+  }\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 72px;\r\n\
+  \tleft: 677px;\r\n\
+  \twidth: 356px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 49px;\r\n\
+  \tleft: 677px;\r\n\
+  \twidth: 352px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_autor_autor {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 401px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 315px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelapersona_cdulapasaporte {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 208px;\r\n\
+  \tleft: 255px;\r\n\
+  \twidth: 311px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelapersona_nombrecompleto {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 173px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 760px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelapersona_nacionalidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 208px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 317px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelapersona_fechadenacimiento {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 335px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 309px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelapersona_fechadedefuncin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 370px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelapersona_edad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 335px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 310px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_seudonimo_indiqueseudonimo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 403px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelaempresa_ruc {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 208px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 312px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_datosdelaempresa_nombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 173px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 764px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_informacinderesidencialocalizacin_pas {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 298px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_informacinderesidencialocalizacin_ciudad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 298px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 310px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_28_informacinderesidencialocalizacin_direccin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 245px;\r\n\
+  \tleft: 254px;\r\n\
+  \twidth: 768px;\r\n\
+  \theight: 38px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_autor_autor {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 748px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelapersona_cdulapasaporte {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 554px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 308px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelapersona_nombrecompleto {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 522px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 754px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelapersona_nacionalidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 554px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 310px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelapersona_fechadenacimiento {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 677px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 312px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelapersona_fechadedefuncin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 713px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 311px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelapersona_edad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 676px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 317px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_seudonimo_indiqueseudonimo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 748px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 310px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelaempresa_ruc {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 554px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_datosdelaempresa_nombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 522px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 761px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_informacinderesidencialocalizacin_pas {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 643px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 310px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_informacinderesidencialocalizacin_ciudad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 643px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 313px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_29_informacinderesidencialocalizacin_direccin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 583px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 761px;\r\n\
+  \theight: 38px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_autor_autor {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1094px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 311px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelapersona_cdulapasaporte {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 904px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 318px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelapersona_nombrecompleto {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 866px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 763px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelapersona_nacionalidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 904px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 309px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelapersona_fechadenacimiento {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1025px;\r\n\
+  \tleft: 253px;\r\n\
+  \twidth: 312px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelapersona_fechadedefuncin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1058px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelapersona_edad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1025px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_seudonimo_indiqueseudonimo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1094px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 312px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelaempresa_ruc {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 904px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 320px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_datosdelaempresa_nombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 866px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 763px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_informacinderesidencialocalizacin_pas {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 991px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 315px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_informacinderesidencialocalizacin_ciudad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 991px;\r\n\
+  \tleft: 653px;\r\n\
+  \twidth: 309px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelautor_instance_30_informacinderesidencialocalizacin_direccin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 938px;\r\n\
+  \tleft: 252px;\r\n\
+  \twidth: 760px;\r\n\
+  \theight: 38px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n "
+override_render: false
+html_render: 
+print_design_id: 138
+created_at: 2013-06-12 15:42:35 Z
+updated_at: 2017-02-28 02:31:00.569924 Z
+instances_selector: "{\"2446\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4298\":{\"value\":\"28,30\",\"3150\":{\"value\":\"\",\"2992\":{\"value\":\"\"}},\"3151\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"545\":{\"value\":\"\"},\"546\":{\"value\":\"\"},\"2983\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"3152\":{\"value\":\"\",\"2980\":{\"value\":\"\"}},\"3154\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"3153\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"573\":{\"value\":\"\"},\"805\":{\"value\":\"\"}}}}"
+size: legal

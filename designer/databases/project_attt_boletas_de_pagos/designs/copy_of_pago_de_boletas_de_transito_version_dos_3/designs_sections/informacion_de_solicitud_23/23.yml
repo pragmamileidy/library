@@ -1,0 +1,16 @@
+--- 
+id: 23
+design_id: 3
+section_id: 1
+name: "Informaci\xC3\xB3n de Solicitud"
+created_at: 2017-01-17 14:23:24.757373 Z
+updated_at: 2017-01-17 14:23:24.757373 Z
+label: "Informaci\xC3\xB3n de Solicitud"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1\":{\"1\":{\"required\":\"required\"},\"2\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 1

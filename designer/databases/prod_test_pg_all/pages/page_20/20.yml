@@ -1,0 +1,610 @@
+--- 
+id: 20
+position: 1
+selector: "{\"384\":{\"656\":{\"758\":{},\"759\":{}}},\"763\":{\"595\":{\"567\":{},\"566\":{}},\"598\":{\"1374\":{}},\"597\":{\"805\":{},\"585\":{},\"586\":{},\"631\":{},\"594\":{},\"813\":{}}},\"387\":{\"730\":{\"816\":{},\"815\":{},\"814\":{},\"817\":{},\"818\":{}},\"731\":{\"3960\":{},\"3961\":{},\"822\":{},\"824\":{},\"821\":{},\"823\":{},\"825\":{},\"826\":{}},\"732\":{\"827\":{},\"828\":{},\"829\":{},\"830\":{},\"831\":{},\"832\":{},\"3974\":{},\"834\":{},\"1551\":{},\"1552\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 72px;
+  	left: 708px;
+  	width: 316px;
+  	height: 16px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 48px;
+  	left: 710px;
+  	width: 314px;
+  	height: 16px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 261px;
+  	left: 259px;
+  	width: 449px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 297px;
+  	left: 257px;
+  	width: 683px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_representantelegal_nombrecompleto {
+  	position: absolute;
+  	top: 376px;
+  	left: 282px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_direccin_direccin {
+  	position: absolute;
+  	top: 421px;
+  	left: 282px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 460px;
+  	left: 282px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_direccin_nmerodefax {
+  	position: absolute;
+  	top: 490px;
+  	left: 733px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_direccin_nmerocelular {
+  	position: absolute;
+  	top: 531px;
+  	left: 279px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 458px;
+  	left: 733px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_direccin_otro {
+  	position: absolute;
+  	top: 496px;
+  	left: 282px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_1_nombrecientfico {
+  	position: absolute;
+  	top: 666px;
+  	left: 56px;
+  	width: 204px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_1_nombrecomn {
+  	position: absolute;
+  	top: 666px;
+  	left: 268px;
+  	width: 129px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_1_variedadusodestinado {
+  	position: absolute;
+  	top: 667px;
+  	left: 407px;
+  	width: 190px;
+  	height: 23px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_1_tipodemercadera {
+  	position: absolute;
+  	top: 667px;
+  	left: 607px;
+  	width: 165px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_1_cantidadytipodeembalaje {
+  	position: absolute;
+  	top: 666px;
+  	left: 781px;
+  	width: 198px;
+  	height: 26px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_2_nombrecientfico {
+  	position: absolute;
+  	top: 697px;
+  	left: 56px;
+  	width: 206px;
+  	height: 23px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_2_nombrecomn {
+  	position: absolute;
+  	top: 696px;
+  	left: 269px;
+  	width: 128px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_2_variedadusodestinado {
+  	position: absolute;
+  	top: 696px;
+  	left: 405px;
+  	width: 192px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_2_tipodemercadera {
+  	position: absolute;
+  	top: 696px;
+  	left: 605px;
+  	width: 169px;
+  	height: 26px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_2_cantidadytipodeembalaje {
+  	position: absolute;
+  	top: 696px;
+  	left: 780px;
+  	width: 198px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_3_nombrecientfico {
+  	position: absolute;
+  	top: 726px;
+  	left: 57px;
+  	width: 205px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_3_nombrecomn {
+  	position: absolute;
+  	top: 726px;
+  	left: 269px;
+  	width: 127px;
+  	height: 24px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_3_variedadusodestinado {
+  	position: absolute;
+  	top: 726px;
+  	left: 404px;
+  	width: 195px;
+  	height: 24px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_3_tipodemercadera {
+  	position: absolute;
+  	top: 727px;
+  	left: 605px;
+  	width: 169px;
+  	height: 25px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_instance_3_cantidadytipodeembalaje {
+  	position: absolute;
+  	top: 726px;
+  	left: 779px;
+  	width: 201px;
+  	height: 27px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_pasdeorigenselect {
+  	position: absolute;
+  	top: 818px;
+  	left: 231px;
+  	width: 276px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_pasdeprocedenciaselect {
+  	position: absolute;
+  	top: 818px;
+  	left: 731px;
+  	width: 259px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_exportador {
+  	position: absolute;
+  	top: 854px;
+  	left: 732px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_direccin {
+  	position: absolute;
+  	top: 891px;
+  	left: 732px;
+  	width: 259px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_estadooprovincia {
+  	position: absolute;
+  	top: 854px;
+  	left: 230px;
+  	width: 277px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_firmavendedora {
+  	position: absolute;
+  	top: 890px;
+  	left: 231px;
+  	width: 277px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_fechaprobabledeembarque {
+  	position: absolute;
+  	top: 945px;
+  	left: 229px;
+  	width: 279px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_detallesdeimportacin_puertodeingreso {
+  	position: absolute;
+  	top: 944px;
+  	left: 732px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_multiplicacin {
+  	position: absolute;
+  	top: 1026px;
+  	left: 232px;
+  	width: 277px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_produccinplantacin {
+  	position: absolute;
+  	top: 1026px;
+  	left: 732px;
+  	width: 259px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_organismosvivos {
+  	position: absolute;
+  	top: 1061px;
+  	left: 231px;
+  	width: 277px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_ornamentacin {
+  	position: absolute;
+  	top: 1062px;
+  	left: 732px;
+  	width: 260px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_industrializacin {
+  	position: absolute;
+  	top: 1098px;
+  	left: 231px;
+  	width: 278px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_transgnico {
+  	position: absolute;
+  	top: 1135px;
+  	left: 232px;
+  	width: 277px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_detalle {
+  	position: absolute;
+  	top: 1134px;
+  	left: 732px;
+  	width: 259px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_controladoresbiolgicos {
+  	position: absolute;
+  	top: 1098px;
+  	left: 733px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_fechaprobabledeembarque {
+  	position: absolute;
+  	top: 1187px;
+  	left: 231px;
+  	width: 280px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .detallederequisitosfitosanitarios_usoaquesedestina_puertodeingreso {
+  	position: absolute;
+  	top: 1187px;
+  	left: 728px;
+  	width: 259px;
+  	height: 21px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: |-
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="PrintDesign_0_Page_0.css" />
+  <title>Solicitud de Requisitos Fitosanitarios</title>
+  </head>
+  <body>
+      <div class="informacindesolicitud_datosdelasolicitud_fechadesolicitud">
+        <span class="field_size_1">
+          <%= fields["InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud"] %>
+        </span>
+      </div>
+      <div class="informacindesolicitud_datosdelasolicitud_numerodesolicitud">
+        <span class="field_size_1">
+          <%= fields["InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_datosdelaempresa_ruc">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_DatosdelaEmpresa_RUC"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_datosdelaempresa_nombre">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_DatosdelaEmpresa_Nombre"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_representantelegal_nombrecompleto">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_RepresentanteLegal_NombreCompleto"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_direccin_direccin">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_Direccin_Direccin"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_direccin_nmerodetelfono">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_Direccin_Nmerodetelfono"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_direccin_nmerodefax">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_Direccin_NmerodeFax"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_direccin_nmerocelular">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_Direccin_NmeroCelular"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_direccin_correoelectrnico">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_Direccin_CorreoElectrnico"] %>
+        </span>
+      </div>
+      <div class="datosdelsolicitante_direccin_otro">
+        <span class="field_size_1">
+          <%= fields["DatosdelSolicitante_Direccin_Otro"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_nombrecientfico">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_NombreCientfico"] %>
+        </span>
+      </div>
+          <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios1_nombrecientfico">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_NombreCientfico"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios2_nombrecientfico">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_NombreCientfico"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_nombrecomn">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_NombreComn"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios1_nombrecomn">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_NombreComn"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios2_nombrecomn">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_NombreComn"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_variedadusodestinado">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_VariedadUsodestinado"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios1_variedadusodestinado">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_VariedadUsodestinado"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios2_variedadusodestinado">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_VariedadUsodestinado"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_tipodemercadera">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_TipodeMercadera"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios1_tipodemercadera">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_TipodeMercadera"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios2_tipodemercadera">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_TipodeMercadera"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios_cantidadytipodeembalaje">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_CantidadyTipodeEmbalaje"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios1_cantidadytipodeembalaje">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_CantidadyTipodeEmbalaje"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallederequisitosfitosanitarios2_cantidadytipodeembalaje">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetalledeRequisitosFitosanitarios_CantidadyTipodeEmbalaje"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_pasdeorigen">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_PasdeOrigen"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_pasdeprocedencia">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_PasdeProcedencia"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_exportador">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_Exportador"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_direccin">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_Direccin"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_estadooprovincia">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_EstadooProvincia"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_firmavendedora">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_Firmavendedora"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_fechaprobabledeembarque">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_Fechaprobabledeembarque"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_detallesdeimportacin_puertodeingreso">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_DetallesdeImportacin_Puertodeingreso"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_usoaquesedestina_multiplicacin">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_Multiplicacin"] %>
+        </span>
+      </div>
+  <div class="detallederequisitosfitosanitarios_usoaquesedestina_produccinplantacin">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_ProduccinPlantacin"] %>
+        </span>
+      </div>
+  <div class="detallederequisitosfitosanitarios_usoaquesedestina_organismosvivos">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_Organismosvivos"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_usoaquesedestina_ornamentacin">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_Ornamentacin"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_usoaquesedestina_industrializacin">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_Industrializacin"] %>
+        </span>
+      </div>
+  <div class="detallederequisitosfitosanitarios_usoaquesedestina_transgnico">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_Transgnico"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_usoaquesedestina_otros">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_Otros"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_usoaquesedestina_controladoresbiolgicos">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_ControladoresBiolgicos"] %>
+        </span>
+      </div>
+  <div class="detallederequisitosfitosanitarios_usoaquesedestina_fechaprobabledeembarque">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_FechaProbabledeEmbarque"] %>
+        </span>
+      </div>
+      <div class="detallederequisitosfitosanitarios_usoaquesedestina_puertodeingreso">
+        <span class="field_size_1">
+          <%= fields["Detallederequisitosfitosanitarios_UsoaqueseDestina_Puertodeingreso"] %>
+        </span>
+      </div>
+  </body>
+  </html>
+print_design_id: 14
+created_at: 2012-04-12 12:34:45 Z
+updated_at: 2015-10-30 19:38:03 Z
+instances_selector: "{\"384\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"763\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"598\":{\"value\":\"\",\"1374\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"},\"813\":{\"value\":\"\"}}},\"387\":{\"value\":\"\",\"730\":{\"value\":\"1,3\",\"816\":{\"value\":\"\"},\"815\":{\"value\":\"\"},\"814\":{\"value\":\"\"},\"817\":{\"value\":\"\"},\"818\":{\"value\":\"\"}},\"731\":{\"value\":\"\",\"3960\":{\"value\":\"\"},\"3961\":{\"value\":\"\"},\"822\":{\"value\":\"\"},\"824\":{\"value\":\"\"},\"821\":{\"value\":\"\"},\"823\":{\"value\":\"\"},\"825\":{\"value\":\"\"},\"826\":{\"value\":\"\"}},\"732\":{\"value\":\"\",\"827\":{\"value\":\"\"},\"828\":{\"value\":\"\"},\"829\":{\"value\":\"\"},\"830\":{\"value\":\"\"},\"831\":{\"value\":\"\"},\"832\":{\"value\":\"\"},\"3974\":{\"value\":\"\"},\"834\":{\"value\":\"\"},\"1551\":{\"value\":\"\"},\"1552\":{\"value\":\"\"}}}}"
+size: ""

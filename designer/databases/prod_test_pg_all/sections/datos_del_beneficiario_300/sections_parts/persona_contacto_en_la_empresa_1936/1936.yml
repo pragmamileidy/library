@@ -1,0 +1,19 @@
+--- 
+id: 1936
+section_id: 300
+part_id: 350
+name: Persona Contacto en la Empresa
+created_at: 2012-06-15 20:39:09 Z
+updated_at: 2012-06-15 20:39:09 Z
+label: Persona Contacto en la Empresa
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1860\":{},\"1861\":{},\"1862\":{},\"1863\":{}}"
+hint: Persona Contacto en la Empresa para Actividades Relacionadas con Bancos
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

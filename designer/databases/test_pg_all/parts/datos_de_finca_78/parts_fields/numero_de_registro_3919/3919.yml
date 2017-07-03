@@ -1,0 +1,30 @@
+--- 
+id: 3919
+part_id: 78
+field_id: 339
+name: Numero de registro
+created_at: 2015-04-21 21:40:16 Z
+updated_at: 2017-06-04 00:23:21.682873 Z
+label: Registro de la Finca
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 82c21c9d-c627-46ed-b6fd-ba46f0c7f790
+version: 20170603-202321

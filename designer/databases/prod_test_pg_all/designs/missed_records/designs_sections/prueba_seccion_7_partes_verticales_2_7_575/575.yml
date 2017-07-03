@@ -1,0 +1,16 @@
+--- 
+id: 575
+design_id: 71
+section_id: 128
+name: "Prueba secci\xC3\xB3n 7 - partes verticales 2 7"
+created_at: 2012-04-10 14:00:08 Z
+updated_at: 2012-05-17 15:56:01 Z
+label: "Prueba secci\xC3\xB3n 7 - partes verticales 2"
+min_instances: 1
+max_instances: 1
+depends_on: "true"
+manage_as_confidential: false
+include: "{\"653\":{\"746\":{\"required\":\"required\"},\"745\":{\"required\":\"required\"}},\"655\":{\"753\":{\"required\":\"unrequired\"},\"755\":{\"required\":\"unrequired\"},\"754\":{\"required\":\"unrequired\"},\"756\":{\"required\":\"unrequired\"},\"757\":{\"required\":\"unrequired\"}}}"
+hint: "Prueba secci\xC3\xB3n 7 - partes verticales 2, cambiando view a horizontal de parte B"
+help: "Prueba secci\xC3\xB3n 7 - partes verticales 2  -  los campos seleccionados no son requeridos"
+order_input: 7

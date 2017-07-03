@@ -1,0 +1,30 @@
+--- 
+id: 263
+name: "G\xC3\xA9nero de la obra"
+description: "G\xC3\xA9nero de la obra - MICI"
+version: 
+status: Draft
+label: "G\xC3\xA9nero "
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-14 16:08:52 Z
+updated_at: 2013-03-14 16:08:52 Z
+values_list: "\"Comercial\",\"Acci\xC3\xB3n\",\"Cultural\",\"Opini\xC3\xB3n\",\"Reality Show\",\"Cientifico\",\"Comedia\",\"Revista\",\"Educativo\",\"M\xC3\xBAsical\",\"Infantil\",\"Deportiva\",\"Informativo\",\"Familiar\",\"Documental\",\"Otro\""
+keys_list: ""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 1675
+part_id: 307
+field_id: 130
+name: "Valor del dep\xC3\xB3sito de garant\xC3\xADa (Letras)"
+created_at: 2012-06-08 16:00:51 Z
+updated_at: 2017-06-04 00:28:10.390711 Z
+label: "Valor del dep\xC3\xB3sito de garant\xC3\xADa (Letras)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1b26c873-2b00-4a1e-9f5c-1edf812794ea
+version: 20170603-202810

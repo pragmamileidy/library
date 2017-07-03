@@ -1,0 +1,30 @@
+--- 
+id: 2806
+part_id: 498
+field_id: 17
+name: AnularPasoReparoPago
+created_at: 2013-01-17 15:30:06 Z
+updated_at: 2017-06-04 00:29:44.859256 Z
+label: Anular Paso Reparo Pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: tramites 100, procesos 1, 2 y 4
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 82223579-8e13-4490-a092-b20bc9faa108
+version: 20170603-202944

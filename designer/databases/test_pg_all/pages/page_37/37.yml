@@ -1,0 +1,134 @@
+--- 
+id: 37
+position: 2
+selector: "{\"332\":{\"586\":{\"558\":{},\"768\":{},\"767\":{},\"765\":{},\"766\":{}},\"581\":{\"585\":{},\"631\":{},\"594\":{}}},\"767\":{\"1119\":{\"593\":{}},\"1121\":{\"93\":{}},\"1122\":{\"239\":{}},\"1120\":{\"800\":{}}},\"768\":{\"1119\":{\"593\":{}},\"1121\":{\"93\":{}},\"1122\":{\"239\":{}}},\"769\":{\"1119\":{\"593\":{}},\"1121\":{\"93\":{}},\"1122\":{\"239\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n  background-image:url(img/page_37_MITRADEL2.png); background-repeat:no-repeat;\r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xC3\xA1l es el formato b\xC3\xA1sico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xC3\xBAn no se han definido */\r\n\
+  \r\n  .DatosGenerales_InformacinLaboral_RegistrodeIdoneidad {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:451px;\r\n\
+  \tleft:614px;\r\n\
+  \twidth:143px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosGenerales_InformacinLaboral_NivelEducativo {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:364px;\r\n\
+  \tleft:246px;\r\n\
+  \twidth:233px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosGenerales_InformacinLaboral_CarnetdeSalud {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:451px;\r\n\
+  \tleft:245px;\r\n\
+  \twidth:187px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosGenerales_InformacinLaboral_Desempleadodesde {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:392px;\r\n\
+  \tleft:246px;\r\n\
+  \twidth:233px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosGenerales_InformacinLaboral_Disponibledesde {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:421px;\r\n\
+  \tleft:246px;\r\n\
+  \twidth:233px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosGenerales_InformacindeResidenciaLocalizacin_Nmerodetelfono {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:306px;\r\n\
+  \tleft:143px;\r\n\
+  \twidth:209px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosGenerales_InformacindeResidenciaLocalizacin_NmeroCelular {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:306px;\r\n\
+  \tleft:518px;\r\n\
+  \twidth:208px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .DatosGenerales_InformacindeResidenciaLocalizacin_CorreoElectrnico {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:336px;\r\n\
+  \tleft:222px;\r\n\
+  \twidth:511px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Recibidopor_Usuario_NombreUsual {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:578px;\r\n\
+  \tleft:191px;\r\n\
+  \twidth:279px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Recibidopor_Fecha_FechaActual {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:707px;\r\n\
+  \tleft:122px;\r\n\
+  \twidth:134px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Recibidopor_Hora_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:707px;\r\n\
+  \tleft:353px;\r\n\
+  \twidth:93px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Recibidopor_Observaciones_readeTexto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:607px;\r\n\
+  \tleft:190px;\r\n\
+  \twidth:602px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 95px;\r\n  }\r\n  .Procesadopor_Usuario_NombreUsual {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:802px;\r\n\
+  \tleft:191px;\r\n\
+  \twidth:279px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Procesadopor_Fecha_FechaActual {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:830px;\r\n\
+  \tleft:122px;\r\n\
+  \twidth:134px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Procesadopor_Hora_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:830px;\r\n\
+  \tleft:353px;\r\n\
+  \twidth:93px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Cerradopor_Usuario_NombreUsual {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:918px;\r\n\
+  \tleft:191px;\r\n\
+  \twidth:279px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Cerradopor_Fecha_FechaActual {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:946px;\r\n\
+  \tleft:122px;\r\n\
+  \twidth:134px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Cerradopor_Hora_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:946px;\r\n\
+  \tleft:353px;\r\n\
+  \twidth:93px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Recibidopor_Usuario_NombreUsual {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Recibidopor_Fecha_FechaActual {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Recibidopor_Hora_Texto {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Recibidopor_Observaciones_readeTexto {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Procesadopor_Usuario_NombreUsual {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Procesadopor_Fecha_FechaActual {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Procesadopor_Hora_Texto {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Cerradopor_Usuario_NombreUsual {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Cerradopor_Fecha_FechaActual {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }\r\n  .Cerradopor_Hora_Texto {\r\n    position:absolute;\r\n    top:40px;\r\n    left:40px;\r\n    width:100px;\r\n    overflow:hidden;\r\n  }"
+override_render: false
+html_render: 
+print_design_id: 10
+created_at: 2012-04-17 00:51:11 Z
+updated_at: 2012-04-25 23:53:02 Z
+instances_selector: 
+size: 

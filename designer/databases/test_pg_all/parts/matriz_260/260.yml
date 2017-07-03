@@ -1,0 +1,17 @@
+--- 
+id: 260
+name: Matriz
+description: Tipo Matriz.
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-12 22:25:37 Z
+updated_at: 2012-05-16 20:55:32 Z
+label: Matriz
+hint: ""
+view_class: horizontal
+serial: 

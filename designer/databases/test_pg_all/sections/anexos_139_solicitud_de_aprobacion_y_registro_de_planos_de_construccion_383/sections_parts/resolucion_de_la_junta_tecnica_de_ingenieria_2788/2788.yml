@@ -1,0 +1,19 @@
+--- 
+id: 2788
+section_id: 383
+part_id: 38
+name: "Resoluci\xC3\xB3n de la Junta T\xC3\xA9cnica de Ingenier\xC3\xADa"
+created_at: 2013-04-23 21:50:28 Z
+updated_at: 2013-04-24 17:20:41 Z
+label: "Resoluci\xC3\xB3n de la Junta T\xC3\xA9cnica de Ingenier\xC3\xADa"
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: 
+hint: "Requerido si el profesional a cargo del dise\xC3\xB1o es una empresa (persona jur\xC3\xADdica)"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 18

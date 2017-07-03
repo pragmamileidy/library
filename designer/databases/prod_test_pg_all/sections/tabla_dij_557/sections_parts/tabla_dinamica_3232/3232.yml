@@ -1,0 +1,19 @@
+--- 
+id: 3232
+section_id: 557
+part_id: 722
+name: "Tabla din\xC3\xA1mica"
+created_at: 2014-06-13 16:24:35 Z
+updated_at: 2014-06-16 14:12:39 Z
+label: Tabla
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

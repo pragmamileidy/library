@@ -1,0 +1,19 @@
+--- 
+id: 3649
+section_id: 374
+part_id: 38
+name: Fotocopia de la cedula de identidad personal del apoderado general autenticada ante el registro civil
+created_at: 2017-02-21 04:29:40.600425 Z
+updated_at: 2017-03-21 21:36:56.855168 Z
+label: "Fotocopia de la c\xC3\xA9dula de identidad personal del apoderado general autenticada ante el registro civil"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: En el caso de extranjeros los pasaportes deben ser autenticados ante la respectiva embajada o consulado.
+help: En el caso de extranjeros los pasaportes deben ser autenticados ante la respectiva embajada o consulado.
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

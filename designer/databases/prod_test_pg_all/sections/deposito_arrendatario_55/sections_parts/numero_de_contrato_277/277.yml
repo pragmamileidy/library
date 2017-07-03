@@ -1,0 +1,19 @@
+--- 
+id: 277
+section_id: 55
+part_id: 51
+name: "N\xC3\xBAmero de contrato"
+created_at: 2011-11-14 16:27:19 Z
+updated_at: 2012-06-14 21:56:16 Z
+label: "N\xC3\xBAmero de contrato"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"239\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

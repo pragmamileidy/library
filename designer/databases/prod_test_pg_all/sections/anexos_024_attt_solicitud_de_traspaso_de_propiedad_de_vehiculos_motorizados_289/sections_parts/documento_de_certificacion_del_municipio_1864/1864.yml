@@ -1,0 +1,25 @@
+--- 
+id: 1864
+section_id: 289
+part_id: 328
+name: "Documento de Certificaci\xC3\xB3n del Municipio"
+created_at: 2012-06-13 01:26:23 Z
+updated_at: 2014-04-01 13:59:34 Z
+label: "Documento de Certificaci\xC3\xB3n del Municipio"
+min_instances: 1
+max_instances: 1
+depends_on: "placa = form_data.get(\"datos_del_vehiculo.datos_de_vehiculo.placa\")\r\n\
+  result = WebserviceConsumer.get( '/service/bdin_attt_vehiculo_consulta_vehiculo_por_placa/find.json?placa=' + \"#{placa}\").parsed_response\r\n\
+  vehiculo = result[\"response\"]\r\n\
+  municipio = vehiculo[\"domiciliado_municipio\"].downcase\r\n\
+  muni = [\"panama\",\"panam\xC3\xA1\",\"san miguelito\",\"santiago y david\"]\r\n\
+  \r\n\
+  !muni.include? municipio.to_s"
+manage_as_confidential: false
+include: "{\"1764\":{},\"1765\":{}}"
+hint: "Copia digitalizada del documento de certificaci\xC3\xB3n del municipio"
+help: Favor adjuntar en caso de ser necesario
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 1

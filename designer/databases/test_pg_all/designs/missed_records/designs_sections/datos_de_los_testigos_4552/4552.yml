@@ -1,0 +1,16 @@
+--- 
+id: 4552
+design_id: 255
+section_id: 563
+name: datos de los testigos
+created_at: 2014-11-04 15:52:31 Z
+updated_at: 2014-11-05 21:01:26 Z
+label: Datos de los Testigos
+min_instances: 1
+max_instances: 2
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3378\":{\"3805\":{\"required\":\"required\"},\"2199\":{\"required\":\"required\"},\"3803\":{\"required\":\"required\"},\"3804\":{\"required\":\"required\"},\"3806\":{\"required\":\"required\"},\"3808\":{\"required\":\"required\"},\"3809\":{\"required\":\"required\"},\"3810\":{\"required\":\"required\"},\"3811\":{\"required\":\"required\"}},\"3379\":{\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}}}"
+hint: Por favor ingrese los datos de los testigos para su solicitud
+help: ""
+order_input: 3

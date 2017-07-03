@@ -1,0 +1,17 @@
+--- 
+id: 257
+name: Tipo de productos de empresas farmaceuticas
+description: Son los productos que maneja la empresa farmaceutica
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-11 15:38:01 Z
+updated_at: 2012-05-16 20:55:33 Z
+label: Tipo de productos de empresas farmaceuticas
+hint: ""
+view_class: vertical
+serial: 

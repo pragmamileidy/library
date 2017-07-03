@@ -1,0 +1,16 @@
+--- 
+id: 2383
+design_id: 178
+section_id: 437
+name: Datos del fonograma
+created_at: 2013-01-24 21:08:18 Z
+updated_at: 2015-11-06 17:29:47 Z
+label: Datos del fonograma
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2545\":{\"2864\":{\"required\":\"required\"}},\"2546\":{\"2858\":{\"required\":\"required\"},\"2859\":{\"required\":\"required\"},\"2860\":{\"required\":\"required\"},\"2861\":{\"required\":\"required\"},\"2862\":{\"required\":\"required\"},\"2863\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

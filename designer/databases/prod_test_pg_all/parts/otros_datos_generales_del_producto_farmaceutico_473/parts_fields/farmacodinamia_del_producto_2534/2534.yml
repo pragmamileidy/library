@@ -1,0 +1,30 @@
+--- 
+id: 2534
+part_id: 473
+field_id: 17
+name: Farmacodinamia del Producto
+created_at: 2012-11-20 20:45:09 Z
+updated_at: 2017-06-04 00:24:40.446487 Z
+label: Farmacodinamia del Producto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 759c36a0-1b0e-4fac-bede-ad7ace4d842f
+version: 20170603-202440

@@ -1,0 +1,19 @@
+--- 
+id: 1205
+section_id: 57
+part_id: 51
+name: Departamento
+created_at: 2012-04-27 15:21:12 Z
+updated_at: 2012-04-27 15:21:12 Z
+label: Departamento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Indique el Departamento en el cual labora
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

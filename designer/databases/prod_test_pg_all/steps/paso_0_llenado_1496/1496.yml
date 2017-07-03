@@ -1,0 +1,19 @@
+--- 
+id: 1496
+name: Paso 0-llenado
+label: Llenado
+description: ""
+fill_step_id: 742
+created_at: 2013-09-06 17:00:49 Z
+updated_at: 2013-09-06 17:00:49 Z
+include: "{\"3203\":{\"2756\":{\"3130\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3204\":{\"2757\":{\"3125\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3126\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3127\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3128\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3129\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

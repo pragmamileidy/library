@@ -1,0 +1,30 @@
+--- 
+id: 1704
+part_id: 315
+field_id: 83
+name: "S\xC3\x8D/NO"
+created_at: 2012-06-09 22:17:31 Z
+updated_at: 2017-06-04 00:21:51.376644 Z
+label: Respuesta
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b30a2040-81c1-4ed4-bea4-7709ffa8dc6d
+version: 20170603-202151

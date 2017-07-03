@@ -1,0 +1,19 @@
+--- 
+id: 825
+name: Paso 2 - Datos de la Finca
+label: Datos de la Finca
+description: Verifique los Datos de la Finca y realice cambios si es necesario
+fill_step_id: 407
+created_at: 2012-08-16 21:27:44 Z
+updated_at: 2013-01-18 19:40:25 Z
+include: "{\"2299\":{\"2485\":{\"365\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"367\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"366\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2089\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2090\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2091\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2402\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2486\":{\"2818\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2830\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2831\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2487\":{\"2173\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2461\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2488\":{\"2845\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2846\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2847\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2848\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2489\":{\"2093\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2094\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 1 - Datos del Solicitante y Co-Participantes
+next_step: Paso 3 - Datos del Proyecto
+position: 2
+ajax_calls: ""

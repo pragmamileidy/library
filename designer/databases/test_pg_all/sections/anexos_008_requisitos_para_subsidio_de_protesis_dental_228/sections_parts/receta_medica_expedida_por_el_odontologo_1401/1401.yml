@@ -1,0 +1,19 @@
+--- 
+id: 1401
+section_id: 228
+part_id: 38
+name: "Receta m\xC3\xA9dica expedida por el Odont\xC3\xB3logo"
+created_at: 2012-05-10 15:23:01 Z
+updated_at: 2012-05-10 15:23:01 Z
+label: "Receta m\xC3\xA9dica expedida por el Odont\xC3\xB3logo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

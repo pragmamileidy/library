@@ -1,0 +1,17 @@
+--- 
+id: 751
+name: "Indicar a\xC3\xB1o fiscal"
+description: "Indicar a\xC3\xB1o fiscal"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2017-02-26 01:33:25.695869 Z
+updated_at: 2017-02-26 01:33:25.695869 Z
+label: "Indicar a\xC3\xB1o fiscal"
+hint: ""
+view_class: horizontal
+serial: 3094-5641-5819-2808-2669

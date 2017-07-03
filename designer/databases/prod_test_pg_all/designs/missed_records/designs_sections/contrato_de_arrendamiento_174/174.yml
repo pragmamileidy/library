@@ -1,0 +1,16 @@
+--- 
+id: 174
+design_id: 34
+section_id: 54
+name: Contrato de Arrendamiento
+created_at: 2011-11-14 23:57:51 Z
+updated_at: 2012-04-10 18:42:18 Z
+label: Contrato de Arrendamiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{}"
+hint: ""
+help: ""
+order_input: 1

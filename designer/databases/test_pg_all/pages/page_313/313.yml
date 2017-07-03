@@ -1,0 +1,335 @@
+--- 
+id: 313
+position: 3
+selector: "{\"2533\":{\"656\":{\"758\":{},\"759\":{}}},\"2534\":{\"3160\":{\"2951\":{},\"2950\":{},\"2952\":{}},\"2728\":{\"2945\":{},\"2947\":{},\"2948\":{}},\"3161\":{\"2951\":{},\"2950\":{},\"2952\":{}},\"2733\":{\"2945\":{},\"2947\":{},\"2948\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 62px;
+  	left: 691px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 36px;
+  	left: 690px;
+  	width: 311px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacinjuridico_instance_1_ruc {
+  	position: absolute;
+  	top: 941px;
+  	left: 254px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacinjuridico_instance_1_nombre {
+  	position: absolute;
+  	top: 976px;
+  	left: 254px;
+  	width: 535px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacinjuridico_instance_1_direccin {
+  	position: absolute;
+  	top: 1012px;
+  	left: 254px;
+  	width: 684px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacinjuridico_instance_2_ruc {
+  	position: absolute;
+  	top: 1125px;
+  	left: 250px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacinjuridico_instance_2_nombre {
+  	position: absolute;
+  	top: 1161px;
+  	left: 251px;
+  	width: 546px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacinjuridico_instance_2_direccin {
+  	position: absolute;
+  	top: 1196px;
+  	left: 251px;
+  	width: 679px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacin_instance_1_identificacin {
+  	position: absolute;
+  	top: 940px;
+  	left: 254px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacin_instance_1_nombrecompleto {
+  	position: absolute;
+  	top: 976px;
+  	left: 254px;
+  	width: 536px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacin_instance_1_direccin {
+  	position: absolute;
+  	top: 1013px;
+  	left: 255px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacin_instance_2_identificacin {
+  	position: absolute;
+  	top: 1124px;
+  	left: 251px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacin_instance_2_nombrecompleto {
+  	position: absolute;
+  	top: 1160px;
+  	left: 251px;
+  	width: 527px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autoranimacin_instance_2_direccin {
+  	position: absolute;
+  	top: 1196px;
+  	left: 251px;
+  	width: 683px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_2_ruc {
+  	position: absolute;
+  	top: 196px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_2_nombre {
+  	position: absolute;
+  	top: 231px;
+  	left: 272px;
+  	width: 589px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_2_direccin {
+  	position: absolute;
+  	top: 266px;
+  	left: 273px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_3_ruc {
+  	position: absolute;
+  	top: 370px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_3_nombre {
+  	position: absolute;
+  	top: 406px;
+  	left: 268px;
+  	width: 506px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_3_direccin {
+  	position: absolute;
+  	top: 441px;
+  	left: 270px;
+  	width: 683px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_4_ruc {
+  	position: absolute;
+  	top: 547px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_4_nombre {
+  	position: absolute;
+  	top: 582px;
+  	left: 270px;
+  	width: 524px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_4_direccin {
+  	position: absolute;
+  	top: 619px;
+  	left: 271px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_5_ruc {
+  	position: absolute;
+  	top: 719px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_5_nombre {
+  	position: absolute;
+  	top: 755px;
+  	left: 271px;
+  	width: 638px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseojuridico_instance_5_direccin {
+  	position: absolute;
+  	top: 791px;
+  	left: 272px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_2_identificacin {
+  	position: absolute;
+  	top: 195px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_2_nombrecompleto {
+  	position: absolute;
+  	top: 230px;
+  	left: 273px;
+  	width: 587px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_2_direccin {
+  	position: absolute;
+  	top: 265px;
+  	left: 273px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_3_identificacin {
+  	position: absolute;
+  	top: 369px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_3_nombrecompleto {
+  	position: absolute;
+  	top: 405px;
+  	left: 269px;
+  	width: 504px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_3_direccin {
+  	position: absolute;
+  	top: 441px;
+  	left: 270px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_4_identificacin {
+  	position: absolute;
+  	top: 546px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_4_nombrecompleto {
+  	position: absolute;
+  	top: 582px;
+  	left: 270px;
+  	width: 524px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_4_direccin {
+  	position: absolute;
+  	top: 618px;
+  	left: 270px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_5_identificacin {
+  	position: absolute;
+  	top: 719px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_5_nombrecompleto {
+  	position: absolute;
+  	top: 755px;
+  	left: 271px;
+  	width: 639px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanatural_autordiseo_instance_5_direccin {
+  	position: absolute;
+  	top: 791px;
+  	left: 271px;
+  	width: 679px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 129
+created_at: 2013-06-03 16:29:47 Z
+updated_at: 2014-04-29 20:16:38 Z
+instances_selector: "{\"2533\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2534\":{\"value\":\"\",\"3160\":{\"value\":\"1,2\",\"2951\":{\"value\":\"\"},\"2950\":{\"value\":\"\"},\"2952\":{\"value\":\"\"}},\"2728\":{\"value\":\"1,2\",\"2945\":{\"value\":\"\"},\"2947\":{\"value\":\"\"},\"2948\":{\"value\":\"\"}},\"3161\":{\"value\":\"2,5\",\"2951\":{\"value\":\"\"},\"2950\":{\"value\":\"\"},\"2952\":{\"value\":\"\"}},\"2733\":{\"value\":\"2,5\",\"2945\":{\"value\":\"\"},\"2947\":{\"value\":\"\"},\"2948\":{\"value\":\"\"}}}}"
+size: 

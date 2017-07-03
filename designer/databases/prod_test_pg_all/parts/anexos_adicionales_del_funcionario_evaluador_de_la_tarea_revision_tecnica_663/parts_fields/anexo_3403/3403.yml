@@ -1,0 +1,30 @@
+--- 
+id: 3403
+part_id: 663
+field_id: 31
+name: Anexo
+created_at: 2013-07-31 19:46:33 Z
+updated_at: 2017-06-04 00:23:01.945492 Z
+label: Anexo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fc46e2e6-c378-4b0d-9cbb-6092c8a4392f
+version: 20170603-202301

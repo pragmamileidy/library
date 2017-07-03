@@ -1,0 +1,30 @@
+--- 
+id: 986
+part_id: 195
+field_id: 31
+name: Licencia de conducir
+created_at: 2012-04-20 16:18:23 Z
+updated_at: 2017-06-04 00:29:56.578766 Z
+label: Licencia de conducir
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d2ba6633-1b4a-4848-a8af-322f809c2731
+version: 20170603-202956

@@ -1,0 +1,19 @@
+--- 
+id: 1156
+section_id: 190
+part_id: 38
+name: "Resultados de Prueba Psicol\xC3\xB3gica"
+created_at: 2012-04-22 16:28:23 Z
+updated_at: 2012-04-22 16:28:23 Z
+label: "Resultados de Prueba Psicol\xC3\xB3gica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

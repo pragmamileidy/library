@@ -1,0 +1,30 @@
+--- 
+id: 1524
+part_id: 277
+field_id: 83
+name: Necesita capacitarse
+created_at: 2012-06-01 15:05:06 Z
+updated_at: 2017-06-04 00:31:55.669301 Z
+label: Necesita capacitarse
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 29
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9193d104-a4b9-4d90-be80-79db0d77816e
+version: 20170603-203155

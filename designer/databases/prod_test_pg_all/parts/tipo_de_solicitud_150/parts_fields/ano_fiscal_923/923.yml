@@ -1,0 +1,30 @@
+--- 
+id: 923
+part_id: 150
+field_id: 60
+name: "A\xC3\xB1o Fiscal"
+created_at: 2012-04-05 12:48:26 Z
+updated_at: 2017-06-04 00:28:03.426266 Z
+label: "A\xC3\xB1o Fiscal"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fe13f30f-82f1-45b4-9beb-221e56ac7187
+version: 20170603-202803

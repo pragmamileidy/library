@@ -1,0 +1,30 @@
+--- 
+id: 1178
+part_id: 228
+field_id: 27
+name: " Reembolso solicitado"
+created_at: 2012-05-04 19:32:17 Z
+updated_at: 2017-06-04 00:28:06.111408 Z
+label: " Reembolso solicitado"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 58ad4745-6ae6-4761-90c4-ae6f24f72e78
+version: 20170603-202806

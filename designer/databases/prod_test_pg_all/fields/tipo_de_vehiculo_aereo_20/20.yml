@@ -1,0 +1,40 @@
+--- 
+id: 20
+name: "Tipo de Veh\xC3\xADculo A\xC3\xA9reo"
+description: "Este es un campo de selecci\xC3\xB3n en donde se podr\xC3\xA1n eligir de los siguientes valores:\r\n\
+  Monomotor\r\n\
+  Multimotor\r\n\
+  Instrumento (Validar)\r\n\
+  Planeador\r\n\
+  Dirigible\r\n\
+  Globo\r\n\
+  Avi\xC3\xB3n Sustentado por Potencia\r\n\
+  Convalidaci\xC3\xB3n (Validar)\r\n\
+  Helicoptero\r\n\
+  Ultraliviano\r\n"
+version: 
+status: Draft
+label: "Tipo de Veh\xC3\xADculo A\xC3\xA9reo"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-02 16:03:15 Z
+updated_at: 2011-11-11 20:06:26 Z
+values_list: "\"Monomotor\",\"Multimotor\",\"Instrumento (Validar)\",\"Planeador\",\"Dirigible\",\"Globo\",\"Avi\xC3\xB3n Sustentado por Potencia\",\"Convalidaci\xC3\xB3n (Validar)\",\"Helicoptero\",\"Ultraliviano\"\r\n"
+keys_list: ""
+field_type: 
+view_class: 
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: 
+format: 
+kind_of_list: 
+list_code: 
+serial: 

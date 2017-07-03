@@ -1,0 +1,30 @@
+--- 
+id: 3618
+part_id: 51
+field_id: 10
+name: Nombre de la empresa
+created_at: 2014-06-03 13:48:19 Z
+updated_at: 2017-06-04 00:23:16.583415 Z
+label: Nombre de la Empresa
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Introduzca el nombre de la empresa
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a9d98d96-3e26-419d-ad8f-88603fa9e2e2
+version: 20170603-202316

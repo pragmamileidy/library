@@ -1,0 +1,32 @@
+--- 
+id: 2076
+part_id: 387
+field_id: 186
+name: "Aprobaci\xC3\xB3n/Re-Aprobaci\xC3\xB3n"
+created_at: 2012-07-20 15:57:00 Z
+updated_at: 2017-06-04 00:22:04.467876 Z
+label: Tipo de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "Indique el tipo de la solicitud a ejecutar:\r\n\
+  \xE2\x80\xA2\tAprobaci\xC3\xB3n \r\n\
+  \xE2\x80\xA2\tRe-aprobaci\xC3\xB3n \r\n"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d5f1fde6-305a-4699-b00b-db8998940930
+version: 20170603-202204

@@ -1,0 +1,30 @@
+--- 
+id: 2929
+part_id: 539
+field_id: 242
+name: "Tipo identificaci\xC3\xB3n"
+created_at: 2013-02-28 18:24:35 Z
+updated_at: 2017-06-04 00:22:35.118643 Z
+label: Tipo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4a925210-77bc-41fd-8ef6-01ea56eb88e8
+version: 20170603-202235

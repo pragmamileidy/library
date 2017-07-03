@@ -1,0 +1,30 @@
+--- 
+id: 1853
+part_id: 349
+field_id: 31
+name: "C\xC3\xA9dula de Identidad Personal del representante Legal del due\xC3\xB1o del auto"
+created_at: 2012-06-15 18:04:27 Z
+updated_at: 2017-06-04 00:21:56.573309 Z
+label: "C\xC3\xA9dula de Identidad Personal del representante Legal del due\xC3\xB1o del auto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fbd61b0c-a0a0-4959-8f66-c07d80a2ed13
+version: 20170603-202156

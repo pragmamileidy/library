@@ -1,0 +1,30 @@
+--- 
+id: 3113
+part_id: 589
+field_id: 10
+name: "N\xC3\xBAmero documento"
+created_at: 2013-04-01 21:21:24 Z
+updated_at: 2017-06-04 00:24:55.948928 Z
+label: "N\xC3\xBAmero de Documento"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d5223590-77ff-48d0-9e85-d6f471240c1d
+version: 20170603-202455

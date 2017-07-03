@@ -1,0 +1,30 @@
+--- 
+id: 53
+part_id: 6
+field_id: 2
+name: app_id
+created_at: 2017-01-13 21:29:12.204897 Z
+updated_at: 2017-01-13 21:29:12.204897 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6306eaa0-9e59-4429-8486-78fbdd0f0bbd
+version: 20170113-212912

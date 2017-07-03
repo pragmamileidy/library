@@ -1,0 +1,30 @@
+--- 
+id: 297
+name: payment order
+description: orden de pago "config rates"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-07-22 22:12:40 Z
+updated_at: 2013-09-06 18:44:25 Z
+values_list: "\"Antes de Recepci\xC3\xB3n\",\"Despu\xC3\xA9s de Recepci\xC3\xB3n\""
+keys_list: "\"Antes de Recepci\xC3\xB3n\",\"Despu\xC3\xA9s de Recepci\xC3\xB3n\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

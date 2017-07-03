@@ -1,0 +1,19 @@
+--- 
+id: 3245
+section_id: 476
+part_id: 38
+name: Certificado de Nacimiento
+created_at: 2014-06-19 21:14:52 Z
+updated_at: 2014-06-19 21:14:52 Z
+label: Certificado de Nacimiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor adjuntar en caso de ser menor de edad
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

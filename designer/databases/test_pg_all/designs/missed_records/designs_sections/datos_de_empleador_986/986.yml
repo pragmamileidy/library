@@ -1,0 +1,16 @@
+--- 
+id: 986
+design_id: 93
+section_id: 108
+name: Datos de Empleador
+created_at: 2012-05-10 19:15:26 Z
+updated_at: 2014-06-03 14:55:57 Z
+label: Datos de Empleador
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"595\":{\"566\":{\"required\":\"required\"},\"1324\":{\"required\":\"required\"},\"3619\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

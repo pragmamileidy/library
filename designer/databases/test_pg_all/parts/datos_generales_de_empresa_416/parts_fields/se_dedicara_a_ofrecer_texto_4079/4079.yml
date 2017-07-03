@@ -1,0 +1,30 @@
+--- 
+id: 4079
+part_id: 416
+field_id: 10
+name: Se dedicara a ofrecer texto
+created_at: 2017-02-17 00:23:49.620059 Z
+updated_at: 2017-06-04 00:30:27.860870 Z
+label: "Se dedicar\xC3\xA1 a ofrecer"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 991143c7-332c-49ba-aecc-d80fc9082c5c
+version: 20170603-203027

@@ -1,0 +1,19 @@
+--- 
+id: 780
+section_id: 5
+part_id: 173
+name: "Para Alimentaci\xC3\xB3n de Bovinos"
+created_at: 2012-03-27 18:13:51 Z
+updated_at: 2012-04-17 15:09:57 Z
+label: "Para Alimentaci\xC3\xB3n de Bovinos"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 48

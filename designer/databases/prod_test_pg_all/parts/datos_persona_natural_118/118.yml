@@ -1,0 +1,17 @@
+--- 
+id: 118
+name: "Datos Persona Natural "
+description: "Datos b\xC3\xA1sicos de una persona natural"
+version: 
+status: Draft
+help: "Favor ingresar datos b\xC3\xA1sicos de la persona"
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-22 18:00:24 Z
+updated_at: 2015-10-05 19:53:40 Z
+label: Persona Natural
+hint: "Favor ingresar datos b\xC3\xA1sicos de la persona"
+view_class: horizontal
+serial: 1331-8790-1583-3273-9283

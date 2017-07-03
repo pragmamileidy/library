@@ -1,0 +1,30 @@
+--- 
+id: 2630
+part_id: 484
+field_id: 10
+name: InicioPasoRevisarPago
+created_at: 2013-01-14 13:26:44 Z
+updated_at: 2017-06-04 00:26:13.757941 Z
+label: Inicio Paso Revisar Pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Este  campo es utilizado en el proceso 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1d4a106f-cf66-4d3d-b4ba-ed43ee8b9b34
+version: 20170603-202613

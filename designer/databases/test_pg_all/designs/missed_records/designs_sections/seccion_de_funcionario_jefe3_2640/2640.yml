@@ -1,0 +1,20 @@
+--- 
+id: 2640
+design_id: 202
+section_id: 433
+name: "Secci\xC3\xB3n de Funcionario Jefe3"
+created_at: 2013-04-16 03:01:45 Z
+updated_at: 2013-04-16 03:01:45 Z
+label: "Secci\xC3\xB3n de Funcionario - Jefe de Aprobaci\xC3\xB3n de Planos"
+min_instances: 0
+max_instances: 1
+depends_on: "_i = (@task[\"name\"].to_s).split(' ')\r\n\
+  _datoInicial = (_i[0]).downcase\r\n\
+  _datoInicioJefe = (_i[0]).downcase\r\n\
+  _datoJefe = (_i[1]).downcase\r\n\
+  _datoInicial == \"revisi\xC3\xB3n\" or (_datoInicioJefe == \"reparo\" and _datoJefe == \"an\xC3\xA1lisis\") or _datoInicial == \"observaciones\""
+manage_as_confidential: false
+include: "{\"2493\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"},\"2523\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 13

@@ -1,0 +1,17 @@
+--- 
+id: 433
+name: Anexos 022 - SATMP Discapacidad
+description: Anexos 022 - SATMP Discapacidad
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-13 13:45:32 Z
+updated_at: 2012-08-13 13:45:32 Z
+label: Documento sustentador por motivo de Discapacidad
+hint: ""
+view_class: horizontal
+serial: 

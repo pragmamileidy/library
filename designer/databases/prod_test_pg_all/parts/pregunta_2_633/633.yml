@@ -1,0 +1,17 @@
+--- 
+id: 633
+name: Pregunta 2
+description: Pregunta 2
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-11 19:38:40 Z
+updated_at: 2013-06-11 19:48:28 Z
+label: "2.\xC2\xBFTiene conocimiento si la empresa, representantes o alguna sociedad a la que est\xC3\xA1n vinculadas ha sido condenada por cualquier tipo de delito, a\xC3\xBAn cuando le hayan perdonado por indulto, amnist\xC3\xADa u otra figura?"
+hint: ""
+view_class: horizontal
+serial: 

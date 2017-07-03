@@ -1,0 +1,30 @@
+--- 
+id: 3317
+part_id: 635
+field_id: 17
+name: Explique
+created_at: 2013-06-11 19:50:08 Z
+updated_at: 2017-06-04 00:25:04.342837 Z
+label: Explique
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 560a92fc-6545-4889-89b6-5d8542b8fb9b
+version: 20170603-202504

@@ -1,0 +1,19 @@
+--- 
+id: 834
+section_id: 152
+part_id: 50
+name: "Identificaci\xC3\xB3n"
+created_at: 2012-03-28 01:30:35 Z
+updated_at: 2012-08-27 19:55:30 Z
+label: "Identificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor especificar la cantidad solicitada
+help: Favor especificar la cantidad solicitada
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 25

@@ -1,0 +1,16 @@
+--- 
+id: 2818
+design_id: 212
+section_id: 270
+name: Actividades a Desarrollar y sus Detalles
+created_at: 2013-05-13 16:41:36 Z
+updated_at: 2013-05-13 16:41:36 Z
+label: Actividades a Desarrollar y sus Detalles
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1785\":{\"1702\":{\"required\":\"required\"},\"1701\":{\"required\":\"required\"},\"1307\":{\"required\":\"required\"},\"1318\":{\"required\":\"required\"},\"1319\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 8

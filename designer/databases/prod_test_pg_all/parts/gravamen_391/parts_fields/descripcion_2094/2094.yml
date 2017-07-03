@@ -1,0 +1,30 @@
+--- 
+id: 2094
+part_id: 391
+field_id: 17
+name: "Descripci\xC3\xB3n"
+created_at: 2012-07-23 01:38:11 Z
+updated_at: 2017-06-04 00:24:26.555564 Z
+label: "Descripci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9d490097-900e-4a9f-991b-d97dfb33aa2a
+version: 20170603-202426

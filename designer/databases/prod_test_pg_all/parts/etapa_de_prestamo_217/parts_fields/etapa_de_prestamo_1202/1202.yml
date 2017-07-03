@@ -1,0 +1,30 @@
+--- 
+id: 1202
+part_id: 217
+field_id: 85
+name: "Etapa de Pr\xC3\xA9stamo"
+created_at: 2012-05-06 00:09:41 Z
+updated_at: 2017-06-04 00:21:36.230828 Z
+label: "Etapa de Pr\xC3\xA9stamo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique en cu\xC3\xA1l etapa se encuentra el pr\xC3\xA9stamo"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f2dda758-ab9d-4163-9b02-0285c461e880
+version: 20170603-202136

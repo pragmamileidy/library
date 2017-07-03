@@ -1,0 +1,16 @@
+--- 
+id: 2204
+design_id: 168
+section_id: 337
+name: Datos de la Finca
+created_at: 2012-10-29 15:52:06 Z
+updated_at: 2012-10-29 15:52:06 Z
+label: Datos de la Finca
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2031\":{\"365\":{\"required\":\"required\"},\"367\":{\"required\":\"required\"},\"366\":{\"required\":\"required\"},\"2088\":{\"required\":\"required\"},\"2089\":{\"required\":\"required\"},\"2090\":{\"required\":\"required\"},\"2091\":{\"required\":\"required\"}},\"2032\":{\"574\":{\"required\":\"required\"},\"632\":{\"required\":\"required\"},\"633\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 14

@@ -1,0 +1,30 @@
+--- 
+id: 3529
+part_id: 692
+field_id: 31
+name: "Certificaci\xC3\xB3n del Ingeniero dise\xC3\xB1ador"
+created_at: 2014-02-18 15:35:55 Z
+updated_at: 2017-06-04 00:23:12.211462 Z
+label: "Certificaci\xC3\xB3n del Ingeniero dise\xC3\xB1ador"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ba1a4fd5-c948-4808-a438-7f92ebbe7370
+version: 20170603-202312

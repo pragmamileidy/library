@@ -1,0 +1,30 @@
+--- 
+id: 2371
+part_id: 441
+field_id: 211
+name: Tipo de Solicitud MUNICIPIO
+created_at: 2012-08-14 14:47:21 Z
+updated_at: 2017-06-04 00:22:14.420066 Z
+label: Tipo de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2ef62c72-7834-43a7-839d-7124085ea3f4
+version: 20170603-202214

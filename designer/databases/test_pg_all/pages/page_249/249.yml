@@ -1,0 +1,151 @@
+--- 
+id: 249
+position: 3
+selector: "{\"2628\":{\"656\":{\"758\":{},\"759\":{}}},\"2639\":{\"2558\":{\"3101\":{},\"2851\":{},\"2853\":{},\"2854\":{}},\"2559\":{\"3101\":{},\"2851\":{},\"2853\":{},\"2854\":{}},\"2560\":{\"3101\":{},\"2851\":{},\"2853\":{},\"2854\":{}},\"2561\":{\"3101\":{},\"2851\":{},\"2853\":{},\"2854\":{}},\"2562\":{\"3101\":{},\"2851\":{},\"2853\":{},\"2854\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n  \r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xC3\xA1l es el formato b\xC3\xA1sico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xC3\xBAn no se han definido */\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 83px;\r\n\
+  \tleft: 809px;\r\n\
+  \twidth: 238px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 55px;\r\n\
+  \tleft: 812px;\r\n\
+  \twidth: 233px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora7_nombredelaentidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 219px;\r\n\
+  \tleft: 276px;\r\n\
+  \twidth: 506px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora7_usuario {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 260px;\r\n\
+  \tleft: 274px;\r\n\
+  \twidth: 275px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora7_nmerodeobservacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 262px;\r\n\
+  \tleft: 784px;\r\n\
+  \twidth: 263px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora7_observacionesyrecomendacionesparaelsolicitante {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 351px;\r\n\
+  \tleft: 31px;\r\n\
+  \twidth: 1014px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 41px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora8_nombredelaentidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 459px;\r\n\
+  \tleft: 275px;\r\n\
+  \twidth: 507px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora8_usuario {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 502px;\r\n\
+  \tleft: 272px;\r\n\
+  \twidth: 280px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora8_nmerodeobservacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 502px;\r\n\
+  \tleft: 783px;\r\n\
+  \twidth: 263px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora8_observacionesyrecomendacionesparaelsolicitante {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 585px;\r\n\
+  \tleft: 29px;\r\n\
+  \twidth: 1016px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 48px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora9_nombredelaentidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 711px;\r\n\
+  \tleft: 277px;\r\n\
+  \twidth: 505px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora9_usuario {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 756px;\r\n\
+  \tleft: 275px;\r\n\
+  \twidth: 273px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora9_nmerodeobservacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 755px;\r\n\
+  \tleft: 788px;\r\n\
+  \twidth: 257px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora9_observacionesyrecomendacionesparaelsolicitante {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 843px;\r\n\
+  \tleft: 30px;\r\n\
+  \twidth: 1018px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 43px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora10_nombredelaentidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 953px;\r\n\
+  \tleft: 278px;\r\n\
+  \twidth: 505px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora10_usuario {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 994px;\r\n\
+  \tleft: 277px;\r\n\
+  \twidth: 275px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora10_nmerodeobservacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 995px;\r\n\
+  \tleft: 786px;\r\n\
+  \twidth: 261px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora10_observacionesyrecomendacionesparaelsolicitante {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1081px;\r\n\
+  \tleft: 32px;\r\n\
+  \twidth: 1014px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 44px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora11_nombredelaentidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1193px;\r\n\
+  \tleft: 276px;\r\n\
+  \twidth: 505px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora11_usuario {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1234px;\r\n\
+  \tleft: 277px;\r\n\
+  \twidth: 273px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora11_nmerodeobservacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1236px;\r\n\
+  \tleft: 785px;\r\n\
+  \twidth: 261px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora11_observacionesyrecomendacionesparaelsolicitante {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1315px;\r\n\
+  \tleft: 31px;\r\n\
+  \twidth: 1017px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 52px;\r\n  }\r\n"
+override_render: false
+html_render: 
+print_design_id: 110
+created_at: 2013-04-16 03:01:45 Z
+updated_at: 2013-04-16 03:01:45 Z
+instances_selector: "{\"2331\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2407\":{\"value\":\"\",\"2558\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"2854\":{\"value\":\"\"}},\"2559\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"2854\":{\"value\":\"\"}},\"2560\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"2854\":{\"value\":\"\"}},\"2561\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"2854\":{\"value\":\"\"}},\"2562\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"2854\":{\"value\":\"\"}}}}"
+size: 

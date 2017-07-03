@@ -1,0 +1,19 @@
+--- 
+id: 864
+section_id: 153
+part_id: 51
+name: Provincia
+created_at: 2012-03-28 17:36:59 Z
+updated_at: 2012-05-21 15:51:46 Z
+label: Provincia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 14

@@ -1,0 +1,30 @@
+--- 
+id: 2530
+part_id: 471
+field_id: 17
+name: "F\xC3\xB3rmula Cualitativa y Componentes Excipientes "
+created_at: 2012-11-20 20:05:24 Z
+updated_at: 2017-06-04 00:24:40.033366 Z
+label: Cualitativa y Componentes de Excipientes
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique la descripci\xC3\xB3n de componentes de excipientes del producto farmac\xC3\xA9utico"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 26add945-4d0b-4caa-a5e5-adc88d0bbbcb
+version: 20170603-202440

@@ -1,0 +1,30 @@
+--- 
+id: 231
+part_id: 47
+field_id: 10
+name: Clave Inicial
+created_at: 2011-11-08 17:08:12 Z
+updated_at: 2017-06-04 00:28:43.763227 Z
+label: Clave Inicial
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1e635839-e626-412f-81aa-03e8a2b2782c
+version: 20170603-202843

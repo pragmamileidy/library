@@ -1,0 +1,19 @@
+--- 
+id: 3200
+name: Producto
+label: Producto
+description: ""
+fill_step_id: 1712
+created_at: 2015-11-11 16:01:52.292443 Z
+updated_at: 2015-11-11 16:01:52.340271 Z
+include: "{\"4989\":{\"618\":{\"157\":{\"views\":\"default\"},\"327\":{\"views\":\"default\"}},\"619\":{\"651\":{\"views\":\"default\"},\"652\":{\"views\":\"default\"},\"653\":{\"views\":\"default\"},\"654\":{\"views\":\"default\"},\"655\":{\"views\":\"default\"},\"656\":{\"views\":\"default\"},\"657\":{\"views\":\"default\"},\"658\":{\"views\":\"default\"},\"659\":{\"views\":\"default\"},\"660\":{\"views\":\"default\"},\"661\":{\"views\":\"default\"},\"662\":{\"views\":\"default\"},\"663\":{\"views\":\"default\"},\"664\":{\"views\":\"default\"},\"665\":{\"views\":\"default\"},\"666\":{\"views\":\"default\"},\"667\":{\"views\":\"default\"},\"668\":{\"views\":\"default\"}}}}"
+allowed_next_to_steps: ,Anexos
+allowed_back_to_steps: ,Solicitante,Registrante,Fabricante,Empresa Importadora
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Empresa Importadora
+next_step: Anexos
+position: 4
+ajax_calls: 

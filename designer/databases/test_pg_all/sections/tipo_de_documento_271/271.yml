@@ -1,0 +1,17 @@
+--- 
+id: 271
+name: Tipo de Documento
+description: "Selecci\xC3\xB3n entre RUC, C\xC3\xA9dula y Pasaporte. N\xC3\xBAmero de documento"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-08 14:39:03 Z
+updated_at: 2014-11-28 20:11:55 Z
+status: Draft
+label: Tipo de Documento
+hint: ""
+serial: 2235-3084-3990-5936-2361

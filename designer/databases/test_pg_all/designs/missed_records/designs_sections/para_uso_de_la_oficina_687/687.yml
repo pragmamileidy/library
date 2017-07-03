@@ -1,0 +1,16 @@
+--- 
+id: 687
+design_id: 64
+section_id: 186
+name: Para uso de la Oficina
+created_at: 2012-04-20 04:27:16 Z
+updated_at: 2012-06-03 14:54:53 Z
+label: Para uso de la Oficina
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1716\":{\"1427\":{\"required\":\"required\"},\"1428\":{\"required\":\"required\"},\"1429\":{\"required\":\"required\"},\"1430\":{\"required\":\"required\"},\"1431\":{\"required\":\"required\"},\"1432\":{\"required\":\"required\"},\"1433\":{\"required\":\"required\"},\"1434\":{\"required\":\"required\"},\"1560\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

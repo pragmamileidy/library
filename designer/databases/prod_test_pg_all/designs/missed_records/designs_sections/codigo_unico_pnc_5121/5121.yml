@@ -1,0 +1,16 @@
+--- 
+id: 5121
+design_id: 281
+section_id: 589
+name: Codigo unico PNC
+created_at: 2016-03-01 19:53:51.556577 Z
+updated_at: 2016-03-01 19:53:51.556577 Z
+label: "C\xC3\xB3digo \xC3\xBAnico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3599\":{\"3995\":{\"required\":\"required\"},\"3996\":{\"required\":\"unrequired\"},\"3997\":{\"required\":\"unrequired\"},\"3998\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 14

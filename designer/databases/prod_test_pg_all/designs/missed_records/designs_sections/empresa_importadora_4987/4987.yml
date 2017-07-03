@@ -1,0 +1,17 @@
+--- 
+id: 4987
+design_id: 275
+section_id: 2
+name: Empresa Importadora
+created_at: 2015-11-11 16:01:52.255571 Z
+updated_at: 2015-11-11 16:01:52.255571 Z
+label: Empresa Importadora
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"190\":{\"566\":{\"required\":\"required\"},\"567\":{\"required\":\"required\"}},\"555\":{\"239\":{\"required\":\"required\"}}}"
+hint: ""
+help: "Todo establecimiento que importe, almacene y distribuya productos de uso y consumo animal requiere de una certificaci\xC3\xB3n Sanitaria por la Direcci\xC3\xB3n Nacional de Salud Animal.\r\n\
+  Si no tiene la Certificaci\xC3\xB3n Sanitaria solicitarla al Departamento de Registro de la Direcci\xC3\xB3n Nacional de Salud Animal. 266.2303 o 266-1812\r\n"
+order_input: 7

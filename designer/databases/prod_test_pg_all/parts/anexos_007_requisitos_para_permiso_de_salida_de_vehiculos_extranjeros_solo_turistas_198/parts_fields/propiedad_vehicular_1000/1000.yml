@@ -1,0 +1,30 @@
+--- 
+id: 1000
+part_id: 198
+field_id: 31
+name: Propiedad vehicular
+created_at: 2012-04-20 16:28:19 Z
+updated_at: 2017-06-04 00:27:00.967476 Z
+label: Propiedad vehicular
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 78dfe307-7d05-4597-8393-72543714ce72
+version: 20170603-202700

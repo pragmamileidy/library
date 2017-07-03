@@ -1,0 +1,19 @@
+--- 
+id: 1772
+section_id: 264
+part_id: 38
+name: Timbres (Si fueron pegados en el contrato, presentar copia del mismo)
+created_at: 2012-06-05 17:06:54 Z
+updated_at: 2013-08-12 22:01:29 Z
+label: Timbres (Si fueron pegados en el contrato, presentar copia del mismo)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: true
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

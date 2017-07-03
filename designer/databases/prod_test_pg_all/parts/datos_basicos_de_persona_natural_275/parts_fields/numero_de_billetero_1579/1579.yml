@@ -1,0 +1,30 @@
+--- 
+id: 1579
+part_id: 275
+field_id: 130
+name: "N\xC3\xBAmero de Billetero"
+created_at: 2012-06-05 15:14:11 Z
+updated_at: 2017-06-04 00:25:53.428630 Z
+label: Billetero No.
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Favor introduzca un N\xC3\xBAmero de Billetero v\xC3\xA1lido. Ejemplo: 05-9999"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 1
+max_value: 
+format: /[^a-z]$/
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1bbfc181-4e55-4704-b51a-cac32a237b6d
+version: 20170603-202553

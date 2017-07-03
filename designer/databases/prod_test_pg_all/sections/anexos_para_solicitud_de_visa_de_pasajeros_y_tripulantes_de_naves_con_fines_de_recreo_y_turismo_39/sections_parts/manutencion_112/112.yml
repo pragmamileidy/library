@@ -1,0 +1,27 @@
+--- 
+id: 112
+section_id: 39
+part_id: 38
+name: "Manutenci\xC3\xB3n"
+created_at: 2011-11-09 16:19:55 Z
+updated_at: 2012-04-10 18:42:29 Z
+label: "Manutenci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Prueba de solvencia econ\xC3\xB3mica para su manutenci\xC3\xB3n  o sustento"
+help: "Prueba de solvencia econ\xC3\xB3mica para su manutenci\xC3\xB3n  o sustento, seg\xC3\xBAn el t\xC3\xA9rmino de estad\xC3\xADa en el pa\xC3\xADs, la \r\n\
+  cual no podr\xC3\xA1 ser menor a B/500.00 (Quinientos balboas por mes o fracci\xC3\xB3n),que podr\xC3\xA1 acreditarse con \r\n\
+  uno o varios de los siguientes documentos: \r\n\
+  A proof of economic solvency for support, or for maintenance, according the permanency in the country, which cannot be less \r\n\
+  than B/ 500.00 (Five hundred balboas) per month or fraction, which can be credited with one , or several of the following \r\n\
+  documents: \r\n\
+  a. Cheques viajeros a nombre del solicitante. \r\n     Travelers checks in the name of the person requesting the visa. \r\n\
+  b. Tarjeta de cr\xC3\xA9dito del solicitante con el estado de cuenta de los \xC3\xBAltimos tres meses. \r\n    Credit card from the person requesting the  visa,  with a bank statement from  the last three   months. \r\n\
+  c. Otro medio que pruebe razonablemente sus ingresos, aceptable para el Servicio Nacional de Migraci\xC3\xB3n \r\n    Any other reasonable means, acceptable to the National Immigration Service, acknowledging the source of incomes.  "
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 6

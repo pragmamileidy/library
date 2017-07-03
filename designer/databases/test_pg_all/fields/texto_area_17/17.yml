@@ -1,0 +1,30 @@
+--- 
+id: 17
+name: "Texto - Area "
+description: "Campo tipo \xC3\x81rea de Texto"
+version: 
+status: Draft
+label: "Texto - Area "
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-02 14:15:42 Z
+updated_at: 2015-07-22 16:47:18 Z
+values_list: ""
+keys_list: ""
+field_type: text
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: /^[\s\S]$/
+format: /^[\s\S]$/
+kind_of_list: fix_values
+list_code: ""
+serial: 8180-8361-1371-4094-9926

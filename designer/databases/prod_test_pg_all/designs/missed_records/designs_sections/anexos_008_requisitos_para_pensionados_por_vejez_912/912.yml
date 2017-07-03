@@ -1,0 +1,16 @@
+--- 
+id: 912
+design_id: 86
+section_id: 218
+name: Anexos 008- Requisitos para pensionados por Vejez
+created_at: 2012-05-03 19:21:47 Z
+updated_at: 2015-09-15 13:46:38 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1312\":{\"210\":{\"required\":\"required\"}},\"1313\":{\"210\":{\"required\":\"required\"}},\"1314\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 13

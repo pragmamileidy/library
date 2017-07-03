@@ -1,0 +1,21 @@
+--- 
+id: 2762
+design_id: 210
+section_id: 346
+name: "Evaluaci\xC3\xB3n del MIVIOT"
+created_at: 2013-05-08 14:40:58 Z
+updated_at: 2013-05-08 14:40:58 Z
+label: "Evaluaci\xC3\xB3n del MIVIOT"
+min_instances: 0
+max_instances: 1
+depends_on: |
+  _i = (@task["name"].to_s).split(' ')
+  _datoFinal = (_i[_i.length-1]).downcase
+  _datoInicial = (_i[0]).downcase
+  _datoFinal  == "miviot" or _datoInicial == "cerrar" or _datoInicial == "reparar"
+
+manage_as_confidential: false
+include: "{\"2043\":{\"2120\":{\"required\":\"required\"},\"2123\":{\"required\":\"required\"}},\"2044\":{\"2124\":{\"required\":\"unrequired\"},\"2125\":{\"required\":\"unrequired\"}},\"2045\":{\"2126\":{\"required\":\"unrequired\"},\"2127\":{\"required\":\"unrequired\"}},\"2046\":{\"2129\":{\"required\":\"required\"},\"2130\":{\"required\":\"required\"},\"2542\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 26

@@ -1,0 +1,30 @@
+--- 
+id: 3035
+part_id: 572
+field_id: 260
+name: Indique Valor
+created_at: 2013-03-13 21:32:56 Z
+updated_at: 2017-06-04 00:22:41.300901 Z
+label: Indique Valor
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique si el acto o contrato es: Gratuito, Oneroso o de Cuant\xC3\xADa no Determinada."
+help: "Si el contrato es oneroso, indicar la cuant\xC3\xADa si la misma es determinada y aparece establecida en el acto o  contrato (Las cifras consignadas son de confidencialidad de la Direcci\xC3\xB3n)"
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 817dfa28-a7e7-4702-bac5-6e180a940cd3
+version: 20170603-202241

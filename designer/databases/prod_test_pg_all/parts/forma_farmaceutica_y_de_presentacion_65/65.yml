@@ -1,0 +1,17 @@
+--- 
+id: 65
+name: "Forma Farmac\xC3\xA9utica y de Presentaci\xC3\xB3n"
+description: "Parte que contiene la informaci\xC3\xB3n de presentaci\xC3\xB3n de un producto farmace\xC3\xBAtico"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-10 16:43:22 Z
+updated_at: 2015-10-29 15:25:20 Z
+label: "Forma Farmac\xC3\xA9utica y de Presentaci\xC3\xB3n"
+hint: ""
+view_class: horizontal
+serial: 1998-1350-9426-3327-4924

@@ -1,0 +1,30 @@
+--- 
+id: 113
+name: Tipo de Solicitud de Control Vehicular
+description: Tipo de Solicitud de Control Vehicular
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-21 17:06:56 Z
+updated_at: 2012-07-31 14:03:48 Z
+values_list: "\"Permiso de salida vehicular extranjeros (solo turistas)\", \"Permiso de entrada vehicular extranjeros (solo turistas)\", \"Permiso salida del pa\xC3\xADs - veh\xC3\xADculos locales\", \"Permiso de salida y reexportaci\xC3\xB3n\", \"Permiso de salida sin veh\xC3\xADculo - extranjeros\", \"Permiso para transportistas internacionales\", \"Certificaci\xC3\xB3n de aduanas\""
+keys_list: "\"Permiso de salida vehicular extranjeros (solo turistas)\", \"Permiso de entrada vehicular extranjeros (solo turistas)\", \"Permiso salida del pa\xC3\xADs - veh\xC3\xADculos locales\", \"Permiso de salida y reexportaci\xC3\xB3n\", \"Permiso de salida sin veh\xC3\xADculo - extranjeros\", \"Permiso para transportistas internacionales \", \"Certificaci\xC3\xB3n de aduanas\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

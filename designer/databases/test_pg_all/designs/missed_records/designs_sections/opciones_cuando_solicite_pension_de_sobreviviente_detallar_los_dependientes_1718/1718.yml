@@ -1,0 +1,16 @@
+--- 
+id: 1718
+design_id: 83
+section_id: 353
+name: "OPCIONES / Cuando solicite Pensi\xC3\xB3n de Sobreviviente, detallar los dependientes"
+created_at: 2012-07-27 03:21:08 Z
+updated_at: 2013-06-05 20:56:37 Z
+label: "Dependientes "
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2062\":{\"1323\":{\"required\":\"required\"},\"1374\":{\"required\":\"required\"},\"546\":{\"required\":\"required\"},\"1182\":{\"required\":\"required\"},\"553\":{\"required\":\"required\"},\"2193\":{\"required\":\"required\"}}}"
+hint: ""
+help: "Cuando solicite Pensi\xC3\xB3n de Sobreviviente detalle los dependientes en el siguiente orden: esposa, esposo, compa\xC3\xB1era (o), hijo (s) menor (es) de 18 o mayor (es) 18 a\xC3\xB1os si es (son) inv\xC3\xA1lidos (s)."
+order_input: 12

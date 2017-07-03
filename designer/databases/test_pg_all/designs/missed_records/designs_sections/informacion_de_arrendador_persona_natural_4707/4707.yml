@@ -1,0 +1,16 @@
+--- 
+id: 4707
+design_id: 264
+section_id: 107
+name: "Informaci\xC3\xB3n de Arrendador Persona Natural"
+created_at: 2014-12-18 15:37:20 Z
+updated_at: 2015-01-05 15:17:04 Z
+label: "Informaci\xC3\xB3n del Arrendador"
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: "{\"580\":{\"1461\":{\"required\":\"required\"},\"1981\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"}},\"581\":{\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"583\":{\"required\":\"required\"},\"578\":{\"required\":\"required\"},\"2217\":{\"required\":\"required\"},\"930\":{\"required\":\"unrequired\"},\"585\":{\"required\":\"unrequired\"},\"631\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 2

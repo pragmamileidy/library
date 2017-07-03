@@ -1,0 +1,30 @@
+--- 
+id: 115
+name: "Motivo de certificaci\xC3\xB3n veh\xC3\xADcular"
+description: "Motivo de certificaci\xC3\xB3n veh\xC3\xADcular"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-22 20:16:42 Z
+updated_at: 2012-05-22 20:16:42 Z
+values_list: "\"Salida del pa\xC3\xADs o reexportaci\xC3\xB3n\", \"Traspaso\", \"Correcciones\", \"Cambio de motor y chas\xC3\xADs\", \"Veh\xC3\xADculos exonerados\", \"Solicitar P.A\""
+keys_list: "\"Salida del pa\xC3\xADs o reexportaci\xC3\xB3n\", \"Traspaso\", \"Correcciones\", \"Cambio de motor y chas\xC3\xADs\", \"Veh\xC3\xADculos exonerados\", \"Solicitar P.A\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

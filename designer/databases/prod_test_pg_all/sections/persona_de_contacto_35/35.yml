@@ -1,0 +1,17 @@
+--- 
+id: 35
+name: Persona de contacto
+description: "Secci\xC3\xB3n que contiene informaci\xC3\xB3n de una persona de contacto "
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-08 16:02:45 Z
+updated_at: 2011-11-09 14:43:42 Z
+status: Draft
+label: Contacto
+hint: ""
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 2080
+section_id: 361
+part_id: 416
+name: Datos Generales de Empresa
+created_at: 2012-08-07 21:41:21 Z
+updated_at: 2013-05-23 21:33:09 Z
+label: Datos de la Empresa a Inscribir
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2231\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

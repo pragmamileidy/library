@@ -1,0 +1,17 @@
+--- 
+id: 280
+name: Secundaria
+description: Datos de la Secundaria
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-01 18:52:53 Z
+updated_at: 2012-06-01 18:52:53 Z
+label: Secundaria
+hint: ""
+view_class: horizontal
+serial: 

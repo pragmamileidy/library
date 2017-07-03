@@ -1,0 +1,17 @@
+--- 
+id: 573
+name: Lugar y Fecha de la Firma
+description: Lugar y Fecha de la Firma
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-13 21:37:14 Z
+updated_at: 2013-03-13 21:37:14 Z
+label: Lugar y Fecha de la Firma
+hint: ""
+view_class: horizontal
+serial: 

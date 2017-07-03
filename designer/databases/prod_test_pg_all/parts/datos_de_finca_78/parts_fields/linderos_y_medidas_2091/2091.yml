@@ -1,0 +1,30 @@
+--- 
+id: 2091
+part_id: 78
+field_id: 10
+name: Linderos y Medidas
+created_at: 2012-07-20 21:12:07 Z
+updated_at: 2017-06-04 00:31:15.964465 Z
+label: Linderos y Medidas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 13
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8d493e85-34fb-4a5a-9873-b33a13deb758
+version: 20170603-203115

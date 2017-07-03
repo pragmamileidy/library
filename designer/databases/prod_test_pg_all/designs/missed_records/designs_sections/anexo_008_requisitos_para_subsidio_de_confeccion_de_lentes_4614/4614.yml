@@ -1,0 +1,16 @@
+--- 
+id: 4614
+design_id: 260
+section_id: 216
+name: "Anexo 008- Requisitos para Subsidio de Confecci\xC3\xB3n de Lentes"
+created_at: 2014-12-03 21:01:29 Z
+updated_at: 2014-12-03 21:01:29 Z
+label: "Anexo 008- Requisitos para Subsidio de Confecci\xC3\xB3n de Lentes"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1302\":{\"210\":{\"required\":\"required\"}},\"1303\":{\"210\":{\"required\":\"required\"}},\"1304\":{\"210\":{\"required\":\"required\"}},\"1305\":{\"210\":{\"required\":\"required\"}},\"1306\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

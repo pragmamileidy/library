@@ -1,0 +1,30 @@
+--- 
+id: 3711
+part_id: 720
+field_id: 17
+name: mensaje_sentencia
+created_at: 2014-07-01 21:17:22 Z
+updated_at: 2017-06-04 00:29:49.722058 Z
+label: Tiene sentencias condenatorias
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3c034b58-fa14-4ebf-9363-d03207f552c3
+version: 20170603-202949

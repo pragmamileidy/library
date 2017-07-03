@@ -1,0 +1,357 @@
+--- 
+id: 3239
+name: Paso 1 - Ingresar Datos del Solicitante
+label: "Datos del Solicitante "
+description: "<br/>\r\n\
+  Favor introduzca la informaci\xC3\xB3n b\xC3\xA1sica del tr\xC3\xA1mite para su procesamiento\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 1736
+created_at: 2016-02-23 13:47:28.378466 Z
+updated_at: 2016-04-11 15:57:21.655222 Z
+include: "{\"5107\":{\"3600\":{\"3999\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"4000\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3601\":{\"4001\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4002\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"5052\":{\"3208\":{\"3985\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1883\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3209\":{\"4004\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5102\":{\"2631\":{\"3988\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2632\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5103\":{\"3208\":{\"3985\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1474\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3209\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5070\":{\"3596\":{\"3986\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4008\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"5054\":{\"3208\":{\"3987\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3985\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1474\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3717\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}}},\"5058\":{\"2054\":{\"2164\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2165\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "#::::: Obtener numero consecutivo y crear consecutivo de tramite\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n\
+  if form_data.get(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\").blank?\r\n  result = WebserviceConsumer.get( '/consecutive/generador_pnc/generate.json').parsed_response\r\n  consecutivo = result[\"response\"]\r\n  consecutivo = \"#{@application[\"id\"]}-\"+\"#{consecutivo[\"value\"]}\"\r\n  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\",consecutivo)\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #JA: SETEANDO DATOS DEL SOLICITANTE: QUIEN INICIA EL TR\xC3\x81MITE\r\n\
+  if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n  #LG: AGREGADA VARIABLE numdoc\r\n  numdoc = !@owner[\"national_id\"].blank? ? @owner[\"national_id\"] : @owner[\"passport\"]\r\n\
+  \r\n  form_data.set(\"tipo_de_persona_pnc.es_titular_o_no.cedula\", \"#{numdoc}\")\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_basicos_de_persona_natural.cedula_pasaporte\", \"#{numdoc}\")\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_basicos_de_persona_natural.primer_nombre\", @owner[\"first_name\"])\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_basicos_de_persona_natural.segundo_nombre\", @owner[\"second_name\"])\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_basicos_de_persona_natural.primer_apellido\", @owner[\"last_name\"])\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_basicos_de_persona_natural.segundo_apellido\", @owner[\"second_last_name\"])\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_basicos_de_persona_natural.nacionalidad\", @owner[\"citizen_ship\"])\r\n  #form_data.set(\"datos_del_propietario_tramite_natural.datos_de_ubicacion.direccion\", @owner[\"full_address\"])\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_de_ubicacion.numero_de_telefono\", @owner[\"fixed_number\"])\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_de_ubicacion.correo_electronico\", @owner[\"email\"])\r\n\
+  \r\n\
+  \r\n  ## UTILIZADO PARA PRINT DESIGNS ###\r\n  nombre = \"#{@owner[\"first_name\"]} \"+\"#{@owner[\"second_name\"]} \"+\"#{@owner[\"last_name\"]} \"+\"#{@owner[\"second_last_name\"]} \"\r\n  #LG: SE UTILIZA .squish PARA ELIMINAR LAS CADENAS EN BLANCO DEL LA VARIABLE nombre\r\n  form_data.set(\"datos_del_propietario_tramite_natural.datos_basicos_de_persona_natural.nombre_completo\", nombre.squish)\r\n\
+  else\r\n  ruc = @owner[\"tax_id\"]\r\n  form_data.set(\"datos_del_propietario_tramite_juridico.datos_persona_juridica.nit\",ruc)\r\n  form_data.set(\"datos_del_propietario_tramite_juridico.datos_persona_juridica.nombre\",@owner[\"name\"])\r\n  form_data.set(\"datos_del_propietario_tramite_juridico.datos_de_ubicacion.numero_de_telefono\",@owner[\"fixed_number\"])\r\n  form_data.set(\"datos_del_propietario_tramite_juridico.datos_de_ubicacion.correo_electronico\",@owner[\"email\"])\r\n  #form_data.set(\"datos_del_propietario_tramite_juridico.datos_de_ubicacion.direccion\",@owner[\"full_address\"])\r\n\
+  end\r\n\
+  \r\n\
+  #LG: SETEANDO DATOS DEL PROPIETARIO: DUE\xC3\x91O DEL TR\xC3\x81MITE - A NOMBRE DE QUIEN SE INICIA EL TR\xC3\x81MITE\r\n\
+  idpersona = @application[\"person_id\"].to_s\r\n\
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?person_id=' + \"#{idpersona}&include_all=true\").parsed_response\r\n\
+  hash = result[\"hash\"]\r\n\
+  persona = hash[\"response\"]\r\n\
+  \r\n\
+  form_data.set(\"datos_del_solicitante.datos_basicos_de_persona_natural.cedula_pasaporte\", persona[\"person_gov_id_number\"])\r\n\
+  form_data.set(\"datos_del_solicitante.datos_basicos_de_persona_natural.nombre_completo\", persona[\"name\"])\r\n\
+  #form_data.set(\"datos_del_solicitante.datos_de_ubicacion.direccion\", persona[\"full_address\"])\r\n\
+  form_data.set(\"datos_del_solicitante.datos_de_ubicacion.numero_de_telefono\", persona[\"fixed_number\"])\r\n\
+  form_data.set(\"datos_del_solicitante.datos_de_ubicacion.correo_electronico\", persona[\"email\"])\r\n\
+  \r\n\
+  \r\n\
+  #::::::::::::::DV: Integraci\xC3\xB3n guardar nro de documento Datos de los Titulares::::::::::::::#\r\n\
+  _titular = form_data.get(\"tipo_de_persona_pnc.es_titular_o_no.si_no\")\r\n\
+  if _titular == \"S\xC3\x8D\"\r\n  nro_documento_t = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n  form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\", nro_documento_t)\r\n  nro_doc_t = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n  form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.doc_oculto\",nro_doc_t) \r\n\
+  else \r\n  (1..20).each do |_num|\r\n    nro_documento_d = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\", nro_documento_d)\r\n    nro_doc_d = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.doc_oculto\",nro_doc_d)\r\n  end \r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #::::::::::::::DV: Integraci\xC3\xB3n guardar nro de documento Datos de los Titulares::::::::::::::#\r\n\
+  # _titular = form_data.get(\"tipo_de_persona_pnc.es_titular_o_no.si_no\")\r\n\
+  # if _titular == \"S\xC3\x8D\"\r\n\
+  #   nro_doc_t = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n\
+  #   form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.doc_oculto\",nro_doc_t) \r\n\
+  # else \r\n\
+  #   (1..20).each do |_num|\r\n\
+  #     nro_doc_d = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n\
+  #     form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.doc_oculto\",nro_doc_d)\r\n\
+  #   end \r\n\
+  # end"
+on_transition: "#::::: UN SOLO TITULAR - OnTransition Paso 1:::::#\r\n\
+  _titular = form_data.get(\"tipo_de_persona_pnc.es_titular_o_no.si_no\")\r\n\
+  if _titular == \"S\xC3\x8D\" \r\n  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n    result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{@owner[\"national_id\"]}\")).parsed_response\r\n    titular = result[\"response\"]\r\n    if titular.blank?     \r\n      transition_errors << \"Los datos del Titular no fueron encontrados, por favor verifique.\"\r\n    else\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.tipo_de_documento_el_salvador\",\"Cedula\")\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\",@owner[\"national_id\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_nombre\",titular[\"primerNombre\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_nombre\",titular[\"segundoNombre\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_apellido\",titular[\"primerApellido\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_apellido\",titular[\"segundoApellido\"])\r\n\
+  \r\n      sexo = ((titular[\"sexo\"] == \"F\") || (titular[\"sexo\"] == \"female\")) ? \"Femenino\" : \"Masculino\"\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.sexo\",sexo)\r\n      #form_data.set(\"datos_del_titular_instance_1.datos_de_ubicacion.direccion\",titular[\"direccionNacimiento\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_del_padre.documento_hijo\",titular[\"cedula\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_del_padre.primer_nombre\",titular[\"primerNombrePadre\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_del_padre.segundo_nombre\",titular[\"segundoNombrePadre\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_del_padre.primer_apellido\",titular[\"apellidoPaternoPadre\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_de_la_madre.documento_hijo\",titular[\"cedula\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_de_la_madre.primer_nombre\",titular[\"primerNombreMadre\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_de_la_madre.segundo_nombre\",titular[\"segundoNombreMadre\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_de_la_madre.primer_apellido\",titular[\"apellidoPaternoMadre\"])\r\n      # CONVERSION FECHA DE NACIEMIENTO #\r\n      fecha = titular[\"fechaNacimiento\"]\r\n      fecha_na = Time.parse(fecha).strftime(\"%d-%m-%Y\")\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.fecha_de_nacimiento\",fecha_na)\r\n      # CALCULA EDAD #\r\n      edadt = ((Date.today - fecha.to_date).to_f / 365).to_i\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.edad\",edadt)\r\n\
+  \r\n      tipo_ddocument = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.tipo_de_documento_el_salvador\")\r\n      nro_ddocument = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n    \r\n    #LG: VALIDAR SI EL TITULAR EXISTE EN DIJ, SE SETEA RESULTADO EN campo_data PARA VALIDACI\xC3\x93N EN RECEPCI\xC3\x93N\r\n    tipodDoc = (tipo_ddocument == \"Cedula\") ? \"001\" : \"002\"\r\n    resultadoDijj = WebserviceConsumer.get( '/service/bdin_dij_record_policivo/call.json?method=get_record_policivo&tipoDocumento=' + \"#{tipodDoc}&nroDocumento=#{nro_ddocument}\").parsed_response\r\n    personaDijj = resultadoDijj[\"response\"]\r\n    errorDeDijj = personaDijj[\"error\"]\r\n    existeEnDijj = \"Dato no existe\"\r\n    if !errorDeDijj.blank?\r\n        if tipo_ddocument == \"Cedula\"\r\n          existeEnDijj = \"El titular no aparece registrado en el sistema de PNC.\"\r\n        else\r\n          existeEnDijj = \"El titular no aparece registrado en el sistema de PNC.\"\r\n      end\r\n    else\r\n        existeEnDijj = \"Titular existe en PNC\"\r\n    end\r\n    form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.campo_data\",existeEnDijj)\r\n\
+  \r\n    #LG: VALIDAR SI EL TITULAR EXISTE EN PSP, SI NO EXISTE SE SOLICITA AUTORIZACI\xC3\x93N PARA SOLICITUD DE RECORD POLICIVO\r\n    # => Y SE SETEA EN campo_psp PARA VALIDACI\xC3\x93N EN RECEPCI\xC3\x93N\r\n    tipodDocumentoPsp = (tipo_ddocument == \"Cedula\") ? \"national_id\" : \"passport\"\r\n    resultadoPspp = WebserviceConsumer.get( '/service/ws_get_person_data_psp/titular.json?tipoDocumento=' + \"#{tipodDocumentoPsp}&nroDocumento=#{nro_ddocument}\").parsed_response\r\n    personaPsp = resultadoPspp[\"response\"]\r\n    existeEnPspp = \"Dato no existe en PEL\"\r\n    if personaPsp.blank?\r\n      existeEnPspp = \"Titular no existe en el portal, debe adjuntar Autorizaci\xC3\xB3n.\"\r\n    else\r\n      existeEnPspp = \"El titular est\xC3\xA1 registrado en el portal.\"\r\n    end\r\n    form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.campo_psp\",existeEnPspp)\r\n\
+  \r\n    #:::: USADO PARA PRINT DESIGN\r\n    primerNombret = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_nombre\")\r\n    segundoNombret = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_nombre\")\r\n    primerApellidot = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_apellido\")\r\n    segundoApellidot = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_apellido\")\r\n    nombreCompletot = \"#{primerNombret} #{segundoNombret} #{primerApellidot} #{segundoApellidot}\"\r\n    form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.nombre_completo\",nombreCompletot.squish)\r\n\
+  \r\n    #:::: CODIGO UNICO PARA TITULAR\r\n      co_result = WebserviceConsumer.default_get( '/consecutive/codigo_unico_pnc/generate.json').parsed_response\r\n      cod_unico = co_result[\"response\"]\r\n      cod_unico = cod_unico[\"value\"]\r\n      form_data.set(\"datos_del_titular_instance_1.codigo_unico_pnc.codigo_unico\",cod_unico)\r\n\
+  \r\n      #:::: GENERA CONSECUTIVO INDIVIDUAL\r\n        form_data.set(\"datos_del_titular_instance_1.datos_de_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n      result_cons = WebserviceConsumer.default_get( '/consecutive/generador_pnc_rs/generate.json').parsed_response\r\n    consecut = result_cons[\"response\"]\r\n    consecut = \"#{@application[\"id\"]}-\"+\"#{consecut[\"value\"]}\"\r\n    form_data.set(\"datos_del_titular_instance_1.datos_de_solicitud.numero_de_solicitud\",consecut)\r\n\
+  \r\n      ### GENERA FECHA DE EXPEDICION DE LA SOLVENCIA\r\n      t = Time.now\r\n      dia = t.strftime(\"%d\")\r\n      mes = t.strftime(\"%B\")\r\n      anno = t.strftime(\"%Y\")\r\n\
+  \r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.year\", anno)\r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.mes\", mes)\r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.dia\", dia)\r\n    end\r\n  else\r\n    if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"foreign_citizen\"))\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.tipo_de_documento_el_salvador\",\"Pasaporte\")\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\",@owner[\"passport\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_nombre\",@owner[\"first_name\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_nombre\",@owner[\"second_name\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_apellido\",@owner[\"last_name\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_apellido\",@owner[\"second_last_name\"])\r\n      sexo = ((@owner[\"gender\"] == \"female\")) ? \"Femenino\" : \"Masculino\"\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.sexo\",sexo)\r\n      #form_data.set(\"datos_del_titular_instance_1.datos_de_ubicacion.direccion\",@owner[\"full_address\"])\r\n      form_data.set(\"datos_del_titular_instance_1.datos_del_padre.documento_hijo\",@owner[\"passport\"])\r\n      #form_data.set(\"datos_del_titular_rp_instance_1.datos_del_padre.primer_nombre\",\"\")\r\n      #form_data.set(\"datos_del_titular_rp_instance_1.datos_del_padre.segundo_nombre\",\"\")\r\n      #form_data.set(\"datos_del_titular_rp_instance_1.datos_del_padre.primer_apellido\",\"\")\r\n      form_data.set(\"datos_del_titular_instance_1.datos_de_la_madre.documento_hijo\",@owner[\"passport\"])\r\n      #form_data.set(\"datos_del_titular_rp_instance_1.datos_de_la_madre.primer_nombre\",\"\")\r\n      #form_data.set(\"datos_del_titular_rp_instance_1.datos_de_la_madre.segundo_nombre\",\"\")\r\n      #form_data.set(\"datos_del_titular_rp_instance_1.datos_de_la_madre.primer_apellido\",\"\")\r\n             # CONVERSION FECHA DE NACIEMIENTO #\r\n      fecha = @owner[\"birthday\"]\r\n      fecha_n = Time.parse(fecha).strftime(\"%d-%m-%Y\")\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.fecha_de_nacimiento\",fecha_n)\r\n      # CALCULA EDAD #\r\n      edad = ((Date.today - fecha.to_date).to_f / 365).to_i\r\n      form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.edad\",edad)\r\n    end\r\n  end\r\n    tipo_ddocument = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.tipo_de_documento_el_salvador\")\r\n    nro_ddocument = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n    \r\n    #LG: VALIDAR SI EL TITULAR EXISTE EN DIJ, SE SETEA RESULTADO EN campo_data PARA VALIDACI\xC3\x93N EN RECEPCI\xC3\x93N\r\n    tipodDoc = (tipo_ddocument == \"Cedula\") ? \"001\" : \"002\"\r\n    resultadoDijj = WebserviceConsumer.get( '/service/bdin_dij_record_policivo/call.json?method=get_record_policivo&tipoDocumento=' + \"#{tipodDoc}&nroDocumento=#{nro_ddocument}\").parsed_response\r\n    personaDijj = resultadoDijj[\"response\"]\r\n    errorDeDijj = personaDijj[\"error\"]\r\n    existeEnDijj = \"Dato no existe\"\r\n    if !errorDeDijj.blank?\r\n        if tipo_ddocument == \"Cedula\"\r\n          existeEnDijj = \"El titular no aparece registrado en el sistema de PNC.\"\r\n        else\r\n          existeEnDijj = \"El titular no aparece registrado en el sistema de PNC.\"\r\n      end\r\n    else\r\n        existeEnDijj = \"Titular existe en PNC\"\r\n    end\r\n    form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.campo_data\",existeEnDijj)\r\n\
+  \r\n    #LG: VALIDAR SI EL TITULAR EXISTE EN PSP, SI NO EXISTE SE SOLICITA AUTORIZACI\xC3\x93N PARA SOLICITUD DE RECORD POLICIVO\r\n    # => Y SE SETEA EN campo_psp PARA VALIDACI\xC3\x93N EN RECEPCI\xC3\x93N\r\n    tipodDocumentoPsp = (tipo_ddocument == \"Cedula\") ? \"national_id\" : \"passport\"\r\n    resultadoPspp = WebserviceConsumer.get( '/service/ws_get_person_data_psp/titular.json?tipoDocumento=' + \"#{tipodDocumentoPsp}&nroDocumento=#{nro_ddocument}\").parsed_response\r\n    personaPsp = resultadoPspp[\"response\"]\r\n    existeEnPspp = \"Dato no existe en PEL\"\r\n    if personaPsp.blank?\r\n      existeEnPspp = \"Titular no existe en el portal, debe adjuntar Autorizaci\xC3\xB3n.\"\r\n    else\r\n      existeEnPspp = \"El titular est\xC3\xA1 registrado en el portal.\"\r\n    end\r\n    form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.campo_psp\",existeEnPspp)\r\n\
+  \r\n    #::::: USADO PARA PRINT DESIGN\r\n    primerNombret = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_nombre\")\r\n    segundoNombret = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_nombre\")\r\n    primerApellidot = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.primer_apellido\")\r\n    segundoApellidot = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.segundo_apellido\")\r\n    nombreCompletot = \"#{primerNombret} #{segundoNombret} #{primerApellidot} #{segundoApellidot}\"\r\n    form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.nombre_completo\",nombreCompletot)\r\n\
+  \r\n    #:::: CODIGO UNICO PARA TITULAR\r\n      co_result = WebserviceConsumer.default_get( '/consecutive/codigo_unico_pnc/generate.json').parsed_response\r\n      cod_unico = co_result[\"response\"]\r\n      cod_unico = cod_unico[\"value\"]\r\n      form_data.set(\"datos_del_titular_instance_1.codigo_unico_pnc.codigo_unico\",cod_unico)\r\n\
+  \r\n      #:::: GENERA CONSECUTIVO INDIVIDUAL\r\n        form_data.set(\"datos_del_titular_instance_1.datos_de_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n      result_cons = WebserviceConsumer.default_get( '/consecutive/generador_pnc_rs/generate.json').parsed_response\r\n    consecut = result_cons[\"response\"]\r\n    consecut = \"#{@application[\"id\"]}-\"+\"#{consecut[\"value\"]}\"\r\n    form_data.set(\"datos_del_titular_instance_1.datos_de_solicitud.numero_de_solicitud\",consecut)\r\n\
+  \r\n\
+  \r\n      ### GENERA FECHA DE EXPEDICION DE LA SOLVENCIA\r\n      t = Time.now\r\n      dia = t.strftime(\"%d\")\r\n      mes = t.strftime(\"%B\")\r\n      anno = t.strftime(\"%Y\")\r\n\
+  \r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.year\", anno)\r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.mes\", mes)\r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.dia\", dia)\r\n\
+  else\r\n\
+  \r\n  (1..20).each do |_num|\r\n    tipo_documento = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.tipo_de_documento_el_salvador\")\r\n    nro_documento = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n    nro_documento = URI.escape(\"#{nro_documento}\")\r\n  \r\n    #LG: SALE DEL CICLO CUANDO CONSIGUE LA PRIMERA INSTANCIA VACIA\r\n    break if nro_documento.blank?\r\n\
+  \r\n    #LG: VALIDAR SI EL TITULAR EXISTE EN DIJ, SE SETEA RESULTADO EN campo_data PARA VALIDACI\xC3\x93N EN RECEPCI\xC3\x93N\r\n    tipoDoc = (tipo_documento == \"Cedula\") ? \"001\" : \"002\"\r\n    resultDij = WebserviceConsumer.get( '/service/bdin_dij_record_policivo/call.json?method=get_record_policivo&tipoDocumento=' + \"#{tipoDoc}&nroDocumento=#{nro_documento}\").parsed_response\r\n    personaDij = resultDij[\"response\"]\r\n    errorDij = personaDij[\"error\"]\r\n    existeDij = \"Dato no existe\"\r\n    if !errorDij.blank?\r\n        if tipo_documento == \"Cedula\"\r\n          existeDij = \"El titular no aparece registrado en el sistema de PNC.\"\r\n        else\r\n          existeDij = \"El titular no aparece registrado en el sistema de PNC.\"\r\n      end\r\n    else\r\n        existeDij = \"Titular existe en PNC.\"\r\n    end\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_data\",existeDij)\r\n\
+  \r\n    #LG: VALIDAR SI EL TITULAR EXISTE EN PSP, SI NO EXISTE SE SOLICITA AUTORIZACI\xC3\x93N PARA SOLICITUD DE RECORD POLICIVO\r\n    # => Y SE SETEA EN campo_psp PARA VALIDACI\xC3\x93N EN RECEPCI\xC3\x93N\r\n    tipoDocPsp = (tipo_documento == \"Cedula\") ? \"national_id\" : \"passport\"\r\n    resultPsp = WebserviceConsumer.get( '/service/ws_get_person_data_psp/titular.json?tipoDocumento=' + \"#{tipoDocPsp}&nroDocumento=#{nro_documento}\").parsed_response\r\n    personaEnPsp = resultPsp[\"response\"]\r\n    existePSP = \"Dato no existe en PEL\"\r\n    if personaEnPsp.blank?\r\n      existePSP = \"Titular no existe en el portal, debe adjuntar Autorizaci\xC3\xB3n.\"\r\n    else\r\n      existePSP = \"El titular est\xC3\xA1 registrado en el portal.\"\r\n    end\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_psp\",existePSP)\r\n\
+  \r\n    #LG: INTEGRACI\xC3\x93N PARA TRAER DATOS DE LA BDIN DE TRIBUNAL ELECTORAL\r\n    if tipo_documento == \"Cedula\"\r\n      resultTE = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n      data = resultTE[\"response\"]\r\n      if data.blank?\r\n        #form_data.set(\"datos_del_titular_rp_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\",\"\")        \r\n        transition_errors << \"Los datos del Titular #{_num} no fueron encontrados, por favor verifique.\"\r\n      else\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\",data[\"primerNombre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_nombre\",data[\"segundoNombre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\",data[\"primerApellido\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_apellido\",data[\"segundoApellido\"])\r\n\
+  \r\n        sexo = ((data[\"sexo\"] == \"F\") || (data[\"sexo\"] == \"female\")) ? \"Femenino\" : \"Masculino\"\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.sexo\",sexo)\r\n        #form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_ubicacion.direccion\",data[\"direccionNacimiento\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_del_padre.documento_hijo\",data[\"cedula\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_del_padre.primer_nombre\",data[\"primerNombrePadre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_del_padre.segundo_nombre\",data[\"segundoNombrePadre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_del_padre.primer_apellido\",data[\"apellidoPaternoPadre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_la_madre.documento_hijo\",data[\"cedula\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_la_madre.primer_nombre\",data[\"primerNombreMadre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_la_madre.segundo_nombre\",data[\"segundoNombreMadre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_la_madre.primer_apellido\",data[\"apellidoPaternoMadre\"])\r\n        # CONVERSION FECHA DE NACIEMIENTO #\r\n        fecha = data[\"fechaNacimiento\"]\r\n        fecha_n = Time.parse(fecha).strftime(\"%d-%m-%Y\")\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.fecha_de_nacimiento\",fecha_n)\r\n        # CALCULA EDAD #\r\n        edad = ((Date.today - fecha.to_date).to_f / 365).to_i\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.edad\",edad)\r\n      end      \r\n    else\r\n      form_data.set(\"datos_del_titular_instance_#{_num}.datos_del_padre.documento_hijo\",nro_documento)\r\n      form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_la_madre.documento_hijo\",nro_documento)\r\n      #LG: SI LA PERSONA EXISTE EN DIJ SE SETEAN LOS CAMPOS OBTENIDOS DE LA CONSULTA\r\n      if errorDij.blank?\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\",personaDij[\"primerNombre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_nombre\",personaDij[\"segundoNombre\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\",personaDij[\"apellidoPaterno\"])\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_apellido\",personaDij[\"apellidoMaterno\"])\r\n      end   \r\n    end\r\n\
+  \r\n    #:::: USADO PARA PRINT DESIGN\r\n    primerNombre = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\")\r\n    segundoNombre = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_nombre\")\r\n    primerApellido = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\")\r\n    segundoApellido = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_apellido\")\r\n    nombreCompleto = \"#{primerNombre} #{segundoNombre} #{primerApellido} #{segundoApellido}\"\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.nombre_completo\",nombreCompleto.squish)\r\n\
+  \r\n    #:::: GENERA CODIGO UNICO POR CADA TITULAR\r\n    result_co = WebserviceConsumer.default_get( '/consecutive/codigo_unico_pnc/generate.json').parsed_response\r\n    codigo_unico = result_co[\"response\"]\r\n        codigo_unico = codigo_unico[\"value\"]\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.codigo_unico_pnc.codigo_unico\",codigo_unico)\r\n\
+  \r\n        #:::: GENERA CONSECUTIVO INDIVIDUAL\r\n        form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n      result_consec = WebserviceConsumer.default_get( '/consecutive/generador_pnc_rs/generate.json').parsed_response\r\n    consecutiv = result_consec[\"response\"]\r\n    consecutiv = \"#{@application[\"id\"]}-\"+\"#{consecutiv[\"value\"]}\"\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_de_solicitud.numero_de_solicitud\",consecutiv)\r\n\
+  \r\n\
+  \r\n      ### GENERA FECHA DE EXPEDICION DE LA SOLVENCIA\r\n      t = Time.now\r\n      dia = t.strftime(\"%d\")\r\n      mes = t.strftime(\"%B\")\r\n      anno = t.strftime(\"%Y\")\r\n\
+  \r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.year\", anno)\r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.mes\", mes)\r\n      form_data.set(\"codigo_unico_pnc.codigo_unico_pnc.dia\", dia)\r\n  end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #::::: Validaci\xC3\xB3n para setear provincia Panam\xC3\xA1 si es minrex\r\n\
+  #if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n\
+  # tipo_de_solicitante = form_data.get(\"tipo_de_persona_dij.tipo_de_solicitante_juridico.tipo_de_solicitante_juridico\")\r\n\
+  # if tipo_de_solicitante == \"MINREX\"\r\n\
+  #   form_data.set(\"datos_del_solicitante.datos_de_ubicacion.provincia_lista\",\"Panam\xC3\xA1\")\r\n\
+  # end\r\n\
+  #end"
+views: 
+back_step: ""
+next_step: Paso 2 - Datos de los Titulares
+position: 1
+ajax_calls: "$(document).ready(function(){\r\n  $(\"#field_tipo_de_solicitud_pnc_tipo_de_solicitud_pnc_especifique\").parent().parent().hide();\r\n  tipo_solicitud_pnc = $(\"#field_tipo_de_solicitud_pnc_tipo_de_solicitud_pnc_tipo_de_solicitud_pnc\");\r\n\
+  \r\n\
+  tipo_solicitud_pnc.change(function() {\r\n  if ($(tipo_solicitud_pnc).find(':selected').val() == \"Otros\") {\r\n    $(\"#field_tipo_de_solicitud_pnc_tipo_de_solicitud_pnc_especifique\").parent().parent().show();\r\n  } else{\r\n    $(\"#field_tipo_de_solicitud_pnc_tipo_de_solicitud_pnc_especifique\").parent().parent().hide();\r\n  }\r\n\
+  });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  //::: DV: Validaci\xC3\xB3n para ocultar seccion de confirmaci\xC3\xB3n si y motivo de solicitud\r\n\
+  $(document).ready(function(){\r\n  function ocultar(){\r\n    var valor  = $(\"#field_datos_del_propietario_tramite_juridico_datos_persona_juridica_nit\").val();\r\n    var valor1 = $('input[name=\"[field][tipo_de_persona_pnc_es_titular_o_no_si_no]\"]:checked').val();\r\n    if(valor != undefined){\r\n      $('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_radio_oculto').parents(\".section-box\").show();\r\n      //$(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().show();\r\n      $('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_radio_oculto').parents(\".section-box\").next().show();\r\n    }else if(valor1 != \"NO\" || valor1 == undefined){\r\n      $(\"#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_radio_oculto\").parents(\".section-box\").hide()\r\n      //$(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().hide();\r\n      $(\"#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_radio_oculto\").parents(\".section-box\").next().hide()\r\n    }\r\n  }\r\n    ocultar();\r\n\
+  });\r\n\
+  \r\n\
+  //::: DV: Funci\xC3\xB3n para ocultar seccion de confirmaci\xC3\xB3n si y motivo de solicitud\r\n\
+  $(document).ready(function(){\r\n  $(function() {\r\n    $('input[name=\"[field][tipo_de_persona_pnc_es_titular_o_no_si_no]\"]').change(function() {\r\n      if ($('input[name=\"[field][tipo_de_persona_pnc_es_titular_o_no_si_no]\"]:checked').val() == \"NO\"){\r\n        $('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_radio_oculto').parents(\".section-box\").show();\r\n        //$(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().show();\r\n        $('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_tipo_de_documento_el_salvador').val('');\r\n        $('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_cedula_pasaporte').val('');\r\n        //$('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_tipo_de_nacionalidad').parent().parent().hide();\r\n        $('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_nacionalidad').parent().parent().hide();\r\n            $('#field_datos_del_titular_instance_1_datos_basicos_de_persona_natural_radio_oculto').parents(\".section-box\").next().show();\r\n      }else{\r\n        $.each( $('[id*=datos_del_titular_]'), function(index, campo) {    \r\n          var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n          if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n          }\r\n          var InicioRuta  = \"#field_datos_del_titular\";\r\n          var doc     = \"_datos_basicos_de_persona_natural_radio_oculto\";\r\n          var coincide  = InicioRuta.concat(pos);\r\n          var doc2    = coincide.concat(doc);\r\n          $(doc2).parents(\".section-box\").hide();\r\n          $(doc2).parents(\".section-box\").next().hide();\r\n        });\r\n       //$(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().hide();\r\n      }\r\n    });\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  /// change para el tipo de nacionalidad \r\n\
+  \r\n\
+  $(document).ready(function(){   \r\n  $.each( $('[id*=datos_del_titular_]'), function(index, camp) {\r\n    var posi = (this.id).match(/_instance_[\\d][\\d]/);\r\n    if (posi == null){\r\n      posi = (this.id).match(/_instance_[\\d]/);\r\n    } \r\n    var nod1  = \"#field_datos_del_titular\";\r\n    var nod2  = \"_datos_basicos_de_persona_natural_tipo_de_documento_el_salvador\";\r\n    //var tipo  = \"_datos_basicos_de_persona_natural_tipo_de_nacionalidad\";\r\n    var cedu  = \"_datos_basicos_de_persona_natural_nacionalidad\";\r\n    var pas   = \"_datos_basicos_de_persona_natural_cedula_pasaporte\";\r\n\
+  \r\n    var nod3  = nod1.concat(posi);\r\n    var dat   = nod3.concat(nod2); // tipodoc select\r\n    //var tiponac = nod3.concat(tipo); // tiponac select\r\n    var nacionalidad = nod3.concat(cedu); // nac tex\r\n    var pasaporte = nod3.concat(pas); // cedu tex\r\n\
+  \r\n    //$(tiponac).parent().parent().hide();\r\n    $(nacionalidad).parent().parent().hide();\r\n    //$(function() {\r\n    $(dat).change(function(){\r\n      var dat = $(this).val();\r\n      if (dat == '') {\r\n        //$(tiponac).parent().parent().hide();\r\n        //$(tiponac).val(\"\");\r\n        $(nacionalidad).parent().parent().hide();\r\n        $(nacionalidad).val(\"\");\r\n      } else if (dat== 'Cedula') {\r\n        $(nacionalidad).parent().parent().hide();\r\n        /*$(tiponac).val(\"Nacional\");\r\n        $(tiponac).parent().parent().show();\r\n        $(tiponac).attr(\"disabled\",\"disabled\");*/\r\n\
+  \r\n      } else if (dat== 'Pasaporte' && dat != '' ) {\r\n        //$(tiponac).parent().parent().hide();\r\n        // $(nacionalidad).val('');\r\n        $(nacionalidad).val(\"Extranjero\");\r\n        $(nacionalidad).attr(\"disabled\",\"disabled\");\r\n        $(nacionalidad).parent().parent().show();\r\n      }                \r\n    });\r\n    var dato = $(dat).val();\r\n    //alert(dato);\r\n    if (dato == 'Cedula') {\r\n      $(nacionalidad).parent().parent().hide();\r\n      /*$(tiponac).val(\"Nacional\");\r\n      $(tiponac).parent().parent().show();\r\n      $(tiponac).attr(\"disabled\",\"disabled\");*/\r\n    }else if (dato== 'Pasaporte' && dato != '') {\r\n      //$(tiponac).parent().parent().hide();\r\n      // $(nacionalidad).val('');\r\n      $(nacionalidad).val(\"Extranjero\");\r\n      $(nacionalidad).attr(\"disabled\",\"disabled\");\r\n      $(nacionalidad).parent().parent().show();\r\n    } \r\n  });     \r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //::: DV: HABILITAR CAMPOS CUANDO VENGAN VACIO DESDE LA BD ::://\r\n\
+  $(document).ready(function(){\r\n  function ocultar(){\r\n    var valora = $('#field_datos_del_solicitante_datos_de_ubicacion_direccion').val();\r\n    var valorb = $('#field_datos_del_solicitante_datos_de_ubicacion_numero_de_telefono').val();\r\n    var valorc = $('#field_datos_del_solicitante_datos_de_ubicacion_correo_electronico').val();\r\n    var valord = $('#field_datos_del_propietario_tramite_natural_datos_de_ubicacion_direccion').val();\r\n    var valore = $('#field_datos_del_propietario_tramite_natural_datos_de_ubicacion_numero_de_telefono').val();\r\n    var valorf = $('#field_datos_del_propietario_tramite_natural_datos_de_ubicacion_correo_electronico').val();\r\n    if (valora == \"\"){\r\n      $('#field_datos_del_solicitante_datos_de_ubicacion_direccion').removeAttr(\"disabled\");\r\n    }\r\n    if (valorb == \"\") {\r\n      $('#field_datos_del_solicitante_datos_de_ubicacion_numero_de_telefono').removeAttr(\"disabled\"); \r\n    }\r\n    if (valorc == \"\"){\r\n      $('#field_datos_del_solicitante_datos_de_ubicacion_correo_electronico').removeAttr(\"disabled\");\r\n    }\r\n    if (valord == \"\"){\r\n      $('#field_datos_del_propietario_tramite_natural_datos_de_ubicacion_direccion').removeAttr(\"disabled\");\r\n    }\r\n    if (valore == \"\") {\r\n      $('#field_datos_del_propietario_tramite_natural_datos_de_ubicacion_numero_de_telefono').removeAttr(\"disabled\"); \r\n    }\r\n    if (valorf == \"\"){\r\n      $('#field_datos_del_propietario_tramite_natural_datos_de_ubicacion_correo_electronico').removeAttr(\"disabled\");\r\n    }\r\n  }\r\n  ocultar();\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //:::agregado \r\n\
+  $(document).ready(function(){\r\n    $.each( $('[id*=_datos_del_titular_]'), function(index, campo) {    \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n          pos = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n        var inicRuta = \"#field_datos_del_titular\";\r\n        var tDoc = \"_datos_basicos_de_persona_natural_tipo_de_documento_el_salvador\";\r\n        var NumDoc = \"_datos_basicos_de_persona_natural_cedula_pasaporte\";\r\n        var coincide = inicRuta.concat(pos);\r\n        var TiDoc = coincide.concat(tDoc);\r\n        var NroDocu = coincide.concat(NumDoc);\r\n        $(TiDoc).change(function(){\r\n            TiDoc = $(this).val();\r\n            if(TiDoc == \"Cedula\"){\r\n                    $(NroDocu).val(\"\");\r\n            }\r\n            if(TiDoc == \"Pasaporte\"){\r\n                    $(NroDocu).val(\"\");\r\n            }\r\n        });     \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  // JA: Validaci\xC3\xB3n para ocultar campo nacionalidad del propietario del tramite en caso de que sea nacional\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  \r\n  nacionalidad_propietario = $(\"#field_datos_del_propietario_tramite_natural_datos_basicos_de_persona_natural_nacionalidad\").val();\r\n\
+  \r\n  if (nacionalidad_propietario == \"Extranjero\") {\r\n    $(\"#field_datos_del_propietario_tramite_natural_datos_basicos_de_persona_natural_nacionalidad\").parent().parent().show();\r\n    $(\"#field_datos_del_propietario_tramite_natural_datos_basicos_de_persona_natural_nacionalidad\").val(\"\");\r\n  } else{\r\n    $(\"#field_datos_del_propietario_tramite_natural_datos_basicos_de_persona_natural_nacionalidad\").parent().parent().hide();\r\n  }\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  ////LP: Para setear provincia Panam\xC3\xA1 si solicitante es minrex\r\n\
+  \r\n\
+  /*$(document).ready(function(){\r\n  tipo_de_solicitante = $(\"#field_tipo_de_persona_dij_tipo_de_solicitante_juridico_tipo_de_solicitante_juridico\");\r\n  provincia = $(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\");\r\n  motivo_auto = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad\");\r\n  tipo_auto = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad\");\r\n  empresas = $(\"#field_tipo_de_persona_dij_tipo_de_solicitante_juridico_tipo_de_solicitante_juridico_empresas\");\r\n  // var valor8 = $('input[name=\"[field][tipo_de_persona_dij_es_titular_o_no_si_no]\"]:checked').val();\r\n  // // if(valor8 == undefined){\r\n  // //   $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_campo_oculto\").parents(\".section-box\").show();\r\n    // //       $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij\").parent().parent().show();\r\n  // //   $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().hide();\r\n  // // }\r\n  // if (tipo_de_solicitante == undefined){\r\n  //  $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_campo_oculto\").parents(\".section-box\").show();\r\n  //  $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().show();\r\n  //  $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij\").parent().parent().show();\r\n  // }\r\n  if ($(empresas).find(':selected').val() == \"\") {\r\n    $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_campo_oculto\").parents(\".section-box\").show();\r\n  }\r\n  if ($(tipo_de_solicitante).find(':selected').val() == \"\") {\r\n    $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_campo_oculto\").parents(\".section-box\").hide();\r\n    $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().hide();\r\n  }\r\n\
+  \r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  $( function() {\r\n    tipo_de_solicitante.change(function() {\r\n      if ($(tipo_de_solicitante).find(':selected').val() == \"MINREX\") {\r\n        $(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"Panam\xC3\xA1\");\r\n        provincia.attr(\"disabled\",\"disabled\");\r\n        $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_campo_oculto\").parents(\".section-box\").show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').val('');\r\n      } else if ($(tipo_de_solicitante).find(':selected').val() == \"Autoridades\") {\r\n        $(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"\");\r\n        provincia.removeAttr(\"disabled\",\"disabled\");\r\n        $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_campo_oculto\").parents(\".section-box\").show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n      } else if ($(tipo_de_solicitante).find(':selected').val() == \"\") {\r\n        $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_campo_oculto\").parents(\".section-box\").hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n      }\r\n    });\r\n    motivo_auto.change(function() {\r\n      if ($(motivo_auto).find(':selected').val() == \"Otros\") {\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().show();\r\n      } else{\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val(\"\");\r\n      }\r\n    });\r\n    tipo_auto.change(function() {\r\n      if ($(tipo_auto).find(':selected').val() == \"Otros\") {\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().show();\r\n      } else{\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val(\"\");\r\n      }\r\n    });\r\n    //mantener cambios entre pasos\r\n    if ($(tipo_de_solicitante).find(':selected').val() == \"MINREX\") {\r\n      $(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"Panam\xC3\xA1\");\r\n      provincia.attr(\"disabled\",\"disabled\");\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().show();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().show();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().hide();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().hide();\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').val('');\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').val('');\r\n    } else if ($(tipo_de_solicitante).find(':selected').val() == \"Autoridades\") {\r\n      //$(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"\");\r\n      provincia.removeAttr(\"disabled\",\"disabled\");\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().show();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().show();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().hide();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().hide();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').val('');\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').val('');\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n      // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n    }\r\n    if ($(motivo_auto).find(':selected').val() == \"Otros\") {\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().show();\r\n    }else{\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n    }\r\n    if ($(tipo_auto).find(':selected').val() == \"Otros\") {\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().show();\r\n    } else{\r\n      $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n    }\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //Setear trabajo y deshabilitar campo motivo si es Persona natural\r\n\
+  $(document).ready(function(){\r\n  tipo_persona = $(\"#field_datos_del_propietario_tramite_natural_datos_basicos_de_persona_natural_cedula_pasaporte\").val();\r\n  motivo = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\");\r\n  tipo_solicitud = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij\");\r\n  if (tipo_persona != undefined) {\r\n    $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").val(\"Trabajo\");\r\n    $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij\").val(\"Laboral\");\r\n    tipo_solicitud.attr(\"disabled\",\"disabled\");\r\n    motivo.attr(\"disabled\",\"disabled\");\r\n  } else{\r\n    motivo.removeAttr(\"disabled\",\"disabled\");\r\n    tipo_solicitud.removeAttr(\"disabled\",\"disabled\");\r\n  }\r\n\
+  });\r\n\
+  */"

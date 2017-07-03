@@ -1,0 +1,30 @@
+--- 
+id: 3838
+part_id: 712
+field_id: 10
+name: Texto
+created_at: 2015-01-22 22:47:27 Z
+updated_at: 2017-06-04 00:27:47.390320 Z
+label: Texto
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a2d77726-42b1-4015-8242-7fca6b6effab
+version: 20170603-202747

@@ -1,0 +1,19 @@
+--- 
+id: 3078
+section_id: 468
+part_id: 38
+name: "Juego de las primeras y \xC3\xBAltimas p\xC3\xA1ginas del c\xC3\xB3digo fuente"
+created_at: 2014-03-28 19:15:12 Z
+updated_at: 2014-03-28 19:15:12 Z
+label: "Juego de las primeras y \xC3\xBAltimas p\xC3\xA1ginas del c\xC3\xB3digo fuente"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

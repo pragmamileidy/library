@@ -1,0 +1,67 @@
+--- 
+id: 1268
+name: Pago de la Solicitud
+label: Pago de la Solicitud
+description: Pago de la Solicitud
+fill_step_id: 636
+created_at: 2013-04-16 03:01:45 Z
+updated_at: 2013-04-16 03:01:45 Z
+include: "{\"2639\":{\"2549\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2550\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2551\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2552\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2553\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2554\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2555\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2558\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2559\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2560\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2561\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2562\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2563\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2564\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2565\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2567\":{\"2892\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2646\":{\"2781\":{\"3109\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |-
+  #CODIGO PARA INVOCAR LAS ENTIDADES SELECCIONADAS
+   _applicationId = @application["id"]
+   _configRoute = "EntidadesEvaluadoras-rates"
+   _formId = @task["form"]
+  result = WebserviceConsumer.get('/payments/payment_computing_service.json?application_id=' + "#{_applicationId}" + '&config_route=' + "#{_configRoute}" + '&form_id=' + "#{_formId}").parsed_response
+  
+  _i=0
+  _payment_id= result["response"]["payment_id"]
+  _detail = result["response"]["detail"]
+  _total = result["response"]["result"]["total"]
+  
+  form_data.set("variables_usadas_codigos_p5.variables_p5.payment",_payment_id)
+  form_data.set("variables_usadas_codigos_p5.variables_p5.detail",_detail)
+  form_data.set("entidad_evaluadora_revisiones.monto_total.monto_total", _total)
+  
+  result["response"]["result"]["items"].each do |key, value|
+  	if(key[0..3]=="item")
+  		value.each do |key, value|
+  			if(key.downcase=="name")
+  				form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.nombre_de_la_entidad", value)
+  			end
+  			if(key.downcase=="formula")
+  				form_data.set("entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.monto_a_pagar", value)
+  			end
+  		end
+  	end
+  	_i=_i+1
+  end
+on_transition: |-
+  #Invocar al servicio Make Payment, que nos retorna un url
+  
+  #payment_id, id, name, email, consecutive_id
+  
+  _paymentId = form_data.get("pago_manual_confirmado.estatus_de_prueba.payment")
+  _consecutiveId = form_data.get("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud")
+  
+  #Se invoca con owner mientras se tiene la variable current_user disponible
+  _id =  @owner["national_id"]
+  _name = @owner["name"]
+  _email = @owner["email"]
+  
+  result = WebserviceConsumer.get('/payments/make_payment/where.json?payment_id=' + "#{_paymentId}" + '&id=' + "#{_id}" + '&name=' + "#{_name}" + '&email=' + "#{_email}" + '&consecutive_id=' + "#{_consecutiveId}").parsed_response
+  url = result["response"]
+  if url.nil?
+  	transition_errors << "Error."
+  else
+  	#seteos
+  	form_data.set("variables_usadas_codigos_p5.variables_p5.url",url)
+  and
+views: 
+back_step: ""
+next_step: Ingresar Pago de la Solicitud
+position: 0
+ajax_calls: ""

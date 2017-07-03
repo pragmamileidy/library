@@ -1,0 +1,32 @@
+--- 
+id: 2132
+part_id: 242
+field_id: 196
+name: "Selecci\xC3\xB3n de Centro"
+created_at: 2012-07-23 16:35:07 Z
+updated_at: 2017-06-04 00:30:35.806367 Z
+label: Seleccione el Centro
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  ubicacion = form_data.get("ubicacion_de_pago.ubicacion_de_pago.ubicacion_de_pago")
+  ubicacion=="Centro de pago"
+manage_as_confidential: false
+hint: Seleccione en la lista
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 05985cdf-9825-43a3-b78b-9e8feb773deb
+version: 20170603-203035

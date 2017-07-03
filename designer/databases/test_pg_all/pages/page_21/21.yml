@@ -1,0 +1,150 @@
+--- 
+id: 21
+position: 1
+selector: "{\"378\":{\"656\":{\"758\":{},\"759\":{}}},\"382\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"805\":{}}},\"381\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"805\":{}}},\"383\":{\"721\":{\"3419\":{},\"808\":{},\"809\":{},\"810\":{}},\"722\":{\"800\":{}},\"723\":{\"800\":{}},\"724\":{\"800\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 65px;
+  	left: 690px;
+  	width: 336px;
+  	height: 17px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 39px;
+  	left: 691px;
+  	width: 333px;
+  	height: 17px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 304px;
+  	left: 260px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 342px;
+  	left: 261px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_direccin_direccin {
+  	position: absolute;
+  	top: 405px;
+  	left: 260px;
+  	width: 686px;
+  	height: 35px;
+  	overflow: hidden;
+    }
+    .datosdelregistrante_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 516px;
+  	left: 284px;
+  	width: 244px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregistrante_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 554px;
+  	left: 285px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregistrante_direccin_direccin {
+  	position: absolute;
+  	top: 610px;
+  	left: 283px;
+  	width: 676px;
+  	height: 48px;
+  	overflow: hidden;
+    }
+    .datosdeplaguicidaqumicoformulado_datosdeplaguicidaqumicoformulado_nombrecomercialtexto {
+  	position: absolute;
+  	top: 751px;
+  	left: 282px;
+  	width: 687px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeplaguicidaqumicoformulado_datosdeplaguicidaqumicoformulado_nombregenrico {
+  	position: absolute;
+  	top: 783px;
+  	left: 281px;
+  	width: 686px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeplaguicidaqumicoformulado_datosdeplaguicidaqumicoformulado_clase {
+  	position: absolute;
+  	top: 816px;
+  	left: 279px;
+  	width: 684px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeplaguicidaqumicoformulado_datosdeplaguicidaqumicoformulado_mododeaccin {
+  	position: absolute;
+  	top: 846px;
+  	left: 280px;
+  	width: 688px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeplaguicidaqumicoformulado_concentracindeingredientesactivos_introduzcalainformacin {
+  	position: absolute;
+  	top: 922px;
+  	left: 65px;
+  	width: 899px;
+  	height: 87px;
+  	overflow: hidden;
+    }
+    .datosdeplaguicidaqumicoformulado_presentacionesenpesoovolumen_introduzcalainformacin {
+  	position: absolute;
+  	top: 1063px;
+  	left: 63px;
+  	width: 902px;
+  	height: 96px;
+  	overflow: hidden;
+    }
+    .datosdeplaguicidaqumicoformulado_categoratoxicolgicasegnoms_introduzcalainformacin {
+  	position: absolute;
+  	top: 1221px;
+  	left: 63px;
+  	width: 901px;
+  	height: 93px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: ""
+print_design_id: 15
+created_at: 2012-04-12 14:16:48 Z
+updated_at: 2015-10-18 03:12:28 Z
+instances_selector: "{\"378\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"382\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"}}},\"381\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"}}},\"383\":{\"value\":\"\",\"721\":{\"value\":\"\",\"3419\":{\"value\":\"\"},\"808\":{\"value\":\"\"},\"809\":{\"value\":\"\"},\"810\":{\"value\":\"\"}},\"722\":{\"value\":\"\",\"800\":{\"value\":\"\"}},\"723\":{\"value\":\"\",\"800\":{\"value\":\"\"}},\"724\":{\"value\":\"\",\"800\":{\"value\":\"\"}}}}"
+size: ""

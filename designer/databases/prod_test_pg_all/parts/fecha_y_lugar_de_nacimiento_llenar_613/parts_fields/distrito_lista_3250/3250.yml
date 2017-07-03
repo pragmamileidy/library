@@ -1,0 +1,30 @@
+--- 
+id: 3250
+part_id: 613
+field_id: 226
+name: Distrito_Lista
+created_at: 2013-05-22 18:10:26 Z
+updated_at: 2017-06-04 00:26:26.704983 Z
+label: Distrito
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a1e1cd7b-59ce-4e9f-a108-85dea6ccec71
+version: 20170603-202626

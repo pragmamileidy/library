@@ -1,0 +1,30 @@
+--- 
+id: 563
+part_id: 119
+field_id: 24
+name: "Permiso de Exportaci\xC3\xB3n"
+created_at: 2011-11-22 19:31:35 Z
+updated_at: 2017-06-04 00:31:19.572436 Z
+label: "Permiso de Exportaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Para Corredor
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 14
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 569e5343-16b5-4536-889f-ce8156c4df62
+version: 20170603-203119

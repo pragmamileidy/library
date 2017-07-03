@@ -1,0 +1,16 @@
+--- 
+id: 626
+design_id: 75
+section_id: 108
+name: Datos del Registrante
+created_at: 2012-04-18 01:07:59 Z
+updated_at: 2013-06-25 20:45:07 Z
+label: "Datos del Registrante (Es el que tiene los derechos sobre el producto seg\xC3\xBAn el CLV)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"595\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"},\"3342\":{\"required\":\"required\"}},\"597\":{\"3353\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

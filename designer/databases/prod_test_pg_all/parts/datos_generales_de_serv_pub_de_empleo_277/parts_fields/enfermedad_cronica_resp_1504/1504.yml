@@ -1,0 +1,30 @@
+--- 
+id: 1504
+part_id: 277
+field_id: 123
+name: Enfermedad cronica_resp
+created_at: 2012-05-31 18:00:51 Z
+updated_at: 2017-06-04 00:30:17.083668 Z
+label: "Indique el tipo de Enfermedad "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d6e98cd9-a46f-483a-8e44-94116db14a0c
+version: 20170603-203017

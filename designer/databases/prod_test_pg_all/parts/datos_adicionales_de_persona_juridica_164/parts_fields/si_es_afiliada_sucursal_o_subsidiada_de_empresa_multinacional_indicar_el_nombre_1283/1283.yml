@@ -1,0 +1,30 @@
+--- 
+id: 1283
+part_id: 164
+field_id: 10
+name: Si es Afiliada, Sucursal o Subsidiada de Empresa Multinacional indicar el Nombre
+created_at: 2012-05-08 15:57:45 Z
+updated_at: 2017-06-04 00:30:46.749325 Z
+label: Si es Afiliada, Sucursal o Subsidiada de Empresa Multinacional indicar el Nombre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar el nombre si es Afiliada, Sucursal o Subsidiada de Empresa Multinacional
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a62e80f9-e6e3-4fde-9ce6-7f17d66c62dd
+version: 20170603-203046

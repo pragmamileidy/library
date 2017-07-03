@@ -1,0 +1,19 @@
+--- 
+id: 1374
+section_id: 224
+part_id: 38
+name: Licencia de Sede
+created_at: 2012-05-07 20:11:49 Z
+updated_at: 2012-05-07 20:11:49 Z
+label: Licencia de Sede
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "S\xC3\xB3lo si es Empresa Multinacional"
+help: "Licencia de Sede de la Empresa Multinacional o Registro Nacional de la Industria Cinematogr\xC3\xA1fica y Audiovisual del Ministerio de Comercio e Industria"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 11

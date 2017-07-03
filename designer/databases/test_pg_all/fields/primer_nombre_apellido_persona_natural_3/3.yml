@@ -1,0 +1,30 @@
+--- 
+id: 3
+name: Primer Nombre/Apellido Persona Natural
+description: Campo con reglas para primer nombre o apellido
+version: 
+status: Draft
+label: Primer Nombre/Apellido Persona Natural
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-10-31 19:31:11 Z
+updated_at: 2017-05-22 17:21:58.201819 Z
+values_list: ""
+keys_list: ""
+field_type: string
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 50
+rows: 
+min_value: 
+max_value: 
+char_set: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s\\-'\xC2\xB4.]+$/"
+format: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s\\-'\xC2\xB4.]+$/"
+kind_of_list: fix_values
+list_code: ""
+serial: 3322-7927-9679-8718-8713

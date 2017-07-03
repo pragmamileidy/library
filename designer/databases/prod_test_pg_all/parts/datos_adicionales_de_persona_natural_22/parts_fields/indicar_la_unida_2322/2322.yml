@@ -1,0 +1,30 @@
+--- 
+id: 2322
+part_id: 22
+field_id: 210
+name: Indicar la Unida
+created_at: 2012-08-09 15:56:22 Z
+updated_at: 2017-06-04 00:22:11.167279 Z
+label: Indicar la Unidad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6b47a4cd-a7ae-40da-bcc2-95ac8571fcc4
+version: 20170603-202211

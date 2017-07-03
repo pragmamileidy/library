@@ -1,0 +1,16 @@
+--- 
+id: 1223
+design_id: 106
+section_id: 263
+name: Tipo de persona del arrendamiento
+created_at: 2012-06-05 16:05:20 Z
+updated_at: 2013-06-26 20:09:43 Z
+label: Arrendatario
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1765\":{\"1613\":{\"required\":\"required\"},\"2067\":{\"required\":\"required\"},\"3344\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

@@ -1,0 +1,30 @@
+--- 
+id: 1309
+part_id: 257
+field_id: 99
+name: "Dedicaci\xC3\xB3n de la empresa"
+created_at: 2012-05-11 15:39:16 Z
+updated_at: 2017-06-04 00:21:40.972114 Z
+label: Indicar a que dedica la empresa
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 752e49f0-6fd8-488f-8f5d-96932b4e74fd
+version: 20170603-202140

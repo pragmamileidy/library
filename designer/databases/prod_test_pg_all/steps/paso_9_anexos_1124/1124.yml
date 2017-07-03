@@ -1,0 +1,19 @@
+--- 
+id: 1124
+name: Paso 9 - Anexos
+label: Anexos
+description: ""
+fill_step_id: 565
+created_at: 2013-03-07 19:43:15 Z
+updated_at: 2014-06-19 21:11:07 Z
+include: "{\"2445\":{\"3062\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2905\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3063\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2906\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3064\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3065\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3066\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3242\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3243\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 8 - Datos del Solicitante
+next_step: "Paso 10 - Confirmaci\xC3\xB3n de la Solicitud"
+position: 9
+ajax_calls: ""

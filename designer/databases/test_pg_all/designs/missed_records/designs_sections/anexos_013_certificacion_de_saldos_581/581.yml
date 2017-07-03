@@ -1,0 +1,16 @@
+--- 
+id: 581
+design_id: 72
+section_id: 170
+name: "Anexos 013-Certificaci\xC3\xB3n de Saldos"
+created_at: 2012-04-11 15:36:46 Z
+updated_at: 2015-09-03 21:42:01 Z
+label: Archivos Adjuntos
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1017\":{\"210\":{\"required\":\"required\"}},\"1018\":{\"210\":{\"required\":\"required\"}},\"1019\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: "Introduzca los anexos del tr\xC3\xA1mite"
+help: ""
+order_input: 7

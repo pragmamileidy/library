@@ -1,0 +1,30 @@
+--- 
+id: 1881
+part_id: 311
+field_id: 163
+name: Tipo de Contraparte
+created_at: 2012-06-18 15:50:28 Z
+updated_at: 2017-06-04 00:24:17.919076 Z
+label: Tipo de Contraparte
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ca856709-b2e3-47cd-97d3-a8270ef48d73
+version: 20170603-202417

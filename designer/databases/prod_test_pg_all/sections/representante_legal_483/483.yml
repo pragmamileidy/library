@@ -1,0 +1,17 @@
+--- 
+id: 483
+name: Representante Legal
+description: Representante legal
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-25 14:58:50 Z
+updated_at: 2013-03-25 14:58:50 Z
+status: Draft
+label: Representante Legal
+hint: ""
+serial: 

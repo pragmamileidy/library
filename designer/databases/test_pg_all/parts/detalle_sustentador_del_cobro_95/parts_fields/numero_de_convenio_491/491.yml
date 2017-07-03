@@ -1,0 +1,30 @@
+--- 
+id: 491
+part_id: 95
+field_id: 10
+name: "N\xC3\xBAmero de Convenio"
+created_at: 2011-11-17 14:02:30 Z
+updated_at: 2017-06-04 00:25:36.340863 Z
+label: "N\xC3\xBAmero de Convenio"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 48a0460a-40d9-4a0d-b246-11406b5406bc
+version: 20170603-202536

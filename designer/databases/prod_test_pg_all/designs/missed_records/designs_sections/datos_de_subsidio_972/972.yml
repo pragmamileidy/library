@@ -1,0 +1,16 @@
+--- 
+id: 972
+design_id: 92
+section_id: 107
+name: Datos de Subsidio
+created_at: 2012-05-10 13:58:52 Z
+updated_at: 2013-05-30 17:16:18 Z
+label: Datos de Subsidio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1391\":{\"2061\":{\"required\":\"required\"},\"1174\":{\"required\":\"required\"},\"1293\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

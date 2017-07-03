@@ -1,0 +1,30 @@
+--- 
+id: 859
+part_id: 171
+field_id: 17
+name: "Presentaci\xC3\xB3n del Producto"
+created_at: 2012-03-27 15:14:32 Z
+updated_at: 2017-06-04 00:23:50.305077 Z
+label: "Presentaci\xC3\xB3n del Producto (forma y empaque) Especificar: l\xC3\xADquido, polvo, premezcla, etc., Tipo de Empaque y Tama\xC3\xB1os"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f62d66e3-286d-4932-a9cf-dc6638757077
+version: 20170603-202350

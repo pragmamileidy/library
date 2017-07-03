@@ -1,0 +1,30 @@
+--- 
+id: 3017
+part_id: 559
+field_id: 10
+name: "Tipo "
+created_at: 2013-03-13 17:16:05 Z
+updated_at: 2017-06-04 00:24:53.903269 Z
+label: Tipo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bf01ef5f-e13a-4a44-bc35-f2c529b4dc59
+version: 20170603-202453

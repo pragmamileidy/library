@@ -1,0 +1,19 @@
+--- 
+id: 1185
+section_id: 200
+part_id: 207
+name: "Prop\xC3\xB3sito del viaje"
+created_at: 2012-04-26 18:55:31 Z
+updated_at: 2012-04-26 18:55:31 Z
+label: "Prop\xC3\xB3sito del viaje"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

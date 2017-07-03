@@ -1,0 +1,30 @@
+--- 
+id: 1760
+part_id: 120
+field_id: 130
+name: Representante Legal
+created_at: 2012-06-12 23:18:04 Z
+updated_at: 2017-06-04 00:31:21.729982 Z
+label: Representante Legal
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Representante legal de la empresa que solicita evaluaci\xC3\xB3n, si es persona jur\xC3\xADdica."
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s\\-'\xC2\xB4.]+$/"
+values_list: ""
+keys_list: ""
+order_input: 14
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bcdcf563-ee1b-4eb0-9694-5724a6567462
+version: 20170603-203121

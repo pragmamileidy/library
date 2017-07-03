@@ -1,0 +1,17 @@
+--- 
+id: 631
+name: Apoderado General
+description: "Apoderado G\xC3\xA9neral"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-11 13:53:24 Z
+updated_at: 2015-09-10 17:55:54 Z
+label: "Apoderado G\xC3\xA9neral"
+hint: ""
+view_class: horizontal
+serial: 2689-2847-6477-7148-7401

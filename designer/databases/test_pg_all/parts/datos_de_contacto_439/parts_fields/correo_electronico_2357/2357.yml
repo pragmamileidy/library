@@ -1,0 +1,30 @@
+--- 
+id: 2357
+part_id: 439
+field_id: 5
+name: "Correo Electr\xC3\xB3nico"
+created_at: 2012-08-13 16:44:17 Z
+updated_at: 2017-06-04 00:30:51.662340 Z
+label: "Correo Electr\xC3\xB3nico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor v\xC3\xA1lido de direcci\xC3\xB3n de correo electr\xC3\xB3nico. Ejemplo: nombre@dominio.com"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e6b57889-c717-4e55-aa38-d4eb83e78341
+version: 20170603-203051

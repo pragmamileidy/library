@@ -1,0 +1,19 @@
+--- 
+id: 2936
+section_id: 529
+part_id: 38
+name: "Suministrar copia autenticada de la resolucion emitida por la Direcci\xC3\xB3n Nacional de Migraci\xC3\xB3n"
+created_at: 2013-10-01 18:59:41 Z
+updated_at: 2015-11-06 18:22:44 Z
+label: "Resoluci\xC3\xB3n emitida por la Direcci\xC3\xB3n Nacional de Migraci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

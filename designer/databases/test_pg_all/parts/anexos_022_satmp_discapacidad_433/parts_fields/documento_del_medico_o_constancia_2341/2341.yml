@@ -1,0 +1,30 @@
+--- 
+id: 2341
+part_id: 433
+field_id: 31
+name: "Documento del m\xC3\xA9dico o constancia"
+created_at: 2012-08-13 13:45:32 Z
+updated_at: 2017-06-04 00:22:12.619744 Z
+label: "Documento del m\xC3\xA9dico o constancia"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 902cafca-ff33-4d1a-bc5a-36e6811a2270
+version: 20170603-202212

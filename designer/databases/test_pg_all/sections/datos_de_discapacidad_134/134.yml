@@ -1,0 +1,17 @@
+--- 
+id: 134
+name: Datos de Discapacidad
+description: "Contiene descripci\xC3\xB3n de la certificaci\xC3\xB3n m\xC3\xA9dica, tipo(s) de ayuda que requiere el discapacitado y el detalle de la discapacidad"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-21 04:21:39 Z
+updated_at: 2012-05-16 20:46:18 Z
+status: Draft
+label: Datos de Discapacidad
+hint: ""
+serial: 

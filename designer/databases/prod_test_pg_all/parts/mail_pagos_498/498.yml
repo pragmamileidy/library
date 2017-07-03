@@ -1,0 +1,17 @@
+--- 
+id: 498
+name: mail_pagos
+description: Correos de notificacion referente a los pagos de ciertos tramites y procesos
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 16:17:29 Z
+updated_at: 2013-01-14 16:17:29 Z
+label: Correos de Pagos
+hint: ""
+view_class: horizontal
+serial: 

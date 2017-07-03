@@ -1,0 +1,30 @@
+--- 
+id: 1614
+part_id: 118
+field_id: 130
+name: "D\xC3\xADgito Verficador"
+created_at: 2012-06-07 21:50:24 Z
+updated_at: 2017-06-04 00:31:58.990118 Z
+label: "D\xC3\xADgito Verificador"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 32
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e7bf3e6d-0c87-46b5-90e8-dcdf4b6c4c80
+version: 20170603-203158

@@ -1,0 +1,30 @@
+--- 
+id: 1225
+part_id: 238
+field_id: 10
+name: Ingesta diaria admisible
+created_at: 2012-05-06 21:18:00 Z
+updated_at: 2017-06-04 00:24:01.424810 Z
+label: Ingesta diaria admisible
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Volumen de ingesta diaria admisible del producto farmac\xC3\xA9utico"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bcd183c6-d83f-42fb-8202-641dd3834e12
+version: 20170603-202401

@@ -1,0 +1,30 @@
+--- 
+id: 748
+part_id: 145
+field_id: 65
+name: Prueba campo 4 tipo decimal 3 3 3 3 3 3
+created_at: 2012-03-13 22:29:32 Z
+updated_at: 2017-06-04 00:26:56.886418 Z
+label: Prueba campo 4 tipo decimal
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Prueba campo 4 tipo decimal,  vertical, js validate, 0-9  , ; minimo 1 m\xC3\xA1ximo 99900, maximo de caracteres 5, "
+help: Prueba de help
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f18e6caf-d7b8-47de-9f61-dfcef1dcfcb4
+version: 20170603-202656

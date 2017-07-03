@@ -1,0 +1,30 @@
+--- 
+id: 2891
+part_id: 515
+field_id: 17
+name: VerificarSuelos
+created_at: 2013-01-29 17:58:58 Z
+updated_at: 2017-06-04 00:22:34.001944 Z
+label: Verificar Suelos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo proceso 4
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d2e0fdb8-9923-489e-9643-520b1d1bfaf8
+version: 20170603-202234

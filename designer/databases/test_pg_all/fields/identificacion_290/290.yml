@@ -1,0 +1,30 @@
+--- 
+id: 290
+name: Identificacion
+description: "Tipo de identificacion ru, c\xC3\xA9dula"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-13 18:49:40 Z
+updated_at: 2013-06-13 19:38:31 Z
+values_list: "C\xC3\xA9dula, Pasaporte"
+keys_list: "\"Cedula\",\"Pasaporte\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

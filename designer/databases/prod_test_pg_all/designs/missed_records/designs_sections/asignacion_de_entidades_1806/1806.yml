@@ -1,0 +1,16 @@
+--- 
+id: 1806
+design_id: 139
+section_id: 384
+name: "Asignaci\xC3\xB3n de Entidades"
+created_at: 2012-08-17 16:27:30 Z
+updated_at: 2013-01-18 16:25:55 Z
+label: "Asignaci\xC3\xB3n de Entidades"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2226\":{\"2427\":{\"required\":\"required\"},\"2404\":{\"required\":\"required\"}},\"2227\":{\"2405\":{\"required\":\"required\"},\"2406\":{\"required\":\"required\"}},\"2228\":{\"2556\":{\"required\":\"required\"}},\"2229\":{\"2428\":{\"required\":\"required\"},\"2550\":{\"required\":\"required\"},\"2426\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 10

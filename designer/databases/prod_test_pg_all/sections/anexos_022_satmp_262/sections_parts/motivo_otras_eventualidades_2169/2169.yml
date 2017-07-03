@@ -1,0 +1,21 @@
+--- 
+id: 2169
+section_id: 262
+part_id: 438
+name: Motivo Otras eventualidades
+created_at: 2012-08-13 14:19:10 Z
+updated_at: 2015-10-20 20:59:07 Z
+label: Documento sustentador por motivo de Otras eventualidades
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  motivo = form_data.get("datos_de_autorizacion.motivo_de_autorizacion.motivo_de_autorizacion")
+  motivo == "Otro"
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 3

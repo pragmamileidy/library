@@ -1,0 +1,19 @@
+--- 
+id: 23
+section_id: 10
+part_id: 17
+name: addBoletasCobradas
+created_at: 2017-04-03 02:07:32.779883 Z
+updated_at: 2017-04-03 05:07:56.237441 Z
+label: addBoletasCobradas
+min_instances: 1
+max_instances: 20
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

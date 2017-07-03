@@ -1,0 +1,30 @@
+--- 
+id: 4006
+part_id: 275
+field_id: 10
+name: Campo oculto aprobacion titular
+created_at: 2016-03-16 15:54:32.728840 Z
+updated_at: 2017-06-04 00:31:50.956873 Z
+label: Campo oculto aprobacion titular
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 26
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 22befea7-3a9a-4e75-8942-ca13043333ac
+version: 20170603-203150

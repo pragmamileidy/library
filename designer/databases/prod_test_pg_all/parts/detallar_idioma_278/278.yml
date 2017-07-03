@@ -1,0 +1,17 @@
+--- 
+id: 278
+name: Detallar Idioma
+description: Se coloca el detalle del idioma que domina el usuario
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-01 17:45:17 Z
+updated_at: 2012-06-01 17:45:17 Z
+label: Detallar Idioma
+hint: Detalla el Idioma que usted domina
+view_class: vertical
+serial: 

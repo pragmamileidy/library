@@ -1,0 +1,30 @@
+--- 
+id: 516
+part_id: 116
+field_id: 10
+name: Rentabilidad
+created_at: 2011-11-22 15:42:03 Z
+updated_at: 2017-06-04 00:25:36.655549 Z
+label: "Rentabilidad aproximada de la inversiones que efectuar\xC3\xA1 en el pa\xC3\xADs"
+min_instances: 1
+max_instances: 1
+depends_on: "#Se despliega si en el Tipo de Solicitud se selecciona \"Viaje con Visa de Corta Estancia\" o \"Solicitud de Visa - Motivo de viaje\" y en Motivo de Viaje se selecciona \"Comerciantes e inversionistas de Leyes Especiales\""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4ffc716b-a9e6-4b03-a73d-34b8d7d933da
+version: 20170603-202536

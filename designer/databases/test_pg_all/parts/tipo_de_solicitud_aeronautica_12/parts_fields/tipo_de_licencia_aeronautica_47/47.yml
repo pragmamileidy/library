@@ -1,0 +1,30 @@
+--- 
+id: 47
+part_id: 12
+field_id: 19
+name: "Tipo de Licencia Aeron\xC3\xA1utica"
+created_at: 2011-11-02 16:03:15 Z
+updated_at: 2017-06-04 00:21:10.852456 Z
+label: "Tipo de Licencia Aeron\xC3\xA1utica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4bdf2c53-dc76-4620-836b-726d59d6af99
+version: 20170603-202110

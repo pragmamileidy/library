@@ -1,0 +1,16 @@
+--- 
+id: 4847
+design_id: 270
+section_id: 362
+name: Firmas Extranjeras
+created_at: 2015-05-21 14:04:07 Z
+updated_at: 2015-05-21 14:09:55 Z
+label: Firmas Extranjeras con las que ha estado asociados
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2814\":{\"3278\":{\"required\":\"required\"},\"3459\":{\"required\":\"required\"},\"3279\":{\"required\":\"required\"},\"3280\":{\"required\":\"required\"}},\"2812\":{\"3460\":{\"required\":\"required\"},\"3273\":{\"required\":\"required\"},\"3274\":{\"required\":\"required\"}},\"2813\":{\"3275\":{\"required\":\"required\"},\"3276\":{\"required\":\"required\"},\"3277\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

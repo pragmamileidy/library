@@ -1,0 +1,19 @@
+--- 
+id: 3141
+section_id: 546
+part_id: 712
+name: Tipo Documento mici
+created_at: 2014-04-24 14:51:33 Z
+updated_at: 2014-04-24 14:51:33 Z
+label: Tipo de Documento
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3601\":{},\"3602\":{},\"3603\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

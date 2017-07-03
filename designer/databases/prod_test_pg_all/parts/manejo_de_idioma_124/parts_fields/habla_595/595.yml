@@ -1,0 +1,30 @@
+--- 
+id: 595
+part_id: 124
+field_id: 24
+name: Habla
+created_at: 2011-11-24 18:35:09 Z
+updated_at: 2017-06-04 00:21:21.639462 Z
+label: Habla
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 20fbbc36-f22e-40d1-b567-ddfc0f747e8f
+version: 20170603-202121

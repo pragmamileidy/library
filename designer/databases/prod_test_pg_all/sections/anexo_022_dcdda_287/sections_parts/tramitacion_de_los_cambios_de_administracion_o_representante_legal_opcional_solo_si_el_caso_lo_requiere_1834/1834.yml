@@ -1,0 +1,31 @@
+--- 
+id: 1834
+section_id: 287
+part_id: 38
+name: "Tramitaci\xC3\xB3n de los Cambios de Administraci\xC3\xB3n o Representante Legal (Opcional, solo si el caso lo requiere)"
+created_at: 2012-06-11 19:03:39 Z
+updated_at: 2012-06-11 19:03:39 Z
+label: "Tramitaci\xC3\xB3n de los Cambios de Administraci\xC3\xB3n o Representante Legal (Opcional, solo si el caso lo requiere)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: "Contiene:\r\n\
+  \r\n\
+  -Nota explicativa con todas las generalidades del inmueble (n\xC3\xBAmero o nombre del inmueble y su ubicaci\xC3\xB3n), nombre del/los antiguo(s) administradores y RUC (indicar el orden del mismo).\r\n\
+  \r\n\
+  -Copia de c\xC3\xA9dula del arrendador.\r\n\
+  \r\n\
+  -Copia de la escritura, si tiene m\xC3\xA1s de un a\xC3\xB1o, deber\xC3\xA1 presentar certificaci\xC3\xB3n del registro p\xC3\xBAblico actualizada donde conste quien es el due\xC3\xB1o de la propiedad. Si los due\xC3\xB1os son una sociedad, presentar copia de la certificaci\xC3\xB3n de la sociedad.\r\n\
+  \r\n\
+  -En caso de que no sea el mismo propietario el que va a administrar la propiedad, deber\xC3\xA1 otorgar poder notariado a la(s) persona(s) o sociedad que designe como administrador.\r\n\
+  \r\n\
+  -Cuando es cambio de representante legal por concepto de nueva junta directiva, adjuntar copia de la certificaci\xC3\xB3n de los nuevos dignatarios. Cuando es por designaci\xC3\xB3n de la gerencia, nota donde se indica quienes la persona autorizada a firmar por la sociedad.\r\n\
+  \r\n\
+  -Incluir a cada solicitud de devoluci\xC3\xB3n la copia del documento que autoriza la firma del nuevo representante legal, siempre y cuando el contrato este firmado por el administrador anterior. \r\n"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

@@ -1,0 +1,57 @@
+--- 
+id: 2854
+name: "Paso 0 - Asignaci\xC3\xB3n de Entidades Evaluadoras"
+label: "Asignaci\xC3\xB3n de Entidades Evaluadoras"
+description: "Asignaci\xC3\xB3n de Entidades Evaluadoras"
+fill_step_id: 1535
+created_at: 2014-04-10 18:37:46 Z
+updated_at: 2014-04-10 18:37:46 Z
+include: "{\"4257\":{\"2198\":{\"2371\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2372\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2373\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2374\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2375\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2376\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4258\":{\"2173\":{\"3124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3182\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3183\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3204\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2174\":{\"954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4259\":{\"2544\":{\"3124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2418\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3182\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3204\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3192\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4260\":{\"2189\":{\"3078\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2387\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2388\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2389\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2390\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2391\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2392\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2190\":{\"954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4261\":{\"2197\":{\"2393\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2394\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2395\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2396\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2397\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3450\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2398\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2400\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2401\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4262\":{\"2485\":{\"365\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3102\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3103\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"367\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"366\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2089\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2090\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3375\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2486\":{\"3104\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3105\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3106\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2488\":{\"2845\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2846\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2847\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2848\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2792\":{\"3209\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2791\":{\"3209\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4263\":{\"2380\":{\"3194\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3451\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4265\":{\"3022\":{\"3515\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3516\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3023\":{\"3517\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3518\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3024\":{\"3519\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3520\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3025\":{\"3521\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3522\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3026\":{\"3523\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3524\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3027\":{\"3525\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3526\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3028\":{\"3527\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3528\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3029\":{\"3529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3530\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3030\":{\"3531\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3532\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3031\":{\"3533\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3534\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3033\":{\"3537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3538\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4267\":{\"2228\":{\"2556\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2229\":{\"2550\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2426\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3035\":{\"3540\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3044\":{\"3564\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4272\":{\"2940\":{\"3454\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3455\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4274\":{\"2940\":{\"3454\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3455\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3456\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  _numeroPlano = form_data.get("datos_generales_del_proyecto.categoria_del_proyecto.numero_de_plano")
+  form_data.set("asignacion_de_entidades.datos_especificados_por_el_analista.no_de_plano_asignado", _numeroPlano)
+  
+  _categoria = form_data.get("datos_generales_del_proyecto.categoria_del_proyecto.categoria_del_proyecto")
+  form_data.set("asignacion_de_entidades.datos_especificados_por_el_analista.categoria_del_proyecto", _categoria)
+  
+  
+  # Inicializacion de datos del agente - LG
+  
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  
+  form_data.set("seccion_de_funcionario_jefe1.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: |
+  entidades = form_data.get("asignacion_de_entidades.entidad_evaluadora.entidad_evaluadora_check")
+  entidades = JSON.parse(entidades)
+  
+  form_data.set("asignacion_de_entidades.dato.valor",entidades)
+
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: "//function ocultar1(){\r\n\
+  //\t\t\t\t\t$('input[name=\"[field][asignacion_de_entidades_exoneracion_p5_entidades][]\"]').parent().parent().parent().parent().parent().hide();\r\n\
+  //\t}\t\r\n\
+  //$( function() {\r\n  //  $( \"input:radio\" ).click(function() {\r\n\
+  \t//\t\tcheck3(this);\r\n\
+  \t//\t});\r\n\
+  //});                                                \r\n\
+  //function check3(obj) {\r\n\
+  //\t\tif (obj.value == \"S\xC3\x8D\" && obj.name==\"[field][asignacion_de_entidades_confirma_exoneracion_exonerar]\"){\r\n\
+  //\t\t\t\t\t$('input[name=\"[field][asignacion_de_entidades_exoneracion_p5_entidades][]\"]').parent().parent().parent().parent().parent().show();                                                          \r\n\
+  //\t} \r\n\
+  \t\r\n\
+  //\tif (obj.value == \"NO\" && obj.name==\"[field][asignacion_de_entidades_confirma_exoneracion_exonerar]\"){\t\r\n\
+  //\t\t\t\t\t$('input[name=\"[field][asignacion_de_entidades_exoneracion_p5_entidades][]\"]').parent().parent().parent().parent().parent().hide();\r\n\
+  //\t\t}\r\n\
+  //\t}\r\n\
+  //ocultar1();"

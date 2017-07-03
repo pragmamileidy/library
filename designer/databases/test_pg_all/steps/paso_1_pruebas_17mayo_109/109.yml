@@ -1,0 +1,22 @@
+--- 
+id: 109
+name: Paso 1 - Pruebas 17mayo
+label: "Pruebas de rendeo "
+description: "descripci\xC3\xB3n del Formulario de pruebas de rendeo - fill step descripci\xC3\xB3n del Formulario de pruebas de rendeo - fill stepdescripci\xC3\xB3n del Formulario de pruebas de rendeo - fill stepdescripci\xC3\xB3n del Formulario de pruebas de rendeo - fill stepdescripci\xC3\xB3n del Formulario de pruebas de rendeo - fill step\r\n\
+  \r\n\
+  <br />\r\n\
+  descripci\xC3\xB3n del Formulario de pruebas de rendeo - fill step"
+fill_step_id: 33
+created_at: 2012-04-10 14:05:20 Z
+updated_at: 2012-05-21 04:51:23 Z
+include: "{\"575\":{\"653\":{\"746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"745\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"655\":{\"753\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"754\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"756\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"757\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: 

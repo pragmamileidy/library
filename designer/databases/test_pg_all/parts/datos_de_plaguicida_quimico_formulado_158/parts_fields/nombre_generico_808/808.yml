@@ -1,0 +1,30 @@
+--- 
+id: 808
+part_id: 158
+field_id: 10
+name: "Nombre Gen\xC3\xA9rico"
+created_at: 2012-03-24 15:02:29 Z
+updated_at: 2017-06-04 00:23:47.881318 Z
+label: "Nombre Gen\xC3\xA9rico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Nombre gen\xC3\xA9rico del producto plaguicida al cual se le solicita registro"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: db0702fc-d1d1-4688-88de-20c6b2d59a05
+version: 20170603-202347

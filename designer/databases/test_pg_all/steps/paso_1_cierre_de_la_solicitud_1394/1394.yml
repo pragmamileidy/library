@@ -1,0 +1,19 @@
+--- 
+id: 1394
+name: Paso 1 - Cierre de la Solicitud
+label: Cierre de la Solicitud
+description: ""
+fill_step_id: 696
+created_at: 2013-05-17 15:02:13 Z
+updated_at: 2013-05-17 15:02:13 Z
+include: "{\"2843\":{\"2095\":{\"2311\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2312\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2313\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2314\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2315\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2318\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2848\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

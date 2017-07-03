@@ -1,0 +1,30 @@
+--- 
+id: 1574
+part_id: 288
+field_id: 83
+name: Otra experiencia
+created_at: 2012-06-04 14:45:26 Z
+updated_at: 2017-06-04 00:31:01.924967 Z
+label: Desea Agregar otra Experiencia Laboral
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 12
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 919ed126-3f3f-4084-b01e-cfa02fe29b40
+version: 20170603-203101

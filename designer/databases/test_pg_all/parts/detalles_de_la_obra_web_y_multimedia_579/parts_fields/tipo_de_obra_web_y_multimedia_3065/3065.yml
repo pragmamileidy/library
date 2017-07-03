@@ -1,0 +1,30 @@
+--- 
+id: 3065
+part_id: 579
+field_id: 266
+name: Tipo de Obra - web y multimedia
+created_at: 2013-03-14 21:09:58 Z
+updated_at: 2017-06-04 00:22:42.787842 Z
+label: Tipo de Obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b15decfd-991a-4982-9b9e-b0a6161cffcd
+version: 20170603-202242

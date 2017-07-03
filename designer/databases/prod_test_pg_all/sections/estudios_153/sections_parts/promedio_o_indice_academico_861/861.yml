@@ -1,0 +1,19 @@
+--- 
+id: 861
+section_id: 153
+part_id: 50
+name: "Promedio o \xC3\x8Dndice Acad\xC3\xA9mico"
+created_at: 2012-03-28 17:36:59 Z
+updated_at: 2012-05-21 15:32:58 Z
+label: "Promedio o \xC3\x8Dndice Acad\xC3\xA9mico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor especificar la cantidad solicitada
+help: Favor especificar la cantidad solicitada
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

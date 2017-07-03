@@ -1,0 +1,19 @@
+--- 
+id: 3455
+section_id: 574
+part_id: 118
+name: Regente
+created_at: 2015-02-18 03:14:54 Z
+updated_at: 2015-02-18 03:14:54 Z
+label: Regente
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"528\":{},\"529\":{},\"530\":{},\"537\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 5

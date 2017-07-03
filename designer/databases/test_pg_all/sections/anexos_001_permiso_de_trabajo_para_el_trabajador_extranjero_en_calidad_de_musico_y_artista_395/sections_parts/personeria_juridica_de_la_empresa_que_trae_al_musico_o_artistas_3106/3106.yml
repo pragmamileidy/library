@@ -1,0 +1,19 @@
+--- 
+id: 3106
+section_id: 395
+part_id: 38
+name: "Personer\xC3\xADa jur\xC3\xADdica de la empresa que trae al m\xC3\xBAsico o artistas"
+created_at: 2014-03-28 20:33:55 Z
+updated_at: 2014-05-28 21:11:40 Z
+label: "Personer\xC3\xADa jur\xC3\xADdica de la empresa que trae al m\xC3\xBAsico o artistas"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

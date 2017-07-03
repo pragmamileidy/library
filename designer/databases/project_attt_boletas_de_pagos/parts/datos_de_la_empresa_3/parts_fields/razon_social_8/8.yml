@@ -1,0 +1,30 @@
+--- 
+id: 8
+part_id: 3
+field_id: 2
+name: razon social
+created_at: 2016-10-04 21:01:49.872016 Z
+updated_at: 2016-10-04 21:01:49.872016 Z
+label: "Raz\xC3\xB3n Social"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 152a12cf-0067-4961-b512-d5a47a10bdae
+version: 20161004-170149

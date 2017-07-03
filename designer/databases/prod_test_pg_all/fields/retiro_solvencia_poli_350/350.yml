@@ -1,0 +1,30 @@
+--- 
+id: 350
+name: Retiro Solvencia Poli
+description: Retiro Solvencia Policial
+version: 
+status: Draft
+label: Retiro Solvencia Poli
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-03-01 15:40:52.865106 Z
+updated_at: 2016-03-01 15:40:52.865106 Z
+values_list: "\" \",\"Titular\",\"Autorizado\""
+keys_list: "\" \",\"Titular\",\"Autorizado\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 8421-6689-3456-9262-6430

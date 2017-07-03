@@ -1,0 +1,16 @@
+--- 
+id: 14
+design_id: 2
+section_id: 4
+name: Boletas por Pagar
+created_at: 2016-12-23 19:39:46.789901 Z
+updated_at: 2017-01-20 14:35:42.308326 Z
+label: Boletas por Pagar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"7\":{\"66\":{\"required\":\"unrequired\"},\"58\":{\"required\":\"required\"},\"59\":{\"required\":\"required\"},\"60\":{\"required\":\"required\"},\"61\":{\"required\":\"required\"},\"62\":{\"required\":\"required\"},\"63\":{\"required\":\"required\"},\"64\":{\"required\":\"required\"},\"65\":{\"required\":\"required\"},\"17\":{\"required\":\"unrequired\"}},\"21\":{\"14\":{\"required\":\"unrequired\"},\"16\":{\"required\":\"unrequired\"},\"38\":{\"required\":\"unrequired\"},\"41\":{\"required\":\"unrequired\"},\"44\":{\"required\":\"unrequired\"},\"53\":{\"required\":\"unrequired\"},\"15\":{\"required\":\"required\"},\"67\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

@@ -1,0 +1,30 @@
+--- 
+id: 2755
+part_id: 519
+field_id: 10
+name: requires_pay
+created_at: 2013-01-15 16:43:41 Z
+updated_at: 2017-06-04 00:22:28.355944 Z
+label: Requiere Pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e6229f39-4fa2-4293-839d-c6b708a47343
+version: 20170603-202228

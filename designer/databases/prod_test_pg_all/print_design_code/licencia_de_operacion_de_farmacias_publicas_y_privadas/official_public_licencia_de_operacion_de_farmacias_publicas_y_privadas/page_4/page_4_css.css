@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  background-image: url(RUTA_IMAGEN.png);
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+.informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  position: absolute;
+  top: 127px;
+  left: 658px;
+  width: 338px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  position: absolute;
+  top: 96px;
+  left: 658px;
+  width: 335px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelrepresentante_datosdelapersona_nombrecompleto {
+  position: absolute;
+  top: 329px;
+  left: 55px;
+  width: 419px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelregentefarmacutico_datosdelapersona_nombrecompleto {
+  position: absolute;
+  top: 327px;
+  left: 588px;
+  width: 400px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_1_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 445px;
+  left: 55px;
+  width: 432px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_1_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 508px;
+  left: 146px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_2_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 445px;
+  left: 536px;
+  width: 495px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_2_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 508px;
+  left: 626px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_3_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 594px;
+  left: 55px;
+  width: 370px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_3_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 655px;
+  left: 146px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_4_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 594px;
+  left: 536px;
+  width: 494px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_4_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 655px;
+  left: 626px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_5_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 742px;
+  left: 55px;
+  width: 409px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_5_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 800px;
+  left: 147px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_6_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 742px;
+  left: 536px;
+  width: 498px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_6_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 800px;
+  left: 626px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_7_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 892px;
+  left: 55px;
+  width: 366px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_7_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 951px;
+  left: 146px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_8_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 892px;
+  left: 536px;
+  width: 495px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_8_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 951px;
+  left: 626px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_9_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 1040px;
+  left: 55px;
+  width: 396px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_9_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 1099px;
+  left: 146px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_10_turnofarmaceutico_nombre {
+  position: absolute;
+  top: 1040px;
+  left: 536px;
+  width: 496px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_10_turnofarmaceutico_idoneidad {
+  position: absolute;
+  top: 1099px;
+  left: 625px;
+  width: 232px;
+  height: 20px;
+  overflow: hidden;
+  }

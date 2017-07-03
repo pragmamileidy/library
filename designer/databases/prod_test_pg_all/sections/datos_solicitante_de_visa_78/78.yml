@@ -1,0 +1,17 @@
+--- 
+id: 78
+name: Datos Solicitante de Visa
+description: _
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-16 14:16:38 Z
+updated_at: 2012-05-16 20:46:12 Z
+status: Draft
+label: Datos Solicitante de Visa
+hint: ""
+serial: 

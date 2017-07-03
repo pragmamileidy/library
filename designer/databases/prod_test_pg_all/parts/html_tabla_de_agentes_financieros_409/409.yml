@@ -1,0 +1,17 @@
+--- 
+id: 409
+name: HTML - tabla de agentes financieros
+description: HTML - tabla de agentes financieros
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-27 16:24:23 Z
+updated_at: 2012-07-27 16:24:23 Z
+label: Agentes Financieros
+hint: ""
+view_class: horizontal
+serial: 

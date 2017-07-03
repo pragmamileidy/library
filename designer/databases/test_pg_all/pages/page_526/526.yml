@@ -1,0 +1,244 @@
+--- 
+id: 526
+position: 4
+selector: "{\"4491\":{\"656\":{\"758\":{},\"759\":{}}},\"4496\":{\"580\":{\"1981\":{},\"1374\":{},\"3614\":{},\"3615\":{},\"3616\":{}}},\"4497\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"572\":{},\"805\":{},\"1123\":{},\"631\":{},\"594\":{}}},\"4498\":{\"234\":{\"1981\":{},\"1374\":{},\"3714\":{}}},\"4499\":{\"3373\":{\"3040\":{},\"3041\":{},\"3043\":{},\"3044\":{}},\"3374\":{\"3045\":{},\"3046\":{},\"3047\":{},\"3049\":{},\"3050\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 76px;
+  	left: 665px;
+  	width: 318px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 49px;
+  	left: 653px;
+  	width: 319px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 864px;
+  	left: 233px;
+  	width: 166px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 907px;
+  	left: 241px;
+  	width: 710px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_email {
+  	position: absolute;
+  	top: 939px;
+  	left: 111px;
+  	width: 306px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_nmerodetelfono {
+  	position: absolute;
+  	top: 938px;
+  	left: 739px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_telfonodeoficina {
+  	position: absolute;
+  	top: 939px;
+  	left: 532px;
+  	width: 168px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejuridico_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 862px;
+  	left: 231px;
+  	width: 172px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejuridico_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 907px;
+  	left: 236px;
+  	width: 716px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejuridico_direccin_pas {
+  	position: absolute;
+  	top: 1016px;
+  	left: 105px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejuridico_direccin_direccin {
+  	position: absolute;
+  	top: 1007px;
+  	left: 445px;
+  	width: 487px;
+  	height: 55px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejuridico_direccin_telfonodeoficina {
+  	position: absolute;
+  	top: 938px;
+  	left: 521px;
+  	width: 179px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejuridico_direccin_nmerocelular {
+  	position: absolute;
+  	top: 939px;
+  	left: 734px;
+  	width: 209px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejuridico_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 939px;
+  	left: 111px;
+  	width: 303px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_cdulapasaporte {
+  	position: absolute;
+  	top: 1127px;
+  	left: 226px;
+  	width: 163px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_nombrecompleto {
+  	position: absolute;
+  	top: 1126px;
+  	left: 562px;
+  	width: 377px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_direccion {
+  	position: absolute;
+  	top: 1188px;
+  	left: 155px;
+  	width: 786px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosdelregistroamodificar_resolucin {
+  	position: absolute;
+  	top: 202px;
+  	left: 159px;
+  	width: 340px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosdelregistroamodificar_fechadeinscripcin {
+  	position: absolute;
+  	top: 201px;
+  	left: 696px;
+  	width: 259px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosdelregistroamodificar_titulodelaobra {
+  	position: absolute;
+  	top: 239px;
+  	left: 207px;
+  	width: 738px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosdelregistroamodificar_tipodeobra {
+  	position: absolute;
+  	top: 276px;
+  	left: 174px;
+  	width: 331px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosamodificar_nuevotitulo {
+  	position: absolute;
+  	top: 389px;
+  	left: 184px;
+  	width: 756px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosamodificar_nmerodeedicin {
+  	position: absolute;
+  	top: 427px;
+  	left: 228px;
+  	width: 72px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosamodificar_nuevotitular {
+  	position: absolute;
+  	top: 544px;
+  	left: 176px;
+  	width: 357px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosamodificar_especificarenqueconsistenlasadiciones {
+  	position: absolute;
+  	top: 601px;
+  	left: 355px;
+  	width: 577px;
+  	height: 71px;
+  	overflow: hidden;
+    }
+    .datosdemodificaciondeobras_datosamodificar_otrasespecificacionesdelaobra {
+  	position: absolute;
+  	top: 713px;
+  	left: 350px;
+  	width: 587px;
+  	height: 69px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_4\" />\r\n  <title>Registro de Adiciones o Modificaciones de Obra</title>\r\n  <style type=\"text/css\">\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n    body {\r\n      margin-left: 0px;\r\n      margin-top: 0px;\r\n      margin-right: 0px;\r\n      margin-bottom: 0px;\r\n      padding-left: 0px;\r\n      padding-top: 0px;\r\n      padding-right: 0px;\r\n      padding-bottom: 0px;\r\n      overflow:hidden;\r\n    }\r\n    .magicDiv {\r\n      background-image:url('<%= image_path %>');\r\n      background-repeat:no-repeat;\r\n      background-position:0% 0%;\r\n      background-size:100%; \r\n      position:absolute;\r\n      left: 32px;\r\n      top: 32px;\r\n      height:1344px;\r\n      width: 1024px;\r\n      overflow:hidden;\r\n    }\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n  </style>\r\n\
+  </head>\r\n  <body>\r\n    <div class=\"magicDiv\">\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantenatural_datosdelapersona_cdulapasaporte\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantenatural_datosdelapersona_cdulapasaporte\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantenatural_datosdelapersona_nombrecompleto\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantenatural_datosdelapersona_nombrecompleto\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantenatural_datosdelapersona_email\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantenatural_datosdelapersona_email\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantenatural_datosdelapersona_nmerodetelfono\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantenatural_datosdelapersona_nmerodetelfono\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantenatural_datosdelapersona_telfonodeoficina\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantenatural_datosdelapersona_telfonodeoficina\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantejuridico_datosdelaempresa_ruc\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantejuridico_datosdelaempresa_ruc\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantejuridico_datosdelaempresa_nombre\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantejuridico_datosdelaempresa_nombre\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantejuridico_direccin_pas\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantejuridico_direccin_pas\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantejuridico_direccin_direccin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantejuridico_direccin_direccin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantejuridico_direccin_telfonodeoficina\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantejuridico_direccin_telfonodeoficina\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantejuridico_direccin_nmerocelular\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantejuridico_direccin_nmerocelular\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelsolicitantejuridico_direccin_correoelectrnico\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitantejuridico_direccin_correoelectrnico\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_cdulapasaporte\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_cdulapasaporte\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_nombrecompleto\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_nombrecompleto\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_direccion\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelrepresentante_datosbsicosdelrepresentantelegalopropietario_direccion\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosdelregistroamodificar_resolucin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosdelregistroamodificar_resolucin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosdelregistroamodificar_fechadeinscripcin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosdelregistroamodificar_fechadeinscripcin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosdelregistroamodificar_titulodelaobra\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosdelregistroamodificar_titulodelaobra\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosdelregistroamodificar_tipodeobra\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosdelregistroamodificar_tipodeobra\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosamodificar_nuevotitulo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosamodificar_nuevotitulo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosamodificar_nmerodeedicin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosamodificar_nmerodeedicin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosamodificar_nuevotitular\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosamodificar_nuevotitular\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosamodificar_especificarenqueconsistenlasadiciones\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosamodificar_especificarenqueconsistenlasadiciones\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdemodificaciondeobras_datosamodificar_otrasespecificacionesdelaobra\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdemodificaciondeobras_datosamodificar_otrasespecificacionesdelaobra\"] %>\r\n          </span>\r\n        </div>\r\n    </div>\r\n  </body>\r\n\
+  </html>\r\n\
+  \r\n"
+print_design_id: 166
+created_at: 2014-11-28 15:40:32 Z
+updated_at: 2014-11-28 19:38:08 Z
+instances_selector: "{\"4491\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4496\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"3614\":{\"value\":\"\"},\"3615\":{\"value\":\"\"},\"3616\":{\"value\":\"\"}}},\"4497\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"1123\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"4498\":{\"value\":\"\",\"234\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"3714\":{\"value\":\"\"}}},\"4499\":{\"value\":\"\",\"3373\":{\"value\":\"\",\"3040\":{\"value\":\"\"},\"3041\":{\"value\":\"\"},\"3043\":{\"value\":\"\"},\"3044\":{\"value\":\"\"}},\"3374\":{\"value\":\"\",\"3045\":{\"value\":\"\"},\"3046\":{\"value\":\"\"},\"3047\":{\"value\":\"\"},\"3049\":{\"value\":\"\"},\"3050\":{\"value\":\"\"}}}}"
+size: 

@@ -1,0 +1,30 @@
+--- 
+id: 3038
+part_id: 573
+field_id: 10
+name: Ciudad
+created_at: 2013-03-13 21:37:14 Z
+updated_at: 2017-06-04 00:26:20.843737 Z
+label: Ciudad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cd83a6cf-de46-4fe5-ac87-6479f05b9f1d
+version: 20170603-202620

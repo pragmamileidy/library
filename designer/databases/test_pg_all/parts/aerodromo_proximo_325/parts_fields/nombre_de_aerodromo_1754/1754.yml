@@ -1,0 +1,30 @@
+--- 
+id: 1754
+part_id: 325
+field_id: 130
+name: "Nombre de Aer\xC3\xB3dromo"
+created_at: 2012-06-12 22:35:04 Z
+updated_at: 2017-06-04 00:21:52.841670 Z
+label: "Nombre de Aer\xC3\xB3dromo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "Nombre del aer\xC3\xB3dromo m\xC3\xA1s cercano al sitio solicitado del cual se solicita la evaluaci\xC3\xB3n aeron\xC3\xA1utica"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: da017ad5-666b-4c1c-bebd-a8bc1d75c40b
+version: 20170603-202152

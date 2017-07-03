@@ -1,0 +1,31 @@
+--- 
+id: 289
+name: Paso 1 - Datos 1
+label: Label de Paso 1 - Datos 1
+description: "Descripci\xC3\xB3n del Paso 1 - Datos 1\r\n\
+  No se seleccionaron los controles de back_steps y next_steps\r\n\
+  \r\n\
+  Sin marcar los controles opcionales pero marcando los allowed steps"
+fill_step_id: 168
+created_at: 2012-05-04 22:42:10 Z
+updated_at: 2012-05-19 20:00:31 Z
+include: "{\"923\":{\"632\":{\"674\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"675\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"677\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"678\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"682\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ,Paso 2 - Datos 1
+allowed_back_to_steps: ""
+controls: ,back,next,next_steps,close,close_and_save,save
+on_becoming: |
+  response =  PreconfiguredService.post(:create_blank_form, nil, {template_id: "6a6eefd18c4c87979b8bae795bbefbf4"}.to_json)
+  
+  form = ActiveSupport::JSON.decode(@task.json_form)
+  
+  form["form"]["sections"].find{|s| s["section"]["name"]== "prueba_seccion_1_presentacion_de_views_de_partes_0_instance_1"}["section"]["parts"].find{|p| p["part"]["name"]   == "prueba_parte_1_parte_vertical_campos_verticales_0"}["part"]["fields"].find{|f| f["field"]["name"]  == "prueba_campo_1_tipo_string_0_0_0_0_instance_1"}["field"]["value"] = response.body
+  
+  @task.json_form = form.to_json
+  @task.save
+
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 2 - Datos 1
+position: 0
+ajax_calls: 

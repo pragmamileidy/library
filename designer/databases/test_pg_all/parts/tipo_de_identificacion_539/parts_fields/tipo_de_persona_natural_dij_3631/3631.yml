@@ -1,0 +1,30 @@
+--- 
+id: 3631
+part_id: 539
+field_id: 322
+name: Tipo de Persona Natural DIJ
+created_at: 2014-06-05 16:15:25 Z
+updated_at: 2017-06-04 00:26:35.933937 Z
+label: Tipo de Persona
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 88c007d5-9d3c-410f-97ef-48fff6fd3b01
+version: 20170603-202635

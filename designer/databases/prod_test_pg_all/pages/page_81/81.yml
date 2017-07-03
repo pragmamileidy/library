@@ -1,0 +1,431 @@
+--- 
+id: 81
+position: 1
+selector: "{\"478\":{\"656\":{\"758\":{},\"759\":{}}},\"527\":{\"580\":{\"1323\":{},\"1320\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{}},\"586\":{\"557\":{}},\"581\":{\"585\":{},\"586\":{}}},\"528\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"572\":{},\"573\":{},\"891\":{},\"578\":{},\"575\":{},\"585\":{},\"586\":{}}},\"1603\":{\"2012\":{\"2011\":{},\"2012\":{},\"3092\":{},\"2014\":{},\"2015\":{},\"2016\":{},\"2031\":{},\"2017\":{},\"2018\":{},\"2019\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+  	/* main_pdf_content: estos attributos seran ignorados en rendeo */
+  	background-image: url(img/pag01.png);
+  	top: 1px;
+  	left: -1px;
+  	height: 1344px;
+  	width: 1024px;
+  	position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 75px;
+  	left: 722px;
+  	width: 276px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 50px;
+  	left: 722px;
+  	width: 297px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_cdula {
+  	position: absolute;
+  	top: 309px;
+  	left: 284px;
+  	width: 224px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_pasaporte {
+  	position: absolute;
+  	top: 309px;
+  	left: 284px;
+  	width: 224px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 309px;
+  	left: 754px;
+  	width: 205px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 340px;
+  	left: 285px;
+  	width: 224px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 340px;
+  	left: 754px;
+  	width: 204px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 371px;
+  	left: 285px;
+  	width: 226px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinlaboral_cargo {
+  	position: absolute;
+  	top: 371px;
+  	left: 754px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 402px;
+  	left: 285px;
+  	width: 226px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_nmerodefax {
+  	position: absolute;
+  	top: 402px;
+  	left: 755px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 477px;
+  	left: 284px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 507px;
+  	left: 285px;
+  	width: 672px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_direccin_pas {
+  	position: absolute;
+  	top: 476px;
+  	left: 755px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_direccin_ciudad {
+  	position: absolute;
+  	top: 537px;
+  	left: 754px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_direccin_urbanizacin {
+  	position: absolute;
+  	top: 538px;
+  	left: 283px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_direccin_calleoavenida {
+  	position: absolute;
+  	top: 568px;
+  	left: 754px;
+  	width: 205px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_direccin_cdigopostal {
+  	position: absolute;
+  	top: 568px;
+  	left: 283px;
+  	width: 226px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 599px;
+  	left: 756px;
+  	width: 200px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportadoroexportador_direccin_nmerodefax {
+  	position: absolute;
+  	top: 599px;
+  	left: 284px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_especie {
+  	position: absolute;
+  	top: 673px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_raza {
+  	position: absolute;
+  	top: 673px;
+  	left: 753px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_edadmesanio {
+  	position: absolute;
+  	top: 704px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_sexoanimal {
+  	position: absolute;
+  	top: 704px;
+  	left: 753px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_fraccion {
+  	position: absolute;
+  	top: 735px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_finalidad {
+  	position: absolute;
+  	top: 735px;
+  	left: 753px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_cantidadletras {
+  	position: absolute;
+  	top: 797px;
+  	left: 269px;
+  	width: 686px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_cantidadennmeros {
+  	position: absolute;
+  	top: 766px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_identificacion {
+  	position: absolute;
+  	top: 766px;
+  	left: 754px;
+  	width: 201px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_1_animalesvivos_unidaddemedida {
+  	position: absolute;
+  	top: 827px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_especie {
+  	position: absolute;
+  	top: 918px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_raza {
+  	position: absolute;
+  	top: 918px;
+  	left: 753px;
+  	width: 204px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_edadmesanio {
+  	position: absolute;
+  	top: 949px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_sexoanimal {
+  	position: absolute;
+  	top: 949px;
+  	left: 754px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_fraccion {
+  	position: absolute;
+  	top: 980px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_finalidad {
+  	position: absolute;
+  	top: 980px;
+  	left: 754px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_cantidadletras {
+  	position: absolute;
+  	top: 1042px;
+  	left: 269px;
+  	width: 688px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_cantidadennmeros {
+  	position: absolute;
+  	top: 1011px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_identificacion {
+  	position: absolute;
+  	top: 1011px;
+  	left: 754px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_2_animalesvivos_unidaddemedida {
+  	position: absolute;
+  	top: 1073px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_especie {
+  	position: absolute;
+  	top: 1147px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_raza {
+  	position: absolute;
+  	top: 1147px;
+  	left: 755px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_edadmesanio {
+  	position: absolute;
+  	top: 1178px;
+  	left: 268px;
+  	width: 60px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_sexoanimal {
+  	position: absolute;
+  	top: 1178px;
+  	left: 754px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_fraccion {
+  	position: absolute;
+  	top: 1209px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_finalidad {
+  	position: absolute;
+  	top: 1209px;
+  	left: 754px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_cantidadletras {
+  	position: absolute;
+  	top: 1271px;
+  	left: 268px;
+  	width: 687px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_cantidadennmeros {
+  	position: absolute;
+  	top: 1240px;
+  	left: 270px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_identificacion {
+  	position: absolute;
+  	top: 1240px;
+  	left: 755px;
+  	width: 199px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .importaciondeanimalesvivos_instance_3_animalesvivos_unidaddemedida {
+  	position: absolute;
+  	top: 1301px;
+  	left: 269px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: ""
+print_design_id: 41
+created_at: 2012-05-05 19:13:54 Z
+updated_at: 2015-10-30 18:19:14 Z
+instances_selector: "{\"478\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"527\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"1320\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"}},\"586\":{\"value\":\"\",\"557\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"}}},\"528\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"573\":{\"value\":\"\"},\"891\":{\"value\":\"\"},\"578\":{\"value\":\"\"},\"575\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"}}},\"1603\":{\"value\":\"1,3\",\"2012\":{\"value\":\"\",\"2011\":{\"value\":\"\"},\"2012\":{\"value\":\"\"},\"3092\":{\"value\":\"\"},\"2014\":{\"value\":\"\"},\"2015\":{\"value\":\"\"},\"2016\":{\"value\":\"\"},\"2031\":{\"value\":\"\"},\"2017\":{\"value\":\"\"},\"2018\":{\"value\":\"\"},\"2019\":{\"value\":\"\"}}}}"
+size: ""

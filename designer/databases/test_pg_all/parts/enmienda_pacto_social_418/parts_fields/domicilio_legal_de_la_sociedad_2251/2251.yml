@@ -1,0 +1,30 @@
+--- 
+id: 2251
+part_id: 418
+field_id: 17
+name: Domicilio Legal de la sociedad
+created_at: 2012-08-07 20:38:57 Z
+updated_at: 2017-06-04 00:29:40.835875 Z
+label: Domicilio Legal de la sociedad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar el domicilio legal de la sociedad
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8d6fdf09-af6f-4187-b04f-bb195b203bb8
+version: 20170603-202940

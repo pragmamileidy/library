@@ -1,0 +1,19 @@
+--- 
+id: 1432
+section_id: 237
+part_id: 38
+name: ced. Rep. Legal
+created_at: 2012-05-11 22:37:05 Z
+updated_at: 2012-07-18 16:33:55 Z
+label: "Copia de la C\xC3\xA9dula del Representante Legal"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: horizontal
+order_input: 1

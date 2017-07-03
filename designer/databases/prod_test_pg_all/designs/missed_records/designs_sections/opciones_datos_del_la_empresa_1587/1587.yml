@@ -1,0 +1,16 @@
+--- 
+id: 1587
+design_id: 86
+section_id: 322
+name: Opciones / Datos del la empresa
+created_at: 2012-07-04 20:15:35 Z
+updated_at: 2013-04-26 20:35:33 Z
+label: Opciones / Datos del la empresa
+min_instances: 1
+max_instances: 4
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1993\":{\"2194\":{\"required\":\"required\"},\"557\":{\"required\":\"required\"},\"613\":{\"required\":\"required\"},\"1168\":{\"required\":\"required\"}}}"
+hint: "Detalle de la Empresa en donde ha laborado (Gobierno, Empresa privada o R\xC3\xA9gimen de Seguro Voluntario). Si el asegurado no recuerda las fechas con exactitud puede se\xC3\xB1alar una fecha Aproximada"
+help: ""
+order_input: 10

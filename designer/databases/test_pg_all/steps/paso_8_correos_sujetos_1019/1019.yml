@@ -1,0 +1,35 @@
+--- 
+id: 1019
+name: Paso 8 - Correos Sujetos
+label: Correos
+description: ""
+fill_step_id: 531
+created_at: 2013-01-16 20:55:04 Z
+updated_at: 2013-02-20 19:36:51 Z
+include: "{\"2295\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2292\":{\"2434\":{\"2798\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2799\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2435\":{\"2801\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2802\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2803\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2804\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2806\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2807\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"mail_bodies\")\r\n\
+  \r\n\
+  #Llenar campos de la parte MAIL_PAGOS\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_cargartramite.cargarsolicitud\", \"Por favor dir\xC3\xADjase a la bandeja de Mis tr\xC3\xA1mites y llene el(los) formulario(s) asociados al tr\xC3\xA1mite iniciado por usted, para \")\r\n\
+  form_data.set(\"mail_bodies.mail_cargartramite.anularpasocarga\", \"Usted ha anulado la solicitud inicial para el tr\xC3\xA1mite \")\r\n\
+  \r\n\
+  #Llenar los campos de la parte MAIL_PAGOS\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_pagos.ingresarpagos\", \"Ingresar pago(s) para el tr\xC3\xA1mite de solicitud de \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.anularpasopago\", \"Tr\xC3\xA1mite anulado por errores durante el ingreso de pagos. \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.recibirpago\", \" Actualmente se encuentra en espera de revisi\xC3\xB3n de Pago(s) el tr\xC3\xA1mite para\")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.rechazopago\", \"Ha sido rechazado por el funcionario receptor de la Instituci\xC3\xB3n al revisar los datos de pagos, su tr\xC3\xA1mite para \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.reparopago\", \"El(los) pago(s) requiere(n) reparo(s). Por favor revise su bandeja para m\xC3\xA1s detalles sobre la solicitud para  \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.anularpasoreparopago\", \"El tr\xC3\xA1mite iniciado por Usted, ha sido anulado por errores durante el reparo de pagos. \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.errorrecibirpago\", \"Por favor solvente los errores t\xC3\xA9cnicos que han ocurrido durante la revisi\xC3\xB3n de los pagos de la Solicitud del  tramite \")\r\n"
+on_transition: ""
+views: 
+back_step: Paso 7 - Notificaciones
+next_step: Paso 9 - Correos Sujetos
+position: 7
+ajax_calls: ""

@@ -1,0 +1,17 @@
+--- 
+id: 683
+name: Registro de la Propiedad p5
+description: Certificado de Registro de la Propiedad
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-02-18 15:11:19 Z
+updated_at: 2015-02-25 15:04:25 Z
+label: Certificado de Registro de la Propiedad
+hint: ""
+view_class: horizontal
+serial: 1342-9998-7119-8515-0994

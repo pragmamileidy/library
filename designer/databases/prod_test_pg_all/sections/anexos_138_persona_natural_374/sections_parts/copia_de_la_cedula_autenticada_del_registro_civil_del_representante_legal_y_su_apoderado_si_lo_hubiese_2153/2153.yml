@@ -1,0 +1,19 @@
+--- 
+id: 2153
+section_id: 374
+part_id: 38
+name: "Copia de la c\xC3\xA9dula autenticada del Registro Civil del representante legal y su apoderado, si lo hubiese"
+created_at: 2012-08-10 19:53:38 Z
+updated_at: 2017-02-25 18:12:14.710625 Z
+label: "Fotocopia de la c\xC3\xA9dula de identidad personal de su representante legal autenticada ante el registro civil"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: En el caso de extranjeros los pasaportes deben ser autenticados ante la respectiva embajada o consulado.
+help: En el caso de extranjeros los pasaportes deben ser autenticados ante la respectiva embajada o consulado.
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 5

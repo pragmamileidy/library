@@ -1,0 +1,16 @@
+--- 
+id: 2869
+design_id: 217
+section_id: 366
+name: Solicitante Natural
+created_at: 2013-05-17 16:11:22 Z
+updated_at: 2013-05-17 16:11:22 Z
+label: Datos de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: "{\"2095\":{\"2311\":{\"required\":\"required\"},\"2312\":{\"required\":\"required\"},\"2313\":{\"required\":\"required\"},\"2314\":{\"required\":\"required\"},\"2315\":{\"required\":\"required\"},\"2318\":{\"required\":\"required\"}},\"2096\":{\"2302\":{\"required\":\"required\"},\"2296\":{\"required\":\"required\"},\"2304\":{\"required\":\"required\"},\"2320\":{\"required\":\"required\"},\"2306\":{\"required\":\"required\"},\"2307\":{\"required\":\"required\"},\"2305\":{\"required\":\"required\"},\"2308\":{\"required\":\"required\"},\"2309\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

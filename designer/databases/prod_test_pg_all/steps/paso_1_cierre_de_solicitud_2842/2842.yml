@@ -1,0 +1,27 @@
+--- 
+id: 2842
+name: Paso 1 - Cierre de Solicitud
+label: Cierre de Solicitud
+description: Cierre de Solicitud
+fill_step_id: 1530
+created_at: 2014-04-09 16:29:12 Z
+updated_at: 2014-04-09 16:29:12 Z
+include: "{\"588\":{\"1448\":{\"1381\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1048\":{\"1452\":{\"3435\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"357\":{\"595\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"597\":{\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"358\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"586\":{\"2450\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"581\":{\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"806\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"359\":{\"689\":{\"3431\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"690\":{\"800\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"691\":{\"2321\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2522\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"692\":{\"3432\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"693\":{\"2045\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"799\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"360\":{\"695\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"696\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"697\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"698\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"699\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"700\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"701\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"702\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"703\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"704\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1063\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"773\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"775\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  
+  form_data.set("cerrado_por.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

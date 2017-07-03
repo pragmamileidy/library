@@ -1,0 +1,16 @@
+--- 
+id: 1219
+design_id: 105
+section_id: 261
+name: "Datos de Autorizaci\xC3\xB3n"
+created_at: 2012-06-05 15:20:50 Z
+updated_at: 2015-11-09 21:18:15 Z
+label: "Datos de Autorizaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1760\":{\"1575\":{\"required\":\"required\"},\"3977\":{\"required\":\"unrequired\"},\"1576\":{\"required\":\"required\"},\"3978\":{\"required\":\"unrequired\"}},\"1761\":{\"1577\":{\"required\":\"required\"},\"1578\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

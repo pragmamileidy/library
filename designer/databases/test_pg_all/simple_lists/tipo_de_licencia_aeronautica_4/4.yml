@@ -1,0 +1,20 @@
+--- 
+id: 4
+name: "Tipo de Licencia Aeron\xC3\xA1utica"
+sl_type: Encoded
+values: "{\r\n\
+  1  =>  \"Alumno Piloto\",\r\n\
+  2  =>  \"Piloto Privado\",\r\n\
+  3  =>  \"Piloto Comercial\",\r\n\
+  4  =>  \"Piloto de Transporte A\xC3\xA9reo\",\r\n\
+  5  =>  \"Instructor en Tierra\",\r\n\
+  6  =>  \"Instructor de Vuelo Inicial\",\r\n\
+  7  =>  \"Prueba M\xC3\xA9dica de Vuelo\",\r\n\
+  9  =>  \"Licencia Restringida de Radio Operaci\xC3\xB3n a Bordo\",\r\n\
+  10 =>  \"Habilitaci\xC3\xB3n de Instructor\",\r\n\
+  11 =>  \"Habilitaci\xC3\xB3n  adicional\",\r\n\
+  12 =>  \"Examinaci\xC3\xB3n\",\r\n\
+  13 =>  \"Otro\"\r\n\
+  }"
+created_at: 2011-11-03 03:34:46 Z
+updated_at: 2011-11-03 03:34:46 Z

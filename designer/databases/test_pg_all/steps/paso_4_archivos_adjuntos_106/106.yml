@@ -1,0 +1,20 @@
+--- 
+id: 106
+name: Paso 4 - Archivos Adjuntos
+label: Archivos Adjuntos
+description: Archivos Adjuntos
+fill_step_id: 31
+created_at: 2012-04-05 15:20:46 Z
+updated_at: 2012-05-19 20:48:30 Z
+include: "{\"542\":{\"941\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"942\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"943\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"944\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"945\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"946\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"947\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"986\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"948\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"985\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"949\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"984\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"950\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"983\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"951\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"982\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"952\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"981\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"953\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"980\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"954\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"979\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"955\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"978\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"956\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"977\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"957\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"976\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"958\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"975\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"959\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"974\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"960\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"973\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"961\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"972\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"962\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"971\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"963\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"970\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"964\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"969\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"965\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"968\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"966\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"967\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,back_steps,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: "# Al presionar REGRESAR, se debe validar en TIPO DE SOLICITUD si es CORREDOR DE ADUANAS, de ser as\xC3\xAD\r\n\
+  # debe regresar al paso 3, de lo contrario, regresa al paso 2. "
+views: 
+back_step: Paso 2 - Datos del Corredor
+next_step: ""
+position: 3
+ajax_calls: 

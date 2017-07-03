@@ -1,0 +1,16 @@
+--- 
+id: 1290
+design_id: 113
+section_id: 278
+name: Informe de ventas
+created_at: 2012-06-08 16:32:33 Z
+updated_at: 2015-11-03 01:56:55 Z
+label: Informe de ventas
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1800\":{\"1682\":{\"required\":\"required\"},\"1683\":{\"required\":\"required\"}},\"1798\":{\"1323\":{\"required\":\"required\"},\"1374\":{\"required\":\"required\"}},\"1801\":{\"1684\":{\"required\":\"required\"},\"1685\":{\"required\":\"required\"},\"1686\":{\"required\":\"required\"},\"1687\":{\"required\":\"required\"}}}"
+hint: "Registrar los datos del cliente que compr\xC3\xB3 club de  mercanc\xC3\xADa en el periodo determinado y los datos de la venta. Puede reportar otro periodo adicional haciendo clic en el bot\xC3\xB3n \"Agregar\". "
+help: ""
+order_input: 5

@@ -1,0 +1,30 @@
+--- 
+id: 86
+part_id: 23
+field_id: 24
+name: "Ingl\xC3\xA9s"
+created_at: 2011-11-03 13:54:15 Z
+updated_at: 2017-06-04 00:21:12.116406 Z
+label: "\xC2\xBFUsted habla, lee y escribe en el idioma ingl\xC3\xA9s?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: 
+help: 
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 71e10387-c4d0-4ba8-a673-e49734b33552
+version: 20170603-202112

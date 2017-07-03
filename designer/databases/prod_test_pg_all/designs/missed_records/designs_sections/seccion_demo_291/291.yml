@@ -1,0 +1,16 @@
+--- 
+id: 291
+design_id: 50
+section_id: 113
+name: " Secci\xC3\xB3n demo"
+created_at: 2012-03-05 16:54:01 Z
+updated_at: 2012-04-10 18:42:19 Z
+label: "  Secci\xC3\xB3n demo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: " Introduzca todos los valores de la secci\xC3\xB3n"
+help: " "
+order_input: 1

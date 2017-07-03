@@ -1,0 +1,30 @@
+--- 
+id: 3859
+part_id: 734
+field_id: 10
+name: "Clasificaci\xC3\xB3n Terape\xC3\xBAtica"
+created_at: 2015-02-18 03:15:21 Z
+updated_at: 2017-06-04 00:26:38.535348 Z
+label: "Clasificaci\xC3\xB3n seg\xC3\xBAn uso terape\xC3\xBAtico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a7028976-7ad8-442b-bc1c-2268b39f024f
+version: 20170603-202638

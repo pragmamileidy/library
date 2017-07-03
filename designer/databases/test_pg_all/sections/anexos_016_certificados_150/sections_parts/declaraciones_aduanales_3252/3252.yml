@@ -1,0 +1,19 @@
+--- 
+id: 3252
+section_id: 150
+part_id: 38
+name: Declaraciones Aduanales
+created_at: 2014-06-20 15:20:52 Z
+updated_at: 2014-06-20 15:20:52 Z
+label: Declaraciones Aduanales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

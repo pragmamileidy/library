@@ -1,0 +1,19 @@
+--- 
+id: 1787
+section_id: 272
+part_id: 300
+name: Datos de Finca en Arriendo - Generales
+created_at: 2012-06-08 14:46:54 Z
+updated_at: 2012-06-08 14:46:54 Z
+label: Datos Generales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

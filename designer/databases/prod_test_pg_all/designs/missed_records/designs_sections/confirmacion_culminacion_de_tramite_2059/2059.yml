@@ -1,0 +1,16 @@
+--- 
+id: 2059
+design_id: 156
+section_id: 240
+name: "Confirmacion culminaci\xC3\xB3n de tr\xC3\xA1mite"
+created_at: 2012-08-30 21:27:06 Z
+updated_at: 2013-07-04 15:54:03 Z
+label: "Confirmacion culminaci\xC3\xB3n de tr\xC3\xA1mite"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1514\":{\"1390\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

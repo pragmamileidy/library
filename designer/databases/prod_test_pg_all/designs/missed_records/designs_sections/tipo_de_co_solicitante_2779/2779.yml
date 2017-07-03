@@ -1,0 +1,18 @@
+--- 
+id: 2779
+design_id: 211
+section_id: 334
+name: Tipo de Co-solicitante
+created_at: 2013-05-09 13:40:06 Z
+updated_at: 2013-05-09 13:40:06 Z
+label: Tipo de Co-solicitante
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  tipo = form_data.get("tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante")
+  tipo == "Arquitecto Tramitador"
+manage_as_confidential: false
+include: "{\"2027\":{\"2080\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

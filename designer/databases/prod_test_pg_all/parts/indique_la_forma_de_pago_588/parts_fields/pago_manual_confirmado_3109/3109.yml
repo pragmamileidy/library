@@ -1,0 +1,30 @@
+--- 
+id: 3109
+part_id: 588
+field_id: 24
+name: Pago manual confirmado
+created_at: 2013-03-29 22:39:37 Z
+updated_at: 2017-06-04 00:22:44.443234 Z
+label: Pago manual confirmado
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c57e528a-9ec0-4a0f-b6ff-ffb6df4892c4
+version: 20170603-202244

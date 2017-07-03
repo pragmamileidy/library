@@ -1,0 +1,30 @@
+--- 
+id: 3138
+part_id: 592
+field_id: 10
+name: Timeout
+created_at: 2013-04-08 15:40:52 Z
+updated_at: 2017-06-04 00:29:47.820666 Z
+label: Timeout
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: (dd:hh:mm:ss)
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d620c231-765a-495c-8e83-4f7bf6153f64
+version: 20170603-202947

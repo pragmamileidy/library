@@ -1,0 +1,28 @@
+--- 
+id: 2898
+name: Paso 3 - Correos Sujetos
+label: Correos Sujetos
+description: ""
+fill_step_id: 617
+created_at: 2014-06-23 20:34:47 Z
+updated_at: 2014-06-26 14:13:49 Z
+include: "{\"4365\":{\"2434\":{\"2798\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2799\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2436\":{\"2808\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2809\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3490\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2811\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2812\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3666\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3667\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2440\":{\"2838\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3663\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2839\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2443\":{\"2814\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2815\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2816\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2817\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3012\":{\"3493\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2444\":{\"2696\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3258\":{\"3661\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3664\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3662\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3665\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |
+  #Llenar campos de la parte MAIL CARGAR TRAMITE
+  
+  
+  
+  
+  #Llenar campos de la parte MAIL ADMIN
+  
+  form_data.set("mail_bodies.mail_admin.admin_email", "shantall@pragmagenia.com ")
+
+on_transition: ""
+views: 
+back_step: Paso 2 - Mensajes Sujetos
+next_step: Paso 0 - Llenado
+position: 3
+ajax_calls: ""

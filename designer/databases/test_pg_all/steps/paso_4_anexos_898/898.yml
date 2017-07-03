@@ -1,0 +1,21 @@
+--- 
+id: 898
+name: Paso 4 - Anexos
+label: Anexos
+description: "Introduzca los anexos del tr\xC3\xA1mite"
+fill_step_id: 330
+created_at: 2012-08-23 13:42:54 Z
+updated_at: 2013-05-21 18:26:49 Z
+include: "{\"184\":{\"2491\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: |-
+  grilla = form_data.get("sectiongrid.partgrid_row_1.fieldgrid_row_1")
+  form_data.set("anexos.cheques.numero_de_referencia",grilla)
+views: 
+back_step: Paso 3 - Clave de Descuento
+next_step: Paso 5 - confirmacion
+position: 4
+ajax_calls: ""

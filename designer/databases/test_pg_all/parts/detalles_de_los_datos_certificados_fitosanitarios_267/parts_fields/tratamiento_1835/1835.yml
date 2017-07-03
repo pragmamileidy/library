@@ -1,0 +1,30 @@
+--- 
+id: 1835
+part_id: 267
+field_id: 157
+name: Tratamiento
+created_at: 2012-06-14 22:06:55 Z
+updated_at: 2017-06-04 00:31:36.171820 Z
+label: Tratamiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Si el env\xC3\xADo requiere o no tratamiento"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 18
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c563883c-2115-4dd6-9121-1793b3ccada2
+version: 20170603-203136

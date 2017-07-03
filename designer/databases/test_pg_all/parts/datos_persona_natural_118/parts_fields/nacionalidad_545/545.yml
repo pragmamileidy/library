@@ -1,0 +1,30 @@
+--- 
+id: 545
+part_id: 118
+field_id: 10
+name: Nacionalidad
+created_at: 2011-11-22 18:07:52 Z
+updated_at: 2017-06-04 00:31:35.097926 Z
+label: Nacionalidad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 18
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 67f79dea-9a7e-4abd-8926-930fc525ed91
+version: 20170603-203135

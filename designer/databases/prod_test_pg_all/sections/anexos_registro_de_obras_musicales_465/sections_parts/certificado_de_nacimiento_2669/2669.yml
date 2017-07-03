@@ -1,0 +1,19 @@
+--- 
+id: 2669
+section_id: 465
+part_id: 562
+name: Certificado de Nacimiento
+created_at: 2013-03-13 17:09:47 Z
+updated_at: 2013-10-30 13:19:58 Z
+label: Certificado de Nacimiento
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

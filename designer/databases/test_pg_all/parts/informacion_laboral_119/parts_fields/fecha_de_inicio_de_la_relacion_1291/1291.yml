@@ -1,0 +1,30 @@
+--- 
+id: 1291
+part_id: 119
+field_id: 13
+name: "Fecha de Inicio de la Relaci\xC3\xB3n "
+created_at: 2012-05-08 16:53:34 Z
+updated_at: 2017-06-04 00:28:07.217214 Z
+label: "Fecha de Inicio de la Relaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique la Fecha de Inicio de la Relaci\xC3\xB3n Laboral"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ddcc97ce-8472-41ae-89a2-b9e43ae549ca
+version: 20170603-202807

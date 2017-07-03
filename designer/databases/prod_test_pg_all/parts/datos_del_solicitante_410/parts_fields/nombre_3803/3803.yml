@@ -1,0 +1,30 @@
+--- 
+id: 3803
+part_id: 410
+field_id: 330
+name: nombre
+created_at: 2014-11-04 15:06:39 Z
+updated_at: 2017-06-04 00:27:46.755565 Z
+label: Nombre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "por favor ingrese su Nombre "
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 100
+rows: 
+min_value: 
+max_value: 
+format: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s\\-'\xC2\xB4.]+$/"
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 702424b7-f95a-4490-8f1c-55f22bfedbcd
+version: 20170603-202746

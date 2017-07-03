@@ -1,0 +1,19 @@
+--- 
+id: 3113
+name: "Paso 5 - Requisitos de la Solitud "
+label: "Requisitos de la Solitud "
+description: "Requisitos de la Solitud "
+fill_step_id: 1660
+created_at: 2015-02-20 16:58:22 Z
+updated_at: 2015-02-20 16:59:56 Z
+include: "{\"4789\":{\"1169\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1170\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1171\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1172\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1872\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1873\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 4 - Datos del Servicio
+next_step: "Paso 6 - Confirmaci\xC3\xB3n "
+position: 5
+ajax_calls: ""

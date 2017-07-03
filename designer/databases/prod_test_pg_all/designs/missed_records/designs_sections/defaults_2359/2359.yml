@@ -1,0 +1,16 @@
+--- 
+id: 2359
+design_id: 175
+section_id: 420
+name: defaults
+created_at: 2013-01-23 20:18:13 Z
+updated_at: 2013-10-08 21:02:21 Z
+label: Por defecto (Defaults)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2415\":{\"2571\":{\"required\":\"required\"},\"3448\":{\"required\":\"required\"},\"3449\":{\"required\":\"required\"},\"2573\":{\"required\":\"required\"},\"2574\":{\"required\":\"required\"},\"2580\":{\"required\":\"required\"},\"2581\":{\"required\":\"required\"},\"2585\":{\"required\":\"required\"}},\"2416\":{\"2595\":{\"required\":\"required\"},\"2596\":{\"required\":\"required\"},\"2597\":{\"required\":\"required\"},\"2598\":{\"required\":\"required\"}},\"2482\":{\"2795\":{\"required\":\"required\"},\"2796\":{\"required\":\"required\"}},\"2483\":{\"2793\":{\"required\":\"required\"},\"2794\":{\"required\":\"required\"}},\"2417\":{\"2601\":{\"required\":\"required\"},\"2602\":{\"required\":\"required\"},\"2603\":{\"required\":\"required\"},\"2604\":{\"required\":\"required\"},\"2605\":{\"required\":\"required\"},\"2606\":{\"required\":\"required\"}},\"2418\":{\"2607\":{\"required\":\"required\"},\"2608\":{\"required\":\"required\"},\"2609\":{\"required\":\"required\"},\"2610\":{\"required\":\"required\"},\"2611\":{\"required\":\"required\"},\"2612\":{\"required\":\"required\"},\"2613\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

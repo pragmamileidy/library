@@ -1,0 +1,30 @@
+--- 
+id: 3959
+part_id: 275
+field_id: 10
+name: doc_oculto
+created_at: 2015-10-02 17:03:14 Z
+updated_at: 2017-06-04 00:23:22.925108 Z
+label: doc_oculto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b70af805-e25c-41a6-b736-fb1eb8fdea6e
+version: 20170603-202322

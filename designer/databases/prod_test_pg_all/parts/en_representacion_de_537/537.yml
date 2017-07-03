@@ -1,0 +1,17 @@
+--- 
+id: 537
+name: En representacion de
+description: empleado para los tramites de MICI
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-02-28 15:19:26 Z
+updated_at: 2017-04-07 23:19:10.636997 Z
+label: "En representaci\xC3\xB3n de:"
+hint: "S\xC3\xB3lo si aplica"
+view_class: horizontal
+serial: 2803-7659-2393-9681-6726

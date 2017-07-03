@@ -1,0 +1,17 @@
+--- 
+id: 652
+name: Pago Manual mensaje
+description: Pago Manual generico
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-07-03 17:13:33 Z
+updated_at: 2013-07-03 17:13:33 Z
+label: "Pago Manual "
+hint: ""
+view_class: horizontal
+serial: 

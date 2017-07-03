@@ -1,0 +1,16 @@
+--- 
+id: 2725
+design_id: 208
+section_id: 268
+name: "Datos Generales de los Directorios y Abogado Id\xC3\xB3neo"
+created_at: 2013-05-02 13:31:52 Z
+updated_at: 2013-05-02 13:31:52 Z
+label: "Datos Generales de los Directores y el Abogado Id\xC3\xB3neo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1781\":{\"1739\":{\"required\":\"required\"},\"1738\":{\"required\":\"required\"},\"1740\":{\"required\":\"required\"}},\"1782\":{\"1741\":{\"required\":\"required\"},\"1742\":{\"required\":\"required\"},\"1743\":{\"required\":\"required\"},\"1744\":{\"required\":\"required\"},\"1745\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

@@ -1,0 +1,16 @@
+--- 
+id: 3462
+design_id: 241
+section_id: 532
+name: Mensajes_Pago p4
+created_at: 2014-01-20 16:31:22 Z
+updated_at: 2014-01-20 16:31:22 Z
+label: Mensajes de Pago
+min_instances: 0
+max_instances: 1
+depends_on: "[\"started\", \"successfully\", \"error\"].include? form_data.get(\"variables_usadas_codigos_p4.variables_p4.estatus\")"
+manage_as_confidential: false
+include: "{\"2959\":{\"3164\":{\"required\":\"required\"},\"3169\":{\"required\":\"required\"}},\"2960\":{\"3168\":{\"required\":\"required\"}},\"2961\":{\"3172\":{\"required\":\"required\"},\"3173\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 40

@@ -1,0 +1,30 @@
+--- 
+id: 215
+name: Especialidad profesional
+description: Especialidad profesional
+version: 
+status: Draft
+label: Especialidad profesional
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-14 18:43:58 Z
+updated_at: 2013-04-23 15:00:36 Z
+values_list: "\" \",\"Encargado de la obra\",\"Dise\xC3\xB1o arquitect\xC3\xB3nico\",\"Dise\xC3\xB1o estructural\",\"Dise\xC3\xB1o el\xC3\xA9ctrico\",\"Dise\xC3\xB1o de plomer\xC3\xADa\",\"Dise\xC3\xB1o de AA\\, refrigeraci\xC3\xB3n y ventilaci\xC3\xB3n\",\"Dise\xC3\xB1o de la red telef\xC3\xB3nica interna\",\"Dise\xC3\xB1o del sistema de detecci\xC3\xB3n y alarma de incendio\",\"Dise\xC3\xB1o de las instalaciones de equipos electr\xC3\xB3nicos\""
+keys_list: "\" \",\"Encargado de la obra\",\"Dise\xC3\xB1o arquitect\xC3\xB3nico\",\"Dise\xC3\xB1o estructural\",\"Dise\xC3\xB1o el\xC3\xA9ctrico\",\"Dise\xC3\xB1o de plomer\xC3\xADa\",\"Dise\xC3\xB1o de AA\\, refrigeraci\xC3\xB3n y ventilaci\xC3\xB3n\",\"Dise\xC3\xB1o de la red telef\xC3\xB3nica interna\",\"Dise\xC3\xB1o del sistema de detecci\xC3\xB3n y alarma de incendio\",\"Dise\xC3\xB1o de las instalaciones de equipos electr\xC3\xB3nicos\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

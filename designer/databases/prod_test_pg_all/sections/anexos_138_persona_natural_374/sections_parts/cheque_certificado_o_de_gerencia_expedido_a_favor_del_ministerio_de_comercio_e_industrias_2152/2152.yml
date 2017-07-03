@@ -1,0 +1,20 @@
+--- 
+id: 2152
+section_id: 374
+part_id: 38
+name: Cheque Certificado o de Gerencia expedido a favor del Ministerio de Comercio e Industrias
+created_at: 2012-08-10 19:53:38 Z
+updated_at: 2017-03-20 21:36:36.640984 Z
+label: "Cheque Certificado o de Gerencia expedido a favor del Tesoro Nacional / 8-NT-1-13620 DV32, por un monto de mil quinientos balboas (B/.1,500.00), que cubre la tasa de expedici\xC3\xB3n de autorizaci\xC3\xB3n y la tasa de fiscalizaci\xC3\xB3n del a\xC3\xB1o en curso"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Por favor adjuntar el archivo correspondiente
+help: "Cheque Certificado o de Gerencia expedido a favor del Tesoro Nacional / 8-NT-1-13620 DV32, por un monto de mil quinientos balboas (B/.1,500.00), que cubre la tasa de expedici\xC3\xB3n de autorizaci\xC3\xB3n y la tasa de fiscalizaci\xC3\xB3n\r\n\
+  del a\xC3\xB1o en curso\r\n"
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 4

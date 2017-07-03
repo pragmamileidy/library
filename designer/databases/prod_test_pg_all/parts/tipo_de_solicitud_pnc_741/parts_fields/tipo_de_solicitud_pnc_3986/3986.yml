@@ -1,0 +1,30 @@
+--- 
+id: 3986
+part_id: 741
+field_id: 345
+name: Tipo de Solicitud PNC
+created_at: 2016-02-23 19:30:13.245396 Z
+updated_at: 2017-06-04 00:23:23.651144 Z
+label: Tipo de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9984f1e9-a195-4db1-ae82-e9a216c42ef9
+version: 20170603-202323

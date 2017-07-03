@@ -1,0 +1,16 @@
+--- 
+id: 1196
+design_id: 104
+section_id: 254
+name: "Datos generales de Servicio P\xC3\xBAblico de empleo"
+created_at: 2012-05-31 21:09:17 Z
+updated_at: 2013-10-25 13:49:22 Z
+label: Datos generales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1731\":{\"1497\":{\"required\":\"required\"},\"1498\":{\"required\":\"unrequired\"},\"1499\":{\"required\":\"unrequired\"},\"1500\":{\"required\":\"unrequired\"},\"1501\":{\"required\":\"required\"},\"1502\":{\"required\":\"unrequired\"},\"1503\":{\"required\":\"required\"},\"2462\":{\"required\":\"required\"},\"1504\":{\"required\":\"unrequired\"},\"1505\":{\"required\":\"unrequired\"},\"1506\":{\"required\":\"required\"},\"1507\":{\"required\":\"unrequired\"},\"1508\":{\"required\":\"required\"},\"1509\":{\"required\":\"required\"},\"1510\":{\"required\":\"required\"},\"1511\":{\"required\":\"required\"},\"1512\":{\"required\":\"unrequired\"},\"1995\":{\"required\":\"unrequired\"},\"1514\":{\"required\":\"unrequired\"},\"1515\":{\"required\":\"required\"},\"1516\":{\"required\":\"unrequired\"},\"1517\":{\"required\":\"unrequired\"},\"1518\":{\"required\":\"required\"},\"1519\":{\"required\":\"required\"},\"1520\":{\"required\":\"required\"},\"1521\":{\"required\":\"unrequired\"},\"1522\":{\"required\":\"required\"},\"1523\":{\"required\":\"unrequired\"},\"1524\":{\"required\":\"required\"},\"1525\":{\"required\":\"unrequired\"},\"1526\":{\"required\":\"required\"},\"1527\":{\"required\":\"unrequired\"},\"1987\":{\"required\":\"unrequired\"}},\"1999\":{\"1984\":{\"required\":\"unrequired\"},\"1985\":{\"required\":\"unrequired\"},\"1986\":{\"required\":\"unrequired\"}},\"2004\":{\"1984\":{\"required\":\"required\"},\"1985\":{\"required\":\"required\"},\"1986\":{\"required\":\"required\"}},\"2005\":{\"2004\":{\"required\":\"unrequired\"},\"1984\":{\"required\":\"unrequired\"},\"1985\":{\"required\":\"unrequired\"},\"1986\":{\"required\":\"unrequired\"}}}"
+hint: Llene correctamente los siguientes datos.
+help: ""
+order_input: 7

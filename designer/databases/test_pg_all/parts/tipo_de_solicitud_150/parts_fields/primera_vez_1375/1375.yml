@@ -1,0 +1,30 @@
+--- 
+id: 1375
+part_id: 150
+field_id: 60
+name: Primera vez
+created_at: 2012-05-16 20:29:23 Z
+updated_at: 2017-06-04 00:21:42.212494 Z
+label: Checkbox
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7de70e23-1804-4e23-b427-795d0cdf03d4
+version: 20170603-202142

@@ -1,0 +1,45 @@
+--- 
+id: 1071
+name: Paso 6 - Notificaciones
+label: Notificaciones
+description: ""
+fill_step_id: 545
+created_at: 2013-01-24 18:13:29 Z
+updated_at: 2014-04-11 14:55:02 Z
+include: "{\"2367\":{\"2424\":{\"2642\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2643\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2425\":{\"2644\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2645\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2646\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2647\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2426\":{\"2650\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2651\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2652\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2653\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2428\":{\"2656\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2657\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2658\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2659\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2660\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2661\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenar campo de la parte NOTIFICACION_REPARO\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_reparo.iniciopasoreparo\", \"Solicitud en Correcci\xC3\xB3n por parte del solicitante. \")\r\n\
+  form_data.set(\"notifications.notificacion_reparo.finpasoreparo\", \"Correcci\xC3\xB3n de Solicitud completada. \")\r\n\
+  \r\n\
+  #Llenar campo de la parte NOTIFICACION_SUELOS\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_suelos.iniciofaseverificacionsuelos\", \"INICIO FASE VERIFICACI\xC3\x93N DE SUELOS\")\r\n\
+  form_data.set(\"notifications.notificacion_suelos.finfaseverificacionsuelos\", \"FIN FASE VERIFICACI\xC3\x93N DE SUELOS\")\r\n\
+  form_data.set(\"notifications.notificacion_suelos.iniciopasoverificacionsuelos\", \"Solicitud en proceso de verificaci\xC3\xB3n de uso de suelos en MIVIOT. \")\r\n\
+  form_data.set(\"notifications.notificacion_suelos.finpasoverificacionsuelos\", \"Verificaci\xC3\xB3n de uso de suelos completada. \")\r\n\
+  \r\n\
+  #Llenar campo de la parte NOTIFICACION_EVALUACION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.iniciofaseevaluacion\", \"INICIO FASE EVALUACI\xC3\x93N\")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.finfaseevaluacion\", \"FIN FASE EVALUACI\xC3\x93N\")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.iniciopasorevisiontecnica\", \"Solicitud en proceso de Revisi\xC3\xB3n T\xC3\xA9cnica en \")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.finpasorevisiontecnica\", \"Completada la Revisi\xC3\xB3n T\xC3\xA9cnica en \")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.iniciopasoaprobacion\", \"Solicitud de Anteproyecto de Cosntrucci\xC3\xB3n en proceso de aprobaci\xC3\xB3n de la Revisi\xC3\xB3n T\xC3\xA9cnica en MIVIOT. \")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.finpasoaprobacion\", \"Completada la aprobaci\xC3\xB3n de la Revisi\xC3\xB3n T\xC3\xA9cnica en MIVIOT para solicitud de Anteproyecto de Construcci\xC3\xB3n Nro. \")\r\n\
+  \r\n\
+  #Llenar los campos de la parte NOTIFICACION_CIERRE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciofasecierre\", \"INICIO FASE CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finfasecierre\", \"FIN FASE CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciopasocierre\", \"Solicitud en Proceso de completaci\xC3\xB3n en la Instituci\xC3\xB3n \")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finpasocierre\", \"Solicitud procesada en la Instituci\xC3\xB3n. \")"
+on_transition: ""
+views: 
+back_step: Paso 5 - Notificaciones
+next_step: Paso 7 - Correos Sujetos
+position: 5
+ajax_calls: ""

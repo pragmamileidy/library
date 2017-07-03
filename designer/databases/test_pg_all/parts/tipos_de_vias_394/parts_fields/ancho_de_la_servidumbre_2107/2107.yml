@@ -1,0 +1,30 @@
+--- 
+id: 2107
+part_id: 394
+field_id: 27
+name: Ancho de la Servidumbre
+created_at: 2012-07-23 14:33:01 Z
+updated_at: 2017-06-04 00:24:26.923718 Z
+label: Ancho de la Servidumbre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Especifica el ancho de la servidumbre en Mts
+help: Especifica el ancho de la servidumbre en Mts
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 069e8afa-0ab2-4591-94b1-701697f04778
+version: 20170603-202426

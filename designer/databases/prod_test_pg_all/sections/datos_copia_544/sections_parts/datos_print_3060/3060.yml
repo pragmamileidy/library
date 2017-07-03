@@ -1,0 +1,19 @@
+--- 
+id: 3060
+section_id: 544
+part_id: 711
+name: datos print
+created_at: 2014-03-23 16:07:53 Z
+updated_at: 2014-03-23 16:07:53 Z
+label: ""
+min_instances: 1
+max_instances: 30
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3589\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,36 @@
+--- 
+id: 1039
+name: Paso 8 - Mensajes de Correos
+label: Mensajes de Correos
+description: ""
+fill_step_id: 532
+created_at: 2013-01-23 14:58:08 Z
+updated_at: 2013-04-27 19:45:25 Z
+include: "{\"2309\":{\"2436\":{\"2808\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2809\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2810\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2811\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2443\":{\"2814\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2815\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2816\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2817\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2444\":{\"2696\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenar campos de la parte MAIL_SOLICITUDTRAMITE\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.recibirsolicitud\", \"El tr\xC3\xA1mite de solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos iniciado por Usted, se encuentra en Bandeja de Funcionarios en espera de recepci\xC3\xB3n.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.rechazosolicitud\", \"El tr\xC3\xA1mite de solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos iniciado por Usted, ha sido rechazada por el funcionario receptor de la Instituci\xC3\xB3n. Revise su bandeja para m\xC3\xA1s detalles.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.reparosolicitud\", \"El tr\xC3\xA1mite de solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos iniciado por Usted, ha sido revisado por el funcionario de la Instituci\xC3\xB3n y el mismo requiere reparo(s). Por favor revise su bandeja para m\xC3\xA1s detalles\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.anularpasoreparosolicitud\", \"El tr\xC3\xA1mite de solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos iniciado por Usted, ha sido anulado por errores durante el reparo de la solicitud.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.errorrecibirsolicitud\", \"Ha habido errores en la revisi\xC3\xB3n de pagos de la Solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos, por favor solvente para que se pueda completar la revisi\xC3\xB3n de los pagos del tr\xC3\xA1mite.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte MAIL_CIERRETRAMITE\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_cierretramite.cerrartramite\", \"Solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos en espera de completaci\xC3\xB3n por parte de la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"mail_bodies.mail_cierretramite.completartramite\", \"El tr\xC3\xA1mite de solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos ha sido enviada al Registro \xC3\x9Anico de Veh\xC3\xADculos Motirizados (RUVM). Por favor agende una cita y pres\xC3\xA9ntese con los recaudos y la contraparte (si aplica) en la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"mail_bodies.mail_cierretramite.errorcerrartramite\", \"Ha habido errores durante el cierre de la Solicitud de Duplicado de Certificado de Propiedad de Veh\xC3\xADculos, por favor solvente para que se pueda completar el cierre del tr\xC3\xA1mite.\")\r\n\
+  form_data.set(\"mail_bodies.mail_cierretramite.fallocompletartramite\", \"Su solicitud no ser\xC3\xA1 enviada al Registro \xC3\x9Anico de Veh\xC3\xADculos Motorizados debido a causas justificadas por el funcionario de la instituci\xC3\xB3n. Por favor ingrese a su bandeja para mas detalles.tr\xC3\xA1mite.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte MAIL_ADMIN\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_admin.admin_email\", \"shantall@pragmagenia.com\")"
+on_transition: ""
+views: 
+back_step: Paso 7 - Mensajes de Correos
+next_step: Paso 9 - Asuntos de Correos
+position: 8
+ajax_calls: ""

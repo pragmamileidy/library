@@ -1,0 +1,30 @@
+--- 
+id: 3948
+part_id: 528
+field_id: 17
+name: observacion reparo
+created_at: 2015-08-19 20:43:03 Z
+updated_at: 2017-06-04 00:31:19.036400 Z
+label: Observaciones y Recomendaciones para el Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 13
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 54598a5b-1530-4a8c-b908-10029075a835
+version: 20170603-203119

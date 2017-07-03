@@ -1,0 +1,16 @@
+--- 
+id: 2513
+design_id: 187
+section_id: 472
+name: Anexos - Registro de Adiciones o Modificaciones de Obras
+created_at: 2013-03-14 14:52:08 Z
+updated_at: 2015-10-26 01:15:36 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2911\":{\"210\":{\"required\":\"required\"}},\"2701\":{\"2940\":{\"required\":\"required\"}},\"2912\":{\"210\":{\"required\":\"required\"}},\"2702\":{\"2937\":{\"required\":\"required\"}},\"2700\":{\"2938\":{\"required\":\"required\"}},\"2927\":{\"210\":{\"required\":\"required\"}},\"2928\":{\"210\":{\"required\":\"required\"}},\"2929\":{\"210\":{\"required\":\"required\"}},\"3246\":{\"210\":{\"required\":\"unrequired\"}},\"3247\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

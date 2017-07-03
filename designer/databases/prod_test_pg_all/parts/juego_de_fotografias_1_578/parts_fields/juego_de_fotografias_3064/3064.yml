@@ -1,0 +1,30 @@
+--- 
+id: 3064
+part_id: 578
+field_id: 31
+name: Juego de Fotografias
+created_at: 2013-03-14 16:33:56 Z
+updated_at: 2017-06-04 00:22:42.609505 Z
+label: Juego de Fotografias
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "4.\tAportar un (1) juego de fotograf\xC3\xADas que permitan identificar las principales escenas, o un (1) juego de reproducciones sonoras de la fijaci\xC3\xB3n "
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8d8806bc-9153-49c8-b8da-c3d507e10b12
+version: 20170603-202242

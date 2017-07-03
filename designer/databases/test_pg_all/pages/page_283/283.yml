@@ -1,0 +1,102 @@
+--- 
+id: 283
+position: 7
+selector: "{\"2719\":{\"656\":{\"758\":{},\"759\":{}}},\"2726\":{\"1785\":{\"1701\":{},\"1307\":{},\"1318\":{},\"1319\":{}}},\"2727\":{\"1441\":{\"1326\":{}},\"1443\":{\"1340\":{},\"1341\":{},\"1342\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xEF\xBF\xBDl es el formato b\xEF\xBF\xBDsico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xEF\xBF\xBDn no se han definido */\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n    position:absolute;\r\n    top:99px;\r\n    left:603px;\r\n    width:169px;\r\n    overflow:hidden;\r\n    height: 15px;\r\n   font-size: 11px;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n    position:absolute;\r\n    top:81px;\r\n    left:603px;\r\n    width:168px;\r\n    overflow:hidden;\r\n    height: 15px;\r\n    font-size: 11px;\r\n  }\r\n    .actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:151px;\r\n\
+  \tleft:62px;\r\n\
+  \twidth:680px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 45px;\r\n  }\r\n  .actividadesadesarrollarysusdetalles_actividadesadesarrollar_expliquedetalladamentelasactividadesmarcadasquedesarrollar {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:452px;\r\n\
+  \tleft:59px;\r\n\
+  \twidth:677px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 85px;\r\n  }\r\n    .actividadesadesarrollarysusdetalles_actividadesadesarrollar_expliquedetalladamentelasactividadesmarcadasquedesarrollar1 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:374px;\r\n\
+  \tleft:59px;\r\n\
+  \twidth:677px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 76px;\r\n  }\r\n  .actividadesadesarrollarysusdetalles_actividadesadesarrollar_principalesproductosqueimportarn {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:564px;\r\n\
+  \tleft:61px;\r\n\
+  \twidth:675px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 60px;\r\n  }\r\n  .actividadesadesarrollarysusdetalles_actividadesadesarrollar_principalespasesdeimportacin {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:646px;\r\n\
+  \tleft:63px;\r\n\
+  \twidth:676px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 61px;\r\n  }\r\n  .actividadesadesarrollarysusdetalles_actividadesadesarrollar_principalespasesdeexportacin {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:732px;\r\n\
+  \tleft:61px;\r\n\
+  \twidth:675px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 61px;\r\n  }\r\n  .datosfinancierosydeoperaciones_datosdeoperaciones_estimadodeinversininicial {\r\n    position:absolute;\r\n    top:914px;\r\n    left:224px;\r\n    width:521px;\r\n    overflow:hidden;\r\n  }\r\n\
+  \r\n\
+  \r\n  .datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_calificada {\r\n    position:absolute;\r\n    top:871px;\r\n    left:224px;\r\n    width:183px;\r\n    overflow:hidden;\r\n  }\r\n  .datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_semicalificada {\r\n    position:absolute;\r\n    top:872px;\r\n    left:407px;\r\n    width:185px;\r\n    overflow:hidden;\r\n  }\r\n  .datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_nocalificada {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:874px;\r\n\
+  \tleft:588px;\r\n\
+  \twidth:185px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_calificada1 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:891px;\r\n\
+  \tleft:224px;\r\n\
+  \twidth:181px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n  .datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_semicalificada1 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:890px;\r\n\
+  \tleft:406px;\r\n\
+  \twidth:181px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n  .datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_nocalificada1 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:891px;\r\n\
+  \tleft:588px;\r\n\
+  \twidth:185px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n"
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_6.css\" />\r\n\
+  <title>Registro de Empresas y Declaraci\xC3\xB3n Jurada</title>\r\n\
+  </head>\r\n\
+  <body>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud\"] %>      </span>    </div>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud\"] %>      </span>    </div>\r\n    <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_expliquedetalladamentelasactividadesmarcadasquedesarrollar\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_Expliquedetalladamentelasactividadesmarcadasquedesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_expliquedetalladamentelasactividadesmarcadasquedesarrollar1\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_Expliquedetalladamentelasactividadesmarcadasquedesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar\"] %>      </span>    </div>\r\n    <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_principalesproductosqueimportarn\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_PrincipalesProductosqueImportarn\"] %>      </span>    </div>\r\n    <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_principalespasesdeimportacin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_PrincipalesPasesdeImportacin\"] %>      </span>    </div>\r\n    <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_principalespasesdeexportacin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_PrincipalesPasesdeExportacin\"] %>      </span>    </div>\r\n    <div class=\"datosfinancierosydeoperaciones_datosdeoperaciones_estimadodeinversininicial\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosFinancierosydeOperaciones_DatosdeOperaciones_EstimadodeInversinInicial\"] %>      </span>    </div>\r\n    <div class=\"datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_calificada\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosFinancierosydeOperaciones_EstimacindeplazadeempleoagenerarenAPP_Calificada\"] %>      </span>    </div>\r\n\
+  <div class=\"datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_calificada1\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosFinancierosydeOperaciones_EstimacindeplazadeempleoagenerarenAPP_Calificada\"] %>      </span>    </div>\r\n    <div class=\"datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_semicalificada\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosFinancierosydeOperaciones_EstimacindeplazadeempleoagenerarenAPP_SemiCalificada\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_semicalificada1\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosFinancierosydeOperaciones_EstimacindeplazadeempleoagenerarenAPP_SemiCalificada\"] %>      </span>    </div>\r\n    <div class=\"datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_nocalificada\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosFinancierosydeOperaciones_EstimacindeplazadeempleoagenerarenAPP_NoCalificada\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"datosfinancierosydeoperaciones_estimacindeplazadeempleoagenerarenapp_nocalificada1\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosFinancierosydeOperaciones_EstimacindeplazadeempleoagenerarenAPP_NoCalificada\"] %>      </span>    </div>\r\n\
+  </body>\r\n\
+  </html>\r\n"
+print_design_id: 124
+created_at: 2013-05-02 13:31:52 Z
+updated_at: 2013-05-02 13:31:52 Z
+instances_selector: "{\"949\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1269\":{\"value\":\"\",\"1785\":{\"value\":\"\",\"1701\":{\"value\":\"\"},\"1307\":{\"value\":\"\"},\"1318\":{\"value\":\"\"},\"1319\":{\"value\":\"\"}}},\"1270\":{\"value\":\"\",\"1441\":{\"value\":\"\",\"1326\":{\"value\":\"\"}},\"1443\":{\"value\":\"\",\"1340\":{\"value\":\"\"},\"1341\":{\"value\":\"\"},\"1342\":{\"value\":\"\"}}}}"
+size: 

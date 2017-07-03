@@ -1,0 +1,30 @@
+--- 
+id: 3542
+part_id: 261
+field_id: 88
+name: Entidad de pago
+created_at: 2014-02-24 22:12:42 Z
+updated_at: 2017-06-04 00:27:42.846790 Z
+label: Entidad de pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b6471589-1589-4c6d-ab82-058aa820612d
+version: 20170603-202742

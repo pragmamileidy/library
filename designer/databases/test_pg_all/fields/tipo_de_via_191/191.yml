@@ -1,0 +1,30 @@
+--- 
+id: 191
+name: "Tipo de V\xC3\xADa"
+description: "Tipo de V\xC3\xADa"
+version: 
+status: Draft
+label: "Tipo de V\xC3\xADa"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 14:19:18 Z
+updated_at: 2014-02-26 15:19:19 Z
+values_list: "\" \",\"Colectora\",\"Local\",\"Principal\",\"Veredas\",\"Acceso vial existente\",\"Interconexiones\""
+keys_list: "\"Colectora\",\"Local\",\"Principal\",\"Veredas\",\"Acceso vial existente\",\"Interconexiones\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 2968
+part_id: 550
+field_id: 17
+name: Snopsis
+created_at: 2013-03-07 13:57:49 Z
+updated_at: 2017-06-04 00:22:37.030385 Z
+label: Sinopsis
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar de cualquiera particularidad de la obra
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f83cef45-5ffb-43a9-a043-ee9ab683cc42
+version: 20170603-202237

@@ -1,0 +1,30 @@
+--- 
+id: 3504
+part_id: 679
+field_id: 10
+name: Fecha
+created_at: 2014-02-18 14:51:49 Z
+updated_at: 2017-06-04 00:25:12.626591 Z
+label: Fecha
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 39bcd63c-6489-4ca5-bd75-8e916da0d98a
+version: 20170603-202512

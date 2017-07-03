@@ -1,0 +1,30 @@
+--- 
+id: 1328
+part_id: 152
+field_id: 10
+name: Procedencia del Capital a Invertir en APP
+created_at: 2012-05-11 23:04:38 Z
+updated_at: 2017-06-04 00:28:07.775615 Z
+label: Procedencia del Capital a Invertir en APP
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar la procedencia del capital que ser\xC3\xA1 invertido"
+help: Procedencia del Capital a Invertir en APP
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a204263f-e8cb-4d60-96fc-47435ab19733
+version: 20170603-202807

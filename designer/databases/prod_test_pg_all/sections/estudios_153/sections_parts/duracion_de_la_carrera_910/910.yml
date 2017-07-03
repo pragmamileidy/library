@@ -1,0 +1,19 @@
+--- 
+id: 910
+section_id: 153
+part_id: 51
+name: "Duraci\xC3\xB3n de la Carrera"
+created_at: 2012-03-28 23:36:22 Z
+updated_at: 2012-05-21 15:32:58 Z
+label: "Duraci\xC3\xB3n de la Carrera"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

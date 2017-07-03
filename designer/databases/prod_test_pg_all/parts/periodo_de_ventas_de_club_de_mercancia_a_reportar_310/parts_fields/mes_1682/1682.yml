@@ -1,0 +1,30 @@
+--- 
+id: 1682
+part_id: 310
+field_id: 118
+name: Mes
+created_at: 2012-06-08 16:22:28 Z
+updated_at: 2017-06-04 00:21:50.148612 Z
+label: Mes
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0fbee9ff-3b1c-4d0f-9762-91ffa351cd9e
+version: 20170603-202150

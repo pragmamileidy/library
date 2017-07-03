@@ -1,0 +1,20 @@
+--- 
+id: 4016
+design_id: 77
+section_id: 185
+name: Recibido por Pago
+created_at: 2013-06-28 13:27:45 Z
+updated_at: 2014-03-15 20:24:48 Z
+label: Recibido por Pago
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  _nombre_tarea = (@task["name"].to_s.downcase).split(' ')
+  valor = @config.route("Rates.requires.payment_qualms.payment_repair",".")
+  
+  ((valor == "true") && (['reparar','cerrar','recibir'].include? _nombre_tarea.first))
+manage_as_confidential: false
+include: "{\"2054\":{\"2164\":{\"required\":\"required\"},\"2165\":{\"required\":\"unrequired\"},\"2168\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 18

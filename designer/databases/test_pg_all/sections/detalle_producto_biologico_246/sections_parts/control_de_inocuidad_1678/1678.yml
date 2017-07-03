@@ -1,0 +1,19 @@
+--- 
+id: 1678
+section_id: 246
+part_id: 167
+name: Control de inocuidad
+created_at: 2012-05-22 13:56:37 Z
+updated_at: 2012-08-24 17:31:19 Z
+label: Control de inocuidad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"851\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 11

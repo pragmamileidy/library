@@ -1,0 +1,16 @@
+--- 
+id: 1798
+design_id: 139
+section_id: 377
+name: "Datos del Solicitante Jur\xC3\xADdico"
+created_at: 2012-08-15 13:28:39 Z
+updated_at: 2012-09-17 14:12:43 Z
+label: Datos del Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"2175\":{\"2379\":{\"required\":\"required\"},\"2380\":{\"required\":\"required\"},\"2381\":{\"required\":\"required\"},\"2418\":{\"required\":\"required\"},\"2382\":{\"required\":\"required\"},\"2383\":{\"required\":\"required\"}},\"2177\":{\"1983\":{\"required\":\"required\"},\"1657\":{\"required\":\"required\"},\"1658\":{\"required\":\"unrequired\"},\"1659\":{\"required\":\"required\"},\"1660\":{\"required\":\"unrequired\"},\"1661\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

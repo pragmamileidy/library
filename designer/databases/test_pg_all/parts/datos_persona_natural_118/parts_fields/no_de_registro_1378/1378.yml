@@ -1,0 +1,30 @@
+--- 
+id: 1378
+part_id: 118
+field_id: 10
+name: No. de Registro
+created_at: 2012-05-16 20:34:59 Z
+updated_at: 2017-06-04 00:31:57.714842 Z
+label: No. de Registro
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Introduzca No. de Registro de Agroexportador
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 31
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4c0c6c50-25ba-4642-bdfd-e64ffd314ab2
+version: 20170603-203157

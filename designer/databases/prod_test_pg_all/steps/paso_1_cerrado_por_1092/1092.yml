@@ -1,0 +1,263 @@
+--- 
+id: 1092
+name: Paso 1 - Cerrado por
+label: Cierre de Solicitud
+description: "<br>Cierre de Solicitud</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;A\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 550
+created_at: 2013-01-25 20:32:13 Z
+updated_at: 2015-11-06 21:25:35 Z
+include: "{\"2381\":{\"580\":{\"1981\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"581\":{\"572\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"631\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2592\":{\"2925\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2926\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2417\":{\"595\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"597\":{\"572\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2593\":{\"2925\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2926\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"4980\":{\"3584\":{\"2197\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3585\":{\"1981\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"926\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3586\":{\"572\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3587\":{\"2977\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3588\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3589\":{\"572\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3590\":{\"2977\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"2383\":{\"2545\":{\"2864\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2546\":{\"2858\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2859\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2860\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2861\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2862\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2863\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2418\":{\"2594\":{\"2927\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2928\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2385\":{\"580\":{\"1461\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1981\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"581\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2386\":{\"195\":{\"331\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2427\":{\"3086\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2916\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3085\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2894\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3084\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3083\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3082\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3248\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3249\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2387\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"2390\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |
+  # Inicializacion de datos del agente - LG
+  
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  
+  form_data.set("cerrado_por.datos_del_funcionario_generico.usuario", _agente["name"])
+
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: "//::::::: DV: Validaciones varias recepciones de la solciitud :::::::://\r\n\
+  \r\n\
+  //::: Mantener datos entre pasos :::://\r\n\
+  $(document).ready(function(){\r\n\
+  \tif($('input[name=\"[field][datos_del_fonograma_clase_de_identificacion_formato_de_produccion]\"]:checked').html() == \"OTROS\"){\r\n\
+  \t\t$(\"#field_datos_del_fonograma_clase_de_identificacion_otro_formato\").parent().parent().show();\r\n\
+  \t}else{\r\n\
+  \t\t$(\"#field_datos_del_fonograma_clase_de_identificacion_otro_formato\").parent().parent().hide();\r\n\
+  \t}\r\n\
+  });\r\n\
+  \r\n\
+  //:::::: DV: Mejora C\xC3\xB3d. Productor Fonogr\xC3\xA1fico Natural o Juridico :::::://\r\n\
+  $(document).ready(function(){\r\n    $.each( $('[id*=datos_del_productor_]'), function(index, campo) {    \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n        var inicRuta    = \"#field_datos_del_productor\";\r\n        var tDoc        = \"_tipo_documento_productor_tipo_de_identificacion\";\r\n        var direcNat    = \"_datos_de_ubicacion_direccion\";\r\n        var name        = \"_datos_del_productor_natural_cedula_pasaporte\";\r\n        var namejur     = \"_datos_productor_juridico_ruc\";\r\n        var direcJur    = \"_datos_de_ubicacion_juridico_direccion\";\r\n        var nom1        = \"_datos_del_productor_natural_primer_nombre\";\r\n        var nom2        = \"_datos_del_productor_natural_segundo_nombre\";\r\n        var ape1        = \"_datos_del_productor_natural_primer_apellido\";\r\n        var ape2        = \"_datos_del_productor_natural_segundo_apellido\";\r\n        var apelcasa1   = \"_datos_del_productor_natural_apellido_de_casada\";\r\n        var pais        = \"_datos_de_ubicacion_pais\";\r\n        var email       = \"_datos_de_ubicacion_correo_electronico\";\r\n        var telf        = \"_datos_de_ubicacion_numero_de_telefono\";\r\n        var documen     = \"_datos_del_productor_natural_documento\";\r\n        var repreNat    = \"_representado_por_nombre_completo\";\r\n        var repreJur    = \"_representado_por_juridico_nombre_completo\";\r\n\
+  \r\n        var coincide    = inicRuta.concat(pos);\r\n        var TiDoc       = coincide.concat(tDoc);\r\n        var direNat     = coincide.concat(direcNat);\r\n        var nomnat      = coincide.concat(name);\r\n        var nomjur      = coincide.concat(namejur);\r\n        var direJur     = coincide.concat(direcJur);\r\n        var apelcasa2   = coincide.concat(apelcasa1);\r\n        var nom1_1      = coincide.concat(nom1);\r\n        var nom2_2      = coincide.concat(nom2);\r\n        var ape1_1      = coincide.concat(ape1);\r\n        var ape2_2      = coincide.concat(ape2);\r\n        var pais1       = coincide.concat(pais);\r\n        var email1      = coincide.concat(email);\r\n        var telf1       = coincide.concat(telf);\r\n        var docOculto   = coincide.concat(documen);\r\n        var repreNat2   = coincide.concat(repreNat);\r\n        var repreJur2   = coincide.concat(repreJur);\r\n\
+  \r\n        if($(TiDoc).html() == 'RUC'){\r\n            $(direNat).parents(\".part-box\").hide();\r\n            $(nomnat).parents(\".part-box\").hide();\r\n            $(nomjur).parents(\".part-box\").show();\r\n            $(direJur).parents(\".part-box\").show();\r\n            $(repreNat2).parents(\".part-box\").hide();\r\n            $(repreJur2).parents(\".part-box\").show();\r\n        }else{\r\n            $(direNat).parents(\".part-box\").show();\r\n            $(nomnat).parents(\".part-box\").show();\r\n            $(docOculto).parents(\".field-box\").hide();\r\n            $(nomjur).parents(\".part-box\").hide();\r\n            $(direJur).parents(\".part-box\").hide();\r\n            $(repreNat2).parents(\".part-box\").show();\r\n            $(repreJur2).parents(\".part-box\").hide();\r\n        }\r\n\
+  \r\n        if ($(TiDoc).html() == ''){\r\n            $(TiDoc).parents(\".section-box\").hide();\r\n        }else{\r\n            $(TiDoc).parents(\".section-box\").show();\r\n        }\r\n        $(TiDoc).parents(\".section-box\").next().hide();\r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  //:::: Validaciones vrias Interpretes :::://\r\n\
+  $( function() {\r\n\
+  \t$(document).ready(function(){\r\n\
+  \t\t$.each( $('[id*=interpretes_]'), function(index, campo) {\r\n\
+  \t\t\tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \t\t\tif (pos == null){\r\n\
+  \t\t\t\tpos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t\t\t}\r\n\
+  \t\t\tvar InicioRuta \t= \"#field_interpretes\";\r\n\
+  \t\t\tvar Tidocs \t\t= \"_datos_de_la_persona_tipo_documento_string\";\r\n\
+  \t\t\tvar coincide \t= InicioRuta.concat(pos)\r\n\
+  \t\t\tvar Tidocs2 \t= coincide.concat(Tidocs);\r\n\
+  \t\t\tif($(Tidocs2).html() != \"\"){\r\n\
+  \t\t\t\t$(Tidocs2).parents(\".section-box\").show();\r\n\
+  \t\t\t}else{\r\n\
+  \t\t\t\t$(Tidocs2).parents(\".section-box\").hide();\r\n\
+  \t\t\t}\r\n\
+  \t\t\t$(Tidocs2).parents(\".section-box\").next().hide()\r\n\
+  \t\t});\r\n\
+  \t});\r\n\
+  });\r\n"

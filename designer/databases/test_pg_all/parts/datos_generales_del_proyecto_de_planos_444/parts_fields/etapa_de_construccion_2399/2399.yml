@@ -1,0 +1,30 @@
+--- 
+id: 2399
+part_id: 444
+field_id: 212
+name: "Etapa de Construcci\xC3\xB3n"
+created_at: 2012-08-14 19:28:44 Z
+updated_at: 2017-06-04 00:30:04.448558 Z
+label: "Etapa de Construcci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Especifica a qu\xC3\xA9 etapa corresponden los planos sometidos en la solicitud"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4a4a021c-22c8-416b-937c-e5b7705d916a
+version: 20170603-203004

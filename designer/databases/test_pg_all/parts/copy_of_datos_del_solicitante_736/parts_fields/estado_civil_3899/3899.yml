@@ -1,0 +1,30 @@
+--- 
+id: 3899
+part_id: 736
+field_id: 23
+name: Estado Civil
+created_at: 2015-02-18 20:41:18 Z
+updated_at: 2017-06-04 00:30:11.794433 Z
+label: Estado Civil
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ef0eb5f0-a63f-42d4-a990-494384a80bd1
+version: 20170603-203011

@@ -1,0 +1,17 @@
+--- 
+id: 154
+name: Detalle de Costos
+description: "Detalle de Costos, bien sea para Cr\xC3\xA9dito Educativo, como para alquiler de viviendas, etc."
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-28 17:49:59 Z
+updated_at: 2012-08-16 18:44:41 Z
+status: Draft
+label: Detalle de Costos
+hint: "Favor ingrese las cantidades solicitadas, puede usar para ello n\xC3\xBAmeros enteros y/o decimales"
+serial: 

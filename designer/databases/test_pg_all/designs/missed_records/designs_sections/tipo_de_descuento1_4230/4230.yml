@@ -1,0 +1,23 @@
+--- 
+id: 4230
+design_id: 243
+section_id: 501
+name: Tipo de Descuento1
+created_at: 2014-03-20 19:56:47 Z
+updated_at: 2014-03-21 18:34:19 Z
+label: Detalles de la Consulta
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  #MENSAJE
+  anio_hasta = form_data.get("periodo_de_descuento_consultado.hasta.anio")
+  url = form_data.get("descuentos.url.url")
+  result = WebserviceConsumer.get(url).parsed_response
+  result = result["response"]
+  
+  (result.blank?) && (anio_hasta.to_i >= 1999)
+manage_as_confidential: false
+include: "{\"3050\":{\"3253\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

@@ -1,0 +1,21 @@
+--- 
+id: 1232
+name: Paso 0-llenado
+label: Llenado
+description: ""
+fill_step_id: 614
+created_at: 2013-04-05 20:46:06 Z
+updated_at: 2014-09-16 14:31:13 Z
+include: "{\"2574\":{\"2756\":{\"3130\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2575\":{\"2757\":{\"3125\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3126\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3127\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3128\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3735\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  ##### DATOS OBLIGATORIOS ############
+    form_data.set("name.name.name", "timers")
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

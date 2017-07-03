@@ -1,0 +1,16 @@
+--- 
+id: 1287
+design_id: 113
+section_id: 107
+name: Representante Legal del Contribuyente
+created_at: 2012-06-08 15:52:50 Z
+updated_at: 2014-06-23 13:56:30 Z
+label: Representante Legal del Contribuyente
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"}},\"581\":{\"594\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 3

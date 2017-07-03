@@ -1,0 +1,30 @@
+--- 
+id: 2373
+part_id: 441
+field_id: 213
+name: Tipo de Plano
+created_at: 2012-08-14 14:47:21 Z
+updated_at: 2017-06-04 00:26:08.268345 Z
+label: Tipo de Plano
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Seleccione el tipo de plano que desee tramitar para la aprobaci\xC3\xB3n."
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7d0194a6-088e-44b9-a65e-c0637b3071f5
+version: 20170603-202608

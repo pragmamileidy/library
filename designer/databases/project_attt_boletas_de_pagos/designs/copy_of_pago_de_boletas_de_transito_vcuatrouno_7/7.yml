@@ -1,0 +1,24 @@
+--- 
+id: 7
+name: "Copy of Pago de Boletas de Tr\xC3\xA1nsito VCuatroUno"
+status: Draft
+version: 20170417-185407
+description: "Consulta y Pago de boletas de tr\xC3\xA1nsito."
+help: ""
+layout: 
+life_cycle: 
+tags: "Pago, Boletas, ATTT, Tr\xC3\xA1nsito"
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2017-04-17 18:54:07.945178 Z
+updated_at: 2017-04-17 18:54:07.945178 Z
+label: "Consulta y Pago de boletas de tr\xC3\xA1nsito"
+hint: ""
+project: 
+organization: 
+process: 
+ext_template_id: ""
+namespace: ""
+custom: 
+serial: b3df9f6d-716a-4f75-9786-7d2c073407e4

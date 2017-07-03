@@ -1,0 +1,19 @@
+--- 
+id: 3745
+section_id: 604
+part_id: 38
+name: Llenar el formulario de Record Policivo del solicitante  y gerente
+created_at: 2017-03-11 00:56:21.974777 Z
+updated_at: 2017-03-11 00:56:21.974777 Z
+label: Llenar el formulario de Record Policivo del solicitante  y gerente
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Llenar el formulario de Record Policivo del solicitante  y gerente (Seg\xC3\xBAn art\xC3\xADculo 8 de la Ley 42 de 23 de julio de 2001)"
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 18

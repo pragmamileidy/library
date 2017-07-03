@@ -1,0 +1,16 @@
+--- 
+id: 4992
+design_id: 276
+section_id: 382
+name: Datos Generales de la Solicitud
+created_at: 2015-12-22 23:23:07.151152 Z
+updated_at: 2015-12-22 23:23:07.151152 Z
+label: Datos Generales de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2198\":{\"2371\":{\"required\":\"required\"},\"2372\":{\"required\":\"required\"},\"2373\":{\"required\":\"required\"},\"2374\":{\"required\":\"required\"},\"2375\":{\"required\":\"required\"},\"2376\":{\"required\":\"required\"},\"3184\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 2

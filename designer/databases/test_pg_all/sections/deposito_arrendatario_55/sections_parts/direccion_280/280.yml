@@ -1,0 +1,19 @@
+--- 
+id: 280
+section_id: 55
+part_id: 121
+name: "Direcci\xC3\xB3n"
+created_at: 2011-11-14 16:27:19 Z
+updated_at: 2012-09-11 14:37:34 Z
+label: "Direcci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"577\":{},\"574\":{},\"576\":{},\"573\":{},\"583\":{},\"578\":{},\"579\":{},\"584\":{},\"580\":{},\"582\":{},\"575\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

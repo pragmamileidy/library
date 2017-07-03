@@ -1,0 +1,30 @@
+--- 
+id: 2045
+part_id: 156
+field_id: 179
+name: "Caracter\xC3\xADsticas del Producto"
+created_at: 2012-07-15 05:05:15 Z
+updated_at: 2017-06-04 00:26:01.106901 Z
+label: "Caracter\xC3\xADsticas del Producto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b378368c-9055-4c00-a160-467bae0caf47
+version: 20170603-202601

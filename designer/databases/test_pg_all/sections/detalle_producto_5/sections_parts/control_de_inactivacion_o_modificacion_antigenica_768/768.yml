@@ -1,0 +1,19 @@
+--- 
+id: 768
+section_id: 5
+part_id: 168
+name: "Control de inactivaci\xC3\xB3n o modificaci\xC3\xB3n antig\xC3\xA9nica"
+created_at: 2012-03-27 02:19:52 Z
+updated_at: 2012-04-17 15:09:57 Z
+label: "Control de inactivaci\xC3\xB3n o modificaci\xC3\xB3n antig\xC3\xA9nica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 41

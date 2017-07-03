@@ -1,0 +1,19 @@
+--- 
+id: 2760
+section_id: 488
+part_id: 592
+name: Task
+created_at: 2013-04-08 15:37:48 Z
+updated_at: 2013-04-09 16:49:12 Z
+label: Task
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3132\":{},\"3133\":{},\"3134\":{},\"3135\":{},\"3136\":{},\"3137\":{},\"3138\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

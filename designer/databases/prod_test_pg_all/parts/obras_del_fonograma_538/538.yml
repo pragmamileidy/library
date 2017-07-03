@@ -1,0 +1,17 @@
+--- 
+id: 538
+name: Obras del Fonograma
+description: para el tramite de fonogramas de MICI
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-02-28 16:07:06 Z
+updated_at: 2015-11-05 19:46:20 Z
+label: Obras del Fonograma
+hint: ""
+view_class: horizontal
+serial: 4065-9344-8048-4304-5009

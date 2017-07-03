@@ -1,0 +1,17 @@
+--- 
+id: 383
+name: Importacion de producto y otros
+description: Importacion de producto y otros
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-14 21:15:09 Z
+updated_at: 2015-10-30 16:26:55 Z
+label: "Producto, Subproducto e Insumo De Origen  Vegetal, Animal, Biol\xC3\xB3gicos, Agroqu\xC3\xADmicos y Veterinarios"
+hint: "Favor introduzca la informaci\xC3\xB3n del producto o subproducto"
+view_class: horizontal
+serial: 1913-1583-6169-2633-6905

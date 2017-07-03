@@ -1,0 +1,30 @@
+--- 
+id: 257
+part_id: 22
+field_id: 10
+name: "Religi\xC3\xB3n"
+created_at: 2011-11-08 19:52:23 Z
+updated_at: 2017-06-04 00:29:27.804144 Z
+label: "Religi\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 734d9e78-113f-4345-9ecb-94d6c6e42c66
+version: 20170603-202927

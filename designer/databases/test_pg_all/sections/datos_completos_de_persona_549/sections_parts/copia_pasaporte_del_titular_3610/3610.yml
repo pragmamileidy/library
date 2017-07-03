@@ -1,0 +1,22 @@
+--- 
+id: 3610
+section_id: 549
+part_id: 38
+name: Copia pasaporte del Titular
+created_at: 2016-03-23 16:57:12.425768 Z
+updated_at: 2016-03-26 23:35:07.017630 Z
+label: Copia de  la pagina principal del pasaporte del Titular
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  tipo =  form_data.get("datos_del_titular_instance_#{route.section.instance}.datos_basicos_de_persona_natural.tipo_de_documento_el_salvador")
+  tipo1 =  form_data.get("datos_del_titular.datos_basicos_de_persona_natural.tipo_de_documento_el_salvador")
+  tipo == "Pasaporte" or tipo1 == "Pasaporte"
+manage_as_confidential: false
+include: 
+hint: " Por favor adjuntar archivo correspondiente"
+help: "  Por favor adjuntar archivo correspondiente"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 13

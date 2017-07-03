@@ -1,0 +1,16 @@
+--- 
+id: 5353
+design_id: 293
+section_id: 505
+name: Miembros de la Junta Directiva
+created_at: 2017-03-24 21:15:27.981228 Z
+updated_at: 2017-03-24 21:15:27.981228 Z
+label: Miembros de la Junta Directiva
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"2820\":{\"3296\":{\"required\":\"required\"},\"4051\":{\"required\":\"required\"},\"3297\":{\"required\":\"required\"},\"4071\":{\"required\":\"required\"}},\"2821\":{\"3298\":{\"required\":\"required\"},\"4050\":{\"required\":\"required\"},\"3299\":{\"required\":\"required\"},\"4072\":{\"required\":\"required\"}},\"2822\":{\"3300\":{\"required\":\"required\"},\"4053\":{\"required\":\"required\"},\"3301\":{\"required\":\"required\"},\"4073\":{\"required\":\"required\"}},\"2823\":{\"3302\":{\"required\":\"required\"},\"4068\":{\"required\":\"required\"},\"3303\":{\"required\":\"required\"},\"4074\":{\"required\":\"required\"}},\"2825\":{\"3306\":{\"required\":\"required\"},\"4060\":{\"required\":\"required\"},\"3307\":{\"required\":\"required\"},\"4075\":{\"required\":\"required\"}},\"2826\":{\"3308\":{\"required\":\"required\"},\"4058\":{\"required\":\"required\"},\"3309\":{\"required\":\"required\"},\"4076\":{\"required\":\"required\"}},\"3130\":{\"3304\":{\"required\":\"required\"},\"4066\":{\"required\":\"required\"},\"3305\":{\"required\":\"required\"},\"4077\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

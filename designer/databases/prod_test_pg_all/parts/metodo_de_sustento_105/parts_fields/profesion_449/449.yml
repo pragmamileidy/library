@@ -1,0 +1,30 @@
+--- 
+id: 449
+part_id: 105
+field_id: 10
+name: "Profesi\xC3\xB3n"
+created_at: 2011-11-16 21:23:40 Z
+updated_at: 2017-06-04 00:21:20.332965 Z
+label: "Ejerciendo Profesi\xC3\xB3n de"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4aa0f728-6a62-4ed2-ae00-52c2950c2348
+version: 20170603-202120

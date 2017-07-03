@@ -1,0 +1,30 @@
+--- 
+id: 3556
+part_id: 347
+field_id: 31
+name: Copia de la Idoneidad
+created_at: 2014-02-26 17:33:47 Z
+updated_at: 2017-06-04 00:29:22.279707 Z
+label: Copia de la Idoneidad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d396cecc-3624-47b5-8250-987736aada9c
+version: 20170603-202922

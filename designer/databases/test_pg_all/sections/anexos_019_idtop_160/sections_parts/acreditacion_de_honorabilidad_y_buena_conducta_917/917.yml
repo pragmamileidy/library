@@ -1,0 +1,19 @@
+--- 
+id: 917
+section_id: 160
+part_id: 38
+name: "Acreditaci\xC3\xB3n de honorabilidad y buena conducta"
+created_at: 2012-03-29 22:33:58 Z
+updated_at: 2015-08-10 20:41:46 Z
+label: "Acreditaci\xC3\xB3n de honorabilidad y buena conducta"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Favor  ver ayuda
+help: "Acreditar honorabilidad y buena conducta, mediante dos (2) declaraciones de personas, rendidas ante el (la) Corregidor (a) del domicilio del interesado o ante Notario (a) P\xC3\xBAblico (a), validado con ocho (8) timbres fiscales de un balboa (B/.1.00), en cada hoja. "
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

@@ -1,0 +1,187 @@
+--- 
+id: 3238
+name: Paso 0 - Especificacion de Costos
+label: "Especificaci\xC3\xB3n de Costos"
+description: ""
+fill_step_id: 1735
+created_at: 2016-02-10 13:33:53.397325 Z
+updated_at: 2016-02-10 13:33:53.693995 Z
+include: "{\"5034\":{\"2798\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5035\":{\"2549\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2550\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2551\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2552\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2553\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2554\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2555\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2558\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2559\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2560\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2561\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2562\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2563\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2564\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2565\":{\"3101\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2567\":{\"3383\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3396\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit,print_form
+on_becoming: "##### INTEGRACION DE PAGO AUTOMATICO #####\r\n\
+  form_data.set(\"entidad_evaluadora_revisiones.monto_total.costo\", \" \") \r\n\
+  #CODIGO PARA INVOCAR EL SERVICIO payment_computing_service\r\n\
+  _applicationId = @application[\"id\"]\r\n\
+  _configRoute = \"EntidadesEvaluadoras-rates\"\r\n\
+  _formId = @task[\"form\"]\r\n\
+  evaluacion = form_data.get(\"seccion_de_funcionario_jefe4.datos_del_funcionario_generico.evaluacion\")\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get('/payments/payment_computing_service.json?application_id=' + \"#{_applicationId}\" + '&config_route=' + \"#{_configRoute}\" + '&form_id=' + \"#{_formId}\").parsed_response\r\n\
+  \r\n\
+  hash = {:application_id => \"#{_applicationId}\", \r\n  :config_route   => \"#{_configRoute}\",\r\n  :form_id        => \"#{_formId}\"}\r\n\
+  result = PaymentProxy.payment_computing_service(hash)\r\n  \r\n\
+  _payment_id= result[\"response\"][\"payment_id\"]\r\n\
+  _detail = result[\"response\"][\"detail\"]\r\n\
+  _total  = result[\"response\"][\"result\"][\"total\"] \r\n\
+  \r\n\
+  #form_data.set(\"variables_usadas_codigos_p5.variables_p5.payment\",_payment_id)\r\n\
+  #form_data.set(\"variables_usadas_codigos_p5.variables_p5.detail\",_detail)\r\n\
+  \r\n\
+  if (evaluacion == \"REPARO\")\r\n form_data.set(\"entidad_evaluadora_revisiones.monto_total.monto_pagado\", _total) \r\n\
+  else\r\n form_data.set(\"entidad_evaluadora_revisiones.monto_total.costo\", _total) \r\n form_data.set(\"entidad_evaluadora_revisiones.monto_total.total\", _total) \r\n\
+  end\r\n\
+  \r\n\
+  ##### SETEAR NOMBRES Y MONTOS DE ENTIDADES SEGUN RESPUESTA DE SERVICIO DE PAGO #####\r\n\
+  result[\"response\"][\"result\"][\"items\"].each do |key, value|\r\n if(key =~ /item_instance_([\\d]+)/)\r\n _i = $1.to_i - 1\r\n  if(value[\"description\"] == \"fija\") \r\n\
+  form_data.set(\"entidades_fijas.entidad.nombre_de_la_entidad\", value[\"name\"])\r\n\
+  form_data.set(\"entidades_fijas.entidad.monto_a_pagar\", value[\"formula\"])\r\n  else\r\n   form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.nombre_de_la_entidad\", value[\"name\"])\r\n   form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.monto_a_pagar\", value[\"formula\"])\r\n  end\r\n end \r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #Nombres de entidades AV\r\n\
+  _app_id = @application[\"id\"].to_s\r\n\
+  result_entidades = WebserviceConsumer.get(\"/preconfigured_services/get_application_config.json?id=#{_app_id}\").parsed_response\r\n\
+  entidades=[]\r\n\
+  result_entidades[\"response\"][\"EntidadesEvaluadoras\"].each do |key, entidad_data|\r\n next unless key =~ /entidades_instance/ \r\n entidades << entidad_data[\"evaluacion_de_la_entidad\"]  \r\n\
+  end\r\n\
+  \r\n\
+  haybomberos = false\r\n\
+  entidades.each_index do |i|\r\n ##### SE ASIGNAN LOS NOMBRES DE TODAS LAS ENTIDADES EVALUADORAS #####\r\n _name = entidades[i][\"entidad\"]\r\n ##### SI LA ENTIDAD NO ES DE BOMBEROS #####\r\n if !(_name =~ /CBP|Bomberos/)\r\n  form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.nombre_entidad\", _name)\r\n else\r\n ##### SI LA ENTIDAD SI ES DE BOMBEROS #####\r\n  if !haybomberos\r\n   ##### SI NO SE HA AGREGADO BOMBEROS, SE AGREGA\r\n   form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.nombre_entidad\", \"Cuerpo de Bomberos de Panam\xC3\xA1\")\r\n   haybomberos = true\r\n  end\r\n end\r\n\
+  end"
+on_transition: "##### Fillstep Imprimir - ON TRANSITION #####\r\n\
+  \r\n\
+  _app_id = @application[\"id\"].to_s\r\n\
+  result = WebserviceConsumer.get(\"/preconfigured_services/get_application_config.json?id=#{_app_id}\").parsed_response\r\n\
+  entidades=[]\r\n\
+  result[\"response\"][\"EntidadesEvaluadoras\"].each do |key, entidad_data|\r\n next unless key =~ /entidades_instance/ \r\n entidades << entidad_data[\"evaluacion_de_la_entidad\"]\r\n\
+  end\r\n\
+  \r\n\
+  seleccion = form_data.get(\"asignacion_de_entidades.entidad_evaluadora.entidad_evaluadora_check\")\r\n\
+  seleccion = JSON.parse(seleccion)\r\n\
+  \r\n\
+  ##### RECORRER LISTA DE ENTIDADES CONFIGURADAS\r\n\
+  posbomberos   = \"\"\r\n\
+  haybomberos   = false\r\n\
+  montobomberos = false\r\n\
+  mensaje_cero  = \"0.00\"\r\n\
+  sin_seleccion = \"NO FUE REQUERIDA REVISI\xC3\x93N DE ESTA ENTIDAD.\"\r\n\
+  entidades.each_index do |i|\r\n ##### SI LA ENTIDAD EXISTE (NOMBRE NO ES VACIO)\r\n if  (entidades[i][\"entidad\"] != \"\")\r\n  _name = entidades[i][\"entidad\"]\r\n  ##### SI CONSIGO LA PRIMERA ENTIDAD DE BOMBEROS - GUARDO LA POSICION\r\n  if !haybomberos && (_name =~ /CBP|Bomberos/)\r\n   haybomberos = true\r\n   posbomberos = i\r\n  end\r\n  ##### SI LA ENTIDAD FUE SELECCIONADA\r\n  if (seleccion.include? entidades[i][\"entidad\"])\r\n   monto = form_data.get(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.monto_a_pagar\")\r\n   ##### SI LA ENTIDAD NO TIENE PAGO\r\n   if (monto == 0 || monto == \"\")\r\n    ##### SI LA ENTIDAD ES BOMBEROS\r\n    if (_name =~ /CBP|Bomberos/)\r\n     ##### SI NO SE HA SETEADO EL MONTO A PAGAR DE LA ENTIDAD\r\n     if !montobomberos\r\n      ##### SE ASIGNA MENSAJE EN LA POSICION DE BOMBEROS - POSBOMBEROS\r\n      form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{posbomberos}.monto_texto\",mensaje_cero)\r\n      montobomberos = true\r\n     end\r\n    else\r\n     ##### SI LA ENTIDAD NO ES BOMBEROS ASIGNA MENSAJE\r\n     form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.monto_texto\",mensaje_cero)\r\n    end\r\n   else\r\n    ##### SI LA ENTIDAD SI TIENE PAGO\r\n    ##### SI LA ENTIDAD ES BOMBEROS\r\n    if (_name =~ /CBP|Bomberos/)\r\n     ##### SI NO SE HA SETEADO EL MONTO A PAGAR DE LA ENTIDAD\r\n     if !montobomberos\r\n      ##### SE ASIGNA MONTO EN LA POSICION DE BOMBEROS - POSBOMBEROS\r\n      form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{posbomberos}.monto_texto\",monto)\r\n      montobomberos = true\r\n     end\r\n    else\r\n     ##### SI LA ENTIDAD NO ES BOMBEROS SE ASIGNA MONTO\r\n     form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.monto_texto\",monto)\r\n    end\r\n   end\r\n  else\r\n   ##### SI LA ENTIDAD NO FUE SELECCIONADA\r\n   if (_name =~ /CBP|Bomberos/)\r\n    ##### SI LA ENTIDAD ES BOMBEROS\r\n    if !montobomberos\r\n     ##### SI NO SE HA SETEADO EL MONTO A PAGAR DE LA ENTIDAD\r\n     form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{posbomberos}.monto_texto\", sin_seleccion)\r\n    end\r\n   else\r\n    ##### SI LA ENTIDAD NO ES BOMBEROS\r\n    if (!form_data.get(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.nombre_entidad\").blank?)\r\n     form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{i}.monto_texto\", sin_seleccion)\r\n    end\r\n   end\r\n  end\r\n end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  evaluacion = form_data.get(\"seccion_de_funcionario_jefe4.datos_del_funcionario_generico.evaluacion\")    \r\n\
+  if (evaluacion == \"REPARO\")\r\n suma3 = form_data.get(\"entidad_evaluadora_revisiones.monto_total.total\") \r\n suma2 = form_data.get(\"entidad_evaluadora_revisiones.monto_total.monto_pagado\") \r\n monto_total = suma3.to_i + suma2.to_i \r\n form_data.set(\"entidad_evaluadora_revisiones.monto_total.total\", monto_total)\r\n resta =  monto_total.to_i - suma2.to_i\r\n form_data.set(\"entidad_evaluadora_revisiones.monto_total.acumulado\", resta)       \r\n\
+  end\r\n\
+  \r\n\
+  entidad_fija = \"Registro P\xC3\xBAblico\" \r\n\
+  monto_fijo = form_data.get(\"entidades_fijas.entidad.monto_a_pagar\")\r\n\
+  monto_fijo_pagar = \"0.00\"\r\n\
+  if monto_fijo.blank?\r\n\
+  \tform_data.set(\"entidades_fijas.entidad.nombre_de_la_entidad\",entidad_fija)\r\n\
+  \tform_data.set(\"entidades_fijas.entidad.monto_a_pagar\",monto_fijo_pagar)\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: "$(document).ready(function(){\r\n\
+  \tentidad_evaluadora_0 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_0_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_1 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_1_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_2 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_2_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_3 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_3_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_4 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_4_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_5 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_5_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_6 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_6_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_7 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_7_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_8 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_8_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_9 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_9_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_10 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_10_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_11 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_11_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_12 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_12_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_13 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_13_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_14 = $(\"#field_entidad_evaluadora_revisiones_entidad_evaluadora_14_monto_a_pagar\");\r\n\
+  \tentidad_evaluadora_16 = $(\"#field_entidades_fijas_entidad_nombre_de_la_entidad\").html(\"Registro P\xC3\xBAblico\");\r\n\
+  \tmonto_fijo = $(\"#field_entidades_fijas_entidad_monto_a_pagar\");\r\n\
+  \r\n\
+  \t//:::::::: Mnatener campos entre pasos y reparo :::::://\r\n\
+  \tif ($(monto_fijo).html() == \"\"){\r\n\
+  \t\t$(monto_fijo).html(\"0.00\");\r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_0).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_0).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_0).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_1).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_1).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_1).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_2).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_2).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_2).parents(\".part-box\").show();  \r\n\
+  \t}  \r\n\
+  \tif($(entidad_evaluadora_3).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_3).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_3).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_4).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_4).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_4).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_5).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_5).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_5).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_6).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_6).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_6).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_7).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_7).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_7).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_8).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_8).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_8).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_9).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_9).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_9).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_10).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_10).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_10).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_11).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_11).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_11).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_12).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_12).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_12).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_13).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_13).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_13).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  \tif($(entidad_evaluadora_14).html() == \"\"){\r\n\
+  \t\t$(entidad_evaluadora_14).parents(\".part-box\").hide();    \r\n\
+  \t}else{\r\n\
+  \t\t$(entidad_evaluadora_14).parents(\".part-box\").show();  \r\n\
+  \t}\r\n\
+  });"

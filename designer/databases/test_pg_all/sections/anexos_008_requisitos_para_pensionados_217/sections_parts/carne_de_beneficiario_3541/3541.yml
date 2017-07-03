@@ -1,0 +1,21 @@
+--- 
+id: 3541
+section_id: 217
+part_id: 38
+name: "Carn\xC3\xA9 de beneficiario"
+created_at: 2015-09-25 15:08:18 Z
+updated_at: 2015-09-25 15:08:18 Z
+label: "Carn\xC3\xA9 de beneficiario"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  datos_del_fallecido = form_data.get("datos_del_solicitante.datos_del_fallecido.parentesco_con_el_fallecido")
+  datos_del_fallecido == "Madre o Padre"
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 21

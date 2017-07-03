@@ -1,0 +1,19 @@
+--- 
+id: 18
+name: Anexos
+label: Anexos
+description: ""
+fill_step_id: 5
+created_at: 2012-03-08 15:38:01 Z
+updated_at: 2012-05-19 20:48:29 Z
+include: "{\"304\":{\"620\":{\"210\":{\"views\":\"default\"}},\"621\":{\"210\":{\"views\":\"default\"}},\"622\":{\"210\":{\"views\":\"default\"}},\"623\":{\"210\":{\"views\":\"default\"}},\"624\":{\"210\":{\"views\":\"default\"}},\"625\":{\"210\":{\"views\":\"default\"}},\"626\":{\"210\":{\"views\":\"default\"}},\"627\":{\"210\":{\"views\":\"default\"}},\"628\":{\"210\":{\"views\":\"default\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ,Producto,Solicitante,Registrante,Fabricante,Empresa Importadora
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Producto
+next_step: ""
+position: 5
+ajax_calls: 

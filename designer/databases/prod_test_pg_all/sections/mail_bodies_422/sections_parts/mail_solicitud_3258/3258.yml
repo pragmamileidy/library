@@ -1,0 +1,19 @@
+--- 
+id: 3258
+section_id: 422
+part_id: 509
+name: mail_Solicitud
+created_at: 2014-06-23 20:44:35 Z
+updated_at: 2014-06-23 20:44:35 Z
+label: Mail de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 12

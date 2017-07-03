@@ -1,0 +1,17 @@
+--- 
+id: 515
+name: Suelos_email
+description: "Notificaciones para la verificaci\xC3\xB3n de suelos del proceso 4"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 20:56:36 Z
+updated_at: 2013-01-14 20:56:36 Z
+label: "Mensajes de Verificaci\xC3\xB3n de Suelos"
+hint: ""
+view_class: horizontal
+serial: 

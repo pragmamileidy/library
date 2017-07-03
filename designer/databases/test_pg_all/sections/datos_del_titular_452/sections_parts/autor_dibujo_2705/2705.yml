@@ -1,0 +1,19 @@
+--- 
+id: 2705
+section_id: 452
+part_id: 547
+name: Autor-Dibujo
+created_at: 2013-03-14 15:55:51 Z
+updated_at: 2013-03-14 17:46:48 Z
+label: Autor del Dibujo
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2951\":{},\"2950\":{},\"2952\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

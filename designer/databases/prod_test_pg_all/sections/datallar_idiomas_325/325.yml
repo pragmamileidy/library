@@ -1,0 +1,17 @@
+--- 
+id: 325
+name: Datallar Idiomas
+description: Datallar Idiomas que Domina el Usuario
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-09 15:05:58 Z
+updated_at: 2012-07-09 15:05:58 Z
+status: Draft
+label: Detallar Idiomas que Domina
+hint: ""
+serial: 

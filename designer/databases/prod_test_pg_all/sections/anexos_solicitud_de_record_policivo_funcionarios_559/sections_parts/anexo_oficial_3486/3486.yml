@@ -1,0 +1,21 @@
+--- 
+id: 3486
+section_id: 559
+part_id: 38
+name: anexo_oficial
+created_at: 2015-08-05 20:21:42 Z
+updated_at: 2015-08-10 21:07:08 Z
+label: "R\xC3\xA9cord policivo generado sin firma"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  sin_adjunto = form_data.get("anexos_solicitud_de_record_policivo_funcionarios.anexo_oficial.anexo")
+  !sin_adjunto.blank?
+manage_as_confidential: true
+include: "{\"210\":{}}"
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: horizontal
+order_input: 2

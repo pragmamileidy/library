@@ -1,0 +1,16 @@
+--- 
+id: 1259
+design_id: 90
+section_id: 268
+name: "Datos Generales de los Directorios y Abogado Id\xC3\xB3neo"
+created_at: 2012-06-07 22:17:16 Z
+updated_at: 2015-10-23 15:46:25 Z
+label: "Datos Generales de los Directores y el Abogado Id\xC3\xB3neo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1781\":{\"3348\":{\"required\":\"required\"},\"3349\":{\"required\":\"required\"},\"1739\":{\"required\":\"required\"},\"1738\":{\"required\":\"required\"},\"1740\":{\"required\":\"required\"}},\"1782\":{\"1739\":{\"required\":\"required\"},\"1738\":{\"required\":\"required\"},\"1740\":{\"required\":\"required\"},\"1741\":{\"required\":\"required\"},\"1742\":{\"required\":\"required\"},\"3968\":{\"required\":\"required\"},\"3354\":{\"required\":\"required\"},\"1744\":{\"required\":\"required\"},\"1745\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

@@ -1,0 +1,30 @@
+--- 
+id: 2954
+part_id: 548
+field_id: 10
+name: Cedula/Pasaporte
+created_at: 2013-03-05 21:44:11 Z
+updated_at: 2017-06-04 00:28:27.870486 Z
+label: Cedula/Pasaporte
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2b26a2db-8fdb-4904-9f12-34ca6d5f1666
+version: 20170603-202827

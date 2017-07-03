@@ -1,0 +1,30 @@
+--- 
+id: 3894
+part_id: 736
+field_id: 4
+name: Segundo Nombre
+created_at: 2015-02-18 20:41:18 Z
+updated_at: 2017-06-04 00:27:49.445998 Z
+label: Segundo Nombre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 84451ad4-a44f-4ea5-a222-f5bb8cf3f807
+version: 20170603-202749

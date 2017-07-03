@@ -1,0 +1,17 @@
+--- 
+id: 672
+name: payment qualms
+description: reparo de pago
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-09-18 14:47:27 Z
+updated_at: 2013-09-18 14:47:27 Z
+label: Reparar Pago
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 3012
+section_id: 422
+part_id: 675
+name: mail_estatusTramite
+created_at: 2014-01-14 16:01:23 Z
+updated_at: 2014-01-14 16:01:23 Z
+label: Email de Estatus
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3478\":{},\"3479\":{},\"3480\":{},\"3481\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

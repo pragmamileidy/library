@@ -1,0 +1,17 @@
+--- 
+id: 206
+name: Datos del Viajero
+description: Datos del Viajero
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-26 16:26:18 Z
+updated_at: 2012-05-16 20:55:31 Z
+label: Datos del Viajero
+hint: ""
+view_class: horizontal
+serial: 

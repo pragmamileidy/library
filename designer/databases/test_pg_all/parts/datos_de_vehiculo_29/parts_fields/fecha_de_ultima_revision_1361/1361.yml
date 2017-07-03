@@ -1,0 +1,30 @@
+--- 
+id: 1361
+part_id: 29
+field_id: 13
+name: "Fecha de \xC3\xBAltima revisi\xC3\xB3n"
+created_at: 2012-05-15 20:49:20 Z
+updated_at: 2017-06-04 00:31:46.279636 Z
+label: "Fecha de \xC3\xBAltima revisi\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 24
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a28cd803-4391-4516-a098-399aa632ef09
+version: 20170603-203146

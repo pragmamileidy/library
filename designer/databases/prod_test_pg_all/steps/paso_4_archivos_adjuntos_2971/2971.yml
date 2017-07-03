@@ -1,0 +1,34 @@
+--- 
+id: 2971
+name: Paso 4 - Archivos Adjuntos
+label: Archivos Adjuntos
+description: ""
+fill_step_id: 1595
+created_at: 2014-10-10 15:58:15 Z
+updated_at: 2015-04-22 19:23:23 Z
+include: "{\"4534\":{\"1864\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1867\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1868\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1869\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1870\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1871\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3443\":{\"3205\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3045\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "_Nombre1 = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_nombre\")\r\n\
+  _Nombre2 = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_nombre\")\r\n\
+  _Nombre3 = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_apellido\")\r\n\
+  _Nombre4 = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_apellido\")\r\n\
+  _Nombre5 = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.apellido_de_casada\")\r\n\
+  \r\n\
+  #::: OBTENER LOS DATOS DE LA CONTRAPARTE PARA LA APROBACI\xC3\x93N DE LA SOLICITUD :::#\r\n\
+  form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.primer_nombre\",_Nombre1)\r\n\
+  form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.segundo_nombre\",_Nombre2)\r\n\
+  form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.primer_apellido\",_Nombre3)\r\n\
+  form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.segundo_apellido\",_Nombre4)\r\n\
+  form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.apellido_de_casada\",_Nombre5)\r\n\
+  \r\n\
+  #::: UTILIZADO PARA PRINT DESIGN :::#\r\n\
+  Nombres_com =  \"#{_Nombre1} \"+\"#{_Nombre2} \"+\"#{_Nombre3} \"+\"#{_Nombre4} \"+\"#{_Nombre5}\"\r\n\
+  form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.nombre\",Nombres_com)"
+on_transition: ""
+views: 
+back_step: "Paso 3 - Datos del Veh\xC3\xADculo"
+next_step: "Paso 5 - Confirmaci\xC3\xB3n"
+position: 4
+ajax_calls: $('#field_anexos_mensaje_cargo').parent().parent().hide();

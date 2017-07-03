@@ -1,0 +1,319 @@
+--- 
+id: 16
+position: 1
+selector: "{\"2160\":{\"656\":{\"758\":{},\"759\":{}}},\"339\":{\"580\":{\"1323\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"1996\":{},\"2001\":{},\"763\":{}},\"581\":{\"2456\":{},\"2457\":{},\"2458\":{},\"583\":{},\"578\":{},\"585\":{},\"631\":{},\"594\":{}},\"2738\":{\"3093\":{}}},\"2137\":{\"2384\":{\"1323\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"1996\":{},\"2001\":{},\"763\":{}},\"2740\":{\"3093\":{}}},\"340\":{\"670\":{\"2325\":{}},\"671\":{\"1393\":{},\"1394\":{}},\"672\":{\"772\":{}}},\"342\":{\"1724\":{\"1466\":{}},\"674\":{\"782\":{},\"124\":{},\"783\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 80px;
+  	left: 708px;
+  	width: 313px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 55px;
+  	left: 709px;
+  	width: 311px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_cdula {
+  	position: absolute;
+  	top: 281px;
+  	left: 271px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 281px;
+  	left: 756px;
+  	width: 206px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 318px;
+  	left: 271px;
+  	width: 236px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 318px;
+  	left: 756px;
+  	width: 207px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 356px;
+  	left: 268px;
+  	width: 236px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_fechadenacimientostring {
+  	position: absolute;
+  	top: 356px;
+  	left: 758px;
+  	width: 210px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_sexostring {
+  	position: absolute;
+  	top: 396px;
+  	left: 272px;
+  	width: 233px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_datosdelapersona_edad {
+  	position: absolute;
+  	top: 394px;
+  	left: 758px;
+  	width: 207px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_provincia_lista {
+  	position: absolute;
+  	top: 509px;
+  	left: 273px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_distrito_lista {
+  	position: absolute;
+  	top: 509px;
+  	left: 755px;
+  	width: 205px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_corregimiento_lista {
+  	position: absolute;
+  	top: 546px;
+  	left: 273px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_barrio {
+  	position: absolute;
+  	top: 546px;
+  	left: 755px;
+  	width: 203px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_calleoavenida {
+  	position: absolute;
+  	top: 585px;
+  	left: 271px;
+  	width: 239px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 433px;
+  	left: 754px;
+  	width: 208px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_nmerocelular {
+  	position: absolute;
+  	top: 470px;
+  	left: 272px;
+  	width: 236px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 470px;
+  	left: 757px;
+  	width: 204px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datospersonales_licdeconducir_nodelicenciadeconducir {
+  	position: absolute;
+  	top: 432px;
+  	left: 273px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_cdula {
+  	position: absolute;
+  	top: 950px;
+  	left: 251px;
+  	width: 233px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_primernombre {
+  	position: absolute;
+  	top: 950px;
+  	left: 733px;
+  	width: 201px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_segundonombre {
+  	position: absolute;
+  	top: 988px;
+  	left: 248px;
+  	width: 238px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_primerapellido {
+  	position: absolute;
+  	top: 987px;
+  	left: 732px;
+  	width: 204px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_segundoapellido {
+  	position: absolute;
+  	top: 1026px;
+  	left: 249px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_fechadenacimientostring {
+  	position: absolute;
+  	top: 1026px;
+  	left: 733px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_sexostring {
+  	position: absolute;
+  	top: 1064px;
+  	left: 249px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_datospersonanatural_edad {
+  	position: absolute;
+  	top: 1064px;
+  	left: 733px;
+  	width: 206px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsable_licdeconducir_nodelicenciadeconducir {
+  	position: absolute;
+  	top: 1097px;
+  	left: 247px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeladiscapacidad_discapacidadsegncertificacinmdica_introduzcaelnmerodecertificacin {
+  	position: absolute;
+  	top: 711px;
+  	left: 272px;
+  	width: 236px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeladiscapacidad_tipodeayuda_tipodeayudaparadiscapacitados {
+  	position: absolute;
+  	top: 742px;
+  	left: 268px;
+  	width: 482px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeladiscapacidad_detalledelaayuda_descripcin {
+  	position: absolute;
+  	top: 840px;
+  	left: 268px;
+  	width: 686px;
+  	height: 59px;
+  	overflow: hidden;
+    }
+    .caractersticasdelvehculo_tipodevehiculodeestacionamientoparapersonascondiscapacidad_tipodevehiculo {
+  	position: absolute;
+  	top: 1191px;
+  	left: 270px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .caractersticasdelvehculo_datosdevehculo_placa {
+  	position: absolute;
+  	top: 1191px;
+  	left: 757px;
+  	width: 212px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .caractersticasdelvehculo_datosdevehculo_marca {
+  	position: absolute;
+  	top: 1228px;
+  	left: 269px;
+  	width: 240px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .caractersticasdelvehculo_datosdevehculo_modelo {
+  	position: absolute;
+  	top: 1228px;
+  	left: 755px;
+  	width: 209px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+      .datosdeladiscapacidad_tipodeayuda_otro {
+  	position: absolute;
+  	top: 773px;
+  	left: 268px;
+  	width: 482px;
+  	height: 20px;
+  	overflow: hidden;
+  }
+
+override_render: false
+html_render: ""
+print_design_id: 11
+created_at: 2012-03-29 19:10:19 Z
+updated_at: 2015-10-15 01:44:24 Z
+instances_selector: "{\"2160\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"339\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"1996\":{\"value\":\"\"},\"2001\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"583\":{\"value\":\"\"},\"578\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2738\":{\"value\":\"\",\"3093\":{\"value\":\"\"}}},\"2137\":{\"value\":\"\",\"2384\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"1996\":{\"value\":\"\"},\"2001\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"2740\":{\"value\":\"\",\"3093\":{\"value\":\"\"}}},\"340\":{\"value\":\"\",\"670\":{\"value\":\"\",\"2325\":{\"value\":\"\"}},\"671\":{\"value\":\"\",\"1393\":{\"value\":\"\"},\"1394\":{\"value\":\"\"}},\"672\":{\"value\":\"\",\"772\":{\"value\":\"\"}}},\"342\":{\"value\":\"\",\"1724\":{\"value\":\"\",\"1466\":{\"value\":\"\"}},\"674\":{\"value\":\"\",\"782\":{\"value\":\"\"},\"124\":{\"value\":\"\"},\"783\":{\"value\":\"\"}}}}"
+size: ""

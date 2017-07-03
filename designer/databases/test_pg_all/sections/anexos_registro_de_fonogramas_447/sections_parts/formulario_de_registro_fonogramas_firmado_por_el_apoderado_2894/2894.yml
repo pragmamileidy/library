@@ -1,0 +1,19 @@
+--- 
+id: 2894
+section_id: 447
+part_id: 38
+name: Formulario de Registro Fonogramas firmado por el Apoderado
+created_at: 2013-09-06 18:36:51 Z
+updated_at: 2015-11-05 19:53:08 Z
+label: Formulario de Registro Fonogramas firmado por el Apoderado (habilitado con B/.10.00 en timbres)
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: 
+hint: "Observaci\xC3\xB3n: este documento debe llenarse en el portal de Panam\xC3\xA1 sin Papel y luego poder imprimirse para ser firmado  y escanearlo para enviarlo. En caso de autor difunto deber\xC3\xA1 ser firmada por hijo(a) o esposo(a)"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

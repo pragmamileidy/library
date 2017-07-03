@@ -1,0 +1,30 @@
+--- 
+id: 2012
+part_id: 381
+field_id: 10
+name: Raza
+created_at: 2012-07-14 19:59:01 Z
+updated_at: 2017-06-04 00:24:23.150569 Z
+label: Raza
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Raza del animal
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b6045095-2a01-461c-a22f-cafbcc934307
+version: 20170603-202423

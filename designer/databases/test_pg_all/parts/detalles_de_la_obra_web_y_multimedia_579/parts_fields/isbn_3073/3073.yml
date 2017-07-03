@@ -1,0 +1,30 @@
+--- 
+id: 3073
+part_id: 579
+field_id: 10
+name: ISBN
+created_at: 2013-03-14 21:09:58 Z
+updated_at: 2017-06-04 00:30:24.471716 Z
+label: ISBN
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9c2a39b3-713b-4bf4-952b-e926e6a53b50
+version: 20170603-203024

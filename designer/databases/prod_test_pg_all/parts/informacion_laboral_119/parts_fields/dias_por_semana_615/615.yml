@@ -1,0 +1,30 @@
+--- 
+id: 615
+part_id: 119
+field_id: 1
+name: "D\xC3\xADas por Semana"
+created_at: 2011-11-28 16:09:53 Z
+updated_at: 2017-06-04 00:31:33.111192 Z
+label: Dias por Semana
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 7
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 17
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 17bace52-68a5-4ae6-b602-21cc405f2d3a
+version: 20170603-203133

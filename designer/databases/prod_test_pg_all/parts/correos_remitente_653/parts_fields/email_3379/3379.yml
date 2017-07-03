@@ -1,0 +1,30 @@
+--- 
+id: 3379
+part_id: 653
+field_id: 5
+name: Email
+created_at: 2013-07-10 17:20:17 Z
+updated_at: 2017-06-04 00:22:59.037014 Z
+label: "Correo Electr\xC3\xB3nico"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor v\xC3\xA1lido de direcci\xC3\xB3n de correo electr\xC3\xB3nico. Ejemplo: nombre@dominio"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8962ed72-cadc-4c4b-8dcb-540ed0ecf1b8
+version: 20170603-202259

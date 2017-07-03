@@ -1,0 +1,19 @@
+--- 
+id: 931
+section_id: 161
+part_id: 38
+name: "Auto y oficio de adjudicaci\xC3\xB3n emitido por un juez"
+created_at: 2012-03-31 15:17:49 Z
+updated_at: 2012-03-31 15:17:49 Z
+label: "Auto y oficio de adjudicaci\xC3\xB3n emitido por un juez"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

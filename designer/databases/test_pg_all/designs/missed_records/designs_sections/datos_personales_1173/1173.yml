@@ -1,0 +1,16 @@
+--- 
+id: 1173
+design_id: 104
+section_id: 107
+name: " Datos Personales"
+created_at: 2012-05-31 15:02:58 Z
+updated_at: 2015-09-10 21:43:09 Z
+label: " Datos Personales"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"1320\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"},\"610\":{\"required\":\"required\"},\"545\":{\"required\":\"required\"},\"1996\":{\"required\":\"required\"},\"2001\":{\"required\":\"required\"},\"763\":{\"required\":\"required\"}},\"583\":{\"2322\":{\"required\":\"required\"},\"88\":{\"required\":\"required\"},\"2323\":{\"required\":\"required\"},\"89\":{\"required\":\"required\"},\"1384\":{\"required\":\"required\"},\"3453\":{\"required\":\"required\"}},\"586\":{\"608\":{\"required\":\"required\"}},\"581\":{\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"1123\":{\"required\":\"unrequired\"},\"631\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"unrequired\"}}}"
+hint: " "
+help: " "
+order_input: 2

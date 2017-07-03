@@ -1,0 +1,19 @@
+--- 
+id: 3193
+section_id: 400
+part_id: 38
+name: "Cedula del conyugue panameno autenticada por  la direcci\xC3\xB3n nacional de cedulacion"
+created_at: 2014-05-09 21:33:35 Z
+updated_at: 2015-10-28 22:10:29 Z
+label: "C\xC3\xA9dula del conyugue paname\xC3\xB1o"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Favor  adjuntar archivo correspondiente a la c\xC3\xA9dula de identidad personal del conyugue  paname\xC3\xB1o, autenticada, por la Direcci\xC3\xB3n Nacional de Cedulaci\xC3\xB3n."
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Pago de Boletas de Tránsito</title>
+        <style type="text/css">
+            body {
+                margin-left: 4cm;
+                margin-top: 3cm;
+                margin-right: 3cm;
+                margin-bottom: 2cm;
+                padding-left: 0px;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+                line-height: 1.5;
+                font-size: 14px;
+            }
+            .magicDiv {
+                background-image:url('<%= image_path %>');
+                background-repeat:no-repeat;
+                background-position:0% 0%;
+                background-size:100%; 
+                position:absolute;
+                left: 32px;
+                top: 32px;
+                height:1344px;
+                width: 1024px;
+            }
+            .logo {
+                padding-left:10px;
+                background-repeat: no-repeat;
+                background-position: 10px;
+                width: 105px; 
+                height: 105px;
+                align: left;
+            }
+			tabla {
+				font-family: arial, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			}
+			
+			tr:nth-child(even) {
+				background-color: #dddddd;
+			}
+            .campo {
+                background: #154360;
+                font-weight: bold;
+				color: #FFFFFF;
+				/*border-style:outset;*/
+            }
+            .contenido_campo {
+                width: 35%;
+            }
+            h2 {
+                text-align: center;
+                color: #013d83; 
+            }
+            
+            h4 {
+                text-align: justify;
+                color: #013d83; 
+            }
+ 
+            
+            .banner {
+                padding-left:10px;
+                background-repeat: no-repeat;
+                background-position: 10px;
+                width: 820px; 
+                height: 105px;
+                align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr class="contenido_campo">
+                      <td width="100%" class="contenido_campo" align="right"><strong>Número de Solicitud:</strong> <%= fields["informacindesolicitud_datosdelasolicitud_numerodesolicitud"] %><br/><strong>Fecha: </strong><%= fields["informacindesolicitud_datosdelasolicitud_fechadesolicitud"] %></td>
+                      </tr>
+                    </table>                
+                </td>
+            </tr> 
+        </table>
+        <br/>
+        <img src="http://test-aig.portalciudadano.panamaenlinea.gob.pa/assets/banner_pago_de_boleta.jpg"  width="545" height="77" class="banner"/><br/>
+        <br/>
+        <p align="center"><h2>REPORTE DE SOLICITUD DE PAGO DE BOLETAS DE TRÁNSITO</h2></p>
+        <br/>
+        <tr>
+          <td  width="620"  height="160" >
+              <div>
+                    <p align="justify" width="100%"><h4><strong>DATOS DE LA CONSULTA</strong></h4>
+                    
+                    <table width="100%" border="1">
+                        <tbody>
+                            <tr>
+                                <td width="26%" class="campo" align="right">Tipo de Documento</td>
+                                <td width="19%" class="contenido_campo" align="left"><%= fields["esdeudorono_consulta_placa_nro_doc"] %><%= fields["esdeudorono_datosdelapersona_tipodocumento"] %></td>
+                                <% tipo = fields["esdeudorono_esdeudorono_deudor"] %>
+                                <% if tipo == "Si" %>
+                                    <% nro_doc = fields["esdeudorono_esdeudorono_nro_doc"] %>
+                                <% else %>
+                                    <% nro_doc = fields["esdeudorono_datosdelapersona_dato_a_consultar"] %>
+                                <% end %>
+                                <td width="17%" class="campo" align="right">Nro. de Documento</td>
+                                <td width="38%" class="contenido_campo" align="left"><%= nro_doc.html_safe %></td>
+                            </tr>
+                      </tbody>
+                </table> 
+                    <% boletas = fields["boletasporpagar_monto_motivodelamulta"] %>
+                    <% if boletas == "true" %>
+                        <p align="justify" width="100%"><h4><strong>DETALLE DE LA(S) BOLETA(S) PAGADAS(S):</strong></h4></p>
+                        <table width="100%" class="tabla">
+                            <tr>
+                              <td width="63%" align="center" class="campo"><strong>Motivo</strong></td>
+                              <td width="10%" align="left" class="campo"><strong>Imposición</strong></td>
+                              <td width="8%" align="left" class="campo"><strong>Monto Boleta</strong></td>
+                              <td width="9%" align="left" class="campo"><strong>Monto Desacato</strong></td>
+                              <td width="10%" align="left" class="campo"><strong>Monto Total</strong></td>
+                            </tr>
+                            <% (1..20).each { |x| %>
+                                <% pagada = fields["boletasporpagar_boletas_instance_#{x}_pagar_boleta"] %>
+                                <% if !pagada.blank? %>
+                                	<tr>
+                                        <td colspan="5" align="justify"><strong>Nro. de Placa: <%= fields["boletasporpagar_boletas_instance_#{x}_placa"] %> | Nro. de Boleta: <%= fields["boletasporpagar_boletas_instance_#{x}_boleta"] %> | Fecha: <%= fields["boletasporpagar_boletas_instance_#{x}_fecha"] %> </strong></td> 
+                                    </tr>
+                                    <tr>
+                                        <td align="left"><%= fields["boletasporpagar_boletas_instance_#{x}_motivo"] %></td>
+                                        <td align="center"><%= fields["boletasporpagar_boletas_instance_#{x}_imposicion"] %></td>
+                                        <td align="right"><%= fields["boletasporpagar_boletas_instance_#{x}_monto_boleta"] %></td>
+                                        <td align="right"><%= fields["boletasporpagar_boletas_instance_#{x}_monto_desacato"] %></td>
+                                        <td align="right"><%= fields["boletasporpagar_boletas_instance_#{x}_monto_total"] %></td>
+                                    </tr>
+                                    
+                                <% end %>
+                            <% } %>
+                        </table>
+                        
+                          <p align="justify" width="100%">&nbsp;</p>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr class="contenido_campo">
+                                	<td width="100%" class="contenido_campo" align="justify"><strong>Monto Cancelado:</strong> <%= fields["datosobtenidosdelpagoelectrnicogenerico_datosobtenidosdelpagoelectronicogenerico_montodelpago"] %><br/><strong>Fecha:</strong> <%= fields["datosobtenidosdelpagoelectrnicogenerico_datosobtenidosdelpagoelectronicogenerico_fechadelpago"] %><br/><strong>Nro. de Confirmación:</strong> <%= fields["datosobtenidosdelpagoelectrnicogenerico_datosobtenidosdelpagoelectronicogenerico_nodeconfirmacion"] %></td>
+                                </tr>
+                            </table>    
+                    <% else %>
+                        
+                          <p align="center" width="100%">&nbsp;</p>
+                          <p align="justify" width="100%"><strong>USTED NO TIENE BOLETAS PENDIENTES POR PAGAR A LA FECHA</strong></p>
+                        
+                    <% end %>  
+                    
+
+                          <p align="center" width="100%">&nbsp;</p>
+                          <p align="center" width="100%"><strong>ESTE DOCUMENTO NO ES VÁLIDO PARA CONDUCIR</strong></p>
+                          <p align="center" width="100%"><strong>ESTA SOLICITUD FUE  GENERADA POR LA PLATAFORMA EN LÍNEA PARA: <%= fields["datosdelapersona_datosdelapersona_nombrecompleto"] %> <%= fields["datosdelaempresa_datosdelaempresa_razonsocial"] %></strong></p>
+                </div>
+            </td>
+        </tr>
+</body>
+</html>

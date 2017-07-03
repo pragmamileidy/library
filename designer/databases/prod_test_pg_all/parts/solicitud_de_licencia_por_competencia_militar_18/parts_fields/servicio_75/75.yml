@@ -1,0 +1,30 @@
+--- 
+id: 75
+part_id: 18
+field_id: 10
+name: Servicio
+created_at: 2011-11-02 20:08:03 Z
+updated_at: 2017-06-04 00:21:11.803375 Z
+label: Indique el nombre del servicio prestado
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4efdf8ff-7f08-4c9c-9484-66251f0becfa
+version: 20170603-202111

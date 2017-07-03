@@ -1,0 +1,87 @@
+--- 
+id: 626
+position: 2
+selector: "{\"5252\":{\"656\":{\"758\":{},\"759\":{}}},\"5258\":{\"487\":{\"1323\":{},\"593\":{}}},\"5259\":{\"705\":{\"3972\":{}},\"706\":{\"3969\":{}},\"707\":{\"3972\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+   .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 74px;
+  	left: 716px;
+  	width: 306px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 50px;
+  	left: 717px;
+  	width: 305px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .secretario_informacindelmiembro_cdula {
+  	position: absolute;
+  	top: 169px;
+  	left: 255px;
+  	width: 476px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .secretario_informacindelmiembro_nombreusual {
+  	position: absolute;
+  	top: 141px;
+  	left: 254px;
+  	width: 733px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosadicionales_nombredecontactodeltrmite_nombredelapersona {
+  	position: absolute;
+  	top: 225px;
+  	left: 520px;
+  	width: 462px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosadicionales_nrodeidoneidad_nmerodeidoneidad {
+  	position: absolute;
+  	top: 264px;
+  	left: 518px;
+  	width: 464px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosadicionales_nombrederevisordeedofinancieros_nombredelapersona {
+  	position: absolute;
+  	top: 302px;
+  	left: 516px;
+  	width: 465px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 197
+created_at: 2017-02-26 23:46:08.877353 Z
+updated_at: 2017-02-26 23:46:09.078327 Z
+instances_selector: "{\"361\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"587\":{\"value\":\"\",\"487\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"593\":{\"value\":\"\"}}},\"366\":{\"value\":\"\",\"705\":{\"value\":\"\",\"3972\":{\"value\":\"\"}},\"706\":{\"value\":\"\",\"3969\":{\"value\":\"\"}},\"707\":{\"value\":\"\",\"3972\":{\"value\":\"\"}}}}"
+size: ""

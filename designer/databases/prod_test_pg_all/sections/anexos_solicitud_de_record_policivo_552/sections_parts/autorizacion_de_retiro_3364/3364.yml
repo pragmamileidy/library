@@ -1,0 +1,21 @@
+--- 
+id: 3364
+section_id: 552
+part_id: 38
+name: Autorizacion de retiro
+created_at: 2014-07-06 14:38:57 Z
+updated_at: 2017-04-02 19:55:46.046534 Z
+label: "Autorizaci\xC3\xB3n del titular (certificando la autenticidad de la firma), para retirar el r\xC3\xA9cord policivo"
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  titular = form_data.get("retiro_record_policivo.retiro_record_policivo.retiro_rp")
+  titular == "Autorizado"
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

@@ -1,0 +1,19 @@
+--- 
+id: 2277
+section_id: 394
+part_id: 38
+name: La idoneidad profesional del trabajador si es experto
+created_at: 2012-08-29 22:09:24 Z
+updated_at: 2015-10-27 20:46:27 Z
+label: La idoneidad profesional del trabajador si es experto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Anexar idoneidad profesional del trabajador si es experto, mediante cartas de referencias de trabajos anteriores donde conste la especialidad del mismo. Si se trata de una empresa extranjera que opera en Panam\xC3\xA1 y trae un experto que trabaje con ella en el"
+help: "Anexar idoneidad profesional del trabajador si es experto, mediante cartas de referencias de trabajos anteriores donde conste la especialidad del mismo. Si se trata de una empresa extranjera que opera en Panam\xC3\xA1 y trae un experto que trabaje con ella en el extranjero, la carta debe especificar el tiempo de servicio y la especialidad. En cualquier caso, las cartas correspondientes ser\xC3\xA1n autenticadas por el C\xC3\xB3nsul de Panam\xC3\xA1 en ese pa\xC3\xADs y en su defecto por el de un estado amigo\xE2\x80\x9D. (Escaneada en cualquier formato: pdf, jpg, bmp, etc.)"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

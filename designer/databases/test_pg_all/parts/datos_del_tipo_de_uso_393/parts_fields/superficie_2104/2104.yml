@@ -1,0 +1,30 @@
+--- 
+id: 2104
+part_id: 393
+field_id: 27
+name: Superficie
+created_at: 2012-07-23 14:13:06 Z
+updated_at: 2017-06-04 00:30:35.638743 Z
+label: Superficie
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Especifica la superficie en Mts2 que destinada a este tipo de uso
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ff383d17-2b7c-4251-8ee9-d88c478a5f62
+version: 20170603-203035

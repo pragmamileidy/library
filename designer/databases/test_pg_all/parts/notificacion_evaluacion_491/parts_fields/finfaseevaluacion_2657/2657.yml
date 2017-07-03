@@ -1,0 +1,30 @@
+--- 
+id: 2657
+part_id: 491
+field_id: 10
+name: FinFaseEvaluacion
+created_at: 2013-01-14 14:51:21 Z
+updated_at: 2017-06-04 00:24:44.235866 Z
+label: "Fin Fase Evaluaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo  para los procesos 4 y 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a1d619c6-257f-497a-8438-2f00e8e3043d
+version: 20170603-202444

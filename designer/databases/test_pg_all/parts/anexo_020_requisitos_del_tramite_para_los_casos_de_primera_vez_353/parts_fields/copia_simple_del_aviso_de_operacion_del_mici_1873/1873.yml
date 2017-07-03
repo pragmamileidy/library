@@ -1,0 +1,30 @@
+--- 
+id: 1873
+part_id: 353
+field_id: 31
+name: "Copia simple del aviso de operaci\xC3\xB3n del MICI"
+created_at: 2012-06-18 15:30:14 Z
+updated_at: 2017-06-04 00:24:17.339579 Z
+label: "Copia simple del aviso de operaci\xC3\xB3n del MICI"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7fe5c095-b63e-4d50-a8d9-10bba5d67e8c
+version: 20170603-202417

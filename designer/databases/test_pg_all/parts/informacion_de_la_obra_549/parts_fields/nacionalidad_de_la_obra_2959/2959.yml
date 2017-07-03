@@ -1,0 +1,30 @@
+--- 
+id: 2959
+part_id: 549
+field_id: 10
+name: Nacionalidad de la Obra
+created_at: 2013-03-07 13:49:41 Z
+updated_at: 2017-06-04 00:26:19.736068 Z
+label: Nacionalidad de la Obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar la nacionalidad de la obra
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c0d89e7c-bddc-45f1-be1a-b009f76ec329
+version: 20170603-202619

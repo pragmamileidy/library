@@ -1,0 +1,16 @@
+--- 
+id: 2528
+design_id: 188
+section_id: 474
+name: Anexos -  Registro de Obras Audiovisuales
+created_at: 2013-03-14 18:14:01 Z
+updated_at: 2014-06-19 21:01:45 Z
+label: "Anexos "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2710\":{\"2936\":{\"required\":\"required\"}},\"2711\":{\"3014\":{\"required\":\"required\"}},\"2903\":{\"210\":{\"required\":\"required\"}},\"2714\":{\"2940\":{\"required\":\"required\"}},\"2904\":{\"210\":{\"required\":\"required\"}},\"2715\":{\"2937\":{\"required\":\"required\"}},\"2712\":{\"2938\":{\"required\":\"required\"}},\"2713\":{\"3064\":{\"required\":\"required\"}},\"2716\":{\"3015\":{\"required\":\"unrequired\"}},\"2949\":{\"210\":{\"required\":\"required\"}},\"3240\":{\"210\":{\"required\":\"unrequired\"}},\"3241\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 18

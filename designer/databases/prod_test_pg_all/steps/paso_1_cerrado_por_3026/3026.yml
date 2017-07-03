@@ -1,0 +1,28 @@
+--- 
+id: 3026
+name: Paso 1- Cerrado por
+label: Paso 1- Cerrado por
+description: Paso 1- Cerrado por
+fill_step_id: 1624
+created_at: 2014-12-04 14:17:48 Z
+updated_at: 2014-12-10 21:05:07 Z
+include: "{\"4610\":{\"3410\":{\"3805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3811\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3832\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1182\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3615\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4611\":{\"1391\":{\"1174\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1175\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2441\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1293\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4614\":{\"1302\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"1303\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"1304\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"1305\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"1306\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4617\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4618\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: "#:::::::::::::::::::::Inicializaci\xC3\xB3n de Datos del Agente - LG:::::::::::::::::::::#\r\n\
+  \r\n\
+  _idagente = @task[\"agent_id\"].to_s\r\n\
+  \r\n\
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + \"#{_idagente}\" + '&include_all=true').parsed_response\r\n\
+  _hash = result[\"hash\"]\r\n\
+  _agente = _hash[\"response\"]\r\n\
+  \r\n\
+  \r\n\
+  form_data.set(\"cerrado_por.datos_del_funcionario_generico.usuario\", _agente[\"name\"])"
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

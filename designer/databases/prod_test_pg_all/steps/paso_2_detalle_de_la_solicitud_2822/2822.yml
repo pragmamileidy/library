@@ -1,0 +1,335 @@
+--- 
+id: 2822
+name: Paso 2 -  Detalle de la solicitud
+label: "Selecci\xC3\xB3n de la Clave de Descuento"
+description: "<br/>\r\n\
+  Selecci\xC3\xB3n de la Clave de Descuento\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 1522
+created_at: 2014-03-20 01:16:53 Z
+updated_at: 2015-10-06 19:39:09 Z
+include: "{\"4204\":{\"1725\":{\"1973\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1883\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3552\":{\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4205\":{\"1995\":{\"2056\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2021\":{\"2056\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4206\":{\"2023\":{\"2062\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2063\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4207\":{\"1949\":{\"2465\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1885\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1886\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "ci = form_data.get(\"solicitante.datos_basicos.cedula_pasaporte\")\r\n\
+  \turl = '/service/bdin_contraloria_resumen_descuentos/where.json?Cedula=' + \"#{ci}\"\r\n\
+  \t#::::: Se obtienen los datos para la b\xC3\xBAsqueda por rango de fecha - LG\r\n\
+  \t#::::: Datos para fecha de inicio de b\xC3\xBAsqueda\r\n\
+  \tquincena_desde = form_data.get(\"periodo_de_descuento_consultado.desde.quincena\")\r\n\
+  \r\n\
+  \t#:::: Si se selecciona la primera quincena, el d\xC3\xADa de inicio ser\xC3\xA1 el 1; si se selecciona la segunda quincena el d\xC3\xADa ser\xC3\xA1 el 15.\r\n\
+  \tif quincena_desde == \"1a\"\r\n\
+  \t\t_dia_inicio = \"01\"\r\n\
+  \telse\r\n\
+  \t\t_dia_inicio = \"15\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tmes_desde = form_data.get(\"periodo_de_descuento_consultado.desde.meses\")\r\n\
+  \tcase mes_desde\r\n\
+  \t\twhen \"Enero\"\r\n\
+  \t\t\t_mes_inicio = \"01\"\r\n\
+  \t\twhen \"Febrero\"\r\n\
+  \t\t\t_mes_inicio = \"02\"\r\n\
+  \t\twhen \"Marzo\"\r\n\
+  \t\t\t_mes_inicio = \"03\"\r\n\
+  \t\twhen \"Abril\"\r\n\
+  \t\t\t_mes_inicio = \"04\"\r\n\
+  \t\twhen \"Mayo\"\r\n\
+  \t\t\t_mes_inicio = \"05\"\r\n\
+  \t\twhen \"Junio\"\r\n\
+  \t\t\t_mes_inicio = \"06\"\r\n\
+  \t\twhen \"Julio\"\r\n\
+  \t\t\t_mes_inicio = \"07\"\r\n\
+  \t\twhen \"Agosto\"\r\n\
+  \t\t\t_mes_inicio = \"08\"\r\n\
+  \t\twhen \"Septiembre\"\r\n\
+  \t\t\t_mes_inicio = \"09\"\r\n\
+  \t\twhen \"Octubre\"\r\n\
+  \t\t\t_mes_inicio = \"10\"\r\n\
+  \t\twhen \"Noviembre\"\r\n\
+  \t\t\t_mes_inicio = \"11\"\r\n\
+  \t\telse\r\n\
+  \t\t\t_mes_inicio = \"12\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tanio_desde = form_data.get(\"periodo_de_descuento_consultado.desde.anio\")\r\n\
+  \t_fecha_inicio = _dia_inicio + \"-\" + _mes_inicio + \"-\" + anio_desde\r\n\
+  \t\t\r\n\
+  \t#:::: Datos para fecha de fin de b\xC3\xBAsqueda\r\n\
+  \tquincena_hasta = form_data.get(\"periodo_de_descuento_consultado.hasta.quincena\")\r\n\
+  \tif quincena_hasta == \"1a\"\r\n\
+  \t\t_dia_fin = \"01\"\r\n\
+  \telse\r\n\
+  \t\t_dia_fin = \"15\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tmes_hasta = form_data.get(\"periodo_de_descuento_consultado.hasta.meses\")\r\n\
+  \tcase mes_hasta\r\n\
+  \t\twhen \"Enero\"\r\n\
+  \t\t  _mes_fin = \"01\"\r\n\
+  \t\twhen \"Febrero\"\r\n\
+  \t\t  _mes_fin = \"02\"\r\n\
+  \t\twhen \"Marzo\"\r\n\
+  \t\t  _mes_fin = \"03\"\r\n\
+  \t\twhen \"Abril\"\r\n\
+  \t\t  _mes_fin = \"04\"\r\n\
+  \t\twhen \"Mayo\"\r\n\
+  \t\t  _mes_fin = \"05\"\r\n\
+  \t\twhen \"Junio\"\r\n\
+  \t\t  _mes_fin = \"06\"\r\n\
+  \t\twhen \"Julio\"\r\n\
+  \t\t  _mes_fin = \"07\"\r\n\
+  \t\twhen \"Agosto\"\r\n\
+  \t\t  _mes_fin = \"08\"\r\n\
+  \t\twhen \"Septiembre\"\r\n\
+  \t\t  _mes_fin = \"09\"\r\n\
+  \t\twhen \"Octubre\"\r\n\
+  \t\t  _mes_fin = \"10\"\r\n\
+  \t\twhen \"Noviembre\"\r\n\
+  \t\t  _mes_fin = \"11\"\r\n\
+  \t\telse\r\n\
+  \t\t  _mes_fin = \"12\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tanio_hasta = form_data.get(\"periodo_de_descuento_consultado.hasta.anio\")\r\n\
+  \t_fecha_fin = _dia_fin + \"-\" + _mes_fin + \"-\" + anio_hasta\r\n\
+  \r\n\
+  \turl = \"#{url}\" + \"&Fecha_Inicio=#{_fecha_inicio}&Fecha_Fin=#{_fecha_fin}\"\r\n\
+  \r\n\
+  \tform_data.set(\"descuentos.url.url\", url)\r\n\
+  \tform_data.set(\"tipo_de_descuento1.descuento_automatico.mensaje\",\"El per\xC3\xADodo que ingres\xC3\xB3 no gener\xC3\xB3 consultas, por lo tanto no existen agentes crediticios cargados en la base de datos del sistema.\\n \\nPor favor, cont\xC3\xADnue al pr\xC3\xB3ximo paso.\")\r\n\
+  \tform_data.set(\"tipo_de_descuento.descuento_manual.mensaje\",\"El per\xC3\xADodo que ingres\xC3\xB3 es menor al a\xC3\xB1o 1999 por lo tanto no existen agentes crediticios cargados en la base de datos del sistema.\\n \\nPor favor, cont\xC3\xADnue al pr\xC3\xB3ximo paso.\")\r\n\
+  \r\n\
+  \t#::::: DESCUENTOS AUTOM\xC3\x81TICOS O MIXTOS\r\n\
+  \tif (anio_desde.to_i > 1999) || (anio_hasta.to_i > 1999)\r\n\
+  \t\tresult = WebserviceConsumer.get(url).parsed_response\r\n\
+  \t\tresult = result[\"response\"]\r\n\
+  \r\n\
+  \t\t#:::: DESCUENTOS AUTOM\xC3\x81TICOS SI ENCONTRADOS\r\n\
+  \t\tif !result.blank?\r\n\
+  \t\t\t_data = { 'config' => {\r\n            \"readonly\" => \"true\",\r\n            \"select_type\" => \"checkbox\"\r\n\
+  \t\t\t},\r\n\
+  \t\t\t'data' => result,\r\n\
+  \t\t\t'citizen_selection' => [],\r\n\
+  \t\t\t'agent_selection' => []\r\n\
+  \t\t\t}\r\n\
+  \r\n\
+  \t\t\t_data = ActiveSupport::JSON.encode(_data)\r\n\
+  \t\t\tform_data.set(\"descuentos.automatico.fieldgrid\", _data)\t\t\t\t\t\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \t\r\n\
+  _aniodesde = form_data.get(\"periodo_de_descuento_consultado.desde.anio\")\r\n\
+  _aniohasta = form_data.get(\"periodo_de_descuento_consultado.hasta.anio\")\r\n\
+  \r\n\
+  if (_aniodesde > _aniohasta) \r\n   transition_errors << \"El a\xC3\xB1o del per\xC3\xADodo desde, no debe ser mayor al a\xC3\xB1o del per\xC3\xADodo hasta. Por favor, verifique.\"\r\n\
+  end"
+views: 
+back_step: Paso 1 - Datos del Solicitante
+next_step: Paso 3 - Clave de Descuento
+position: 2
+ajax_calls: "$( function() {\r\n\
+  \t$(\"div\").each (function(){\r\n\
+  \t\t//alert($(this).html().trim());\r\n\
+  \t\tif ($(this).html().trim() == \"Direcci\xC3\xB3n Actual\") {   // aqu\xC3\xAD colocas el nombre que deseas cambiar\r\n\
+  \t\t\t//alert( \"hola\");\r\n\
+  \t\t\t$(this).html(\"N\xC3\xBAmeros de Tel\xC3\xA9fonos\");       // Aqu\xC3\xAD colocas el Nombre que deseas que se muestre\r\n\
+  \t\t}\r\n\
+  \t});\r\n\
+  });"

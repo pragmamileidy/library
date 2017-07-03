@@ -1,0 +1,30 @@
+--- 
+id: 617
+part_id: 119
+field_id: 27
+name: Salario
+created_at: 2011-11-28 16:09:53 Z
+updated_at: 2017-06-04 00:31:37.367545 Z
+label: Salario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 19
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f80ae600-44a8-4d94-894f-ceb9394cf2ad
+version: 20170603-203137

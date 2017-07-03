@@ -1,0 +1,16 @@
+--- 
+id: 799
+design_id: 81
+section_id: 200
+name: Datos del Viaje
+created_at: 2012-04-26 19:06:54 Z
+updated_at: 2012-05-18 20:36:24 Z
+label: Datos del Viaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1185\":{\"1057\":{\"required\":\"required\"},\"1058\":{\"required\":\"required\"},\"1059\":{\"required\":\"required\"},\"1060\":{\"required\":\"required\"}},\"1184\":{\"1344\":{\"required\":\"required\"},\"1359\":{\"required\":\"required\"},\"1345\":{\"required\":\"required\"},\"1056\":{\"required\":\"unrequired\"}},\"1186\":{\"1352\":{\"required\":\"required\"},\"1353\":{\"required\":\"required\"},\"1354\":{\"required\":\"required\"},\"1355\":{\"required\":\"required\"},\"1356\":{\"required\":\"required\"},\"1357\":{\"required\":\"required\"},\"1360\":{\"required\":\"required\"}},\"1187\":{\"1346\":{\"required\":\"required\"},\"1347\":{\"required\":\"required\"},\"1348\":{\"required\":\"required\"},\"1349\":{\"required\":\"required\"},\"1350\":{\"required\":\"required\"},\"1351\":{\"required\":\"required\"},\"1358\":{\"required\":\"required\"}},\"1188\":{\"1069\":{\"required\":\"unrequired\"},\"1070\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 3

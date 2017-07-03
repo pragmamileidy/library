@@ -1,0 +1,30 @@
+--- 
+id: 2476
+part_id: 366
+field_id: 17
+name: Otros
+created_at: 2012-08-29 16:12:37 Z
+updated_at: 2017-06-04 00:24:38.893071 Z
+label: Indique Otros
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3c2aec43-4b84-45a3-b897-33460c3a71fb
+version: 20170603-202438

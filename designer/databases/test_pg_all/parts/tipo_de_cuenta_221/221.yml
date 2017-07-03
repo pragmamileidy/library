@@ -1,0 +1,17 @@
+--- 
+id: 221
+name: Tipo de Cuenta
+description: Tipo de Cuenta
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-30 21:47:54 Z
+updated_at: 2012-05-16 20:55:31 Z
+label: Tipo de Cuenta
+hint: ""
+view_class: horizontal
+serial: 

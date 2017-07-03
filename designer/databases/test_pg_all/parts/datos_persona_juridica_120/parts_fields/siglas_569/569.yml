@@ -1,0 +1,30 @@
+--- 
+id: 569
+part_id: 120
+field_id: 10
+name: Siglas
+created_at: 2011-11-22 19:58:55 Z
+updated_at: 2017-06-04 00:28:47.014113 Z
+label: Siglas
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ce768a57-eb44-4069-afeb-3f2dcdb238d0
+version: 20170603-202847

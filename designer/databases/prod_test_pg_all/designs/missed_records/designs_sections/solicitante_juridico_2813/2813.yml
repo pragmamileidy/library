@@ -1,0 +1,16 @@
+--- 
+id: 2813
+design_id: 212
+section_id: 108
+name: Solicitante Juridico
+created_at: 2013-05-13 16:41:36 Z
+updated_at: 2013-05-13 16:41:36 Z
+label: Datos del Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"595\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"},\"1282\":{\"required\":\"required\"},\"571\":{\"required\":\"required\"},\"1544\":{\"required\":\"required\"}},\"597\":{\"573\":{\"required\":\"required\"},\"930\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"},\"1127\":{\"required\":\"required\"}},\"596\":{\"95\":{\"required\":\"required\"},\"96\":{\"required\":\"required\"},\"97\":{\"required\":\"required\"},\"99\":{\"required\":\"required\"},\"100\":{\"required\":\"required\"}},\"735\":{\"1746\":{\"required\":\"required\"},\"1264\":{\"required\":\"required\"},\"1268\":{\"required\":\"required\"},\"1272\":{\"required\":\"required\"},\"1546\":{\"required\":\"required\"},\"1283\":{\"required\":\"unrequired\"}}}"
+hint: Datos de la empresa solicitante
+help: ""
+order_input: 3

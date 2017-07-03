@@ -1,0 +1,30 @@
+--- 
+id: 3047
+part_id: 576
+field_id: 10
+name: Nuevo Titular
+created_at: 2013-03-13 22:57:59 Z
+updated_at: 2017-06-04 00:27:32.964345 Z
+label: Nuevo Titular
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bbedfb03-ac8a-47dc-94d7-0f062383f25f
+version: 20170603-202732

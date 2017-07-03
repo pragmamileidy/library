@@ -1,0 +1,22 @@
+--- 
+id: 4449
+design_id: 251
+section_id: 557
+name: Tabla Solicitantes
+created_at: 2014-07-01 19:13:40 Z
+updated_at: 2014-07-01 19:13:40 Z
+label: Tabla de Solicitantes no registrados
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  #TABLA
+  url = form_data.get("tabla_solicitantes.url.url")
+  result = WebserviceConsumer.get(url).parsed_response
+  result = result["response"]
+  
+  !result.blank?
+manage_as_confidential: false
+include: "{\"3232\":{\"3644\":{\"required\":\"required\"},\"3648\":{\"required\":\"required\"},\"3649\":{\"required\":\"required\"},\"3650\":{\"required\":\"required\"}},\"3233\":{\"3586\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 12

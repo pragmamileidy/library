@@ -1,0 +1,17 @@
+--- 
+id: 57
+name: Datos del Sistema Propulsor
+description: "Parte que contiene la informaci\xC3\xB3n del sistema propulsor de una aeronave"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-09 16:26:24 Z
+updated_at: 2011-11-09 16:26:24 Z
+label: Datos del Sistema Propulsor
+hint: ""
+view_class: 
+serial: 

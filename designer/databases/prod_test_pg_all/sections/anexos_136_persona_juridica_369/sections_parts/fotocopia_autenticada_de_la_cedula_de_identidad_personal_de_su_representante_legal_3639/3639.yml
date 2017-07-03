@@ -1,0 +1,19 @@
+--- 
+id: 3639
+section_id: 369
+part_id: 38
+name: "Fotocopia autenticada de la c\xC3\xA9dula de identidad personal de su representante legal"
+created_at: 2017-02-15 17:23:36.671748 Z
+updated_at: 2017-03-20 20:06:25.324070 Z
+label: "Fotocopia autenticada de la c\xC3\xA9dula de identidad personal de su representante legal por la Direcci\xC3\xB3n General del Registro Civil."
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: En el caso de extranjeros los Pasaporte deben ser autenticados o apostillados ante la respectiva embajada o consulado.
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

@@ -1,0 +1,375 @@
+--- 
+id: 1192
+name: Paso 2 - Datos del Autor o Titular
+label: Datos del Autor o Titular
+description: "<br>Datos del Autor o Titular</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 589
+created_at: 2013-03-15 15:05:09 Z
+updated_at: 2015-10-03 02:00:56 Z
+include: "{\"2534\":{\"3159\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2718\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3839\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2947\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2727\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3839\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2947\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3156\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3160\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2728\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3839\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2947\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3161\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2733\":{\"2975\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3839\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2947\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4304\":{\"3141\":{\"3601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3603\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save
+on_becoming: "#### BLANQUEAR CAMPO DE TIPO DE DOCUMENTO ####\r\n\
+  \r\n\
+  (1..5).each do |_num|\r\n\
+  _tipo = form_data.get(\"tipo_de_documento_autor_guion_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \t\tform_data.set(\"datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.tipo_de_documento\", \"\")\r\n\
+  \tend                      \r\n\
+  end\r\n\
+  \r\n\
+  (1..5).each do |_num|\r\n\
+  _tipo = form_data.get(\"tipo_de_documento_autor_musica_sonidos_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \t\tform_data.set(\"datos_del_autor_es_persona_natural.autor_musica_sonidos_instance_#{_num}.tipo_de_documento\", \"\")\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  (1..5).each do |_num|\r\n\
+  _tipo = form_data.get(\"tipo_de_documento_autor_animacion_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \t\tform_data.set(\"datos_del_autor_es_persona_natural.autor_animacion_instance_#{_num}.tipo_de_documento\", \"\")\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  (1..5).each do |_num|\r\n\
+  _tipo = form_data.get(\"tipo_de_documento_autor_diseno_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \t\tform_data.set(\"datos_del_autor_es_persona_natural.autor_diseno_instance_#{_num}.tipo_de_documento\", \"\")\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  ### Obtenci\xC3\xB3n numero de documento del productor e integraci\xC3\xB3n en secci\xC3\xB3n Datos del productor (campo oculto) ###\r\n\
+  (1..5).each do |_num|\r\n\
+  \r\n        numDocumento = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n        form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_del_productor_natural.cedula_pasaporte\", numDocumento)\r\n\
+  \r\n\
+  \r\n        numDocumentoProd = form_data.get(\"datos_del_productor_persona_natural_instance_#{_num}.datos_del_productor_natural.cedula_pasaporte\")\r\n        form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_del_productor_natural.otro\",numDocumentoProd)\r\n\
+  end"
+on_transition: "### Obtenci\xC3\xB3n numero de documento del autor de guion y seteo en campo oculto paso 2 ###\r\n\
+  (1..5).each do |_num|\r\n        numDocumentoDir = form_data.get(\"datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.identificacion\")\r\n        form_data.set(\"datos_del_autor_es_persona_natural.autor_guion_instance_#{_num}.texto\",numDocumentoDir)\r\n\
+  end\r\n\
+  \r\n\
+  ### Obtenci\xC3\xB3n numero de documento del autor de musica y seteo en campo oculto paso 2 ###\r\n\
+  (1..5).each do |_num|\r\n        numDocNusica = form_data.get(\"datos_del_autor_es_persona_natural.autor_musica_sonidos_instance_#{_num}.identificacion\")\r\n        form_data.set(\"datos_del_autor_es_persona_natural.autor_musica_sonidos_instance_#{_num}.texto\",numDocNusica)\r\n\
+  end\r\n\
+  \r\n\
+  ### Obtenci\xC3\xB3n numero de documento del autor de animacion y seteo en campo oculto paso 2 ###\r\n\
+  (1..5).each do |_num|\r\n        numDocAn = form_data.get(\"datos_del_autor_es_persona_natural.autor_animacion_instance_#{_num}.identificacion\")\r\n        form_data.set(\"datos_del_autor_es_persona_natural.autor_animacion_instance_#{_num}.texto\",numDocAn)\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  ### Obtenci\xC3\xB3n numero de documento del autor de dise\xC3\xB1o y seteo en campo oculto paso 2 ###\r\n\
+  (1..5).each do |_num|\r\n        numDocDis = form_data.get(\"datos_del_autor_es_persona_natural.autor_diseno_instance_#{_num}.identificacion\")\r\n        form_data.set(\"datos_del_autor_es_persona_natural.autor_diseno_instance_#{_num}.texto\",numDocDis)\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #### INTEGRACION PARA LOS DATOS DEL PRODUCTOR NATURAL Y JURIDICO - DV####\r\n\
+  _bp = []\r\n\
+  _mp = []\r\n\
+  _dp = []\r\n\
+  ##### TIPO DE DOCUMENTO CEDULA DEL PRODUCTOR #####\r\n\
+  (1..5).each do |_num|\r\n    _tipo = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n    nro_documento = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.no_documento\")\r\n    if _tipo == \"C\xC3\xA9dula\"\r\n        \r\n        if !nro_documento.blank?\r\n            result = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n            datos = result[\"response\"]\r\n            if datos.blank? \r\n                _mp << nro_documento\r\n            else\r\n                _bp << nro_documento\r\n                \r\n                form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.tipo_documento_string\",_tipo)\r\n                form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\",nro_documento)\r\n                # form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.primer_nombre\",datos[\"primerNombre\"])\r\n                # form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.primer_apellido\",datos[\"primerApellido\"])\r\n                # form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.segundo_nombre\",datos[\"segundoNombre\"])\r\n                # form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.segundo_apellido\",datos[\"segundoApellido\"])\r\n                name1 = datos[\"primerNombre\"]\r\n                name2 = datos[\"segundoNombre\"]\r\n                name3 = datos[\"primerApellido\"]\r\n                name4 = datos[\"segundoApellido\"]\r\n\
+  \r\n                completo = name1.to_s + \" \" + name2.to_s + \" \" + name3.to_s + \" \" + name4.to_s\r\n                form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.nombre_completo\",completo)\r\n                form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_ubicacion.direccion\",completo)\r\n                #Validaci\xC3\xB3n: c\xC3\xA9dula de director no sea de un difunto\r\n                difunto = datos[\"mensaje\"]\r\n                if (difunto != \"ND\")\r\n                        transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{nro_documento} del Productor #{_num}, corresponde a un ciudadano Difunto. \"\r\n                end\r\n                datos = nil\r\n            end\r\n        end\r\n        \r\n    end\r\n    \r\n    ##### TIPO DE DOCUMENTO PASAPORTE DEL PRODUCTOR #####\r\n    if _tipo == \"Pasaporte\"\r\n        form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\",nro_documento)\r\n        form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.tipo_documento_string\",_tipo)\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  if !_mp.blank?\r\n    transition_errors << \"Las cedulas #{_mp.join(\",\")} de los productores no se encuentran en el sistema\"\r\n\
+  end\r\n\
+  \r\n\
+  if !_bp.blank?\r\n    _dp = _bp.detect{|e| _bp.count(e) > 1}\r\n    if !_dp.blank?\r\n        transition_errors << \"Una de las cedulas en los productores se introdujo m\xC3\xA1s de una vez\"\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  ##### TIPO DE DOCUMENTO RUC DEL PRODUCTOR #####\r\n\
+  _buenas_pj = []\r\n\
+  _malas_pj = []\r\n\
+  _dupli_pj = []\r\n\
+  (1..5).each do |_num|\r\n    _tipo = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n    if _tipo == \"RUC\"\r\n        tipoSoc=form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_sociedad\")\r\n        nro_documento = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.no_documento\")\r\n        if !nro_documento.blank?\r\n            result = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_ruc/find.json?ruc=' + \"#{nro_documento}\" + '&tipo_sociedad=' + \"#{tipoSoc}\")).parsed_response\r\n            datos = result[\"response\"] \r\n            if datos.blank? \r\n                _malas_pj << nro_documento\r\n            else\r\n                _buenas_pj << nro_documento\r\n                form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.ruc\",nro_documento)\r\n                form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.tipo_sociedad\",tipoSoc)\r\n                form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.nombre\",datos[\"nombre_empresa\"])\r\n                form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_de_ubicacion.direccion\",datos[\"direccion\"])\r\n            end\r\n        end\r\n    end\r\n\
+  end\r\n    \r\n\
+  if !_malas_pj.blank?\r\n    transition_errors << \"El ruc introducido no esta registrado en el sistema o tiene tipo de sociedad incorrecta, por favor verifique: #{_malas_pj.join(\",\")}\"\r\n\
+  end\r\n\
+  \r\n\
+  if !_buenas_pj.blank?\r\n    _dupli_pj = _buenas_pj.detect{ |e| _buenas_pj.count(e) > 1}\r\n    if !_dupli_pj.blank?\r\n        transition_errors << \"Uno de los numero(s) de documento(s) de los Productores se ingresaron mas de una vez: #{_dupli_pj}\"\r\n    end\r\n\
+  end\r\n"
+views: 
+back_step: Paso 1 - Solicitud de datos del Autor o Titular
+next_step: Paso 3 - Datos del Prodcutor
+position: 2
+ajax_calls: "//::: ELIMINAR BOTONES AGREGAR/ELIMINAR INSTANCIAS Y OCULTAR PARTES ::://\r\n\
+  $(document).ready(function (){\r\n                    \r\n    $.each( $('[id*=datos_del_autor_es_persona_natural.autor_guion_]'), function director(index, campo) {\r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n                                     \r\n        //Obtengo el inicio estandar de las rutas y las colas de dichas rutas\r\n        var incioRuta = \"#field_datos_del_autor_es_persona_natural.autor_guion\";             \r\n        var tipoDoc = \"_tipo_de_documento\";\r\n        var numDoc = \"_identificacion\";\r\n        var campoOculto = \"_texto\";\r\n        var pnombre = \"_nombre_completo\";\r\n        var direccionNatural = \"_direccion\";\r\n\
+  \r\n        //Colas de las rutas de los campos de jur\xC3\xADdico\r\n        /*var Nombre = \"_director_juridico_nombre\";\r\n        var direccionJuridico = \"_director_juridico_direccion\";\r\n        var TipoSoc = \"_director_juridico_tipo_sociedad\";*/       \r\n        var NroRuc = \"_ruc\";\r\n\
+  \r\n        //Concateno el inicio estandar de las rutas con el numero de instancia y las colas de dichas rutas\r\n        var coincide = incioRuta.concat(pos);\r\n        var tipoDocu = coincide.concat(tipoDoc);\r\n        var ced = coincide.concat(numDoc);\r\n        var coOCulto = coincide.concat(campoOculto);\r\n        var nombre1 = coincide.concat(pnombre);\r\n        var dirNatural = coincide.concat(direccionNatural);\r\n\
+  \r\n        // Rutas de los campos por instancias (Jur\xC3\xADdico)\r\n        var ruc =  coincide.concat(NroRuc);\r\n        /*var dirJuridico = coincide.concat(direccionJuridico);\r\n        var Tiposoci = coincide.concat(TipoSoc);\r\n        var nombreruc = coincide.concat(Nombre);*/\r\n\
+  \r\n        // Validaci\xC3\xB3n para ocultar la parte de datos juridico o natural, dependiendo del tipo de documento\r\n        if($(tipoDocu).html() == 'C\xC3\xA9dula' || $(tipoDocu).html() == 'Pasaporte'){ \r\n            $(ruc).parents(\".part-box\").hide();\r\n            $(ced).parents(\".part-box\").show();\r\n            $(coOCulto).parents(\".field-box\").hide();\r\n        }else{\r\n            $(ced).parents(\".part-box\").hide();\r\n            $(ruc).parents(\".part-box\").show(); \r\n       }\r\n\
+  \r\n        // Validaci\xC3\xB3n para deshabiliatr campos en caso de que se traigan los datos desde la BDIN.\r\n        if($(tipoDocu).html() == 'Pasaporte'){\r\n            $(nombre1).removeAttr(\"disabled\");\r\n        }\r\n\
+  \r\n        // Validaci\xC3\xB3n para limpiar campos en caso de que el n\xC3\xBAmero de pasaporte sea modificado\r\n        if( ($(tipoDocu).html() == 'Pasaporte') && ( $(ced).html() != $(coOCulto).val() ) ){ \r\n\
+  \r\n            $(nombre1).val(''); \r\n            $(dirNatural).val('');   \r\n          }\r\n\
+  \r\n        if( ($(tipoDocu).html() == 'C\xC3\xA9dula') && ( $(ced).html() != $(coOCulto).val() ) ){ \r\n\
+  \r\n            $(dirNatural).val('');   \r\n          }\r\n\
+  \r\n\
+  \r\n        if($(tipoDocu).html() == \"\"){\r\n            $(ced).parents(\".section-box\").hide();\r\n        }else{\r\n            $(ced).parents(\".section-box\").show();\r\n        }\r\n\
+  \r\n        $(tipoDocu).parents(\".section-box\").next().hide();\r\n        \r\n\
+  \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //::: ELIMINAR BOTONES AGREGAR/ELIMINAR INSTANCIAS ::://\r\n\
+  $(document).ready(function g(){\r\n    // PERSONA//    \r\n    $.each( $('[id*=datos_del_autor_es_persona_natural_autor_musica_sonidos_]'), function guion(index, campo) {\r\n        var posg = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (posg == null){\r\n            posg = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n\
+  \r\n        //Obtengo el inicio estandar de las rutas y las colas de dichas rutas\r\n        var incioRutag = \"#field_datos_del_autor_es_persona_natural_autor_musica_sonidos\";\r\n        var nroDocg = \"_identificacion\";\r\n        var tipoDocg = \"_tipo_de_documento\";\r\n        var campoOcultog = \"_texto\";\r\n        var pnombreg = \"_nombre_completo\";\r\n        var direccionNaturalg = \"_direccion\";\r\n\
+  \r\n        //Colas de las rutas de los campos de jur\xC3\xADdico\r\n        var nroRucg = \"_ruc\";\r\n\
+  \r\n        //Concateno el inicio estandar de las rutas con el numero de instancia y las colas de dichas rutas\r\n        var coincideg = incioRutag.concat(posg);\r\n        var tipoDocug = coincideg.concat(tipoDocg);\r\n        var cedg = coincideg.concat(nroDocg);\r\n        var cocultog = coincideg.concat(campoOcultog);\r\n        var nombre1g = coincideg.concat(pnombreg); \r\n        var dirNaturalg = coincideg.concat(direccionNaturalg);\r\n\
+  \r\n        // Rutas de los campos por instancias (Jur\xC3\xADdico)\r\n        var rucg =  coincideg.concat(nroRucg);   \r\n\
+  \r\n        // Validaci\xC3\xB3n para ocultar la parte de datos juridico o natural, dependiendo del tipo de documento\r\n        if($(tipoDocug).html() == 'C\xC3\xA9dula' || $(tipoDocug).html() == 'Pasaporte'){ \r\n            $(rucg).parents(\".part-box\").hide();\r\n            $(cedg).parents(\".part-box\").show();\r\n            $(cocultog).parents(\".field-box\").hide();\r\n        }else{\r\n            $(cedg).parents(\".part-box\").hide();\r\n            $(rucg).parents(\".part-box\").show();\r\n        }\r\n        \r\n        // Validaci\xC3\xB3n para deshabiliatr campos en caso de que se traigan los datos desde la BDIN.\r\n        if($(tipoDocug).html() == 'Pasaporte'){\r\n            $(nombre1g).removeAttr(\"disabled\");\r\n        }\r\n        \r\n\
+  \r\n        // Validaci\xC3\xB3n para limpiar campos en caso de que el n\xC3\xBAmero de pasaporte sea modificado\r\n        if( ($(tipoDocug).html() == 'Pasaporte') && ( $(cedg).html() != $(cocultog).val() ) ){ \r\n\
+  \r\n            $(nombre1g).val('');\r\n            $(dirNaturalg).val('');   \r\n          }\r\n\
+  \r\n        if( ($(tipoDocug).html() == 'C\xC3\xA9dula') && ( $(cedg).html() != $(cocultog).val() ) ){ \r\n \r\n            $(dirNaturalg).val('');   \r\n          }\r\n\
+  \r\n        if($(tipoDocug).html() == \"\"){\r\n            $(cedg).parents(\".section-box\").hide();\r\n        }else{\r\n            $(cedg).parents(\".section-box\").show();\r\n        }\r\n\
+  \r\n        $(tipoDocug).parents(\".section-box\").next().hide();\r\n        \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //::: ELIMINAR BOTONES AGREGAR/ELIMINAR INSTANCIAS ::://\r\n\
+  $(document).ready(function m(){\r\n    // PERSONA//\r\n    $.each( $('[id*=datos_del_autor_es_persona_natural_autor_animacion_]'), function musica(index, campo) {\r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n\
+  \r\n        //Obtengo el inicio estandar de las rutas y las colas de dichas rutas\r\n        var incioRuta = \"#field_datos_del_autor_es_persona_natural_autor_animacion\";\r\n        var NroDoc = \"_identificacion\";\r\n        var TipoDoc = \"_tipo_de_documento\";\r\n        var campoOculto = \"_texto\";\r\n        var pnombre = \"_nombre_completo\";\r\n        var dire2 = \"_direccion\";\r\n\
+  \r\n        //Colas de las rutas de los campos de jur\xC3\xADdico\r\n        var NroRuc = \"_ruc\";     \r\n\
+  \r\n        //Concateno el inicio estandar de las rutas con el numero de instancia y las colas de dichas rutas\r\n        var coincide = incioRuta.concat(pos);\r\n        var TipoDocu = coincide.concat(TipoDoc);\r\n        var ced = coincide.concat(NroDoc);\r\n        var coculto = coincide.concat(campoOculto);\r\n        var nombre1 = coincide.concat(pnombre); \r\n        var direccion2 = coincide.concat(dire2);\r\n\
+  \r\n        // Rutas de los campos por instancias (Jur\xC3\xADdico)\r\n        var ruc =  coincide.concat(NroRuc);\r\n\
+  \r\n        // Validaci\xC3\xB3n para ocultar la parte de datos juridico o natural, dependiendo del tipo de documento\r\n        if($(TipoDocu).html() == 'C\xC3\xA9dula' || $(TipoDocu).html() == 'Pasaporte'){ \r\n            $(ruc).parents(\".part-box\").hide();\r\n            $(ced).parents(\".part-box\").show();\r\n            $(coculto).parents(\".field-box\").hide();\r\n        }else{\r\n            $(ced).parents(\".part-box\").hide();\r\n            $(ruc).parents(\".part-box\").show();\r\n        }\r\n        \r\n        // Validaci\xC3\xB3n para deshabiliatr campos en caso de que se traigan los datos desde la BDIN.\r\n        if($(TipoDocu).html() == 'Pasaporte'){\r\n            $(nombre1).removeAttr(\"disabled\");\r\n        }\r\n        \r\n\
+  \r\n        // Validaci\xC3\xB3n para limpiar campos en caso de que el n\xC3\xBAmero de pasaporte sea modificado\r\n        if( ($(TipoDocu).html() == 'Pasaporte') && ( $(ced).html() != $(coculto).val() ) ){ \r\n\
+  \r\n            $(nombre1).val('');\r\n            $(direccion2).val('');   \r\n          }\r\n\
+  \r\n\
+  \r\n        if( ($(TipoDocu).html() == 'C\xC3\xA9dula') && ( $(ced).html() != $(coculto).val() ) ){ \r\n\
+  \r\n            $(direccion2).val('');   \r\n          }\r\n\
+  \r\n\
+  \r\n        if($(TipoDocu).html() == \"\"){\r\n            $(ced).parents(\".section-box\").hide();\r\n        }else{\r\n            $(ced).parents(\".section-box\").show();\r\n        }\r\n\
+  \r\n        $(TipoDocu).parents(\".section-box\").next().hide();\r\n        \r\n\
+  \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  //::: ELIMINAR BOTONES AGREGAR/ELIMINAR INSTANCIAS ::://\r\n\
+  $(document).ready(function ad(){\r\n    // PERSONA//\r\n    $.each( $('[id*=datos_del_autor_es_persona_natural_autor_diseno_]'), function dibujo(index, campo) {\r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }\r\n        //Obtengo el inicio estandar de las rutas y las colas de dichas rutas\r\n        var incioRuta = \"#field_datos_del_autor_es_persona_natural_autor_diseno\";\r\n        var NroDoc = \"_autor_dibujo_identificacion\";\r\n        var TipoDoc = \"_tipo_de_documento_autor_dibujo_tipo_de_identificacion\";\r\n        var campoOculto = \"_autor_dibujo_texto\";\r\n        var pnombre = \"_autor_dibujo_primer_nombre\";\r\n        var dire2 = \"_autor_dibujo_direccion\";\r\n\
+  \r\n        //Colas de las rutas de los campos de jur\xC3\xADdico\r\n        var NroRuc = \"_autor_dibujo_juridico_ruc\";\r\n\
+  \r\n        //Concateno el inicio estandar de las rutas con el numero de instancia y las colas de dichas rutas\r\n        var coincide = incioRuta.concat(pos);\r\n        var TipoDocu = coincide.concat(TipoDoc);\r\n        var ced = coincide.concat(NroDoc);\r\n        var coculto = coincide.concat(campoOculto);\r\n        var nombre1 = coincide.concat(pnombre);\r\n        var direccion2 = coincide.concat(dire2);\r\n\
+  \r\n        // Rutas de los campos por instancias (Jur\xC3\xADdico)\r\n        var ruc =  coincide.concat(NroRuc);\r\n\
+  \r\n        // Validaci\xC3\xB3n para ocultar la parte de datos juridico o natural, dependiendo del tipo de documento\r\n        if($(TipoDocu).html() == 'C\xC3\xA9dula' || $(TipoDocu).html() == 'Pasaporte'){ \r\n            $(ruc).parents(\".part-box\").hide();\r\n            $(ced).parents(\".part-box\").show();\r\n            $(coculto).parents(\".field-box\").hide();\r\n        }else{\r\n            $(ced).parents(\".part-box\").hide();\r\n            $(ruc).parents(\".part-box\").show();\r\n        }\r\n\
+  \r\n        // Validaci\xC3\xB3n para deshabiliatr campos en caso de que se traigan los datos desde la BDIN.\r\n        if($(TipoDocu).html() == 'Pasaporte'){\r\n            $(nombre1).removeAttr(\"disabled\");\r\n        }\r\n        \r\n\
+  \r\n        // Validaci\xC3\xB3n para limpiar campos en caso de que el n\xC3\xBAmero de pasaporte sea modificado\r\n        if( ($(TipoDocu).html() == 'Pasaporte') && ( $(ced).html() != $(coculto).val() ) ){ \r\n\
+  \r\n            $(nombre1).val('');\r\n            $(direccion2).val('');   \r\n          }\r\n\
+  \r\n\
+  \r\n        if( ($(TipoDocu).html() == 'C\xC3\xA9dula') && ( $(ced).html() != $(coculto).val() ) ){ \r\n\
+  \r\n            $(direccion2).val('');   \r\n          }\r\n\
+  \r\n          \r\n        if($(TipoDocu).html() == \"\"){\r\n            $(ced).parents(\".section-box\").hide();\r\n        }else{\r\n            $(ced).parents(\".section-box\").show();\r\n        }\r\n\
+  \r\n        $(TipoDocu).parents(\".section-box\").next().hide();\r\n        \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  // OCULTAR CAMPO TIPO DE SOCIEDAD CUANDO CAMPO TIPO DE DOCUMENTO ES DISTINTO DE RUC //\r\n\
+  $.each( $('[id*=field_tipo_de_documento_productor_]'), function(index, campo) {\r\n        ocultarcampos(this.value,this.id);\r\n        if ($(campo).attr('id').match(/tipo_documento_mici_tipo_de_documento/)) {\r\n                $(campo).attr('onchange', 'ocultarcampos(this.value,this.id);')\r\n        }\r\n\
+  });  \r\n\
+  function ocultarcampos(valorcampo, idcampo) \r\n        {\r\n        var coincide = idcampo.match(/[\\d]_tipo_documento_mici_tipo_de_documento/);\r\n        var pos = \"\";\r\n        if (coincide != undefined) {\r\n                pos = coincide[0].split('_');\r\n                var inicioRuta   = \"#field_tipo_de_documento_productor_instance_\";\r\n                var campoTipoDoc = \"_tipo_documento_mici_tipo_de_documento\";\r\n                var campoTipoSoc = \"_tipo_documento_mici_tipo_sociedad\";\r\n                var campoNroDoc  = \"_tipo_documento_mici_no_documento\";\r\n\
+  \r\n                var coincide2  = inicioRuta.concat(pos)\r\n                var DocNum = coincide2.concat(campoNroDoc);\r\n\
+  \r\n                var Sociedad = inicioRuta + pos[0] + campoTipoSoc;\r\n                if (valorcampo == \"\") {\r\n                        $(Sociedad).parent().parent().hide();\r\n                        $(Sociedad).val(\"\");\r\n                } else if (valorcampo == \"C\xC3\xA9dula\" || valorcampo == \"Pasaporte\") {\r\n                       \r\n                        $(Sociedad).parent().parent().hide();\r\n                } else {\r\n                       \r\n                        $(Sociedad).parent().parent().show();\r\n                }\r\n        }\r\n\
+  }\r\n\
+  $(document).ready(function(){\r\n        $.each( $('[id*=_tipo_de_documento_productor_]'), function(index, campo) {    \r\n                var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n                if (pos == null){\r\n                  pos = (this.id).match(/_instance_[\\d]/);\r\n                }\r\n                var inicRuta = \"#field_tipo_de_documento_productor\";\r\n                var tDoc = \"_tipo_documento_mici_tipo_de_documento\";\r\n                var NumDoc = \"_tipo_documento_mici_no_documento\";\r\n                var coincide = inicRuta.concat(pos);\r\n                var TiDoc = coincide.concat(tDoc);\r\n                var NroDocu = coincide.concat(NumDoc);\r\n                $(TiDoc).change(function(){\r\n                        TiDoc = $(this).val();\r\n                        if(TiDoc == \"C\xC3\xA9dula\"){\r\n                                $(NroDocu).val(\"\");\r\n                        }\r\n                        if(TiDoc == \"Pasaporte\"){\r\n                                $(NroDocu).val(\"\");\r\n                        }\r\n                        if(TiDoc == \"RUC\"){\r\n                                $(NroDocu).val(\"\");\r\n                        }\r\n                });     \r\n        });\r\n\
+  });"

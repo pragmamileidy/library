@@ -1,0 +1,36 @@
+--- 
+id: 1028
+name: Paso 5 - Notificaciones
+label: Notificaciones
+description: ""
+fill_step_id: 532
+created_at: 2013-01-22 21:44:35 Z
+updated_at: 2013-02-28 14:06:52 Z
+include: "{\"2308\":{\"2419\":{\"2614\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2615\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2616\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2617\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2420\":{\"2618\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2619\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2620\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2621\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #Llenado de campos en la parte DESCRIPCION_ESTRUCT
+  
+   form_data.set("descripcion_estruct.descripcion_estructura.nombre_estructura", "messages")
+  
+  #Llenado de campos en la parte NOTIFICACION_INICIOTRAMITE
+  
+  form_data.set("notifications.notificacion_iniciotramite.iniciofaseinicializar", "INICIO FASE INICIALIZAR ")
+  form_data.set("notifications.notificacion_iniciotramite.finfaseinicializar", "FIN FASE INICIALIZAR ")
+  form_data.set("notifications.notificacion_iniciotramite.iniciopasoinicializar", "INICIO PASO INICIALIZAR")
+  form_data.set("notifications.notificacion_iniciotramite.finpasoinicializar", "FIN PASO INICIALIZAR")
+  
+  #Llenado de campos en la parte NOTIFICACION_CARGATRAMITE
+  
+  form_data.set("notifications.notificacion_cargatramite.iniciofasecarga", "INICIO FASE CARGA")
+  form_data.set("notifications.notificacion_cargatramite.finfasecarga", "FIN FASE CARGA")
+  form_data.set("notifications.notificacion_cargatramite.iniciopasocarga", "INICIO PASO CARGA")
+  form_data.set("notifications.notificacion_cargatramite.finpasocarga", "FIN PASO CARGA")
+on_transition: ""
+views: 
+back_step: Paso 4 - Notificaciones de Eventos
+next_step: Paso 6 - Notificaciones
+position: 5
+ajax_calls: ""

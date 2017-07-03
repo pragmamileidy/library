@@ -1,0 +1,30 @@
+--- 
+id: 3603
+part_id: 712
+field_id: 292
+name: tipo_sociedad
+created_at: 2014-04-24 14:49:51 Z
+updated_at: 2017-06-04 00:26:35.375644 Z
+label: Tipo de Sociedad
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f5c4e4c2-012a-400d-a5e9-dbe62e122ab6
+version: 20170603-202635

@@ -1,0 +1,30 @@
+--- 
+id: 560
+part_id: 119
+field_id: 10
+name: Tipo de Licencia
+created_at: 2011-11-22 19:31:35 Z
+updated_at: 2017-06-04 00:30:29.067257 Z
+label: Tipo de Licencia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "De Representante T\xC3\xA9cnico"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b83b5f1d-9a6d-48b4-b383-1e396e068d1a
+version: 20170603-203029

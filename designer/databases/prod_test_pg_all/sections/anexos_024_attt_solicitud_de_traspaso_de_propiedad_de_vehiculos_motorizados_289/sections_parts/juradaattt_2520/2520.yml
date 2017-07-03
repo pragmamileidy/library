@@ -1,0 +1,20 @@
+--- 
+id: 2520
+section_id: 289
+part_id: 38
+name: juradaATTT
+created_at: 2013-01-21 21:30:24 Z
+updated_at: 2013-01-21 21:30:24 Z
+label: "Copia  de la declaraci\xC3\xB3n jurada emitida por un notario "
+min_instances: 1
+max_instances: 1
+depends_on: "traspaso = form_data.get(\"tipo_de_traspaso.tipo_de_traspaso.tipo_de_traspaso\")\r\n\
+  traspaso == \"No efectuado durante el t\xC3\xA9rmino correspondiente\" "
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

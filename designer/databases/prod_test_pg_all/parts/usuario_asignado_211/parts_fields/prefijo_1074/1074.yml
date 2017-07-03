@@ -1,0 +1,30 @@
+--- 
+id: 1074
+part_id: 211
+field_id: 10
+name: Prefijo
+created_at: 2012-04-26 19:19:13 Z
+updated_at: 2017-06-04 00:27:01.861451 Z
+label: Prefijo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 738da272-8976-44ae-b807-66406901a31d
+version: 20170603-202701

@@ -1,0 +1,19 @@
+--- 
+id: 230
+section_id: 5
+part_id: 51
+name: "Per\xC3\xADodo de Validez"
+created_at: 2011-11-10 16:43:22 Z
+updated_at: 2012-05-10 00:38:10 Z
+label: Indique el periodo de validez
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"239\":{}}"
+hint: ""
+help: Detalle el periodo de validez o vencimiento del producto
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 31

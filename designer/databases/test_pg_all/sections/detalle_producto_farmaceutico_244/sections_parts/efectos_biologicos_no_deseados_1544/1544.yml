@@ -1,0 +1,19 @@
+--- 
+id: 1544
+section_id: 244
+part_id: 63
+name: "Efectos Biol\xC3\xB3gicos no deseados"
+created_at: 2012-05-20 15:39:16 Z
+updated_at: 2012-06-14 15:41:13 Z
+label: "Efectos Biol\xC3\xB3gicos no deseados"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"331\":{}}"
+hint: "Carcin\xC3\xB3genos, Terat\xC3\xB3genos, Mut\xC3\xB3genos, Resistencia, Neurotoxicidad, Hipersensibilidad, etc"
+help: "Indique si puede presentar efectos biol\xC3\xB3gicos como Carcin\xC3\xB3genos, Terat\xC3\xB3genos, Mut\xC3\xB3genos, Resistencia, Neurotoxicidad, Hipersensibilidad, etc"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 19

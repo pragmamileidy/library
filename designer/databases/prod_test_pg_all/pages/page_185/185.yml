@@ -1,0 +1,166 @@
+--- 
+id: 185
+position: 2
+selector: "{\"999\":{\"656\":{\"758\":{},\"759\":{}}},\"1011\":{\"500\":{\"558\":{}},\"501\":{\"574\":{},\"632\":{},\"633\":{}},\"1435\":{\"2146\":{},\"3429\":{}},\"1436\":{\"508\":{},\"509\":{}},\"1437\":{\"508\":{},\"509\":{}},\"2051\":{\"508\":{},\"509\":{}},\"1438\":{\"2005\":{}},\"2052\":{\"2148\":{},\"2149\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+     .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 51px;
+  	left: 719px;
+  	width: 302px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 77px;
+  	left: 719px;
+  	width: 303px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_registrodeidoneidad_registrodeidoneidad {
+  	position: absolute;
+  	top: 190px;
+  	left: 755px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_datosdeubicacin_provincia {
+  	position: absolute;
+  	top: 145px;
+  	left: 281px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_datosdeubicacin_distrito {
+  	position: absolute;
+  	top: 146px;
+  	left: 757px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_datosdeubicacin_corregimiento {
+  	position: absolute;
+  	top: 191px;
+  	left: 280px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_lunesaviernes_confirma {
+  	position: absolute;
+  	top: 322px;
+  	left: 282px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_lunesaviernes_otro {
+  	position: absolute;
+  	top: 323px;
+  	left: 754px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_sabados_horadeapertura {
+  	position: absolute;
+  	top: 368px;
+  	left: 289px;
+  	width: 86px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_sabados_horadecierre {
+  	position: absolute;
+  	top: 368px;
+  	left: 425px;
+  	width: 89px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_feriados_horadeapertura {
+  	position: absolute;
+  	top: 413px;
+  	left: 288px;
+  	width: 93px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_feriados_horadecierre {
+  	position: absolute;
+  	top: 412px;
+  	left: 425px;
+  	width: 89px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_domingos_horadeapertura {
+  	position: absolute;
+  	top: 368px;
+  	left: 759px;
+  	width: 79px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_domingos_horadecierre {
+  	position: absolute;
+  	top: 367px;
+  	left: 881px;
+  	width: 89px;
+  	height: 18px;
+  	overflow: hidden;
+    }
+    .datosdelregente_rotacindehorario_seleccione {
+  	position: absolute;
+  	top: 412px;
+  	left: 837px;
+  	width: 123px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelregente_trabajaenotraempresa_trabajaenotraempresa {
+  	position: absolute;
+  	top: 455px;
+  	left: 331px;
+  	width: 130px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+     .datosdelregente_trabajaenotraempresa_empresa {
+  	position: absolute;
+  	top: 454px;
+  	left: 755px;
+  	width: 653px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: true
+html_render: ""
+print_design_id: 88
+created_at: 2012-07-26 15:19:05 Z
+updated_at: 2015-11-06 20:59:20 Z
+instances_selector: "{\"999\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1011\":{\"value\":\"\",\"500\":{\"value\":\"\",\"558\":{\"value\":\"\"}},\"501\":{\"value\":\"\",\"574\":{\"value\":\"\"},\"632\":{\"value\":\"\"},\"633\":{\"value\":\"\"}},\"1435\":{\"value\":\"\",\"2146\":{\"value\":\"\"},\"3429\":{\"value\":\"\"}},\"1436\":{\"value\":\"\",\"508\":{\"value\":\"\"},\"509\":{\"value\":\"\"}},\"1437\":{\"value\":\"\",\"508\":{\"value\":\"\"},\"509\":{\"value\":\"\"}},\"2051\":{\"value\":\"\",\"508\":{\"value\":\"\"},\"509\":{\"value\":\"\"}},\"1438\":{\"value\":\"\",\"2005\":{\"value\":\"\"}},\"2052\":{\"value\":\"\",\"2148\":{\"value\":\"\"},\"2149\":{\"value\":\"\"}}}}"
+size: ""

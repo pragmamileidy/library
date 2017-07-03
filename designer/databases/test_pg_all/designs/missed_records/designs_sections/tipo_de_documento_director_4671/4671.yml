@@ -1,0 +1,16 @@
+--- 
+id: 4671
+design_id: 262
+section_id: 546
+name: Tipo de Documento director
+created_at: 2014-12-16 18:28:32 Z
+updated_at: 2015-01-27 14:12:57 Z
+label: Tipo de Documento director
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3141\":{\"3601\":{\"required\":\"required\"},\"3602\":{\"required\":\"required\"},\"3603\":{\"required\":\"unrequired\"},\"3838\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 3

@@ -1,0 +1,17 @@
+--- 
+id: 84
+name: Solicitud de Licencia
+description: "Indica el tipo de solicitud de licencia y el a\xC3\xB1o fiscal de la solicitud"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-14 18:46:12 Z
+updated_at: 2012-05-16 20:55:18 Z
+label: Solicitud de Licencia
+hint: ""
+view_class: 
+serial: 

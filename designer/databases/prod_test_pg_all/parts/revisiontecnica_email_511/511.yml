@@ -1,0 +1,17 @@
+--- 
+id: 511
+name: RevisionTecnica_email
+description: Notificaciones de revisiones tecnicas para los procesos 4 y 5
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 20:37:16 Z
+updated_at: 2013-01-14 20:37:16 Z
+label: "Mensajes de Revisi\xC3\xB3n Tecnica"
+hint: ""
+view_class: horizontal
+serial: 

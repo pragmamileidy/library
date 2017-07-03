@@ -1,0 +1,17 @@
+--- 
+id: 328
+name: Importacion de Animales Vivos
+description: Importacion de Animales Vivos
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-14 20:04:34 Z
+updated_at: 2012-07-14 20:04:34 Z
+status: Draft
+label: Animales Vivos
+hint: "Informaci\xC3\xB3n detallada del animal"
+serial: 

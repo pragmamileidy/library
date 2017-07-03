@@ -1,0 +1,30 @@
+--- 
+id: 1136
+part_id: 222
+field_id: 31
+name: "En el caso que no exista madre o padre del tutor, se debe presentar copia de  la sentencia del Juzgado Seccional de Menores en donde se informe, quien ser\xC3\xA1 el tutor -a-"
+created_at: 2012-05-02 13:26:17 Z
+updated_at: 2017-06-04 00:30:15.696305 Z
+label: "En el caso que no exista madre o padre del tutor, se debe presentar copia de  la sentencia del Juzgado Seccional de Menores en donde se informe, quien ser\xC3\xA1 el tutor -a-"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4561f20b-dcb1-4008-bb01-e52d39a3460e
+version: 20170603-203015

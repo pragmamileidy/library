@@ -1,0 +1,17 @@
+--- 
+id: 717
+name: Tipo de Solicitud DIJ
+description: Tipo de Solicitud DIJ
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-06-04 14:31:01 Z
+updated_at: 2015-07-21 21:28:03 Z
+label: Tipo de Solicitud
+hint: ""
+view_class: horizontal
+serial: 2202-6293-6837-3249-5080

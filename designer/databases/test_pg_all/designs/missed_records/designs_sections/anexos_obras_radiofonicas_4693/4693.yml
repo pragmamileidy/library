@@ -1,0 +1,16 @@
+--- 
+id: 4693
+design_id: 263
+section_id: 459
+name: Anexos - Obras Radiofonicas
+created_at: 2014-12-17 16:16:58 Z
+updated_at: 2015-11-04 20:22:56 Z
+label: Anexos - Registro de Obras Radiofonicas
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3062\":{\"210\":{\"required\":\"required\"}},\"2905\":{\"210\":{\"required\":\"unrequired\"}},\"3063\":{\"210\":{\"required\":\"required\"}},\"2906\":{\"210\":{\"required\":\"unrequired\"}},\"3064\":{\"210\":{\"required\":\"required\"}},\"3065\":{\"210\":{\"required\":\"required\"}},\"3066\":{\"210\":{\"required\":\"required\"}},\"3242\":{\"210\":{\"required\":\"unrequired\"}},\"3243\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 11

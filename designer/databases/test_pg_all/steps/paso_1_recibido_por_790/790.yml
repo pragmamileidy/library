@@ -1,0 +1,315 @@
+--- 
+id: 790
+name: Paso 1- Recibido por
+label: "Recepci\xC3\xB3n de Solicitud"
+description: "<br>Recepci\xC3\xB3n de Solicitud</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 394
+created_at: 2012-08-09 14:55:29 Z
+updated_at: 2015-11-03 13:13:32 Z
+include: "{\"1735\":{\"580\":{\"1323\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1320\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"581\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2644\":{\"3953\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2977\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3950\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3951\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1736\":{\"595\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3342\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"598\":{\"1323\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1374\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3614\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3615\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"597\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1123\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"586\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2092\":{\"2236\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2237\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2238\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2239\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2240\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2241\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2242\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2243\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1738\":{\"2172\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"568\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3342\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"2817\":{\"3283\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3284\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3285\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3286\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3287\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2079\":{\"2249\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2251\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2253\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2252\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2254\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2255\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"2256\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2078\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1740\":{\"2814\":{\"3278\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3459\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3280\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2812\":{\"3460\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3274\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2813\":{\"3275\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3276\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3277\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1746\":{\"2819\":{\"3291\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3292\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3293\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3294\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3295\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2815\":{\"3281\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1748\":{\"3163\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3164\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3165\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3166\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3167\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3168\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3169\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3170\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3171\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3172\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3173\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3174\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1752\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1403\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3297\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3199\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit,print_form
+on_becoming: |-
+  _idagente = @task["agent_id"].to_s
+  
+                  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+                  _hash = result["hash"]
+                  _agente = _hash["response"]
+  
+  
+                  form_data.set("recibido_por.datos_del_funcionario_generico.usuario", _agente["name"])
+                  form_data.set("recibido.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: "##### RECEPCION DE SOLICITUD #####\r\n\
+  _obs = form_data.get(\"recibido_por.datos_del_funcionario_generico.observaciones\")\r\n\
+  if _obs.blank?\r\n\
+  \t_obs = form_data.get(\"recibido.datos_del_funcionario_generico.observaciones\")\r\n\
+  end\r\n\
+  \r\n\
+  _eval = form_data.get(\"recibido_por.datos_del_funcionario_generico.evaluacion\")\r\n\
+  if _eval.blank?\r\n\
+  \t_eval = form_data.get(\"recibido.datos_del_funcionario_generico.evaluacion_ok_rechazo\")\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  if (_eval ==\"REPARO\" and _obs.blank?) \r\n\
+  \ttransition_errors << \"Debe indicar el motivo del reparo en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end\r\n\
+  \r\n\
+  if (_eval ==\"RECHAZO\" and _obs.blank?) \r\n\
+  \ttransition_errors << \"Debe indicar el motivo del rechazo en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: "$(document).ready(function(){\r\n\
+  \t\t\t\t\t\t\t\t\t\t\t\r\n\
+  \tcedula = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_cedula\");\r\n\
+  \tif ($(cedula).html() == \"\"){\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_cedula\").parent().parent().hide();\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_pasaporte\").parent().parent().show();\r\n\
+  \t}\r\n\
+  \tpasaporte = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_pasaporte\");\r\n\
+  \tif ($(pasaporte).html() == \"\") {\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_cedula\").parent().parent().show();\r\n\
+  \t\t$(\"#field_datos_del_solicitante_natural_datos_de_la_persona_pasaporte\").parent().parent().hide();\r\n\
+  \t}\r\n\
+  \r\n\
+  \trepresentante = $(\"#field_datos_del_solicitante_natural_representado_por_cedula_pasaporte\");\r\n\
+  \tif ($(representante).html() == \"\"){\r\n\
+  \t\t$(\"#representado_por\").remove();\r\n\
+  \t}\r\n\
+  \r\n\
+  });\r\n\
+  \r\n\
+  //::::: Ocultar/mostrar secci\xC3\xB3n de enmienda :::://\r\n\
+  $(document).ready(function(){\r\n\
+  \truc = $(\"#field_datos_del_solicitante_juridica_datos_de_la_empresa_ruc\");\r\n\
+  \tcedula = $(\"#field_datos_del_solicitante_natural_datos_de_la_persona_cedula\");\r\n\
+  \tcampo_oculto = $(\"#field_enmienda_pacto_social_datos_persona_juridica_digito_verficador\");\r\n\
+  \r\n\
+  \t$(campo_oculto).parents(\".field-box\").hide();\r\n\
+  \tif($(ruc).html() != undefined){\r\n\
+  \t\t$(campo_oculto).parents(\".section-box\").hide();\r\n\
+  \t}\r\n\
+  \tif($(cedula).html() != undefined){\r\n\
+  \t\t$(campo_oculto).parents(\".section-box\").show();\r\n\
+  \t}\r\n\
+  });\r\n\
+  \r\n\
+  //VALIDACION PARA MOSTRAR INSTANCIAS\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  \t\t\t\t\t\r\n    $.each( $('[id*=socios_accionistas_directores_y_dignatarios_socios_accionistas_]'), function director(index, campo) {       \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }   \r\n        var InicioRuta  = \"#field_socios_accionistas_directores_y_dignatarios_socios_accionistas\";\r\n        var ced    = \"_cedula\";\r\n\
+  \r\n        var coincide    = InicioRuta.concat(pos);\r\n        var cedula    = coincide.concat(ced);\r\n\
+  \r\n        if($(cedula).html() != \"\"){\r\n            $(cedula).parents(\".part-box\").show();\r\n        }else{\r\n\
+  \t\t\t$(cedula).parents(\".part-box\").hide();\r\n        }\r\n\
+  \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //VALIDACION PARA MOSTRAR INSTANCIAS DE ENMIENDA\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  \r\n    $.each( $('[id*=enmienda_pacto_social_enmienda_]'), function director(index, campo) {       \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }   \r\n        var InicioRuta  = \"#field_enmienda_pacto_social_enmienda\";\r\n        var escrit    = \"_escritura\";\r\n\
+  \r\n        var coincide    = InicioRuta.concat(pos);\r\n        var escritura    = coincide.concat(escrit);\r\n\
+  \r\n        if($(escritura).html() != \"\"){\r\n            $(escritura).parents(\".part-box\").show();\r\n        }else{\r\n\
+  \t\t\t$(escritura).parents(\".part-box\").hide();\r\n        }\r\n\
+  \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //VALIDACION PARA MOSTRAR INSTANCIAS DE ASOCIADOS\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  \r\n    $.each( $('[id*=firmas_extranjeras_con_las_que_ha_estado_asociados_firmas_extranjeras_asociadas_]'), function director(index, campo) {       \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }   \r\n        var InicioRuta  = \"#field_firmas_extranjeras_con_las_que_ha_estado_asociados_firmas_extranjeras_asociadas\";\r\n        var nomb    = \"_nombre\";\r\n\
+  \r\n        var coincide    = InicioRuta.concat(pos);\r\n        var nombre    = coincide.concat(nomb);\r\n\
+  \r\n        if($(nombre).html() != \"\"){\r\n            $(nombre).parents(\".part-box\").show();\r\n        }else{\r\n\
+  \t\t\t$(nombre).parents(\".part-box\").hide();\r\n        }\r\n\
+  \r\n    });\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  //VALIDACION PARA MOSTRAR INSTANCIAS DE OFICINAS Y SUCURSALES\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  \t\t\r\n    $.each( $('[id*=firmas_extranjeras_con_las_que_ha_estado_asociados_oficinas_o_sucursales_]'), function director(index, campo) {       \r\n        var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n        if (pos == null){\r\n            pos = (this.id).match(/_instance_[\\d]/);\r\n        }   \r\n        var InicioRuta  = \"#field_firmas_extranjeras_con_las_que_ha_estado_asociados_oficinas_o_sucursales\";\r\n        var ofi    = \"_oficinas_o_sucursales\";\r\n\
+  \r\n        var coincide    = InicioRuta.concat(pos);\r\n        var oficina    = coincide.concat(ofi);\r\n\
+  \r\n        if($(oficina).html() != \"\"){\r\n            $(oficina).parents(\".part-box\").show();\r\n        }else{\r\n\
+  \t\t\t$(oficina).parents(\".part-box\").hide();\r\n        }\r\n\
+  \r\n    });\r\n\
+  });"

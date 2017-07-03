@@ -1,0 +1,19 @@
+--- 
+id: 3493
+section_id: 187
+part_id: 38
+name: "Nota de recinto donde est\xC3\xA1 el veh\xC3\xADculo almacenado"
+created_at: 2015-09-16 20:43:59 Z
+updated_at: 2015-10-15 20:44:50 Z
+label: "Nota de recinto donde est\xC3\xA1 el veh\xC3\xADculo almacenado"
+min_instances: 1
+max_instances: 1
+depends_on: "form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular\")== \"Permiso de salida sin veh\xC3\xADculo - extranjeros\"\r\n"
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

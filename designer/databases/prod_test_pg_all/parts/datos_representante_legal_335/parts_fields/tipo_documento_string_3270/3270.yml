@@ -1,0 +1,30 @@
+--- 
+id: 3270
+part_id: 335
+field_id: 10
+name: Tipo documento string
+created_at: 2013-06-05 18:22:08 Z
+updated_at: 2017-06-04 00:22:51.117597 Z
+label: Tipo de Documento
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8d942815-7b30-47e4-a7a7-b19807aaab7f
+version: 20170603-202251

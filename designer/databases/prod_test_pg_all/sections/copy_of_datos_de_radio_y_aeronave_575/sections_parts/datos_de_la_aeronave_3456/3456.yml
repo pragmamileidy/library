@@ -1,0 +1,19 @@
+--- 
+id: 3456
+section_id: 575
+part_id: 29
+name: Datos de la Aeronave
+created_at: 2015-02-18 03:15:45 Z
+updated_at: 2015-02-18 03:15:45 Z
+label: Datos de la Aeronave
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"165\":{},\"128\":{},\"127\":{},\"126\":{},\"125\":{},\"124\":{},\"123\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 1

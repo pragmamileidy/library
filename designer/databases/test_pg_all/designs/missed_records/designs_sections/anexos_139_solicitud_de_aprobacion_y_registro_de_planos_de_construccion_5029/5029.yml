@@ -1,0 +1,16 @@
+--- 
+id: 5029
+design_id: 277
+section_id: 383
+name: "Anexos 139 - Solicitud de Aprobaci\xC3\xB3n y Registro de Planos de Construcci\xC3\xB3n"
+created_at: 2016-02-10 13:33:53.353806 Z
+updated_at: 2016-02-10 13:33:53.353806 Z
+label: Requisitos de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2212\":{\"210\":{\"required\":\"unrequired\"}},\"2215\":{\"210\":{\"required\":\"unrequired\"}},\"2214\":{\"210\":{\"required\":\"unrequired\"}},\"2213\":{\"210\":{\"required\":\"unrequired\"}},\"2216\":{\"210\":{\"required\":\"unrequired\"}},\"2209\":{\"210\":{\"required\":\"unrequired\"}},\"2217\":{\"210\":{\"required\":\"unrequired\"}},\"2218\":{\"210\":{\"required\":\"unrequired\"}},\"2219\":{\"210\":{\"required\":\"unrequired\"}},\"2220\":{\"210\":{\"required\":\"unrequired\"}},\"2788\":{\"210\":{\"required\":\"unrequired\"}},\"2875\":{\"3400\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

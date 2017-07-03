@@ -1,0 +1,30 @@
+--- 
+id: 2358
+part_id: 349
+field_id: 31
+name: "Carta poder del abogado, con copia de idoneidad, copia de c\xC3\xA9dula del due\xC3\xB1o del auto"
+created_at: 2012-08-14 01:59:03 Z
+updated_at: 2017-06-04 00:26:07.609375 Z
+label: "Carta poder del abogado, con copia de idoneidad, copia de c\xC3\xA9dula del due\xC3\xB1o del auto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ed556b01-5db0-4580-92e2-70dbdbf59278
+version: 20170603-202607

@@ -1,0 +1,30 @@
+--- 
+id: 1075
+part_id: 212
+field_id: 13
+name: Fecha desde
+created_at: 2012-04-26 19:22:12 Z
+updated_at: 2017-06-04 00:21:33.100872 Z
+label: Fecha desde
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3fd97266-3a44-4b04-a808-7f49a6ce25e6
+version: 20170603-202133

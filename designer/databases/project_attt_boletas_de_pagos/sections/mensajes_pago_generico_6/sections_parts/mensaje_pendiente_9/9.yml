@@ -1,0 +1,21 @@
+--- 
+id: 9
+section_id: 6
+part_id: 11
+name: Mensaje_Pendiente
+created_at: 2016-10-06 14:49:52.731592 Z
+updated_at: 2017-05-24 22:08:31.632265 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  estatus = form_data.get("variables_pago_generico.variables_pago_generico.estatus")
+  (estatus == "started") || (estatus == "created") || (estatus == "payment_not_completed")
+manage_as_confidential: false
+include: 
+hint: "<strong style=\"color:#088A08\">Usted ser\xC3\xA1 dirigido a la Plataforma de Pagos. Por favor haga click en el siguiente enlace <br><br><div id=\"section-plink\"> <A HREF=\"http://www.w3schools.com/\" id=\"pendiente\">Pagar Tr\xC3\xA1mite</A></div><br></strong>"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

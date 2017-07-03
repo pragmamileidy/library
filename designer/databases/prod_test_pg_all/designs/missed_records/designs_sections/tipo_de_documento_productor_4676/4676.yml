@@ -1,0 +1,16 @@
+--- 
+id: 4676
+design_id: 262
+section_id: 546
+name: "Tipo de Documento Productor "
+created_at: 2014-12-16 20:55:55 Z
+updated_at: 2015-10-02 02:10:17 Z
+label: Tipo de Documento Productor
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3141\":{\"3601\":{\"required\":\"required\"},\"3602\":{\"required\":\"required\"},\"3603\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

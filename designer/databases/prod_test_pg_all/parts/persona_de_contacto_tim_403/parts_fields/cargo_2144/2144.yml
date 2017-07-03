@@ -1,0 +1,30 @@
+--- 
+id: 2144
+part_id: 403
+field_id: 10
+name: Cargo
+created_at: 2012-07-23 19:48:43 Z
+updated_at: 2017-06-04 00:30:35.974074 Z
+label: Cargo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 42f6da03-135b-4e16-8237-0e9b9758d513
+version: 20170603-203035

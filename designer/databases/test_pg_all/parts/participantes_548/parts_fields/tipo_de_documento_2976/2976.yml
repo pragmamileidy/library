@@ -1,0 +1,30 @@
+--- 
+id: 2976
+part_id: 548
+field_id: 10
+name: Tipo de Documento
+created_at: 2013-03-07 18:29:32 Z
+updated_at: 2017-06-04 00:26:19.905581 Z
+label: Tipo de Documento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 64f03310-2eae-4c59-972f-c72b5315882a
+version: 20170603-202619

@@ -1,0 +1,19 @@
+--- 
+id: 2817
+section_id: 360
+part_id: 622
+name: Enmienda
+created_at: 2013-06-07 19:21:41 Z
+updated_at: 2015-11-02 20:17:42 Z
+label: Enmienda
+min_instances: 1
+max_instances: 4
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

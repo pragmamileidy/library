@@ -1,0 +1,30 @@
+--- 
+id: 2008
+part_id: 317
+field_id: 17
+name: "Descripci\xC3\xB3n de la Actividad"
+created_at: 2012-07-13 13:51:27 Z
+updated_at: 2017-06-04 00:22:02.835046 Z
+label: "Descripci\xC3\xB3n de la Actividad"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Se debe describir las actividades a realizar en el evento
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5c39ff94-a78a-4642-83fb-132170ba55da
+version: 20170603-202202

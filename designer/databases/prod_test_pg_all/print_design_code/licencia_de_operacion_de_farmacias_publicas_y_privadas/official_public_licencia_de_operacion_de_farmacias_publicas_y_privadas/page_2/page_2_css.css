@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  background-image: url(RUTA_IMAGEN.png);
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+.informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  position: absolute;
+  top: 127px;
+  left: 658px;
+  width: 338px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  position: absolute;
+  top: 96px;
+  left: 658px;
+  width: 335px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelregentefarmacutico_datosdelapersona_nombrecompleto {
+    position:absolute;
+    top: 318px;
+    left: 360px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_datosdelapersona_cdula {
+    position:absolute;
+    top: 358px;
+    left: 750px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_informacinlaboral_registrodeidoneidad {
+    position:absolute;
+    top: 358px;
+    left: 360px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_informacinderesidencialocalizacin_nmerodetelfono {
+    position:absolute;
+    top: 397px;
+    left: 360px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_informacinderesidencialocalizacin_nmerodefax {
+    position:absolute;
+    top: 397px;
+    left: 750px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+.datosdelregentefarmacutico_informacinderesidencialocalizacin_correoelectrnico {
+    position:absolute;
+    top: 438px;
+    left: 360px;
+    width: 232px;
+    height: 46px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_informacinderesidencialocalizacin_direccin {
+    position:absolute;
+    top: 482px;
+    left: 360px;
+    width: 700px;
+    height: 60px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_informacinderesidencialocalizacin_provincia_lista {
+    position:absolute;
+    top: 567px;
+    left: 357px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_informacinderesidencialocalizacin_distrito_lista {
+    position:absolute;
+    top: 567px;
+    left: 714px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .datosdelregentefarmacutico_informacinderesidencialocalizacin_corregimiento_lista {
+    position:absolute;
+    top: 610px;
+    left: 357px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_trabajaenotraempresa_seleccione {
+    position:absolute;
+    top: 650px;
+    left: 320px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_trabajaenotraempresa_nombredelaempresa {
+    position:absolute;
+    top: 690px;
+    left: 285px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_trabajaenotraempresa_tipodeempresa {
+    position:absolute;
+    top: 690px;
+    left: 720px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }  
+  .horarioderegencia_lunesaviernes_horadeapertura1 {
+    position:absolute;
+    top: 805px;
+    left: 298px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_lunesaviernes_horadecierre1 {
+    position:absolute;
+    top: 805px;
+    left: 402px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_sbados_horadeapertura1 {
+    position:absolute;
+    top: 805px;
+    left: 657px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_sbados_horadecierre1 {
+    position:absolute;
+    top: 805px;
+    left: 760px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_domingos_horadeapertura1 {
+    position:absolute;
+    top: 844px;
+    left: 298px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_domingos_horadecierre1 {
+    position:absolute;
+    top: 844px;
+    left: 402px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_feriados_horadeapertura1 {
+    position:absolute;
+    top: 844px;
+    left: 657px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_feriados_horadecierre1 {
+    position:absolute;
+    top: 844px;
+    left: 760px;
+    width: 100px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .horarioderegencia_rotacindehorario_seleccione {
+    position:absolute;
+    top: 890px;
+    left: 500px;
+    width: 50px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .turnosfarmacuticos_instance_1_turnofarmaceutico_nombre {
+    position: absolute;
+    top: 1045px;
+    left: 345px;
+    width: 475px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_1_turnofarmaceutico_idoneidad {
+    position: absolute;
+    top: 1082px;
+    left: 345px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_1_turnofarmaceutico_horadeapertura {
+    position: absolute;
+    top: 1120px;
+    left: 344px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_1_turnofarmaceutico_horadecierre {
+    position: absolute;
+    top: 1120px;
+    left: 712px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_2_turnofarmaceutico_nombre {
+    position: absolute;
+    top: 1240px;
+    left: 345px;
+    width: 589px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_2_turnofarmaceutico_idoneidad {
+    position: absolute;
+    top: 1277px;
+    left: 345px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_2_turnofarmaceutico_horadeapertura {
+    position: absolute;
+    top: 1315px;
+    left: 345px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_2_turnofarmaceutico_horadecierre {
+    position: absolute;
+    top: 1315px;
+    left: 712px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_3_turnofarmaceutico_nombre {
+    position: absolute;
+    top: 1440px;
+    left: 345px;
+    width: 682px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_3_turnofarmaceutico_idoneidad {
+    position: absolute;
+    top: 1477px;
+    left: 345px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_3_turnofarmaceutico_horadeapertura {
+    position: absolute;
+    top: 1515px;
+    left: 345px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .turnosfarmacuticos_instance_3_turnofarmaceutico_horadecierre {
+    position: absolute;
+    top: 1515px;
+    left: 712px;
+    width: 232px;
+    height: 20px;
+    overflow: hidden;
+  }

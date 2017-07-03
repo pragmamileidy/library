@@ -1,0 +1,19 @@
+--- 
+id: 1543
+section_id: 244
+part_id: 68
+name: "Preparaci\xC3\xB3n del producto"
+created_at: 2012-05-20 15:39:16 Z
+updated_at: 2012-06-14 16:41:23 Z
+label: "Preparaci\xC3\xB3n del producto para su uso correcto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"347\":{},\"1801\":{},\"348\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 12

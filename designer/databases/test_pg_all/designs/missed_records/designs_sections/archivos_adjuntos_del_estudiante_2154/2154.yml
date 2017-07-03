@@ -1,0 +1,16 @@
+--- 
+id: 2154
+design_id: 166
+section_id: 169
+name: " Archivos Adjuntos del Estudiante"
+created_at: 2012-09-26 22:10:48 Z
+updated_at: 2012-09-26 22:10:48 Z
+label: "Requisitos para Solicitud de Cr\xC3\xA9dito Educativo para Estudios Superiores"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2006\":{\"210\":{\"required\":\"required\"}},\"2007\":{\"210\":{\"required\":\"required\"}},\"2008\":{\"210\":{\"required\":\"required\"}},\"2009\":{\"210\":{\"required\":\"required\"}}}"
+hint: " "
+help: " "
+order_input: 15

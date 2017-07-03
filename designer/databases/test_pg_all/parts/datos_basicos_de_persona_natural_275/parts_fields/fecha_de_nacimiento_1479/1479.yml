@@ -1,0 +1,30 @@
+--- 
+id: 1479
+part_id: 275
+field_id: 13
+name: Fecha de Nacimiento
+created_at: 2012-05-31 01:46:59 Z
+updated_at: 2017-06-04 00:30:47.666139 Z
+label: Fecha de Nacimiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cf2f576e-b5e0-433f-8b7c-20fdfb4005d2
+version: 20170603-203047

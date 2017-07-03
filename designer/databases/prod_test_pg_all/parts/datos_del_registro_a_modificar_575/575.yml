@@ -1,0 +1,17 @@
+--- 
+id: 575
+name: Datos del Registro a Modificar
+description: Datos del Registro a Modificar - MICI
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-13 22:52:55 Z
+updated_at: 2013-03-13 22:52:55 Z
+label: Datos del Registro a Modificar
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 127
+part_id: 29
+field_id: 10
+name: Certificado
+created_at: 2011-11-03 21:00:23 Z
+updated_at: 2017-06-04 00:29:52.885349 Z
+label: Certificado
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5232809d-94f0-4d95-9429-576d82e01981
+version: 20170603-202952

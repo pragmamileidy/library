@@ -1,0 +1,19 @@
+--- 
+id: 2142
+section_id: 373
+part_id: 38
+name: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico autorizado"
+created_at: 2012-08-10 19:45:23 Z
+updated_at: 2017-03-20 21:27:21.241808 Z
+label: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico autorizado en la que conste que el capital  social inicial pagado m\xC3\xADnimo es de cincuenta mil (B/.50,000.00)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Las acciones correspondientes deber\xC3\xA1n estar totalmente suscritas, pagadas y liberadas."
+help: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico autorizado en la que conste que el capital  social inicial pagado m\xC3\xADnimo es de cincuenta mil (B/.50,000.00). Las acciones correspondientes deber\xC3\xA1n estar totalmente suscritas, pagadas y liberadas."
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 4

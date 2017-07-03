@@ -1,0 +1,30 @@
+--- 
+id: 252
+name: "Autor de la M\xC3\xBAsica"
+description: "Autor de la M\xC3\xBAsica"
+version: 
+status: Draft
+label: "Autor de la M\xC3\xBAsica"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-13 13:53:02 Z
+updated_at: 2013-03-13 13:53:02 Z
+values_list: "\"Autor de la m\xC3\xBAsica\",\"Autor de la Letra\""
+keys_list: ""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

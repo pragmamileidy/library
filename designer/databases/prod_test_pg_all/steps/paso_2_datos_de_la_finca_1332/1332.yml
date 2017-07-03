@@ -1,0 +1,76 @@
+--- 
+id: 1332
+name: Paso 2 - Datos de la Finca
+label: Datos de la Finca
+description: "Revise y Complete los Datos de la Finca<br>\r\n\
+  Propietarios de la Finca<br>\r\n\
+  Colindantes<br>\r\n\
+  Grav\xC3\xA9menes"
+fill_step_id: 663
+created_at: 2013-05-08 14:40:58 Z
+updated_at: 2013-05-16 21:48:57 Z
+include: "{\"2750\":{\"2485\":{\"365\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3102\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3107\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"367\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"366\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2088\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2089\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2090\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2091\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2486\":{\"3104\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3105\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3106\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2487\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2748\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2749\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2488\":{\"2845\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2846\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2847\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2848\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2489\":{\"2093\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2094\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 1 - Datos del Solicitante y del Co-Solicitante
+next_step: Paso 3 - Datos del Proyecto
+position: 2
+ajax_calls: |-
+  $(function() {
+  $('#id_del_combo_distritos').html("");
+  $('#id_del_combo_corregimientos').html("");
+  })
+  $( function() {
+  	$("#field_datos_de_la_finca_datos_de_ubicacion_de_la_finca_provincia_lista").change(function(){
+  		var prov = $("#field_datos_de_la_finca_datos_de_ubicacion_de_la_finca_provincia_lista").find(':selected').val();
+  		distritos(prov);
+  	});
+  	$("#field_datos_de_la_finca_datos_de_ubicacion_de_la_finca_distrito_lista").change(function(){
+  		var distrito = $("#field_datos_de_la_finca_datos_de_ubicacion_de_la_finca_distrito_lista").find(':selected').val();
+  		corregimientos(distrito);
+  	});
+  	});
+  
+  function distritos(provincia) {
+   params = {
+              "service_name":"ws_panama_distritos/where",
+              "provincia":provincia
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+  				var dist;
+  				var html_options = "";
+  				for (x in data){
+  					dist = data[x];
+  					html_options = html_options+'<option value="'+dist["distrito"] +'">'+dist["distrito"] +'</option>'
+  				}	
+  				$("#field_datos_de_la_finca_datos_de_ubicacion_de_la_finca_distrito_lista").html(html_options);
+  				$("#field_datos_de_la_finca_datos_de_ubicacion_de_la_finca_corregimiento_lista").html("");
+              }
+            );
+  }
+  function corregimientos(distrito) {
+   params = {
+              "service_name":"ws_panama_corregimientos/where",
+              "distrito":distrito
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+  				var corr;
+  				var html_options = "";
+  				for (x in data){
+  					corr = data[x];
+  					html_options = html_options+'<option value="'+corr["corregimiento"] +'">'+corr["corregimiento"] +'</option>'
+  				}	
+  				$("#field_datos_de_la_finca_datos_de_ubicacion_de_la_finca_corregimiento_lista").html(html_options);
+              }
+            );
+  }

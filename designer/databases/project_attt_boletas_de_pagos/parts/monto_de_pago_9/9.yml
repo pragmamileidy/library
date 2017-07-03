@@ -1,0 +1,17 @@
+--- 
+id: 9
+name: Monto de Pago
+description: Texto Monto Total
+version: 20161006-101833
+status: Draft
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-10-06 14:18:33.365747 Z
+updated_at: 2016-10-06 14:18:33.365747 Z
+label: Texto Monto
+hint: ""
+view_class: horizontal
+serial: 1b936d52-5aee-4347-9f71-f3fe6c2f998e

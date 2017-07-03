@@ -1,0 +1,80 @@
+--- 
+id: 2914
+name: Paso 1 - Notificaciones
+label: Notificaciones
+description: ""
+fill_step_id: 1564
+created_at: 2014-06-25 22:00:25 Z
+updated_at: 2015-07-31 14:48:39 Z
+include: "{\"4402\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4403\":{\"2419\":{\"3468\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2616\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2420\":{\"2620\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2621\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2423\":{\"2640\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2641\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2424\":{\"2642\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2643\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2425\":{\"2646\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2647\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2427\":{\"2654\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2655\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3011\":{\"3469\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3470\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3471\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3472\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3473\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3474\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3255\":{\"3097\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3098\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3256\":{\"3655\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3656\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3257\":{\"3657\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3658\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "#::: Mensajer\xC3\xADa para tr\xC3\xA1mite Masivo de DIJ :::#\r\n\
+  #Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"messages\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte NOTIFICACION_INICIOTRAMITE\r\n\
+  \r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_iniciotramite.iniciosolicitud\", \"Obteniendo Datos para Realizar el Tr\xC3\xA1mite \")\r\n\
+  form_data.set(\"notifications.notificacion_iniciotramite.iniciopasoinicializar\", \"Obteniendo informaci\xC3\xB3n del Tr\xC3\xA1mite \")\r\n\
+  form_data.set(\"notifications.notificacion_iniciotramite.finpasoinicializar\", \"Se ha obtenido la informaci\xC3\xB3n del Tr\xC3\xA1mite\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte NOTIFICACION_CARGATRAMITE\r\n\
+  \r\n\
+  #form_data.set(\"notifications.notificacion_cargatramite.iniciofasecarga\", \"Formulario del Tr\xC3\xA1mite en proceso de  captura de informaci\xC3\xB3n \")\r\n\
+  #form_data.set(\"notifications.notificacion_cargatramite.finfasecarga\", \"FIN FASE CARGA\")\r\n\
+  form_data.set(\"notifications.notificacion_cargatramite.iniciopasocarga\", \"La Solicitud se encuentra disponible para Llenado de Formulario.\")\r\n\
+  form_data.set(\"notifications.notificacion_cargatramite.finpasocarga\", \"Se ha culminado el Llenado del Formulario.\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte RECEPCION DE LA DIJ\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_recepcion.iniciopasorecepcion\", \"La Solicitud se encuentra en la bandeja de Revisi\xC3\xB3n por parte de la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"notifications.notificacion_recepcion.finpasorecepcion\", \"La Solicitud ha sido Revisada en la Instituci\xC3\xB3n\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte REPARO DE LLENADO\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_reparo.iniciopasoreparo\", \"La Solicitud requiere Correcci\xC3\xB3n .\")\r\n\
+  form_data.set(\"notifications.notificacion_reparo.finpasoreparo\", \"La Correcci\xC3\xB3n requerida en la Solicitud ha sido Completada. \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte REVISION DE CARTA\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_revision.iniciopasorevision\", \"La Solicitud se encuenta en la bandeja de Aprobaci\xC3\xB3n del Supervisor en la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"notifications.notificacion_revision.finpasorevision\", \"Ha sido completada la Aprobaci\xC3\xB3n del tr\xC3\xA1mite por parte del Supervisor. \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte CONFIRMACION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_confirmacion.iniciopasoconfirmacion\", \"La Solicitud se encuentra en Aprobaci\xC3\xB3n de Emisi\xC3\xB3n de Record Policivo por parte del Titular.\")\r\n\
+  form_data.set(\"notifications.notificacion_confirmacion.finpasopasoconfirmacion\", \"La Aprobaci\xC3\xB3n de Emisi\xC3\xB3n fue completada por el Titular. \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte REVISI\xC3\x93N \r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_procesar.iniciopasoprocesar\", \"La Solicitud se encuentra en la bandeja del funcionario de la GAIP para el proceso de Revisi\xC3\xB3n de Sentencias.\")\r\n\
+  form_data.set(\"notifications.notificacion_procesar.finpasopasoprocesar\", \"Ha sido completado el proceso de Revisi\xC3\xB3n de Sentencias en la GAIP. \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte FIRMAS\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_firmas.iniciopasofirmas\", \"La Solicitud se encuentra la Instituci\xC3\xB3n para el proceso de Firmas Requeridas para el Record Policivo.\")\r\n\
+  form_data.set(\"notifications.notificacion_firmas.finpasopasofirmas\", \"Ha sido completado el Proceso de Firmas en la Instituci\xC3\xB3n. \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte \r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciopasocierre\", \"Solicitud Lista para su Entrega en Ventanilla \xC3\x9Anica.\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finpasocierre\", \"Solicitud Entregada al Titular. \")\r\n\
+  \r\n\
+  \r\n\
+  #Llenado de campos en la parte NOTIFICACION ESTATUS TRAMITE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_estatustramite.aprobar\", \"Solicitud de Record Policivo Aprobada.\")\r\n\
+  form_data.set(\"notifications.notificacion_estatustramite.anular\", \"Solicitud Anulada por el Ciudadano. \")\r\n\
+  form_data.set(\"notifications.notificacion_estatustramite.error\", \"Errores en la solicitud.\")\r\n\
+  form_data.set(\"notifications.notificacion_estatustramite.vencimiento\", \"Terea Vencida. \")\r\n\
+  form_data.set(\"notifications.notificacion_estatustramite.rechazo\", \"Solicitud Rechazada.\")\r\n\
+  form_data.set(\"notifications.notificacion_estatustramite.finsolicitud\", \"Solicitud Completada. \")"
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 2 - Mensajes Sujetos
+position: 1
+ajax_calls: ""

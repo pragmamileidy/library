@@ -1,0 +1,16 @@
+--- 
+id: 1775
+design_id: 137
+section_id: 240
+name: Confirmacion
+created_at: 2012-08-09 21:53:55 Z
+updated_at: 2015-11-04 17:59:50 Z
+label: "Confirmaci\xC3\xB3n de culminaci\xC3\xB3n de tr\xC3\xA1mite"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1514\":{\"1390\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 9

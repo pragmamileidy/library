@@ -1,0 +1,30 @@
+--- 
+id: 2365
+part_id: 325
+field_id: 1
+name: "Distancia del sitio al Aer\xC3\xB3dromo "
+created_at: 2012-08-14 12:09:05 Z
+updated_at: 2017-06-04 00:24:35.329798 Z
+label: "Distancia del sitio al Aer\xC3\xB3dromo "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor indique la distancia expresada en kil\xC3\xB3metros."
+help: "Distancia existente desde la estructura hasta el aer\xC3\xB3dromo (en metros)"
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /^[0-9]+(\.[0-9]+)?$/
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7c337a13-6f1b-4ccf-8aa7-3a5f218e550d
+version: 20170603-202435

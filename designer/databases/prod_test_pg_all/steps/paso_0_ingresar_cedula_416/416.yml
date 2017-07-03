@@ -1,0 +1,106 @@
+--- 
+id: 416
+name: "Paso 0 - Ingresar C\xC3\xA9dula"
+label: Ingresar Datos Solicitados
+description: ""
+fill_step_id: 187
+created_at: 2012-05-30 22:16:05 Z
+updated_at: 2015-10-18 23:44:08 Z
+include: "{\"918\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"966\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |-
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get( '/consecutive/generador_css_funerarios/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+  
+  
+  if ((@owner["kind_of_user_type"] == "NaturalPerson") && (@owner["natural_person_type"] == "national_citizen"))
+  	_ci = @owner["national_id"]
+  	result = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + "#{_ci}").parsed_response
+  	datos = result["response"]
+  	if !datos.nil?
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.primer_nombre",datos["primerNombre"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.segundo_nombre",datos["segundoNombre"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.primer_apellido",datos["primerApellido"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.segundo_apellido",datos["segundoApellido"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.cedula",datos["cedula"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.apellido_de_casada", datos["apellidoCasada"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.numero_de_telefono", datos["tlfLocal"])
+  	else
+  		transition_errors << "Los datos no fueron encontrados. Por favor verifique nuevamente."
+  	end
+  else
+  	if ((@owner["kind_of_user_type"] == "NaturalPerson") && (@owner["natural_person_type"] == "foreign_citizen"))
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.primer_nombre",@owner["first_name"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.segundo_nombre",@owner["second_name"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.primer_apellido",@owner["last_name"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.segundo_apellido",@owner["second_last_name"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.pasaporte",@owner["passport"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.apellido_de_casada", @owner["married_name"])
+  		form_data.set("beneficiario_del_subsidio_natural.datos_de_la_persona.numero_de_telefono", @owner["fixed_number"])
+  	end
+  end
+  
+  
+  if @owner["kind_of_user_type"] == "JuridicalPerson"
+  	#inicializar datos del solicitante
+  	form_data.set("beneficiario_del_subsidio_juridico.datos_de_la_empresa.ruc",@owner["tax_id"])
+  	form_data.set("beneficiario_del_subsidio_juridico.datos_de_la_empresa.nombre",@owner["name"])
+  end
+  
+  
+  
+  #### Se setean los datos del solicitante en caso de que el tramite sea iniciado por tercera persona
+  person = @application["person_id"]
+  owner = @application["owner_person_id"]
+  
+  if person != owner
+  	_idpersona = @application["person_id"].to_s
+  	result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?person_id=' + "#{_idpersona}" + '&include_all=true').parsed_response
+  	_hash = result["hash"]
+  	persona = _hash["response"]
+  	form_data.set("datos_del_solicitante.datos_persona_natural.cedula",persona["person_gov_id_number"])
+  	form_data.set("datos_del_solicitante.datos_persona_natural.nombre_completo",persona["name"])
+  	form_data.set("datos_del_solicitante.datos_persona_natural.email",persona["email"])
+  	#form_data.set("datos_del_solicitante.datos_persona_natural.numero_de_telefono",persona["fixed_number"])
+  end
+on_transition: "#VERIFICACI\xC3\x92N NUMERO DE CEDULA DEL SOLICITANTE LEGAL NO PERTENEZCA A UN DIFUNTO\r\n\
+  person = @application[\"person_id\"]\r\n\
+  owner = @application[\"owner_person_id\"]\r\n\
+  \r\n\
+  if person != owner\r\n    numdoc = form_data.get(\"datos_del_solicitante.datos_persona_natural.cedula\")\r\n    resultado = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{numdoc}\")).parsed_response\r\n    datosSol = resultado[\"response\"]\r\n    if datosSol.blank? \r\n        transition_errors << \"La C\xC3\xA9dula del Solicitante no fue encontrada. Por favor, verifique.\" \r\n    else            \r\n        difunto = datosSol[\"mensaje\"]\r\n        if (difunto != \"ND\")\r\n            transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{numdoc} del Solicitante corresponde a un ciudadano Difunto.\"\r\n        end\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  ### VLIDACII\xC3\x93N DE NUMERO DE DOCUMENTO DEL BENEFICIARIO NO PERTENEZCA A UN DIFUNTO\r\n\
+  \r\n\
+  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n        ced = form_data.get(\"beneficiario_del_subsidio_natural.datos_de_la_persona.cedula\")\r\n        result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{ced}\")).parsed_response\r\n        datos = result[\"response\"]\r\n        if datos.blank? \r\n                transition_errors << \"La C\xC3\xA9dula nro.  #{ced} no fue encontrada. Por favor, verifique.\" \r\n        else\r\n                difunto = datos[\"mensaje\"]\r\n                if (difunto != \"ND\")\r\n                        transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la C\xC3\xA9dula nro. #{ced} del Beneficiario, corresponde a un ciudadano Difunto.\"\r\n                end\r\n        end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #avargas\r\n\
+  _error = nil\r\n\
+  _cedula = form_data.get(\"datos_del_fallecido.datos_de_la_persona.cedula\")\r\n\
+  \r\n\
+  #Obtener datos del fallecido\r\n\
+  result = WebserviceConsumer.get( '/service/bdin_caja_seguro_social_obtener_datosde_defuncion/find.json?cedula=' + \"#{_cedula}\").parsed_response\r\n\
+  _fallecido = result[\"response\"]\r\n\
+  if _fallecido.nil?\r\n    _error = \"#{_error}\" + \"La c\xC3\xA9dula del fallecido no existe en el sistema. Por favor revise  el valor.\"\r\n\
+  else \r\n    if _fallecido[\"cuotasUltimoAnio\"].to_i<6\r\n        _error = \"#{_error}\" + \"El n\xC3\xBAmero de cuotas no cumple con el m\xC3\xADnimo requerido para tener derecho al subsidio.\"\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  if !_error.nil? \r\n    transition_errors << \"#{_error}\"\r\n\
+  else\r\n    #datos del fallecido\r\n    form_data.set(\"datos_del_fallecido.datos_de_la_persona.cedula\",_fallecido[\"cedula\"])\r\n    form_data.set(\"datos_del_fallecido.datos_de_la_persona.primer_nombre\",_fallecido[\"primerNombre\"])\r\n    form_data.set(\"datos_del_fallecido.datos_de_la_persona.segundo_nombre\",_fallecido[\"segundoNombre\"])\r\n    form_data.set(\"datos_del_fallecido.datos_de_la_persona.primer_apellido\",_fallecido[\"primerApellido\"])\r\n    form_data.set(\"datos_del_fallecido.datos_de_la_persona.segundo_apellido\",_fallecido[\"segundoApellido\"])\r\n    form_data.set(\"datos_del_fallecido.datos_de_la_persona.apellido_de_casada\",_fallecido[\"apellidoCasada\"])\r\n    \r\n    \r\n    form_data.set(\"datos_del_fallecido.informacion_laboral.numero_de_seguro_social\",_fallecido[\"nroSeguro\"])\r\n    form_data.set(\"datos_del_fallecido.datos_del_fallecido.fecha_de_fallecimiento_del_asegurado\",_fallecido[\"fechaDefuncion\"])\r\n    form_data.set(\"datos_del_fallecido.datos_del_fallecido.ciudad_donde_fallecio\",_fallecido[\"ciudadFallecimiento\"])\r\n    form_data.set(\"datos_del_fallecido.datos_del_fallecido.cuotas_durante_el_ultimo_ano_antes_de_fallecer\",_fallecido[\"cuotasUltimoAnio\"])\r\n\
+  end"
+views: 
+back_step: ""
+next_step: "Paso 1 - Informaci\xC3\xB3n del Fallecido y Beneficiario"
+position: 0
+ajax_calls: ""

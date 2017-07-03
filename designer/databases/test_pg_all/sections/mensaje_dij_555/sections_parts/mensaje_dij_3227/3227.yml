@@ -1,0 +1,19 @@
+--- 
+id: 3227
+section_id: 555
+part_id: 720
+name: Mensaje dij
+created_at: 2014-06-10 19:49:49 Z
+updated_at: 2014-06-10 19:49:49 Z
+label: Mensaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3640\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

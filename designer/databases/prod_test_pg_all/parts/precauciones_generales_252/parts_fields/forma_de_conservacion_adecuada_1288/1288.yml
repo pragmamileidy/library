@@ -1,0 +1,30 @@
+--- 
+id: 1288
+part_id: 252
+field_id: 10
+name: "Forma de conservaci\xC3\xB3n adecuada"
+created_at: 2012-05-08 16:09:14 Z
+updated_at: 2017-06-04 00:21:39.529859 Z
+label: "Forma de conservaci\xC3\xB3n adecuada"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 29e03355-0005-43ea-9a12-6ebf0eb08b1a
+version: 20170603-202139

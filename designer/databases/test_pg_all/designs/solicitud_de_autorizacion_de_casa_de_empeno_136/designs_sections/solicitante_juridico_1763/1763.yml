@@ -1,0 +1,16 @@
+--- 
+id: 1763
+design_id: 136
+section_id: 361
+name: "Solicitante Jur\xC3\xADdico"
+created_at: 2012-08-09 19:49:32 Z
+updated_at: 2017-03-30 05:12:52.331786 Z
+label: Datos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"2098\":{\"2221\":{\"required\":\"required\"},\"2222\":{\"required\":\"required\"},\"4078\":{\"required\":\"required\"},\"2223\":{\"required\":\"required\"},\"2224\":{\"required\":\"required\"},\"2225\":{\"required\":\"required\"},\"2226\":{\"required\":\"required\"},\"2227\":{\"required\":\"required\"}},\"2080\":{\"2228\":{\"required\":\"required\"},\"2229\":{\"required\":\"required\"},\"2230\":{\"required\":\"required\"},\"2231\":{\"required\":\"required\"},\"2232\":{\"required\":\"required\"},\"2233\":{\"required\":\"required\"},\"2234\":{\"required\":\"required\"},\"3343\":{\"required\":\"required\"},\"4079\":{\"required\":\"required\"},\"2258\":{\"required\":\"required\"},\"2259\":{\"required\":\"unrequired\"},\"2260\":{\"required\":\"required\"},\"2261\":{\"required\":\"required\"},\"2295\":{\"required\":\"required\"},\"2263\":{\"required\":\"required\"}},\"2082\":{\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"578\":{\"required\":\"required\"},\"579\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 1

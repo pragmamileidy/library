@@ -1,0 +1,30 @@
+--- 
+id: 203
+name: "Periodo de Servicio Desde D\xC3\xADa/Mes/A\xC3\xB1o"
+description: "Campo con reglas Periodo de Servicio Desde D\xC3\xADa/Mes/A\xC3\xB1o"
+version: 
+status: Draft
+label: "Periodo de Servicio Desde D\xC3\xADa/Mes/A\xC3\xB1o"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-31 16:17:21 Z
+updated_at: 2012-07-31 16:17:21 Z
+values_list: ""
+keys_list: ""
+field_type: date
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

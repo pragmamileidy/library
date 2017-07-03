@@ -1,0 +1,30 @@
+--- 
+id: 3229
+part_id: 582
+field_id: 282
+name: meses del animal
+created_at: 2013-05-03 18:59:34 Z
+updated_at: 2017-06-04 00:27:37.498512 Z
+label: Mes(es)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bbb078a2-8f59-45bc-a1a9-83a490d67823
+version: 20170603-202737

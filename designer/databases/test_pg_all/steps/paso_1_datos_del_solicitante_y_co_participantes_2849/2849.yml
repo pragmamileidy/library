@@ -1,0 +1,149 @@
+--- 
+id: 2849
+name: Paso 1 - Datos del Solicitante y Co-Participantes
+label: Datos del Solicitante y Co-Participantes
+description: Verifique los Datos del Solicitante y Co-Participantes y realice modificaciones si es necesario
+fill_step_id: 1534
+created_at: 2014-04-10 18:37:46 Z
+updated_at: 2014-04-10 18:37:46 Z
+include: "{\"4258\":{\"2173\":{\"3124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3182\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3183\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3204\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2174\":{\"954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4259\":{\"2544\":{\"3124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2380\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2381\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2418\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2382\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2383\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3182\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3204\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3192\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4260\":{\"2189\":{\"3078\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2387\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2388\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2389\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2390\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2391\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2392\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3465\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2190\":{\"954\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |
+  (1..5).each do |x|
+      instance_x = "_instance_#{x}"
+  	_pirmerNombre = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.primer_nombre")
+  	_segundoNombre = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.segundo_nombre")
+  	_primerApellido = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.primer_apellido")
+  	_segundoApellido = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.segundo_apellido")
+  	_apellidoCasada = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.apellido_de_casada")
+  
+  
+  nombre_completo= "#{_pirmerNombre} "+"#{_segundoNombre} "+"#{_primerApellido} "+"#{_segundoApellido} "+"#{_apellidoCasada}"
+  form_data.set("datos_del_co_participante#{instance_x}.nombre_completo.nombre_completo", nombre_completo)
+  end
+  
+  
+  
+  documen = form_data.get("datos_del_co_participante_instance_1.datos_del_co_participante.tipo_de_co_participante")
+  form_data.set("datos_del_co_participante_instance_1.datos_del_co_participante.tipo_de_co_participante_string", documen)
+  
+  documen = form_data.get("datos_del_co_participante_instance_2.datos_del_co_participante.tipo_de_co_participante")
+  form_data.set("datos_del_co_participante_instance_2.datos_del_co_participante.tipo_de_co_participante_string", documen)
+  
+  documen = form_data.get("datos_del_co_participante_instance_3.datos_del_co_participante.tipo_de_co_participante")
+  form_data.set("datos_del_co_participante_instance_3.datos_del_co_participante.tipo_de_co_participante_string", documen)
+  
+  documen = form_data.get("datos_del_co_participante_instance_4.datos_del_co_participante.tipo_de_co_participante")
+  form_data.set("datos_del_co_participante_instance_4.datos_del_co_participante.tipo_de_co_participante_string", documen)
+  
+  documen = form_data.get("datos_del_co_participante_instance_5.datos_del_co_participante.tipo_de_co_participante")
+  form_data.set("datos_del_co_participante_instance_5.datos_del_co_participante.tipo_de_co_participante_string", documen)
+
+on_transition: "numeros = [\"\", \"uno (1)\", \"dos (2)\", \"tres (3)\", \"cuatro (4)\", \"cinco (5)\"]\r\n\
+  (1..5).each do |i|\r\n\
+  \t#Tipo de co-participante\r\n\
+  \ttipo_cp = form_data.get(\"datos_del_co_participante_instance_#{i}.datos_del_co_participante.tipo_de_co_participante\")\r\n\
+  \t#N\xC3\xBAmero de Identificaci\xC3\xB3n\r\n\
+  \tnumero_cp = form_data.get(\"datos_del_co_participante_instance_#{i}.datos_del_co_participante.tipo_de_co_participante\")\r\n\
+  \t#Idoneidad\r\n\
+  \tidoneidad = form_data.get(\"datos_del_co_participante_instance_#{i}.datos_del_co_participante.idoneidad\")\r\n\
+  \tif (tipo_cp == \"Profesional responsable\") && !numero_cp.blank? && idoneidad.blank?\r\n\
+  \t\ttransition_errors << \"Debe introducir el N\xC3\xBAmero de Idoneidad del profesional n\xC3\xBAmero #{numeros[i]}.\"\r\n\
+  \tend\r\n\
+  end"
+views: 
+back_step: Paso 0 - Datos de la Solicitud
+next_step: Paso 2 - Datos de la Finca
+position: 1
+ajax_calls: "$( function() {\r\n\
+  \r\n\
+  \t\t\t\t\tf1 = $('#field_datos_del_co_participante_instance_1_datos_del_co_participante_tipo_de_co_participante_string').val();\r\n\
+  \t\t\t\t\tf2 = $('#field_datos_del_co_participante_instance_2_datos_del_co_participante_tipo_de_co_participante_string').val();\r\n\
+  \t\t\t\t\tf3 = $('#field_datos_del_co_participante_instance_3_datos_del_co_participante_tipo_de_co_participante_string').val();\r\n\
+  \t\t\t\t\tf4 = $('#field_datos_del_co_participante_instance_4_datos_del_co_participante_tipo_de_co_participante_string').val();\r\n\
+  \t\t\t\t\tf5 = $('#field_datos_del_co_participante_instance_5_datos_del_co_participante_tipo_de_co_participante_string').val();\r\n\
+  \t\t\t\t\t\r\n\
+  \t\t\t\t\t//seccion 1\r\n\
+  \t\t\t\t\tif(f1!= \"Profesional responsable\"){\r\n\
+  \t\t\t\t\t    $(\"#field_datos_del_co_participante_instance_1_datos_del_co_participante_idoneidad\").attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_1_datos_del_co_participante_especialidad_profesional').attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t} else{\r\n\
+  \t\t\t\t\t\t $(\"#field_datos_del_co_participante_instance_1_datos_del_co_participante_idoneidad\").removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_1_datos_del_co_participante_especialidad_profesional').removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t\t\r\n\
+  \t\t\t\t\t//seccion 2\r\n\
+  \t\t\t\t\tif(f2!= \"Profesional responsable\"){\r\n\
+  \t\t\t\t\t    $(\"#field_datos_del_co_participante_instance_2_datos_del_co_participante_idoneidad\").attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_2_datos_del_co_participante_especialidad_profesional').attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t} else{\r\n\
+  \t\t\t\t\t\t $(\"#field_datos_del_co_participante_instance_2_datos_del_co_participante_idoneidad\").removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_2_datos_del_co_participante_especialidad_profesional').removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t\t\r\n\
+  \t\t\t\t\t//seccion 3\r\n\
+  \t\t\t\t\tif(f3!= \"Profesional responsable\"){\r\n\
+  \t\t\t\t\t    $(\"#field_datos_del_co_participante_instance_3_datos_del_co_participante_idoneidad\").attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_3_datos_del_co_participante_especialidad_profesional').attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t} else{\r\n\
+  \t\t\t\t\t\t $(\"#field_datos_del_co_participante_instance_3_datos_del_co_participante_idoneidad\").removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_3_datos_del_co_participante_especialidad_profesional').removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t\t\r\n\
+  \t\t\t\t\t//seccion 4\r\n\
+  \t\t\t\t\tif(f4!= \"Profesional responsable\"){\r\n\
+  \t\t\t\t\t    $(\"#field_datos_del_co_participante_instance_4_datos_del_co_participante_idoneidad\").attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_4_datos_del_co_participante_especialidad_profesional').attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t} else{\r\n\
+  \t\t\t\t\t\t $(\"#field_datos_del_co_participante_instance_4_datos_del_co_participante_idoneidad\").removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_4_datos_del_co_participante_especialidad_profesional').removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t\t\r\n\
+  \t\t\t\t\t//seccion 5\r\n\
+  \t\t\t\t\t\r\n\
+  \t\t\t\t\tif(f5!= \"Profesional responsable\"){\r\n\
+  \t\t\t\t\t    $(\"#field_datos_del_co_participante_instance_5_datos_del_co_participante_idoneidad\").attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_5_datos_del_co_participante_especialidad_profesional').attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t} else{\r\n\
+  \t\t\t\t\t\t $(\"#field_datos_del_co_participante_instance_5_datos_del_co_participante_idoneidad\").removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t$('#field_datos_del_co_participante_instance_5_datos_del_co_participante_especialidad_profesional').removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t\r\n\
+  \t});\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  $( function() {\r\n\
+  \t\r\n\
+  \t\t $(document).ready(function(){\r\n\
+  \t\t \tfor (var i=1;i<= 5;i++){\r\n\
+  \t\t\t\t$(\"#field_datos_del_co_participante_instance_\"+ (i) +\"_datos_del_co_participante_tipoc\").parent().parent().hide();\t\t\t        \r\n\
+  \t\t\t\t\tif  ( $(\"#field_datos_del_co_participante_instance_\"+ (i) +\"_datos_del_co_participante_tipoc\").val() == 'Pasaporte'){\r\n\
+  \t\t\t\t\t    $(\"#field_datos_del_co_participante_instance_\"+ (i) +\"_nombre_completo_primer_nombre\").removeAttr(\"disabled\");\r\n\
+  \t\t\t\t\t\t$(\"#field_datos_del_co_participante_instance_\"+ (i) +\"_nombre_completo_primer_apellido\").removeAttr(\"disabled\");\r\n\
+  \t\t\t\t\t\t$(\"#field_datos_del_co_participante_instance_\"+ (i) +\"_nombre_completo_segundo_apellido\").removeAttr(\"disabled\");\r\n\
+  \t\t\t\t\t}\r\n \r\n\
+  \t\t}\r\n\
+  \t\t});\r\n\
+  \t});\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  $.each( $('[id*=datos_del_co_participante_]'), function(index, campo) {\r\n\
+  \t\t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_datos_del_co_participante\";\r\n\
+  \tvar mod2 = \"_datos_del_co_participante_tipo_de_co_participante_string\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar dato = mod3.concat(mod2);\r\n\
+  \r\n\
+  \t\t//alert(dato);\r\n \r\n\
+  \t$(dato).parents(\".section-box\").next().hide()\r\n\
+  \r\n  });\r\n \r\n\
+  }); "

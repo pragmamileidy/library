@@ -1,0 +1,30 @@
+--- 
+id: 2324
+part_id: 426
+field_id: 17
+name: Indicaciones de Uso
+created_at: 2012-08-09 16:06:37 Z
+updated_at: 2017-06-04 00:22:11.357623 Z
+label: Indicaciones de Uso
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 082aa9dd-3e80-490b-8182-80f77479fa2e
+version: 20170603-202211

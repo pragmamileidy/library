@@ -1,0 +1,16 @@
+--- 
+id: 720
+design_id: 77
+section_id: 154
+name: Gastos del Solicitante
+created_at: 2012-04-22 16:35:18 Z
+updated_at: 2013-03-25 20:25:07 Z
+label: Gastos del Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"875\":{\"2519\":{\"required\":\"unrequired\"}},\"870\":{\"2519\":{\"required\":\"unrequired\"}},\"1157\":{\"2519\":{\"required\":\"unrequired\"}},\"1158\":{\"2519\":{\"required\":\"unrequired\"}},\"871\":{\"2519\":{\"required\":\"unrequired\"}},\"1159\":{\"2519\":{\"required\":\"unrequired\"}},\"1160\":{\"2519\":{\"required\":\"unrequired\"}},\"1161\":{\"2519\":{\"required\":\"unrequired\"}},\"873\":{\"2519\":{\"required\":\"unrequired\"}}}"
+hint: "Favor ingrese las cantidades solicitadas, puede usar para ello n\xC3\xBAmeros enteros y/o decimales"
+help: ""
+order_input: 3

@@ -1,0 +1,335 @@
+--- 
+id: 503
+position: 6
+selector: "{\"4256\":{\"656\":{\"758\":{},\"759\":{}}},\"4262\":{\"2485\":{\"365\":{},\"367\":{},\"366\":{}},\"2486\":{\"3104\":{},\"3105\":{},\"3106\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 109px;
+  	left: 740px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 83px;
+  	left: 647px;
+  	width: 407px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_18_datosdefinca_nmerodefinca {
+  	position: absolute;
+  	top: 222px;
+  	left: 279px;
+  	width: 273px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_18_datosdefinca_tomo {
+  	position: absolute;
+  	top: 222px;
+  	left: 787px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_18_datosdefinca_folio {
+  	position: absolute;
+  	top: 260px;
+  	left: 281px;
+  	width: 270px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_18_datosdeubicacindelafinca_provincia_lista {
+  	position: absolute;
+  	top: 260px;
+  	left: 787px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_18_datosdeubicacindelafinca_distrito_lista {
+  	position: absolute;
+  	top: 298px;
+  	left: 278px;
+  	width: 272px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_18_datosdeubicacindelafinca_corregimiento_lista {
+  	position: absolute;
+  	top: 297px;
+  	left: 785px;
+  	width: 260px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_19_datosdefinca_nmerodefinca {
+  	position: absolute;
+  	top: 422px;
+  	left: 284px;
+  	width: 269px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_19_datosdefinca_tomo {
+  	position: absolute;
+  	top: 422px;
+  	left: 786px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_19_datosdefinca_folio {
+  	position: absolute;
+  	top: 459px;
+  	left: 281px;
+  	width: 275px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_19_datosdeubicacindelafinca_provincia_lista {
+  	position: absolute;
+  	top: 458px;
+  	left: 788px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_19_datosdeubicacindelafinca_distrito_lista {
+  	position: absolute;
+  	top: 496px;
+  	left: 280px;
+  	width: 270px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_19_datosdeubicacindelafinca_corregimiento_lista {
+  	position: absolute;
+  	top: 496px;
+  	left: 785px;
+  	width: 255px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_20_datosdefinca_nmerodefinca {
+  	position: absolute;
+  	top: 619px;
+  	left: 282px;
+  	width: 270px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_20_datosdefinca_tomo {
+  	position: absolute;
+  	top: 620px;
+  	left: 784px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_20_datosdefinca_folio {
+  	position: absolute;
+  	top: 657px;
+  	left: 279px;
+  	width: 272px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_20_datosdeubicacindelafinca_provincia_lista {
+  	position: absolute;
+  	top: 657px;
+  	left: 786px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_20_datosdeubicacindelafinca_distrito_lista {
+  	position: absolute;
+  	top: 695px;
+  	left: 279px;
+  	width: 268px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_20_datosdeubicacindelafinca_corregimiento_lista {
+  	position: absolute;
+  	top: 694px;
+  	left: 785px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_21_datosdefinca_nmerodefinca {
+  	position: absolute;
+  	top: 819px;
+  	left: 276px;
+  	width: 274px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_21_datosdefinca_tomo {
+  	position: absolute;
+  	top: 818px;
+  	left: 781px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_21_datosdefinca_folio {
+  	position: absolute;
+  	top: 855px;
+  	left: 280px;
+  	width: 272px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_21_datosdeubicacindelafinca_provincia_lista {
+  	position: absolute;
+  	top: 856px;
+  	left: 786px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_21_datosdeubicacindelafinca_distrito_lista {
+  	position: absolute;
+  	top: 893px;
+  	left: 279px;
+  	width: 274px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_21_datosdeubicacindelafinca_corregimiento_lista {
+  	position: absolute;
+  	top: 894px;
+  	left: 786px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_22_datosdefinca_nmerodefinca {
+  	position: absolute;
+  	top: 1049px;
+  	left: 286px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_22_datosdefinca_tomo {
+  	position: absolute;
+  	top: 1049px;
+  	left: 785px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_22_datosdefinca_folio {
+  	position: absolute;
+  	top: 1087px;
+  	left: 290px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_22_datosdeubicacindelafinca_provincia_lista {
+  	position: absolute;
+  	top: 1087px;
+  	left: 787px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_22_datosdeubicacindelafinca_distrito_lista {
+  	position: absolute;
+  	top: 1124px;
+  	left: 287px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_22_datosdeubicacindelafinca_corregimiento_lista {
+  	position: absolute;
+  	top: 1124px;
+  	left: 785px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_23_datosdefinca_nmerodefinca {
+  	position: absolute;
+  	top: 1248px;
+  	left: 288px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_23_datosdefinca_tomo {
+  	position: absolute;
+  	top: 1249px;
+  	left: 783px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_23_datosdefinca_folio {
+  	position: absolute;
+  	top: 1285px;
+  	left: 292px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_23_datosdeubicacindelafinca_provincia_lista {
+  	position: absolute;
+  	top: 1283px;
+  	left: 787px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_23_datosdeubicacindelafinca_distrito_lista {
+  	position: absolute;
+  	top: 1319px;
+  	left: 290px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_instance_23_datosdeubicacindelafinca_corregimiento_lista {
+  	position: absolute;
+  	top: 1321px;
+  	left: 784px;
+  	width: 262px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 159
+created_at: 2014-04-10 20:15:43 Z
+updated_at: 2014-04-10 20:15:43 Z
+instances_selector: "{\"4256\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4262\":{\"value\":\"18,23\",\"2485\":{\"value\":\"\",\"365\":{\"value\":\"\"},\"367\":{\"value\":\"\"},\"366\":{\"value\":\"\"}},\"2486\":{\"value\":\"\",\"3104\":{\"value\":\"\"},\"3105\":{\"value\":\"\"},\"3106\":{\"value\":\"\"}}}}"
+size: 

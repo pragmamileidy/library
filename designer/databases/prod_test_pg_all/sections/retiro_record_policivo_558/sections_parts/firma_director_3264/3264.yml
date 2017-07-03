@@ -1,0 +1,19 @@
+--- 
+id: 3264
+section_id: 558
+part_id: 230
+name: firma director
+created_at: 2014-06-29 15:45:40 Z
+updated_at: 2017-01-27 19:33:34.246845 Z
+label: Firma del Director
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Seleccione si requiere que el Record Policivo sea firmado por el Director de la DIJ
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

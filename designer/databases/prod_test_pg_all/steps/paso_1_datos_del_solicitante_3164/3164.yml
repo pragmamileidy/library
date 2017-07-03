@@ -1,0 +1,19 @@
+--- 
+id: 3164
+name: Paso 1- Datos del Solicitante
+label: Datos del Solicitante
+description: ""
+fill_step_id: 1691
+created_at: 2015-08-04 13:49:25 Z
+updated_at: 2015-08-04 13:49:25 Z
+include: "{\"4875\":{\"1735\":{\"1662\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"567\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1282\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"568\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"569\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3342\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3409\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"570\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"571\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1544\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1292\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1324\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2219\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1760\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1761\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1762\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1763\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1948\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1949\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2192\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2360\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2479\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3254\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3606\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3619\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

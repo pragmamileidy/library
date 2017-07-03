@@ -1,0 +1,30 @@
+--- 
+id: 274
+name: nivel de estudio
+description: Nivel de estudio
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-04-10 19:12:37 Z
+updated_at: 2015-10-28 22:02:30 Z
+values_list: "\"Primaria Completa\", \"Secundaria Completa\", \"Licenciatura Completa\", \"T\xC3\xA9cnico\", \"Posgrado\", \"Maestr\xC3\xADa\", \"Doctorado\""
+keys_list: "\"Primaria Completa\", \"Secundaria Completa\", \"Licenciatura Completa\", \"T\xC3\xA9cnico\", \"Posgrado\", \"Maestr\xC3\xADa\", \"Doctorado\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 8981-8326-7818-9156-3630

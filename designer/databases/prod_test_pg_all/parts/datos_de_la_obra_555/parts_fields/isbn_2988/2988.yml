@@ -1,0 +1,30 @@
+--- 
+id: 2988
+part_id: 555
+field_id: 1
+name: ISBN
+created_at: 2013-03-11 21:42:29 Z
+updated_at: 2017-06-04 00:28:28.419539 Z
+label: ISBN
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "N\xC3\xBAmero ISBN (International Standard Book Number), n\xC3\xBAmero internacional normalizado para libros, asignado por la Biblioteca Nacional. Favor introduzca un valor entero, solo se admitir\xC3\xA1n n\xC3\xBAmeros del cero (0) al nueve (9)"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 0
+max_value: 
+format: /^[0-9]+$/
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5e46bdef-43a9-413d-811d-1608f131e9cb
+version: 20170603-202828

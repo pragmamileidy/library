@@ -1,0 +1,30 @@
+--- 
+id: 1747
+part_id: 322
+field_id: 149
+name: "B Clasificaci\xC3\xB3n "
+created_at: 2012-06-12 21:59:29 Z
+updated_at: 2017-06-04 00:21:52.495471 Z
+label: "B. Clasificaci\xC3\xB3n "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2ff784c1-131c-4cd0-965e-2d5ff8fc67e4
+version: 20170603-202152

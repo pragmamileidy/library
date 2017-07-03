@@ -1,0 +1,30 @@
+--- 
+id: 3146
+part_id: 594
+field_id: 10
+name: Template_Type
+created_at: 2013-04-08 18:19:35 Z
+updated_at: 2017-06-04 00:27:35.209272 Z
+label: Template Type
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "[erb, html, plain]"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ab253841-e036-4936-b82e-24e0f9a95141
+version: 20170603-202735

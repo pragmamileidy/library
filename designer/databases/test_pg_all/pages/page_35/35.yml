@@ -1,0 +1,262 @@
+--- 
+id: 35
+position: 1
+selector: "{\"344\":{\"656\":{\"758\":{},\"759\":{}}},\"555\":{\"1448\":{\"1373\":{}}},\"348\":{\"414\":{\"567\":{},\"566\":{}},\"416\":{\"2456\":{},\"2457\":{},\"2458\":{},\"805\":{},\"585\":{},\"586\":{},\"594\":{}}},\"347\":{\"580\":{\"1323\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{}},\"586\":{\"791\":{}},\"581\":{\"805\":{},\"594\":{}}},\"352\":{\"1422\":{\"3429\":{}},\"679\":{\"3420\":{},\"3421\":{}},\"680\":{\"3420\":{},\"3421\":{}},\"681\":{\"3420\":{},\"3421\":{}},\"682\":{\"3420\":{},\"3421\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 83px;
+  	left: 695px;
+  	width: 290px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 55px;
+  	left: 676px;
+  	width: 324px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .tipodesolicitud_tipodesolicituddelicenciadeoperacionesdefarmacia_tipodesolicituddelicenciadeoperacionesdefarmacia {
+  	position: absolute;
+  	top: 277px;
+  	left: 278px;
+  	width: 432px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_cdula {
+  	position: absolute;
+  	top: 674px;
+  	left: 281px;
+  	width: 247px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 673px;
+  	left: 730px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 709px;
+  	left: 285px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 708px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 746px;
+  	left: 281px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinlaboral_profesin {
+  	position: absolute;
+  	top: 841px;
+  	left: 281px;
+  	width: 244px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 779px;
+  	left: 280px;
+  	width: 678px;
+  	height: 45px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 841px;
+  	left: 729px;
+  	width: 238px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_nombredelestablecimiento_ruc {
+  	position: absolute;
+  	top: 393px;
+  	left: 282px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_nombredelestablecimiento_nombre {
+  	position: absolute;
+  	top: 428px;
+  	left: 282px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccinytelfonodelestablecimiento_provincia_lista {
+  	position: absolute;
+  	top: 524px;
+  	left: 280px;
+  	width: 246px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccinytelfonodelestablecimiento_distrito_lista {
+  	position: absolute;
+  	top: 523px;
+  	left: 731px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccinytelfonodelestablecimiento_corregimiento_lista {
+  	position: absolute;
+  	top: 561px;
+  	left: 280px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccinytelfonodelestablecimiento_direccin {
+  	position: absolute;
+  	top: 464px;
+  	left: 281px;
+  	width: 680px;
+  	height: 42px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccinytelfonodelestablecimiento_nmerodetelfono {
+  	position: absolute;
+  	top: 597px;
+  	left: 280px;
+  	width: 244px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccinytelfonodelestablecimiento_nmerodefax {
+  	position: absolute;
+  	top: 597px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccinytelfonodelestablecimiento_correoelectrnico {
+  	position: absolute;
+  	top: 561px;
+  	left: 727px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+      .horariodeoperacin_horario_confirma {
+  	position: absolute;
+  	top: 982px;
+  	left: 402px;
+  	width: 360px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_lunesaviernes_horadeapertura1 {
+  	position: absolute;
+  	top: 920px;
+  	left: 260px;
+  	width: 92px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_lunesaviernes_horadecierre1 {
+  	position: absolute;
+  	top: 919px;
+  	left: 381px;
+  	width: 117px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_sbados_horadeapertura1 {
+  	position: absolute;
+  	top: 919px;
+  	left: 757px;
+  	width: 91px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_sbados_horadecierre1 {
+  	position: absolute;
+  	top: 919px;
+  	left: 867px;
+  	width: 92px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_domingos_horadeapertura1 {
+  	position: absolute;
+  	top: 951px;
+  	left: 264px;
+  	width: 87px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_domingos_horadecierre1 {
+  	position: absolute;
+  	top: 950px;
+  	left: 381px;
+  	width: 116px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_feriados_horadeapertura1 {
+  	position: absolute;
+  	top: 953px;
+  	left: 757px;
+  	width: 88px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_feriados_horadecierre1 {
+  	position: absolute;
+  	top: 953px;
+  	left: 865px;
+  	width: 90px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: ""
+print_design_id: 25
+created_at: 2012-04-15 13:28:04 Z
+updated_at: 2015-10-20 02:51:00 Z
+instances_selector: "{\"344\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"555\":{\"value\":\"1,1\",\"1448\":{\"value\":\"\",\"1373\":{\"value\":\"\"}}},\"348\":{\"value\":\"\",\"414\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"416\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"347\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"}},\"586\":{\"value\":\"\",\"791\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"352\":{\"value\":\"\",\"1422\":{\"value\":\"\",\"3429\":{\"value\":\"\"}},\"679\":{\"value\":\"\",\"3420\":{\"value\":\"\"},\"3421\":{\"value\":\"\"}},\"680\":{\"value\":\"\",\"3420\":{\"value\":\"\"},\"3421\":{\"value\":\"\"}},\"681\":{\"value\":\"\",\"3420\":{\"value\":\"\"},\"3421\":{\"value\":\"\"}},\"682\":{\"value\":\"\",\"3420\":{\"value\":\"\"},\"3421\":{\"value\":\"\"}}}}"
+size: ""

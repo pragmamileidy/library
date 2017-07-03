@@ -1,0 +1,247 @@
+--- 
+id: 119
+position: 1
+selector: "{\"1377\":{\"656\":{\"758\":{},\"759\":{}}},\"1378\":{\"1448\":{\"1731\":{}}},\"1380\":{\"580\":{\"1323\":{},\"1320\":{},\"1374\":{}},\"586\":{\"791\":{},\"4083\":{}},\"3664\":{\"4084\":{}},\"581\":{\"805\":{},\"594\":{}}},\"1379\":{\"595\":{\"567\":{},\"566\":{},\"4085\":{}},\"597\":{\"2456\":{},\"2457\":{},\"2458\":{},\"805\":{},\"1123\":{},\"586\":{},\"594\":{}},\"596\":{\"801\":{}}},\"1381\":{\"1422\":{\"4088\":{}},\"679\":{\"4088\":{}},\"680\":{\"4088\":{}},\"681\":{\"4088\":{}},\"682\":{\"4088\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 85px;
+  	left: 653px;
+  	width: 356px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 63px;
+  	left: 653px;
+  	width: 352px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .tipodesolicitud_tipodesolicituddelicenciadeoperacionesdefarmacia_tipodesolicitud {
+  	position: absolute;
+  	top: 319px;
+  	left: 286px;
+  	width: 501px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_cdula {
+  	position: absolute;
+  	top: 494px;
+  	left: 239px;
+  	width: 465px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_pasaporte {
+  	position: absolute;
+  	top: 494px;
+  	left: 239px;
+  	width: 461px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 461px;
+  	left: 239px;
+  	width: 762px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinlaboral_profesin {
+  	position: absolute;
+  	top: 581px;
+  	left: 239px;
+  	width: 458px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinlaboral_actuaencondicinde {
+  	position: absolute;
+  	top: 617px;
+  	left: 239px;
+  	width: 457px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_indicaraofiscal_anio {
+  	position: absolute;
+  	top: 650px;
+  	left: 239px;
+  	width: 454px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 530px;
+  	left: 239px;
+  	width: 763px;
+  	height: 41px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 683px;
+  	left: 239px;
+  	width: 457px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 839px;
+  	left: 239px;
+  	width: 457px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 804px;
+  	left: 239px;
+  	width: 761px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_datosdelaempresa_actividaddelaempresa {
+  	position: absolute;
+  	top: 1161px;
+  	left: 453px;
+  	width: 363px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccin_provincia_lista {
+  	position: absolute;
+  	top: 924px;
+  	left: 239px;
+  	width: 464px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccin_distrito_lista {
+  	position: absolute;
+  	top: 957px;
+  	left: 239px;
+  	width: 461px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccin_corregimiento_lista {
+  	position: absolute;
+  	top: 991px;
+  	left: 239px;
+  	width: 460px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccin_direccin {
+  	position: absolute;
+  	top: 868px;
+  	left: 239px;
+  	width: 763px;
+  	height: 40px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccin_telfonodeoficina {
+  	position: absolute;
+  	top: 1025px;
+  	left: 239px;
+  	width: 301px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccin_nmerodefax {
+  	position: absolute;
+  	top: 1025px;
+  	left: 662px;
+  	width: 323px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 1058px;
+  	left: 239px;
+  	width: 459px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestablecimiento_registrodeempresa_licenciadeoperacin {
+  	position: absolute;
+  	top: 1110px;
+  	left: 744px;
+  	width: 187px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_horario_campooculto {
+  	position: absolute;
+  	top: 1364px;
+  	left: 564px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_lunesaviernes_campooculto {
+  	position: absolute;
+  	top: 1270px;
+  	left: 215px;
+  	width: 325px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_sbados_campooculto {
+  	position: absolute;
+  	top: 1270px;
+  	left: 654px;
+  	width: 341px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_domingos_campooculto {
+  	position: absolute;
+  	top: 1310px;
+  	left: 215px;
+  	width: 333px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .horariodeoperacin_feriados_campooculto {
+  	position: absolute;
+  	top: 1310px;
+  	left: 654px;
+  	width: 342px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 57
+created_at: 2012-07-15 18:40:58 Z
+updated_at: 2017-04-13 18:57:57.427002 Z
+instances_selector: "{\"1377\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1378\":{\"value\":\"\",\"1448\":{\"value\":\"\",\"1731\":{\"value\":\"\"}}},\"1380\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"1320\":{\"value\":\"\"},\"1374\":{\"value\":\"\"}},\"586\":{\"value\":\"\",\"791\":{\"value\":\"\"},\"4083\":{\"value\":\"\"}},\"3664\":{\"value\":\"\",\"4084\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"1379\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"},\"4085\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"1123\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"596\":{\"value\":\"\",\"801\":{\"value\":\"\"}}},\"1381\":{\"value\":\"\",\"1422\":{\"value\":\"\",\"4088\":{\"value\":\"\"}},\"679\":{\"value\":\"\",\"4088\":{\"value\":\"\"}},\"680\":{\"value\":\"\",\"4088\":{\"value\":\"\"}},\"681\":{\"value\":\"\",\"4088\":{\"value\":\"\"}},\"682\":{\"value\":\"\",\"4088\":{\"value\":\"\"}}}}"
+size: legal

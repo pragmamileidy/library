@@ -1,0 +1,30 @@
+--- 
+id: 1823
+part_id: 334
+field_id: 152
+name: Tipo Documento
+created_at: 2012-06-14 21:01:56 Z
+updated_at: 2017-06-04 00:21:55.780262 Z
+label: Tipo Documento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a016b0c9-1158-44e8-8441-02b3dc58714c
+version: 20170603-202155

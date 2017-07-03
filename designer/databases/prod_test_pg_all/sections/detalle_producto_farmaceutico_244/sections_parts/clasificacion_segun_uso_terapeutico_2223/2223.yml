@@ -1,0 +1,19 @@
+--- 
+id: 2223
+section_id: 244
+part_id: 63
+name: "Clasificaci\xC3\xB3n seg\xC3\xBAn uso terap\xC3\xA9utico"
+created_at: 2012-08-16 17:03:44 Z
+updated_at: 2012-08-16 17:03:44 Z
+label: "Clasificaci\xC3\xB3n seg\xC3\xBAn uso terap\xC3\xA9utico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

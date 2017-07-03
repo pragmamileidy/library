@@ -1,0 +1,24 @@
+--- 
+id: 3306
+name: "Paso 2 - Confirmaci\xC3\xB3n"
+label: "<strong style=\"color:#900C3F\"> Confirmaci\xC3\xB3n de la Solicitud </strong>"
+description: "<br><strong style=\"color:#FF5733\"> Usted ha culminado exitosamente el llenado de su solicitud, por favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de Enviar Formulario </strong>"
+fill_step_id: 1778
+created_at: 2017-02-22 23:47:42.355984 Z
+updated_at: 2017-02-22 23:47:42.417873 Z
+include: "{\"5200\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 1 - Datos Basicos de la Solicitud
+next_step: ""
+position: 2
+ajax_calls: "//::: DV: Cambiar nombre secci\xC3\xB3n y color  paso 1::://\r\n\
+  $(document).ready(function(){ \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: \xC2\xBFEst\xC3\xA1 seguro que desea finalizar su tr\xC3\xA1mite?\") {  \r\n        $(this).html(\"\xC2\xBFEst\xC3\xA1 seguro que desea finalizar su tr\xC3\xA1mite?\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Declaro bajo juramento que la informaci\xC3\xB3n suministrada a trav\xC3\xA9s de este formulario es correcta.\") {  \r\n        $(this).html(\"\"); \r\n      }\r\n    });\r\n  });\r\n });\r\n\
+  \r\n\
+  $(document).ready(function(){ \r\n  TiDoc = $('#field_datos_del_titular_rp_datos_basicos_de_persona_natural_tipo_de_documento');\r\n  nacio = $('#field_datos_del_titular_rp_datos_basicos_de_persona_natural_nacionalidad');\r\n  if ($(TiDoc).html() == \"Cedula\") {\r\n    $(nacio).html(\"Nacional\");\r\n  } else if($(TiDoc).html() == \"Pasaporte\") {\r\n    $(nacio).html(\"Extranjero\");\r\n  }\r\n\
+  });\r\n"

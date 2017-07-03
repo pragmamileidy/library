@@ -1,0 +1,19 @@
+--- 
+id: 2235
+section_id: 387
+part_id: 453
+name: Informacion General Permiso de Trabajo para Trabajador Extranjero
+created_at: 2012-08-18 20:44:29 Z
+updated_at: 2012-08-18 20:44:29 Z
+label: "Informacion General "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2439\":{},\"2440\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

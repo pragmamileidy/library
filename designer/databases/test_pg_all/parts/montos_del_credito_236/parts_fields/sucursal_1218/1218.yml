@@ -1,0 +1,30 @@
+--- 
+id: 1218
+part_id: 236
+field_id: 10
+name: Sucursal
+created_at: 2012-05-06 05:04:51 Z
+updated_at: 2017-06-04 00:28:51.881157 Z
+label: Sucursal
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 25ee622d-be4f-4e4e-9291-972b9305f7fd
+version: 20170603-202851

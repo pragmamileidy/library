@@ -1,0 +1,30 @@
+--- 
+id: 3212
+part_id: 608
+field_id: 13
+name: Fecha de Nacimiento
+created_at: 2013-04-26 19:44:31 Z
+updated_at: 2017-06-04 00:26:25.701629 Z
+label: Fecha de Nacimiento
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: de7f4172-2897-41b7-9dfc-71edb1e6f0be
+version: 20170603-202625

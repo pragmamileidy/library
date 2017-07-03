@@ -1,0 +1,30 @@
+--- 
+id: 3819
+part_id: 410
+field_id: 90
+name: Tipo de Documento
+created_at: 2014-11-11 14:24:52 Z
+updated_at: 2017-06-04 00:23:19.367907 Z
+label: Tipo de Documento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a8a88d27-5aaa-49a5-a38d-1e21e09eced1
+version: 20170603-202319

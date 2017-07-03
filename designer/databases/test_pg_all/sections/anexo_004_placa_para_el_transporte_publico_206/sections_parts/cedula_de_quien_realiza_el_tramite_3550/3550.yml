@@ -1,0 +1,19 @@
+--- 
+id: 3550
+section_id: 206
+part_id: 38
+name: "C\xC3\xA9dula de quien realiza el tr\xC3\xA1mite"
+created_at: 2015-10-06 19:13:57 Z
+updated_at: 2015-10-06 19:13:57 Z
+label: "C\xC3\xA9dula de quien realiza el tr\xC3\xA1mite"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "C\xC3\xA9dula de las dos partes si no es el due\xC3\xB1o del certificado"
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

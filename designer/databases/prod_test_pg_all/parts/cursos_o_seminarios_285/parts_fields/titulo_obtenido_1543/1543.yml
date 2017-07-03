@@ -1,0 +1,30 @@
+--- 
+id: 1543
+part_id: 285
+field_id: 130
+name: "T\xC3\xADtulo Obtenido"
+created_at: 2012-06-01 19:47:19 Z
+updated_at: 2017-06-04 00:24:08.277347 Z
+label: "T\xC3\xADtulo Obtenido"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 25aa783b-d165-4c62-b3b1-e05e2b8d3bbd
+version: 20170603-202408

@@ -1,0 +1,30 @@
+--- 
+id: 2271
+part_id: 420
+field_id: 10
+name: Oficinas o Sucursales
+created_at: 2012-08-07 21:47:58 Z
+updated_at: 2017-06-04 00:29:06.874779 Z
+label: Oficinas o Sucursales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar las oficinas o sucursales "
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6315ec88-4061-4ba8-a744-33aae729d6a3
+version: 20170603-202906

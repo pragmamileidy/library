@@ -1,0 +1,19 @@
+--- 
+id: 19
+section_id: 11
+part_id: 2
+name: Datos de la Persona
+created_at: 2017-01-16 16:22:11.743626 Z
+updated_at: 2017-01-24 13:56:25.208033 Z
+label: Consultar Infracciones
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

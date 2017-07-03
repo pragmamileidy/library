@@ -1,0 +1,30 @@
+--- 
+id: 4131
+part_id: 757
+field_id: 10
+name: Corregimiento
+created_at: 2017-02-28 01:06:32.482617 Z
+updated_at: 2017-06-04 00:26:47.243237 Z
+label: Corregimiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1e2411ce-e2bb-472a-8d45-cff6152258ac
+version: 20170603-202647

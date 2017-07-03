@@ -1,0 +1,17 @@
+--- 
+id: 521
+name: Solicitante
+description: "Tipo de persona "
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-07-17 15:09:37 Z
+updated_at: 2013-07-17 15:09:52 Z
+status: Draft
+label: Tipo de Persona
+hint: ""
+serial: 

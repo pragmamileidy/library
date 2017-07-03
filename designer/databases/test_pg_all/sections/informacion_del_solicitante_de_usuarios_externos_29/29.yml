@@ -1,0 +1,23 @@
+--- 
+id: 29
+name: "Informaci\xC3\xB3n del Solicitante de Usuarios Externos"
+description: "Secci\xC3\xB3n que contiene las informaci\xC3\xB3n del solicitante del usuario externo, \xC3\xA9sta depender\xC3\xA1 del tipo de solicitud que se realice, los tipos son:\r\n\
+  Desconsolidadores y Consolidadores\r\n\
+  Organos Anuentes\r\n\
+  Corredor y Auxiliares de Corredores de Aduanas\r\n\
+  Recintos Privados, Puertos y Dep\xC3\xB3sitos\r\n\
+  Transportista ( Mar\xC3\xADtimos, A\xC3\xA9reos y Terrestres)\r\n\
+  Estad\xC3\xADsticas\r\n"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-07 20:22:15 Z
+updated_at: 2011-11-17 14:58:49 Z
+status: Draft
+label: "Informaci\xC3\xB3n del Solicitante "
+hint: ""
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 2434
+section_id: 422
+part_id: 497
+name: mail_cargarTramite
+created_at: 2013-01-14 19:09:14 Z
+updated_at: 2013-03-21 23:45:30 Z
+label: "Correo de Carga de Tr\xC3\xA1mite"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2798\":{},\"2799\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,20 @@
+--- 
+id: 4870
+design_id: 271
+section_id: 185
+name: Recibido
+created_at: 2015-08-03 20:06:17 Z
+updated_at: 2016-07-07 14:12:58.436417 Z
+label: Recibido
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  _nombre_tarea = (@task["name"].to_s.downcase).split(' ')
+  valor = @config.route("Config Tramites 100.defaults100.repair_requirement.requires_repair",".")
+  
+  (valor == "false") && (['reparar','cerrar','recibir'].include? _nombre_tarea.first)
+manage_as_confidential: false
+include: "{\"1710\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"},\"1403\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

@@ -1,0 +1,19 @@
+--- 
+id: 942
+section_id: 163
+part_id: 38
+name: "Certificado de registro p\xC3\xBAblico"
+created_at: 2012-04-04 23:10:49 Z
+updated_at: 2012-07-16 14:13:37 Z
+label: "Certificado de registro p\xC3\xBAblico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Certificado de registro p\xC3\xBAblico, que haya sido expedido durante los treinta d\xC3\xADas (30) inmediatamente anteriores a su presentaci\xC3\xB3n"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

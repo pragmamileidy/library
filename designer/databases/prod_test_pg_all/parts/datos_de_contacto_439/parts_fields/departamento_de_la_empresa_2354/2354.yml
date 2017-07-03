@@ -1,0 +1,30 @@
+--- 
+id: 2354
+part_id: 439
+field_id: 10
+name: Departamento de la Empresa
+created_at: 2012-08-13 16:44:17 Z
+updated_at: 2017-06-04 00:30:04.056203 Z
+label: Departamento de la Empresa
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 68972ea8-a2bc-4359-8908-04e3c591bf7c
+version: 20170603-203004

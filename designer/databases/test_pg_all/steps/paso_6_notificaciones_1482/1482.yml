@@ -1,0 +1,37 @@
+--- 
+id: 1482
+name: Paso 6 - Notificaciones
+label: Notificaciones
+description: ""
+fill_step_id: 733
+created_at: 2013-09-06 16:34:41 Z
+updated_at: 2013-09-06 16:34:41 Z
+include: "{\"3186\":{\"2421\":{\"2622\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2623\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2624\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2625\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2626\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2627\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2628\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2629\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2422\":{\"2632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2633\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2634\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2635\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2636\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2637\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenar campos de la parte NOTIFICACION_PAGOTRAMITE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciofasepago\", \"Formulario del Tr\xC3\xA1mite enviado al usuario para Ingreso de Pago \")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finfasepago\", \"FIN FASE PAGO\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciopasopago\", \"Solicitud en espera de ingreso de pago(s).\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finpasopago\", \"Pago(s) realizado(s).\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciopasorecibirpago\", \"Solicitud en espera de revisi\xC3\xB3n de pagos en la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finpasorecibirpago\", \"Pago(s) recibido(s) en la Instituci\xC3\xB3n. \")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciopasorepararpago\", \"Solicitud en reparo de pago(s) por parte del solicitante.\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finpasorepararpago\", \"Pago(s) reparado(s) por el solicitante.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte NOTIFICACION_ESTAMPILLAS\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_estampillas.iniciopasoestampillas\", \"Formulario del Tr\xC3\xA1mite enviado al usuario para ingreso de pago de estampillas\")\r\n\
+  form_data.set(\"notifications.notificacion_estampillas.finpasoestampillas\", \"FIN PASO ESTAMPILLAS\")\r\n\
+  form_data.set(\"notifications.notificacion_estampillas.iniciopasorecibirestampillas\", \"Formulario del Tr\xC3\xA1mite enviado a la entidad; en espera de recepci\xC3\xB3n de pago de estampillas\")\r\n\
+  form_data.set(\"notifications.notificacion_estampillas.finpasorecibirestampillas\", \"FIN PASO RECIBIR ESTAMPILLAS\")\r\n\
+  form_data.set(\"notifications.notificacion_estampillas.iniciopasorepararestampillas\", \"Formulario del Tr\xC3\xA1mite se devolvi\xC3\xB3 al usuario; en espera de correcci\xC3\xB3n de pago de estampillas\")\r\n\
+  form_data.set(\"notifications.notificacion_estampillas.finpasorepararestampillas\", \"FIN PASO REPARAR ESTAMPILLAS\")"
+on_transition: ""
+views: 
+back_step: Paso 5 - Notificaciones
+next_step: Paso 7 - Notificaciones
+position: 5
+ajax_calls: ""

@@ -1,0 +1,19 @@
+--- 
+id: 2180
+section_id: 378
+part_id: 38
+name: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico"
+created_at: 2012-08-14 16:42:18 Z
+updated_at: 2017-02-24 16:22:13.818999 Z
+label: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico autorizado, respecto al capital de quinientos mil (B/. 500,000.00) pagado por el solicitante para operar la empresa."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

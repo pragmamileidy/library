@@ -1,0 +1,30 @@
+--- 
+id: 2377
+part_id: 418
+field_id: 10
+name: Fecha_String
+created_at: 2012-08-14 15:11:16 Z
+updated_at: 2017-06-04 00:24:36.088241 Z
+label: Fecha
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Ingresar la fecha del pacto social
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c10a3056-4c0a-4504-98cc-5b65538fbfd1
+version: 20170603-202436

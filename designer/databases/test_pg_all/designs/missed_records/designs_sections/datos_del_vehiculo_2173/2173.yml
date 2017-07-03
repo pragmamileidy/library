@@ -1,0 +1,16 @@
+--- 
+id: 2173
+design_id: 167
+section_id: 135
+name: "Datos del Veh\xC3\xADculo"
+created_at: 2012-10-24 22:17:55 Z
+updated_at: 2012-10-24 22:17:55 Z
+label: "Datos del Veh\xC3\xADculo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"674\":{\"782\":{\"required\":\"required\"},\"124\":{\"required\":\"required\"},\"783\":{\"required\":\"required\"},\"126\":{\"required\":\"required\"},\"948\":{\"required\":\"required\"},\"1465\":{\"required\":\"required\"},\"1362\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 9

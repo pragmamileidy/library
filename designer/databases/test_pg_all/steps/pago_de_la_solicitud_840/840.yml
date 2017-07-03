@@ -1,0 +1,19 @@
+--- 
+id: 840
+name: Pago de la Solicitud
+label: Pago de la Solicitud
+description: Pago de la Solicitud
+fill_step_id: 415
+created_at: 2012-08-20 21:16:30 Z
+updated_at: 2012-12-19 01:22:51 Z
+include: "{\"2282\":{\"1824\":{\"1366\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1367\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1368\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1369\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2114\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1371\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2544\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

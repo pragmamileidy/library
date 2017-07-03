@@ -1,0 +1,21 @@
+--- 
+id: 3752
+section_id: 605
+part_id: 38
+name: "Fotocopia autenticada por el registro civil de la c\xC3\xA9dula de identidad personal de sus directores"
+created_at: 2017-03-11 02:36:25.860213 Z
+updated_at: 2017-03-11 02:36:25.860213 Z
+label: "Fotocopia autenticada por el registro civil de la c\xC3\xA9dula de identidad personal de sus directores, dignatarios, representante legal y apoderado, si lo hubiere."
+min_instances: 1
+max_instances: 11
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: De ser extranjeros, por favor ver cuadro de "Ayuda"
+help: "De ser extranjeros copia del pasaporte debidamente cotejado por notario p\xC3\xBAblico\r\n\
+  paname\xC3\xB1o, o acompa\xC3\xB1ada de la certificaci\xC3\xB3n diplom\xC3\xA1tica acreditada en el pa\xC3\xADs o de la autoridad correspondiente en el lugar de emisi\xC3\xB3n. (Seg\xC3\xBAn el art\xC3\xADculo 3 numeral 1\r\n\
+  del decreto 213 del 26 de Octubre, de 2010)."
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

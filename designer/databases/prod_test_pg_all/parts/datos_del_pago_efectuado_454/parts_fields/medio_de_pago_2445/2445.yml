@@ -1,0 +1,30 @@
+--- 
+id: 2445
+part_id: 454
+field_id: 221
+name: Medio de Pago
+created_at: 2012-08-20 14:29:49 Z
+updated_at: 2017-06-04 00:27:20.943789 Z
+label: Medio de Pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Medio utilizado para el pago
+help: ""
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 84265610-470a-43e7-bd5b-fb0ca39d7fd2
+version: 20170603-202720

@@ -1,0 +1,17 @@
+--- 
+id: 430
+name: Anexos 022 - SATMP Compromiso Laboral
+description: Anexos 022 - SATMP Compromiso Laboral
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-13 13:41:26 Z
+updated_at: 2012-08-13 13:41:26 Z
+label: Documento sustentador de Compromiso Laboral
+hint: ""
+view_class: horizontal
+serial: 

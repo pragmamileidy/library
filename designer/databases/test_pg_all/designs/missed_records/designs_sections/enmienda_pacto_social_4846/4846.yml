@@ -1,0 +1,16 @@
+--- 
+id: 4846
+design_id: 270
+section_id: 360
+name: Enmienda Pacto Social
+created_at: 2015-05-21 14:04:07 Z
+updated_at: 2015-05-21 14:04:07 Z
+label: Enmienda Pacto Social
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2079\":{\"2249\":{\"required\":\"required\"},\"2251\":{\"required\":\"required\"},\"2253\":{\"required\":\"required\"},\"2252\":{\"required\":\"required\"},\"2254\":{\"required\":\"required\"},\"2255\":{\"required\":\"required\"},\"2256\":{\"required\":\"required\"}},\"2078\":{\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"}},\"2172\":{\"567\":{\"required\":\"required\"},\"3342\":{\"required\":\"required\"}},\"2817\":{\"3283\":{\"required\":\"required\"},\"3284\":{\"required\":\"required\"},\"3285\":{\"required\":\"required\"},\"3286\":{\"required\":\"required\"},\"3287\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

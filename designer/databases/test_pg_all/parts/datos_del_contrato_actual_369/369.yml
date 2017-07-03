@@ -1,0 +1,17 @@
+--- 
+id: 369
+name: Datos del Contrato Actual
+description: Datos del Contrato Actual
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-22 00:11:27 Z
+updated_at: 2012-06-22 00:11:27 Z
+label: Datos del Contrato Actual
+hint: ""
+view_class: horizontal
+serial: 

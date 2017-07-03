@@ -1,0 +1,30 @@
+--- 
+id: 1147
+part_id: 224
+field_id: 31
+name: "Ficha de comprobaci\xC3\xB3n de salario o talonario de cheque del fallecido/a -es opcional-"
+created_at: 2012-05-02 13:54:11 Z
+updated_at: 2017-06-04 00:28:05.640175 Z
+label: "Ficha de comprobaci\xC3\xB3n de salario o talonario de cheque del fallecido/a -es opcional-"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1c6e1e12-d10c-44b7-b18a-3ea216acb045
+version: 20170603-202805

@@ -1,0 +1,19 @@
+--- 
+id: 2493
+section_id: 433
+part_id: 265
+name: Datos del funcionario Generico
+created_at: 2013-01-18 21:37:52 Z
+updated_at: 2013-03-06 19:41:11 Z
+label: "Detalle de la Revisi\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

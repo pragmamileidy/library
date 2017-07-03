@@ -1,0 +1,51 @@
+--- 
+id: 1074
+name: Paso 9 - Mensajes Sujetos
+label: Mensajes Sujetos
+description: ""
+fill_step_id: 545
+created_at: 2013-01-24 18:30:05 Z
+updated_at: 2014-04-11 14:55:02 Z
+include: "{\"2364\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2369\":{\"2445\":{\"2868\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2869\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2446\":{\"2870\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3110\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2447\":{\"2873\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2874\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2875\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2448\":{\"2880\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2881\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2451\":{\"2889\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2890\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2452\":{\"2891\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2453\":{\"2876\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2877\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2878\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2879\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,next_steps,close,close_and_save,save
+on_becoming: "#Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"mail_subjects\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  CARGARTRAMITE_EMAIL\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.cargartramite_email.cargarsolicitud\", \"Llenar formularios asociados a la Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto. \")\r\n\
+  form_data.set(\"mail_subjects.cargartramite_email.anularpaso\", \"Solicitud de Anteproyecto de Construcci\xC3\xB3n cancelado.\")\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.suelos_email.verificarsuelos\", \"En espera de verificaci\xC3\xB3n de uso de suelo por parte de la entidad.\")\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.contraparte_email.notificarcontraparte\", \"Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto en aprobaci\xC3\xB3n por parte del Promotor. Tr\xC3\xA1mite Nro.: \")\r\n\
+  form_data.set(\"mail_subjects.contraparte_email.confirmarsolicitud\", \"Usted ha sido declarado como co-participante en la Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto. Tr\xC3\xA1mite Nro. \")\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.revisiontecnica\", \"La Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto se encuentra en Revisi\xC3\xB3n T\xC3\xA9cnica en \")\r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.aprobacion\", \"La Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyectoen se encuentra en aprobaci\xC3\xB3n de la decisi\xC3\xB3n del t\xC3\xA9cnico del MIVIOT\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  PAGOTRAMITES_EMAIL\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.pagotramites_email.ingresarpagos\", \"Ingresar pagos para la Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto. \")\r\n\
+  form_data.set(\"mail_subjects.pagotramites_email.recibirpago\", \"Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto en espera de revisi\xC3\xB3n de pagos en la Instituci\xC3\xB3n. \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  SOLICITUD_EMAIL\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.solicitud_email.recibirsolicitud\", \"La Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto se encuentra en la Bandeja de funcionarios del MIVIOT para su revisi\xC3\xB3n. \")\r\n\
+  form_data.set(\"mail_subjects.solicitud_email.rechazo\", \"Solicitud de Anteproyecto de Construcci\xC3\xB3n ha sido rechazado.\")\r\n\
+  form_data.set(\"mail_subjects.solicitud_email.reparo\", \"Se requieren correcciones para la Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto. \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  CERRARTRAMITE_EMAIL \r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.cerrartramite_email.cerrartramite\", \"Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto en espera de finalizaci\xC3\xB3n en MIVIOT. \")\r\n\
+  form_data.set(\"mail_subjects.cerrartramite_email.completartramite\", \"Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto completada. Tr\xC3\xA1mite Nro.: \")\r\n\
+  form_data.set(\"mail_subjects.cerrartramite_email.error\", \"Ha habido errores en la aplicaci\xC3\xB3n\")\r\n\
+  form_data.set(\"mail_subjects.cerrartramite_email.fallocompletartramite\", \"Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto no ha culminado con \xC3\xA9xito. Tr\xC3\xA1mite Nro.: \")"
+on_transition: ""
+views: 
+back_step: Paso 8 - Correos Sujetos
+next_step: Paso 10 -  Pasos
+position: 8
+ajax_calls: ""

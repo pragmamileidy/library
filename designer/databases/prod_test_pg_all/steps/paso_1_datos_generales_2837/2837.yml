@@ -1,0 +1,35 @@
+--- 
+id: 2837
+name: Paso 1 - Datos Generales
+label: Paso 1 - Datos del Representante Legal
+description: Datos del Representante Legal
+fill_step_id: 1528
+created_at: 2014-04-09 16:29:12 Z
+updated_at: 2014-04-09 16:29:12 Z
+include: "{\"1048\":{\"1452\":{\"3435\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"357\":{\"595\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"597\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"358\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"586\":{\"2450\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"806\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "# Poblar el campo N\xC3\xBAmero de solicitud con el n\xC3\xBAmero generado y el campo Fecha de Solicitud con la \r\n\
+  # fecha del ambiente en el momento en que se crea el formulario por primera vez.\r\n\
+  \r\n\
+  # Poblar los campos de la secci\xC3\xB3n DATOS DEL USUARIO con la informaci\xC3\xB3n del usuario que ingres\xC3\xB3.\r\n\
+  \r\n\
+  # Si el usuario que ingres\xC3\xB3 dice actuar en nombre propio, poblar la secci\xC3\xB3n datos del solicitante con la \r\n\
+  # informaci\xC3\xB3n del usuario y datos del representante legal con la informaci\xC3\xB3n de la BDIN del Registro \r\n\
+  # P\xC3\xBAblico.\r\n\
+  \r\n\
+  # Si el usuario que ingres\xC3\xB3 dice actuar en nombre de un tercero, al llenar el campo RUC (on blur),\r\n\
+  # consultar la BDIN del Registro P\xC3\xBAblico y poblar las secciones datos del solicitante y datos del \r\n\
+  # representante legal con la informaci\xC3\xB3n obtenida.\r\n\
+  \r\n  "
+on_transition: "# Si no se consigue el RUC en la BDIN del Registro P\xC3\xBAblico, desplegar un mensaje de error y no permitir \r\n\
+  # avanzar\r\n\
+  \r\n\
+  # Si en TIPO DE SOLICITUD se selecciona RENOVACI\xC3\x93N, se debe validar que el campo Nro. DE\r\n\
+  # INSCRIPCI\xC3\x93N A RENOVAR est\xC3\xA9 poblado"
+views: 
+back_step: Paso 0 - Tipo de Solicitud
+next_step: Paso 2 - Datos del Producto
+position: 1
+ajax_calls: ""

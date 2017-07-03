@@ -1,0 +1,30 @@
+--- 
+id: 1337
+part_id: 152
+field_id: 27
+name: "\xC3\x81rea de Terreno"
+created_at: 2012-05-12 20:10:42 Z
+updated_at: 2017-06-04 00:31:13.708707 Z
+label: "\xC3\x81rea de Terreno"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar el \xC3\xA1rea del terreno  en el cual se encontrar\xC3\xA1 el proyecto."
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 13
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 53a77b77-7750-46b5-916f-9569f2d2a21d
+version: 20170603-203113

@@ -1,0 +1,30 @@
+--- 
+id: 2090
+part_id: 78
+field_id: 10
+name: Superficie
+created_at: 2012-07-20 21:12:07 Z
+updated_at: 2017-06-04 00:31:04.591616 Z
+label: Superficie de la Finca
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor ingresar un valor de superficie v\xC3\xA1lido. Ejemplos: 210.00Mts\xC2\xB2, 210.00, 80,00"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 12
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0433c09f-ac68-45e4-97b3-a87347d781b4
+version: 20170603-203104

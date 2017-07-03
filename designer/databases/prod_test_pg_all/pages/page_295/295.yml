@@ -1,0 +1,76 @@
+--- 
+id: 295
+position: 3
+selector: "{\"2811\":{\"656\":{\"758\":{},\"759\":{}}},\"2817\":{\"1782\":{\"1739\":{},\"1741\":{},\"1743\":{},\"1744\":{},\"1745\":{}}},\"2818\":{\"1785\":{\"1702\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xEF\xBF\xBDl es el formato b\xEF\xBF\xBDsico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xEF\xBF\xBDn no se han definido */\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n    position:absolute;\r\n    top:96px;\r\n    left:599px;\r\n    width:174px;\r\n    overflow:hidden;\r\n    height: 15px;\r\n    font-size: 11px;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n    position:absolute;\r\n    top:78px;\r\n    left:601px;\r\n    width:171px;\r\n    overflow:hidden;\r\n    height: 15px;\r\n   font-size: 11px;\r\n  }\r\n    .datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_nombredelafirma {\r\n    position:absolute;\r\n    top:177px;\r\n    left:229px;\r\n    width:513px;\r\n    overflow:hidden;\r\n  }\r\n  .datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_nombre {\r\n    position:absolute;\r\n    top:202px;\r\n    left:231px;\r\n    width:512px;\r\n    overflow:hidden;\r\n  }\r\n  .datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_telfono {\r\n    position:absolute;\r\n    top:251px;\r\n    left:231px;\r\n    width:512px;\r\n    overflow:hidden;\r\n  }\r\n  .datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_correoelectrnico {\r\n    position:absolute;\r\n    top:276px;\r\n    left:230px;\r\n    width:510px;\r\n    overflow:hidden;\r\n  }\r\n  .datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_direccin {\r\n    position:absolute;\r\n    top:226px;\r\n    left:232px;\r\n    width:512px;\r\n    overflow:hidden;\r\n  }\r\n  .actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:383px;\r\n\
+  \tleft:59px;\r\n\
+  \twidth:681px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 67px;\r\n  }\r\n    .actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar1 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:724px;\r\n\
+  \tleft:58px;\r\n\
+  \twidth:686px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 85px;\r\n  }\r\n  .actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar2 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:883px;\r\n\
+  \tleft:61px;\r\n\
+  \twidth:681px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 64px;\r\n  }\r\n    .actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar3 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:498px;\r\n\
+  \tleft:60px;\r\n\
+  \twidth:681px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 82px;\r\n  }\r\n      .actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar4 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:626px;\r\n\
+  \tleft:55px;\r\n\
+  \twidth:687px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 63px;\r\n  }\r\n      .actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar5 {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:40px;\r\n\
+  \tleft:59px;\r\n\
+  \twidth:681px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 82px;\r\n  }\r\n"
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_2.css\" />\r\n\
+  <title>Registro de Empresas y Declaraci\xC3\xB3n Jurada</title>\r\n\
+  </head>\r\n\
+  <body>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud\"] %>      </span>    </div>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud\"] %>      </span>    </div>\r\n    <div class=\"datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_nombre\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_nombredelafirma\"] %>      </span>    </div>\r\n\
+  \t    <div class=\"datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_nombredelafirma\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosGeneralesdelosDirectoriosyAbogadoIdneo_DatosGeneralesdelAbogadoIdneo_Nombre\"] %>      </span>    </div>\t\r\n    <div class=\"datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosGeneralesdelosDirectoriosyAbogadoIdneo_DatosGeneralesdelAbogadoIdneo_Telfono\"] %>      </span>    </div>\r\n    <div class=\"datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_correoelectrnico\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosGeneralesdelosDirectoriosyAbogadoIdneo_DatosGeneralesdelAbogadoIdneo_CorreoElectrnico\"] %>      </span>    </div>\r\n    <div class=\"datosgeneralesdelosdirectoriosyabogadoidneo_datosgeneralesdelabogadoidneo_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"DatosGeneralesdelosDirectoriosyAbogadoIdneo_DatosGeneralesdelAbogadoIdneo_Direccin\"] %>      </span>    </div>\r\n    <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar2\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar3\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar4\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  <div class=\"actividadesadesarrollarysusdetalles_actividadesadesarrollar_actividadesadesarrollar1\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ActividadesaDesarrollarysusDetalles_ActividadesaDesarrollar_ActividadesaDesarrollar\"] %>      </span>    </div>\r\n\
+  </body>\r\n\
+  </html>\r\n"
+print_design_id: 127
+created_at: 2013-05-13 16:41:36 Z
+updated_at: 2013-11-15 13:59:05 Z
+instances_selector: "{\"2811\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2817\":{\"value\":\"\",\"1782\":{\"value\":\"\",\"1739\":{\"value\":\"\"},\"1741\":{\"value\":\"\"},\"1743\":{\"value\":\"\"},\"1744\":{\"value\":\"\"},\"1745\":{\"value\":\"\"}}},\"2818\":{\"value\":\"\",\"1785\":{\"value\":\"\",\"1702\":{\"value\":\"\"}}}}"
+size: 

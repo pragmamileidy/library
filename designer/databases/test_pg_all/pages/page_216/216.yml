@@ -1,0 +1,270 @@
+--- 
+id: 216
+position: 1
+selector: "{\"1979\":{\"656\":{\"758\":{},\"759\":{}}},\"1980\":{\"1725\":{\"1468\":{},\"3962\":{},\"1883\":{},\"2477\":{},\"2478\":{}},\"1726\":{\"2456\":{},\"2457\":{},\"2458\":{},\"578\":{},\"2217\":{},\"585\":{},\"1124\":{},\"631\":{},\"594\":{}},\"1727\":{\"1483\":{}}},\"1981\":{\"595\":{\"567\":{},\"566\":{},\"1760\":{},\"2479\":{}},\"597\":{\"2456\":{},\"2457\":{},\"2458\":{},\"578\":{},\"2217\":{},\"585\":{},\"1124\":{},\"631\":{},\"594\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 92px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 67px;
+  	left: 728px;
+  	width: 293px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_datosbsicos_cdula {
+  	position: absolute;
+  	top: 342px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_datosbsicos_pasaporte {
+  	position: absolute;
+  	top: 342px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_datosbsicos_nombrecompleto {
+  	position: absolute;
+  	top: 307px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_datosbsicos_esalrgico {
+  	position: absolute;
+  	top: 487px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_datosbsicos_indicar {
+  	position: absolute;
+  	top: 523px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_provincia_lista {
+  	position: absolute;
+  	top: 342px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_distrito_lista {
+  	position: absolute;
+  	top: 377px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_corregimiento_lista {
+  	position: absolute;
+  	top: 378px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_calleoavenida {
+  	position: absolute;
+  	top: 415px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_nmerodecasaapartamento {
+  	position: absolute;
+  	top: 415px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_nmerodetelfono {
+  	position: absolute;
+  	top: 488px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_telfonoauxiliar {
+  	position: absolute;
+  	top: 559px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_nmerocelular {
+  	position: absolute;
+  	top: 523px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_direccinactual_correoelectrnico {
+  	position: absolute;
+  	top: 559px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuarionatural_informacinlaboral_lugardetrabajo {
+  	position: absolute;
+  	top: 450px;
+  	left: 274px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 711px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 747px;
+  	left: 276px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_datosdelaempresa_representantelegal {
+  	position: absolute;
+  	top: 855px;
+  	left: 276px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_datosdelaempresa_domiciliolegal {
+  	position: absolute;
+  	top: 891px;
+  	left: 276px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_provincia_lista {
+  	position: absolute;
+  	top: 927px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_distrito_lista {
+  	position: absolute;
+  	top: 927px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_corregimiento_lista {
+  	position: absolute;
+  	top: 963px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_calleoavenida {
+  	position: absolute;
+  	top: 963px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_nmerodecasaapartamento {
+  	position: absolute;
+  	top: 1000px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 783px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_telfonoauxiliar {
+  	position: absolute;
+  	top: 819px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_nmerocelular {
+  	position: absolute;
+  	top: 818px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelusuariojurdico_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 783px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 105
+created_at: 2013-04-01 15:57:29 Z
+updated_at: 2015-11-02 19:15:33 Z
+instances_selector: "{\"1979\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1980\":{\"value\":\"\",\"1725\":{\"value\":\"\",\"1468\":{\"value\":\"\"},\"3962\":{\"value\":\"\"},\"1883\":{\"value\":\"\"},\"2477\":{\"value\":\"\"},\"2478\":{\"value\":\"\"}},\"1726\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"578\":{\"value\":\"\"},\"2217\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"1124\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"1727\":{\"value\":\"\",\"1483\":{\"value\":\"\"}}},\"1981\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"},\"1760\":{\"value\":\"\"},\"2479\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"578\":{\"value\":\"\"},\"2217\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"1124\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}}}"
+size: ""

@@ -1,0 +1,301 @@
+--- 
+id: 43
+name: Paso 1 - Datos generales
+label: Datos Generales
+description: "<br>Informaci\xC3\xB3n del tipo de solicitud del oferente, del solicitante  y de la junta directiva</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 13
+created_at: 2012-03-22 15:06:20 Z
+updated_at: 2017-04-18 17:13:42.807916 Z
+include: "{\"5302\":{\"3704\":{\"567\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3342\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"5301\":{\"3699\":{\"1323\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1320\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"545\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3697\":{\"4190\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4121\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4122\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3700\":{\"4128\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4130\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4132\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4139\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4142\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4143\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4157\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "\r\n\
+  #Usado en print design\r\n nombre1 =  form_data.get(\"datos_del_solicitante.datos_persona_natural.primer_nombre\")\r\n nombre2 =  form_data.get(\"datos_del_solicitante.datos_persona_natural.segundo_nombre\")\r\n nombre3 =  form_data.get(\"datos_del_solicitante.datos_persona_natural.primer_apellido\")\r\n nombre4 =  form_data.get(\"datos_del_solicitante.datos_persona_natural.segundo_apellido\")\r\n nombre_completo = \"#{nombre1} #{nombre2} #{nombre3} #{nombre4}\" \r\n form_data.set(\"datos_del_solicitante.datos_persona_natural.nombre_completo\",nombre_completo)"
+on_transition: "#Oferente\r\n\
+  _dato = form_data.get(\"datos_del_oferente.datos_de_la_empresa.ruc\")\r\n\
+  tipo_s = form_data.get(\"datos_del_oferente.datos_de_la_empresa.tipo_sociedad\")\r\n\
+  \r\n\
+  result = WebserviceConsumer.get('/service/bdin_registro_publico_ruc/find.json?ruc=' + \"#{_dato}\" +'&tipo_sociedad=' + \"#{tipo_s}\").parsed_response\r\n\
+  data = result[\"response\"]\r\n\
+  \r\n\
+  result1 = WebserviceConsumer.get('/service/bdin_mef_obtener_digito_verificador/find.json?ruc=' + \"#{_dato}\").parsed_response\r\n\
+  data1 = result1[\"response\"]\r\n\
+  ## Chantal Valverde 18-Abr-2017, comentado porque bdin_mef_obtener_digito_verificador trae null\r\n\
+  ##if !data.nil? && !data1.nil?\r\n\
+  if !data.nil?\r\n  form_data.set(\"datos_del_oferente.datos_de_la_empresa.nombre\",data[\"nombre_empresa\"])\r\n  form_data.set(\"datos_del_oferente.datos_de_la_empresa.digito_verficador\",data1[\"digitoVerificador\"])                 \r\n\
+  ## Descomentados por Chantal Valverde  \r\n  form_data.set(\"datos_del_oferente.informacion_de_residencia.provincia\",data[\"provincia\"])\r\n  form_data.set(\"datos_del_oferente.informacion_de_residencia.distrito\",data[\"distrito\"])\r\n  form_data.set(\"datos_del_oferente.informacion_de_residencia.corregimiento\",data[\"corregimiento\"])\r\n  form_data.set(\"datos_del_oferente.informacion_de_residencia.numero_de_telefono\",data[\"tlf_movil\"])\r\n  form_data.set(\"datos_del_oferente.informacion_de_residencia.numero_de_fax\",data[\"tlf_fax\"])\r\n  form_data.set(\"datos_del_oferente.informacion_de_residencia.correo_electronico\",data[\"email\"])\r\n\
+  ## Descomentados hasta aqu\xC3\xAD por Chantal Valverde  \r\n  form_data.set(\"datos_del_oferente.registro_de_empresa_rno.ficha\",data[\"ficha\"])\r\n  form_data.set(\"datos_del_oferente.registro_de_empresa_rno.documento\",data[\"doc_redi\"])\r\n\
+  ## Descomentados por Chantal Valverde  \r\n  form_data.set(\"datos_del_oferente.registro_de_empresa_rno.fecha_de_constitucion\",data[\"fecha_inscripcion\"])\r\n  form_data.set(\"datos_del_oferente.registro_de_empresa_rno.productos_a_comercializar\",data[\"licencia_operacion\"])\r\n\
+  ## Descomentados hasta aqu\xC3\xAD por Chantal Valverde  \r\n\
+  else\r\n  transition_errors << \"Los datos del oferente no fueron encontrados, por favor verifique. \"\r\n\
+  end"
+views: 
+back_step: Paso 0 - Tipo de solicitud
+next_step: Paso 2 - Datos del Oferente y Miembros de la Junta Directiva
+position: 1
+ajax_calls: |-
+  $(document).ready(function(){
+  
+    cedula = $("#field_datos_del_solicitante_datos_persona_natural_cedula");
+    if ($(cedula).val() == ""){
+      $("#field_datos_del_solicitante_datos_persona_natural_cedula").parents(".field-box").hide();
+      $("#field_datos_del_solicitante_datos_persona_natural_pasaporte").parents(".field-box").show();
+    }
+    pasaporte = $("#field_datos_del_solicitante_datos_persona_natural_pasaporte");
+    if ($(pasaporte).val() == "") {
+      $("#field_datos_del_solicitante_datos_persona_natural_cedula").parents(".field-box").show();
+      $("#field_datos_del_solicitante_datos_persona_natural_pasaporte").parents(".field-box").hide();
+    }
+  
+  });
+  
+  $(function() {
+  $('#id_del_combo_distritos').html("");
+  $('#id_del_combo_corregimientos').html("");
+  });
+  $( function() {
+      $("#field_datos_del_solicitante_direccion_provincia_lista").change(function(){
+        var prov = $("#field_datos_del_solicitante_direccion_provincia_lista").find(':selected').val();
+        distritos(prov);
+      });
+      $("#field_datos_del_solicitante_direccion_distrito_lista").change(function(){
+        var distrito = $("#field_datos_del_solicitante_direccion_distrito_lista").find(':selected').val();
+        corregimientos(distrito);
+      });
+  });
+  
+  function distritos(provincia) {
+   params = {
+              "service_name":"ws_panama_distritos/where",
+              "provincia":provincia
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+          var dist;
+          var html_options = "";
+          for (x in data){
+            dist = data[x];
+            html_options = html_options+'<option value="'+dist["distrito"] +'">'+dist["distrito"] +'</option>'
+          } 
+          $("#field_datos_del_solicitante_direccion_distrito_lista").html(html_options);
+          $("#field_datos_del_solicitante_direccion_corregimiento_lista").html("");
+              }
+            );
+  }
+  function corregimientos(distrito) {
+   params = {
+              "service_name":"ws_panama_corregimientos/where",
+              "distrito":distrito
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+          var corr;
+          var html_options = "";
+          for (x in data){
+            corr = data[x];
+            html_options = html_options+'<option value="'+corr["corregimiento"] +'">'+corr["corregimiento"] +'</option>'
+          } 
+          $("#field_datos_del_solicitante_direccion_corregimiento_lista").html(html_options);
+              }
+            );
+  }

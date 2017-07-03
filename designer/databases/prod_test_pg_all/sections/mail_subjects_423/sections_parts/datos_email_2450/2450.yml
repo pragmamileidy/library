@@ -1,0 +1,19 @@
+--- 
+id: 2450
+section_id: 423
+part_id: 513
+name: datos_email
+created_at: 2013-01-14 21:03:17 Z
+updated_at: 2013-01-14 21:04:56 Z
+label: "Mensaje de Correcci\xC3\xB3n de Datos"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2738\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

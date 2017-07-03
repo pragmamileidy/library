@@ -1,0 +1,19 @@
+--- 
+id: 1212
+section_id: 57
+part_id: 50
+name: "A\xC3\xB1os de Servicio"
+created_at: 2012-04-27 15:21:12 Z
+updated_at: 2012-04-27 15:21:12 Z
+label: "A\xC3\xB1os de Servicio"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Indique cu\xC3\xA1ntos a\xC3\xB1os lleva laborando en esta Empresa o Instituci\xC3\xB3n"
+help: Favor especificar la cantidad solicitada
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

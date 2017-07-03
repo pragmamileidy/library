@@ -1,0 +1,30 @@
+--- 
+id: 1519
+part_id: 277
+field_id: 1
+name: Cantidad de personas que laboran en su familia
+created_at: 2012-06-01 14:39:34 Z
+updated_at: 2017-06-04 00:31:46.659266 Z
+label: Cantidad de personas que laboran en su familia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Favor introduzca un valor entero
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 100
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 24
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a5e61596-5d0e-4e9a-8baf-0ea793dab800
+version: 20170603-203146

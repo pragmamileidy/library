@@ -1,0 +1,30 @@
+--- 
+id: 1609
+part_id: 296
+field_id: 1
+name: "N\xC3\xBAmero"
+created_at: 2012-06-05 19:42:13 Z
+updated_at: 2017-06-04 00:21:48.214715 Z
+label: "N\xC3\xBAmero"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Favor introduzca un valor entero
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1fd305e2-ebc8-46e5-ad64-8dbe4885da1d
+version: 20170603-202148

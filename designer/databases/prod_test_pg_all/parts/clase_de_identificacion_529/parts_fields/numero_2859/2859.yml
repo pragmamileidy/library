@@ -1,0 +1,30 @@
+--- 
+id: 2859
+part_id: 529
+field_id: 1
+name: "N\xC3\xBAmero"
+created_at: 2013-01-24 20:34:28 Z
+updated_at: 2017-06-04 00:24:49.198116 Z
+label: "N\xC3\xBAmero"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar el n\xC3\xBAmero de producci\xC3\xB3n del fonograma. Por favor introduzca un valor entero, solo se admitir\xC3\xA1n n\xC3\xBAmeros del cero (0) al nueve (9)"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: /^[0-9]+$/
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: aae3e405-35d5-4bcd-a3cd-d90881a8f3f6
+version: 20170603-202449

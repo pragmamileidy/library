@@ -1,0 +1,21 @@
+--- 
+id: 3667
+section_id: 290
+part_id: 38
+name: Certificacion de horario de la otra empresa
+created_at: 2017-02-26 02:14:57.952057 Z
+updated_at: 2017-02-26 02:22:11.087264 Z
+label: "Certificaci\xC3\xB3n de horario de la otra empresa, firmada por su jefe inmediato"
+min_instances: 0
+max_instances: 1
+depends_on: "option = form_data.get(\"horario_de_regencia.trabaja_en_otra_empresa.seleccione\")\r\n\
+  \r\n\
+  option == \"S\xC3\xAD\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

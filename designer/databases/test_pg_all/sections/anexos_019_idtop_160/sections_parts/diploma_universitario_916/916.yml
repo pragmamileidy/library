@@ -1,0 +1,19 @@
+--- 
+id: 916
+section_id: 160
+part_id: 38
+name: Diploma Universitario
+created_at: 2012-03-29 22:33:58 Z
+updated_at: 2015-08-10 20:41:46 Z
+label: Diploma Universitario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: En la copia deben aparecer todos los registros formales. Favor ver ayuda.
+help: "En el caso de haber obtenido el Diploma Universitario en una universidad privada, fiscalizada por la Universidad Tecnol\xC3\xB3gica de Panam\xC3\xA1, debe presentarse el Sello de Verificaci\xC3\xB3n, de acuerdo con la Resoluci\xC3\xB3n de la UTP No. CACAD-R-04-2004 de 9 de Julio del 2004, publicada en Gaceta Oficial 251 de 3 de Diciembre de 2004 (se requiere para los t\xC3\xADtulos expedidos a partir del 1 de Enero de 2005)."
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

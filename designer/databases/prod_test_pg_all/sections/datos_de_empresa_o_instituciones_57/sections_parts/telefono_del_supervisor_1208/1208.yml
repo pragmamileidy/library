@@ -1,0 +1,19 @@
+--- 
+id: 1208
+section_id: 57
+part_id: 51
+name: "Tel\xC3\xA9fono del Supervisor"
+created_at: 2012-04-27 15:21:12 Z
+updated_at: 2012-04-27 15:21:12 Z
+label: "Tel\xC3\xA9fono"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Ingrese el n\xC3\xBAmero de tel\xC3\xA9fono donde se puede ubicar a su supervisor"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

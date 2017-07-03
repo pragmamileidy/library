@@ -1,0 +1,30 @@
+--- 
+id: 24
+name: Confirme
+description: "Campo para seleccionar la confirmaci\xC3\xB3n a una pregunta, valores posibles Si/No"
+version: 
+status: Draft
+label: Radio
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-02 18:34:06 Z
+updated_at: 2012-08-28 16:34:42 Z
+values_list: "\"S\xC3\xAD\", \"No\""
+keys_list: "\"S\xC3\xAD\", \"No\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

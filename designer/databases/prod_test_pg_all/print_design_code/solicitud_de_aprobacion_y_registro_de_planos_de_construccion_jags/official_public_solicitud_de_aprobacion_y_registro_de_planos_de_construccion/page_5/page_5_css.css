@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  background-image: url(RUTA_IMAGEN.png);
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+
+  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+	position: absolute;
+	top: 96px;
+	left: 722px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+	position: absolute;
+	top: 70px;
+	left: 613px;
+	width: 401px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora5_nombredelaentidad {
+	position: absolute;
+	top: 175px;
+	left: 286px;
+	width: 480px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora5_usuario {
+	position: absolute;
+	top: 213px;
+	left: 286px;
+	width: 260px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora5_nmerodeobservacin {
+	position: absolute;
+	top: 213px;
+	left: 772px;
+	width: 147px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora5_observaciones {
+	position: absolute;
+	top: 279px;
+	left: 47px;
+	width: 941px;
+	height: 52px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora6_nombredelaentidad {
+	position: absolute;
+	top: 394px;
+	left: 282px;
+	width: 487px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora6_usuario {
+	position: absolute;
+	top: 433px;
+	left: 286px;
+	width: 264px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora6_nmerodeobservacin {
+	position: absolute;
+	top: 432px;
+	left: 777px;
+	width: 135px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora6_observaciones {
+	position: absolute;
+	top: 496px;
+	left: 52px;
+	width: 934px;
+	height: 54px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora7_nombredelaentidad {
+	position: absolute;
+	top: 588px;
+	left: 282px;
+	width: 487px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora7_usuario {
+	position: absolute;
+	top: 626px;
+	left: 281px;
+	width: 264px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora7_nmerodeobservacin {
+	position: absolute;
+	top: 626px;
+	left: 777px;
+	width: 135px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora7_observaciones {
+	position: absolute;
+	top: 689px;
+	left: 48px;
+	width: 934px;
+	height: 54px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora8_nombredelaentidad {
+	position: absolute;
+	top: 790px;
+	left: 282px;
+	width: 487px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora8_usuario {
+	position: absolute;
+	top: 827px;
+	left: 284px;
+	width: 264px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora8_nmerodeobservacin {
+	position: absolute;
+	top: 828px;
+	left: 777px;
+	width: 135px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora8_observaciones {
+	position: absolute;
+	top: 890px;
+	left: 51px;
+	width: 934px;
+	height: 54px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora9_nombredelaentidad {
+	position: absolute;
+	top: 1001px;
+	left: 284px;
+	width: 487px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora9_usuario {
+	position: absolute;
+	top: 1040px;
+	left: 284px;
+	width: 264px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora9_nmerodeobservacin {
+	position: absolute;
+	top: 1040px;
+	left: 777px;
+	width: 135px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .entidadevaluadorarevisiones_entidadevaluadora9_observaciones {
+	position: absolute;
+	top: 1103px;
+	left: 47px;
+	width: 934px;
+	height: 54px;
+	overflow: hidden;
+  }

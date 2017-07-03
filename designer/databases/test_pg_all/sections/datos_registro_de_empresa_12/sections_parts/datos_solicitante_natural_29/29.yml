@@ -1,0 +1,20 @@
+--- 
+id: 29
+section_id: 12
+part_id: 118
+name: "Datos Solicitante Natural "
+created_at: 2011-11-03 22:33:26 Z
+updated_at: 2012-05-16 20:46:01 Z
+label: "Datos Persona Natural "
+min_instances: 1
+max_instances: 1
+depends_on: "# Depende del tipo de solicitante (en esta secci\xC3\xB3n) sea Persona Natural\r\n\
+  # Habilitar Nombre, tipo de documento, y c\xC3\xA9dula o pasaporte seg\xC3\xBAn sea el caso\r\n"
+manage_as_confidential: false
+include: "{\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"542\":{},\"544\":{},\"545\":{},\"546\":{},\"547\":{},\"548\":{},\"550\":{},\"551\":{},\"552\":{},\"553\":{},\"543\":{},\"549\":{},\"593\":{},\"610\":{},\"612\":{},\"627\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 11

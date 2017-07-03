@@ -1,0 +1,19 @@
+--- 
+id: 677
+section_id: 136
+part_id: 38
+name: Foto Carnet
+created_at: 2012-03-21 05:11:33 Z
+updated_at: 2012-04-09 20:43:55 Z
+label: Foto Carnet
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

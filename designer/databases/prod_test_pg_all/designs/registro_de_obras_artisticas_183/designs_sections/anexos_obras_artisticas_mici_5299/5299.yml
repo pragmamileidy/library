@@ -1,0 +1,16 @@
+--- 
+id: 5299
+design_id: 183
+section_id: 596
+name: Anexos - Obras Artisticas MICI
+created_at: 2017-02-27 17:26:54.642805 Z
+updated_at: 2017-02-27 18:19:25.491483 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3670\":{\"210\":{\"required\":\"required\"}},\"3671\":{\"210\":{\"required\":\"required\"}},\"3683\":{\"210\":{\"required\":\"required\"}},\"3674\":{\"210\":{\"required\":\"unrequired\"}},\"3676\":{\"210\":{\"required\":\"required\"}},\"3675\":{\"210\":{\"required\":\"unrequired\"}},\"3677\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

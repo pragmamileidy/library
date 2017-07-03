@@ -1,0 +1,19 @@
+--- 
+id: 124
+section_id: 19
+part_id: 59
+name: "Inspecci\xC3\xB3n instrumentos2"
+created_at: 2011-11-09 19:46:53 Z
+updated_at: 2012-04-10 18:42:32 Z
+label: "Inspecci\xC3\xB3n de Instrumentos y Sistemas Afines (Parte II)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"306\":{},\"305\":{}}"
+hint: ""
+help: ""
+rows_names: "\"Sistema Pitot - Est\xC3\xA1tico\",\"Sistema de Referencia de Air Data Inertial\",\"Sistema est\xC3\xA1tico alterno\",\"Sistema de Instrumentos Electr\xC3\xB3nicos de Vuelo (EFIS)\",\"Sistema de Indicaci\xC3\xB3n del Tren de Aterrizaje\",\"Sistema de Indicaci\xC3\xB3n de  Alerta de Falla (EFAS)\""
+rows_labels: "\"Sistema Pitot - Est\xC3\xA1tico\",\"Sistema de Referencia de Air Data Inertial\",\"Sistema est\xC3\xA1tico alterno\",\"Sistema de Instrumentos Electr\xC3\xB3nicos de Vuelo (EFIS)\",\"Sistema de Indicaci\xC3\xB3n del Tren de Aterrizaje\",\"Sistema de Indicaci\xC3\xB3n de  Alerta de Falla (EFAS)\""
+view_class: 
+order_input: 3

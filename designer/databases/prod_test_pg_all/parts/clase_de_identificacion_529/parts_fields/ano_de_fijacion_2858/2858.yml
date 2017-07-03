@@ -1,0 +1,30 @@
+--- 
+id: 2858
+part_id: 529
+field_id: 236
+name: "A\xC3\xB1o de Fijaci\xC3\xB3n"
+created_at: 2013-01-24 20:34:28 Z
+updated_at: 2017-06-04 00:22:31.821589 Z
+label: "A\xC3\xB1o de Fijaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Fecha en que el autor o productor realiz\xC3\xB3 la incorporaci\xC3\xB3n de los sonidos sobre una base material que permita su percepci\xC3\xB3n, reproducci\xC3\xB3n o comunicaci\xC3\xB3n"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2693e656-e87e-4131-8adb-baffbb648bcf
+version: 20170603-202231

@@ -1,0 +1,19 @@
+--- 
+id: 1614
+section_id: 245
+part_id: 63
+name: "Precauciones y Advertencias Generales (L\xC3\xADmites M\xC3\xA1ximos, Manejo)"
+created_at: 2012-05-21 00:03:14 Z
+updated_at: 2012-05-21 00:14:17 Z
+label: "Precauciones y Advertencias Generales (L\xC3\xADmites M\xC3\xA1ximos, Manejo)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"331\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 14

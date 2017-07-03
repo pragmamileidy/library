@@ -1,0 +1,343 @@
+--- 
+id: 3240
+name: Paso 2 - Datos de los Titulares
+label: Datos del(os) Titular(es)
+description: "<br/>\r\n\
+  Informaci\xC3\xB3n del(os) Titular(es)\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 1736
+created_at: 2016-02-23 14:25:14.104874 Z
+updated_at: 2017-04-28 14:29:43.256763 Z
+include: "{\"5054\":{\"3208\":{\"3959\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3987\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3985\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1474\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1475\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1479\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1477\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3981\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4015\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3983\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3694\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3695\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3717\":{\"views\":\"hidden\",\"enabled\":\"enabled\"},\"4006\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4011\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4012\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4013\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4014\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3209\":{\"572\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3595\":{\"1083\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3267\":{\"3651\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3268\":{\"3651\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3593\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3610\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3594\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"5104\":{\"3597\":{\"3989\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3992\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3993\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3990\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3598\":{\"3722\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"5105\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"5069\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "#JA - VALIDACION PARA SETEAR EN CAMPOS OCULTOS QUE LUEGO EVALUAR\xC3\x89 EN EL CONFIG PARA INICIAR O NO LAS TAREAS\r\n\
+  (1..20).each do |_num|\r\n  existe_en_app = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_psp\")\r\n  owner = form_data.get(\"datos_del_solicitante.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n  titular = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n  sentencias = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_data\")\r\n\
+  \r\n\
+  \r\n  #LA TAREA DE APROBACI\xC3\x93N POR PARTE DEL TITULAR\r\n  if ((existe_en_app == \"El titular est\xC3\xA1 registrado en el portal.\") && (owner != titular))\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_aprobacion_titular\", \"true\")\r\n  else\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_aprobacion_titular\", \"false\")\r\n  end\r\n  #################### FIN VALIDACION TAREA DE APROBACI\xC3\x93N POR PARTE DEL TITULAR####################\r\n\
+  \r\n\
+  \r\n  #LA TAREA DE REVISI\xC3\x93N DE SENTENCIAS POR PARTE DEL AGENTE#:::\r\n  if (sentencias == \"Titular existe en PNC.\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_sentencias\", \"true\")\r\n  else\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_sentencias\", \"false\")\r\n  end\r\n  #################### FIN VALIDACION LA TAREA DE REVISI\xC3\x93N DE SENTENCIAS ####################\r\n\
+  \r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #JA - VALIDACION PARA SETEAR EN CAMPOS OCULTOS QUE LUEGO EVALUAR\xC3\x89 EN EL CONFIG PARA INICIAR O NO LA TAREA DE FIRMA\r\n\
+  \r\n\
+  requiere_firma = form_data.get(\"retiro_solvencia_policial.firma_director.si_no\")\r\n\
+  \r\n\
+  #LA TAREA DE FIRMAR SOLVENCIA\r\n\
+  (1..20).each do |_num|\r\n  \r\n  #LA TAREA DE FIRMA DE SOLVENCIA\r\n  if (requiere_firma == \"S\xC3\x8D\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_firma\", \"true\")\r\n  else\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_firma\", \"false\")\r\n  end\r\n\
+  \r\n\
+  end\r\n\
+  #################### FIN VALIDACION LA TAREA DE FIRMA ####################\r\n\
+  \r\n\
+  \r\n\
+  ## VALIDACI\xC3\x93N PARA CREAR O NO TAREA DE ENTREGA\r\n\
+  \r\n\
+  (1..20).each do |_num|\r\n  sentencias = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_data\")\r\n  entrega_fisico = form_data.get(\"retiro_solvencia_policial.retiro_solvencia_policial.version_en_fisico\")\r\n\
+  \r\n  # Tiene sentencias, no pidio entrega \r\n  if ((sentencias == \"Titular existe en PNC.\") && (entrega_fisico == \"NO\"))\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_entrega\", \"true\")\r\n  # Tiene sentencias, pidio entrega\r\n  elsif ((sentencias == \"Titular existe en PNC.\") && (entrega_fisico == \"S\xC3\x8D\"))\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_entrega\", \"true\")\r\n  # No tiene sentencias, pidio entrega\r\n  elsif ((sentencias != \"Titular existe en PNC.\") && (entrega_fisico == \"S\xC3\x8D\"))\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_entrega\", \"true\")\r\n  else\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_entrega\", \"false\")\r\n  end\r\n\
+  \r\n\
+  end\r\n\
+  #################### FIN VALIDACION DE TAREA DE ENTREGA ####################\r\n\
+  \r\n\
+  \r\n\
+  ################## INICIO DE VALIDACION DE LA TAREA DE EMISI\xC3\x93N DE SOLVENCIA ##################\r\n\
+  ################## DEJAR SIEMPRE DE ULTIMO EN LAS VALIDACIONES DE LAS TAREAS A CREAR ##################\r\n\
+  requiere_fisico = form_data.get(\"retiro_solvencia_policial.retiro_solvencia_policial.version_en_fisico\")\r\n\
+  existe_en_app = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.campo_psp\")\r\n\
+  sentencias = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.campo_data\")\r\n\
+  \r\n\
+  \r\n\
+  (1..20).each do |_num|\r\n  \r\n  nro_documento = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n\
+  \r\n\
+  \r\n  result = WebserviceConsumer.get('/service/helper_pnc/call.json?method=doc_records_policivos').parsed_response[\"response\"]\r\n  solvencia = result[\"vigentes\"].select{|rp| rp[\"titular\"][\"person_gov_id_number\"] == nro_documento.to_s }\r\n\
+  \r\n\
+  \r\n\
+  \r\n  if ((sentencias != \"Titular existe en PNC.\") && (existe_en_app == \"El titular est\xC3\xA1 registrado en el portal.\") && (requiere_firma == \"NO\") && (requiere_fisico == \"NO\")) || !solvencia.blank?\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_emision\", \"true\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_entrega\", \"false\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_firma\", \"false\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_sentencias\", \"false\")\r\n  else\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto_emision\", \"false\")\r\n  end\r\n\
+  \r\n\
+  end \r\n\
+  #################### FIN VALIDACION LA TAREA DE EMISION DE SENTENCIAS ####################\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #::::::::::::::DV: Integraci\xC3\xB3n guardar nro de documento Datos de los Titulares::::::::::::::#\r\n\
+  \r\n\
+  _titular = form_data.get(\"tipo_de_persona_pnc.es_titular_o_no.si_no\")\r\n\
+  if _titular == \"S\xC3\x8D\"\r\n  nro_doc_t = form_data.get(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n  form_data.set(\"datos_del_titular_instance_1.datos_basicos_de_persona_natural.doc_oculto\", nro_doc_t)\r\n\
+  else\r\n  (1..20).each do |_num|\r\n    nro_doc_d = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\")\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.doc_oculto\", nro_doc_d)\r\n  end\r\n\
+  end\r\n  \r\n\
+  \r\n\
+  # VALIDACION DE FECHA DE NACIMIENTO\r\n\
+  (1..20).each do |_num|\r\n  fecha_nac = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.fecha_de_nacimiento\")\r\n  #form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.edad\",\"\")\r\n  if fecha_nac.present?\r\n    if (fecha_nac.to_date > Date.today)\r\n      transition_errors << \"La fecha de nacimiento del Titular #{_num} no puede ser mayor a la fecha actual. Por favor, verifique.\"\r\n    end\r\n  end\r\n\
+  \r\n  # CALCULAR LA EDAD\r\n  fechan = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.fecha_de_nacimiento\")\r\n  if fechan.present?\r\n    edad = ((Date.today - fechan.to_date).to_f / 365).to_i\r\n    #if (edad.to_i < 17.to_i)\r\n    #  transition_errors << \"La edad del Titular #{_num} no debe ser menor a 18 a\xC3\xB1os de edad. Por favor, verifique\"\r\n    #end\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.edad\",edad)\r\n  end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #::: DV: AGREGADO 21/01/2016 :::#\r\n\
+  #:::: SI EL TITULAR NO EXISTE EN LA DIJ Y NO ES EL owner, obtiene el nombre si el mismo viene vacio :::::#\r\n  (1..20).each do |_num|\r\n    primerNombre = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\")\r\n    segundoNombre = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_nombre\")\r\n    primerApellido = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\")\r\n    segundoApellido = form_data.get(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.segundo_apellido\")\r\n    nombreCompleto = \"#{primerNombre} #{segundoNombre} #{primerApellido} #{segundoApellido}\"\r\n    form_data.set(\"datos_del_titular_instance_#{_num}.datos_basicos_de_persona_natural.nombre_completo\",nombreCompleto.squish)\r\n  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  # Obtener valor del config\r\n\
+  valor = @config.route(\"Rates-payment-payment-payment\")\r\n\
+  \r\n\
+  if valor == \"Electr\xC3\xB3nico\"\r\n\
+  \r\n        form_data.set(\"forma_de_pago.indique_la_forma_de_pago_generico.indique_la_forma_de_pago\", \"Electr\xC3\xB3nico\")\r\n\
+  \r\n\
+  end\r\n\
+  if valor == \"Manual\"\r\n\
+  \r\n        form_data.set(\"forma_de_pago.indique_la_forma_de_pago_generico.indique_la_forma_de_pago\", \"Manual\")\r\n\
+  \r\n\
+  end"
+views: 
+back_step: Paso 1 - Ingresar Datos del Solicitante
+next_step: Paso 3 - Requisitos de la Solicitud
+position: 2
+ajax_calls: "\r\n\
+  ///Cambiar el nombre del campo DIJ \r\n\
+  $( function() {\r\n        $(\"div\").each (function(){\r\n                if ($(this).html().trim() == \"DIJ\") { // aqu\xC3\xAD se coloca el nombre que se desea cambiar\r\n                        $(this).html(\"PNC\"); // Aqu\xC3\xAD se coloca el Nombre que se desea que se muestre\r\n                }   \r\n\
+  \r\n                if ($(this).html().trim() == \"PEL\") { // aqu\xC3\xAD se coloca el nombre que se desea cambiar\r\n                        $(this).html(\"\"); // Aqu\xC3\xAD se coloca el Nombre que se desea que se muestre\r\n                }     \r\n        });              \r\n\
+  });\r\n\
+  \r\n\
+  //#::: DV: Al seleccionar que no se tiene version en fisico deshabilitar firma del director :::#//\r\n\
+  $(document).ready(function(){\r\n  function ocultar(){\r\n    var valor1 = $('input[name=\"[field][retiro_solvencia_policial_retiro_solvencia_policial_version_en_fisico]\"]:checked').val();\r\n    if(valor1 == \"NO\" || valor1 == undefined){  \r\n      $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_sp\").parent().parent().hide();\r\n      $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_solvencia_policial\").parent().parent().hide();\r\n      $(\"#field_retiro_solvencia_policial_firma_director_si_no\").parent().parent().parent().parent().parent().hide();\r\n    }\r\n    $(function() {\r\n      $(\"input:radio\").click(function(){\r\n      check7(this);\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  //AV: FUNCION ALERT SI NO SELECCIONA OPCIONES CUANDO REQUERIERE VERSI\xC3\x93N EN FISICO\r\n\
+  function check007(obj){\r\n  if($(\"input[name='[field][retiro_solvencia_policial_retiro_solvencia_policial_version_en_fisico]']:radio:checked\" ).val()[0]=='S' && \r\n    $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_sp\").val().length == 0 &&\r\n    $(\"#field_retiro_solvencia_policial_firma_director_si_no\").val().length == 0 ){\r\n    alert(\"Los Campos, Indicar por qui\xC3\xA9n ser\xC3\xA1 retirado la Solvencia Policial y Firma del Director deben ser llenados\");\r\n    return false;\r\n  }\r\n\
+  \r\n  if($(\"input[name='[field][retiro_solvencia_policial_retiro_solvencia_policial_version_en_fisico]']:radio:checked\" ).val()[0]=='S' && \r\n    $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_sp\").val().length == 0 &&\r\n    $(\"#field_retiro_solvencia_policial_firma_director_si_no\").val().length > 0 ){\r\n    alert(\"Indicar por qui\xC3\xA9n ser\xC3\xA1 retirado la Solvencia Policial debe ser llenada\");\r\n    return false;\r\n  }\r\n\
+  \r\n  if($(\"input[name='[field][retiro_solvencia_policial_retiro_solvencia_policial_version_en_fisico]']:radio:checked\" ).val()[0]=='S' && \r\n    $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_sp\").val().length > 0 &&\r\n    $(\"#field_retiro_solvencia_policial_firma_director_si_no\").val().length == 0 ){\r\n    alert(\"Firma del Director debe ser llenado\");\r\n    return false;\r\n  }\r\n    return true;\r\n  }\r\n\
+  \r\n  $(\"input[id='Paso 3 - Adjuntar archivos']\").click(function(){\r\n    return check007(this);\r\n  });\r\n\
+  \r\n  $(\"input[value='Guardar y Cerrar']\").click(function(){\r\n    return check007(this);\r\n  });\r\n\
+  \r\n  $(\"input[value='Guardar']\").click(function(){\r\n    return check007(this);\r\n  });\r\n\
+  \r\n  function check7(obj){\r\n    if (obj.value == \"S\xC3\x8D\" && obj.name==\"[field][retiro_solvencia_policial_retiro_solvencia_policial_version_en_fisico]\"){\r\n      $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_sp\").parent().parent().show();\r\n      $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_solvencia_policial\").parent().parent().show();\r\n      $(\"#field_retiro_solvencia_policial_firma_director_si_no\").parent().parent().parent().parent().parent().show();  \r\n    } \r\n    if (obj.value == \"NO\" && obj.name==\"[field][retiro_solvencia_policial_retiro_solvencia_policial_version_en_fisico]\"){\r\n      $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_sp\").parent().parent().hide();\r\n      $(\"#field_retiro_solvencia_policial_retiro_solvencia_policial_retiro_solvencia_policial\").parent().parent().hide();\r\n      $(\"#field_retiro_solvencia_policial_firma_director_si_no\").parent().parent().parent().parent().parent().hide(); \r\n    }\r\n  } \r\n  }\r\n  ocultar();\r\n\
+  });\r\n\
+  \r\n\
+  //#::: DV: TIPO PASAPORTE = EXTRANJERO :::#//\r\n\
+  $(document).ready(function(){\r\n    //:::::::::::::Habilitar Campos Cuando el Tipo de Documento sea Pasaporte en CO-PARTICIPANTE ::::::::::::::::://\r\n  $.each( $('[id*=datos_del_titular_]'), function titular(index, campo) {       \r\n    var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n    if (pos == null){\r\n    pos = (this.id).match(/_instance_[\\d]/);\r\n    }   \r\n    var InicioRuta  = \"#field_datos_del_titular\";\r\n    var tipoDoc     = \"_datos_basicos_de_persona_natural_tipo_de_documento_el_salvador\";\r\n    //var tipoNac     = \"_datos_basicos_de_persona_natural_tipo_de_nacionalidad\";\r\n    var nacio     = \"_datos_basicos_de_persona_natural_nacionalidad\";\r\n    var doc     = \"_datos_basicos_de_persona_natural_cedula_pasaporte\";\r\n    var nom1    = \"_datos_basicos_de_persona_natural_primer_nombre\";\r\n    var nom2    = \"_datos_basicos_de_persona_natural_segundo_nombre\";\r\n    var ape1    = \"_datos_basicos_de_persona_natural_primer_apellido\";\r\n    var ape2    = \"_datos_basicos_de_persona_natural_segundo_apellido\";\r\n    //var apec    = \"_datos_basicos_de_persona_natural_apellido_de_casada\";\r\n    var fec     = \"_datos_basicos_de_persona_natural_fecha_de_nacimiento\";\r\n    var direccion   = \"_datos_de_ubicacion_direccion\";\r\n    var telefono  = \"_datos_de_ubicacion_numero_de_telefono\";\r\n    var correo    = \"_datos_de_ubicacion_correo_electronico\";\r\n    //campos validacion para crear tareas en el individual\r\n    var aptitular    = \"_datos_basicos_de_persona_natural_campo_oculto_aprobacion_titular\";\r\n    var sentencias    = \"_datos_basicos_de_persona_natural_campo_oculto_sentencias\";\r\n    var firma    = \"_datos_basicos_de_persona_natural_campo_oculto_firma\";\r\n    var entrega    = \"_datos_basicos_de_persona_natural_campo_oculto_entrega\";\r\n    var emision    = \"_datos_basicos_de_persona_natural_campo_oculto_emision\";\r\n    //fin campos ocultos\r\n\
+  \r\n    var conyuge    = \"_datos_del_conyuge_nombres_y_apellidos\";\r\n    var estado_familiar    = \"_datos_basicos_de_persona_natural_estado_familiar\";\r\n\
+  \r\n    var coincide    = InicioRuta.concat(pos);\r\n    var doc2    = coincide.concat(doc);\r\n    var tipoDoc2    = coincide.concat(tipoDoc);\r\n    //var tipoNac2    = coincide.concat(tipoNac);\r\n    var nacio2    = coincide.concat(nacio);\r\n    var nombre1_d   = coincide.concat(nom1);\r\n    var nombre2_d   = coincide.concat(nom2);\r\n    var apellido1_d = coincide.concat(ape1);\r\n    var apellido2_d = coincide.concat(ape2);\r\n    //var apellidocas = coincide.concat(apec);\r\n    var fecha_naci  = coincide.concat(fec);\r\n    var direcc    = coincide.concat(direccion);\r\n    var telef     = coincide.concat(telefono);\r\n    var email     =  coincide.concat(correo);\r\n    var aptitu     =  coincide.concat(aptitular);\r\n    var senten     =  coincide.concat(sentencias);\r\n    var fir     =  coincide.concat(firma);\r\n    var entre     =  coincide.concat(entrega);\r\n    var emis     =  coincide.concat(emision);\r\n\
+  \r\n    var conyu     =  coincide.concat(conyuge);\r\n    var estado_fam     =  coincide.concat(estado_familiar);\r\n\
+  \r\n    var inicio    = \"input[name='[field][datos_del_titular\";\r\n    var fin     = \"_datos_basicos_de_persona_natural_sexo]']\";\r\n    var coincide  = inicio.concat(pos);\r\n    var sex     = coincide.concat(fin);\r\n\
+  \r\n    \r\n    //PARA OCULAR PARTE DEL CONYUGE DEPENDIENDO DEL ESTADO FAMILIAR\r\n    $(conyu).parents(\".part-box\").hide();\r\n\
+  \r\n    $(estado_fam).change(function() {\r\n      if ($(estado_fam).find(':selected').val() == \"Soltero(a)\") {\r\n        $(conyu).parents(\".part-box\").hide();\r\n      } else{\r\n        $(conyu).parents(\".part-box\").show();\r\n      }\r\n    });\r\n    //FIN FUNCION PARA OCULTAR PARTE DEL CONYUGE\r\n\
+  \r\n\
+  \r\n\
+  //alert(nacio2);\r\n    $(aptitu).parent().parent().hide();\r\n    $(senten).parent().parent().hide();\r\n    $(fir).parent().parent().hide();\r\n    $(entre).parent().parent().hide();\r\n    $(emis).parent().parent().hide();\r\n\
+  \r\n    //$(tipoNac2).parent().parent().hide();\r\n    $(nacio2).parent().parent().hide();\r\n\
+  \r\n    if ($(tipoDoc2).html() == ''){\r\n            $(tipoDoc2).parents(\".section-box\").hide();\r\n        }else{\r\n            $(tipoDoc2).parents(\".section-box\").show();\r\n        }\r\n        \r\n    if ($(tipoDoc2).html() == \"Cedula\") {\r\n      $(nacio2).parent().parent().show();\r\n      //$(tipoNac2).parent().parent().show();\r\n      //$(nacio2).val(\"Salvadore\xC3\xB1o(a)\");\r\n      //$(nacio2).attr(\"disabled\",\"disabled\");\r\n      $(nacio2).parent().parent().hide();\r\n    } else if($(tipoDoc2).html() == \"Pasaporte\") {\r\n      $(nacio2).parent().parent().show();\r\n      //$(tipoNac2).parent().parent().hide();\r\n      $(nacio2).html(\"Extranjero\");\r\n    }\r\n\
+  \r\n    if($(tipoDoc2).html() == \"Pasaporte\") {\r\n      $(nombre1_d).removeAttr(\"disabled\");\r\n      $(nombre2_d).removeAttr(\"disabled\");\r\n      $(apellido1_d).removeAttr(\"disabled\");\r\n      $(apellido2_d).removeAttr(\"disabled\");\r\n      //$(apellidocas).removeAttr(\"disabled\");\r\n      $(fecha_naci).removeAttr(\"disabled\");\r\n      $(direcc).removeAttr(\"disabled\");\r\n      $(telef).removeAttr(\"disabled\");\r\n      $(email).removeAttr(\"disabled\");\r\n      //if (!sex.checked) {\r\n        $(sex).removeAttr(\"disabled\");\r\n      //}\r\n    }\r\n    if($(direcc).val() == ''){\r\n      $(direcc).removeAttr(\"disabled\");\r\n    }\r\n    if($(telef).val() == ''){\r\n      $(telef).removeAttr(\"disabled\");\r\n    }\r\n    if($(email).val() == ''){\r\n      $(email).removeAttr(\"disabled\");\r\n    }\r\n    if($(doc).html() == ''){\r\n      $(doc).parents(\".section-box\").hide();\r\n    }else{\r\n      $(doc).parents(\".section-box\").show();\r\n    }\r\n  //#::: OCULTAR BOTONES AGREGAR/ELIMINAR :::#//\r\n  $(doc2).parents(\".section-box\").next().hide();\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  //#::: CALCULAR EDAD :::#//\r\n\
+  $(document).ready(function(){\r\n  $.each( $('[id*=datos_del_titular_]'), function(index, campo) { \r\n    var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n    if (pos == null){\r\n      pos = (this.id).match(/_instance_[\\d]/);\r\n    }\r\n    var iniciorut   = \"#field_datos_del_titular\";\r\n    var fecha     = \"_datos_basicos_de_persona_natural_fecha_de_nacimiento\";\r\n    var edad    = \"_datos_basicos_de_persona_natural_edad\";\r\n    var coincide  = iniciorut.concat(pos);\r\n    var Fnac    = coincide.concat(fecha);\r\n    var Edad1     = coincide.concat(edad);\r\n\
+  \r\n    $(Fnac).change(function(){\r\n      var fecha1  = $(Fnac).val();\r\n      var values  = fecha1.split(\"-\");\r\n      var dia     = values[0];\r\n      var mes     = values[1];\r\n      var ano     = values[2];\r\n\
+  \r\n      //::: OBTENER LOS VALORES ACTUALES ::://\r\n      var fecha_hoy = new Date();\r\n      var ahora_ano = fecha_hoy.getYear();\r\n      var ahora_mes = fecha_hoy.getMonth();\r\n      var ahora_dia = fecha_hoy.getDate();\r\n      //::: REALIZAR EL CALCULO ::://\r\n      var edad2 = (ahora_ano + 1900) - ano;\r\n      if ( ahora_mes < (mes - 1)){\r\n        edad2--;\r\n      }\r\n      if (((mes - 1) == ahora_mes) && (ahora_dia < dia)){\r\n        edad2--;\r\n      }\r\n      if (((mes) == ahora_mes) && (ahora_dia < dia)){\r\n        edad2--;\r\n      }\r\n      if (edad2 > 1900){\r\n        edad2 -= 1900;\r\n      }\r\n      $(Edad1).val(edad2);\r\n    });\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  //::::: DV: BLANQUEAR CAMPOS SI EL NRO DE DOCUMENTO GUARDADO NO COINCIDE...//\r\n\
+  $.each( $('[id*=datos_del_titular_]'), function(index, campo) {\r\n    var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n    if (pos == null){\r\n        pos = (this.id).match(/_instance_[\\d]/);\r\n    }\r\n \r\n  var titular   = \"#field_datos_del_titular\";\r\n  var coincidet   = titular.concat(pos);\r\n  //var tiponaci  = \"_datos_basicos_de_persona_natural_tipo_de_nacionalidad\";\r\n  var psp     = \"_datos_basicos_de_persona_natural_campo_psp\";\r\n  var data    = \"_datos_basicos_de_persona_natural_campo_data\";\r\n  var nom1    = \"_datos_basicos_de_persona_natural_primer_nombre\";\r\n  var nom2    = \"_datos_basicos_de_persona_natural_segundo_nombre\";\r\n  var ape1    = \"_datos_basicos_de_persona_natural_primer_apellido\";\r\n  var ape2    = \"_datos_basicos_de_persona_natural_segundo_apellido\";\r\n  var edad    = \"_datos_basicos_de_persona_natural_edad\";\r\n  var fecha     = \"_datos_basicos_de_persona_natural_fecha_de_nacimiento\";\r\n  var pais    = \"_datos_de_ubicacion_pais\";\r\n  var direc     = \"_datos_de_ubicacion_direccion\";\r\n  var telefono  = \"_datos_de_ubicacion_numero_de_telefono\";\r\n  var correo    = \"_datos_de_ubicacion_correo_electronico\";\r\n  var nom1dp    = \"_datos_del_padre_primer_nombre\";\r\n  var nom2dp    = \"_datos_del_padre_segundo_nombre\";  \r\n  var ape1dp    = \"_datos_del_padre_primer_apellido\";  \r\n  var ape2dp    = \"_datos_del_padre_segundo_apellido\";\r\n  var nom1dm    = \"_datos_de_la_madre_primer_nombre\";   \r\n  var nom2dm    = \"_datos_de_la_madre_segundo_nombre\";   \r\n  var ape1dm    = \"_datos_de_la_madre_primer_apellido\";   \r\n  var ape2dm    = \"_datos_de_la_madre_segundo_apellido\";   \r\n  var doc     = \"_datos_basicos_de_persona_natural_cedula_pasaporte\";\r\n  var doc_c     = \"_datos_basicos_de_persona_natural_doc_oculto\";\r\n  var TipoDoc   = \"_datos_basicos_de_persona_natural_tipo_de_documento_el_salvador\";\r\n  var civil   = \"_datos_basicos_de_persona_natural_estado_civil\";\r\n  var anexo1    = \"_copia_de_la_pagina_principal_del_pasaporte_anexo\";\r\n  //var anexo2    = \"_copia_del_carnet_de_permiso_de_trabajo_temporal_o_indefinido_vigente_expedido_por_mitradel_anexo\";\r\n  //var anexo3    = \"_autorizacion_del_titular_para_solicitud_del_record_policivo_anexo\";\r\n  var anexo4    = \"_cedula_de_identidad_personal_anexo\";\r\n\
+  \r\n  //campos validacion para crear tareas en el individual\r\n  var tartitular    = \"_datos_basicos_de_persona_natural_campo_oculto_aprobacion_titular\";\r\n  var tarsente    = \"_datos_basicos_de_persona_natural_campo_oculto_sentencias\";\r\n  var tarfirma    = \"_datos_basicos_de_persona_natural_campo_oculto_firma\";\r\n  var tarentrega    = \"_datos_basicos_de_persona_natural_campo_oculto_entrega\";\r\n  var taremision   = \"_datos_basicos_de_persona_natural_campo_oculto_emision\";\r\n  //fin campos ocultos\r\n\
+  \r\n\
+  \r\n  var tipo_doc2   = coincidet.concat(TipoDoc);\r\n  var docOculto   = coincidet.concat(doc_c);\r\n  var doc2    = coincidet.concat(doc);\r\n  //var tipodena  = coincidet.concat(tiponaci);\r\n  var camdata   = coincidet.concat(data);\r\n  var pspfinal  = coincidet.concat(psp);\r\n  var nombre1_d   = coincidet.concat(nom1);\r\n  var nombre2_d   = coincidet.concat(nom2);\r\n  var apellido1_d = coincidet.concat(ape1);\r\n  var apellido2_d = coincidet.concat(ape2);\r\n  var edad1     = coincidet.concat(edad);\r\n  var fecha1    = coincidet.concat(fecha); \r\n  var pais1     = coincidet.concat(pais);\r\n  var direc1    = coincidet.concat(direc);\r\n  var telefono1   = coincidet.concat(telefono);\r\n  var correo1   = coincidet.concat(correo);    \r\n  var nom1dp1   = coincidet.concat(nom1dp);\r\n  var nom2dp1   = coincidet.concat(nom2dp);  \r\n  var ape1dp1   = coincidet.concat(ape1dp);  \r\n  var ape2dp1   = coincidet.concat(ape2dp);\r\n  var nom1dm1   = coincidet.concat(nom1dm);  \r\n  var nom2dm1   = coincidet.concat(nom2dm);   \r\n  var ape1dm1   = coincidet.concat(ape1dm);   \r\n  var ape2dm1   = coincidet.concat(ape2dm);\r\n  var civil2    = coincidet.concat(civil);\r\n  var anexo1_1  = coincidet.concat(anexo1);\r\n  //var anexo2_2  = coincidet.concat(anexo2);\r\n  //var anexo3_3  = coincidet.concat(anexo3);\r\n  var anexo4_4  = coincidet.concat(anexo4);\r\n\
+  \r\n  var tareatitular     =  coincidet.concat(tartitular);\r\n  var tareasentencias     =  coincidet.concat(tarsente);\r\n  var tareafirma     =  coincidet.concat(tarfirma);\r\n  var tareaentrega     =  coincidet.concat(tarentrega);\r\n  var tareaemision     =  coincidet.concat(taremision);\r\n\
+  \r\n  $(docOculto).parents(\".field-box\").hide();\r\n  if($(tipo_doc2).html() == \"Pasaporte\" && $(docOculto).val() != '' && $(doc2).html() != $(docOculto).val()){\r\n    $(nombre1_d).val('');\r\n    $(nombre2_d).val('');\r\n    $(apellido1_d).val('');\r\n    $(apellido2_d).val('');\r\n    $(edad1).val('');\r\n    $(fecha1).val('');  \r\n    $(pais1).val('');\r\n    $(direc1).val('');\r\n    $(telefono1).val(''); \r\n    $(correo1).val('');   \r\n    $(nom1dp1).val(''); \r\n    $(nom2dp1).val(''); \r\n    $(ape1dp1).val('');   \r\n    $(ape2dp1).val(''); \r\n    $(nom1dm1).val('');   \r\n    $(nom2dm1).val('');   \r\n    $(ape1dm1).val('');   \r\n    $(ape2dm1).val('');\r\n    $(civil2).val('');\r\n    $(anexo1_1).val(''); \r\n    $(tareatitular).val(''); \r\n    $(tareasentencias).val(''); \r\n    $(tareafirma).val(''); \r\n    $(tareaentrega).val('');  \r\n    $(tareaemision).val('');  \r\n    //$(anexo2_2).val('');\r\n    //$(anexo3_3).val('');\r\n    $(':input[value*=\"Femenino\"]').prop('checked', false);\r\n    $(':input[value*=\"Masculino\"]').prop('checked', false);\r\n  }\r\n  if($(tipo_doc2).html() == \"Cedula\"  && $(docOculto).val() != '' && $(doc2).html() != $(docOculto).val()){\r\n    $(civil2).val('');\r\n    $(pais1).val('');\r\n    $(telefono1).val(''); \r\n    $(correo1).val('');\r\n    $(anexo4_4).val('');\r\n    $(telefono1).removeAttr(\"disabled\"); \r\n    $(correo1).removeAttr(\"disabled\");\r\n    $(tareatitular).val(''); \r\n    $(tareasentencias).val(''); \r\n    $(tareafirma).val(''); \r\n    $(tareaentrega).val(''); \r\n    $(tareaemision).val(''); \r\n  }   \r\n\
+  });"

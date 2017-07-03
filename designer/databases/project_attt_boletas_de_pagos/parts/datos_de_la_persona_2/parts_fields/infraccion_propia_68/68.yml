@@ -1,0 +1,30 @@
+--- 
+id: 68
+part_id: 2
+field_id: 5
+name: infraccion_propia
+created_at: 2017-01-24 14:44:44.026776 Z
+updated_at: 2017-01-24 20:38:41.704337 Z
+label: Consultar por mi Nro de Documento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: <strong style="color:#088A08">Indique si desea consultar las infracciones asociadas a su documento</strong>
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: dfaf8d73-422f-4c2b-acf6-b448e55cbd5c
+version: 20170124-203841

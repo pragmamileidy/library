@@ -1,0 +1,16 @@
+--- 
+id: 5025
+design_id: 277
+section_id: 380
+name: Datos del Co-Participante
+created_at: 2016-02-10 13:33:53.349430 Z
+updated_at: 2016-02-10 13:33:53.349430 Z
+label: Datos del Co-Participante
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2189\":{\"3078\":{\"required\":\"required\"},\"2386\":{\"required\":\"required\"},\"2387\":{\"required\":\"unrequired\"},\"2388\":{\"required\":\"required\"},\"3958\":{\"required\":\"unrequired\"},\"2389\":{\"required\":\"unrequired\"},\"2390\":{\"required\":\"unrequired\"},\"2391\":{\"required\":\"required\"},\"2392\":{\"required\":\"required\"},\"3465\":{\"required\":\"unrequired\"}},\"2190\":{\"954\":{\"required\":\"required\"},\"955\":{\"required\":\"unrequired\"},\"956\":{\"required\":\"required\"},\"957\":{\"required\":\"unrequired\"},\"958\":{\"required\":\"unrequired\"},\"3387\":{\"required\":\"required\"},\"3836\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 5

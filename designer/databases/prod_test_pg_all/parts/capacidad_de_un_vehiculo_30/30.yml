@@ -1,0 +1,17 @@
+--- 
+id: 30
+name: "Capacidad de un Veh\xC3\xADculo"
+description: "Parte que contiene informaci\xC3\xB3n de la capacidad de un veh\xC3\xADculo a\xC3\xA9reo"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-03 20:56:08 Z
+updated_at: 2012-05-16 20:55:00 Z
+label: "Capacidad de un Veh\xC3\xADculo"
+hint: ""
+view_class: 
+serial: 

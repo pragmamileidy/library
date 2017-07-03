@@ -1,0 +1,30 @@
+--- 
+id: 2991
+part_id: 556
+field_id: 31
+name: Ejemplar de la Obra Literaria
+created_at: 2013-03-11 21:52:16 Z
+updated_at: 2017-06-04 00:22:38.305796 Z
+label: Ejemplar de la Obra Literaria
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 450b6113-ec89-49cc-a1aa-e4f0e3c99e95
+version: 20170603-202238

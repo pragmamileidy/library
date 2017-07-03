@@ -1,0 +1,17 @@
+--- 
+id: 567
+name: Ejemplar de los manuales de uno
+description: Ejemplar de los manuales de uno
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-13 20:02:24 Z
+updated_at: 2013-03-13 20:02:24 Z
+label: Ejemplar de los manuales de uno
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,17 @@
+--- 
+id: 495
+name: notificacion_CorreccionDatos
+description: Solo Proceso 3
+version: 
+status: Draft
+help: Solo Proceso 3
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 15:25:19 Z
+updated_at: 2013-01-14 15:25:19 Z
+label: "Notificaci\xC3\xB3n Correcci\xC3\xB3n de Datos"
+hint: ""
+view_class: horizontal
+serial: 

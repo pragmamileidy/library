@@ -1,0 +1,30 @@
+--- 
+id: 342
+part_id: 65
+field_id: 10
+name: "Caracter\xC3\xADsticas del envase Vidrio, Pl\xC3\xA1stico, Sobre, etc"
+created_at: 2011-11-10 18:56:53 Z
+updated_at: 2017-06-04 00:23:35.168225 Z
+label: "Caracter\xC3\xADsticas del envase"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique las caracter\xC3\xADsticas del envase, por ejemplo: vidrio, pl\xC3\xA1stico, sobres, etc."
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 78c87a8a-1e7c-48d3-b63e-e80a217948fd
+version: 20170603-202335

@@ -1,0 +1,19 @@
+--- 
+id: 3256
+section_id: 421
+part_id: 723
+name: notificacion_Procesar
+created_at: 2014-06-23 17:18:44 Z
+updated_at: 2014-06-23 17:18:44 Z
+label: Notificaciones de Procesar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3655\":{},\"3656\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 19

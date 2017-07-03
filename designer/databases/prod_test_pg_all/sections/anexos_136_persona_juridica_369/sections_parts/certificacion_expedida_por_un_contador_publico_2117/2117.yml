@@ -1,0 +1,19 @@
+--- 
+id: 2117
+section_id: 369
+part_id: 38
+name: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico"
+created_at: 2012-08-09 20:07:11 Z
+updated_at: 2017-02-15 17:23:36.643573 Z
+label: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Certificaci\xC3\xB3n expedida por un contador p\xC3\xBAblico autorizado en la que conste que el capital social inicial pagado m\xC3\xADnimo es de diez mil (10,000.00)"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 19

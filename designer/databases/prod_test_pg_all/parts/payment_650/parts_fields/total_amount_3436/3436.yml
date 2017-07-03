@@ -1,0 +1,30 @@
+--- 
+id: 3436
+part_id: 650
+field_id: 27
+name: total_amount
+created_at: 2013-09-03 16:06:08 Z
+updated_at: 2017-06-04 00:25:09.423117 Z
+label: Total Amount
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3727e300-86c7-417a-9c17-197fc23fb5df
+version: 20170603-202509

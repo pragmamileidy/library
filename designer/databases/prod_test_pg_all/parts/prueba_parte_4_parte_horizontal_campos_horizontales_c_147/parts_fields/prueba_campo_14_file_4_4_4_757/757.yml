@@ -1,0 +1,30 @@
+--- 
+id: 757
+part_id: 147
+field_id: 74
+name: Prueba campo 14 file 4 4 4
+created_at: 2012-03-13 22:35:20 Z
+updated_at: 2017-06-04 00:28:02.197200 Z
+label: Prueba campo 14 file
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Prueba campo 14 file
+help: Prueba campo 14 file
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 435a0eca-27fc-48a2-bdb4-329478070e13
+version: 20170603-202802

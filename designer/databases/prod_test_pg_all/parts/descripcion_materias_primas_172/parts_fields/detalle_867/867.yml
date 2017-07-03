@@ -1,0 +1,30 @@
+--- 
+id: 867
+part_id: 172
+field_id: 10
+name: Detalle
+created_at: 2012-03-27 17:47:38 Z
+updated_at: 2017-06-04 00:25:41.976508 Z
+label: Especifique (si contiene medicamentos)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 36e28435-2f22-426c-94ff-c23987f2fda6
+version: 20170603-202541

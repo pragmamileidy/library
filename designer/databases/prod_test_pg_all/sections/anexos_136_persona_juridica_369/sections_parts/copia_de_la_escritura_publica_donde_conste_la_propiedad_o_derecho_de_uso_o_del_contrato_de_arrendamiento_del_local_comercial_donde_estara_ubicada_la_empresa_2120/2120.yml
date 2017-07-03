@@ -1,0 +1,19 @@
+--- 
+id: 2120
+section_id: 369
+part_id: 38
+name: "Copia de la escritura p\xC3\xBAblica donde conste la propiedad o derecho de uso o del contrato de arrendamiento del local comercial donde estar\xC3\xA1 ubicada la empresa."
+created_at: 2012-08-09 20:07:11 Z
+updated_at: 2017-02-15 17:23:36.649060 Z
+label: "Escritura p\xC3\xBAblica donde conste la propiedad o derecho de uso o del contrato de arrendamiento del local comercial donde estar\xC3\xA1 ubicada la empresa."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor ver cuadro de "Ayuda"
+help: "Escritura p\xC3\xBAblica donde conste la propiedad o derecho de uso o del contrato de arrendamiento del local comercial donde estar\xC3\xA1 ubicada la empresa, que representa al momento de la notificaci\xC3\xB3n de la resoluci\xC3\xB3n que autoriza las operaciones de las casas de den empe\xC3\xB1o"
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 24

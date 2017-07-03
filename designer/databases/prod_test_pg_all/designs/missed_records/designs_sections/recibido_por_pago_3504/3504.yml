@@ -1,0 +1,19 @@
+--- 
+id: 3504
+design_id: 141
+section_id: 540
+name: Recibido Por Pago
+created_at: 2014-03-08 18:48:57 Z
+updated_at: 2015-11-30 18:45:24.765601 Z
+label: "Recepci\xC3\xB3n del Pago"
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  name_words = (@task["name"].to_s.downcase).split(' ')
+  
+  ['cerrar','recibir','reparar'].include?(name_words.first)
+manage_as_confidential: false
+include: "{\"3047\":{\"3569\":{\"required\":\"required\"},\"3570\":{\"required\":\"unrequired\"},\"3571\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 37

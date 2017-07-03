@@ -1,0 +1,39 @@
+--- 
+id: 420
+name: Paso 2 - Datos Familiares
+label: Datos Familiares
+description: Datos Familiares (padre, madre, ingreso familiar, gastos de vivienda)
+fill_step_id: 221
+created_at: 2012-05-31 19:29:27 Z
+updated_at: 2013-05-14 21:14:24 Z
+include: "{\"1174\":{\"1725\":{\"1468\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"1726\":{\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1727\":{\"1483\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1489\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1175\":{\"1725\":{\"1468\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1473\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"1726\":{\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1727\":{\"1483\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1489\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1176\":{\"875\":{\"238\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"874\":{\"238\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1179\":{\"1725\":{\"1468\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: |-
+  error = nil
+  
+  requiere = form_data.get("requiere_representante_legal.confirmacion.seleccione")
+  if requiere=="Si"
+  	ci = form_data.get("datos_del_representante_legal.datos_basicos.cedula")
+  if ci.blank?
+  transition_errors << "Debe introducir los datos del representante legal."
+  else
+  	result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + "#{ci}").parsed_response
+  	representante_legal = result["response"]
+  
+  	if representante_legal.nil?
+  		error = "Los datos del Representante Legal no fueron encontrados en la base de datos del tribunal electoral. Favor verifique."
+  	end
+  
+  	if !error.nil?	
+  		transition_errors << "#{error}"
+  	end
+  end
+  end
+views: 
+back_step: Paso 1 - Datos del Estudiante
+next_step: Paso 3 - Datos de Codeudor(es) y Representante Legal
+position: 2
+ajax_calls: ""

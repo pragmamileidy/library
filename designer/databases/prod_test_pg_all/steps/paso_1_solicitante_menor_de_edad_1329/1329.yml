@@ -1,0 +1,26 @@
+--- 
+id: 1329
+name: Paso 1 - Solicitante menor de edad
+label: Solicitante menor de edad
+description: ""
+fill_step_id: 25
+created_at: 2013-05-06 17:43:36 Z
+updated_at: 2015-11-09 21:22:37 Z
+include: "{\"2734\":{\"2739\":{\"2518\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3094\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1105\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "ci = form_data.get(\"indique_si_es_menor_de_edad.solicitante_menor_de_edad.numero_de_identificacion\")\r\n\
+  bol=form_data.get(\"indique_si_es_menor_de_edad.solicitante_menor_de_edad.si_no\")\r\n\
+  result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{ci}\").parsed_response\r\n\
+  representante_legal = result[\"response\"]\r\n\
+  if (!representante_legal.blank?)\r\n    difunto = representante_legal[\"cod_mensaje\"]\r\n        if (difunto == \"534\")\r\n            transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{ci} del Solicitante, corresponde a un ciudadano Difunto.\"\r\n        end\r\n    form_data.set(\"datos_del_representante_legal.datos_de_la_persona.cedula\",representante_legal[\"cedula\"]) \r\n    form_data.set(\"datos_del_representante_legal.datos_de_la_persona.primer_nombre\",representante_legal[\"primerNombre\"])\r\n    form_data.set(\"datos_del_representante_legal.datos_de_la_persona.primer_apellido\",representante_legal[\"primerApellido\"])\r\n    \r\n\
+  \r\n    ### SI LOS DATOS DE SEGUNDO NOMBRE Y SEGUNDO APELLIDO NO VIENEN VAC\xC3\x8DOS, SE SETEAN LOS DATOS SINO, NO.\r\n    if representante_legal[\"segundoNombre\"] != \"\"\r\n      form_data.set(\"datos_del_representante_legal.datos_de_la_persona.segundo_nombre\",representante_legal[\"segundoNombre\"])\r\n    end\r\n\
+  \r\n    if representante_legal[\"segundoApellido\"] != \"\"\r\n      form_data.set(\"datos_del_representante_legal.datos_de_la_persona.segundo_apellido\",representante_legal[\"segundoApellido\"])\r\n    end\r\n    ### FIN VALIDACION    \r\n    #form_data.set(\"datos_del_representante_legal.datos_basicos.apellido_de_casada\",representante_legal[\"apellidoCasada\"])\r\n    #form_data.set(\"datos_del_representante_legal.direccion_actual.numero_de_telefono\",representante_legal[\"tlfLocal\"])\r\n       else\r\n         if bol==\"S\xC3\x8D\"\r\n    transition_errors << \"Los datos del representante legal no fueron encontrados, verifique nuevamente.\\n\"\r\n    end\r\n\
+  end"
+views: 
+back_step: ""
+next_step: Paso 2 - Datos del Estudiante
+position: 0
+ajax_calls: ""

@@ -1,0 +1,180 @@
+--- 
+id: 11
+name: "Paso 3 \xE2\x80\x93 Realizaci\xC3\xB3n del Pago"
+label: "Realizaci\xC3\xB3n del Pago"
+description: </br><strong style="color:#0F698D"></strong>
+fill_step_id: 5
+created_at: 2017-01-17 14:23:24.966142 Z
+updated_at: 2017-01-17 14:23:25.140311 Z
+include: "{\"28\":{\"7\":{\"14\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"53\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"30\":{\"12\":{\"19\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"20\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"13\":{\"21\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"31\":{\"14\":{\"22\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"23\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"24\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"25\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"32\":{\"9\":{\"26\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"27\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"10\":{\"28\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"11\":{\"29\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"30\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back
+on_becoming: "if form_data.get(\"boletas_por_pagar.boletas.motivo_de_la_multa\") == \"true\"\r\n\
+  \t#Si el pago es automatico se ejecuta las siguientes condiciones: \r\n\
+  \t#Verificar el estatus del pago. Para esto se debe invocar el servicio get payment status enviandole como parametro el Payment Id que devuelve el servicio #de computo (invocado en el On Becoming del paso 1) y el id de la transaccion (request_id)\r\n\
+  \t#Caso estatus Pendiente - Setear en el campo url el link del servicio Redirect to, pasandole como parametro el retorno del servicio Make Payment y mostrar el mensaje de pendiente\r\n\
+  \t#Caso estatus completado - Mostrar mensaje de exito sin url \r\n\
+  \r\n\
+  \t#CODIGO PARA INVOCAR get_payment_status\r\n\
+  \r\n\
+  \t#_url = form_data.get(\"variables_pago_generico.variables_pago_generico.url\")\r\n\
+  \t_datoRequest =  form_data.get(\"variables_pago_generico.variables_pago_generico.request\")\r\n\
+  \t_paymentId = form_data.get(\"variables_pago_generico.variables_pago_generico.payment\")\r\n\
+  \t_consecutiveId = form_data.get(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\")\r\n\
+  \t_id = @current_user.citizen_id_number\r\n\
+  \t_name = @current_user.name\r\n\
+  \t_email = @current_user.email\r\n\
+  \r\n\
+  \t# ***** Servicio nuevo *****\r\n\
+  \t  hash = {:payment_id => \"#{_paymentId}\", \r\n\
+  \t          :request_id => \"#{_datoRequest}\",\r\n\
+  \t          :dummy      => \"true\"}\r\n\
+  \t  result = PaymentProxy.get_payment_status(hash)\r\n\
+  \t  \r\n\
+  \t#result = WebserviceConsumer.get(\"/payments/get_payment_status.json?payment_id=#{_paymentId}&request_id=#{_datoRequest}\").parsed_response\r\n\
+  \tstatus = result[\"response\"]\r\n\
+  \r\n\
+  \tif !status.nil?\r\n\
+  \t\t#transition_errors << \"Ha ocurrido un error al revisar el pago. Por favor intente m\xC3\xA1s tarde..\"\r\n\
+  \t#else\r\n\
+  \t\tform_data.set(\"variables_pago_generico.variables_pago_generico.estatus\",status)\r\n\
+  \tend\r\n\
+  \r\n\
+  \r\n\
+  \t#Status Started || Error\r\n\
+  \tif ((status == \"started\") || (status == \"error\") || (status == \"created\"))\r\n\
+  \t\t#_str = '/payments/make_payment.json?payment_id=' + \"#{_paymentId}\" + '&id=' + \"#{_id}\" + '&name=' + \"#{_name}\" + '&email=' + \"#{_email}\" + '&consecutive_id=' + \"#{_consecutiveId}\"\r\n\
+  \t    \r\n\
+  \t  hash = {:payment_id => \"#{_paymentId}\", \r\n\
+  \t          :id  => \"#{_id}\",\r\n\
+  \t          :name  => \"#{_name}\",\r\n\
+  \t\t\t  :email => \"#{_email}\",\r\n\
+  \t\t      :consecutive_id => \"#{_consecutiveId}\"}\r\n\
+  \t  _resultMakeP = PaymentProxy.make_payment(hash, true)\r\n\
+  \t  \r\n\
+  \t\t#_resultMakeP = WebserviceConsumer.get(URI.escape(_str)).parsed_response\r\n\
+  \t\t_error = _resultMakeP[\"error\"]\r\n\
+  \r\n\
+  \t\t#if !_error.nil?\r\n\
+  \t\t #    transition_errors << \"Ha ocurrido un error para redireccionar el pago. Por favor intente m\xC3\xA1s tarde.\"\r\n\
+  \t\t#else\r\n\
+  \t\t\t#seteos\r\n\
+  \t\t\t_url = _resultMakeP[\"response\"]\r\n\
+  \t\t\t_datoReq = _resultMakeP[\"request_id\"]\r\n\
+  \t\t\t_strurl = \"#{PEOPLE_URL}/tasks/force_redirect_to?task_id=#{@task[\"id\"]}&url=#{_url}\"\r\n\
+  \t\t\tform_data.set(\"variables_pago_generico.variables_pago_generico.url\",_strurl)\r\n\
+  \t\t\tform_data.set(\"variables_pago_generico.variables_pago_generico.request\", _datoReq)\r\n\
+  \t\t\tform_data.set(\"mensajes_pago_generico.mensaje_pendiente.texto_1\", _strurl)\r\n\
+  \t\t\tform_data.set(\"mensajes_pago_generico.mensaje_pendiente.texto_2\",@task[\"id\"])\r\n\
+  \t\t\tform_data.set(\"mensajes_pago_generico.mensaje_fallido.texto_1\", _strurl)\r\n\
+  \t\t\tform_data.set(\"mensajes_pago_generico.mensaje_fallido.texto_2\",@task[\"id\"])\r\n\
+  \t\t\r\n\
+  \t\t#end\r\n\
+  \tend\r\n\
+  \r\n\
+  \r\n\
+  \t#Status successfully\r\n\
+  \tif (status == \"successfully\")\r\n\
+  \t\t#result = WebserviceConsumer.get('/payments/get_payment_info.json?payment_id=' + \"#{_paymentId}\").parsed_response\r\n\
+  \r\n\
+  \t# ***** Servicio nuevo *****\r\n\
+  \t  hash = {:payment_id => \"#{_paymentId}\"}\r\n\
+  \t  result = PaymentProxy.get_payment_info(hash)\r\n\
+  \r\n\
+  \t\t_fecha_de_pago = result[\"response\"][\"payment_date\"]\r\n\
+  \t\t_no_de_confirmacion = result[\"response\"][\"transaction_id\"]\r\n\
+  \t\t_monto_del_pago = result[\"response\"][\"total\"]\r\n\
+  \t\t_medio_utilizado = result[\"response\"][\"payment_method\"]\r\n\
+  \r\n\
+  \t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.fecha_del_pago\", _fecha_de_pago)\r\n\
+  \t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.no_de_confirmacion\", _no_de_confirmacion)\r\n\
+  \t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.monto_del_pago\", _monto_del_pago)\r\n\
+  \t\tform_data.set(\"datos_obtenidos_del_pago_electronico_generico.datos_obtenidos_del_pago_electronico_generico.medio_utilizado\", _medio_utilizado)\r\n\
+  \tend \r\n\
+  else\r\n    form_data.set(\"mensaje.confirmacion_culminacion_de_tramite.notificacion\", \"Estimado usuario, su solicitud est\xC3\xA1 por finalizar.\r\n    \t\\n Su Constancia fue enviada a su correo. En breves minutos dispondr\xC3\xA1 la Constancia de su solicitud en la pesta\xC3\xB1a Archivos Adjuntos.\")\r\n\
+  end"
+on_transition: "if form_data.get(\"boletas_por_pagar.boletas.motivo_de_la_multa\") == \"true\"\r\n\
+  #Verificar el estatus del pago. Para esto se debe invocar el servicio transaction search enviandole como parametro el Payment Id que devuelve el servicio #de computo (invocado en el On Becoming del paso 1)\r\n\
+  \r\n\
+  ###CODIGO PARA INVOCAR get_payment_status ###\r\n\
+  _paymentId = form_data.get(\"variables_pago_generico.variables_pago_generico.payment\")\r\n\
+  _dato2 =  form_data.get(\"variables_pago_generico.variables_pago_generico.request\")\r\n\
+  \r\n\
+  #result = WebserviceConsumer.get(\"/payments/get_payment_status.json?payment_id=#{_paymentId}&request_id=#{_dato2}\").parsed_response\r\n\
+  \r\n\
+  # ***** Servicio nuevo *****\r\n  hash = {:payment_id => \"#{_paymentId}\", \r\n              :request_id   => \"#{_dato2}\"}\r\n  result = PaymentProxy.get_payment_status(hash)\r\n  \r\n\
+  status = result[\"response\"]\r\n\
+  if status.nil?\r\n\
+  \ttransition_errors << \"Ha ocurrido un error al revisar el pago. Por favor intente m\xC3\xA1s tarde.\"\r\n\
+  else\r\n\
+  \t#seteos\r\n\
+  \tform_data.set(\"variables_pago_generico.variables_pago_generico.estatus\",status)\r\n\
+  \r\n\
+  end\r\n\
+  \r\n\
+  ###  CODIGO PARA MENSAJE FALLIDO DE PAGO ###\r\n\
+  if (form_data.get(\"variables_pago_generico.variables_pago_generico.estatus\")!=\"successfully\")\r\n   transition_errors << \"Su pago no ha sido completado. Por favor verifique y complete la transacci\xC3\xB3n para enviar el formulario.\"\r\n\
+  end\r\n\
+  \r\n\
+  end \r\n\
+  \r\n\
+  #::: Condici\xC3\xB3n para notificar el mensaje para el recibo :::#\r\n\
+  if form_data.get(\"boletas_por_pagar.boletas.motivo_de_la_multa\") == \"true\"\r\n    form_data.set(\"boletas_por_pagar.boletas.mensaje_notificacion\", \"Estimado usuario su pago ha sido reportado a SERTRACEN. Puede descargar su Constancia disponible en el campo Reporte de Pago.\r\n    \t\\n \\n\\ Su Constancia fue enviada a su correo. En breves minutos dispondr\xC3\xA1 de su Constancia de Pago en la pesta\xC3\xB1a Archivos Adjuntos.\")\r\n\
+  else\r\n    form_data.set(\"boletas_por_pagar.boletas.mensaje_notificacion\", \"Estimado usuario, puede descargar la Constancia de su solicitud disponible en el campo Reporte de Pago.\r\n    \t\\n \\n\\ Su Constancia fue enviada a su correo. En breves minutos dispondr\xC3\xA1 la Constancia de su solicitud en la pesta\xC3\xB1a Archivos Adjuntos.\")\r\n\
+  end"
+views: 
+back_step: Paso 2 - Datos de Boletas Pendientes de Pago
+next_step: ""
+position: 3
+ajax_calls: "$( function() {\r\n        $(document).ready(function(){\r\n\
+  \t\t \r\n\
+  \t\t //OCULTAR INPUT DE TEXTO\r\n\
+  \t\t  $(\"#field_mensajes_pago_generico_mensaje_pendiente_texto_1\").hide();\r\n\
+  \t\t  $(\"#field_mensajes_pago_generico_mensaje_pendiente_texto_2\").hide();\r\n\
+  \r\n          $(\"#field_mensajes_pago_generico_mensaje_exito_texto_1\").hide();\r\n          $(\"#field_mensajes_pago_generico_mensaje_fallido_texto_1\").hide();\r\n\
+  \t\t  $(\"#field_mensajes_pago_generico_mensaje_fallido_texto_2\").hide();\r\n\
+  \r\n\
+  \t\t  //ASIGNACION DE VARIABLES \r\n\
+  \t\t  var urls =  $(\"#field_mensajes_pago_generico_mensaje_pendiente_texto_1\").val();\r\n\
+  \t\t  var taskId =  $(\"#field_mensajes_pago_generico_mensaje_pendiente_texto_2\").val();\r\n\
+  \t\t  var url = urls+\"?task_id=\"+taskId;\r\n\
+  \t\t \r\n\
+  \t\t  //REMOVER ATRIBUTO HREF ORIGINAL\r\n\
+  \t\t  $(\"#pendiente\").removeAttr(\"href\");\r\n\
+  \t\t  \r\n\
+  \t\t  //A\xC3\x91ADIR AL NUEVO HREF\r\n\
+  \t\t  $(\"#pendiente\").attr(\"href\",url);\r\n\
+  \r\n\
+  \r\n          //ASIGNACION DE VARIABLES ESTATUS FALLIDO\r\n\
+  \t\t  var urlsf =  $(\"#field_mensajes_pago_generico_mensaje_fallido_texto_1\").val();\r\n\
+  \t\t  var taskIdf =  $(\"#field_mensajes_pago_generico_mensaje_fallido_texto_2\").val();\r\n\
+  \t\t  var urlf = urlsf+\"?task_id=\"+taskIdf;\r\n\
+  \t\t  \r\n\
+  \t\t  \r\n\
+  \t\t   //REMOVER ATRIBUTO HREF ORIGINAL ESTATUS FALLIDO\r\n\
+  \t\t  $(\"#fallido\").removeAttr(\"href\");\r\n\
+  \t\t  \r\n\
+  \t\t  //A\xC3\x91ADIR AL NUEVO HREF ESTATUS FALLIDO\r\n\
+  \t\t  $(\"#fallido\").attr(\"href\",urlf);\r\n\
+  \t\t  \r\n\
+  \t});\r\n\
+  \r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  $( function() {\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Datos del Evaluador\") {  \r\n        $(this).html(\"Datos del Pago\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    var hint = \"Datos del Pago\";\r\n      $(\"div\").each (function(){\r\n      if ($(this).html().trim() == hint) {  \r\n        $(this).html(hint).css({'color':'#0F698D','font-weight':'bold'}); \r\n      }\r\n    });\r\n  })\r\n\
+  \r\n   $( function() {\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == \"Entidad Evaluadora\") {  \r\n        $(this).html(\"Detalle del Pago\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n   $( function() {\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == \"Nombre de la Entidad Evaluadora\") {  \r\n        $(this).html(\"Beneficiario del Pago\"); \r\n      }\r\n    });\r\n  });\r\n  \r\n  $( function() {\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n:\") {  \r\n        $(this).html(\"\"); \r\n      }\r\n    });\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){    \r\n  $(\"#field_mensaje_confirmacion_culminacion_de_tramite_notificacion\").css({'color':'#088A08','font-size':'1.1em','text-align':'justify','font-weight:':'bold','white-space':'pre-line'});\r\n  $( function() {\r\n    var hint = \"Mensaje\";\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == hint) {  \r\n        $(this).html(hint).css({'color':'#0F698D','font-weight':'bold'}); \r\n      }\r\n    });\r\n  })\r\n\
+  });\r\n\
+  \r\n\
+  //::: DV: Ventana Emergente pantalla completa de la app ::://\r\n\
+  $(document).ready(function(){\r\n  pago = $('#field_boletas_por_pagar_boletas_motivo_de_la_multa');\r\n  pasarela = $('#field_datos_obtenidos_del_pago_electronico_generico_datos_obtenidos_del_pago_electronico_generico_no_de_confirmacion');\r\n  var app_id = $('#field_boletas_por_pagar_boletas_app_id').val();\r\n   $(pago).parents(\".section-box\").hide();\r\n   if ($(pago).val() == \"false\") {\r\n    $.blockUI({\r\n      message: '<h1 style=\"font-size:1.5em;color:#E2E2E2;\">Estimado usuario, su solicitud est\xC3\xA1 por finalizar. Su Constancia fue enviada a su correo. En breves minutos dispondr\xC3\xA1 de la Constancia de su solicitud en la pesta\xC3\xB1a Archivos Adjuntos.\"</h1><img src=\"/assets/loading_barra.gif\">',\r\n      css: {\r\n        border: 'none',\r\n        padding: '15px',\r\n        backgroundColor: '#1E1F20',\r\n        '-webkit-border-radius': '10px',\r\n        '-moz-border-radius': '10px',\r\n        opacity: .9,\r\n        color: '#fff',\r\n      }\r\n    });\r\n\
+  \r\n    setTimeout(function(){ \r\n      document.location = \"/applications/\"+app_id;\r\n    }, 5000);\r\n  }\r\n\
+  \r\n  if ($(pasarela).html() == \"\") {\r\n    $.blockUI({\r\n      message: '<h1 style=\"font-size:1.5em;color:#E2E2E2;\">Su pago ha sido realizado y est\xC3\xA1 siendo reportado a la Autoridad de Transporte y Tr\xC3\xA1nsito Terrestre, esto puede tomar unos minutos.\"</h1><img src=\"/assets/loading_barra.gif\">',\r\n      css: {\r\n        border: 'none',\r\n        padding: '15px',\r\n        backgroundColor: '#1E1F20',\r\n        '-webkit-border-radius': '10px',\r\n        '-moz-border-radius': '10px',\r\n        opacity: .9,\r\n        color: '#fff',\r\n      }\r\n    });\r\n\
+  \r\n    setTimeout(function(){ \r\n      document.location = \"/applications/\"+app_id;\r\n    }, 5000);\r\n  }\r\n\
+  });"

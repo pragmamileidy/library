@@ -1,0 +1,30 @@
+--- 
+id: 994
+part_id: 197
+field_id: 31
+name: Titulo de propiedad vehicular
+created_at: 2012-04-20 16:24:48 Z
+updated_at: 2017-06-04 00:23:55.634139 Z
+label: Titulo de propiedad vehicular
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d4afc163-e8ca-46ac-9036-b1d0424d979f
+version: 20170603-202355

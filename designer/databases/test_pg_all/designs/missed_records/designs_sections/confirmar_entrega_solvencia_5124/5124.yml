@@ -1,0 +1,33 @@
+--- 
+id: 5124
+design_id: 281
+section_id: 185
+name: Confirmar Entrega Solvencia
+created_at: 2016-03-01 20:17:37.302737 Z
+updated_at: 2016-03-30 19:12:03.193885 Z
+label: Confirmar Entrega de Solvencia Policial
+min_instances: 1
+max_instances: 1
+depends_on: "sentencias = form_data.get(\"mensaje_dij.mensaje_dij.campo_oculto\")\r\n\
+  entrega_fisico = form_data.get(\"retiro_solvencia_policial.retiro_solvencia_policial.version_en_fisico\")\r\n\
+  foto_huella = form_data.get(\"datos_del_titular.fotos_y_o_huellas_tomadas.si_no\")\r\n\
+  \r\n\
+  \r\n\
+  # Tiene sentencias, no pidio entrega y no tiene huellas o fotos\r\n\
+  # Tiene sentencias, no pidio entrega y tiene huellas o fotos\r\n\
+  # Tiene sentencias, pidio entrega y no tiene huellas o fotos\r\n\
+  # No tiene sentencias, pidio entrega y no tiene huellas o fotos\r\n\
+  # No tiene sentencias, pidio entrega y tiene huellas o fotos\r\n\
+  \r\n\
+  \r\n\
+  ( !sentencias.blank? && (entrega_fisico == \"NO\") && (foto_huella == \"NO\") ) ||\r\n\
+  ( !sentencias.blank? && (entrega_fisico == \"NO\") && (foto_huella == \"S\xC3\x8D\") ) ||\r\n\
+  ( !sentencias.blank? && (entrega_fisico == \"S\xC3\x8D\") && (foto_huella == \"NO\") ) ||\r\n\
+  ( !sentencias.blank? && (entrega_fisico == \"S\xC3\x8D\") && (foto_huella == \"S\xC3\x8D\") ) ||\r\n\
+  ( sentencias.blank? && (entrega_fisico == \"S\xC3\x8D\") && (foto_huella == \"NO\") ) ||\r\n\
+  ( sentencias.blank? && (entrega_fisico == \"S\xC3\x8D\") && (foto_huella == \"S\xC3\x8D\") )"
+manage_as_confidential: false
+include: "{\"1710\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 17

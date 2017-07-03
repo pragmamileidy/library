@@ -1,0 +1,19 @@
+--- 
+id: 3742
+section_id: 604
+part_id: 38
+name: "Modelo del contrato que contemple por lo menos la informaci\xC3\xB3n del art\xC3\xADculo 23 de la Ley 16 del 23 de mayo de 2005"
+created_at: 2017-03-11 00:56:21.971260 Z
+updated_at: 2017-03-11 00:56:21.971260 Z
+label: "Modelo del contrato que contemple por lo menos la informaci\xC3\xB3n del art\xC3\xADculo 23 de la Ley 16 del 23 de mayo de 2005."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 15

@@ -1,0 +1,19 @@
+--- 
+id: 1873
+section_id: 193
+part_id: 38
+name: "Informe M\xC3\xA9dico de la Persona con Discapacidad"
+created_at: 2012-06-13 16:13:08 Z
+updated_at: 2015-02-20 16:47:27 Z
+label: "Informe M\xC3\xA9dico de la Persona con Discapacidad"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

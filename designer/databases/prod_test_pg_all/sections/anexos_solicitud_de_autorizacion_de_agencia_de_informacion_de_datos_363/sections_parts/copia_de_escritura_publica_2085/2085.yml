@@ -1,0 +1,19 @@
+--- 
+id: 2085
+section_id: 363
+part_id: 38
+name: Copia de escritura publica
+created_at: 2012-08-07 21:58:45 Z
+updated_at: 2017-03-09 15:31:43.566174 Z
+label: "Copia de escritura p\xC3\xBAblica de protocolizaci\xC3\xB3n del pacto social o estatutos y de las reformas, si las hubiese, debidamente inscrita en el registro p\xC3\xBAblico."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

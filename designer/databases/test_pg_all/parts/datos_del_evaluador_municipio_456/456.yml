@@ -1,0 +1,17 @@
+--- 
+id: 456
+name: Datos del Evaluador Municipio
+description: Datos del Evaluador (Municipio)
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-20 14:45:01 Z
+updated_at: 2012-08-20 14:45:01 Z
+label: Datos del Evaluador
+hint: ""
+view_class: horizontal
+serial: 

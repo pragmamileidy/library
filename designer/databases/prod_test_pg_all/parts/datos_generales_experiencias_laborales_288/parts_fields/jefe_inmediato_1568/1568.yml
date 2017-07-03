@@ -1,0 +1,30 @@
+--- 
+id: 1568
+part_id: 288
+field_id: 130
+name: Jefe Inmediato
+created_at: 2012-06-04 14:42:45 Z
+updated_at: 2017-06-04 00:28:55.533191 Z
+label: Jefe Inmediato
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor introduzca el nombre completo del Jefe inmediato. Ejemplo: Carlos Rodriguez "
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7979f91d-8e84-4e62-a166-60f508991bc2
+version: 20170603-202855

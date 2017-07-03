@@ -1,0 +1,30 @@
+--- 
+id: 207
+name: Derecho a firma
+description: "Derecho a firma, para Solicitud de Licencias de Bienes Ra\xC3\xADces"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-07 22:06:57 Z
+updated_at: 2012-08-07 22:06:57 Z
+values_list: "\"Si\",\"No\""
+keys_list: "\"Si\",\"No\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

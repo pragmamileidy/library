@@ -1,0 +1,30 @@
+--- 
+id: 2617
+part_id: 482
+field_id: 10
+name: FinPasoInicializar
+created_at: 2013-01-11 21:14:39 Z
+updated_at: 2017-06-04 00:27:24.343404 Z
+label: Fin Paso Inicializar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: eeb87120-1bbe-483e-86ee-cec7f0a75160
+version: 20170603-202724

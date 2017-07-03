@@ -1,0 +1,19 @@
+--- 
+id: 22
+name: "Datos del Plaguicida Qu\xC3\xADmico Formulado"
+label: "Datos del Plaguicida Qu\xC3\xADmico Formulado"
+description: ""
+fill_step_id: 7
+created_at: 2012-03-09 03:57:34 Z
+updated_at: 2012-05-19 20:48:29 Z
+include: "{\"315\":{\"629\":{\"669\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"157\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"326\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"631\":{\"670\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"671\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"672\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"673\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"319\":{\"274\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"316\":{\"274\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"317\":{\"274\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"318\":{\"274\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ,Registrante,Solicitante
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Registrante
+next_step: ""
+position: 2
+ajax_calls: 

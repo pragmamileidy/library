@@ -1,0 +1,19 @@
+--- 
+id: 1729
+section_id: 253
+part_id: 38
+name: "C\xC3\xA9dula del representante legal autorizado"
+created_at: 2012-05-31 18:13:26 Z
+updated_at: 2012-05-31 18:13:26 Z
+label: "C\xC3\xA9dula del representante legal autorizado"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

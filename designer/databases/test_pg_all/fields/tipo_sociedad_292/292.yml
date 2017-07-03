@@ -1,0 +1,32 @@
+--- 
+id: 292
+name: tipo_sociedad
+description: Tipo de sociedad para RUC
+version: 
+status: Active
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-18 21:34:01 Z
+updated_at: 2013-06-20 18:15:40 Z
+values_list: |
+  "","SA","EX","FU","LI"
+
+keys_list: "\"\",\"SA\",\"EX\",\"FU\",\"LI\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

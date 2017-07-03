@@ -1,0 +1,61 @@
+--- 
+id: 1085
+name: Paso 6 -  Notificaciones
+label: Notificaciones
+description: ""
+fill_step_id: 546
+created_at: 2013-01-25 14:19:52 Z
+updated_at: 2013-08-16 14:30:37 Z
+include: "{\"2371\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2375\":{\"2419\":{\"2614\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2615\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2616\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2617\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2420\":{\"2618\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2619\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2620\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2621\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2423\":{\"2638\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2639\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2640\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2641\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2424\":{\"2642\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2643\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2427\":{\"2654\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2655\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2428\":{\"2662\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2663\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2430\":{\"3097\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3098\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"messages\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte NOTIFICACION_INICIOTRAMITE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_iniciotramite.iniciofaseinicializar\", \"INICIO FASE INICIALIZAR \")\r\n\
+  form_data.set(\"notifications.notificacion_iniciotramite.finfaseinicializar\", \"FIN FASE INICIALIZAR \")\r\n\
+  form_data.set(\"notifications.notificacion_iniciotramite.iniciopasoinicializar\", \"Tr\xC3\xA1mite iniciado\xE2\x80\xA6 Recopilando informaci\xC3\xB3n para el llenado de formularios.\")\r\n\
+  form_data.set(\"notifications.notificacion_iniciotramite.finpasoinicializar\", \"FIN PASO INICIALIZAR\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte NOTIFICACION_CARGATRAMITE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_cargatramite.iniciofasecarga\", \"INICIO FASE CARGA\")\r\n\
+  form_data.set(\"notifications.notificacion_cargatramite.finfasecarga\", \"FIN FASE CARGA\")\r\n\
+  form_data.set(\"notifications.notificacion_cargatramite.iniciopasocarga\", \"Formularios disponibles para su llenado.\")\r\n\
+  form_data.set(\"notifications.notificacion_cargatramite.finpasocarga\", \"Llenado de formulario(s) completado.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte NOTIFICACION_RECEPCION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_recepcion.iniciofaserecepcion\", \"INICIO FASE RECEPCI\xC3\x93N DE SOLICITUD\")\r\n\
+  form_data.set(\"notifications.notificacion_recepcion.finfaserecepcion\", \"FIN FASE RECEPCI\xC3\x93N DE SOLICITUD\")\r\n\
+  form_data.set(\"notifications.notificacion_recepcion.iniciopasorecepcion\", \"Solicitud en An\xC3\xA1lisis de Ingreso en la Instituci\xC3\xB3n.\")\r\n\
+  form_data.set(\"notifications.notificacion_recepcion.finpasorecepcion\", \"An\xC3\xA1lisis de Ingreso de Solicitud completado.\")\r\n\
+  \r\n\
+  #Llenar campo de la parte NOTIFICACION_REPARO\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_reparo.iniciopasoreparo\", \"Solicitud revisada en la Instituci\xC3\xB3n. Pendiente por reparo por parte del solicitante.\")\r\n\
+  form_data.set(\"notifications.notificacion_reparo.finpasoreparo\", \"Solicitud reparada por el solicitante.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte NOTIFICACION_CONFIRMACION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_confirmacion.iniciopasoconfirmacion\", \"Confirmaci\xC3\xB3n de Secciones del Cuerpo de Bomberos que revisar\xC3\xA1n la solicitud.\")\r\n\
+  form_data.set(\"notifications.notificacion_confirmacion.finpasoconfirmacion\", \"Confirmaci\xC3\xB3n de Secciones revisoras del CBP completada.\")\r\n\
+  \r\n\
+  #Llenar campo de la parte NOTIFICACION_EVALUACION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.iniciopasoreparoentidades\", \"El Cuerpo de Bomberos de Panam\xC3\xA1 solicit\xC3\xB3 cambios de Secciones revisoras.\")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.finpasoreparoentidades\", \"La selecci\xC3\xB3n de Entidades revisoras de la solicitud ya fue reparada.\")\r\n\
+  \r\n\
+  #Llenar campo de la parte NOTIFICACION_REVISION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_revision.iniciopasorevision\", \"Revisi\xC3\xB3n de Entidades por el Jefe de Aprobaci\xC3\xB3n de Planos.\")\r\n\
+  form_data.set(\"notifications.notificacion_revision.finpasorevision\", \"La selecci\xC3\xB3n de Entidades ha sido revisada por el Jefe de Aprobaci\xC3\xB3n de Planos.\")"
+on_transition: ""
+views: 
+back_step: Paso 5  - Eventos
+next_step: Paso 7 - Notificaciones
+position: 5
+ajax_calls: ""

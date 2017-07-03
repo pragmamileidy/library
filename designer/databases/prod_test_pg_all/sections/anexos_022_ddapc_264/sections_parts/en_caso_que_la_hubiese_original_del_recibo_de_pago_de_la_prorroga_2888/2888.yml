@@ -1,0 +1,19 @@
+--- 
+id: 2888
+section_id: 264
+part_id: 38
+name: "En caso que la hubiese, original del recibo de pago de la pr\xC3\xB3rroga"
+created_at: 2013-08-12 22:03:35 Z
+updated_at: 2013-08-12 22:03:35 Z
+label: "En caso que la hubiese, original del recibo de pago de la pr\xC3\xB3rroga"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 11

@@ -1,0 +1,166 @@
+--- 
+id: 3006
+name: Paso 2- Datos de la Persona
+label: Datos de la Persona
+description: ""
+fill_step_id: 1614
+created_at: 2014-11-06 19:02:53 Z
+updated_at: 2014-12-19 20:58:33 Z
+include: "{\"4599\":{\"3393\":{\"2197\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3389\":{\"2951\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3345\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2950\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2952\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3823\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3390\":{\"2945\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2941\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2942\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2943\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2946\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2949\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2948\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3822\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3828\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3830\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "\r\n"
+on_transition: "# Obtener valor del config\r\n                valor = @config.route(\"Rates-payment-payment-payment\")\r\n                \r\n                if valor == \"Electr\xC3\xB3nico\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")\r\n                \r\n                end\r\n                if valor == \"Manual\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")\r\n                \r\n                end\r\n\
+  \r\n\
+  \r\n\
+  (1..3).each do |_num|\r\n\
+  \r\n\
+  \r\n         _tipo = form_data.get(\"tipo_de_documento_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n         if _tipo == \"Pasaporte\" || _tipo== \"C\xC3\xA9dula\"\r\n\
+  \ta = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.primer_nombre\")\r\n\
+  \tb = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.segundo_nombre\")\r\n\
+  \tc = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.primer_apellido\")\r\n\
+  \td = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.segundo_apellido\")\r\n\
+  \te = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.apellido_de_casada\")\r\n\
+  \t_nom_c = \"#{a} #{b} #{c} #{d} #{e}\"\r\n\
+  \tform_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.nombre_completo\",_nom_c)\r\n\
+  end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #::: VALIDACION DE FECHA DE NACIMIENTO :::#\t\t \r\n\
+  \t\r\n\
+  \r\n\
+  \t\r\n\
+  (1..3).each do |_num|\r\n\
+  _tipo = form_data.get(\"tipo_de_documento_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n         if _tipo == \"Pasaporte\"\r\n\
+  fecha = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.fecha_de_nacimiento\")\r\n\
+  edad = ((Date.today - fecha.to_date).to_f / 365).to_i\r\n\
+  form_data.set(\"datos_de_la_persona_instance_#{_num}.datos_personales.edad\", edad)\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  edad = form_data.get(\"datos_de_la_persona_instance_#{_num}.datos_personales.edad\")\r\n\
+  \r\n\
+  if (edad.to_i < 18.to_i  )  \r\n\
+  \t\ttransition_errors << \"La edad  no debe ser menor a 18 a\xC3\xB1os de edad. Por favor, verifique\"\r\n\
+  else\r\n\
+  \t\tform_data.set(\"datos_de_la_persona.datos_personales.edad\", edad)\r\n\
+  end\t\r\n\
+  end"
+views: 
+back_step: Paso 1 - Datos del Solicitante
+next_step: Paso 3 - Anexos
+position: 2
+ajax_calls: "//::: ELIMINAR BOTONES AGREGAR/ELIMINAR INSTANCIAS ::://\r\n\
+  $(document).ready(function(){\r\n\
+  \t// PERSONA//\r\n\
+  \t$.each( $('[id*=datos_de_la_persona_]'), function(index, campo) {\r\n\
+  \t\tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \t\tif (pos == null){\r\n\
+  \t\t\tpos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t\t}\r\n\
+  \t\tvar incioRuta = \"#field_datos_de_la_persona\";\r\n\
+  \t\tvar NroDoc = \"_datos_personales_identificacion\";\r\n\
+  \t\tvar NroRuc = \"_datos_de_la_empresa_ruc\";\r\n\
+  \t\tvar TipoDoc = \"_tipo_de_documento_tipo_de_identificacion\";\r\n\
+  \t\tvar pnombre = \"_datos_personales_primer_nombre\";\r\n\
+  \t\tvar snombre = \"_datos_personales_segundo_nombre\";\r\n\
+  \t\tvar papellido = \"_datos_personales_primer_apellido\";\r\n\
+  \t\tvar sapellido = \"_datos_personales_segundo_apellido\";\r\n\
+  \t\tvar telef = \"_datos_personales_numero_de_telefono\";\r\n\
+  \t\tvar TipoSoc = \"_datos_de_la_empresa_tipo_sociedad\";\r\n\
+  \t\tvar Nombre = \"_datos_de_la_empresa_nombre\";\r\n\
+  \t\tvar Dire = \"_datos_de_la_empresa_direccion\";\r\n\
+  \t\tvar edad = \"_datos_personales_edad\";\r\n\
+  \t\tvar fnac = \"_datos_personales_fecha_de_nacimiento\";\r\n\
+  \t\tvar Telfon = \"_datos_de_la_empresa_numero_de_telefono\";\r\n\
+  \t\tvar coincide = incioRuta.concat(pos);\r\n\
+  \t\tvar TipoDocu = coincide.concat(TipoDoc);\r\n\
+  \t\tvar ced = coincide.concat(NroDoc);\r\n\
+  \t\tvar ruc =  coincide.concat(NroRuc);\r\n\
+  \t\tvar nombre1 = coincide.concat(pnombre);\r\n\
+  \t\tvar nombre2 = coincide.concat(snombre);\r\n\
+  \t\tvar apellido1 = coincide.concat(papellido);\r\n\
+  \t\tvar apellido2 = coincide.concat(sapellido);\r\n\
+  \t\tvar tetl = coincide.concat(telef);\r\n\
+  \t\tvar direccion = coincide.concat(Dire);\t\r\n\
+  \t\tvar edad1 = coincide.concat(edad);\r\n\
+  \t\tvar fnac1 = coincide.concat(fnac); \r\n\
+  \t\tif($(TipoDocu).val() == 'C\xC3\xA9dula' || $(TipoDocu).val() == 'Pasaporte'){ \r\n\
+  \t\t\t$(ruc).parents(\".part-box\").hide();\r\n\
+  \t\t}else{\r\n\
+  \t\t\t$(ced).parents(\".part-box\").hide();\r\n\
+  \t\t\t$(tetl).parents(\".field-box\").hide();\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tif($(TipoDocu).val() == 'C\xC3\xA9dula'){\r\n\
+  \t\t\t\r\n\
+  \t\t\t$(nombre1).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(nombre2).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(apellido1).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(apellido2).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(apellido2).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(apellido2).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t$(fnac1).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t \r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \t\tif($(TipoDocu).val() == 'Pasaporte' && $(tetl).val() ==''){ \r\n   \r\n   \t\t\t$(nombre1).val('');\r\n   \t\t\t$(nombre2).val('');\r\n  \t\t\t$(apellido1).val('');\r\n  \t\t\t$(apellido2).val(''); \r\n   \t\t\t$(direccion).val('');   \r\n\
+  \t\t  }\r\n\
+  \r\n\
+  \t\tif($(TipoDocu).val() == \"\"){\r\n\
+  \t\t\t$(ced).parents(\".section-box\").hide();\r\n\
+  \t\t}\r\n\
+  \t\t$(TipoDocu).parents(\".section-box\").next().hide();\r\n\
+  \t\t \r\n\
+  \r\n\
+  \t});\r\n\
+  });\r\n\
+  \r\n\
+  //::Calcular Edad:://\r\n\
+  $(document).ready(function(){\r\n\
+  \t$.each( $('[id*=datos_de_la_persona_]'), function(index, campo) {\r\n\
+  \t\tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \t\tif (pos == null){\r\n\
+  \t\t\tpos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t\t}\r\n\
+  \t\tvar iniciorut = \"#field_datos_de_la_persona\";\r\n\
+  \t\tvar fecha = \"_datos_personales_fecha_de_nacimiento\";\r\n\
+  \t\tvar edad = \"_datos_personales_edad\";\r\n\
+  \t\tvar coincide = iniciorut.concat(pos);\r\n\
+  \t\tvar Fnac = coincide.concat(fecha);\r\n\
+  \t\tvar Edad1 = coincide.concat(edad);\r\n\
+  \r\n\
+  \t\t$(Fnac).change(function(){\r\n\
+  \t\t\tvar fecha1 = $(Fnac).val();\r\n\
+  \t\t\tvar values = fecha1.split(\"-\");\r\n\
+  \t\t\tvar dia = values[0];\r\n\
+  \t\t\tvar mes = values[1];\r\n\
+  \t\t\tvar ano = values[2];\r\n\
+  \r\n\
+  \t\t\t//:: OBTENER LOS VALORES ACTUALES :://\r\n\
+  \t\t\tvar fecha_hoy = new Date();\r\n\
+  \t\t\tvar ahora_ano = fecha_hoy.getYear();\r\n\
+  \t\t\tvar ahora_mes = fecha_hoy.getMonth();\r\n\
+  \t\t\tvar ahora_dia = fecha_hoy.getDate();\r\n\
+  \t\t\t//:: REALIZAR EL CALCULO :://\r\n\
+  \t\t\tvar edad2 = (ahora_ano + 1900) - ano;\r\n\
+  \t\t\tif ( ahora_mes < (mes - 1)){\r\n\
+  \t\t\t\tedad2--;\r\n\
+  \t\t\t}\r\n\
+  \t\t\tif (((mes - 1) == ahora_mes) && (ahora_dia < dia)){\r\n\
+  \t\t\t\tedad2--;\r\n\
+  \t\t\t}\r\n\
+  \t\t\tif (((mes) == ahora_mes) && (ahora_dia < dia)){\r\n\
+  \t\t\t\tedad2--;\r\n\
+  \t\t\t}\r\n\
+  \t\t\tif (edad2 > 1900){\r\n\
+  \t\t\t\tedad2 -= 1900;\r\n\
+  \t\t\t}\r\n\
+  \t\t\t$(Edad1).val(edad2);\r\n\
+  \t\t});\r\n\
+  \t});\r\n\
+  });"

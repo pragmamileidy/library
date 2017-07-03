@@ -1,0 +1,75 @@
+--- 
+id: 1575
+name: Paso 0 - Recibo del Pago de la Solicitud
+label: "Recepci\xC3\xB3n del Pago de la Solicitud"
+description: "Revisi\xC3\xB3n de los datos y Recepci\xC3\xB3n del Pago de la Solicitud"
+fill_step_id: 772
+created_at: 2014-01-20 16:31:22 Z
+updated_at: 2014-01-21 19:13:57 Z
+include: "{\"3450\":{\"2585\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2586\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2587\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2590\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2591\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2599\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2600\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2601\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2602\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2603\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2604\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2605\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2606\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2607\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2608\":{\"3114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2924\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2589\":{\"2892\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"3457\":{\"1824\":{\"1366\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1367\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1368\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1369\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1371\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2544\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"3458\":{\"2596\":{\"2164\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2165\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2168\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  # Inicializacion de datos del agente - LG
+  
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  
+  form_data.set("recibido_por_pago.datos_del_funcionario_proceso.usuario", _agente["name"])
+on_transition: |-
+  id_pago = form_data.get("variables_usadas_codigos_p4.variables_p4.payment")
+  
+  respuesta_del_agente = form_data.get("recibido_por_pago.datos_del_funcionario_proceso.seleccione_el_resultado_de_su_evaluacion")
+  
+  
+  PaymentProxy.payment_reception(id_pago, respuesta_del_agente)
+  
+  if (respuesta_del_agente == "OK")
+  
+  form_data.routes.select{|r| r =~ /entidad_evaluadora_revisiones_p4.entidad_(\d+)\.pagada/}.each{ |pagada|
+    next unless form_data.get(pagada) == 'Iniciada'
+    form_data.set(pagada, 'Si')
+  }
+  
+  end
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: |-
+  $( function() {
+  	
+  	$(document).ready(function(){
+  
+  		function partContainer(obj) { 
+  			return obj.parent().parent().parent().parent().parent().children(); 
+  		};
+  		function valueIsCero(obj) { 
+  			return ((obj.val() == "") || (obj.val() == 0)); 
+  		};
+  		function hideIfCero(obj) { 
+  			if( valueIsCero(obj) ){ partContainer(obj).hide(); partContainer(obj).parent().hide(); };
+  		};
+  
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_0_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_1_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_2_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_3_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_4_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_5_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_6_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_7_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_8_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_9_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_10_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_11_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_12_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_13_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_entidad_evaluadora_14_monto_a_pagar'));
+  	});
+  });

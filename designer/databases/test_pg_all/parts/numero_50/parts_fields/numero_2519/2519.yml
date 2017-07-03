@@ -1,0 +1,30 @@
+--- 
+id: 2519
+part_id: 50
+field_id: 27
+name: numero
+created_at: 2012-09-11 15:19:40 Z
+updated_at: 2017-06-04 00:22:20.773724 Z
+label: Valor
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Favor introduzca un valor usando n\xC3\xBAmeros del cero (0) al nueve (9) . El caracter de separaci\xC3\xB3n de decimal es el punto (.) Ejemplo: 210.300"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8bcc8342-2150-4fac-8d2e-6a56acc23de0
+version: 20170603-202220

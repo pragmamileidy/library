@@ -1,0 +1,16 @@
+--- 
+id: 2048
+design_id: 155
+section_id: 107
+name: Datos del Solicitante (Natural)
+created_at: 2012-08-30 20:21:48 Z
+updated_at: 2015-09-17 20:12:39 Z
+label: Datos del Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1320\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"2001\":{\"required\":\"required\"},\"548\":{\"required\":\"required\"},\"763\":{\"required\":\"required\"}},\"581\":{\"572\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"unrequired\"},\"631\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"required\"}},\"2776\":{\"3165\":{\"required\":\"required\"}},\"2644\":{\"2977\":{\"required\":\"required\"},\"3953\":{\"required\":\"required\"},\"3950\":{\"required\":\"required\"},\"3951\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

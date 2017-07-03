@@ -1,0 +1,30 @@
+--- 
+id: 3143
+part_id: 594
+field_id: 10
+name: Name
+created_at: 2013-04-08 18:19:35 Z
+updated_at: 2017-06-04 00:22:46.287841 Z
+label: Name
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9931aae9-7ef3-4fd4-8c03-1e8974e752c6
+version: 20170603-202246

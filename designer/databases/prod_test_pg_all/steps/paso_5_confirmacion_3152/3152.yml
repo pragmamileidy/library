@@ -1,0 +1,340 @@
+--- 
+id: 3152
+name: "Paso 5 - Confirmaci\xC3\xB3n"
+label: "Confirmaci\xC3\xB3n"
+description: "<br>\r\n\
+  Usted ha culminado exitosamente el llenado de su solicitud,  por favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de <strong>Enviar Formulario</strong> al completar este paso su solicitud ser\xC3\xA1 sometida a procesamiento.\r\n\
+  </br>\r\n\
+  Todos los detalles y observaciones del procesamiento llegar\xC3\xA1n a su bandeja de notificaciones en la visualizaci\xC3\xB3n de este tr\xC3\xA1mite y a su correo electr\xC3\xB3nico.\r\n\
+  </br>"
+fill_step_id: 1684
+created_at: 2015-05-21 14:04:07 Z
+updated_at: 2015-05-29 17:06:26 Z
+include: "{\"4852\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit,print_form
+on_becoming: "#:: Prueba de concepto only view Licencia de Bienes Raices testpg\r\n\
+  #:: Este c\xC3\xB3digo contiene la data que se debe mostrar en la vista del llenado de tramite\r\n\
+  #:: Se debe agregar en el On becoming del \xC3\xBAltimo paso de llenado\r\n\
+  #:: Se v\xC3\xA1lida la vista en un campo data que contendr\xC3\xA1 toda la informaci\xC3\xB3n guardada en el llenado\r\n\
+  \r\n\
+  RUTAS = {\r\n\
+  \ts1p1c1: \"datos_del_solicitante_natural.datos_de_la_persona.cedula\",\r\n\
+  \ts1p1c2: \"datos_del_solicitante_natural.datos_de_la_persona.primer_nombre\",\r\n\
+  \ts1p1c3: \"datos_del_solicitante_natural.datos_de_la_persona.segundo_nombre\",\r\n\
+  \ts1p1c4: \"datos_del_solicitante_natural.datos_de_la_persona.primer_apellido\",\r\n\
+  \ts1p1c5: \"datos_del_solicitante_natural.datos_de_la_persona.segundo_apellido\",\r\n\
+  \ts1p1c6: \"datos_del_solicitante_natural.datos_de_la_persona.apellido_de_casada\",\r\n\
+  \r\n\
+  \ts1p2c1: \"datos_del_solicitante_natural.informacion_de_residencia_localizacion.direccion\",\r\n\
+  \ts1p2c2: \"datos_del_solicitante_natural.informacion_de_residencia_localizacion.numero_de_telefono\",\r\n\
+  \ts1p2c3: \"datos_del_solicitante_natural.informacion_de_residencia_localizacion.correo_electronico\",\r\n\
+  \r\n\
+  \ts2p1c1: \"datos_del_solicitante_juridica.datos_de_la_empresa.ruc\",\r\n\
+  \ts2p1c2: \"datos_del_solicitante_juridica.datos_de_la_empresa.nombre\",\r\n\
+  \r\n\
+  \ts2p2c1: \"datos_del_solicitante_juridica.direccion.direccion\",\r\n\
+  \ts2p2c2: \"datos_del_solicitante_juridica.direccion.telefono_de_oficina\",\r\n\
+  \ts2p2c3: \"datos_del_solicitante_juridica.direccion.numero_de_fax\",\r\n\
+  \ts2p2c4: \"datos_del_solicitante_juridica.direccion.correo_electronico\",\r\n\
+  \r\n\
+  \ts2p3c1: \"datos_del_solicitante_juridica.registro_de_empresa.tipo_de_sociedad\",\r\n\
+  \r\n\
+  \ts2p4c1: \"datos_del_solicitante_juridica.datos_de_la_constitucion.fecha_de_constitucion\",\r\n\
+  \ts2p4c2: \"datos_del_solicitante_juridica.datos_de_la_constitucion.escritura_publica\",\r\n\
+  \ts2p4c3: \"datos_del_solicitante_juridica.datos_de_la_constitucion.notaria_publica\",\r\n\
+  \ts2p4c4: \"datos_del_solicitante_juridica.datos_de_la_constitucion.circuito\",\r\n\
+  \ts2p4c5: \"datos_del_solicitante_juridica.datos_de_la_constitucion.fecha_de_inscripcion\",\r\n\
+  \ts2p4c6: \"datos_del_solicitante_juridica.datos_de_la_constitucion.registro_al_tomo_rollo\",\r\n\
+  \ts2p4c7: \"datos_del_solicitante_juridica.datos_de_la_constitucion.folio\",\r\n\
+  \ts2p4c8: \"datos_del_solicitante_juridica.datos_de_la_constitucion.asiento_ficha\",\r\n\
+  \r\n\
+  \ts3p1c1: \"enmienda_pacto_social.datos_persona_juridica.ruc\",\r\n\
+  \ts3p1c2: \"enmienda_pacto_social.datos_persona_juridica.tipo_sociedad\",\r\n\
+  \r\n\
+  \ts3p2c1: \"enmienda_pacto_social.enmienda_pacto_social.numero_de_telefono\",\r\n\
+  \ts3p2c2: \"enmienda_pacto_social.enmienda_pacto_social.fax\",\r\n\
+  \ts3p2c3: \"enmienda_pacto_social.enmienda_pacto_social.apartado_postal\",\r\n\
+  \ts3p2c4: \"enmienda_pacto_social.enmienda_pacto_social.zona_postal\",\r\n\
+  \t\r\n\
+  \ts4p1c1: \"firmas_extranjeras.firmas_extranjeras_asociadas_instance_1.nombre\",\r\n\
+  \ts4p1c2: \"firmas_extranjeras.firmas_extranjeras_asociadas_instance_1.pais_lista\",\r\n\
+  \ts4p1c3: \"firmas_extranjeras.firmas_extranjeras_asociadas_instance_1.estado_ciudad\",\r\n\
+  \r\n\
+  \ts5p1c1: \"requisitos.record_policivo.anexo\",\r\n\
+  \ts5p2c1: \"requisitos.poder_y_solicitud_mediante_abogado_notariado_y_franqueado_con_b_8_00.anexo\",\r\n\
+  }\r\n\
+  \r\n\
+  #:: Variables de Instancias\r\n\
+  if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n\
+  \tv = [\r\n\
+  \t\tvectorsection:[\r\n\
+  \t\t\t#:: Secci\xC3\xB3n 1 Datos del solicitante Natural\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s1p1c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s1p1c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p1c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p1c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p1c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p1c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p1c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p1c3])\r\n\
+  \t\t\t\t\t\t\t}, \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p1c4])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p1c4])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p1c5])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p1c5])\r\n\
+  \t\t\t\t\t\t\t},   \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p1c6])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p1c6])\r\n\
+  \t\t\t\t\t\t\t}   \r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t\t#:: Secci\xC3\xB3n 1 Datos del solicitante Natural (Cambia la parte datos de ubicaci\xC3\xB3n)\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s1p2c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p2c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p2c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p2c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p2c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s1p2c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s1p2c3])\r\n\
+  \t\t\t\t\t\t\t}   \r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t},\r\n\
+  \t\t\t#:: Secci\xC3\xB3n 3 Datos Enmienda Pacto Social\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s3p1c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s3p1c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p1c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p1c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p1c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p1c2])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s3p2c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c3])\r\n\
+  \t\t\t\t\t\t\t}, \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c4])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c4])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t},\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s4p1c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s4p1c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s4p1c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s4p1c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s4p1c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s4p1c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s4p1c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s4p1c3])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t},\r\n\
+  \t\t\t#:: Secci\xC3\xB3n 5 Anexos de la solicitud para el otorgamiento de poder (Cambia la parte detalle del poder)\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s5p1c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s5p1c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s5p1c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue:' <a class=\"file-link\" href=\"/agent/agent_tasks/download_attachment?attachment_id='+form_data.get(RUTAS[:s5p1c1]).split(\":\").last+'\"><img src=\"/assets/download.png\"></a>'\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t}\r\n\
+  \t\t]\r\n\
+  \t]\r\n\
+  else\r\n\
+  \tv = [\r\n\
+  \t\tvectorsection:[\r\n\
+  \t\t\t#:: Secci\xC3\xB3n 1 Datos del solicitante Natural\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s2p1c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s2p1c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p1c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p1c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p1c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p1c2])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s2p2c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p2c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p2c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p2c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p2c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p2c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p2c3])\r\n\
+  \t\t\t\t\t\t\t}, \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p2c4])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p2c4])\r\n\
+  \t\t\t\t\t\t\t}  \r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t\t#:: Secci\xC3\xB3n 1 Datos del solicitante Natural (Cambia la parte datos de ubicaci\xC3\xB3n)\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s2p3c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p3c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p3c1])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t\t#:: Secci\xC3\xB3n 1 Datos del solicitante Natural (Cambia la parte datos de ubicaci\xC3\xB3n)\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s2p4c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c3])\r\n\
+  \t\t\t\t\t\t\t}, \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c4])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c4])\r\n\
+  \t\t\t\t\t\t\t},  \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c5])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c5])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c6])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c6])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c7])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c7])\r\n\
+  \t\t\t\t\t\t\t}, \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s2p4c8])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s2p4c8])\r\n\
+  \t\t\t\t\t\t\t}  \r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t},\r\n\
+  \t\t\t#:: Secci\xC3\xB3n 3 Datos Enmienda Pacto Social\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s3p1c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s3p1c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p1c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p1c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p1c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p1c2])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s3p2c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c3])\r\n\
+  \t\t\t\t\t\t\t}, \r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s3p2c4])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s3p2c4])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t},\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s4p1c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s4p1c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s4p1c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s4p1c1])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s4p1c2])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s4p1c2])\r\n\
+  \t\t\t\t\t\t\t},\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s4p1c3])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue: form_data.get(RUTAS[:s4p1c3])\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t},\r\n\
+  \t\t\t#:: Secci\xC3\xB3n 5 Anexos de la solicitud para el otorgamiento de poder (Cambia la parte detalle del poder)\r\n\
+  \t\t\t{ section: @template_data.get_field_label(RUTAS[:s5p2c1])[:section].label,\r\n\
+  \t\t\t\tvectorpart:[\r\n\
+  \t\t\t\t\t{part: @template_data.get_field_label(RUTAS[:s5p2c1])[:part].label,\r\n\
+  \t\t\t\t\t\tvector: [\r\n\
+  \t\t\t\t\t\t\t{ label: @template_data.get_field_label(RUTAS[:s5p2c1])[:field].label, \r\n\
+  \t\t\t\t\t\t\t\tvalue:' <a class=\"file-link\" href=\"/agent/agent_tasks/download_attachment?attachment_id='+form_data.get(RUTAS[:s5p2c1]).split(\":\").last+'\"><img src=\"/assets/download.png\"></a>'\r\n\
+  \t\t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t\t]\r\n\
+  \t\t\t\t\t},\r\n\
+  \t\t\t\t]\r\n\
+  \t\t\t},\r\n\
+  \t\t]\r\n\
+  \t]\r\n\
+  end\r\n\
+  \r\n\
+  html =\"\"\r\n\
+  #:: Armando tabla que contendra valores con la informaci\xC3\xB3n con la estructura del dise\xC3\xB1o\r\n\
+  v.each do |t|\r\n\
+  \thtml = '<table class=\"tableview\" >'\r\n\
+  \t#:: Vector que contiene las secciones del dise\xC3\xB1o\r\n\
+  \tt[:vectorsection].each do |tt|\r\n\
+  \t\thtml = html + '<tr><td class=\"cellviewtitlesection\" colspan=\"2\">'+ tt[:section] +'</td></tr>'\r\n\
+  \t\t#:: Vector que contiene las partes del dise\xC3\xB1o\r\n\
+  \t\ttt[:vectorpart].each do |ttt|\r\n\
+  \t\t\thtml = html + '<tr><td class=\"cellviewtitlepart\" colspan=\"2\">'+ ttt[:part] +'</td></tr>'\r\n\
+  \t\t\t#:: Vector que contiene los campos del dise\xC3\xB1o\r\n\
+  \t\t\tttt[:vector].each do |tttt|\r\n\
+  \t\t\t\thtml = html + '<tr>\r\n\
+  \t\t\t\t<td class=\"cellviewlabel\">'+tttt[:label]+'</td>\r\n\
+  \t\t\t\t<td class=\"cellviewvalue\">'+tttt[:value]+'</td>\r\n\
+  \t\t\t\t</tr>'  \r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\t   \r\n\
+  end\r\n\
+  \r\n\
+  #:: Setear en la tabla html el campo contenedor de toda la informaci\xC3\xB3n\r\n\
+  form_data.set(\"read_only.only_view.view\",html)"
+on_transition: "if form_data.get(\"confirmacion_culminacion_de_tramite.confirmacion_de_formulario.si_no\")==\"NO\"\r\n   transition_errors << \"Para realizar el env\xC3\xADo del formulario debe confirmar con SI el llenado del mismo.\"\r\n\
+  end"
+views: 
+back_step: Paso 4 - Adjuntar archivo
+next_step: ""
+position: 5
+ajax_calls: ""

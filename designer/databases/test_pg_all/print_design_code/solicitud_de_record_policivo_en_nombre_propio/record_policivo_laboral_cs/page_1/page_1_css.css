@@ -1,0 +1,116 @@
+  @charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  background-image: url(RUTA_IMAGEN.png);
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+	
+/* Otras clases de formatos preestablecidos que aun no se han definido */
+
+   .datosdeltitularrp_datosdesolicitud_fechadesolicitud {
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_datosdesolicitud_numerodesolicitud {
+	position: absolute;
+	top: 55px;
+	left: 755px;
+	width: 280px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_datosbsicosdepersonanatural_cdulapasaporte {
+	position: absolute;
+	top: 437px;
+	left: 632px;
+	width: 259px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_datosbsicosdepersonanatural_nombrecompleto {
+	position: absolute;
+	top: 437px;
+	left: 100px;
+	width: 373px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .mensajedij_mensajedij_campo_data {
+	position: absolute;
+	top: 496px;
+	left: 50px;
+	width: 895px;
+	height: 522px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_codigounicodij_codigounico {
+	position: absolute;
+	top: 278px;
+	left: 197px;
+	width: 206px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .codigounicodij_codigounicodij_year {
+	position: absolute;
+	top: 1115px;
+	left: 870px;
+	width: 85px;
+	height: 17px;
+	overflow: hidden;
+  }
+  .codigounicodij_codigounicodij_mes {
+	position: absolute;
+	top: 1115px;
+	left: 707px;
+	width: 135px;
+	height: 18px;
+	overflow: hidden;
+  }
+  .codigounicodij_codigounicodij_dia {
+	position: absolute;
+	top: 1115px;
+	left: 529px;
+	width: 49px;
+	height: 18px;
+	overflow: hidden;
+  }
+  .directordij_datosdelfuncionariogenerico_usuario2 {
+	position: absolute;
+	top: 1247px;
+	left: 459px;
+	width: 274px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .directordij_datosdelfuncionariogenerico_usuario {
+	position: absolute;
+	top: 362px;
+	left: 216px;
+	width: 376px;
+	height: 19px;
+	overflow: hidden;
+  }
+ .gestionsolicitud_gestionsolicitud_provincia_lista {
+	position: absolute;
+	top: 1113px;
+	left: 255px;
+	width: 223px;
+	height: 20px;
+	overflow: hidden;
+  }

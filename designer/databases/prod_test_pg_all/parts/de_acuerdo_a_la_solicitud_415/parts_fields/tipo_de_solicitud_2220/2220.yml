@@ -1,0 +1,30 @@
+--- 
+id: 2220
+part_id: 415
+field_id: 206
+name: Tipo de Solicitud
+created_at: 2012-08-07 16:13:27 Z
+updated_at: 2017-06-04 00:22:09.333345 Z
+label: Tipo de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Escoger el caso de solicitud
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f4c411bb-dada-44a5-a280-611a50630a26
+version: 20170603-202209

@@ -1,0 +1,17 @@
+--- 
+id: 618
+name: Oficinas o Sucursales
+description: parte creada para formulario Bienes Raices
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-07 18:52:01 Z
+updated_at: 2015-11-02 18:45:22 Z
+label: ""
+hint: ""
+view_class: horizontal
+serial: 1027-2001-0326-4963-9905

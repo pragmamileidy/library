@@ -1,0 +1,315 @@
+--- 
+id: 702
+name: Paso 3 - Valor Total
+label: Valor Total
+description: "<br>Valor Total a Cobrar</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 300
+created_at: 2012-07-16 16:30:34 Z
+updated_at: 2015-10-15 02:53:33 Z
+include: "{\"1419\":{\"1889\":{\"498\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"499\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"500\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"501\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"502\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"503\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"504\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1803\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1804\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1805\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3138\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2972\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #Montos introducidos por el usuario
+  _a=form_data.get("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.valor_bruto")
+  _b=form_data.get("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.retencion_por_garantia_10")
+  _c=form_data.get("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.porcentaje_del_anticipo")
+  _f=form_data.get("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.impuesto_selectivo_al_consumo")
+  _h=form_data.get("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.sume_911")
+  #Porcentajes
+  _d = _c.to_f * _a.to_f / 100
+  _e = 7 * _a.to_f / 100
+  _g = _e.to_f / 2
+  form_data.set("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.monto_del_anticipo", _d)
+  form_data.set("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.itbms", _e)
+  form_data.set("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.monto_de_la_retencion_del_50_del_itbms", _g)
+  #Suma total
+  _suma = _a.to_f + _b.to_f + _d.to_f + _g.to_f + _f.to_f + _h.to_f
+  form_data.set("detalle_de_valores_de_balboas.detalle_de_valores_de_balboas.valor_total", _suma)
+on_transition: "# Obtener valor del config\r\n                valor = @config.route(\"Rates-payment-payment-payment\")\r\n                \r\n                if valor == \"Electr\xC3\xB3nico\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")\r\n                \r\n                end\r\n                if valor == \"Manual\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")\r\n                \r\n                end"
+views: 
+back_step: "Paso 2 - Informaci\xC3\xB3n de la Solicitud"
+next_step: Paso 4 - Adjuntar archivos
+position: 2
+ajax_calls: "$(document).ready(function() {\r\n\
+  \ta = $('#field_detalle_de_valores_de_balboas_detalle_de_valores_de_balboas_valor_total').val();\r\n\
+  \t$('#field_detalle_de_valores_de_balboas_detalle_de_valores_de_balboas_valor_total_a_cobrar_en_letras').val(covertirNumLetras(a));\r\n\
+  });\r\n\
+  \r\n\
+  // Funci\xC3\xB3n modulo, regresa el residuo de una divisi\xC3\xB3n \r\n\
+  function mod(dividendo , divisor) \r\n\
+  { \r\n  resDiv = dividendo / divisor ;  \r\n  parteEnt = Math.floor(resDiv);            // Obtiene la parte Entera de resDiv \r\n  parteFrac = resDiv - parteEnt ;      // Obtiene la parte Fraccionaria de la divisi\xC3\xB3n\r\n  modulo = Math.round(parteFrac * divisor);  // Regresa la parte fraccionaria * la divisi\xC3\xB3n (modulo) \r\n  return modulo; \r\n\
+  } // Fin de funci\xC3\xB3n mod\r\n\
+  \r\n\
+  // Funci\xC3\xB3n ObtenerParteEntDiv, regresa la parte entera de una divisi\xC3\xB3n\r\n\
+  function ObtenerParteEntDiv(dividendo , divisor) \r\n\
+  { \r\n  resDiv = dividendo / divisor ;  \r\n  parteEntDiv = Math.floor(resDiv); \r\n  return parteEntDiv; \r\n\
+  } // Fin de funci\xC3\xB3n ObtenerParteEntDiv\r\n\
+  \r\n\
+  // function fraction_part, regresa la parte Fraccionaria de una cantidad\r\n\
+  function fraction_part(dividendo , divisor) \r\n\
+  { \r\n  resDiv = dividendo / divisor ;  \r\n  f_part = Math.floor(resDiv); \r\n  return f_part; \r\n\
+  } // Fin de funci\xC3\xB3n fraction_part\r\n\
+  \r\n\
+  \r\n\
+  // function string_literal conversion is the core of this program \r\n\
+  // converts numbers to spanish strings, handling the general special \r\n\
+  // cases in spanish language. \r\n\
+  function string_literal_conversion(number) \r\n\
+  {   \r\n   // first, divide your number in hundreds, tens and units, cascadig \r\n   // trough subsequent divisions, using the modulus of each division \r\n   // for the next. \r\n\
+  \r\n   centenas = ObtenerParteEntDiv(number, 100); \r\n   \r\n   number = mod(number, 100); \r\n\
+  \r\n   decenas = ObtenerParteEntDiv(number, 10); \r\n   number = mod(number, 10); \r\n\
+  \r\n   unidades = ObtenerParteEntDiv(number, 1); \r\n   number = mod(number, 1);  \r\n   string_hundreds=\"\";\r\n   string_tens=\"\";\r\n   string_units=\"\";\r\n   // cascade trough hundreds. This will convert the hundreds part to \r\n   // their corresponding string in spanish.\r\n   if(centenas == 1){\r\n      string_hundreds = \"ciento \";\r\n   } \r\n   \r\n   \r\n   if(centenas == 2){\r\n      string_hundreds = \"doscientos \";\r\n   }\r\n    \r\n   if(centenas == 3){\r\n      string_hundreds = \"trescientos \";\r\n   } \r\n   \r\n   if(centenas == 4){\r\n      string_hundreds = \"cuatrocientos \";\r\n   } \r\n   \r\n   if(centenas == 5){\r\n      string_hundreds = \"quinientos \";\r\n   } \r\n   \r\n   if(centenas == 6){\r\n      string_hundreds = \"seiscientos \";\r\n   } \r\n   \r\n   if(centenas == 7){\r\n      string_hundreds = \"setecientos \";\r\n   } \r\n   \r\n   if(centenas == 8){\r\n      string_hundreds = \"ochocientos \";\r\n   } \r\n   \r\n   if(centenas == 9){\r\n      string_hundreds = \"novecientos \";\r\n   } \r\n   \r\n // end switch hundreds \r\n\
+  \r\n   // casgade trough tens. This will convert the tens part to corresponding \r\n   // strings in spanish. Note, however that the strings between 11 and 19 \r\n   // are all special cases. Also 21-29 is a special case in spanish. \r\n   if(decenas == 1){\r\n      //Special case, depends on units for each conversion\r\n      if(unidades == 1){\r\n         string_tens = \"once\";\r\n      }\r\n      \r\n      if(unidades == 2){\r\n         string_tens = \"doce\";\r\n      }\r\n      \r\n      if(unidades == 3){\r\n         string_tens = \"trece\";\r\n      }\r\n      \r\n      if(unidades == 4){\r\n         string_tens = \"catorce\";\r\n      }\r\n      \r\n      if(unidades == 5){\r\n         string_tens = \"quince\";\r\n      }\r\n      \r\n      if(unidades == 6){\r\n         string_tens = \"dieciseis\";\r\n      }\r\n      \r\n      if(unidades == 7){\r\n         string_tens = \"diecisiete\";\r\n      }\r\n      \r\n      if(unidades == 8){\r\n         string_tens = \"dieciocho\";\r\n      }\r\n      \r\n      if(unidades == 9){\r\n         string_tens = \"diecinueve\";\r\n      }\r\n   } \r\n   //alert(\"STRING_TENS =\"+string_tens);\r\n   \r\n   if(decenas == 2){\r\n      string_tens = \"veinti\";\r\n   }\r\n   if(decenas == 3){\r\n      string_tens = \"treinta\";\r\n   }\r\n   if(decenas == 4){\r\n      string_tens = \"cuarenta\";\r\n   }\r\n   if(decenas == 5){\r\n      string_tens = \"cincuenta\";\r\n   }\r\n   if(decenas == 6){\r\n      string_tens = \"sesenta\";\r\n   }\r\n   if(decenas == 7){\r\n      string_tens = \"setenta\";\r\n   }\r\n   if(decenas == 8){\r\n      string_tens = \"ochenta\";\r\n   }\r\n   if(decenas == 9){\r\n      string_tens = \"noventa\";\r\n   }\r\n   \r\n    // Fin de swicth decenas\r\n\
+  \r\n\
+  \r\n   // cascades trough units, This will convert the units part to corresponding \r\n   // strings in spanish. Note however that a check is being made to see wether \r\n   // the special cases 11-19 were used. In that case, the whole conversion of \r\n   // individual units is ignored since it was already made in the tens cascade. \r\n\
+  \r\n   if (decenas == 1) \r\n   { \r\n      string_units=\"\";  // empties the units check, since it has alredy been handled on the tens switch \r\n   } \r\n   else \r\n   { \r\n      if(unidades == 1){\r\n         string_units = \"un\";\r\n      }\r\n      if(unidades == 2){\r\n         string_units = \"dos\";\r\n      }\r\n      if(unidades == 3){\r\n         string_units = \"tres\";\r\n      }\r\n      if(unidades == 4){\r\n         string_units = \"cuatro\";\r\n      }\r\n      if(unidades == 5){\r\n         string_units = \"cinco\";\r\n      }\r\n      if(unidades == 6){\r\n         string_units = \"seis\";\r\n      }\r\n      if(unidades == 7){\r\n         string_units = \"siete\";\r\n      }\r\n      if(unidades == 8){\r\n         string_units = \"ocho\";\r\n      }\r\n      if(unidades == 9){\r\n         string_units = \"nueve\";\r\n      }\r\n       // end switch units \r\n   } // end if-then-else \r\n   \r\n\
+  \r\n\
+  //final special cases. This conditions will handle the special cases which \r\n\
+  //are not as general as the ones in the cascades. Basically four: \r\n\
+  \r\n\
+  // when you've got 100, you dont' say 'ciento' you say 'cien' \r\n\
+  // 'ciento' is used only for [101 >= number > 199] \r\n\
+  if (centenas == 1 && decenas == 0 && unidades == 0) \r\n\
+  { \r\n   string_hundreds = \"cien \" ; \r\n\
+  }  \r\n\
+  \r\n\
+  // when you've got 10, you don't say any of the 11-19 special \r\n\
+  // cases.. just say 'diez' \r\n\
+  if (decenas == 1 && unidades ==0) \r\n\
+  { \r\n   string_tens = \"diez \" ; \r\n\
+  } \r\n\
+  \r\n\
+  // when you've got 20, you don't say 'veinti', which is used \r\n\
+  // only for [21 >= number > 29] \r\n\
+  if (decenas == 2 && unidades ==0) \r\n\
+  { \r\n  string_tens = \"veinte \" ; \r\n\
+  } \r\n\
+  \r\n\
+  // for numbers >= 30, you don't use a single word such as veintiuno \r\n\
+  // (twenty one), you must add 'y' (and), and use two words. v.gr 31 \r\n\
+  // 'treinta y uno' (thirty and one) \r\n\
+  if (decenas >=3 && unidades >=1) \r\n\
+  { \r\n   string_tens = string_tens+\" y \"; \r\n\
+  } \r\n\
+  \r\n\
+  // this line gathers all the hundreds, tens and units into the final string \r\n\
+  // and returns it as the function value.\r\n\
+  final_string = string_hundreds+string_tens+string_units;\r\n\
+  \r\n\
+  \r\n\
+  return final_string ; \r\n\
+  \r\n\
+  } //end of function string_literal_conversion()================================ \r\n\
+  \r\n\
+  // handle some external special cases. Specially the millions, thousands \r\n\
+  // and hundreds descriptors. Since the same rules apply to all number triads \r\n\
+  // descriptions are handled outside the string conversion function, so it can \r\n\
+  // be re used for each triad. \r\n\
+  function covertirNumLetras(number)\r\n\
+  {\r\n   if (number.toString().lastIndexOf('.') == -1) \r\n   number = number.toString()+\".00\"\r\n  //number = number_format (number, 2);\r\n   number1=number;\r\n   //settype (number, \"integer\");\r\n   cent = number1.toString().split('.');   \r\n   centavos = cent[1];\r\n   if (centavos == 0 || centavos == undefined){\r\n   centavos = \"00\";}\r\n\
+  \tnumber = number1 = Math.floor(number);\r\n   if (number == 0 || number == \"\") \r\n   { // if amount = 0, then forget all about conversions, \r\n      centenas_final_string=\" cero \"; // amount is zero (cero). handle it externally, to \r\n      // function breakdown \r\n  } \r\n   else   { \r\n     millions  = ObtenerParteEntDiv(number, 1000000); // first, send the millions to the string \r\n      number = mod(number, 1000000);           // conversion function \r\n      \r\n     if (millions != 0)\r\n      {                      \r\n      // This condition handles the plural case \r\n         if (millions == 1) \r\n         {              // if only 1, use 'millon' (million). if \r\n            descriptor= \" millon \";  // > than 1, use 'millones' (millions) as \r\n            } \r\n         else \r\n         {                           // a descriptor for this triad. \r\n              descriptor = \" millones \"; \r\n            } \r\n      } \r\n      else \r\n      {    \r\n         descriptor = \" \";                 // if 0 million then use no descriptor. \r\n      } \r\n      millions_final_string = string_literal_conversion(millions)+descriptor; \r\n          \r\n      \r\n      thousands = ObtenerParteEntDiv(number, 1000);  // now, send the thousands to the string \r\n        number = mod(number, 1000);            // conversion function. \r\n      //print \"Th:\".thousands;\r\n     if (thousands != 1) \r\n      {                   // This condition eliminates the descriptor \r\n         thousands_final_string =string_literal_conversion(thousands) + \" mil \"; \r\n       //  descriptor = \" mil \";          // if there are no thousands on the amount \r\n      } \r\n      if (thousands == 1)\r\n      {\r\n         thousands_final_string = \" mil \"; \r\n     }\r\n      if (thousands < 1) \r\n      { \r\n         thousands_final_string = \" \"; \r\n      } \r\n  \r\n      // this will handle numbers between 1 and 999 which \r\n      // need no descriptor whatsoever. \r\n\
+  \r\n     centenas  = number;                     \r\n      centenas_final_string = string_literal_conversion(centenas) ; \r\n      \r\n   } //end if (number ==0) \r\n\
+  \r\n   /*if (ereg(\"un\",centenas_final_string))\r\n   {\r\n     centenas_final_string = ereg_replace(\"\",\"o\",centenas_final_string); \r\n   }*/\r\n   //finally, print the output. \r\n\
+  \r\n   /* Concatena los millones, miles y cientos*/\r\n   cad = millions_final_string+thousands_final_string+centenas_final_string; \r\n   \r\n   /* Convierte la cadena a May\xC3\xBAsculas*/\r\n   cad = cad.toUpperCase();       \r\n\
+  \r\n   if (centavos.length>2)\r\n   {   \r\n      if(centavos.substring(2,3)>= 5){\r\n         centavos = centavos.substring(0,1)+(parseInt(centavos.substring(1,2))+1).toString();\r\n      }   else{\r\n        centavos = centavos.substring(0,2);\r\n       }\r\n   }\r\n\
+  \r\n   /* Concatena a los centavos la cadena \"/100\" */\r\n   if (centavos.length==1)\r\n   {\r\n      centavos = centavos+\"0\";\r\n   }\r\n   centavos = centavos.toString() + \"/100\"; \r\n\
+  \r\n\
+  \r\n   /* Asigna el tipo de moneda, para 1 = PESO, para distinto de 1 = PESOS*/\r\n   if (number == 1)\r\n   {\r\n      moneda = \" BsF \";  \r\n   }\r\n   else\r\n   {\r\n      moneda = \" BsF \";  \r\n   }\r\n   /* Regresa el n\xC3\xBAmero en cadena entre par\xC3\xA9ntesis y con tipo de moneda y la fase M.N.*/\r\n   //alert( \"FINAL=\"+cad+moneda+centavos+\" US Dollars )\");\r\n   return (cad+\" CON \"+centavos).toLowerCase();\r\n\
+  }"

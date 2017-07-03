@@ -1,0 +1,30 @@
+--- 
+id: 11
+name: Fecha Actual
+description: "Campo con la fecha del d\xC3\xADa que indique: d\xC3\xADa, mes y a\xC3\xB1o "
+version: 
+status: Draft
+label: Fecha Actual
+hint: NO DEBE USARSE, para obtener la fecha actual consultar por codigo ruby y asignarselo al campo fecha
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-01 13:12:56 Z
+updated_at: 2012-05-18 00:06:39 Z
+values_list: ""
+keys_list: ""
+field_type: string
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

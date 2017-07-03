@@ -1,0 +1,17 @@
+--- 
+id: 440
+name: "N\xC3\xBAmero Referencia Geod\xC3\xA9sica"
+description: "Contenedor de un n\xC3\xBAmero natural"
+version: 
+status: Draft
+help: Favor especificar la cantidad solicitada
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-14 12:22:55 Z
+updated_at: 2015-10-28 15:15:28 Z
+label: "N\xC3\xBAmero"
+hint: Favor especificar la cantidad solicitada
+view_class: horizontal
+serial: 1291-4540-8140-6492-7356

@@ -1,0 +1,20 @@
+--- 
+id: 3202
+section_id: 315
+part_id: 38
+name: "Diploma de Refrigeraci\xC3\xB3n"
+created_at: 2014-05-12 21:36:12 Z
+updated_at: 2015-11-06 18:37:20 Z
+label: "Diploma de Refrigeraci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: "a = form_data.get(\"tipo_de_idoneidad_para_educacion_media.tipo_de_idoneidad_para_la_educacion_media.tipo_de_idoneidad_para_la_educacion_media\")\r\n\
+  a==\"Mec\xC3\xA1nico\" "
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

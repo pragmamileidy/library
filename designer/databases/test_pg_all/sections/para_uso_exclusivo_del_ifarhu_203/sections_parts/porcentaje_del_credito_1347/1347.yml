@@ -1,0 +1,19 @@
+--- 
+id: 1347
+section_id: 203
+part_id: 235
+name: "Porcentaje del Cr\xC3\xA9dito"
+created_at: 2012-05-06 05:05:55 Z
+updated_at: 2012-05-16 20:46:26 Z
+label: "Porcentaje del Cr\xC3\xA9dito"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

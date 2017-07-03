@@ -1,0 +1,32 @@
+--- 
+id: 137
+name: "Solicitud de Autorizaci\xC3\xB3n De Empresa Financiera"
+status: Draft
+version: 20170609-011507
+description: "Solicitud de Autorizaci\xC3\xB3n De Empresa Financiera para el Ministerio de Comercio e Industria"
+help: ""
+layout: 
+life_cycle: 
+tags: "Solicitud,Autorizaci\xC3\xB3n, Agencia , Informaci\xC3\xB3n , Datos,ministerio,comercio,industria"
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-09 21:53:54 Z
+updated_at: 2017-06-09 05:15:07.013889 Z
+label: "Solicitud de Autorizaci\xC3\xB3n de Agencia de Informaci\xC3\xB3n de Datos"
+hint: ""
+project: 
+organization: 
+process: 
+ext_template_id: 
+- :name_store: test_sinpapeles
+  :id_template: "19488"
+- :name_store: dev_aig
+  :id_template: "3927"
+- :name_store: test_aig
+  :id_template: "3131"
+- :name_store: prod_aig
+  :id_template: "28331"
+namespace: ""
+custom: 
+serial: 2239-5264-5905-6421-0029

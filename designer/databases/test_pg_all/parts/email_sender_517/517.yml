@@ -1,0 +1,17 @@
+--- 
+id: 517
+name: email_sender
+description: Parte que contiene las direcciones de email, para personas y agentes. Es utilizada por los tramites 100, procesos 1, 2, 3, 4 y 5
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-15 16:30:53 Z
+updated_at: 2013-01-15 16:30:53 Z
+label: Direccion del Remitente
+hint: ""
+view_class: horizontal
+serial: 

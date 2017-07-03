@@ -1,0 +1,30 @@
+--- 
+id: 4181
+part_id: 760
+field_id: 10
+name: cargo
+created_at: 2017-02-28 19:11:57.019443 Z
+updated_at: 2017-06-04 00:26:48.068447 Z
+label: Cargo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4dcbcf90-7d8d-40e4-bcba-663c047abde6
+version: 20170603-202648

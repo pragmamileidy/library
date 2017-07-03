@@ -1,0 +1,24 @@
+--- 
+id: 3590
+section_id: 584
+part_id: 552
+name: Representado por juridico
+created_at: 2015-11-06 19:09:57 Z
+updated_at: 2015-11-06 19:09:57 Z
+label: Representado por
+min_instances: 1
+max_instances: 1
+depends_on: |
+  representante =  form_data.get("datos_del_productor_instance_#{route.section.instance}.tipo_documento_productor.tipo_de_identificacion")
+  #_person = @application["person_id"]
+  #_owner = @application["owner_person_id"]
+  #((_person != _owner) and (representante == "RUC"))
+
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 7

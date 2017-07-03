@@ -1,0 +1,30 @@
+--- 
+id: 1670
+part_id: 306
+field_id: 1
+name: "A\xC3\xB1os"
+created_at: 2012-06-08 15:54:13 Z
+updated_at: 2017-06-04 00:21:49.756154 Z
+label: "A\xC3\xB1os"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Favor introduzca un valor entero
+help: "Introducir aqu\xC3\xAD la cantidad de a\xC3\xB1os que tendr\xC3\xA1 vigencia el contrato"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 2
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 541ee14c-8ed3-475a-91b6-ccdfb25e6e80
+version: 20170603-202149

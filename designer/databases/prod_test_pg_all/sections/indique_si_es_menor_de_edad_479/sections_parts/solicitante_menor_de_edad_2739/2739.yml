@@ -1,0 +1,19 @@
+--- 
+id: 2739
+section_id: 479
+part_id: 469
+name: solicitante menor de edad
+created_at: 2013-03-19 23:22:58 Z
+updated_at: 2013-05-28 15:59:54 Z
+label: Indique si es menor de edad
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2518\":{},\"3094\":{},\"3095\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

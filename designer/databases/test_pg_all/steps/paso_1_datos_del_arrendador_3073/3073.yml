@@ -1,0 +1,233 @@
+--- 
+id: 3073
+name: Paso 1 - Datos del Arrendador
+label: Datos del Arrendador
+description: "Por favor complete la informaci\xC3\xB3n del Arrendador."
+fill_step_id: 1646
+created_at: 2014-12-18 15:37:20 Z
+updated_at: 2015-02-03 15:23:04 Z
+include: "{\"4707\":{\"580\":{\"1461\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1981\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"2456\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2457\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2458\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"583\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"578\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2217\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"930\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4708\":{\"595\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"568\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"598\":{\"1981\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2009\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3614\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"597\":{\"2456\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2457\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2458\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"583\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"578\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2217\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"930\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4709\":{\"1765\":{\"1613\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2067\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3344\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4718\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "# Inicializacion de datos generales\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n\
+  result = WebserviceConsumer.get( '/consecutive/generador_conahabitacional/generate.json').parsed_response\r\n\
+  _consecutivo = result[\"response\"]\r\n\
+  _consecutivo = \"#{@application[\"id\"]}-\"+\"#{_consecutivo[\"value\"]}\"\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\",_consecutivo)\r\n\
+  \r\n\
+  ####Generador de n\xC3\xBAmero de contrato \r\n\
+  # result = WebserviceConsumer.get( '/consecutive/generador_conahabitacional/generate.json').parsed_response\r\n\
+  # _contrato = result[\"response\"][\"value\"]\r\n\
+  # form_data.set(\"contrato_de_arrendamiento1.numero_de_contrato.numero_de_contrato_1\",_contrato)\r\n\
+  \r\n\
+  #Datos del solicitante\r\n\
+  person = @application[\"person_id\"]\r\n\
+  owner = @application[\"owner_person_id\"]\r\n\
+  numdoc = !@owner[\"national_id\"].blank? ? @owner[\"national_id\"] : @owner[\"passport\"]\r\n\
+  tipodoc = !@owner[\"national_id\"].blank? ? \"C\xC3\xA9dula\" : \"Pasaporte\"\r\n\
+  \r\n\
+  #cambiar campo c\xC3\xA9dula por n\xC3\xBAmero de documento para que puedan ingresar personas con pasaporte\r\n\
+  \r\n\
+  if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n \r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.datos_de_la_persona.cedula_pasaporte\",numdoc)\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.datos_de_la_persona.tipo_documento_string\",tipodoc)\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.datos_de_la_persona.primer_nombre\",@owner[\"first_name\"]) \r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.datos_de_la_persona.segundo_nombre\",@owner[\"second_name\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.datos_de_la_persona.primer_apellido\",@owner[\"last_name\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.datos_de_la_persona.segundo_apellido\",@owner[\"second_last_name\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.datos_de_la_persona.apellido_de_casada\",@owner[\"married_name\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.informacion_de_residencia_localizacion.provincia\",@owner[\"province\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.informacion_de_residencia_localizacion.distrito\",@owner[\"township\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.informacion_de_residencia_localizacion.corregimiento\",@owner[\"urbanization\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.informacion_de_residencia_localizacion.numero_de_telefono\",@owner[\"fixed_number\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.informacion_de_residencia_localizacion.numero_celular\",@owner[\"movil_number\"])\r\n\
+  \t  form_data.set(\"informacion_de_arrendador_persona_natural.informacion_de_residencia_localizacion.correo_electronico\",@owner[\"email\"])\r\n\
+  else\r\n\
+  \r\n form_data.set(\"informacion_de_arrendador_persona_juridica.datos_de_la_empresa.ruc\",@owner[\"tax_id\"])\r\n form_data.set(\"informacion_de_arrendador_persona_juridica.datos_de_la_empresa.nombre\",@owner[\"name\"])\r\n form_data.set(\"informacion_de_arrendador_persona_juridica.direccion.correo_electronico\",@owner[\"email\"])\t\r\n \r\n _idpersona = @application[\"person_id\"].to_s\r\n\
+  \t\t\tresult = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?person_id=' + \"#{_idpersona}\" + '&include_all=true').parsed_response\r\n\
+  \t\t\t_hash = result[\"hash\"]\r\n\
+  \t\t\tpersona = _hash[\"response\"]\r\n\
+  \t\t\t informacion_de_arrendador_persona_juridica.representante_legal.primer_nombre\r\n\
+  \t\t\t form_data.set(\"informacion_de_arrendador_persona_juridica.representante_legal.cedula_pasaporte\",persona[\"person_gov_id_number\"])\r\n\
+  \t\t\t form_data.set(\"informacion_de_arrendador_persona_juridica.representante_legal.nombre_y_apellido\",persona[\"name\"])\r\n\
+  \t\t\t form_data.set(\"informacion_de_arrendador_persona_juridica.representante_legal.email\",persona[\"email\"])\r\n\
+  \r\n #result = WebserviceConsumer.get( '/service/bdin_mef_obtener_digito_verificador/find.json?rucg=' + \"#{@owner[\"tax_id\"]}\").parsed_response\r\n #data = result[\"response\"]\r\n #form_data.set(\"informacion_de_arrendador_persona_juridica.datos_de_la_empresa.digito_verficador\",data[\"digitoVerificador\"])\r\n end\r\n  "
+on_transition: "#Datos del arrendatario\r\n\
+  \r\n\
+  tipoPersona = form_data.get(\"tipo_de_persona_del_arrendamiento.tipo_de_persona_del_arrendamiento.tipo\")\r\n \r\n   if (tipoPersona==\"Natural\") \r\n   numDoc= form_data.get(\"tipo_de_persona_del_arrendamiento.tipo_de_persona_del_arrendamiento.numero_de_documento\")\r\n   result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{numDoc}\").parsed_response\r\n   data = result[\"response\"]    \r\n   if !data.blank?    \r\n    form_data.set(\"informacion_del_arrendatario_natural.datos_de_la_persona.cedula_pasaporte\",data[\"cedula\"])\r\n\
+  \tform_data.set(\"informacion_del_arrendatario_natural.datos_de_la_persona.primer_nombre\",data[\"primerNombre\"])\r\n\
+  \tform_data.set(\"informacion_del_arrendatario_natural.datos_de_la_persona.segundo_nombre\",data[\"segundoNombre\"])\r\n\
+  \tform_data.set(\"informacion_del_arrendatario_natural.datos_de_la_persona.primer_apellido\",data[\"primerApellido\"])\r\n\
+  \tform_data.set(\"informacion_del_arrendatario_natural.datos_de_la_persona.segundo_apellido\",data[\"segundoApellido\"])\r\n\
+  \t#form_data.set(\"informacion_del_arrendatario_natural.datos_de_la_persona.apellido_de_casada\",data[\"married_name\"])\r\n\
+  \tform_data.set(\"informacion_del_arrendatario_natural.direccion.provincia\",data[\"provincia\"])\r\n    form_data.set(\"informacion_del_arrendatario_natural.direccion.distrito\",data[\"distrito\"])\r\n\
+  \tform_data.set(\"informacion_del_arrendatario_natural.direccion.corregimiento\",data[\"corregimiento\"])\r\n\
+  \t#form_data.set(\"informacion_del_arrendatario_natural.direccion.barrio\",data[\"calle-avenida\"])\r\n\
+  \t#form_data.set(\"informacion_del_arrendatario_natural.direccion.apartado_postal\",data[\"codigoPostal\"])\r\n\
+  \t#form_data.set(\"informacion_del_arrendatario_natural.direccion.numero_de_telefono\",data[\"tlfLocal\"])\r\n\
+  \t#form_data.set(\"informacion_del_arrendatario_natural.direccion.numero_celular\",data[\"tlfCelular\"])\r\n\
+  \t#form_data.set(\"informacion_del_arrendatario_natural.informacion_de_residencia_localizacion.correo_electronico\",data[\"email\"])\r\n  else\r\n     transition_errors << \"Los datos del arrendatario no fueron encontrados, por favor verifique.\"\r\n    end\r\n  end\t\r\n\
+  \r\n   if (tipoPersona==\"Juridica\")  \r\n   numDoc= form_data.get(\"tipo_de_persona_del_arrendamiento.tipo_de_persona_del_arrendamiento.numero_de_documento\")\r\n   tipoSoc=form_data.get(\"tipo_de_persona_del_arrendamiento.tipo_de_persona_del_arrendamiento.tipo_sociedad\")\r\n   result = WebserviceConsumer.get('/service/bdin_registro_publico_empresas/find.json?ruc=' + \"#{numDoc}\" + '&tipo_sociedad=' + \"#{tipoSoc}\").parsed_response\r\n   data = result[\"response\"]\r\n   if !data.blank?\r\n    form_data.set(\"informacion_del_arrendatario_juridico.datos_de_la_empresa.ruc\",numDoc)\t\r\n    form_data.set(\"informacion_del_arrendatario_juridico.datos_de_la_empresa.nombre\",data[\"nombre_empresa\"])\r\n    form_data.set(\"informacion_del_arrendatario_juridico.datos_de_la_empresa.digito_verficador\",data[\"digito_verificador\"])\r\n   # form_data.set(\"informacion_del_arrendatario_juridico.direccion.correo_electronico\",data[\"email\"])\t\t\r\n   #result = WebserviceConsumer.get( '/service/bdin_mef_obtener_digito_verificador/find.json?ruc=' + \"#{numDoc}\").parsed_response\r\n   #data2 = result[\"response\"]\r\n   #if !data2.blank?\r\n   #form_data.set(\"informacion_del_arrendatario_juridico.datos_de_la_empresa.digito_verficador\",data2[\"digitoVerificador\"])                 \r\n #else\r\n\
+  \t#transition_errors << \"No se encontro el digito verificador, por favor verifique: #{numDoc}\"\r\n   #end\r\n\
+  \r\n\
+  \r\n form_data.set(\"informacion_del_arrendatario_juridico.representante_legal.cedula_pasaporte\",data[\"cedula\"])\r\n form_data.set(\"informacion_del_arrendatario_juridico.representante_legal.nombre_y_apellido\",data[\"representante_legal\"]) \r\n form_data.set(\"informacion_del_arrendatario_juridico.direccion.numero_celular\",data[\"tlf_movil\"])\r\n form_data.set(\"informacion_del_arrendatario_juridico.direccion.correo_electronico\",data[\"email\"])\r\n\
+  \r\n\
+  \r\n  else\r\n   transition_errors << \"No se encontraron los datos del arrendatario, por favor verifique: #{numDoc}\"\r\n  end\r\n  end\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  _ti_so =form_data.get(\"tipo_de_persona_del_arrendamiento.tipo_de_persona_del_arrendamiento.tipo_sociedad\")\r\n\
+  \r\n\
+  if (form_data.get(\"tipo_de_persona_del_arrendamiento.tipo_de_persona_del_arrendamiento.tipo\") == \"Juridica\" && _ti_so.blank?)\r\n     transition_errors << \"Para Tipo de Persona de Arrendamiento Jur\xC3\xADdica es Obligatorio Seleccionar el Tipo de Sociedad.\"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: Paso 2 - Datos de Arrendatario
+position: 1
+ajax_calls: |
+  $( function() {
+  	$("#field_informacion_de_arrendador_persona_natural_informacion_de_residencia_localizacion_provincia_lista").change(function(){
+  		var prov = $("#field_informacion_de_arrendador_persona_natural_informacion_de_residencia_localizacion_provincia_lista").find(':selected').val();
+  		distritos(prov);
+  	});
+  	$("#field_informacion_de_arrendador_persona_natural_informacion_de_residencia_localizacion_distrito_lista").change(function(){
+  		var distrito = $("#field_informacion_de_arrendador_persona_natural_informacion_de_residencia_localizacion_distrito_lista").find(':selected').val();
+  		corregimientos(distrito);
+  	});
+  	});
+  
+  function distritos(provincia) {
+   params = {
+              "service_name":"ws_panama_distritos/where",
+              "provincia":provincia
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+  				var dist;
+  				var html_options = "";
+  				for (x in data){
+  					dist = data[x];
+  					html_options = html_options+'<option value="'+dist["distrito"] +'">'+dist["distrito"] +'</option>'
+  				}	
+  				$("#field_informacion_de_arrendador_persona_natural_informacion_de_residencia_localizacion_distrito_lista").html(html_options);
+  				$("#field_informacion_de_arrendador_persona_natural_informacion_de_residencia_localizacion_corregimiento_lista").html("");
+              }
+            );
+  }
+  function corregimientos(distrito) {
+   params = {
+              "service_name":"ws_panama_corregimientos/where",
+              "distrito":distrito
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+  				var corr;
+  				var html_options = "";
+  				for (x in data){
+  					corr = data[x];
+  					html_options = html_options+'<option value="'+corr["corregimiento"] +'">'+corr["corregimiento"] +'</option>'
+  				}	
+  				$("#field_informacion_de_arrendador_persona_natural_informacion_de_residencia_localizacion_corregimiento_lista").html(html_options);
+              }
+            );
+  }
+  
+  	$( function() {
+      $( "input:radio" ).click(function() {
+  			check(this);
+  		});
+  				
+  } );
+  
+  // function check(obj) {
+  //		if (obj.value == "Juridica" && obj.name=="[field][tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo]"){
+  //					   	$("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad").removeAttr("disabled");	
+  //						$("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad option[value='SA']").removeAttr("disabled");
+  //						$("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad option[value='EX']").removeAttr("disabled");
+  //						$("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad option[value='FU']").removeAttr("disabled");
+  //						$("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad option[value='LI']").removeAttr("disabled");
+  //							}else{
+  //							$("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad").attr("disabled","disabled");
+  //							}
+  //						}
+  
+  
+  //ocultar campo tipo de sociedad - RP
+  function check(obj) {
+  		if (obj.value == "Juridica" && obj.name=="[field][tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo]"){
+  			
+  			            $("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad").parent().parent().show();
+  
+  							}else{
+  
+  							$("#field_tipo_de_persona_del_arrendamiento_tipo_de_persona_del_arrendamiento_tipo_sociedad").parent().parent().hide();
+  							}
+  						}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  $( function() {
+  	$("#field_informacion_de_arrendador_persona_juridica_direccion_provincia_lista").change(function(){
+  		var prov = $("#field_informacion_de_arrendador_persona_juridica_direccion_provincia_lista").find(':selected').val();
+  		distritos2(prov);
+  	});
+  	$("#field_informacion_de_arrendador_persona_juridica_direccion_distrito_lista").change(function(){
+  		var distrito = $("#field_informacion_de_arrendador_persona_juridica_direccion_distrito_lista").find(':selected').val();
+  		corregimientos2(distrito);
+  	});
+  	});
+  
+  function distritos2(provincia) {
+   params = {
+              "service_name":"ws_panama_distritos/where",
+              "provincia":provincia
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+  				var dist;
+  				var html_options = "";
+  				for (x in data){
+  					dist = data[x];
+  					html_options = html_options+'<option value="'+dist["distrito"] +'">'+dist["distrito"] +'</option>'
+  				}	
+  				$("#field_informacion_de_arrendador_persona_juridica_direccion_distrito_lista").html(html_options);
+  				$("#field_informacion_de_arrendador_persona_juridica_direccion_corregimiento_lista").html("");
+              }
+            );
+  }
+  function corregimientos2(distrito) {
+   params = {
+              "service_name":"ws_panama_corregimientos/where",
+              "distrito":distrito
+            }
+  $.post(
+              "/proxy_service/get_service",
+              params,
+              function(data){
+  				var corr;
+  				var html_options = "";
+  				for (x in data){
+  					corr = data[x];
+  					html_options = html_options+'<option value="'+corr["corregimiento"] +'">'+corr["corregimiento"] +'</option>'
+  				}	
+  				$("#field_informacion_de_arrendador_persona_juridica_direccion_corregimiento_lista").html(html_options);
+              }
+            );
+  }
+

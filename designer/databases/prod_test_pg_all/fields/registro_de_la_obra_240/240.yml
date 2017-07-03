@@ -1,0 +1,30 @@
+--- 
+id: 240
+name: Registro de la obra
+description: Registro de la obra
+version: 
+status: Draft
+label: Registro de la obra
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-24 20:18:09 Z
+updated_at: 2013-01-24 20:33:32 Z
+values_list: "\"In\xC3\xA9dito\", \"Publicado\""
+keys_list: "\"In\xC3\xA9dito\", \"Publicado\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

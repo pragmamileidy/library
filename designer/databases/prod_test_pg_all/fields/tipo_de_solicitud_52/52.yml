@@ -1,0 +1,30 @@
+--- 
+id: 52
+name: Tipo de Solicitud
+description: "Selecci\xC3\xB3n para indicar si es un viaje con Visa de Corta Estancia, Viaje por Turismo, Solicitud de Visa u Otro"
+version: 
+status: Draft
+label: Tipo de Solicitud
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-22 15:00:50 Z
+updated_at: 2012-05-16 20:56:55 Z
+values_list: "\"Viaje - Turismo\", \"Viaje con Visa de Corta Estancia\", \"Solicitud de Visa - Motivo de viaje\", \"Otro (especifique)\""
+keys_list: ""
+field_type: 
+view_class: 
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: 
+format: 
+kind_of_list: 
+list_code: 
+serial: 

@@ -1,0 +1,16 @@
+--- 
+id: 2834
+design_id: 213
+section_id: 238
+name: Datos Financieros y de Operaciones
+created_at: 2013-05-15 22:34:34 Z
+updated_at: 2013-05-15 22:34:34 Z
+label: Datos Financieros y de Operaciones
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1440\":{\"1326\":{\"required\":\"required\"},\"1327\":{\"required\":\"required\"},\"1328\":{\"required\":\"required\"}},\"1441\":{\"1328\":{\"required\":\"required\"},\"1329\":{\"required\":\"required\"},\"1331\":{\"required\":\"required\"},\"1332\":{\"required\":\"required\"},\"1333\":{\"required\":\"required\"},\"1334\":{\"required\":\"required\"},\"1335\":{\"required\":\"required\"},\"1336\":{\"required\":\"required\"},\"1337\":{\"required\":\"required\"},\"1338\":{\"required\":\"required\"}},\"1443\":{\"1340\":{\"required\":\"required\"},\"1341\":{\"required\":\"required\"},\"1342\":{\"required\":\"required\"}},\"2386\":{\"1340\":{\"required\":\"required\"},\"1341\":{\"required\":\"required\"},\"1342\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 9

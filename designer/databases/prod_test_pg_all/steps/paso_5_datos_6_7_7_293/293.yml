@@ -1,0 +1,21 @@
+--- 
+id: 293
+name: "Paso 5 datos  6 7 7 "
+label: "Label Paso 5 datos  6 7 7 "
+description: "Descripci\xC3\xB3n de  Paso 5 datos  6 7 7 \r\n\
+  \r\n\
+  Marcados en opcionales back y next s\xC3\xB3lo pasos 1 2 3"
+fill_step_id: 168
+created_at: 2012-05-04 22:42:10 Z
+updated_at: 2012-05-19 20:48:33 Z
+include: "{\"928\":{\"650\":{\"746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"745\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"747\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"748\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"749\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"651\":{\"750\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"751\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"752\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"652\":{\"753\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"754\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"756\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"757\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"929\":{\"653\":{\"746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"745\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"747\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"748\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"749\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"654\":{\"750\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"751\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"752\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"655\":{\"753\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"754\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"756\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"757\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"930\":{\"653\":{\"746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"745\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"655\":{\"753\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"754\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"756\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"757\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save,submit,print_form
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 4
+ajax_calls: 

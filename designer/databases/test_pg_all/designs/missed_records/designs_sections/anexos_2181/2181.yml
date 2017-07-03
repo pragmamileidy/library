@@ -1,0 +1,16 @@
+--- 
+id: 2181
+design_id: 167
+section_id: 289
+name: Anexos
+created_at: 2012-10-24 22:17:55 Z
+updated_at: 2012-10-24 22:17:55 Z
+label: Anexos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1864\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1865\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"2201\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"2203\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1866\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"2202\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"2204\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1867\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1868\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1869\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1870\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1871\":{\"1764\":{\"required\":\"required\"},\"1765\":{\"required\":\"required\"}},\"1944\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 19

@@ -1,0 +1,28 @@
+--- 
+id: 2948
+design_id: 220
+section_id: 433
+name: "Secci\xC3\xB3n de Funcionario Jefe4"
+created_at: 2013-06-28 15:04:09 Z
+updated_at: 2013-06-28 15:04:09 Z
+label: "Secci\xC3\xB3n de Funcionario Jefe del DAPyPC"
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  name_words = (@task["name"].to_s.downcase).split(' ')
+  _dato_inicial = name_words.first
+  _dato_dap = name_words[1]
+  
+  (_dato_dap == "dap") || (_dato_inicial == "observaciones")
+  
+  
+  
+  # _i = (@task["name"].to_s).split(' ')
+  # _datoInicial = (_i[0]).downcase
+  # _datoDap = (_i[1]).downcase
+  # _datoDap == "dap" or _datoInicial == "observaciones"
+manage_as_confidential: false
+include: "{\"2493\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"},\"1403\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 17

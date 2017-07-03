@@ -1,0 +1,17 @@
+--- 
+id: 476
+name: task
+description: "La parte de Tareas (task) permite obtener los datos de motor de base URL, ruta, wsdl, direcci\xC3\xB3n URL, perteneciente a las tareas. Es utilizada en todos los procesos (Tramites 100, proceso 1, proceso 2, proceso 3, proceso 4, proceso 5)"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-11 13:45:43 Z
+updated_at: 2013-01-11 13:45:43 Z
+label: Task (Tarea)
+hint: ""
+view_class: horizontal
+serial: 

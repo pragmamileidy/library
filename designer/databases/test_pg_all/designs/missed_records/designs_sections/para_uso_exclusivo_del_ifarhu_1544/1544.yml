@@ -1,0 +1,16 @@
+--- 
+id: 1544
+design_id: 127
+section_id: 203
+name: Para Uso Exclusivo del IFARHU
+created_at: 2012-06-21 17:18:18 Z
+updated_at: 2012-06-21 17:18:18 Z
+label: Para Uso Exclusivo del IFARHU
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1347\":{\"1210\":{\"required\":\"required\"},\"1211\":{\"required\":\"required\"},\"1212\":{\"required\":\"required\"}},\"1343\":{\"212\":{\"required\":\"required\"}},\"1344\":{\"212\":{\"required\":\"required\"}},\"1345\":{\"239\":{\"required\":\"required\"}},\"1348\":{\"1213\":{\"required\":\"required\"},\"1214\":{\"required\":\"required\"},\"1215\":{\"required\":\"required\"},\"1216\":{\"required\":\"required\"},\"1217\":{\"required\":\"required\"},\"1218\":{\"required\":\"required\"}},\"1346\":{\"800\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 12

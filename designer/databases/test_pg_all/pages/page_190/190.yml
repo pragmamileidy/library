@@ -1,0 +1,294 @@
+--- 
+id: 190
+position: 1
+selector: "{\"1734\":{\"656\":{\"758\":{},\"759\":{}}},\"1735\":{\"580\":{\"1323\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"926\":{}},\"581\":{\"805\":{},\"585\":{},\"594\":{}}},\"1736\":{\"595\":{\"567\":{},\"566\":{},\"3342\":{}},\"597\":{\"805\":{},\"1123\":{},\"586\":{},\"594\":{}},\"596\":{\"95\":{}},\"2092\":{\"2236\":{},\"2237\":{},\"2238\":{},\"2239\":{},\"2240\":{},\"2241\":{},\"2242\":{},\"2243\":{}}},\"1738\":{\"2079\":{\"2249\":{},\"2251\":{},\"2253\":{},\"2252\":{},\"2254\":{},\"2255\":{},\"2256\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 66px;
+  	left: 708px;
+  	width: 297px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 40px;
+  	left: 708px;
+  	width: 313px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_cdula {
+  	position: absolute;
+  	top: 324px;
+  	left: 247px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 361px;
+  	left: 248px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 360px;
+  	left: 701px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 397px;
+  	left: 248px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 397px;
+  	left: 701px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_apellidodecasada {
+  	position: absolute;
+  	top: 434px;
+  	left: 247px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 507px;
+  	left: 248px;
+  	width: 683px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 471px;
+  	left: 248px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 434px;
+  	left: 701px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 619px;
+  	left: 247px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 656px;
+  	left: 248px;
+  	width: 685px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_direccin_direccin {
+  	position: absolute;
+  	top: 767px;
+  	left: 246px;
+  	width: 685px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_direccin_telfonodeoficina {
+  	position: absolute;
+  	top: 693px;
+  	left: 700px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_direccin_nmerodefax {
+  	position: absolute;
+  	top: 730px;
+  	left: 248px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 730px;
+  	left: 701px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaempresa_tipo_sociedad {
+  	position: absolute;
+  	top: 693px;
+  	left: 248px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_fechadeconstitucin {
+  	position: absolute;
+  	top: 907px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_escriturapblica {
+  	position: absolute;
+  	top: 944px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_notarapblica {
+  	position: absolute;
+  	top: 982px;
+  	left: 274px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_circuito {
+  	position: absolute;
+  	top: 1019px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_fechadeinscripcin {
+  	position: absolute;
+  	top: 1018px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_registroaltomorollo {
+  	position: absolute;
+  	top: 907px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_folio {
+  	position: absolute;
+  	top: 1055px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdica_datosdelaconstitucin_asientoficha {
+  	position: absolute;
+  	top: 1056px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .enmiendapactosocial_enmiendapactosocial_fechadeiniciacindeactividadesprofesionales {
+  	position: absolute;
+  	top: 1226px;
+  	left: 712px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .enmiendapactosocial_enmiendapactosocial_domiciliolegaldelasociedad {
+  	position: absolute;
+  	top: 1227px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .enmiendapactosocial_enmiendapactosocial_domicilioactual {
+  	position: absolute;
+  	top: 1188px;
+  	left: 262px;
+  	width: 689px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .enmiendapactosocial_enmiendapactosocial_nmerodetelfono {
+  	position: absolute;
+  	top: 1263px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .enmiendapactosocial_enmiendapactosocial_fax {
+  	position: absolute;
+  	top: 1263px;
+  	left: 712px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .enmiendapactosocial_enmiendapactosocial_apartadopostal {
+  	position: absolute;
+  	top: 1301px;
+  	left: 260px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .enmiendapactosocial_enmiendapactosocial_zonapostal {
+  	position: absolute;
+  	top: 1300px;
+  	left: 711px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 91
+created_at: 2012-08-22 16:37:05 Z
+updated_at: 2015-11-03 14:07:16 Z
+instances_selector: "{\"1734\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1735\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"926\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"1736\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"},\"3342\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"1123\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"596\":{\"value\":\"\",\"95\":{\"value\":\"\"}},\"2092\":{\"value\":\"\",\"2236\":{\"value\":\"\"},\"2237\":{\"value\":\"\"},\"2238\":{\"value\":\"\"},\"2239\":{\"value\":\"\"},\"2240\":{\"value\":\"\"},\"2241\":{\"value\":\"\"},\"2242\":{\"value\":\"\"},\"2243\":{\"value\":\"\"}}},\"1738\":{\"value\":\"\",\"2079\":{\"value\":\"1,1\",\"2249\":{\"value\":\"\"},\"2251\":{\"value\":\"\"},\"2253\":{\"value\":\"\"},\"2252\":{\"value\":\"\"},\"2254\":{\"value\":\"\"},\"2255\":{\"value\":\"\"},\"2256\":{\"value\":\"\"}}}}"
+size: ""

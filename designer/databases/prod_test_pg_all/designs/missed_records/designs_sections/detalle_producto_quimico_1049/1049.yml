@@ -1,0 +1,16 @@
+--- 
+id: 1049
+design_id: 75
+section_id: 243
+name: "Detalle Producto Qu\xC3\xADmico"
+created_at: 2012-05-20 00:43:49 Z
+updated_at: 2013-08-19 15:39:12 Z
+label: "Detalle del  Producto Qu\xC3\xADmico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1454\":{\"3435\":{\"required\":\"required\"}},\"1457\":{\"3435\":{\"required\":\"required\"}},\"1458\":{\"651\":{\"required\":\"required\"},\"652\":{\"required\":\"required\"},\"653\":{\"required\":\"required\"},\"654\":{\"required\":\"required\"},\"655\":{\"required\":\"required\"},\"656\":{\"required\":\"required\"},\"657\":{\"required\":\"required\"},\"658\":{\"required\":\"required\"},\"659\":{\"required\":\"required\"},\"660\":{\"required\":\"required\"},\"661\":{\"required\":\"required\"},\"662\":{\"required\":\"required\"},\"663\":{\"required\":\"required\"},\"664\":{\"required\":\"required\"},\"665\":{\"required\":\"required\"},\"666\":{\"required\":\"required\"},\"667\":{\"required\":\"required\"},\"668\":{\"required\":\"required\"}}}"
+hint: "Introduzca el detalle del producto qu\xC3\xADmico a registrar"
+help: ""
+order_input: 6

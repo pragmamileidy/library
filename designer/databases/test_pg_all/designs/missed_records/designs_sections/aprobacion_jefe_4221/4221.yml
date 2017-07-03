@@ -1,0 +1,16 @@
+--- 
+id: 4221
+design_id: 243
+section_id: 185
+name: Aprobacion Jefe
+created_at: 2014-03-20 01:16:53 Z
+updated_at: 2014-03-20 01:16:53 Z
+label: "Aprobaci\xC3\xB3n del Jefe del Departamento"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1710\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"},\"1891\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 18

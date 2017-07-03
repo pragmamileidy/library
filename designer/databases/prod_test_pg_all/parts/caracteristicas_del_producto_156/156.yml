@@ -1,0 +1,17 @@
+--- 
+id: 156
+name: "Caracter\xC3\xADsticas del Producto"
+description: "Caracter\xC3\xADsticas alimenticias de un Producto"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-22 01:30:55 Z
+updated_at: 2012-05-16 20:55:26 Z
+label: "Caracter\xC3\xADsticas del Producto"
+hint: ""
+view_class: horizontal
+serial: 

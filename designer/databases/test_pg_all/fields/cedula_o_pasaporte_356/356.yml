@@ -1,0 +1,30 @@
+--- 
+id: 356
+name: cedula o pasaporte
+description: cedula  o pasaporte select
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2017-02-15 13:20:37.926569 Z
+updated_at: 2017-02-15 13:20:37.926569 Z
+values_list: "\" \",\" C\xC3\xA9dula\",\"Pasaporte\""
+keys_list: "\" \",\" C\xC3\xA9dula\",\"Pasaporte\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 1990-8569-2222-3640-7973

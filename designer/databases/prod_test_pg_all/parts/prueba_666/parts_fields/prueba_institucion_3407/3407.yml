@@ -1,0 +1,30 @@
+--- 
+id: 3407
+part_id: 666
+field_id: 298
+name: "Prueba instituci\xC3\xB3n"
+created_at: 2013-08-05 14:14:48 Z
+updated_at: 2017-06-04 00:23:02.850961 Z
+label: ""
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1ca8f112-82c0-48f8-af14-6fd1dd56c802
+version: 20170603-202302

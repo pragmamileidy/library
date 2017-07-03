@@ -1,0 +1,30 @@
+--- 
+id: 3330
+part_id: 642
+field_id: 83
+name: "S\xC3\x8D/NO"
+created_at: 2013-06-11 20:06:22 Z
+updated_at: 2017-06-04 00:22:56.135300 Z
+label: Seleccione un valor
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 85928c70-2a09-4d63-be46-837345ae43a6
+version: 20170603-202256

@@ -1,0 +1,30 @@
+--- 
+id: 201
+part_id: 40
+field_id: 1
+name: "N\xC3\xBAmero de Empleador"
+created_at: 2011-11-07 19:22:07 Z
+updated_at: 2017-06-04 00:23:32.449107 Z
+label: "N\xC3\xBAmero de Empleador"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9458dd96-879b-4c31-8c56-2f75fa07f503
+version: 20170603-202332

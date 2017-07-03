@@ -1,0 +1,30 @@
+--- 
+id: 1703
+part_id: 256
+field_id: 17
+name: "Principales pa\xC3\xADses de Importaci\xC3\xB3n y Exportaci\xC3\xB3n"
+created_at: 2012-06-09 20:20:56 Z
+updated_at: 2017-06-04 00:27:09.284069 Z
+label: "Principales pa\xC3\xADses de Importaci\xC3\xB3n y Exportaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "Principales pa\xC3\xADses de Importaci\xC3\xB3n y Exportaci\xC3\xB3n, Indicar los principales pa\xC3\xADses de importaci\xC3\xB3n, Indicar los principales pa\xC3\xADses de exportaci\xC3\xB3n."
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ba80aa22-9ae5-4169-b574-750d87eec02e
+version: 20170603-202709

@@ -1,0 +1,16 @@
+--- 
+id: 1700
+design_id: 132
+section_id: 346
+name: "Evaluaci\xC3\xB3n del ATTT"
+created_at: 2012-07-24 15:04:59 Z
+updated_at: 2012-10-25 15:35:13 Z
+label: "Evaluaci\xC3\xB3n del ATTT"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2044\":{\"2124\":{\"required\":\"required\"},\"2125\":{\"required\":\"required\"}},\"2045\":{\"2126\":{\"required\":\"required\"},\"2127\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 34

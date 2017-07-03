@@ -1,0 +1,30 @@
+--- 
+id: 1931
+part_id: 363
+field_id: 31
+name: "Certificado de Registro Matrimonial o Nacimiento "
+created_at: 2012-06-21 18:24:02 Z
+updated_at: 2017-06-04 00:30:33.907156 Z
+label: "Certificado de Registro Matrimonial o Nacimiento "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 992f9263-efed-4d91-af9f-5657a7f6d024
+version: 20170603-203033

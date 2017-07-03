@@ -1,0 +1,30 @@
+--- 
+id: 1298
+part_id: 118
+field_id: 10
+name: Datos generales de la Empresa
+created_at: 2012-05-10 22:01:46 Z
+updated_at: 2017-06-04 00:31:56.631257 Z
+label: Datos generales de la Empresa
+min_instances: 1
+max_instances: 3
+depends_on: ""
+manage_as_confidential: false
+hint: "Nombre (s) y datos registrales  de las otras empresas o sociedades en que est\xC3\xA1 vinculada como Representante Legal, Director y/o Dignatario y/o Apoderado y Fecha de Inicio de la relaci\xC3\xB3n "
+help: "Nombre (s) y datos registrales  de las otras empresas o sociedades en que est\xC3\xA1 vinculada como Representante Legal, Director y/o Dignatario y/o Apoderado y Fecha de Inicio de la relaci\xC3\xB3n "
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 30
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 87c6dc4e-2ac2-4ee6-8293-3dccb66cb711
+version: 20170603-203156

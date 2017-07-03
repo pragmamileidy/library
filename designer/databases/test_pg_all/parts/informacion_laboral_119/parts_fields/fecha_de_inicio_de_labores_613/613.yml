@@ -1,0 +1,30 @@
+--- 
+id: 613
+part_id: 119
+field_id: 13
+name: Fecha de Inicio de Labores
+created_at: 2011-11-28 16:09:53 Z
+updated_at: 2017-06-04 00:31:25.631963 Z
+label: Fecha de Inicio de Labores
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 15
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 07a6b78f-7ef1-419a-8de9-c0f5ba96d082
+version: 20170603-203125

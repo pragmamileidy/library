@@ -1,0 +1,19 @@
+--- 
+id: 3013
+section_id: 423
+part_id: 676
+name: estatusTramite_email
+created_at: 2014-01-14 18:52:59 Z
+updated_at: 2014-01-14 18:52:59 Z
+label: Correos Sujetos  de Estatus
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3485\":{},\"3486\":{},\"3487\":{},\"3488\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

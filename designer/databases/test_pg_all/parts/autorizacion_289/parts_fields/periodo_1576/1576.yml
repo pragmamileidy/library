@@ -1,0 +1,30 @@
+--- 
+id: 1576
+part_id: 289
+field_id: 1
+name: Periodo
+created_at: 2012-06-05 14:59:44 Z
+updated_at: 2017-06-04 00:25:53.238849 Z
+label: "Por un per\xC3\xADodo de (Meses)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor introduzca el per\xC3\xADodo de la autorizaci\xC3\xB3n (Meses)"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 4
+rows: 
+min_value: 1
+max_value: 12
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b2b95def-2752-466a-a570-c2a3e5338c49
+version: 20170603-202553

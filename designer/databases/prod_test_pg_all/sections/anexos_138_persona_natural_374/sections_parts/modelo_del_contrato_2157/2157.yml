@@ -1,0 +1,19 @@
+--- 
+id: 2157
+section_id: 374
+part_id: 38
+name: Modelo del Contrato
+created_at: 2012-08-10 19:53:38 Z
+updated_at: 2017-03-21 22:25:33.609956 Z
+label: Modelo del Contrato
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Por favor adjuntar el archivo correspondiente
+help: "Modelo del contrato que contemple por lo menos la informaci\xC3\xB3n del art\xC3\xADculo 18 de la Ley 48 del 23 de julio de 2003"
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 10

@@ -1,0 +1,30 @@
+--- 
+id: 162
+name: "Aplicaci\xC3\xB3n"
+description: "Aplicaci\xC3\xB3n"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-18 14:25:32 Z
+updated_at: 2012-06-18 14:38:39 Z
+values_list: "\" \", \"FCAdmin\", \"FCPortal\", \"FCDesigner\", \"FCServices\", \"FCProcess\""
+keys_list: "\" \", \"FCAdmin\", \"FCPortal\", \"FCDesigner\", \"FCServices\", \"FCProcess\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

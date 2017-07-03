@@ -1,0 +1,30 @@
+--- 
+id: 1585
+part_id: 137
+field_id: 63
+name: Prueba campo 3 tipo integer
+created_at: 2012-06-05 17:10:42 Z
+updated_at: 2017-06-04 00:31:14.857898 Z
+label: Prueba campo 3 tipo integer
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Campo 3 de tipo integer,  vertical, js validate, 0-9 . , ; minimo 1 m\xC3\xA1ximo 99990, maximo de caracteres 5, sin help"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 13
+encripted_store: false
+use: oficial-public
+printable: true
+serial: de60fe59-a443-4b94-9693-b352da748ba6
+version: 20170603-203114

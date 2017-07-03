@@ -1,0 +1,98 @@
+--- 
+id: 649
+name: "Paso 2 - Informaci\xC3\xB3n del Solicitante"
+label: "Informaci\xC3\xB3n del Solicitante"
+description: |-
+  Nota: Debe registrar una cuenta bancaria de los bancos afiliados de la red ACH. <br> <a href="https://www.bgeneral.com/bgespanol/comercial/pagos_y_transferencias/ACHbancosafiliados.asp" target="_blank">Ver lista de Bancos</a>
+  <br><a href="../../applications/new" target="_blank">Ingresar a Registro de Cuenta de Proveedores</a>
+fill_step_id: 338
+created_at: 2012-06-21 05:37:35 Z
+updated_at: 2015-10-15 21:37:46 Z
+include: "{\"1003\":{\"1419\":{\"1312\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3340\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"580\":{\"1323\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1320\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1374\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"581\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1005\":{\"1420\":{\"1312\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3340\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"595\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1282\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"568\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3342\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1948\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"597\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1582\":{\"1725\":{\"1973\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1883\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1726\":{\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3110\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3111\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  tipo = form_data.get("datos_de_solicitud.tipo_de_operacion.tipo_de_operacion")
+  #Reemplazar datos cableados
+  #Falta: direccion, nombre_comercial
+  if @owner["kind_of_user_type"]=="NaturalPerson"
+    if @owner["natural_person_type"] == "national_citizen"
+      form_data.set("informacion_de_persona_natural.datos_de_la_persona.cedula",@owner["national_id"])
+    else
+      if @owner["natural_person_type"] == "foreign_citizen"
+        form_data.set("informacion_de_persona_natural.datos_de_la_persona.pasaporte",@owner["passport"]) 
+      end
+    end
+  
+    nombre = "#{@owner["first_name"]} "+"#{@owner["second_name"]} "+"#{@owner["last_name"]} "+"#{@owner["second_last_name"]} "+"#{@owner["married_name"]}"
+    form_data.set("informacion_de_persona_natural.datos_de_la_persona.nombre_completo", nombre)
+  
+    #form_data.set("informacion_de_persona_natural.informacion_de_residencia_localizacion.direccion","caracas")
+    form_data.set("informacion_de_persona_natural.informacion_de_residencia_localizacion.numero_de_telefono",@owner["fixed_number"])
+    #form_data.set("informacion_de_persona_natural.informacion_de_residencia_localizacion.numero_de_fax","14312412")
+    form_data.set("informacion_de_persona_natural.informacion_de_residencia_localizacion.numero_celular",@owner["movil_number"])
+    form_data.set("informacion_de_persona_natural.informacion_de_residencia_localizacion.correo_electronico",@owner["email"])
+  
+    if tipo=="Modificar Proveedor"
+      #cedula = @owner["national_id"]
+      #result = WebserviceConsumer.get( '/service/bdin_mef_gestionde_cobro/find.json?cedula=' + "#{cedula}").parsed_response
+      #if !result.nil?
+      # proveedor = result["response"]["codigoProveedor"]
+      # #form_data.set("informacion_de_persona_natural.numero_de_proveedor.numero_de_proveedor", nombre)
+      #end
+    else
+      result = WebserviceConsumer.get('/consecutive/generador_cod_proveedor/generate.json').parsed_response
+      _num_pro = result["response"]
+      form_data.set("informacion_de_persona_natural.numero_de_proveedor.texto", _num_pro["value"])
+    end
+  end
+  
+  
+  
+  if @owner["kind_of_user_type"]=="JuridicalPerson"
+  
+    result = WebserviceConsumer.get('/service/bdin_mef_obtener_digito_verificador/find.json?rucg=' + @owner["tax_id"]).parsed_response
+    dv = result["response"]
+    form_data.set("informacion_de_persona_juridica.datos_de_la_empresa.digito_verficador",dv["digitoVerificador"])
+  
+    #form_data.set("informacion_de_persona_juridica.direccion.direccion", "caracas")
+    form_data.set("informacion_de_persona_juridica.direccion.numero_de_telefono", @owner["fixed_number"])
+    form_data.set("informacion_de_persona_juridica.direccion.correo_electronico", @owner["email"])
+  
+    if tipo=="Modificar Proveedor"
+      #result = WebserviceConsumer.get( '/service/bdin_mef_gestionde_cobro/find.json?cedula=' + "#{ruc}").parsed_response
+      #if !result.nil?
+      # proveedor = result["response"]["codigoProveedor"]
+      # #form_data.set("informacion_de_persona_juridica.numero_de_proveedor.numero_de_proveedor", dv)
+      #end
+    else
+      result = WebserviceConsumer.get('/consecutive/generador_cod_proveedor/generate.json').parsed_response
+      _num_pro = result["response"]
+      form_data.set("informacion_de_persona_juridica.numero_de_proveedor.texto", _num_pro["value"])
+    end
+  end
+on_transition: "#VERIFICACI\xC3\x92N NUMERO DE CEDULA DEL REPRESENTANTE LEGAL DE LA EMPRESA NO PERTENEZCA A UN DIFUNTO\r\n\
+  if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"                            \r\n    representanteLegal = form_data.get(\"datos_del_representante_legal.datos_basicos.cedula_pasaporte\")   \r\n    result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{representanteLegal}\")).parsed_response\r\n    datosrep = result[\"response\"]\r\n    if datosrep.blank? \r\n        transition_errors << \"La C\xC3\xA9dula del representante no fue encontrada. Por favor, verifique.\" \r\n    else            \r\n        difuntorep = datosrep[\"mensaje\"]\r\n        if (difuntorep != \"ND\")\r\n            transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que la c\xC3\xA9dula nro. #{representanteLegal} del representante, corresponde a un ciudadano Difunto.\"\r\n        end\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  # Obtener valor del config\r\n                valor = @config.route(\"Rates-payment-payment-payment\")\r\n                \r\n                if valor == \"Electr\xC3\xB3nico\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")\r\n                \r\n                end\r\n                if valor == \"Manual\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")\r\n                \r\n                end"
+views: 
+back_step: Paso 1 - Datos de la Solicitud
+next_step: Paso 3 - Archivos Adjuntos
+position: 1
+ajax_calls: |-
+  $(document).ready(function(){
+  
+  	cedula = $("#field_informacion_de_persona_natural_datos_de_la_persona_cedula");
+  	if ($(cedula).html() == ""){
+  		$("#field_informacion_de_persona_natural_datos_de_la_persona_cedula").parent().parent().hide();
+  		$("#field_informacion_de_persona_natural_datos_de_la_persona_pasaporte").parent().parent().show();
+  	}
+  	pasaporte = $("#field_informacion_de_persona_natural_datos_de_la_persona_pasaporte");
+  	if ($(pasaporte).html() == "") {
+  		$("#field_informacion_de_persona_natural_datos_de_la_persona_cedula").parent().parent().show();
+  		$("#field_informacion_de_persona_natural_datos_de_la_persona_pasaporte").parent().parent().hide();
+  	}
+  });

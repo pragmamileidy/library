@@ -1,0 +1,30 @@
+--- 
+id: 2558
+part_id: 475
+field_id: 10
+name: route
+created_at: 2013-01-11 13:38:22 Z
+updated_at: 2017-06-04 00:24:41.194425 Z
+label: Ruta
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 36898895-b189-4bcc-a24f-02e17608a6f0
+version: 20170603-202441

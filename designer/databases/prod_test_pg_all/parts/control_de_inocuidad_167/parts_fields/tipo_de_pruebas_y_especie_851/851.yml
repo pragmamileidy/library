@@ -1,0 +1,30 @@
+--- 
+id: 851
+part_id: 167
+field_id: 10
+name: Tipo de pruebas y especie
+created_at: 2012-03-27 02:07:04 Z
+updated_at: 2017-06-04 00:21:28.079527 Z
+label: a.- Tipo de pruebas y especie
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4f753cd4-2c19-41a0-bd6c-153ecd13947c
+version: 20170603-202128

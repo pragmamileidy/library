@@ -1,0 +1,30 @@
+--- 
+id: 2472
+part_id: 461
+field_id: 173
+name: Dominio
+created_at: 2012-08-28 02:50:08 Z
+updated_at: 2017-06-04 00:24:38.502228 Z
+label: Dominio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: adae71d0-8964-42c1-a0df-2d00b35b8f0d
+version: 20170603-202438

@@ -1,0 +1,30 @@
+--- 
+id: 1131
+part_id: 222
+field_id: 31
+name: "Carn\xC3\xA9 de seguro social del fallecido -a-"
+created_at: 2012-05-02 13:26:17 Z
+updated_at: 2017-06-04 00:25:45.709913 Z
+label: "Carn\xC3\xA9 de seguro social del fallecido -a-"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d374626d-1737-4669-ab51-10bbcf8c2848
+version: 20170603-202545

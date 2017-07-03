@@ -1,0 +1,16 @@
+--- 
+id: 3166
+design_id: 221
+section_id: 517
+name: Tipo de Cierre
+created_at: 2013-07-10 18:04:08 Z
+updated_at: 2013-07-10 18:04:08 Z
+label: Tipo de Cierre
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2867\":{\"3381\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

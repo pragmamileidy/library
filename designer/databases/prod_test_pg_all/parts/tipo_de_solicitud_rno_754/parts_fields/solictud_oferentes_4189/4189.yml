@@ -1,0 +1,30 @@
+--- 
+id: 4189
+part_id: 754
+field_id: 361
+name: solictud Oferentes
+created_at: 2017-02-28 22:25:59.794696 Z
+updated_at: 2017-06-04 00:23:28.213992 Z
+label: Solicitud de
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e5f51433-d31b-42ca-82d7-730276b038e4
+version: 20170603-202328

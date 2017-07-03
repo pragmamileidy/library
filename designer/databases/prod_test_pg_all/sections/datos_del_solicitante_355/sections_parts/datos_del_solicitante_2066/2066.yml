@@ -1,0 +1,19 @@
+--- 
+id: 2066
+section_id: 355
+part_id: 410
+name: Datos del Solicitante
+created_at: 2012-07-27 18:48:54 Z
+updated_at: 2013-03-08 21:48:09 Z
+label: Datos del Solicitante
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 1

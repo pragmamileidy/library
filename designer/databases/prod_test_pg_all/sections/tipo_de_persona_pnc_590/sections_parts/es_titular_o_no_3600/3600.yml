@@ -1,0 +1,19 @@
+--- 
+id: 3600
+section_id: 590
+part_id: 744
+name: es titular o no
+created_at: 2016-03-01 16:43:38.908259 Z
+updated_at: 2016-03-01 16:43:38.908259 Z
+label: "\xC2\xBFLa Solvencia Policial a solicitar corresponde al Titular N\xC3\xBAmero de Documento?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,30 @@
+--- 
+id: 1287
+part_id: 251
+field_id: 17
+name: Precauciones
+created_at: 2012-05-08 16:04:46 Z
+updated_at: 2017-06-04 00:24:02.934429 Z
+label: "Precauciones que deben adoptarse antes, durante o despu\xC3\xA9s de su administraci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "Precauciones que deben adoptarse antes, durante o despu\xC3\xA9s de su administraci\xC3\xB3n"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ac3436cd-26ec-427d-ad36-ee8c7db6cdbd
+version: 20170603-202402

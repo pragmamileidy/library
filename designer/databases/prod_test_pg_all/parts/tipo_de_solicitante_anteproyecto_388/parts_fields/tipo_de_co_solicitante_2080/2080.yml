@@ -1,0 +1,30 @@
+--- 
+id: 2080
+part_id: 388
+field_id: 10
+name: Tipo de Co-solicitante
+created_at: 2012-07-20 17:34:41 Z
+updated_at: 2017-06-04 00:24:26.063925 Z
+label: Tipo de Co-solicitante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e8fa3480-895f-416b-b2cd-8bf98391c57f
+version: 20170603-202426

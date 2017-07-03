@@ -1,0 +1,32 @@
+--- 
+id: 1312
+part_id: 258
+field_id: 10
+name: Texto
+created_at: 2012-05-11 16:01:03 Z
+updated_at: 2017-06-04 00:21:41.162463 Z
+label: "N\xC3\xBAmero de Proveedor"
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  tipo = form_data.get("datos_de_solicitud.tipo_de_operacion.tipo_de_operacion")
+  tipo == "Crear Proveedor"
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cf3f8f6c-71ef-4f5b-a697-a571155f8ebd
+version: 20170603-202141

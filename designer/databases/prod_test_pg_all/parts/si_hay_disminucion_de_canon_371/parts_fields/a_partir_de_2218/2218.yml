@@ -1,0 +1,30 @@
+--- 
+id: 2218
+part_id: 371
+field_id: 13
+name: A partir de
+created_at: 2012-08-06 14:35:29 Z
+updated_at: 2017-06-04 00:24:31.768701 Z
+label: A partir de
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy.  Ejemplo: 01-12-2010"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e58718d1-4700-4bbf-8078-1df76c6051ac
+version: 20170603-202431

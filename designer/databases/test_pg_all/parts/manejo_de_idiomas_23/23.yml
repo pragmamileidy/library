@@ -1,0 +1,17 @@
+--- 
+id: 23
+name: "Manejo de Idiomas "
+description: Parte que contiene idiomas para marcar si se domina (habla/lee/escribe) o no el mismo.
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-03 13:54:15 Z
+updated_at: 2012-05-16 20:55:00 Z
+label: "Manejo de Idiomas "
+hint: ""
+view_class: 
+serial: 

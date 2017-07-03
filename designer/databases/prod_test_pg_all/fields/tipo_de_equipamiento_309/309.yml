@@ -1,0 +1,42 @@
+--- 
+id: 309
+name: tipo de equipamiento
+description: tipo de equipamiento para el tipo de uso de la superficie 141
+version: 
+status: Draft
+label: Tipo
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-02-26 14:51:42 Z
+updated_at: 2014-03-07 23:48:41 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _lista = ""
+  result = WebserviceConsumer.get('/service/ws_tipouso_servicio2/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+   _valores.each {|servicio2|
+    _lista = _lista + "," + servicio2["nombres2"]}
+   @values_of_list = _lista.split(",")
+   @keys_of_list = _lista.split(",")
+  else
+   @values_of_list = [""]
+   @keys_of_list =  [""]
+  end
+serial: 

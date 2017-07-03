@@ -1,0 +1,17 @@
+--- 
+id: 7
+name: "Certificaci\xC3\xB3n de Descuento"
+description: "Secci\xC3\xB3n que contiene todos las partes/campos necesarios para completar la certificaci\xC3\xB3n de descuento"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-01 13:31:01 Z
+updated_at: 2012-05-16 20:45:58 Z
+status: Draft
+label: "Certificaci\xC3\xB3n de Descuento"
+hint: ""
+serial: 

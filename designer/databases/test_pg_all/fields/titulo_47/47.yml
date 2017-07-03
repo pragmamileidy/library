@@ -1,0 +1,30 @@
+--- 
+id: 47
+name: "T\xC3\xADtulo"
+description: Indica si el solicitante es Sr(a). o Licenciado(a)
+version: 
+status: Draft
+label: "T\xC3\xADtulo"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-15 20:12:01 Z
+updated_at: 2012-05-18 18:10:10 Z
+values_list: "\"Sr(a).\", \"Lic.\""
+keys_list: "\"Sr(a).\", \"Lic.\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

@@ -1,0 +1,16 @@
+--- 
+id: 5376
+design_id: 294
+section_id: 140
+name: Datos adicionales
+created_at: 2017-03-25 14:54:09.244813 Z
+updated_at: 2017-04-11 03:49:12.324243 Z
+label: Datos adicionales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3727\":{\"4182\":{\"required\":\"required\"},\"4183\":{\"required\":\"required\"},\"4184\":{\"required\":\"required\"}},\"3728\":{\"4185\":{\"required\":\"required\"}},\"3729\":{\"4185\":{\"required\":\"required\"}},\"707\":{\"3972\":{\"required\":\"required\"}},\"705\":{\"3972\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

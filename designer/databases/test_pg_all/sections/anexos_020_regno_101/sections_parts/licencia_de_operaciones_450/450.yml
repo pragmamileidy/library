@@ -1,0 +1,19 @@
+--- 
+id: 450
+section_id: 101
+part_id: 38
+name: Licencia de Operaciones
+created_at: 2011-11-17 17:58:26 Z
+updated_at: 2017-02-28 04:16:27.299936 Z
+label: "Licencia de Operaciones del Departamento de Regulaci\xC3\xB3n y Vigilancia de las Tecnolog\xC3\xADas M\xC3\xA9dicas"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

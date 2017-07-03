@@ -1,0 +1,30 @@
+--- 
+id: 611
+part_id: 121
+field_id: 10
+name: "P\xC3\xA1gina Web"
+created_at: 2011-11-28 15:33:44 Z
+updated_at: 2017-06-04 00:31:54.866589 Z
+label: "P\xC3\xA1gina Web"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 29
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fe11d171-fc7e-4678-8b56-1bc67c21728e
+version: 20170603-203154

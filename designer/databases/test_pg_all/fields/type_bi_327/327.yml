@@ -1,0 +1,30 @@
+--- 
+id: 327
+name: Type bi
+description: tipo de timer BI labor, calendar]
+version: 
+status: Draft
+label: Type
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-08-06 20:56:39 Z
+updated_at: 2014-08-06 21:15:41 Z
+values_list: "\" \",\"labor\",\"calendar\""
+keys_list: "\" \",\"labor\",\"calendar\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

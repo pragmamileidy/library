@@ -1,0 +1,30 @@
+--- 
+id: 3521
+part_id: 688
+field_id: 31
+name: "Plano de Plomer\xC3\xADa"
+created_at: 2014-02-18 15:30:45 Z
+updated_at: 2017-06-04 00:23:11.427916 Z
+label: "Plano de Plomer\xC3\xADa"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ceac8b9f-e690-4711-9a98-25c035edd353
+version: 20170603-202311

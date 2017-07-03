@@ -1,0 +1,86 @@
+--- 
+id: 118
+position: 5
+selector: "{\"418\":{\"656\":{\"758\":{},\"759\":{}}},\"1093\":{\"1666\":{\"1782\":{}},\"2254\":{\"2430\":{}},\"1696\":{\"1288\":{},\"1289\":{},\"1290\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 77px;
+  	left: 687px;
+  	width: 337px;
+  	height: 17px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 54px;
+  	left: 687px;
+  	width: 337px;
+  	height: 16px;
+  	overflow: hidden;
+    }
+    .detalleproductobiolgico_preparacindelproductoparasuusocorrecto_duracinmximadeusodespusdesureconstruccinopreparacin {
+  	position: absolute;
+  	top: 191px;
+  	left: 58px;
+  	width: 927px;
+  	height: 69px;
+  	overflow: hidden;
+    }
+    .detalleproductobiolgico_indiqueelperiododevalidez_introduzcalainformacin {
+  	position: absolute;
+  	top: 311px;
+  	left: 57px;
+  	width: 926px;
+  	height: 70px;
+  	overflow: hidden;
+    }
+    .detalleproductobiolgico_precaucionesgenerales_formadeconservacinadecuada {
+  	position: absolute;
+  	top: 486px;
+  	left: 56px;
+  	width: 924px;
+  	height: 70px;
+  	overflow: hidden;
+    }
+    .detalleproductobiolgico_precaucionesgenerales_mtododeeliminacindelosenvases {
+  	position: absolute;
+  	top: 597px;
+  	left: 58px;
+  	width: 928px;
+  	height: 70px;
+  	overflow: hidden;
+    }
+    .detalleproductobiolgico_precaucionesgenerales_riesgoparalasaludpblica {
+  	position: absolute;
+  	top: 720px;
+  	left: 59px;
+  	width: 928px;
+  	height: 69px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 45
+created_at: 2012-07-15 16:02:49 Z
+updated_at: 2015-10-29 19:27:02 Z
+instances_selector: "{\"418\":{\"value\":\"1,1\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1093\":{\"value\":\"\",\"1666\":{\"value\":\"\",\"1782\":{\"value\":\"\"}},\"2254\":{\"value\":\"\",\"2430\":{\"value\":\"\"}},\"1696\":{\"value\":\"\",\"1288\":{\"value\":\"\"},\"1289\":{\"value\":\"\"},\"1290\":{\"value\":\"\"}}}}"
+size: ""

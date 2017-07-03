@@ -1,0 +1,30 @@
+--- 
+id: 3242
+part_id: 555
+field_id: 285
+name: "A\xC3\xB1o de Creaci\xC3\xB3n de la Obra"
+created_at: 2013-05-17 17:42:01 Z
+updated_at: 2017-06-04 00:30:09.490580 Z
+label: "A\xC3\xB1o de Creaci\xC3\xB3n de la Obra"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar el a\xC3\xB1o de creaci\xC3\xB3n de la obra."
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7d0dc881-59dd-4f52-bf04-df1bd565d369
+version: 20170603-203009

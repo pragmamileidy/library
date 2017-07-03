@@ -1,0 +1,24 @@
+--- 
+id: 1828
+design_id: 141
+section_id: 274
+name: Datos del Co-Solicitante Persona Natural
+created_at: 2012-08-21 19:00:13 Z
+updated_at: 2015-10-09 19:19:26 Z
+label: "Datos del Co-participante "
+min_instances: 1
+max_instances: 5
+depends_on: "haynatural = false\r\n\
+  (1..5).each do |x|\r\n\
+  \r\n\
+  cosolicitante = form_data.get(\"tipo_de_documento_co_solicitante_instance_#{x}.tipo_de_documento.tipo_de_documento\")\r\n\
+  if (cosolicitante == \"C\xC3\xA9dula\" || cosolicitante == \"Pasaporte\")\r\n   haynatural = true \r\n   break\r\n\
+  end\r\n\
+  end\r\n\
+  \r\n\
+  haynatural"
+manage_as_confidential: false
+include: "{\"1791\":{\"3116\":{\"required\":\"unrequired\"},\"1983\":{\"required\":\"required\"},\"1656\":{\"required\":\"required\"},\"1657\":{\"required\":\"required\"},\"1658\":{\"required\":\"unrequired\"},\"1659\":{\"required\":\"required\"},\"1660\":{\"required\":\"unrequired\"},\"1661\":{\"required\":\"unrequired\"},\"2081\":{\"required\":\"required\"},\"2082\":{\"required\":\"required\"},\"3963\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 8

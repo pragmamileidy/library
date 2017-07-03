@@ -1,0 +1,30 @@
+--- 
+id: 177
+name: Objetivo de Importacion
+description: Objetivo de Importacion
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-13 05:32:00 Z
+updated_at: 2012-07-13 05:32:00 Z
+values_list: "\"Importaci\xC3\xB3n\",\"Tr\xC3\xA1nsito\",\"Importaci\xC3\xB3n de Perros y Gatos\""
+keys_list: "\"Importaci\xC3\xB3n\",\"Tr\xC3\xA1nsito\",\"Importaci\xC3\xB3n de Perros y Gatos\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

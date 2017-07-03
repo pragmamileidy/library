@@ -1,0 +1,9 @@
+--- 
+id: 66
+name: "public_Registro de Empresas y Declaraci\xC3\xB3n Jurada"
+description: "Formulario de Registro de Empresas y Declaraci\xC3\xB3n Jurada"
+created_at: 2012-07-18 15:47:27 Z
+updated_at: 2015-10-22 01:06:32 Z
+design_id: 90
+label: "Formulario de Registro de Empresas y Declaraci\xC3\xB3n Jurada"
+ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud, informacindesolicitud_datosdelasolicitud_numerodesolicitud

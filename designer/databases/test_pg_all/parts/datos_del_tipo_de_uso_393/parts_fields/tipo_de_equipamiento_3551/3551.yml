@@ -1,0 +1,30 @@
+--- 
+id: 3551
+part_id: 393
+field_id: 309
+name: tipo de equipamiento
+created_at: 2014-02-26 16:08:28 Z
+updated_at: 2017-06-04 00:25:16.790051 Z
+label: Tipo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 77e1f26a-4bcc-4dc7-b51e-46877abc9b8a
+version: 20170603-202516

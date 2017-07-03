@@ -1,0 +1,16 @@
+--- 
+id: 3188
+design_id: 223
+section_id: 423
+name: mail_subjects
+created_at: 2013-09-06 16:34:41 Z
+updated_at: 2013-09-06 16:34:41 Z
+label: Correos Sujetos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2445\":{\"2868\":{\"required\":\"required\"},\"2869\":{\"required\":\"required\"}},\"2446\":{\"2870\":{\"required\":\"required\"},\"2871\":{\"required\":\"required\"}},\"2447\":{\"2873\":{\"required\":\"required\"},\"2874\":{\"required\":\"required\"},\"2875\":{\"required\":\"required\"}},\"2453\":{\"2876\":{\"required\":\"required\"},\"2877\":{\"required\":\"required\"},\"2878\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

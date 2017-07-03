@@ -1,0 +1,30 @@
+--- 
+id: 2093
+part_id: 391
+field_id: 10
+name: Tipo de Gravamen
+created_at: 2012-07-23 01:38:11 Z
+updated_at: 2017-06-04 00:22:05.341280 Z
+label: Tipo de Gravamen
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 08b00c61-3655-4dab-a274-d537a03f2244
+version: 20170603-202205

@@ -1,0 +1,17 @@
+--- 
+id: 171
+name: "Presentaci\xC3\xB3n"
+description: "Contiene campos para describir la presentaci\xC3\xB3n en distintos formularios"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-27 15:14:32 Z
+updated_at: 2012-05-16 20:55:29 Z
+label: "Presentaci\xC3\xB3n"
+hint: ""
+view_class: horizontal
+serial: 

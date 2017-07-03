@@ -1,0 +1,19 @@
+--- 
+id: 1392
+section_id: 108
+part_id: 228
+name: Datos del Subsidio
+created_at: 2012-05-09 13:12:41 Z
+updated_at: 2013-03-15 20:16:01 Z
+label: Datos del Subsidio
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

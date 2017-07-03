@@ -1,0 +1,23 @@
+--- 
+id: 3220
+section_id: 552
+part_id: 38
+name: "C\xC3\xA9dula de Identidad de la persona autorizada en la misiva"
+created_at: 2014-06-04 15:17:11 Z
+updated_at: 2017-04-02 19:55:46.041863 Z
+label: "C\xC3\xA9dula de identidad de la persona autorizada en la misiva"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  person = @application["person_id"]
+  duenio = @application["owner_person_id"]
+  
+  (person != duenio) && (@owner["kind_of_user_type"] == "NaturalPerson")
+manage_as_confidential: false
+include: 
+hint: Favor adjuntar archivo correspondiente
+help: Favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

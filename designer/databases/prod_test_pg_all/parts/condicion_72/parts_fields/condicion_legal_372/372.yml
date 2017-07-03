@@ -1,0 +1,30 @@
+--- 
+id: 372
+part_id: 72
+field_id: 40
+name: "Condici\xC3\xB3n Legal"
+created_at: 2011-11-14 14:27:19 Z
+updated_at: 2017-06-04 00:21:18.220436 Z
+label: "Condici\xC3\xB3n Legal"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c0c4e9db-9816-4fb3-865e-f3b926d420af
+version: 20170603-202118

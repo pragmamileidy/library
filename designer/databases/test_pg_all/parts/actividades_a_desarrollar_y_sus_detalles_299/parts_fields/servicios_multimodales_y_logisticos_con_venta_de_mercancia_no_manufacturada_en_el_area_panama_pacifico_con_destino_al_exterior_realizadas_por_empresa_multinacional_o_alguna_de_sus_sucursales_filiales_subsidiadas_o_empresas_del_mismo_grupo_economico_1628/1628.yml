@@ -1,0 +1,30 @@
+--- 
+id: 1628
+part_id: 299
+field_id: 68
+name: "Servicios Multimodales y Log\xC3\xADsticos, con venta de mercanc\xC3\xADa no manufacturada en el \xC3\x81rea Panam\xC3\xA1 Pacifico con destino al exterior, realizadas por empresa multinacional o alguna de sus sucursales, filiales, subsidiadas o empresas del mismo grupo econ\xC3\xB3mico"
+created_at: 2012-06-08 00:21:41 Z
+updated_at: 2017-06-04 00:28:56.404015 Z
+label: "Servicios Multimodales y Log\xC3\xADsticos, con venta de mercanc\xC3\xADa no manufacturada en el \xC3\x81rea Panam\xC3\xA1 Pacifico con destino al exterior, realizadas por empresa multinacional o alguna de sus sucursales, filiales, subsidiadas o empresas del mismo grupo econ\xC3\xB3mico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0706e53d-3fe1-4c2a-a2ca-4941f114fa65
+version: 20170603-202856

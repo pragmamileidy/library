@@ -1,0 +1,19 @@
+--- 
+id: 3507
+section_id: 187
+part_id: 38
+name: Permiso de la D.I.J
+created_at: 2015-09-16 21:04:30 Z
+updated_at: 2015-09-16 21:04:30 Z
+label: Permiso de la D.I.J
+min_instances: 1
+max_instances: 1
+depends_on: "form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular\") == \"Permiso salida del pa\xC3\xADs - veh\xC3\xADculos locales\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 20

@@ -1,0 +1,16 @@
+--- 
+id: 4944
+design_id: 117
+section_id: 107
+name: Datos del Solicitante
+created_at: 2015-10-07 13:50:24 Z
+updated_at: 2015-10-07 13:58:48 Z
+label: "Informaci\xC3\xB3n de Persona Natural"
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"1320\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"required\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"required\"},\"926\":{\"required\":\"unrequired\"},\"3614\":{\"required\":\"required\"}},\"2644\":{\"3953\":{\"required\":\"required\"},\"2977\":{\"required\":\"required\"},\"3950\":{\"required\":\"required\"},\"3951\":{\"required\":\"required\"}}}"
+hint: Datos del Solicitante
+help: ""
+order_input: 2

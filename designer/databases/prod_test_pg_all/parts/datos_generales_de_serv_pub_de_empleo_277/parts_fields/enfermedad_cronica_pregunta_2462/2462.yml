@@ -1,0 +1,30 @@
+--- 
+id: 2462
+part_id: 277
+field_id: 83
+name: Enfermedad cronica_pregunta
+created_at: 2012-08-21 19:28:47 Z
+updated_at: 2017-06-04 00:30:04.638645 Z
+label: "\xC2\xBFPadece de alguna enfermedad cr\xC3\xB3nica?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 20fc4776-1dff-423e-99c6-cef86dfe0764
+version: 20170603-203004

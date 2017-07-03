@@ -1,0 +1,30 @@
+--- 
+id: 1332
+part_id: 152
+field_id: 13
+name: "Fecha de Inicio de Construcci\xC3\xB3n"
+created_at: 2012-05-12 19:36:18 Z
+updated_at: 2017-06-04 00:29:57.653214 Z
+label: "Fecha de Inicio de Construcci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar la fecha de inicio de la construcci\xC3\xB3n."
+help: "Indicar la fecha de inicio de la construcci\xC3\xB3n."
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3bceef52-6125-48ee-a42b-36635f5c1515
+version: 20170603-202957

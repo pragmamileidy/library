@@ -1,0 +1,30 @@
+--- 
+id: 3204
+part_id: 442
+field_id: 10
+name: "N\xC3\xBAmero contribuyente Municipal del Solicitante"
+created_at: 2013-04-24 23:37:17 Z
+updated_at: 2017-06-04 00:30:40.843193 Z
+label: "N\xC3\xBAmero contribuyente municipal del solicitante"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca la informaci\xC3\xB3n con el formato v\xC3\xA1lido para el campo. Ejemplo: 02-2013-7854"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 
+max_value: 
+format: /\d{2}-(19|20)\d\d-\d{3,4}/
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c720e3d0-3c8c-4842-8df8-2d1179bc2ed9
+version: 20170603-203040

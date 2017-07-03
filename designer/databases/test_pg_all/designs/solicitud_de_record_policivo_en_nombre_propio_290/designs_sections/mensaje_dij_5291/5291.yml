@@ -1,0 +1,16 @@
+--- 
+id: 5291
+design_id: 290
+section_id: 555
+name: Mensaje dij
+created_at: 2017-02-27 12:54:54.548618 Z
+updated_at: 2017-02-27 14:32:57.121782 Z
+label: Mensaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3227\":{\"3640\":{\"required\":\"unrequired\"},\"3641\":{\"required\":\"unrequired\"},\"3642\":{\"required\":\"required\"},\"3652\":{\"required\":\"required\"},\"3709\":{\"required\":\"unrequired\"},\"3711\":{\"required\":\"unrequired\"},\"3713\":{\"required\":\"unrequired\"},\"3718\":{\"required\":\"unrequired\"},\"3723\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 11

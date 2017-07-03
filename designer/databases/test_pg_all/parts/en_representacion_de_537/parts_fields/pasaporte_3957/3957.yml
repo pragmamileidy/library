@@ -1,0 +1,30 @@
+--- 
+id: 3957
+part_id: 537
+field_id: 6
+name: Pasaporte
+created_at: 2015-09-28 18:30:35 Z
+updated_at: 2017-06-04 00:25:23.081448 Z
+label: Pasaporte
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e581f820-65cf-4682-9e98-5af02c08d92e
+version: 20170603-202523

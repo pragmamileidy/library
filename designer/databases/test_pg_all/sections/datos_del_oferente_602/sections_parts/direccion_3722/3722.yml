@@ -1,0 +1,19 @@
+--- 
+id: 3722
+section_id: 602
+part_id: 757
+name: Direccion
+created_at: 2017-02-28 02:15:23.675093 Z
+updated_at: 2017-02-28 05:39:00.742219 Z
+label: "Direcci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"4127\":{},\"4128\":{},\"4129\":{},\"4130\":{},\"4131\":{},\"4132\":{},\"4139\":{},\"4142\":{},\"4143\":{},\"4164\":{},\"4165\":{},\"4157\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

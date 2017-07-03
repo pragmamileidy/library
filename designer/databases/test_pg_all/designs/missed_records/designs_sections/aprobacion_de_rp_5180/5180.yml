@@ -1,0 +1,20 @@
+--- 
+id: 5180
+design_id: 285
+section_id: 185
+name: Aprobacion de RP
+created_at: 2017-01-05 14:18:28.066811 Z
+updated_at: 2017-01-05 14:18:28.066811 Z
+label: Aprobacion de Record Policivo
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  # DV: SE COMENTO PARA ASIGNAR VALOR A LA APROBACION DEL DIRECTOR 20/10/2014 #
+  #dato = form_data.get("aprobacion_de_rp.datos_del_funcionario_generico.usuario")
+  #nombre_tarea = @task["name"].to_s.downcase
+  #['aprobacion de record policivo'].include? nombre_tarea or !dato.blank?
+manage_as_confidential: false
+include: "{\"1710\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"},\"3199\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 19

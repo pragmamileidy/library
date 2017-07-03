@@ -1,0 +1,30 @@
+--- 
+id: 1344
+part_id: 55
+field_id: 83
+name: Trae Frutas, Plantas, Carnes, Comida o Animales Vivos
+created_at: 2012-05-14 16:00:52 Z
+updated_at: 2017-06-04 00:28:53.199952 Z
+label: Trae Frutas, Plantas, Carnes, Comida o Animales Vivos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e03e74c1-603a-47e1-baaf-a1e59bef9d3a
+version: 20170603-202853

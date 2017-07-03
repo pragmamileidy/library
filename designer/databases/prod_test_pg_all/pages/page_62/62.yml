@@ -1,0 +1,302 @@
+--- 
+id: 62
+position: 2
+selector: "{\"529\":{\"656\":{\"758\":{},\"759\":{}}},\"1653\":{\"2053\":{\"2152\":{},\"2153\":{},\"2154\":{},\"2155\":{},\"2156\":{},\"2157\":{},\"2162\":{},\"2163\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 77px;
+  	left: 692px;
+  	width: 330px;
+  	height: 17px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 52px;
+  	left: 693px;
+  	width: 329px;
+  	height: 17px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_cdula {
+  	position: absolute;
+  	top: 169px;
+  	left: 262px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_primernombre {
+  	position: absolute;
+  	top: 169px;
+  	left: 748px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_segundonombre {
+  	position: absolute;
+  	top: 205px;
+  	left: 263px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_primerapellido {
+  	position: absolute;
+  	top: 206px;
+  	left: 747px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_segundoapellido {
+  	position: absolute;
+  	top: 242px;
+  	left: 263px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_apellidodecasada {
+  	position: absolute;
+  	top: 278px;
+  	left: 262px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_fechadeinicio {
+  	position: absolute;
+  	top: 242px;
+  	left: 747px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_2_fechafin {
+  	position: absolute;
+  	top: 279px;
+  	left: 747px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_cdula {
+  	position: absolute;
+  	top: 365px;
+  	left: 264px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_primernombre {
+  	position: absolute;
+  	top: 365px;
+  	left: 746px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_segundonombre {
+  	position: absolute;
+  	top: 400px;
+  	left: 265px;
+  	width: 255px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_primerapellido {
+  	position: absolute;
+  	top: 401px;
+  	left: 746px;
+  	width: 251px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_segundoapellido {
+  	position: absolute;
+  	top: 438px;
+  	left: 264px;
+  	width: 255px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_apellidodecasada {
+  	position: absolute;
+  	top: 474px;
+  	left: 264px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_fechadeinicio {
+  	position: absolute;
+  	top: 438px;
+  	left: 747px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_3_fechafin {
+  	position: absolute;
+  	top: 474px;
+  	left: 748px;
+  	width: 247px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_cdula {
+  	position: absolute;
+  	top: 560px;
+  	left: 263px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_primernombre {
+  	position: absolute;
+  	top: 561px;
+  	left: 747px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_segundonombre {
+  	position: absolute;
+  	top: 597px;
+  	left: 263px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_primerapellido {
+  	position: absolute;
+  	top: 597px;
+  	left: 747px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_segundoapellido {
+  	position: absolute;
+  	top: 633px;
+  	left: 263px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_apellidodecasada {
+  	position: absolute;
+  	top: 670px;
+  	left: 263px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_fechadeinicio {
+  	position: absolute;
+  	top: 633px;
+  	left: 748px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_4_fechafin {
+  	position: absolute;
+  	top: 670px;
+  	left: 749px;
+  	width: 246px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_cdula {
+  	position: absolute;
+  	top: 756px;
+  	left: 262px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_primernombre {
+  	position: absolute;
+  	top: 756px;
+  	left: 747px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_segundonombre {
+  	position: absolute;
+  	top: 792px;
+  	left: 262px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_primerapellido {
+  	position: absolute;
+  	top: 792px;
+  	left: 748px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_segundoapellido {
+  	position: absolute;
+  	top: 829px;
+  	left: 262px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_apellidodecasada {
+  	position: absolute;
+  	top: 865px;
+  	left: 262px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_fechadeinicio {
+  	position: absolute;
+  	top: 829px;
+  	left: 747px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeusuariosparaactivacinodesactivacin_datosdeusuariosparaactivacinodesactivacintim_instance_5_fechafin {
+  	position: absolute;
+  	top: 866px;
+  	left: 747px;
+  	width: 248px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: ""
+print_design_id: 32
+created_at: 2012-04-26 20:40:11 Z
+updated_at: 2015-10-03 18:05:32 Z
+instances_selector: "{\"529\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1653\":{\"value\":\"\",\"2053\":{\"value\":\"2,5\",\"2152\":{\"value\":\"\"},\"2153\":{\"value\":\"\"},\"2154\":{\"value\":\"\"},\"2155\":{\"value\":\"\"},\"2156\":{\"value\":\"\"},\"2157\":{\"value\":\"\"},\"2162\":{\"value\":\"\"},\"2163\":{\"value\":\"\"}}}}"
+size: ""

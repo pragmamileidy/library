@@ -1,0 +1,30 @@
+--- 
+id: 2536
+part_id: 473
+field_id: 17
+name: "Intoxicaci\xC3\xB3n y sobre dosis en los Animales"
+created_at: 2012-11-20 20:45:09 Z
+updated_at: 2017-06-04 00:27:22.509891 Z
+label: "Intoxicaci\xC3\xB3n y sobre dosis en los Animales"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "S\xC3\xADntomas, conductas de emergencia y ant\xC3\xADdotos contra el producto farmac\xC3\xA9utico"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e347bd1a-9665-4960-ad0b-90fb518436cd
+version: 20170603-202722

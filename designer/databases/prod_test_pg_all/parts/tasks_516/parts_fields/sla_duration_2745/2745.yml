@@ -1,0 +1,30 @@
+--- 
+id: 2745
+part_id: 516
+field_id: 10
+name: SLA_duration
+created_at: 2013-01-14 21:37:59 Z
+updated_at: 2017-06-04 00:27:26.351229 Z
+label: "Duraci\xC3\xB3n SLA"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4f49f9e1-492c-4ce6-bc39-46c59cb37438
+version: 20170603-202726

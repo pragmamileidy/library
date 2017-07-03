@@ -1,0 +1,48 @@
+--- 
+id: 222
+name: Entidad Evaluadora Municipio
+description: Entidad Evaluadora Municipio
+version: 
+status: Draft
+label: Entidad Evaluadora
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-20 14:42:33 Z
+updated_at: 2012-09-17 15:07:05 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _value = ""
+  _key = ""
+  result = WebserviceConsumer.get('/service/dummy_entidades_evaluadoras/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+  	_valores.each {
+  		|institucion|
+  		_value = _value + institucion["entidad"] + ","
+  		_key = _key + institucion["siglas"] + ","
+  		}
+  		_value = _value.chop
+  		_key= _key.chop
+  		@values_of_list = _value.split(",")
+  		@keys_of_list =  _key.split(",")
+  else
+  	@values_of_list = [""]
+  	@keys_of_list =  [""]
+  end
+serial: 

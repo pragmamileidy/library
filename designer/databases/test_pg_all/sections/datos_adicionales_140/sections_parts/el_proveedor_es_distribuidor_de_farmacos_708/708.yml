@@ -1,0 +1,19 @@
+--- 
+id: 708
+section_id: 140
+part_id: 49
+name: "El proveedor es distribuidor de f\xC3\xA1rmacos"
+created_at: 2012-03-22 14:42:55 Z
+updated_at: 2017-02-28 19:29:33.941531 Z
+label: "El proveedor es distribuidor de f\xC3\xA1rmacos"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

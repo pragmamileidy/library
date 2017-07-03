@@ -1,0 +1,33 @@
+--- 
+id: 157
+name: Paso 6 - Datos del Adquiriente
+label: Datos del Adquiriente
+description: Datos del Adquiriente Natural sin Contraparte
+fill_step_id: 57
+created_at: 2012-04-22 14:17:31 Z
+updated_at: 2012-05-19 20:48:31 Z
+include: "{\"650\":{\"656\":{\"758\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"759\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"651\":{\"657\":{\"760\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"761\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"762\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"657\":{\"749\":{\"846\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"847\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"750\":{\"772\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1079\":{\"954\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"955\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"956\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"957\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"958\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"669\":{\"674\":{\"782\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"124\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"783\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"941\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"948\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1090\":{\"212\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1091\":{\"239\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: "# En la secci\xC3\xB3n INFORMACI\xC3\x93N DE SOLICITUD, poblar el campo FECHA DE LA SOLICITUD con la fecha \r\n\
+  # del momento en que se crea el formulario y en el campo N\xC3\x9AMERO DE SOLICITUD el n\xC3\xBAmero de \r\n\
+  # solicitud generado por el sistema.\r\n\
+  \r\n\
+  # Poblar los campos de la secci\xC3\xB3n DATOS DEL USUARIO con la informaci\xC3\xB3n del usuario que ingres\xC3\xB3.\r\n\
+  \r\n\
+  # Si el SOLICITANTE act\xC3\xBAa en nombre propio, desplegar en la secci\xC3\xB3n DATOS DEL ADQUIRIENTE \r\n\
+  # (NATURAL) la informaci\xC3\xB3n asociada a la c\xC3\xA9dula del usuario que ingres\xC3\xB3.\r\n\
+  \r\n\
+  # Si el SOLICITANTE act\xC3\xBAa en nombre de un tercero, tomar la c\xC3\xA9dula que se ingrese (on blur) en la \r\n\
+  # secci\xC3\xB3n DATOS DEL ADQUIRIENTE (NATURAL) y buscar la informaci\xC3\xB3n asociada en la BDIN del Tribunal\r\n\
+  # Electorla para desplegarla en los dem\xC3\xA1s campos de la secci\xC3\xB3n DATOS DEL ADQUIRIENTE (NATURAL)."
+on_transition: "# Si no se consigue en la BDIN del Tribunal Electoral informaci\xC3\xB3n asociada a la c\xC3\xA9dula ingresada, \r\n\
+  # desplegar un mensaje de error y no permitir avanzar.\r\n\
+  \r\n\
+  # Al avanzar, ir al paso 10."
+views: 
+back_step: "Paso 1 - Recepci\xC3\xB3n de Solicitud de Traspaso entre dos personas Jur\xC3\xADdicas"
+next_step: "Paso 1 - Recepci\xC3\xB3n de Solicitud de Traspaso entre dos personas Jur\xC3\xADdicas"
+position: 6
+ajax_calls: 

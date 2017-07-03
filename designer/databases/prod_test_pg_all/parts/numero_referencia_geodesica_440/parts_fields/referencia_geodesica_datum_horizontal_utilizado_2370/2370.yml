@@ -1,0 +1,30 @@
+--- 
+id: 2370
+part_id: 440
+field_id: 1
+name: "Referencia Geod\xC3\xA9sica Datum Horizontal Utilizado"
+created_at: 2012-08-14 12:25:31 Z
+updated_at: 2017-06-04 00:22:14.251985 Z
+label: "Referencia Geod\xC3\xA9sica (Datum Horizontal) Utilizado"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: "Datum horizontal que se utiliz\xC3\xB3 para computar las coordenadas geogr\xC3\xA1ficas certificadas por el Instituto Geogr\xC3\xA1fico Nacional o profesional id\xC3\xB3neo."
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /^[0-9]+(\.[0-9]+)?$/
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: af082f54-e882-4689-829c-0cc02ca2a2b6
+version: 20170603-202214

@@ -1,0 +1,19 @@
+--- 
+id: 2479
+section_id: 430
+part_id: 518
+name: rolname_id
+created_at: 2013-01-15 19:54:41 Z
+updated_at: 2013-03-23 18:44:25 Z
+label: "Roles e Identificaci\xC3\xB3n del Tr\xC3\xA1mite"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2752\":{},\"2754\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

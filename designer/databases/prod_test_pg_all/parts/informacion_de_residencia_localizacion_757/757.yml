@@ -1,0 +1,17 @@
+--- 
+id: 757
+name: "Informaci\xC3\xB3n de Residencia / Localizaci\xC3\xB3n"
+description: "Contiene todos los datos para indicar la direcci\xC3\xB3n de una persona natural o jur\xC3\xADdica."
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2017-02-28 01:06:32.463648 Z
+updated_at: 2017-02-28 01:10:47.454856 Z
+label: "Informaci\xC3\xB3n de Residencia / Localizaci\xC3\xB3n"
+hint: ""
+view_class: horizontal
+serial: 3357-5026-3259-9978-1795

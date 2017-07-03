@@ -1,0 +1,214 @@
+--- 
+id: 71
+position: 1
+selector: "{\"558\":{\"656\":{\"758\":{},\"759\":{}}},\"560\":{\"580\":{\"1323\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"926\":{},\"545\":{},\"1996\":{},\"2001\":{},\"763\":{}},\"586\":{\"608\":{}},\"581\":{\"2456\":{},\"2457\":{},\"2458\":{},\"583\":{},\"578\":{},\"2217\":{},\"930\":{},\"585\":{},\"631\":{},\"594\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 69px;
+  	left: 712px;
+  	width: 197px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 44px;
+  	left: 713px;
+  	width: 298px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_cdula {
+  	position: absolute;
+  	top: 275px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 307px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 337px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 306px;
+  	left: 760px;
+  	width: 200px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 337px;
+  	left: 760px;
+  	width: 201px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_apellidodecasada {
+  	position: absolute;
+  	top: 368px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 368px;
+  	left: 760px;
+  	width: 201px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_fechadenacimientostring {
+  	position: absolute;
+  	top: 399px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_sexostring {
+  	position: absolute;
+  	top: 461px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_datosdelapersona_edad {
+  	position: absolute;
+  	top: 399px;
+  	left: 759px;
+  	width: 199px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinlaboral_nmerodesegurosocial {
+  	position: absolute;
+  	top: 276px;
+  	left: 759px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_provincia_lista {
+  	position: absolute;
+  	top: 492px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_distrito_lista {
+  	position: absolute;
+  	top: 491px;
+  	left: 760px;
+  	width: 201px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_corregimiento_lista {
+  	position: absolute;
+  	top: 522px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_barrio {
+  	position: absolute;
+  	top: 522px;
+  	left: 758px;
+  	width: 202px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_calleoavenida {
+  	position: absolute;
+  	top: 553px;
+  	left: 759px;
+  	width: 201px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_nmerodecasaapartamento {
+  	position: absolute;
+  	top: 554px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_apartadopostal {
+  	position: absolute;
+  	top: 585px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 430px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_nmerocelular {
+  	position: absolute;
+  	top: 429px;
+  	left: 759px;
+  	width: 201px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeldeudorcodeudor_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 460px;
+  	left: 759px;
+  	width: 255px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: ""
+print_design_id: 36
+created_at: 2012-04-27 14:48:07 Z
+updated_at: 2015-10-18 21:44:23 Z
+instances_selector: "{\"558\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"560\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"926\":{\"value\":\"\"},\"545\":{\"value\":\"\"},\"1996\":{\"value\":\"\"},\"2001\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"586\":{\"value\":\"\",\"608\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"583\":{\"value\":\"\"},\"578\":{\"value\":\"\"},\"2217\":{\"value\":\"\"},\"930\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}}}"
+size: ""

@@ -1,0 +1,43 @@
+--- 
+id: 1072
+name: Paso 7 - Correos Sujetos
+label: Correos Sujetos
+description: ""
+fill_step_id: 545
+created_at: 2013-01-24 18:13:29 Z
+updated_at: 2014-04-11 14:55:02 Z
+include: "{\"2364\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2368\":{\"2434\":{\"2798\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2799\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2435\":{\"2801\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2802\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2803\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2804\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2806\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2807\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2436\":{\"2808\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2809\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2810\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2811\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2812\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"mail_bodies\")\r\n\
+  \r\n\
+  #Llenar campos de la parte MAIL_CARGARTRAMITE\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_cargartramite.cargarsolicitud\", \"Por favor ingrese en su bandeja MIS TR\xC3\x81MITES y llene el(los) formulario(s) asociados a la Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto. \")\r\n\
+  form_data.set(\"mail_bodies.mail_cargartramite.anularpasocarga\", \"La solicitud de Anteproyecto de Construcci\xC3\xB3n iniciado por Usted, ha sido anulada por errores durante la carga de la solicitud.\")\r\n\
+  \r\n\
+  #Llenar los campos de la parte MAIL_PAGOS\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_pagos.ingresarpagos\", \"Por favor ingrese los pagos requeridos para la Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto. \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.anularpasopago\", \"La solicitud de Anteproyecto de Construcci\xC3\xB3n iniciado por Usted, ha sido anulado por errores durante la realizaci\xC3\xB3n de pagos.\")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.recibirpago\", \"La Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto se encuentra en bandeja de funcionarios de MIVIOT para la revisi\xC3\xB3n de los pagos realizados. \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.rechazopago\", \"La solicitud de Anteproyecto de Construcci\xC3\xB3n iniciado por Usted, ha sido rechazada por el funcionario receptor de la Instituci\xC3\xB3n al revisar los datos de pagos. Revise su bandeja para m\xC3\xA1s detalles.\")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.reparopago\", \"Los pagos realizados para la Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto requieren correcciones. Por favor, ingrese a su bandeja MIS TR\xC3\x81MITES para mayor informaci\xC3\xB3n. \")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.anularpasoreparopago\", \"La Solicitud de Anteproyecto de Construcci\xC3\xB3n iniciado por Usted, ha sido anulado durante el periodo de reparo de pagos.\")\r\n\
+  form_data.set(\"mail_bodies.mail_pagos.errorrecibirpago\", \"Ha habido errores en la revisi\xC3\xB3n de pagos de la Solicitud de Anteproyecto de Construcci\xC3\xB3n, por favor solvente para que se pueda completar la revisi\xC3\xB3n de los pagos del tr\xC3\xA1mite.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte MAIL_SOLICITUDTRAMITE\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.recibirsolicitud\", \"La Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto ha sido enviada a la Bandeja de Funcionarios para su revisi\xC3\xB3n. \")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.rechazosolicitud\", \"La solicitud de Anteproyectos de Construcci\xC3\xB3n iniciado por Usted, ha sido rechazada por el funcionario receptor de la Instituci\xC3\xB3n, revise su bandeja para mayores detalles.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.reparosolicitud\", \"La Solicitud de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto iniciada por Usted requiere correcciones. Revisar en la bandeja MIS TR\xC3\x81MITES las correcciones a realizar. \")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.anularpasoreparosolicitud\", \"La Solicitud de Anteproyecto de Construcci\xC3\xB3n iniciado por Usted, ha sido anulado por errores durante su correcci\xC3\xB3n.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.errorrecibirsolicitud\", \"Ha habido errores en la recepci\xC3\xB3n de la Solicitud de Anteproyecto de Construcci\xC3\xB3n, por favor solvente para que se pueda completar la recepci\xC3\xB3n del tr\xC3\xA1mite.\")\r\n"
+on_transition: ""
+views: 
+back_step: Paso 6 - Notificaciones
+next_step: Paso 8 - Correos Sujetos
+position: 6
+ajax_calls: ""

@@ -1,0 +1,86 @@
+--- 
+id: 66
+position: 3
+selector: "{\"809\":{\"1189\":{\"212\":{}},\"1190\":{\"212\":{}},\"1191\":{\"239\":{}},\"1192\":{\"239\":{}}},\"810\":{\"1191\":{\"239\":{}},\"1192\":{\"239\":{}}},\"811\":{\"1189\":{\"212\":{}},\"1190\":{\"212\":{}}},\"812\":{\"1190\":{\"212\":{}},\"1191\":{\"239\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n  background-image:url(img/page_66_Activar_Usuarios_SIGA_3.png); background-repeat:no-repeat;\r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xC3\xA1l es el formato b\xC3\xA1sico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xC3\xBAn no se han definido */\r\n\
+  \r\n  .ParaUsoExclusivodeAduanas_FechadeRecepcin_Fecha {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:248px;\r\n\
+  \tleft:283px;\r\n\
+  \twidth:123px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .ParaUsoExclusivodeAduanas_FechadeProcesamiento_Fecha {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:277px;\r\n\
+  \tleft:283px;\r\n\
+  \twidth:123px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .ParaUsoExclusivodeAduanas_Funcionario_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:305px;\r\n\
+  \tleft:282px;\r\n\
+  \twidth:435px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .ParaUsoExclusivodeAduanas_Cargo_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:333px;\r\n\
+  \tleft:116px;\r\n\
+  \twidth:243px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Funcionarioquetramitlasolicitud_Funcionario_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:380px;\r\n\
+  \tleft:359px;\r\n\
+  \twidth:435px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .Funcionarioquetramitlasolicitud_Cargo_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:408px;\r\n\
+  \tleft:116px;\r\n\
+  \twidth:243px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .ParaUsoExclusivodeAdministracinSIGA_FechadeRecepcin_Fecha {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:496px;\r\n\
+  \tleft:272px;\r\n\
+  \twidth:134px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .ParaUsoExclusivodeAdministracinSIGA_FechadeProcesamiento_Fecha {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:523px;\r\n\
+  \tleft:272px;\r\n\
+  \twidth:134px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .RegistradoenSIGApor_FechadeProcesamiento_Fecha {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:598px;\r\n\
+  \tleft:116px;\r\n\
+  \twidth:156px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n  .RegistradoenSIGApor_Funcionario_Texto {\r\n\
+  \tposition:absolute;\r\n\
+  \ttop:568px;\r\n\
+  \tleft:282px;\r\n\
+  \twidth:434px;\r\n\
+  \toverflow:hidden;\r\n\
+  \theight: 22px;\r\n  }\r\n"
+override_render: false
+html_render: ""
+print_design_id: 33
+created_at: 2012-04-27 00:37:44 Z
+updated_at: 2012-07-12 16:08:23 Z
+instances_selector: 
+size: 

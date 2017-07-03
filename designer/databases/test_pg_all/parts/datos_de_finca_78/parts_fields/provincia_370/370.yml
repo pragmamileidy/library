@@ -1,0 +1,30 @@
+--- 
+id: 370
+part_id: 78
+field_id: 10
+name: Provincia
+created_at: 2011-11-14 14:10:45 Z
+updated_at: 2017-06-04 00:30:13.415743 Z
+label: Provincia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 168c4d59-bb89-4675-bc50-bd91884e2550
+version: 20170603-203013

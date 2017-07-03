@@ -1,0 +1,16 @@
+--- 
+id: 2349
+design_id: 174
+section_id: 427
+name: Defaults2
+created_at: 2013-01-23 15:32:03 Z
+updated_at: 2013-11-01 19:17:41 Z
+label: Por defecto (Defaults)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2462\":{\"3435\":{\"required\":\"required\"}},\"2463\":{\"2747\":{\"required\":\"required\"},\"2748\":{\"required\":\"required\"}},\"2464\":{\"2749\":{\"required\":\"required\"},\"2750\":{\"required\":\"required\"},\"2752\":{\"required\":\"required\"},\"2754\":{\"required\":\"required\"}},\"2957\":{\"3282\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

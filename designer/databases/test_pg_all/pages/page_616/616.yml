@@ -1,0 +1,270 @@
+--- 
+id: 616
+position: 3
+selector: "{\"2463\":{\"656\":{\"758\":{},\"759\":{}}},\"2471\":{\"2654\":{\"2993\":{},\"2994\":{},\"2996\":{},\"2997\":{},\"2998\":{},\"2999\":{},\"3000\":{}},\"2655\":{\"2970\":{}}},\"2466\":{\"580\":{\"1981\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"926\":{}},\"581\":{\"572\":{},\"805\":{},\"585\":{},\"594\":{}},\"2592\":{\"2925\":{},\"2926\":{}}},\"2467\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"572\":{},\"805\":{},\"585\":{},\"594\":{}},\"2593\":{\"2925\":{},\"2926\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+    position: absolute;
+    top: 72px;
+    left: 677px;
+    width: 356px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+    position: absolute;
+    top: 49px;
+    left: 677px;
+    width: 352px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_cdulapasaporte {
+    position: absolute;
+    top: 510px;
+    left: 254px;
+    width: 304px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_primernombre {
+    position: absolute;
+    top: 550px;
+    left: 253px;
+    width: 305px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_segundonombre {
+    position: absolute;
+    top: 550px;
+    left: 649px;
+    width: 348px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_primerapellido {
+    position: absolute;
+    top: 585px;
+    left: 252px;
+    width: 305px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_segundoapellido {
+    position: absolute;
+    top: 585px;
+    left: 649px;
+    width: 352px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_apellidodecasada {
+    position: absolute;
+    top: 620px;
+    left: 251px;
+    width: 308px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_pas {
+    position: absolute;
+    top: 620px;
+    left: 649px;
+    width: 350px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_direccin {
+    position: absolute;
+    top: 655px;
+    left: 251px;
+    width: 760px;
+    height: 36px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_nmerodetelfono {
+    position: absolute;
+    top: 705px;
+    left: 249px;
+    width: 299px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_correoelectrnico {
+    position: absolute;
+    top: 510px;
+    left: 649px;
+    width: 350px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_enrepresentacionde_nombrecompleto {
+    position: absolute;
+    top: 740px;
+    left: 249px;
+    width: 764px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_enrepresentacionde_direccion {
+    position: absolute;
+    top: 785px;
+    left: 247px;
+    width: 767px;
+    height: 44px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdelaempresa_ruc {
+    position: absolute;
+    top: 913px;
+    left: 250px;
+    width: 307px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdelaempresa_nombre {
+    position: absolute;
+    top: 947px;
+    left: 249px;
+    width: 769px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_pas {
+    position: absolute;
+    top: 913px;
+    left: 630px;
+    width: 358px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_direccin {
+    position: absolute;
+    top: 980px;
+    left: 248px;
+    width: 768px;
+    height: 42px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_nmerodetelfono {
+    position: absolute;
+    top: 1038px;
+    left: 253px;
+    width: 304px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_correoelectrnico {
+    position: absolute;
+    top: 1038px;
+    left: 630px;
+    width: 365px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_enrepresentacionde_nombrecompleto {
+    position: absolute;
+    top: 1073px;
+    left: 251px;
+    width: 764px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_enrepresentacionde_direccion {
+    position: absolute;
+    top: 1110px;
+    left: 249px;
+    width: 766px;
+    height: 56px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_detallesdelaobra_titulodelaobra {
+    position: absolute;
+    top: 184px;
+    left: 253px;
+    width: 752px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_detallesdelaobra_fechadecreacin {
+    position: absolute;
+    top: 221px;
+    left: 251px;
+    width: 305px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_detallesdelaobra_estatusdelaobra {
+    position: absolute;
+    top: 221px;
+    left: 649px;
+    width: 315px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_detallesdelaobra_fechadepublicacin {
+    position: absolute;
+    top: 256px;
+    left: 250px;
+    width: 306px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_detallesdelaobra_tipodearte {
+    position: absolute;
+    top: 256px;
+    left: 649px;
+    width: 318px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_detallesdelaobra_otroarte {
+    position: absolute;
+    top: 288px;
+    left: 247px;
+    width: 433px;
+    height: 20px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_detallesdelaobra_observacionesgenerales {
+    position: absolute;
+    top: 340px;
+    left: 247px;
+    width: 737px;
+    height: 48px;
+    overflow: hidden;
+    }
+    .datosdelaobraartistica_transferencia_descripcintransferencia {
+    position: absolute;
+    top: 395px;
+    left: 249px;
+    width: 720px;
+    height: 38px;
+    overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 141
+created_at: 2017-02-22 19:41:51.793912 Z
+updated_at: 2017-03-15 03:28:31.573674 Z
+instances_selector: "{\"2463\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2471\":{\"value\":\"\",\"2654\":{\"value\":\"\",\"2993\":{\"value\":\"\"},\"2994\":{\"value\":\"\"},\"2996\":{\"value\":\"\"},\"2997\":{\"value\":\"\"},\"2998\":{\"value\":\"\"},\"2999\":{\"value\":\"\"},\"3000\":{\"value\":\"\"}},\"2655\":{\"value\":\"\",\"2970\":{\"value\":\"\"}}},\"2466\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"926\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2592\":{\"value\":\"\",\"2925\":{\"value\":\"\"},\"2926\":{\"value\":\"\"}}},\"2467\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2593\":{\"value\":\"\",\"2925\":{\"value\":\"\"},\"2926\":{\"value\":\"\"}}}}"
+size: legal

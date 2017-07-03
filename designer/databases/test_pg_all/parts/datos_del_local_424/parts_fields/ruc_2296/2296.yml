@@ -1,0 +1,30 @@
+--- 
+id: 2296
+part_id: 424
+field_id: 9
+name: RUC
+created_at: 2012-08-08 18:33:53 Z
+updated_at: 2017-06-04 00:24:34.158413 Z
+label: "N\xC3\xBAmero de RUC"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar el n\xC3\xBAmero de registro \xC3\xBAnico de contribuyente de la empresa a inscribir"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 063ef280-ad2a-41db-965e-bce63d123ca9
+version: 20170603-202434

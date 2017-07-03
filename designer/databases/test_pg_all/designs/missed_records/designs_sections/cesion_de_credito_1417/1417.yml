@@ -1,0 +1,16 @@
+--- 
+id: 1417
+design_id: 110
+section_id: 294
+name: "Cesi\xC3\xB3n de Cr\xC3\xA9dito"
+created_at: 2012-06-14 15:42:26 Z
+updated_at: 2014-04-05 02:18:43 Z
+label: "Cesi\xC3\xB3n de Cr\xC3\xA9dito"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1878\":{\"1777\":{\"required\":\"required\"}},\"1880\":{\"1823\":{\"required\":\"unrequired\"},\"3266\":{\"required\":\"required\"},\"1791\":{\"required\":\"unrequired\"},\"1778\":{\"required\":\"required\"},\"1779\":{\"required\":\"required\"},\"1780\":{\"required\":\"unrequired\"},\"1781\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

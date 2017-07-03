@@ -1,0 +1,20 @@
+--- 
+id: 3537
+section_id: 217
+part_id: 38
+name: "Certificado de solter\xC3\xADa del fallecido/a, que no pase de seis (6) meses de haber sido expedido por el Tribunal Electoral"
+created_at: 2015-09-25 15:00:35 Z
+updated_at: 2015-09-25 15:08:18 Z
+label: "Certificado de solter\xC3\xADa del fallecido /a, que no pase de seis (6) meses de haber sido expedido por el Tribunal Electoral"
+min_instances: 1
+max_instances: 1
+depends_on: "datos_del_fallecido = form_data.get(\"datos_del_solicitante.datos_del_fallecido.parentesco_con_el_fallecido\")\r\n\
+  datos_del_fallecido == \"Compa\xC3\xB1era (o)\" || datos_del_fallecido == \"Sobrevivientes en el extranjero\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 17

@@ -1,0 +1,17 @@
+--- 
+id: 308
+name: Detalle de la Solicitud AGT
+description: "Secci\xC3\xB3n que almacena  informaci\xC3\xB3n de la Solicitud del certificado de asistencia de la  AGT"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: Detalle de Solicitud
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-18 14:31:21 Z
+updated_at: 2012-06-18 15:01:23 Z
+status: Draft
+label: ""
+hint: ""
+serial: 

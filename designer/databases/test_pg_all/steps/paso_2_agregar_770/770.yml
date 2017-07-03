@@ -1,0 +1,54 @@
+--- 
+id: 770
+name: Paso 2 - Agregar
+label: Agregar/Eliminar  Descuentos
+description: Permite agregar o eliminar descuentos a la lista de descuentos
+fill_step_id: 388
+created_at: 2012-07-30 20:52:44 Z
+updated_at: 2014-03-17 17:16:02 Z
+include: "{\"2680\":{\"2790\":{\"3209\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1518\":{\"1952\":{\"1892\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1893\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1894\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1895\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2205\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2204\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1898\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#descuentos = form_data.get(\"descuentos.certificacion_descuentos.descuentos\").split(\"\\n\")\r\n\
+  #descuentos.delete_at(0)\r\n\
+  #i=0\r\n\
+  #tabla = \"\"\r\n\
+  #columnas=\"N  | A\xC3\xB1o\t   |   Monto Desc. |  Quincena     |    Mes\t\t       \" + \"\\n\"\r\n\
+  #descuentos.each {|descuento|\r\n\
+  #\ti = i.to_i + 1\r\n\
+  #\ttabla = \"#{tabla}\"+i.to_s.ljust(6)+descuento.to_s+\"\\n\"\r\n\
+  #}\r\n\
+  #form_data.set(\"edicion_de_descuentos.certificacion_descuentos.descuentos\",columnas+tabla)\r\n\
+  #limpieza de campos\r\n\
+  \r\n\
+  \r\n\
+  unless form_data.get(\"descuentos.automatico.fieldgrid\").blank?\r\n json = ActiveSupport::JSON.decode(form_data.get(\"descuentos.automatico.fieldgrid\"))\r\n json[\"config\"][\"readonly\"] = \"false\"\r\n _dataAuto = ActiveSupport::JSON.encode(json)\r\n form_data.set(\"descuentos.automatico.fieldgrid\", _dataAuto)\r\n\
+  end"
+on_transition: "\r\n\
+  \r\n\
+  nombre_seccion = \"agregar_descuento\"\r\n\
+  nombre_partes = \"registro_de_descuentos\"\r\n\
+  data = {}\r\n\
+  @form_data.routes.sort.each do |route|\r\n  x = route.split(\".\")\r\n  section = x[0]\r\n  if x.length == 3 && x[1] =~ /#{nombre_partes}_instance_\\d+/\r\n    if section == nombre_seccion\r\n      field_value = @form_data.get(route)\r\n      number = x[1].match(/instance_(\\d+)/)[1]\r\n      data[number] = {} if data[number].nil? && !field_value.blank?\r\n      value = {}\r\n      value[x[2]] = field_value unless field_value.blank?\r\n      data[number].merge!(value) unless value.blank?\r\n    end\r\n  end\r\n\
+  end\r\n\
+  \r\n\
+  arreglo = []\r\n\
+  data.each do |key,val|\r\n  arreglo << val\r\n\
+  end\r\n\
+  \r\n\
+  _dataM = { 'config' => {\r\n\
+  \"readonly\" => \"true\"\r\n\
+  },\r\n\
+  'data' => arreglo,\r\n\
+  'citizen_selection' => [],\r\n\
+  'agent_selection' => []\r\n\
+  }\r\n\
+  \r\n\
+  _dataM = ActiveSupport::JSON.encode(_dataM)\r\n\
+  form_data.set(\"descuento_manual.manual.fieldgrid\", _dataM)\r\n"
+views: 
+back_step: "Paso 1 - Descuentos autom\xC3\xA1ticos"
+next_step: Paso 3 - Recepcion
+position: 2
+ajax_calls: ""

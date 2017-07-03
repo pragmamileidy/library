@@ -1,0 +1,30 @@
+--- 
+id: 181
+part_id: 24
+field_id: 1
+name: Aterrizajes/Despegues Nocturnos PIC
+created_at: 2011-11-07 15:03:18 Z
+updated_at: 2017-06-04 00:31:19.382385 Z
+label: Aterrizajes/Despegues Nocturnos PIC
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 14
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d989569a-6509-4c1d-a0c0-b09394ba5c0c
+version: 20170603-203119

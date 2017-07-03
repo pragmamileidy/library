@@ -1,0 +1,222 @@
+--- 
+id: 357
+position: 6
+selector: "{\"2429\":{\"656\":{\"758\":{},\"759\":{}}},\"2433\":{\"2622\":{\"1981\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"926\":{}},\"2623\":{\"572\":{},\"805\":{},\"585\":{},\"594\":{}},\"2624\":{\"2925\":{},\"2926\":{}}},\"2437\":{\"2631\":{\"567\":{},\"566\":{}},\"2632\":{\"572\":{},\"805\":{},\"585\":{},\"594\":{}},\"2633\":{\"2925\":{},\"2926\":{}}},\"2440\":{\"2636\":{\"2968\":{},\"2970\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 66px;
+  	left: 703px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 40px;
+  	left: 704px;
+  	width: 319px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datospersonanatural_cdulapasaporte {
+  	position: absolute;
+  	top: 382px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datospersonanatural_primernombre {
+  	position: absolute;
+  	top: 382px;
+  	left: 698px;
+  	width: 258px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datospersonanatural_segundonombre {
+  	position: absolute;
+  	top: 419px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datospersonanatural_primerapellido {
+  	position: absolute;
+  	top: 419px;
+  	left: 698px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datospersonanatural_segundoapellido {
+  	position: absolute;
+  	top: 456px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datospersonanatural_apellidodecasada {
+  	position: absolute;
+  	top: 456px;
+  	left: 701px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datosdeubicacin_pas {
+  	position: absolute;
+  	top: 493px;
+  	left: 261px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datosdeubicacin_direccin {
+  	position: absolute;
+  	top: 529px;
+  	left: 262px;
+  	width: 691px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datosdeubicacin_nmerodetelfono {
+  	position: absolute;
+  	top: 493px;
+  	left: 700px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_datosdeubicacin_correoelectrnico {
+  	position: absolute;
+  	top: 570px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_enrepresentacionde_nombrecompleto {
+  	position: absolute;
+  	top: 650px;
+  	left: 259px;
+  	width: 695px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante1_enrepresentacionde_direccion {
+  	position: absolute;
+  	top: 687px;
+  	left: 260px;
+  	width: 694px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datospersonajurdica_ruc {
+  	position: absolute;
+  	top: 817px;
+  	left: 261px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datospersonajurdica_nombre {
+  	position: absolute;
+  	top: 854px;
+  	left: 263px;
+  	width: 693px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdeubicacin_pas {
+  	position: absolute;
+  	top: 891px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdeubicacin_direccin {
+  	position: absolute;
+  	top: 928px;
+  	left: 262px;
+  	width: 695px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdeubicacin_nmerodetelfono {
+  	position: absolute;
+  	top: 891px;
+  	left: 699px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdeubicacin_correoelectrnico {
+  	position: absolute;
+  	top: 817px;
+  	left: 699px;
+  	width: 255px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_enrepresentacionde_nombrecompleto {
+  	position: absolute;
+  	top: 1012px;
+  	left: 263px;
+  	width: 693px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_enrepresentacionde_direccion {
+  	position: absolute;
+  	top: 1049px;
+  	left: 261px;
+  	width: 694px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .sinopsis_sinopsisdelaobra_snopsis {
+  	position: absolute;
+  	top: 178px;
+  	left: 262px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .sinopsis_sinopsisdelaobra_descripcintransferencia {
+  	position: absolute;
+  	top: 222px;
+  	left: 261px;
+  	width: 698px;
+  	height: 45px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 136
+created_at: 2013-06-10 22:48:32 Z
+updated_at: 2014-04-30 20:45:20 Z
+instances_selector: "{\"2429\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2433\":{\"value\":\"\",\"2622\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"926\":{\"value\":\"\"}},\"2623\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2624\":{\"value\":\"\",\"2925\":{\"value\":\"\"},\"2926\":{\"value\":\"\"}}},\"2437\":{\"value\":\"\",\"2631\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"2632\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2633\":{\"value\":\"\",\"2925\":{\"value\":\"\"},\"2926\":{\"value\":\"\"}}},\"2440\":{\"value\":\"\",\"2636\":{\"value\":\"\",\"2968\":{\"value\":\"\"},\"2970\":{\"value\":\"\"}}}}"
+size: 

@@ -1,0 +1,30 @@
+--- 
+id: 1384
+part_id: 22
+field_id: 108
+name: "Estado Civil para inscripci\xC3\xB3n al servio publico de empleo"
+created_at: 2012-05-17 19:31:36 Z
+updated_at: 2017-06-04 00:30:16.355460 Z
+label: Estado Civil
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Estado Civil
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3695a556-be93-4d38-8fa1-65befbe02428
+version: 20170603-203016

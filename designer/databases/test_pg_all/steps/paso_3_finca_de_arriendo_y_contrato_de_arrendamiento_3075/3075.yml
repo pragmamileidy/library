@@ -1,0 +1,68 @@
+--- 
+id: 3075
+name: Paso 3 - Finca de arriendo  y Contrato de Arrendamiento
+label: Finca de arriendo  y Contrato de Arrendamiento
+description: "Complete la informaci\xC3\xB3n faltante, y verifique todos los datos est\xC3\xA9n correctos."
+fill_step_id: 1646
+created_at: 2014-12-18 15:37:20 Z
+updated_at: 2015-02-03 15:23:04 Z
+include: "{\"4712\":{\"1787\":{\"1634\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1636\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1637\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3223\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3224\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3225\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1641\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1642\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1643\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1644\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1645\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1788\":{\"1646\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4713\":{\"1792\":{\"1668\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1793\":{\"1670\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1669\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1794\":{\"1671\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2214\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2215\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1674\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1675\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2216\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1677\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1678\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4714\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4715\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "# Obtener valor del config\r\n                valor = @config.route(\"Rates-payment-payment-payment\")\r\n                \r\n                if valor == \"Electr\xC3\xB3nico\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")\r\n                \r\n                end\r\n                if valor == \"Manual\"\r\n                \r\n                        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")\r\n                \r\n                end\r\n\
+  \r\n\
+  \r\n\
+  ########################\r\n\
+  _anios = form_data.get(\"contrato_de_arrendamiento1.periodo_de_vigencia_del_contrato.anos\")\r\n\
+  if (_anios.to_i < 3 )\r\n    transition_errors << \"El Periodo de Vigencia del Contrato debe ser de 3 a\xC3\xB1os m\xC3\xADnimo\"\r\n\
+  end\r\n\
+  \r\n\
+  ################\r\n\
+  \r\n\
+  _meses = form_data.get(\"contrato_de_arrendamiento1.periodo_de_vigencia_del_contrato.meses\")\r\n\
+  if (_meses.to_i > 12 )\r\n    transition_errors << \"M\xC3\xA1ximo deben ser 12 meses\"\r\n\
+  end\r\n\
+  \r\n\
+  _fechaActual = Date.today\r\n\
+  _fechaCont = form_data.get(\"contrato_de_arrendamiento1.otros_datos_contrato.fecha_en_que_se_firma_el_contrato\")\r\n\
+  _fechaCont = Date.strptime(\"#{_fechaCont}\",\"%d-%m-%Y\")\r\n\
+  if (_fechaCont < _fechaActual  )\r\n    transition_errors << \"La fecha de firma del contrato no puede ser anterior a la fecha actual\"\r\n\
+  end"
+views: 
+back_step: Paso 2 - Datos de Arrendatario
+next_step: Paso 4 - Adjuntar Archivos
+position: 3
+ajax_calls: "\t$(\"#field_datos_de_finca_en_arriendo_datos_de_finca_en_arriendo_generales_provincia_lista\").change(function(){\r\n\
+  \t\tvar prov = $(\"#field_datos_de_finca_en_arriendo_datos_de_finca_en_arriendo_generales_provincia_lista\").find(':selected').val();\r\n\
+  \t\tdistritos(prov);\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t$(\"#field_datos_de_finca_en_arriendo_datos_de_finca_en_arriendo_generales_distrito_lista\").change(function(){\r\n\
+  \t\tvar distrito = $(\"#field_datos_de_finca_en_arriendo_datos_de_finca_en_arriendo_generales_distrito_lista\").find(':selected').val();\r\n\
+  \t\tcorregimientos(distrito);\r\n\
+  \t});\r\n\
+  \r\n\
+  //Direcci\xC3\xB3n actual\r\n\
+  function distritos(provincia) {\r\n\
+  $.post(\r\n            \"/proxy_service/get_service\",\r\n            {\"service_name\":\"ws_panama_distritos/where\",\r\n            \"provincia\":provincia},\r\n            function(data){\r\n\
+  \t\t\t\tvar dist;\r\n\
+  \t\t\t\tvar html_options = \"\";\r\n\
+  \t\t\t\tfor (x in data){\r\n\
+  \t\t\t\t\tdist = data[x];\r\n\
+  \t\t\t\t\thtml_options = html_options+'<option value=\"'+dist[\"distrito\"] +'\">'+dist[\"distrito\"] +'</option>'\r\n\
+  \t\t\t\t}\t\r\n\
+  \t\t\t\t$(\"#field_datos_de_finca_en_arriendo_datos_de_finca_en_arriendo_generales_distrito_lista\").html(html_options);\r\n\
+  \t\t\t\t$(\"#field_datos_de_finca_en_arriendo_datos_de_finca_en_arriendo_generales_corregimiento_lista\").html(\"\");\r\n            }\r\n          );\r\n\
+  }\r\n\
+  function corregimientos(distrito) {\r\n params = {\r\n            \"service_name\":\"ws_panama_corregimientos/where\",\r\n            \"distrito\":distrito\r\n          }\r\n\
+  $.post(\r\n            \"/proxy_service/get_service\",\r\n            params,\r\n            function(data){\r\n\
+  \t\t\t\tvar corr;\r\n\
+  \t\t\t\tvar html_options = \"\";\r\n\
+  \t\t\t\tfor (x in data){\r\n\
+  \t\t\t\t\tcorr = data[x];\r\n\
+  \t\t\t\t\thtml_options = html_options+'<option value=\"'+corr[\"corregimiento\"] +'\">'+corr[\"corregimiento\"] +'</option>'\r\n\
+  \t\t\t\t}\t\r\n\
+  \t\t\t\t$(\"#field_datos_de_finca_en_arriendo_datos_de_finca_en_arriendo_generales_corregimiento_lista\").html(html_options);\r\n            }\r\n          );\r\n\
+  }\t"

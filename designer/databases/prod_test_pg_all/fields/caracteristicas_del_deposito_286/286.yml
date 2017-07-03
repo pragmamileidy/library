@@ -1,0 +1,30 @@
+--- 
+id: 286
+name: "Caracter\xC3\xADsticas del Dep\xC3\xB3sito"
+description: campo para Registro de Obras literarias MICI
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-05-21 20:37:37 Z
+updated_at: 2013-05-22 18:47:39 Z
+values_list: "R\xC3\xBAstico, Lujo, Electr\xC3\xB3nica, Audio libro"
+keys_list: "\"Rustico\", \"Lujo\", \"Electronica\", \"Audio libro\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

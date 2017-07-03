@@ -1,0 +1,19 @@
+--- 
+id: 3430
+section_id: 567
+part_id: 547
+name: Autor-musica-juridico
+created_at: 2014-12-22 17:43:13 Z
+updated_at: 2014-12-22 17:47:37 Z
+label: "Autor de la M\xC3\xBAsica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

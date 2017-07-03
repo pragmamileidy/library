@@ -1,0 +1,19 @@
+--- 
+id: 1381
+name: "Paso 6 - Listado de Preguntas "
+label: Listado de Preguntas y sus Detalles
+description: ""
+fill_step_id: 690
+created_at: 2013-05-15 23:03:40 Z
+updated_at: 2013-05-20 19:32:21 Z
+include: "{\"2835\":{\"1822\":{\"1704\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1705\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 5 - Datos Financieros y de Operaciones
+next_step: Paso 7 - Referencias Comerciales y Bancarias
+position: 6
+ajax_calls: ""

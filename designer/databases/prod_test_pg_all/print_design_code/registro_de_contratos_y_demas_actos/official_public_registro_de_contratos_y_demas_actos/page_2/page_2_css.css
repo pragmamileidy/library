@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+
+  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+	position: absolute;
+	top: 66px;
+	left: 713px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+	position: absolute;
+	top: 40px;
+	left: 714px;
+	width: 310px;
+	height: 20px;
+	overflow: hidden;
+  }
+
+  .datosdelsolicitantepersonanatural_datosdelapersona_cdulapasaporte {
+	position: absolute;
+	top: 224px;
+	left: 271px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonanatural_datosdelapersona_nombrecompleto {
+	position: absolute;
+	top: 262px;
+	left: 276px;
+	width: 671px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_pas {
+	position: absolute;
+	top: 224px;
+	left: 743px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_direccin {
+	position: absolute;
+	top: 299px;
+	left: 275px;
+	width: 673px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_nmerodetelfono {
+	position: absolute;
+	top: 335px;
+	left: 278px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_correoelectrnico {
+	position: absolute;
+	top: 335px;
+	left: 744px;
+	width: 274px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonanatural_enrepresentacionde_nombrecompleto {
+	position: absolute;
+	top: 373px;
+	left: 276px;
+	width: 670px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonanatural_enrepresentacionde_direccion {
+	position: absolute;
+	top: 409px;
+	left: 276px;
+	width: 670px;
+	height: 20px;
+	overflow: hidden;
+  }
+  
+  .datosdelsolicitantepersonajuridica_datosdelaempresa_ruc {
+	position: absolute;
+	top: 601px;
+	left: 265px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_datosdelaempresa_nombre {
+	position: absolute;
+	top: 638px;
+	left: 264px;
+	width: 673px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_direccin_pas {
+	position: absolute;
+	top: 711px;
+	left: 263px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_direccin_direccin {
+	position: absolute;
+	top: 675px;
+	left: 263px;
+	width: 675px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_direccin_nmerodetelfono {
+	position: absolute;
+	top: 711px;
+	left: 732px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_direccin_nmerocelular {
+	position: absolute;
+	top: 748px;
+	left: 732px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_direccin_correoelectrnico {
+	position: absolute;
+	top: 748px;
+	left: 262px;
+	width: 371px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_enrepresentacionde_nombrecompleto {
+	position: absolute;
+	top: 786px;
+	left: 264px;
+	width: 670px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdelsolicitantepersonajuridica_enrepresentacionde_direccion {
+	position: absolute;
+	top: 822px;
+	left: 262px;
+	width: 672px;
+	height: 20px;
+	overflow: hidden;
+  }

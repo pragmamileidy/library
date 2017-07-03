@@ -1,0 +1,30 @@
+--- 
+id: 496
+part_id: 95
+field_id: 10
+name: Valor Total a Cobrar en letras
+created_at: 2011-11-17 14:02:30 Z
+updated_at: 2017-06-04 00:29:54.316630 Z
+label: Texto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 068cd7ed-56cb-43f7-857e-039a1a7164dc
+version: 20170603-202954

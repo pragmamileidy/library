@@ -1,0 +1,158 @@
+--- 
+id: 199
+position: 1
+selector: "{\"2063\":{\"656\":{\"758\":{},\"759\":{}}},\"2064\":{\"2237\":{\"1320\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"2001\":{},\"548\":{},\"763\":{}},\"2238\":{\"572\":{},\"805\":{},\"585\":{},\"631\":{},\"594\":{}},\"2801\":{\"3165\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(img/1.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 67px;
+  	left: 726px;
+  	width: 290px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 41px;
+  	left: 727px;
+  	width: 289px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_primernombre {
+  	position: absolute;
+  	top: 387px;
+  	left: 270px;
+  	width: 239px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_pasaporte {
+  	position: absolute;
+  	top: 387px;
+  	left: 753px;
+  	width: 239px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_segundonombre {
+  	position: absolute;
+  	top: 426px;
+  	left: 273px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_primerapellido {
+  	position: absolute;
+  	top: 468px;
+  	left: 270px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_segundoapellido {
+  	position: absolute;
+  	top: 511px;
+  	left: 272px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_sexostring {
+  	position: absolute;
+  	top: 429px;
+  	left: 753px;
+  	width: 209px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_estadocivil {
+  	position: absolute;
+  	top: 506px;
+  	left: 757px;
+  	width: 206px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datospersonanatural_edad {
+  	position: absolute;
+  	top: 466px;
+  	left: 757px;
+  	width: 207px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_pas {
+  	position: absolute;
+  	top: 545px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_direccin {
+  	position: absolute;
+  	top: 605px;
+  	left: 270px;
+  	width: 710px;
+  	height: 70px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_nmerodetelfono {
+  	position: absolute;
+  	top: 662px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_nmerocelular {
+  	position: absolute;
+  	top: 662px;
+  	left: 756px;
+  	width: 210px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_datosdeubicacin_correoelectrnico {
+  	position: absolute;
+  	top: 546px;
+  	left: 756px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralespermisodetrabajoencalidadparatrabajadorextranjero_niveldeestudio_niveldeestudio {
+  	position: absolute;
+  	top: 695px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: 
+print_design_id: 97
+created_at: 2012-08-31 15:50:00 Z
+updated_at: 2015-10-28 22:29:10 Z
+instances_selector: "{\"2063\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2064\":{\"value\":\"\",\"2237\":{\"value\":\"\",\"1320\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"2001\":{\"value\":\"\"},\"548\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"2238\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2801\":{\"value\":\"\",\"3165\":{\"value\":\"\"}}}}"
+size: ""

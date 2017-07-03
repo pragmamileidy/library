@@ -1,0 +1,16 @@
+--- 
+id: 1562
+design_id: 126
+section_id: 315
+name: "Anexo 019-Certificado de Idoneidad para Educaci\xC3\xB3n Media"
+created_at: 2012-06-21 18:51:22 Z
+updated_at: 2014-05-12 21:37:31 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3196\":{\"210\":{\"required\":\"required\"}},\"3197\":{\"210\":{\"required\":\"required\"}},\"3198\":{\"210\":{\"required\":\"required\"}},\"3199\":{\"210\":{\"required\":\"required\"}},\"3200\":{\"210\":{\"required\":\"required\"}},\"3201\":{\"210\":{\"required\":\"required\"}},\"3202\":{\"210\":{\"required\":\"required\"}},\"3203\":{\"210\":{\"required\":\"required\"}},\"3204\":{\"210\":{\"required\":\"required\"}},\"3205\":{\"210\":{\"required\":\"required\"}},\"3206\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

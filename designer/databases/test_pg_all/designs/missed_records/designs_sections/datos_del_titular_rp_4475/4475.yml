@@ -1,0 +1,18 @@
+--- 
+id: 4475
+design_id: 252
+section_id: 549
+name: datos_del_titular_rp
+created_at: 2014-07-03 01:51:19 Z
+updated_at: 2014-07-03 01:51:19 Z
+label: Datos del Titular
+min_instances: 1
+max_instances: 20
+depends_on: |-
+  tipo= form_data.get("tipo_de_persona_dij.tipo_de_solicitante_juridico.tipo_de_solicitante_juridico")
+  @owner["kind_of_user_type"] == "NaturalPerson" or tipo=="Autoridades y Empresas"
+manage_as_confidential: false
+include: "{\"3208\":{\"1973\":{\"required\":\"required\"},\"3638\":{\"required\":\"unrequired\"},\"1469\":{\"required\":\"required\"},\"1470\":{\"required\":\"unrequired\"},\"1471\":{\"required\":\"required\"},\"1472\":{\"required\":\"unrequired\"},\"1883\":{\"required\":\"required\"},\"1473\":{\"required\":\"unrequired\"},\"3715\":{\"required\":\"required\"},\"1475\":{\"required\":\"required\"},\"1477\":{\"required\":\"required\"},\"1476\":{\"required\":\"required\"},\"1479\":{\"required\":\"required\"},\"3694\":{\"required\":\"unrequired\"},\"3695\":{\"required\":\"unrequired\"}},\"3209\":{\"572\":{\"required\":\"required\"},\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}},\"3267\":{\"3651\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"}},\"3268\":{\"3651\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

@@ -1,0 +1,35 @@
+--- 
+id: 1208
+name: Paso 0 - Procesamiento de la Solicitud
+label: "Revisi\xC3\xB3n T\xC3\xA9cnica"
+description: "Revisi\xC3\xB3n T\xC3\xA9cnica"
+fill_step_id: 598
+created_at: 2013-03-21 03:29:45 Z
+updated_at: 2013-04-06 22:23:34 Z
+include: "{\"2576\":{\"2758\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2759\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2851\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2852\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2850\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2853\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2854\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  #Nombres de entidades AV
+  dat = @application["id"].to_s
+  result = WebserviceConsumer.get('/preconfigured_services/get_application_config.json?id='+dat).parsed_response
+  entidades=[]
+  result["response"]["EntidadesEvaluadoras"].each do |le| 
+  	entidades<<le.last["evaluacion_de_la_entidad"]
+  end
+  
+  15.times do |i| 
+   if entidades && entidades[i]
+    _nombre = entidades[i]["entidad"]
+  
+    form_data.set("datos_del_evaluador_prueba_codigos.odigos.entidad_evaluadora_#{i}.nombre_de_la_entidad", _nombre)
+  
+   end
+  end
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

@@ -1,0 +1,17 @@
+--- 
+id: 528
+name: Require close
+description: requiere cierre
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-09-12 13:27:43 Z
+updated_at: 2013-09-12 13:27:43 Z
+status: Draft
+label: Requiere Cierre
+hint: ""
+serial: 

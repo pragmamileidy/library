@@ -1,0 +1,19 @@
+--- 
+id: 391
+section_id: 92
+part_id: 63
+name: Listado de Productos
+created_at: 2011-11-16 20:20:19 Z
+updated_at: 2012-04-10 18:42:32 Z
+label: "Productos que comercializa (anotar si son medicoquir\xC3\xBArgicos, laboratorios, especialidades, medicamentos, imagenolog\xC3\xADa, odontolog\xC3\xADa, etc"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"331\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 1

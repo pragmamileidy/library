@@ -1,0 +1,16 @@
+--- 
+id: 4713
+design_id: 264
+section_id: 275
+name: Contrato de Arrendamiento1
+created_at: 2014-12-18 15:37:20 Z
+updated_at: 2014-12-18 15:37:20 Z
+label: Datos del Contrato de Arrendamiento
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1792\":{\"1668\":{\"required\":\"required\"}},\"1793\":{\"1669\":{\"required\":\"required\"},\"1670\":{\"required\":\"required\"}},\"1794\":{\"1671\":{\"required\":\"required\"},\"2214\":{\"required\":\"required\"},\"2215\":{\"required\":\"required\"},\"1674\":{\"required\":\"required\"},\"1675\":{\"required\":\"required\"},\"2216\":{\"required\":\"unrequired\"},\"1677\":{\"required\":\"required\"},\"1678\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 8

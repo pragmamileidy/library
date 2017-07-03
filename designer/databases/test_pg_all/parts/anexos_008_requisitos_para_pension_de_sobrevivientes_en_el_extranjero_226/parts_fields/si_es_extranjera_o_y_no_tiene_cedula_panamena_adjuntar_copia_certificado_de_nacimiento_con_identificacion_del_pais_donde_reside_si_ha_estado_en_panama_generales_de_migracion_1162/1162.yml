@@ -1,0 +1,30 @@
+--- 
+id: 1162
+part_id: 226
+field_id: 31
+name: "Si es extranjera /o y no tiene c\xC3\xA9dula paname\xC3\xB1a, adjuntar copia certificado de nacimiento con identificaci\xC3\xB3n del  pa\xC3\xADs donde reside, si ha estado en Panam\xC3\xA1, generales de migraci\xC3\xB3n"
+created_at: 2012-05-02 14:27:56 Z
+updated_at: 2017-06-04 00:23:59.981908 Z
+label: "Si es extranjera /o y no tiene c\xC3\xA9dula paname\xC3\xB1a, adjuntar copia certificado de nacimiento con identificaci\xC3\xB3n del  pa\xC3\xADs donde reside, si ha estado en Panam\xC3\xA1, generales de migraci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b29aaa5c-0707-4d40-8a0b-49df1a770122
+version: 20170603-202359

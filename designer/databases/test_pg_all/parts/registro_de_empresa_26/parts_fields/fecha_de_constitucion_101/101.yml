@@ -1,0 +1,30 @@
+--- 
+id: 101
+part_id: 26
+field_id: 13
+name: "Fecha de Constituci\xC3\xB3n"
+created_at: 2011-11-03 16:35:09 Z
+updated_at: 2017-06-04 00:29:26.473504 Z
+label: "Fecha de Constituci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy. Ejemplo: 01-12-2010"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 299839e3-bfde-4373-85be-05fcbfdcfe60
+version: 20170603-202926

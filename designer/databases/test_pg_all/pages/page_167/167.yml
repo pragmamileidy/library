@@ -1,0 +1,472 @@
+--- 
+id: 167
+position: 2
+selector: "{\"1265\":{\"656\":{\"758\":{},\"759\":{}}},\"1408\":{\"595\":{\"567\":{},\"566\":{},\"568\":{}},\"598\":{\"1323\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"926\":{}},\"597\":{\"631\":{},\"594\":{}}},\"1276\":{\"1787\":{\"1634\":{},\"1636\":{},\"1637\":{},\"3223\":{},\"3224\":{},\"3225\":{},\"1641\":{},\"1642\":{},\"1643\":{},\"1644\":{},\"1645\":{}},\"1788\":{\"1646\":{}}},\"1288\":{\"1792\":{\"1668\":{}},\"1794\":{\"1671\":{},\"2214\":{},\"2215\":{},\"1674\":{},\"1675\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 67px;
+  	left: 712px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 42px;
+  	left: 713px;
+  	width: 305px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 174px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 209px;
+  	left: 276px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_datosdelaempresa_dgitoverficador {
+  	position: absolute;
+  	top: 174px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_representantelegal_cdula {
+  	position: absolute;
+  	top: 280px;
+  	left: 279px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_representantelegal_primernombre {
+  	position: absolute;
+  	top: 314px;
+  	left: 280px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_representantelegal_segundonombre {
+  	position: absolute;
+  	top: 349px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_representantelegal_primerapellido {
+  	position: absolute;
+  	top: 384px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_representantelegal_segundoapellido {
+  	position: absolute;
+  	top: 280px;
+  	left: 720px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_representantelegal_apellidodecasada {
+  	position: absolute;
+  	top: 315px;
+  	left: 722px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_direccin_nmerocelular {
+  	position: absolute;
+  	top: 349px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelarrendatariojuridico_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 384px;
+  	left: 722px;
+  	width: 293px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_tipodealquiler {
+  	position: absolute;
+  	top: 492px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+     .datosdefincaenarriendo_datosdefincaenarriendogenerales_nombreonrodeedificio {
+  	position: absolute;
+  	top: 491px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_direccin {
+  	position: absolute;
+  	top: 522px;
+  	left: 274px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_provincia_lista {
+  	position: absolute;
+  	top: 593px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_distrito_lista {
+  	position: absolute;
+  	top: 558px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_corregimiento_lista {
+  	position: absolute;
+  	top: 558px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+     .datosdefincaenarriendo_datosdefincaenarriendogenerales_nrodefinca {
+  	position: absolute;
+  	top: 593px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_documento {
+  	position: absolute;
+  	top: 664px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_folio {
+  	position: absolute;
+  	top: 629px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_asiento {
+  	position: absolute;
+  	top: 665px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_datosdefincaenarriendogenerales_tomo {
+  	position: absolute;
+  	top: 629px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nombredelapersona_instance_1 {
+  	position: absolute;
+  	top: 743px;
+  	left: 275px;
+  	width: 670px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nombredelapersona_instance_2 {
+  	position: absolute;
+  	top: 779px;
+  	left: 274px;
+  	width: 670px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nombredelapersona_instance_3 {
+  	position: absolute;
+  	top: 816px;
+  	left: 273px;
+  	width: 673px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nombredelapersona_instance_4 {
+  	position: absolute;
+  	top: 853px;
+  	left: 273px;
+  	width: 674px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nombredelapersona_instance_5 {
+  	position: absolute;
+  	top: 889px;
+  	left: 273px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nombredelapersona_instance_6 {
+  	position: absolute;
+  	top: 925px;
+  	left: 271px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .contratodearrendamiento1_nmerodecontrato_ingreseelvalor {
+  	position: absolute;
+  	top: 1037px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .contratodearrendamiento1_otrosdatoscontrato_fechaenqueempiezaaregirelcontrato {
+  	position: absolute;
+  	top: 1036px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .contratodearrendamiento1_otrosdatoscontrato_cannondearrendamientob {
+  	position: absolute;
+  	top: 1072px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .contratodearrendamiento1_otrosdatoscontrato_valordeldepsitodegarantab {
+  	position: absolute;
+  	top: 1126px;
+  	left: 272px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .contratodearrendamiento1_otrosdatoscontrato_cannondearrendamientoletras {
+  	position: absolute;
+  	top: 1163px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .contratodearrendamiento1_otrosdatoscontrato_valordeldepsitodegarantaletras {
+  	position: absolute;
+  	top: 1218px;
+  	left: 274px;
+  	width: 674px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: |
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="PrintDesign_0_Page_1.css" />
+  <title>Contrato de Arrendamiento Habitacional Hasta B/. 150.00 (Tipo A)</title>
+  </head>
+  <body>
+      <div class="informacindesolicitud_datosdelasolicitud_fechadesolicitud">
+        <span class="field_size_1">
+          <%= fields["InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud"] %>
+        </span>
+      </div>
+      <div class="informacindesolicitud_datosdelasolicitud_numerodesolicitud">
+        <span class="field_size_1">
+          <%= fields["InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_datosdelaempresa_ruc">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_DatosdelaEmpresa_RUC"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_datosdelaempresa_nombre">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_DatosdelaEmpresa_Nombre"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_datosdelaempresa_dgitoverficador">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_DatosdelaEmpresa_DgitoVerficador"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_representantelegal_cdula">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_RepresentanteLegal_Cdula"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_representantelegal_primernombre">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_RepresentanteLegal_PrimerNombre"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_representantelegal_segundonombre">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_RepresentanteLegal_SegundoNombre"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_representantelegal_primerapellido">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_RepresentanteLegal_PrimerApellido"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_representantelegal_segundoapellido">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_RepresentanteLegal_SegundoApellido"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_representantelegal_apellidodecasada">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_RepresentanteLegal_ApellidodeCasada"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_direccin_nmerocelular">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_Direccin_NmeroCelular"] %>
+        </span>
+      </div>
+      <div class="informacindelarrendatariojuridico_direccin_correoelectrnico">
+        <span class="field_size_1">
+          <%= fields["InformacindelArrendatarioJuridico_Direccin_CorreoElectrnico"] %>
+        </span>
+      </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_tipodealquiler">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Tipodealquiler"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_provincia">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Provincia"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_corregimiento">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Corregimiento"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_distrito">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Distrito"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_nro_definca">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Nro.deFinca"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_documento">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Documento"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_folio">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Folio"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_asiento">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Asiento"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_tomo">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Tomo"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nro_1">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_ListadodepersonasFincadearrendamiento_Nro.1"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nro_2">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_ListadodepersonasFincadearrendamiento_Nro.2"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nro_3">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_ListadodepersonasFincadearrendamiento_Nro.3"] %>      </span>    </div>
+      <div class="datosdefincaenarriendo_listadodepersonasfincadearrendamiento_nro_4">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_ListadodepersonasFincadearrendamiento_Nro.4"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_nmerodecontrato_ingreseelvalor">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_Nmerodecontrato_Ingreseelvalor"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_periododevigenciadelcontrato_aos">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_PeriododeVigenciadelContrato_Aos"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_otrosdatoscontrato_fechaenqueempiezaaregirelcontrato">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_Fechaenqueempiezaaregirelcontrato"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_otrosdatoscontrato_cannondearrendamientob">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_CannondeArrendamientoB"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_otrosdatoscontrato_valordeldepsitodegarantab">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_ValordelDepsitodeGarantaB"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_otrosdatoscontrato_cannondearrendamientoletras">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_CannondeArrendamientoLetras"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_otrosdatoscontrato_valordeldepsitodegarantaletras">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_ValordeldepsitodegarantaLetras"] %>      </span>    </div>
+  		    <div class="datosdefincaenarriendo_datosdefincaenarriendogenerales_direccin">
+        <span class="field_size_1">
+          <%= fields["DatosdeFincaenArriendo_DatosdeFincaenArriendoGenerales_Direccin"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_otrosdatoscontrato_acuerdoentrelaspartes">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_Acuerdoentrelaspartes"] %>      </span>    </div>
+  		<div class="contratodearrendamiento1_otrosdatoscontrato_acuerdoentrelaspartes1">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_Acuerdoentrelaspartes"] %>      </span>    </div>
+  		<div class="contratodearrendamiento1_otrosdatoscontrato_acuerdoentrelaspartes2">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_Acuerdoentrelaspartes"] %>      </span>    </div>
+      <div class="contratodearrendamiento1_otrosdatoscontrato_ciudadendondesefirmaelcontrato">
+        <span class="field_size_1">
+          <%= fields["ContratodeArrendamiento1_OtrosDatosContrato_Ciudadendondesefirmaelcontrato"] %>      </span>    </div>
+  </body>
+  </html>
+
+print_design_id: 78
+created_at: 2012-07-23 21:19:28 Z
+updated_at: 2013-07-16 18:22:46 Z
+instances_selector: "{\"1265\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1408\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"},\"568\":{\"value\":\"\"}},\"598\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"926\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"1276\":{\"value\":\"\",\"1787\":{\"value\":\"\",\"1634\":{\"value\":\"\"},\"1636\":{\"value\":\"\"},\"1637\":{\"value\":\"\"},\"3223\":{\"value\":\"\"},\"3224\":{\"value\":\"\"},\"3225\":{\"value\":\"\"},\"1641\":{\"value\":\"\"},\"1642\":{\"value\":\"\"},\"1643\":{\"value\":\"\"},\"1644\":{\"value\":\"\"},\"1645\":{\"value\":\"\"}},\"1788\":{\"value\":\"\",\"1646\":{\"value\":\"1,6\"}}},\"1288\":{\"value\":\"\",\"1792\":{\"value\":\"\",\"1668\":{\"value\":\"\"}},\"1794\":{\"value\":\"\",\"1671\":{\"value\":\"\"},\"2214\":{\"value\":\"\"},\"2215\":{\"value\":\"\"},\"1674\":{\"value\":\"\"},\"1675\":{\"value\":\"\"}}}}"
+size: 

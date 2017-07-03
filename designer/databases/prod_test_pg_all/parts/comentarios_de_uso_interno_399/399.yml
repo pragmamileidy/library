@@ -1,0 +1,17 @@
+--- 
+id: 399
+name: Comentarios de Uso Interno
+description: Comentarios de Uso Interno
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 16:03:26 Z
+updated_at: 2012-07-23 16:03:26 Z
+label: Comentarios de Uso Interno
+hint: ""
+view_class: vertical
+serial: 

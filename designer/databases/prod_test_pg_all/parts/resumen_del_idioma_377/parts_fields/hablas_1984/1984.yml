@@ -1,0 +1,30 @@
+--- 
+id: 1984
+part_id: 377
+field_id: 173
+name: Hablas
+created_at: 2012-07-09 15:02:35 Z
+updated_at: 2017-06-04 00:24:22.123977 Z
+label: Hablas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0bd86fcd-52da-492f-9bd5-20084bd8a32c
+version: 20170603-202422

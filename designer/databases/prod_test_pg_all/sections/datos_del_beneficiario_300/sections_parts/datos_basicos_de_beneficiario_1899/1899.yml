@@ -1,0 +1,19 @@
+--- 
+id: 1899
+section_id: 300
+part_id: 343
+name: "Datos B\xC3\xA1sicos de Beneficiario"
+created_at: 2012-06-14 19:33:08 Z
+updated_at: 2015-10-30 17:56:07 Z
+label: Datos del Beneficiario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1816\":{},\"1812\":{},\"1813\":{},\"1814\":{},\"1815\":{},\"3973\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 1

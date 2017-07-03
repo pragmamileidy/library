@@ -1,0 +1,30 @@
+--- 
+id: 704
+part_id: 142
+field_id: 62
+name: Prueba campo 2 tipo text 1 1 1 1 1
+created_at: 2012-03-13 22:24:15 Z
+updated_at: 2017-06-04 00:25:38.891787 Z
+label: "Prueba campo 1 tipo text POSICION: 3"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Campo 1 de tipo text,  3 filas, vertical,  regexp  charset: ^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C0-9\\.\\-\\s]*$ format: ^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C0-9\\s]*$"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b96e152e-4a11-45aa-b6e7-4d6616b02040
+version: 20170603-202538

@@ -1,0 +1,30 @@
+--- 
+id: 2632
+part_id: 485
+field_id: 10
+name: InicioPasoEstampillas
+created_at: 2013-01-14 13:45:10 Z
+updated_at: 2017-06-04 00:22:24.727857 Z
+label: Inicio Paso Estampillas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: baa4e257-e3b6-4667-9b5c-8e61e1f7c438
+version: 20170603-202224

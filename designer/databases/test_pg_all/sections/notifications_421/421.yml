@@ -1,0 +1,17 @@
+--- 
+id: 421
+name: notifications
+description: Notificaciones empleadas en todos los tramites y procesos, desde su inicio hasta su fin
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 15:34:33 Z
+updated_at: 2013-01-14 15:34:33 Z
+status: Draft
+label: Notificaciones
+hint: ""
+serial: 

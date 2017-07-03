@@ -1,0 +1,19 @@
+--- 
+id: 1606
+section_id: 245
+part_id: 63
+name: "Factores de variaci\xC3\xB3n de Calidad"
+created_at: 2012-05-21 00:03:14 Z
+updated_at: 2012-08-09 16:43:50 Z
+label: Factores que puedan hacer variar la calidad del producto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"331\":{}}"
+hint: ""
+help: Indique los factores que pueden hacer variar la calidad del producto
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 15

@@ -1,0 +1,30 @@
+--- 
+id: 271
+name: tipo_propiedad
+description: tipo_propiedad
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-27 20:28:12 Z
+updated_at: 2014-03-07 21:54:47 Z
+values_list: "\"\",\"Horizontal\",\"Finca\""
+keys_list: "\"\",\"Horizontal\",\"Finca\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

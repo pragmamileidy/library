@@ -1,0 +1,212 @@
+--- 
+id: 570
+position: 4
+selector: "{\"4991\":{\"656\":{\"758\":{},\"759\":{}}},\"5005\":{\"2549\":{\"3101\":{},\"2851\":{},\"2853\":{},\"3597\":{}},\"2550\":{\"3101\":{},\"2851\":{},\"2853\":{},\"3597\":{}},\"2551\":{\"3101\":{},\"2851\":{},\"2853\":{},\"3597\":{}},\"2552\":{\"3101\":{},\"2851\":{},\"2853\":{},\"3597\":{}},\"2553\":{\"3101\":{},\"2851\":{},\"2853\":{},\"3597\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 93px;
+  	left: 732px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 68px;
+  	left: 606px;
+  	width: 401px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora0_nombredelaentidad {
+  	position: absolute;
+  	top: 244px;
+  	left: 285px;
+  	width: 480px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora0_usuario {
+  	position: absolute;
+  	top: 283px;
+  	left: 282px;
+  	width: 260px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora0_nmerodeobservacin {
+  	position: absolute;
+  	top: 283px;
+  	left: 772px;
+  	width: 147px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora0_observaciones {
+  	position: absolute;
+  	top: 347px;
+  	left: 44px;
+  	width: 941px;
+  	height: 52px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora1_nombredelaentidad {
+  	position: absolute;
+  	top: 438px;
+  	left: 271px;
+  	width: 487px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora1_usuario {
+  	position: absolute;
+  	top: 477px;
+  	left: 275px;
+  	width: 264px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora1_nmerodeobservacin {
+  	position: absolute;
+  	top: 476px;
+  	left: 766px;
+  	width: 135px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora1_observaciones {
+  	position: absolute;
+  	top: 540px;
+  	left: 41px;
+  	width: 934px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora2_nombredelaentidad {
+  	position: absolute;
+  	top: 633px;
+  	left: 271px;
+  	width: 487px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora2_usuario {
+  	position: absolute;
+  	top: 671px;
+  	left: 270px;
+  	width: 264px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora2_nmerodeobservacin {
+  	position: absolute;
+  	top: 671px;
+  	left: 766px;
+  	width: 135px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora2_observaciones {
+  	position: absolute;
+  	top: 734px;
+  	left: 37px;
+  	width: 934px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora3_nombredelaentidad {
+  	position: absolute;
+  	top: 872px;
+  	left: 273px;
+  	width: 487px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora3_usuario {
+  	position: absolute;
+  	top: 909px;
+  	left: 275px;
+  	width: 264px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora3_nmerodeobservacin {
+  	position: absolute;
+  	top: 910px;
+  	left: 768px;
+  	width: 135px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora3_observaciones {
+  	position: absolute;
+  	top: 972px;
+  	left: 42px;
+  	width: 934px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora4_nombredelaentidad {
+  	position: absolute;
+  	top: 1082px;
+  	left: 270px;
+  	width: 487px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora4_usuario {
+  	position: absolute;
+  	top: 1121px;
+  	left: 270px;
+  	width: 264px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora4_nmerodeobservacin {
+  	position: absolute;
+  	top: 1121px;
+  	left: 763px;
+  	width: 135px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadorarevisiones_entidadevaluadora4_observaciones {
+  	position: absolute;
+  	top: 1184px;
+  	left: 33px;
+  	width: 934px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+
+override_render: true
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_9\" />\r\n  <title></title>\r\n  <style type=\"text/css\">\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n    body {\r\n      margin-left: 0px;\r\n      margin-top: 0px;\r\n      margin-right: 0px;\r\n      margin-bottom: 0px;\r\n      padding-left: 0px;\r\n      padding-top: 0px;\r\n      padding-right: 0px;\r\n      padding-bottom: 0px;\r\n      overflow:hidden;\r\n    }\r\n    .magicDiv {\r\n      background-image:url('<%= image_path %>');\r\n      background-repeat:no-repeat;\r\n      background-position:0% 0%;\r\n      background-size:100%; \r\n      position:absolute;\r\n      left: 32px;\r\n      top: 32px;\r\n      height:1344px;\r\n      width: 1024px;\r\n      overflow:hidden;\r\n    }\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n  </style>\r\n\
+  </head>\r\n  <body>\r\n    <div class=\"magicDiv\">\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\"] %>\r\n          </span>\r\n      </div>\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora0_nombredelaentidad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora0_nombredelaentidad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora0_usuario\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora0_usuario\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora0_nmerodeobservacin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora0_nmerodeobservacin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora0_observaciones\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora0_observaciones\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora1_nombredelaentidad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora1_nombredelaentidad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora1_usuario\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora1_usuario\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora1_nmerodeobservacin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora1_nmerodeobservacin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora1_observaciones\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora1_observaciones\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora2_nombredelaentidad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora2_nombredelaentidad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora2_usuario\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora2_usuario\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora2_nmerodeobservacin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora2_nmerodeobservacin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora2_observaciones\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora2_observaciones\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora3_nombredelaentidad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora3_nombredelaentidad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora3_usuario\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora3_usuario\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora3_nmerodeobservacin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora3_nmerodeobservacin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora3_observaciones\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora3_observaciones\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora4_nombredelaentidad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora4_nombredelaentidad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora4_usuario\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora4_usuario\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora4_nmerodeobservacin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora4_nmerodeobservacin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadorarevisiones_entidadevaluadora4_observaciones\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadorarevisiones_entidadevaluadora4_observaciones\"] %>\r\n          </span>\r\n        </div>\r\n  </div>\r\n\
+  </body>\r\n\
+  </html>\r\n\
+  <%= \"<!-- DO_NOT_RENDER -->\" if ((fields[\"entidadevaluadorarevisiones_entidadevaluadora0_observaciones\"] == \"NO FUE REQUERIDA REVISI\xC3\x93N DE ESTA ENTIDAD.\") && \r\n  (fields[\"entidadevaluadorarevisiones_entidadevaluadora1_observaciones\"] == \"NO FUE REQUERIDA REVISI\xC3\x93N DE ESTA ENTIDAD.\") && \r\n  (fields[\"entidadevaluadorarevisiones_entidadevaluadora2_observaciones\"] == \"NO FUE REQUERIDA REVISI\xC3\x93N DE ESTA ENTIDAD.\") && \r\n  (fields[\"entidadevaluadorarevisiones_entidadevaluadora3_observaciones\"] == \"NO FUE REQUERIDA REVISI\xC3\x93N DE ESTA ENTIDAD.\") && \r\n  (fields[\"entidadevaluadorarevisiones_entidadevaluadora4_observaciones\"] == \"NO FUE REQUERIDA REVISI\xC3\x93N DE ESTA ENTIDAD.\"))  %>"
+print_design_id: 183
+created_at: 2015-12-22 23:23:07.213243 Z
+updated_at: 2015-12-22 23:23:07.513458 Z
+instances_selector: "{\"2653\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2664\":{\"value\":\"\",\"2549\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"3597\":{\"value\":\"\"}},\"2550\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"3597\":{\"value\":\"\"}},\"2551\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"3597\":{\"value\":\"\"}},\"2552\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"3597\":{\"value\":\"\"}},\"2553\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"3597\":{\"value\":\"\"}}}}"
+size: ""

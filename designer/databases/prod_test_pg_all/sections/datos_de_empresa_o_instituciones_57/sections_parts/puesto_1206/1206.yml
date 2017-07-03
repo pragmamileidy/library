@@ -1,0 +1,19 @@
+--- 
+id: 1206
+section_id: 57
+part_id: 51
+name: Puesto
+created_at: 2012-04-27 15:21:12 Z
+updated_at: 2012-04-27 15:21:12 Z
+label: Puesto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Indique el puesto que ocupa
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

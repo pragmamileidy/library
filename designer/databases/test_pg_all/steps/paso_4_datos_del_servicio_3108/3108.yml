@@ -1,0 +1,19 @@
+--- 
+id: 3108
+name: Paso 4 - Datos del Servicio
+label: Datos del Servicio
+description: Datos del Servicio
+fill_step_id: 1660
+created_at: 2015-02-17 06:47:53 Z
+updated_at: 2015-02-20 16:59:56 Z
+include: "{\"4782\":{\"3450\":{\"3856\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3855\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3854\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3853\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 3 - Datos del Grupo Familiar
+next_step: "Paso 5 - Requisitos de la Solitud "
+position: 4
+ajax_calls: ""

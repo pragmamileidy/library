@@ -1,0 +1,30 @@
+--- 
+id: 1512
+part_id: 277
+field_id: 10
+name: numero de pasaporte
+created_at: 2012-05-31 20:02:33 Z
+updated_at: 2017-06-04 00:31:33.803359 Z
+label: "N\xC3\xBAmero de Pasaporte"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor ingrese el n\xC3\xBAmero de pasaporte. Ejmeplo: 0234567"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: /[1-9]$/
+values_list: ""
+keys_list: ""
+order_input: 17
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 941be9ec-ac0c-4f88-aad2-9958bd870ae0
+version: 20170603-203133

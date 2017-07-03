@@ -1,0 +1,16 @@
+--- 
+id: 5363
+design_id: 293
+section_id: 185
+name: Cerrado por
+created_at: 2017-03-24 21:15:27.994782 Z
+updated_at: 2017-03-24 21:15:27.994782 Z
+label: Cerrado por
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1710\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 10

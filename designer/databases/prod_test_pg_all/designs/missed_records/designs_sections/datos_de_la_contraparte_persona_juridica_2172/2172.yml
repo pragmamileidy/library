@@ -1,0 +1,18 @@
+--- 
+id: 2172
+design_id: 167
+section_id: 274
+name: "Datos de la Contraparte Persona Jur\xC3\xADdica"
+created_at: 2012-10-24 22:17:55 Z
+updated_at: 2012-10-24 22:17:55 Z
+label: Datos de la Contraparte
+min_instances: 1
+max_instances: 1
+depends_on: "traspaso = form_data.get(\"tipo_de_traspaso.tipo_de_traspaso.tipo_de_traspaso\")\r\n\
+  documento_contraparte = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n\
+  traspaso == \"Regular\" or traspaso == \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" or traspaso == \"No efectuado durante el t\xC3\xA9rmino correspondiente\" and documento_contraparte == \"RUC\"\r\n"
+manage_as_confidential: false
+include: "{\"1791\":{\"1655\":{\"required\":\"required\"},\"1656\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

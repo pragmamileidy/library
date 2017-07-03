@@ -1,0 +1,30 @@
+--- 
+id: 190
+name: Tipo de Uso
+description: Tipo de Uso
+version: 
+status: Draft
+label: Tipo de Uso
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-20 21:21:44 Z
+updated_at: 2012-07-20 21:21:44 Z
+values_list: "\"Residencial\",\"Comercial\",\"Equipamiento comunitario\",\"\xC3\x81reas verdes (jardines)\",\"Zonas deportivas, de recreo o esparcimiento\",\"Escuela\",\"Iglesia\",\"Servidumbre para calles\",\"Servidumbre para veredas\",\"Servidumbre pluviales\",\"Servidumbre para servicios sanitarios\",\"Servidumbre para servicios de dotaci\xC3\xB3n el\xC3\xA9ctrica\",\"Otros\""
+keys_list: "\"Residencial\",\"Comercial\",\"Equipamiento comunitario\",\"\xC3\x81reas verdes (jardines)\",\"Zonas deportivas, de recreo o esparcimiento\",\"Escuela\",\"Iglesia\",\"Servidumbre para calles\",\"Servidumbre para veredas\",\"Servidumbre pluviales\",\"Servidumbre para servicios sanitarios\",\"Servidumbre para servicios de dotaci\xC3\xB3n el\xC3\xA9ctrica\",\"Otros\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

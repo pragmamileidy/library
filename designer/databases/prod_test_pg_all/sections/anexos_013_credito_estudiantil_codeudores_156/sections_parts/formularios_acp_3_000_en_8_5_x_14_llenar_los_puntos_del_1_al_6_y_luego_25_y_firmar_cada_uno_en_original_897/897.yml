@@ -1,0 +1,19 @@
+--- 
+id: 897
+section_id: 156
+part_id: 38
+name: Formularios ACP 3,000 en 8.5 x 14 (llenar los puntos del 1 al 6 y luego 25) y firmar cada uno en original
+created_at: 2012-03-28 20:42:14 Z
+updated_at: 2012-04-10 01:29:23 Z
+label: Formularios ACP 3,000 en 8.5 x 14 (llenar los puntos del 1 al 6 y luego 25) y firmar cada uno en original
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

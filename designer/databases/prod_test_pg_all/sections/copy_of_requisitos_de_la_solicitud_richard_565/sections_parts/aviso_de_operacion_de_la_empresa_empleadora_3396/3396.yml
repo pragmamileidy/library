@@ -1,0 +1,19 @@
+--- 
+id: 3396
+section_id: 565
+part_id: 38
+name: "Aviso de operaci\xC3\xB3n de la empresa empleadora"
+created_at: 2014-12-03 21:37:29 Z
+updated_at: 2014-12-03 21:37:29 Z
+label: "Aviso de operaci\xC3\xB3n de la empresa empleadora"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: "Aviso de operaci\xC3\xB3n de la empresa empleadora, excepto si se trata de personas naturales o jur\xC3\xADdicas, enumeradas en el art\xC3\xADculo vig\xC3\xA9simo"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

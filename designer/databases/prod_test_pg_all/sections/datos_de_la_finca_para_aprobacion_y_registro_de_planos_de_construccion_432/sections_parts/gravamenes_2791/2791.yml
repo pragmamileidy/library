@@ -1,0 +1,19 @@
+--- 
+id: 2791
+section_id: 432
+part_id: 607
+name: Gravamenes
+created_at: 2013-04-26 18:50:46 Z
+updated_at: 2015-07-07 13:22:21 Z
+label: "Grav\xC3\xA1menes"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

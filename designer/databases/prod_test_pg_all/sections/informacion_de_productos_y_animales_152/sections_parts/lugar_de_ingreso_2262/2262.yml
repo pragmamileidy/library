@@ -1,0 +1,19 @@
+--- 
+id: 2262
+section_id: 152
+part_id: 451
+name: Lugar de Ingreso
+created_at: 2012-08-27 17:59:11 Z
+updated_at: 2013-03-19 16:13:27 Z
+label: Lugar de Ingreso
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 20

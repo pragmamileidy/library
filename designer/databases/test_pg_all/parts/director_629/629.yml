@@ -1,0 +1,17 @@
+--- 
+id: 629
+name: Director
+description: Director
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-11 13:50:39 Z
+updated_at: 2015-09-10 17:55:16 Z
+label: Director
+hint: ""
+view_class: horizontal
+serial: 2779-2376-2707-3217-4978

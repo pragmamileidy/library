@@ -1,0 +1,17 @@
+--- 
+id: 535
+name: Datos del funcionario Generico P5
+description: "secci\xC3\xB3n que contiene los datos genericosde procesamiento del funcionario, seccion creada especifica y unicamente para p5"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-02-18 21:50:41 Z
+updated_at: 2015-08-19 17:58:54 Z
+label: "Detalle de la Revisi\xC3\xB3n"
+hint: ""
+view_class: horizontal
+serial: 3139-2564-3189-7038-3808

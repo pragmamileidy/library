@@ -1,0 +1,16 @@
+--- 
+id: 2525
+design_id: 188
+section_id: 458
+name: Sinopsis
+created_at: 2013-03-14 18:09:25 Z
+updated_at: 2014-04-24 21:19:22 Z
+label: Sinopsis de la Obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2636\":{\"2968\":{\"required\":\"required\"},\"2969\":{\"required\":\"unrequired\"},\"2970\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 13

@@ -1,0 +1,30 @@
+--- 
+id: 3665
+part_id: 509
+field_id: 10
+name: ErrorFirmarRecord
+created_at: 2014-06-23 20:47:03 Z
+updated_at: 2017-06-04 00:30:10.541090 Z
+label: Error Firmar Record
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: de59fba2-a8c6-400a-8eab-fae37c3ef5b4
+version: 20170603-203010

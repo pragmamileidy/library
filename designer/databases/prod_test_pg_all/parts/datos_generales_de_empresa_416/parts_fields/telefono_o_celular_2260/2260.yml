@@ -1,0 +1,30 @@
+--- 
+id: 2260
+part_id: 416
+field_id: 8
+name: "Tel\xC3\xA9fono o Celular"
+created_at: 2012-08-07 21:29:49 Z
+updated_at: 2017-06-04 00:31:05.612636 Z
+label: "Tel\xC3\xA9fono o Celular del Representante Legal"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca el C\xC3\xB3digo de Pa\xC3\xADs, de \xC3\x81rea y el N\xC3\xBAmero de Tel\xC3\xA9fono \xC3\xB3 Introduzca s\xC3\xB3lo el N\xC3\xBAmero de Tel\xC3\xA9fono. Ejemplos: +507-xxxxxxx, +507 xxx xxxx, +507 xxxx xxxx, +507-xxxx-xxxx, +507-xxx-xxxx, xxx-xxxx, xxxx-xxxx"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 12
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2fd65427-8159-4e5a-a623-e3ef3c7b7265
+version: 20170603-203105

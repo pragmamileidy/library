@@ -1,0 +1,141 @@
+--- 
+id: 605
+position: 1
+selector: "{\"5109\":{\"3209\":{\"576\":{}}},\"5113\":{\"3596\":{\"3986\":{}}},\"5114\":{\"3208\":{\"3985\":{},\"1883\":{},\"3728\":{}},\"3370\":{\"758\":{},\"759\":{}},\"3607\":{\"3994\":{}}},\"5119\":{\"3227\":{\"3723\":{}}},\"5121\":{\"3599\":{\"3996\":{},\"3997\":{},\"3998\":{}}},\"5123\":{\"1710\":{\"1401\":{},\"2548\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .datosdelsolicitante_datosdeubicacin_departamento {
+  	position: absolute;
+  	top: 651px;
+  	left: 275px;
+  	width: 156px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitular_datosbsicosdepersonanatural_cdulapasaporte {
+  	position: absolute;
+  	top: 498px;
+  	left: 216px;
+  	width: 142px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitular_datosbsicosdepersonanatural_nombrecompleto {
+  	position: absolute;
+  	top: 445px;
+  	left: 415px;
+  	width: 497px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .tipodesolicitudpnc_tipodesolicitudpnc_tipodesolicitudpnc {
+  	position: absolute;
+  	top: 499px;
+  	left: 689px;
+  	width: 213px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitular_codigounicopnc_codigounico {
+  	position: absolute;
+  	top: 326px;
+  	left: 204px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitular_datosdesolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 60px;
+  	left: 62px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeltitular_datosdesolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 284px;
+  	left: 620px;
+  	width: 316px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .mensajedij_mensajedij_imprimirsinsentencia {
+      position:absolute;
+      top: 0px;
+      left: 0px;
+      width: 232px;
+      height: 20px;
+      overflow:hidden;
+    }
+    .codigounicopnc_codigounicopnc_year {
+  	position: absolute;
+  	top: 649px;
+  	left: 917px;
+  	width: 135px;
+  	height: 100px;
+  	overflow: hidden;
+    }
+    .codigounicopnc_codigounicopnc_mes {
+  	position: absolute;
+  	top: 649px;
+  	left: 710px;
+  	width: 141px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .codigounicopnc_codigounicopnc_dia {
+  	position: absolute;
+  	top: 651px;
+  	left: 488px;
+  	width: 61px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .directorpnc_datosdelfuncionariogenerico_usuario {
+  	position: absolute;
+  	top: 906px;
+  	left: 432px;
+  	width: 378px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .directorpnc_datosdelfuncionariogenerico_usuario2 {
+  	position: absolute;
+  	top: 1108px;
+  	left: 394px;
+  	width: 283px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: true
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n <!--  <link rel=\"stylesheet\" type=\"text/css\" href=\"file:///C|/Users/Linda/Documents/plantilla prueba jose/PDFEmpleoSinSentencia.css\" /> -->\r\n  <link href=\"PrintDesign_0_Page_1.css\" rel=\"stylesheet\" type=\"text/css\" />\r\n  <title>Solicitud de Solvencia de Antecedentes Policiales en El Salvador</title>\r\n\
+  <style type=\"text/css\">\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n   .mensajedij_mensajedij_imprimirsinsentencia {\r\n        display:none;\r\n     }\r\n    body {\r\n      margin-left: 0px;\r\n      margin-top: 0px;\r\n      margin-right: 0px;\r\n      margin-bottom: 0px;\r\n      padding-left: 0px;\r\n      padding-top: 0px;\r\n      padding-right: 0px;\r\n      padding-bottom: 0px;\r\n      overflow:hidden;\r\n    }\r\n    .magicDiv {\r\n      background-image:url('<%= image_path %>');\r\n      background-repeat:no-repeat;\r\n      background-position:0% 0%;\r\n      background-size:100%; \r\n      position:absolute;\r\n      left: 32px;\r\n      top: 32px;\r\n      height:1344px;\r\n      width: 1024px;\r\n      overflow:hidden;\r\n    }\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n  </style>\r\n\
+  </head>\r\n  <body>\r\n    <div class=\"magicDiv\">\r\n        <div class=\"datosdelsolicitante_datosdeubicacin_departamento\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelsolicitante_datosdeubicacin_departamento\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeltitular_datosbsicosdepersonanatural_cdulapasaporte\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeltitular_datosbsicosdepersonanatural_cdulapasaporte\"] %>\r\n          </span>\r\n        </div>\r\n      <div class=\"datosdeltitular_datosbsicosdepersonanatural_nombrecompleto\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeltitular_datosbsicosdepersonanatural_nombrecompleto\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"tipodesolicitudpnc_tipodesolicitudpnc_tipodesolicitudpnc\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"tipodesolicitudpnc_tipodesolicitudpnc_tipodesolicitudpnc\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeltitular_codigounicopnc_codigounico\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeltitular_codigounicopnc_codigounico\"] %>\r\n          </span>\r\n        </div>\r\n      <div class=\"datosdeltitular_datosdesolicitud_fechadesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeltitular_datosdesolicitud_fechadesolicitud\"] %>\r\n          </span>\r\n      </div>\r\n      <div class=\"datosdeltitular_datosdesolicitud_numerodesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeltitular_datosdesolicitud_numerodesolicitud\"] %>\r\n          </span>\r\n      </div>\r\n      <div class=\"mensajedij_mensajedij_imprimirsinsentencia\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"mensajedij_mensajedij_imprimirsinsentencia\"] %>\r\n          </span>\r\n      </div>\r\n        <div class=\"codigounicopnc_codigounicopnc_year\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"codigounicopnc_codigounicopnc_year\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"codigounicopnc_codigounicopnc_mes\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"codigounicopnc_codigounicopnc_mes\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"codigounicopnc_codigounicopnc_dia\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"codigounicopnc_codigounicopnc_dia\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"directorpnc_datosdelfuncionariogenerico_usuario\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"directorpnc_datosdelfuncionariogenerico_usuario\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"directorpnc_datosdelfuncionariogenerico_usuario2\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"directorpnc_datosdelfuncionariogenerico_usuario2\"] %>\r\n          </span>\r\n        </div>\r\n    </div>\r\n  </body>\r\n\
+  </html>\r\n\
+  \r\n"
+print_design_id: 189
+created_at: 2016-03-31 20:22:45.456817 Z
+updated_at: 2016-04-11 18:02:12.298974 Z
+instances_selector: "{\"5109\":{\"value\":\"\",\"3209\":{\"value\":\"\",\"576\":{\"value\":\"\"}}},\"5113\":{\"value\":\"\",\"3596\":{\"value\":\"\",\"3986\":{\"value\":\"\"}}},\"5114\":{\"value\":\"\",\"3208\":{\"value\":\"\",\"3985\":{\"value\":\"\"},\"1883\":{\"value\":\"\"},\"3728\":{\"value\":\"\"}},\"3370\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}},\"3607\":{\"value\":\"\",\"3994\":{\"value\":\"\"}}},\"5119\":{\"value\":\"\",\"3227\":{\"value\":\"\",\"3723\":{\"value\":\"\"}}},\"5121\":{\"value\":\"\",\"3599\":{\"value\":\"\",\"3996\":{\"value\":\"\"},\"3997\":{\"value\":\"\"},\"3998\":{\"value\":\"\"}}},\"5123\":{\"value\":\"\",\"1710\":{\"value\":\"\",\"1401\":{\"value\":\"\"},\"2548\":{\"value\":\"\"}}}}"
+size: letter

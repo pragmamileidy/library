@@ -1,0 +1,17 @@
+--- 
+id: 168
+name: "Control de inactivaci\xC3\xB3n o modificaci\xC3\xB3n antig\xC3\xA9nica"
+description: "Control de inactivaci\xC3\xB3n o modificaci\xC3\xB3n antig\xC3\xA9nica para detallar controles sobre un biol\xC3\xB3gico terminado"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-27 02:09:16 Z
+updated_at: 2012-05-16 20:55:29 Z
+label: "Control de inactivaci\xC3\xB3n o modificaci\xC3\xB3n antig\xC3\xA9nica"
+hint: ""
+view_class: horizontal
+serial: 

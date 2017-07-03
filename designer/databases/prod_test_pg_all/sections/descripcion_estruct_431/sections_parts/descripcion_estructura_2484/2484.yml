@@ -1,0 +1,19 @@
+--- 
+id: 2484
+section_id: 431
+part_id: 525
+name: descripcion_estructura
+created_at: 2013-01-16 19:19:31 Z
+updated_at: 2013-01-16 19:19:31 Z
+label: "Descripci\xC3\xB3n Estructura"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2797\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

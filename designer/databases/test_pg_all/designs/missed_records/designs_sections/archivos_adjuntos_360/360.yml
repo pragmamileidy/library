@@ -1,0 +1,16 @@
+--- 
+id: 360
+design_id: 54
+section_id: 139
+name: Archivos Adjuntos
+created_at: 2012-03-22 01:59:20 Z
+updated_at: 2015-10-15 19:54:01 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"695\":{\"210\":{\"required\":\"required\"}},\"696\":{\"210\":{\"required\":\"required\"}},\"697\":{\"210\":{\"required\":\"required\"}},\"698\":{\"210\":{\"required\":\"required\"}},\"699\":{\"210\":{\"required\":\"required\"}},\"700\":{\"210\":{\"required\":\"required\"}},\"701\":{\"210\":{\"required\":\"required\"}},\"702\":{\"210\":{\"required\":\"required\"}},\"703\":{\"210\":{\"required\":\"required\"}},\"704\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

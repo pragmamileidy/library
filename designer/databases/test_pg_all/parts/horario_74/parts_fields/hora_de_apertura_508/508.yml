@@ -1,0 +1,30 @@
+--- 
+id: 508
+part_id: 74
+field_id: 10
+name: Hora de apertura
+created_at: 2011-11-17 17:06:09 Z
+updated_at: 2017-06-04 00:21:20.868679 Z
+label: Hora de apertura
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de hora v\xC3\xA1lido, formato hh:mm  ma\xC3\xB1ana (AM) y tarde (PM). Ejemplo: 08:30 am"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /(0?\d|1[0-2]):([0-5]\d)\s(AM|PM|am|pm)/
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 39f058f7-6541-4e11-9903-1bb2219b8d47
+version: 20170603-202120

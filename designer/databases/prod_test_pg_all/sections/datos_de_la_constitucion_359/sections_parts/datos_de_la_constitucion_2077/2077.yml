@@ -1,0 +1,19 @@
+--- 
+id: 2077
+section_id: 359
+part_id: 417
+name: "Datos de la Constituci\xC3\xB3n"
+created_at: 2012-08-07 20:12:08 Z
+updated_at: 2012-08-07 20:19:45 Z
+label: "Datos de la Constituci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Datos de la Constituci\xC3\xB3n de la Empresa"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

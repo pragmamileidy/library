@@ -1,0 +1,30 @@
+--- 
+id: 1529
+part_id: 278
+field_id: 128
+name: "Ingl\xC3\xA9s"
+created_at: 2012-06-01 17:45:17 Z
+updated_at: 2017-06-04 00:24:07.260861 Z
+label: "Ingl\xC3\xA9s"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 51cf9a39-c234-4129-b509-040d488139f7
+version: 20170603-202407

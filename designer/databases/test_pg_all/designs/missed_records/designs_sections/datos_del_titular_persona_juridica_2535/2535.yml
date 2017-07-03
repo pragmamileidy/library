@@ -1,0 +1,16 @@
+--- 
+id: 2535
+design_id: 189
+section_id: 452
+name: "Datos del Titular Persona Jur\xC3\xADdica"
+created_at: 2013-03-14 21:30:28 Z
+updated_at: 2013-06-20 17:52:29 Z
+label: "Datos del Titular Persona Jur\xC3\xADdica"
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"2626\":{\"2951\":{\"required\":\"required\"},\"3345\":{\"required\":\"required\"},\"2950\":{\"required\":\"required\"},\"2952\":{\"required\":\"required\"}},\"2731\":{\"2951\":{\"required\":\"required\"},\"3345\":{\"required\":\"required\"},\"2950\":{\"required\":\"required\"},\"2952\":{\"required\":\"required\"}},\"2732\":{\"2951\":{\"required\":\"required\"},\"3345\":{\"required\":\"required\"},\"2950\":{\"required\":\"required\"},\"2952\":{\"required\":\"required\"}},\"2734\":{\"2951\":{\"required\":\"required\"},\"3345\":{\"required\":\"required\"},\"2950\":{\"required\":\"required\"},\"2952\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

@@ -1,0 +1,17 @@
+--- 
+id: 182
+name: "Tipo de Instituci\xC3\xB3n"
+description: "Sirve para indicar si una instituci\xC3\xB3n, centro de estudios, etc., es p\xC3\xBAblica o privada"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-28 17:30:21 Z
+updated_at: 2012-05-16 20:55:30 Z
+label: "Tipo de Instituci\xC3\xB3n"
+hint: ""
+view_class: horizontal
+serial: 

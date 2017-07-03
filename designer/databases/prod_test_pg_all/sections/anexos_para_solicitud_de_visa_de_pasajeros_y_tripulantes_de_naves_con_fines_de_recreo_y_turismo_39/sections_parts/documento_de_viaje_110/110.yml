@@ -1,0 +1,22 @@
+--- 
+id: 110
+section_id: 39
+part_id: 38
+name: Documento de Viaje
+created_at: 2011-11-09 16:19:55 Z
+updated_at: 2012-04-10 18:42:29 Z
+label: Pasaporte o documento de Viaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Copia legible  del pasaporte o documento v\xC3\xA1lido de viaje, incluyendo las generales del interesado, sellos de  entrada y salida, visas obtenidas, renovaciones y observaciones."
+help: "Copia legible  del pasaporte o documento v\xC3\xA1lido de viaje, incluyendo las generales del interesado, sellos de \r\n\
+  entrada y salida, visas obtenidas, renovaciones y observaciones. \r\n\
+  A legible passport copy, or of any valid document for travelling, which includes the interested  party\xE2\x80\x99s general information, \r\n\
+  entering and exiting seals, visas, renovations and observations. "
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 2

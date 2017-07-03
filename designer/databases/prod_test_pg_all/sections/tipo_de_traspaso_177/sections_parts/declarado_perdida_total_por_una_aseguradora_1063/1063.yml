@@ -1,0 +1,19 @@
+--- 
+id: 1063
+section_id: 177
+part_id: 49
+name: "Declarado P\xC3\xA9rdida Total por una Aseguradora"
+created_at: 2012-04-18 15:09:19 Z
+updated_at: 2012-04-18 15:09:19 Z
+label: "Declarado P\xC3\xA9rdida Total por una Aseguradora"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

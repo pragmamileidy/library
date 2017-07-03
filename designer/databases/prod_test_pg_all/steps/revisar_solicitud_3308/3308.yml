@@ -1,0 +1,37 @@
+--- 
+id: 3308
+name: Revisar Solicitud
+label: "<strong style=\"color:#900C3F\"> Revisi\xC3\xB3n de Solicitud de Record Policivo </strong> "
+description: "<br><strong style=\"color:#FF5733\"> Revisi\xC3\xB3n de Solicitud de Record Policivo  </strong></br>"
+fill_step_id: 1780
+created_at: 2017-02-22 23:47:42.364219 Z
+updated_at: 2017-02-22 23:47:42.443143 Z
+include: "{\"5192\":{\"3212\":{\"3629\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3630\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5197\":{\"3208\":{\"3716\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1973\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1474\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1475\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1479\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1477\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3209\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3267\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3268\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3269\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3294\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3271\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3272\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3273\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5198\":{\"3264\":{\"3722\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"5201\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3199\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  form_data.set("recibido.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: "_obs = form_data.get(\"aprobacion_de_solicitud.datos_del_funcionario_generico.observaciones\")\r\n\
+  _aprob = form_data.get(\"aprobacion_de_solicitud.datos_del_funcionario_generico.aprobacion\")\r\n\
+  if (_aprob ==\"NO\" and _obs.blank?) \r\n   transition_errors << \"Debe indicar el motivo de su desaprobaci\xC3\xB3n en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: "//::: DV: Cambiar nombre secci\xC3\xB3n y color  paso 1::://\r\n\
+  $(document).ready(function(){ \r\n   $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Tipo de Solicitud\") {  \r\n        $(this).html(\"Tipo de Solicitud\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Datos del Solicitante\") {  \r\n        $(this).html(\"Gesti\xC3\xB3n de Solicitud\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Datos del Titular\") {  \r\n        $(this).html(\"Informaci\xC3\xB3n del Titular\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    $(\"span\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Recepci\xC3\xB3n Ventanilla \xC3\x9Anica\") {  \r\n        $(this).html(\"Recepci\xC3\xB3n de Ventanilla \xC3\x9Anica\"); \r\n      }\r\n    });\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){ \r\n  TiDoc = $('#field_datos_del_titular_rp_datos_basicos_de_persona_natural_tipo_de_documento');\r\n  nacio = $('#field_datos_del_titular_rp_datos_basicos_de_persona_natural_nacionalidad');\r\n  if ($(TiDoc).html() == \"Cedula\") {\r\n    $(nacio).html(\"Nacional\");\r\n  } else if($(TiDoc).html() == \"Pasaporte\") {\r\n    $(nacio).html(\"Extranjero\");\r\n  }\r\n\
+  });"

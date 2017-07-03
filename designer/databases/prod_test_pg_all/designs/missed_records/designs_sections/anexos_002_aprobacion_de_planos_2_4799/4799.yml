@@ -1,0 +1,16 @@
+--- 
+id: 4799
+design_id: 267
+section_id: 537
+name: "Anexos 002 - Aprobaci\xC3\xB3n de Planos 2"
+created_at: 2015-04-07 13:23:29 Z
+updated_at: 2015-04-07 13:23:29 Z
+label: Requisitos de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3022\":{\"3515\":{\"required\":\"required\"},\"3516\":{\"required\":\"unrequired\"}},\"3023\":{\"3517\":{\"required\":\"required\"},\"3518\":{\"required\":\"unrequired\"}},\"3024\":{\"3519\":{\"required\":\"required\"},\"3520\":{\"required\":\"unrequired\"}},\"3025\":{\"3521\":{\"required\":\"required\"},\"3522\":{\"required\":\"unrequired\"}},\"3026\":{\"3523\":{\"required\":\"unrequired\"},\"3524\":{\"required\":\"unrequired\"}},\"3027\":{\"3525\":{\"required\":\"required\"},\"3526\":{\"required\":\"unrequired\"}},\"3028\":{\"3527\":{\"required\":\"unrequired\"},\"3528\":{\"required\":\"unrequired\"}},\"3029\":{\"3529\":{\"required\":\"required\"},\"3530\":{\"required\":\"unrequired\"}},\"3030\":{\"3531\":{\"required\":\"required\"},\"3532\":{\"required\":\"unrequired\"}},\"3031\":{\"3533\":{\"required\":\"required\"},\"3534\":{\"required\":\"unrequired\"}},\"3032\":{\"3535\":{\"required\":\"unrequired\"},\"3536\":{\"required\":\"unrequired\"}},\"3033\":{\"3537\":{\"required\":\"unrequired\"},\"3538\":{\"required\":\"unrequired\"}},\"3034\":{\"3539\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

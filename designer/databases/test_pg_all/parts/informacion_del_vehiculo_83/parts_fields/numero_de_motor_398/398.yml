@@ -1,0 +1,30 @@
+--- 
+id: 398
+part_id: 83
+field_id: 10
+name: "N\xC3\xBAmero de Motor"
+created_at: 2011-11-14 18:57:50 Z
+updated_at: 2017-06-04 00:29:28.720088 Z
+label: "N\xC3\xBAmero de Motor"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 27913d4b-7d5e-447f-bf64-319807ff66e5
+version: 20170603-202928

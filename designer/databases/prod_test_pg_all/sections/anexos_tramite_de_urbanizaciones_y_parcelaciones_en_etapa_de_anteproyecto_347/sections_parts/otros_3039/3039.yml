@@ -1,0 +1,19 @@
+--- 
+id: 3039
+section_id: 347
+part_id: 700
+name: Otros
+created_at: 2014-02-25 15:26:59 Z
+updated_at: 2014-02-26 01:52:01 Z
+label: Otros
+min_instances: 1
+max_instances: 20
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3544\":{},\"3547\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 6

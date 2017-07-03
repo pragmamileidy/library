@@ -1,0 +1,30 @@
+--- 
+id: 966
+part_id: 193
+field_id: 31
+name: "Registro \xC3\xBAnico vehicular"
+created_at: 2012-04-20 16:02:42 Z
+updated_at: 2017-06-04 00:21:30.596597 Z
+label: "Registro \xC3\xBAnico vehicular"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a10188e5-491e-4e6a-a7a4-4ff7632ee85e
+version: 20170603-202130

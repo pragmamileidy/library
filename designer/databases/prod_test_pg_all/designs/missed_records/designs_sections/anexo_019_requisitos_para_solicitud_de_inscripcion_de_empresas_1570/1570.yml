@@ -1,0 +1,16 @@
+--- 
+id: 1570
+design_id: 129
+section_id: 317
+name: "Anexo 019 - Requisitos para Solicitud de Inscripci\xC3\xB3n de Empresas"
+created_at: 2012-06-21 20:12:04 Z
+updated_at: 2015-10-19 20:15:56 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1967\":{\"210\":{\"required\":\"required\"}},\"1968\":{\"210\":{\"required\":\"required\"}},\"1969\":{\"210\":{\"required\":\"required\"}},\"1970\":{\"210\":{\"required\":\"required\"}},\"1971\":{\"210\":{\"required\":\"required\"}},\"1972\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

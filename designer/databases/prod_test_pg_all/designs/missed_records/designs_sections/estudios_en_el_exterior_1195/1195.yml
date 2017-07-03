@@ -1,0 +1,16 @@
+--- 
+id: 1195
+design_id: 101
+section_id: 159
+name: Estudios en el Exterior
+created_at: 2012-05-31 18:51:16 Z
+updated_at: 2012-06-01 13:48:21 Z
+label: "\xC2\xBFVa a realizar estudios en el exterior?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"909\":{\"1185\":{\"required\":\"required\"}}}"
+hint: " "
+help: " "
+order_input: 1

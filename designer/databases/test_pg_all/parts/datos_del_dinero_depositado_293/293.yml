@@ -1,0 +1,17 @@
+--- 
+id: 293
+name: Datos del Dinero Depositado
+description: "Descripci\xC3\xB3n de los Datos del Dinero Depositado"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-05 18:24:58 Z
+updated_at: 2012-06-05 18:24:58 Z
+label: Datos del Dinero Depositado
+hint: ""
+view_class: horizontal
+serial: 

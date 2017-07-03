@@ -1,0 +1,19 @@
+--- 
+id: 1454
+section_id: 243
+part_id: 51
+name: Nombre del Producto
+created_at: 2012-05-20 00:34:00 Z
+updated_at: 2015-10-26 20:01:37 Z
+label: Nombre Comercial del Producto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor registrar el nombre comercial del producto
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

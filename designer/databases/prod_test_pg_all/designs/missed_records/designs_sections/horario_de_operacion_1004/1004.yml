@@ -1,0 +1,16 @@
+--- 
+id: 1004
+design_id: 95
+section_id: 137
+name: "Horario de Operaci\xC3\xB3n"
+created_at: 2012-05-11 18:37:18 Z
+updated_at: 2015-11-06 17:13:37 Z
+label: "Horario de Operaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1422\":{\"2146\":{\"required\":\"unrequired\"},\"2046\":{\"required\":\"unrequired\"}},\"679\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"}},\"680\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"}},\"681\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"}},\"682\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"}}}"
+hint: Las horas de Apertura, deben ser menores a las horas de Cierre.
+help: ""
+order_input: 5

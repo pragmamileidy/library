@@ -1,0 +1,21 @@
+--- 
+id: 1963
+section_id: 315
+part_id: 364
+name: "Anexo 019 - Requisitos para obtener el Certificado de Idoneidad Profesional Mec\xC3\xA1nico Paname\xC3\xB1o"
+created_at: 2012-06-21 18:43:16 Z
+updated_at: 2015-11-06 23:41:31 Z
+label: "Requisitos para obtener el Certificado de Idoneidad Profesional Mec\xC3\xA1nico Paname\xC3\xB1o"
+min_instances: 1
+max_instances: 1
+depends_on: "a = form_data.get(\"tipo_de_idoneidad_para_educacion_media.tipo_de_idoneidad_para_la_educacion_media.tipo_de_idoneidad_para_la_educacion_media\")\r\n\
+  b = form_data.get(\"informacion_de_persona_natural.datos_de_la_persona.nacionalidad\")\r\n\
+  (a==\"Mec\xC3\xA1nico\") and (b!=\"Panama\")\r\n"
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

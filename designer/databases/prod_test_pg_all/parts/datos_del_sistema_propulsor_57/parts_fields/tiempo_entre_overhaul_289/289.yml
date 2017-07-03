@@ -1,0 +1,30 @@
+--- 
+id: 289
+part_id: 57
+field_id: 1
+name: Tiempo entre Overhaul
+created_at: 2011-11-09 16:35:55 Z
+updated_at: 2017-06-04 00:30:28.564309 Z
+label: Tiempo entre Overhaul (TBO)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 124b26cd-23c9-4d9f-88c4-d20f74a8dc58
+version: 20170603-203028

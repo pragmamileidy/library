@@ -1,0 +1,16 @@
+--- 
+id: 3496
+design_id: 204
+section_id: 537
+name: "Anexos 002 - Aprobaci\xC3\xB3n de Planos 2"
+created_at: 2014-02-21 21:04:08 Z
+updated_at: 2016-04-08 14:52:39.597127 Z
+label: Requisitos de la Solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3022\":{\"3515\":{\"required\":\"unrequired\"},\"3516\":{\"required\":\"unrequired\"},\"4018\":{\"required\":\"unrequired\"},\"4030\":{\"required\":\"unrequired\"}},\"3023\":{\"3517\":{\"required\":\"unrequired\"},\"3518\":{\"required\":\"unrequired\"},\"4017\":{\"required\":\"unrequired\"},\"4031\":{\"required\":\"unrequired\"}},\"3024\":{\"3519\":{\"required\":\"unrequired\"},\"3520\":{\"required\":\"unrequired\"},\"4019\":{\"required\":\"unrequired\"},\"4032\":{\"required\":\"unrequired\"}},\"3025\":{\"3521\":{\"required\":\"unrequired\"},\"3522\":{\"required\":\"unrequired\"},\"4020\":{\"required\":\"unrequired\"},\"4033\":{\"required\":\"unrequired\"}},\"3026\":{\"3523\":{\"required\":\"unrequired\"},\"3524\":{\"required\":\"unrequired\"},\"4021\":{\"required\":\"unrequired\"},\"4034\":{\"required\":\"unrequired\"}},\"3027\":{\"3525\":{\"required\":\"unrequired\"},\"3526\":{\"required\":\"unrequired\"},\"4022\":{\"required\":\"unrequired\"},\"4035\":{\"required\":\"unrequired\"}},\"3028\":{\"3527\":{\"required\":\"unrequired\"},\"3528\":{\"required\":\"unrequired\"},\"4023\":{\"required\":\"unrequired\"},\"4036\":{\"required\":\"unrequired\"}},\"3029\":{\"3529\":{\"required\":\"unrequired\"},\"3530\":{\"required\":\"unrequired\"},\"4024\":{\"required\":\"unrequired\"},\"4037\":{\"required\":\"unrequired\"}},\"3030\":{\"3531\":{\"required\":\"unrequired\"},\"3532\":{\"required\":\"unrequired\"},\"4025\":{\"required\":\"unrequired\"},\"4038\":{\"required\":\"unrequired\"}},\"3031\":{\"3533\":{\"required\":\"unrequired\"},\"3534\":{\"required\":\"unrequired\"},\"4026\":{\"required\":\"unrequired\"},\"4039\":{\"required\":\"unrequired\"}},\"3032\":{\"3535\":{\"required\":\"unrequired\"},\"3536\":{\"required\":\"unrequired\"},\"4027\":{\"required\":\"unrequired\"},\"4040\":{\"required\":\"unrequired\"}},\"3033\":{\"3537\":{\"required\":\"unrequired\"},\"3538\":{\"required\":\"unrequired\"},\"4028\":{\"required\":\"unrequired\"},\"4041\":{\"required\":\"unrequired\"}},\"3034\":{\"3539\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 9

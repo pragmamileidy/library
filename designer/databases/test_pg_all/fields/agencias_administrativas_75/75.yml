@@ -1,0 +1,42 @@
+--- 
+id: 75
+name: Agencias Administrativas
+description: "Nombre de la Instituci\xC3\xB3n- Agencias Administrativas\r\n"
+version: 
+status: Draft
+label: "Nombre de la Instituci\xC3\xB3n "
+hint: Seleccione de la lista
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-04 18:38:43 Z
+updated_at: 2014-05-05 13:42:08 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _lista = ""
+  result = WebserviceConsumer.get('/service/ws_instituciones_panama/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+   _valores.each {|institucion|
+  _lista = _lista + "," + institucion["institucion"]}
+   @values_of_list = _lista.split(",")
+   @keys_of_list =  _lista.split(",")
+  else
+   @values_of_list = [""]
+   @keys_of_list =  [""]
+  end
+serial: 

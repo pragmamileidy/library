@@ -1,0 +1,230 @@
+--- 
+id: 322
+position: 6
+selector: "{\"2533\":{\"656\":{\"758\":{},\"759\":{}}},\"2538\":{\"2729\":{\"3068\":{},\"3069\":{},\"3070\":{},\"3074\":{},\"3076\":{},\"3077\":{}},\"2730\":{\"2970\":{}}},\"2539\":{\"580\":{\"1981\":{},\"1374\":{}},\"581\":{\"572\":{},\"573\":{},\"805\":{},\"585\":{},\"594\":{}},\"2592\":{\"2925\":{}}},\"2540\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"572\":{},\"573\":{},\"805\":{},\"585\":{},\"594\":{}},\"2593\":{\"2925\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 58px;
+  	left: 713px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 33px;
+  	left: 714px;
+  	width: 310px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelaobrawebymultimedia_detallesdelaobrawebymultimedia_estatusdelaobra {
+  	position: absolute;
+  	top: 119px;
+  	left: 281px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelaobrawebymultimedia_detallesdelaobrawebymultimedia_fechadepublicacin {
+  	position: absolute;
+  	top: 155px;
+  	left: 283px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelaobrawebymultimedia_detallesdelaobrawebymultimedia_elementosquecontiene {
+  	position: absolute;
+  	top: 191px;
+  	left: 280px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelaobrawebymultimedia_detallesdelaobrawebymultimedia_programadenavegacinutilizado {
+  	position: absolute;
+  	top: 119px;
+  	left: 745px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelaobrawebymultimedia_detallesdelaobrawebymultimedia_pasdeorign {
+  	position: absolute;
+  	top: 155px;
+  	left: 747px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelaobrawebymultimedia_detallesdelaobrawebymultimedia_observacionesgenerales {
+  	position: absolute;
+  	top: 267px;
+  	left: 276px;
+  	width: 679px;
+  	height: 53px;
+  	overflow: hidden;
+    }
+    .informacindelaobrawebymultimedia_sinopsisdelaobra_descripcintransferencia {
+  	position: absolute;
+  	top: 226px;
+  	left: 279px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 450px;
+  	left: 278px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 486px;
+  	left: 277px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 450px;
+  	left: 744px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+      .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_ciudad {
+  	position: absolute;
+  	top: 592px;
+  	left: 279px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 521px;
+  	left: 278px;
+  	width: 675px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 557px;
+  	left: 279px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 557px;
+  	left: 746px;
+  	width: 277px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_enrepresentacionde_nombrecompleto {
+  	position: absolute;
+  	top: 629px;
+  	left: 275px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 778px;
+  	left: 278px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 814px;
+  	left: 278px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_pas {
+  	position: absolute;
+  	top: 778px;
+  	left: 745px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_ciudad {
+  	position: absolute;
+  	top: 921px;
+  	left: 278px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_direccin {
+  	position: absolute;
+  	top: 850px;
+  	left: 278px;
+  	width: 676px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 885px;
+  	left: 278px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 886px;
+  	left: 746px;
+  	width: 274px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_enrepresentacionde_nombrecompleto {
+  	position: absolute;
+  	top: 957px;
+  	left: 278px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 129
+created_at: 2013-06-03 21:19:58 Z
+updated_at: 2014-04-29 20:50:09 Z
+instances_selector: "{\"2533\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2538\":{\"value\":\"\",\"2729\":{\"value\":\"\",\"3068\":{\"value\":\"\"},\"3069\":{\"value\":\"\"},\"3070\":{\"value\":\"\"},\"3074\":{\"value\":\"\"},\"3076\":{\"value\":\"\"},\"3077\":{\"value\":\"\"}},\"2730\":{\"value\":\"\",\"2970\":{\"value\":\"\"}}},\"2539\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"573\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2592\":{\"value\":\"\",\"2925\":{\"value\":\"\"}}},\"2540\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"573\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"594\":{\"value\":\"\"}},\"2593\":{\"value\":\"\",\"2925\":{\"value\":\"\"}}}}"
+size: 

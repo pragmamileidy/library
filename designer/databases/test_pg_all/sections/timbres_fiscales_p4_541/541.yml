@@ -1,0 +1,17 @@
+--- 
+id: 541
+name: Timbres Fiscales p4
+description: Seccion de anexos archivo correspondiente al pago de 8$ por Timbres Fiscales
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-03-09 23:32:30 Z
+updated_at: 2014-03-09 23:32:30 Z
+status: Draft
+label: Timbres Fiscales
+hint: ""
+serial: 

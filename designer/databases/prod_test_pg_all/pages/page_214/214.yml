@@ -1,0 +1,408 @@
+--- 
+id: 214
+position: 2
+selector: "{\"472\":{\"656\":{\"758\":{},\"759\":{}}},\"476\":{\"2256\":{\"2430\":{}},\"2257\":{\"2430\":{}},\"2799\":{\"3228\":{},\"3229\":{}},\"1752\":{\"1558\":{}},\"2259\":{\"2430\":{}},\"2261\":{\"158\":{}},\"2260\":{\"158\":{}},\"2132\":{\"2328\":{}},\"835\":{\"212\":{}},\"2262\":{\"2430\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 75px;
+  	left: 712px;
+  	width: 292px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 50px;
+  	left: 711px;
+  	width: 309px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_especie_introduzcalainformacin {
+  	position: absolute;
+  	top: 182px;
+  	left: 274px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_raza_introduzcalainformacin {
+  	position: absolute;
+  	top: 182px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_edad_aosdelanimal {
+  	position: absolute;
+  	top: 218px;
+  	left: 400px;
+  	width: 91px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_edad_mesesdelanimal {
+  	position: absolute;
+  	top: 218px;
+  	left: 348px;
+  	width: 43px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_sexo_sexoanimal {
+  	position: absolute;
+  	top: 218px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_finalidaddelamisma_introduzcalainformacin {
+  	position: absolute;
+  	top: 254px;
+  	left: 274px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_pasdeorigen_pas {
+  	position: absolute;
+  	top: 326px;
+  	left: 274px;
+  	width: 244px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_pasdeprocedencia_pas {
+  	position: absolute;
+  	top: 326px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_identificacinrasgosqueidentifiquenalanimal_identificacin {
+  	position: absolute;
+  	top: 290px;
+  	left: 273px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_fechadearribo_fecha {
+  	position: absolute;
+  	top: 361px;
+  	left: 273px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_3_lugardeingreso_introduzcalainformacin {
+  	position: absolute;
+  	top: 361px;
+  	left: 723px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_especie_introduzcalainformacin {
+  	position: absolute;
+  	top: 488px;
+  	left: 274px;
+  	width: 244px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_raza_introduzcalainformacin {
+  	position: absolute;
+  	top: 486px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_edad_aosdelanimal {
+  	position: absolute;
+  	top: 523px;
+  	left: 401px;
+  	width: 83px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_edad_mesesdelanimal {
+  	position: absolute;
+  	top: 523px;
+  	left: 355px;
+  	width: 34px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_sexo_sexoanimal {
+  	position: absolute;
+  	top: 522px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_finalidaddelamisma_introduzcalainformacin {
+  	position: absolute;
+  	top: 558px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_pasdeorigen_pas {
+  	position: absolute;
+  	top: 630px;
+  	left: 274px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_pasdeprocedencia_pas {
+  	position: absolute;
+  	top: 630px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_identificacinrasgosqueidentifiquenalanimal_identificacin {
+  	position: absolute;
+  	top: 594px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_fechadearribo_fecha {
+  	position: absolute;
+  	top: 666px;
+  	left: 273px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_4_lugardeingreso_introduzcalainformacin {
+  	position: absolute;
+  	top: 666px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_especie_introduzcalainformacin {
+  	position: absolute;
+  	top: 791px;
+  	left: 274px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_raza_introduzcalainformacin {
+  	position: absolute;
+  	top: 790px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_edad_aosdelanimal {
+  	position: absolute;
+  	top: 827px;
+  	left: 402px;
+  	width: 73px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_edad_mesesdelanimal {
+  	position: absolute;
+  	top: 827px;
+  	left: 352px;
+  	width: 39px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_sexo_sexoanimal {
+  	position: absolute;
+  	top: 826px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_finalidaddelamisma_introduzcalainformacin {
+  	position: absolute;
+  	top: 862px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_pasdeorigen_pas {
+  	position: absolute;
+  	top: 935px;
+  	left: 274px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_pasdeprocedencia_pas {
+  	position: absolute;
+  	top: 934px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_identificacinrasgosqueidentifiquenalanimal_identificacin {
+  	position: absolute;
+  	top: 898px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_fechadearribo_fecha {
+  	position: absolute;
+  	top: 970px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_5_lugardeingreso_introduzcalainformacin {
+  	position: absolute;
+  	top: 970px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_especie_introduzcalainformacin {
+  	position: absolute;
+  	top: 1095px;
+  	left: 274px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_raza_introduzcalainformacin {
+  	position: absolute;
+  	top: 1095px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_edad_aosdelanimal {
+  	position: absolute;
+  	top: 1131px;
+  	left: 400px;
+  	width: 72px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_edad_mesesdelanimal {
+  	position: absolute;
+  	top: 1131px;
+  	left: 354px;
+  	width: 35px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_sexo_sexoanimal {
+  	position: absolute;
+  	top: 1131px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_finalidaddelamisma_introduzcalainformacin {
+  	position: absolute;
+  	top: 1167px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_pasdeorigen_pas {
+  	position: absolute;
+  	top: 1238px;
+  	left: 274px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_pasdeprocedencia_pas {
+  	position: absolute;
+  	top: 1238px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_identificacinrasgosqueidentifiquenalanimal_identificacin {
+  	position: absolute;
+  	top: 1202px;
+  	left: 275px;
+  	width: 676px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_fechadearribo_fecha {
+  	position: absolute;
+  	top: 1274px;
+  	left: 273px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindelosanimalesaimportar_instance_6_lugardeingreso_introduzcalainformacin {
+  	position: absolute;
+  	top: 1274px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_1\" />\r\n\
+  <title>Licencia de Importaci\xC3\xB3n de Perros y Gatos</title>\r\n\
+  </head>\r\n\
+  <body>\r\n\
+  \r\n      <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_3_finalidaddelamisma_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_3_FinalidaddelaMisma_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_3_pasdeorigen_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_3_PasdeOrigen_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_3_pasdeprocedencia_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_3_PasdeProcedencia_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_3_identificacinrasgosqueidentifiquenalanimal__identificacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_3_IdentificacinRasgosqueidentifiquenalanimal._Identificacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_3_fechadearribo_fecha\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_3_FechadeArribo_Fecha\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_3_lugardeingreso_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_3_LugardeIngreso_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_especie_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_Especie_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_raza_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_Raza_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_edad_aosdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_Edad_aosdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_edad_mesesdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_Edad_mesesdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_sexo_sexoanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_Sexo_SexoAnimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_finalidaddelamisma_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_FinalidaddelaMisma_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_pasdeorigen_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_PasdeOrigen_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_pasdeprocedencia_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_PasdeProcedencia_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_identificacinrasgosqueidentifiquenalanimal__identificacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_IdentificacinRasgosqueidentifiquenalanimal._Identificacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_fechadearribo_fecha\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_FechadeArribo_Fecha\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_4_lugardeingreso_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_4_LugardeIngreso_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_especie_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_Especie_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_raza_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_Raza_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_edad_aosdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_Edad_aosdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_edad_mesesdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_Edad_mesesdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_sexo_sexoanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_Sexo_SexoAnimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_finalidaddelamisma_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_FinalidaddelaMisma_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_pasdeorigen_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_PasdeOrigen_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_pasdeprocedencia_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_PasdeProcedencia_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_identificacinrasgosqueidentifiquenalanimal__identificacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_IdentificacinRasgosqueidentifiquenalanimal._Identificacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_fechadearribo_fecha\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_FechadeArribo_Fecha\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_5_lugardeingreso_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_5_LugardeIngreso_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_especie_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_Especie_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_raza_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_Raza_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_edad_aosdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_Edad_aosdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_edad_mesesdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_Edad_mesesdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_sexo_sexoanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_Sexo_SexoAnimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_finalidaddelamisma_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_FinalidaddelaMisma_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_pasdeorigen_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_PasdeOrigen_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_pasdeprocedencia_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_PasdeProcedencia_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_identificacinrasgosqueidentifiquenalanimal__identificacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_IdentificacinRasgosqueidentifiquenalanimal._Identificacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_fechadearribo_fecha\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_FechadeArribo_Fecha\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_6_lugardeingreso_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_6_LugardeIngreso_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_especie_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_Especie_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_raza_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_Raza_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_edad_aosdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_Edad_aosdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_edad_mesesdelanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_Edad_mesesdelanimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_sexo_sexoanimal\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_Sexo_SexoAnimal\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_finalidaddelamisma_introduzcalainformacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_FinalidaddelaMisma_IntroduzcalaInformacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_pasdeorigen_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_PasdeOrigen_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_pasdeprocedencia_pas\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_PasdeProcedencia_Pas\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_identificacinrasgosqueidentifiquenalanimal__identificacin\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_IdentificacinRasgosqueidentifiquenalanimal._Identificacin\"] %>\r\n        </span>\r\n      </div>\r\n      <div class=\"informacindelosanimalesaimportar_instance_7_fechadearribo_fecha\">\r\n        <span class=\"field_size_1\">\r\n          <%= fields[\"Informacindelosanimalesaimportar_instance_7_FechadeArribo_Fecha\"] %>\r\n        </span>\r\n      </div>\r\n    <div class=\"informacindelosanimalesaimportar_instance_7_lugardeingreso_introduzcalainformacin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"Informacindelosanimalesaimportar_instance_7_LugardeIngreso_IntroduzcalaInformacin\"] %>\r\n      </span>\r\n    </div>\r\n  \r\n\
+  </body>\r\n\
+  </html>"
+print_design_id: 21
+created_at: 2013-03-27 21:57:09 Z
+updated_at: 2015-10-28 21:05:20 Z
+instances_selector: "{\"472\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"476\":{\"value\":\"3,6\",\"2256\":{\"value\":\"\",\"2430\":{\"value\":\"4,7\"}},\"2257\":{\"value\":\"\",\"2430\":{\"value\":\"4,7\"}},\"2799\":{\"value\":\"\",\"3228\":{\"value\":\"4,7\"},\"3229\":{\"value\":\"4,7\"}},\"1752\":{\"value\":\"\",\"1558\":{\"value\":\"4,7\"}},\"2259\":{\"value\":\"\",\"2430\":{\"value\":\"3,7\"}},\"2261\":{\"value\":\"\",\"158\":{\"value\":\"3,7\"}},\"2260\":{\"value\":\"\",\"158\":{\"value\":\"3,7\"}},\"2132\":{\"value\":\"\",\"2328\":{\"value\":\"3,7\"}},\"835\":{\"value\":\"\",\"212\":{\"value\":\"3,7\"}},\"2262\":{\"value\":\"\",\"2430\":{\"value\":\"3,7\"}}}}"
+size: ""

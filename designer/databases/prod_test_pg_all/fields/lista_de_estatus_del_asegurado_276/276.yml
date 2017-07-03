@@ -1,0 +1,30 @@
+--- 
+id: 276
+name: Lista de estatus del asegurado
+description: "campo creado para dise\xC3\xB1o pension invalidez"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-04-23 18:13:54 Z
+updated_at: 2013-04-23 18:13:54 Z
+values_list: Trabajando, Desempleado, Pensionado (a), Incapacitado (a), Licencia sin Sueldo, Pensionado (a) por Sobreviviente, Pensionado por Riesgos Profesionales
+keys_list: "\"Trabajando\", \"Desempleado\", \"Pensionado (a)\", \"Incapacitado (a)\", \"Licencia sin Sueldo\", \"Pensionado (a) por Sobreviviente\", \"Pensionado por Riesgos Profesionales\""
+field_type: checkbox
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

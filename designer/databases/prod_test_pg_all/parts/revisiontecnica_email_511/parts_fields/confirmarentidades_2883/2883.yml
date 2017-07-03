@@ -1,0 +1,30 @@
+--- 
+id: 2883
+part_id: 511
+field_id: 17
+name: ConfirmarEntidades
+created_at: 2013-01-29 17:49:06 Z
+updated_at: 2017-06-04 00:27:29.735788 Z
+label: Confirmar Entidades
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Para proceso 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 67e495e9-d860-44dc-bb82-6f1a8a001b61
+version: 20170603-202729

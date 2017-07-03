@@ -1,0 +1,187 @@
+--- 
+id: 2969
+name: Paso 2 - Datos Adicionales
+label: Datos Adicionales
+description: Datos adicionales del Adquiriente
+fill_step_id: 1595
+created_at: 2014-10-10 15:58:15 Z
+updated_at: 2015-04-01 16:40:32 Z
+include: "{\"4519\":{\"1791\":{\"3116\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4521\":{\"1795\":{\"3117\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1680\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2207\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3918\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4531\":{\"1812\":{\"1689\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2068\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2069\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2070\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1690\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1694\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2794\":{\"3210\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3211\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3212\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3213\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3214\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3215\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1813\":{\"2456\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2457\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2458\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"583\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 1 - Informacion de la Solicitud
+next_step: "Paso 3 - Datos del Veh\xC3\xADculo"
+position: 2
+ajax_calls: |-
+  //::: SELECT CHANGE PARA PROVINCIA - DISTRITOS - CORREGIMIENTO ::://
+  $(function() {
+  	$('#id_del_combo_distritos').html("");
+  	$('#id_del_combo_corregimientos').html("");
+  })
+  
+  $(function() {
+  	$("#field_datos_adicionales_adquiriente_natural_direccion_provincia_lista").change(function(){
+  		var prov = $("#field_datos_adicionales_adquiriente_natural_direccion_provincia_lista").find(':selected').val();
+  		distritos1(prov);
+  	});
+  	$("#field_datos_adicionales_adquiriente_natural_direccion_distrito_lista").change(function(){
+  		var distrito = $("#field_datos_adicionales_adquiriente_natural_direccion_distrito_lista").find(':selected').val();
+  		corregimientos1(distrito);
+  	});
+  });
+  
+  function distritos1(provincia) {
+  	params = {
+  	"service_name":"ws_panama_distritos/where",
+  	"provincia":provincia
+  	}
+  	$.post(
+  		"/proxy_service/get_service",
+  		params,
+  		function(data){
+  			var dist;
+  			var html_options = "";
+  			for (x in data){
+  				dist = data[x];
+  				html_options = html_options+'<option value="'+dist["distrito"] +'">'+dist["distrito"] +'</option>'
+  			}	
+  			$("#field_datos_adicionales_adquiriente_natural_direccion_distrito_lista").html(html_options);
+  			$("#field_datos_adicionales_adquiriente_natural_direccion_corregimiento_lista").html("");
+  		}
+  	);
+  }
+  function corregimientos1(distrito) {
+  	params = {
+  	"service_name":"ws_panama_corregimientos/where",
+  	"distrito":distrito
+  	}
+  	$.post(
+  		"/proxy_service/get_service",
+  		params,
+  		function(data){
+  			var corr;
+  			var html_options = "";
+  			for (x in data){
+  				corr = data[x];
+  				html_options = html_options+'<option value="'+corr["corregimiento"] +'">'+corr["corregimiento"] +'</option>'
+  			}	
+  			$("#field_datos_adicionales_adquiriente_natural_direccion_corregimiento_lista").html(html_options);
+  		}
+  	);
+  }
+  
+  $( function() {
+  	$("#field_datos_adicionales_adquiriente_juridico_direccion_provincia_lista").change(function(){
+  		var prov = $("#field_datos_adicionales_adquiriente_juridico_direccion_provincia_lista").find(':selected').val();
+  		distritos(prov);
+  	});
+  	$("#field_datos_adicionales_adquiriente_juridico_direccion_distrito_lista").change(function(){
+  		var distrito = $("#field_datos_adicionales_adquiriente_juridico_direccion_distrito_lista").find(':selected').val();
+  		corregimientos(distrito);
+  	});
+  });
+  
+  function distritos(provincia) {
+  	params = {
+  	"service_name":"ws_panama_distritos/where",
+  	"provincia":provincia
+  	}
+  	$.post(
+  		"/proxy_service/get_service",
+  		params,
+  		function(data){
+  			var dist;
+  			var html_options = "";
+  			for (x in data){
+  				dist = data[x];
+  				html_options = html_options+'<option value="'+dist["distrito"] +'">'+dist["distrito"] +'</option>'
+  			}	
+  			$("#field_datos_adicionales_adquiriente_juridico_direccion_distrito_lista").html(html_options);
+  			$("#field_datos_adicionales_adquiriente_juridico_direccion_corregimiento_lista").html("");
+  		}
+  	);
+  }
+  function corregimientos(distrito) {
+  	params = {
+  		"service_name":"ws_panama_corregimientos/where",
+  		"distrito":distrito
+  	}
+  	$.post(
+  		"/proxy_service/get_service",
+  		params,
+  		function(data){
+  			var corr;
+  			var html_options = "";
+  			for (x in data){
+  				corr = data[x];
+  				html_options = html_options+'<option value="'+corr["corregimiento"] +'">'+corr["corregimiento"] +'</option>'
+  			}	
+  			$("#field_datos_adicionales_adquiriente_juridico_direccion_corregimiento_lista").html(html_options);
+  		}
+  	);
+  }
+  
+  
+  
+  $(function() {
+  
+  $("#field_requiere_contraparte_datos_contraparte_tipo_de_identificacion").parent().parent().hide();
+  $("#field_requiere_contraparte_datos_contraparte_solicitante").parent().parent().hide();
+  $("#field_requiere_contraparte_datos_contraparte_tipo_de_documento").parent().parent().hide();
+  
+  var contra_doc = $("#field_requiere_contraparte_datos_contraparte_tipo_de_documento").val();
+  var tipo_ident = $("#field_requiere_contraparte_datos_contraparte_tipo_de_identificacion").val();
+  var doc = $("#field_requiere_contraparte_datos_contraparte_solicitante").val();
+  
+    if (doc == 'Pasaporte' && tipo_ident == 'Adquiriente'){
+    $("#field_requiere_contraparte_datos_contraparte_email").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_nacionalidad").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_pais_de_nacimiento").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_fecha_de_nacimiento").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_sexo").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_telefono").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_telefono_laboral").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_direccion").attr("disabled","disabled"); 
+  
+    } else if (contra_doc == 'Pasaporte' && tipo_ident == 'Vendedor'){   
+  
+    $("#field_requiere_contraparte_datos_contraparte_email").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_nacionalidad").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_pais_de_nacimiento").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_fecha_de_nacimiento").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_sexo").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_telefono").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_telefono_laboral").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_provincia_lista").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_distrito_lista").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_corregimiento_lista").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_barrio").removeAttr("disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_direccion").removeAttr("disabled");
+  
+    $("#field_requiere_contraparte_datos_contraparte_email").val('');
+    $("#field_datos_adicionales_adquiriente_natural_direccion_provincia_lista").val('');  
+    $("#field_datos_adicionales_adquiriente_natural_direccion_distrito_lista").val('');
+    $("#field_datos_adicionales_adquiriente_natural_direccion_corregimiento_lista").val('');
+    $("#field_datos_adicionales_adquiriente_natural_direccion_barrio").val('');
+    $("#field_datos_adicionales_adquiriente_natural_direccion_direccion").val('');
+  
+    } else {   
+  
+    $("#field_requiere_contraparte_datos_contraparte_email").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_nacionalidad").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_pais_de_nacimiento").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_fecha_de_nacimiento").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_sexo").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_telefono").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_datos_adicionales_telefono_laboral").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_provincia_lista").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_distrito_lista").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_corregimiento_lista").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_barrio").attr("disabled","disabled");
+    $("#field_datos_adicionales_adquiriente_natural_direccion_direccion").attr("disabled","disabled");
+    }
+  });

@@ -1,0 +1,30 @@
+--- 
+id: 3464
+part_id: 304
+field_id: 10
+name: nro idoneidad
+created_at: 2013-11-27 19:48:37 Z
+updated_at: 2017-06-04 00:31:28.068311 Z
+label: "N\xC3\xBAmero de Idoneidad"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 15
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8ee9f01e-6f80-4f50-aafd-c27a8c9d9917
+version: 20170603-203128

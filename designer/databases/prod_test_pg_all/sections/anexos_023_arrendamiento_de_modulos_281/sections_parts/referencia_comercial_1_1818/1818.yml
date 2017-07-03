@@ -1,0 +1,19 @@
+--- 
+id: 1818
+section_id: 281
+part_id: 38
+name: "Referencia comercial #1"
+created_at: 2012-06-08 21:15:06 Z
+updated_at: 2012-08-13 01:59:32 Z
+label: "Referencia comercial #1"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

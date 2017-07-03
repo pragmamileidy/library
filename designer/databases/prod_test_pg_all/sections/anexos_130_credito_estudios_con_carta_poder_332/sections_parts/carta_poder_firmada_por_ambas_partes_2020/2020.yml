@@ -1,0 +1,19 @@
+--- 
+id: 2020
+section_id: 332
+part_id: 38
+name: "Carta poder firmada por ambas partes "
+created_at: 2012-07-18 15:26:47 Z
+updated_at: 2012-07-18 15:26:47 Z
+label: "Carta poder firmada por ambas partes "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Adjuntar carta poder firmada por ambas partes (Estudiante y Representante Legal). Presentarlo ante el IFARHU en original.
+help: Adjuntar carta poder firmada por ambas partes (Estudiante y Representante Legal). Presentarlo ante el IFARHU en original.
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 3

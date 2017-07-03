@@ -1,0 +1,37 @@
+--- 
+id: 1084
+name: Paso 5  - Eventos
+label: Eventos
+description: ""
+fill_step_id: 546
+created_at: 2013-01-25 14:19:52 Z
+updated_at: 2015-07-08 15:11:33 Z
+include: "{\"2374\":{\"2417\":{\"2601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2603\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2604\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2605\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2606\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2418\":{\"2607\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2608\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2609\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2610\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2611\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2612\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2613\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #Llenado de campos EVENT_NOTIFICATION_PARAMETERS
+  
+  form_data.set("defaults.event_notification_parameters.author", "FCProcess")
+  form_data.set("defaults.event_notification_parameters.sender", "no-reply-pel@innovacion.gob.pa")
+  form_data.set("defaults.event_notification_parameters.email", "false")
+  form_data.set("defaults.event_notification_parameters.notify", "true")
+  form_data.set("defaults.event_notification_parameters.event", "true")
+  form_data.set("defaults.event_notification_parameters.retry_times", "5")
+  
+  #Llenado de campos EMAIL_NOTIFICATION_PARAMETERS
+  
+  form_data.set("defaults.email_notification_parameters.author", "FCProcess")
+  form_data.set("defaults.email_notification_parameters.sender", "no-reply-pel@innovacion.gob.pa")
+  form_data.set("defaults.email_notification_parameters.email", "true")
+  form_data.set("defaults.email_notification_parameters.notify", "true")
+  form_data.set("defaults.email_notification_parameters.event", "true")
+  form_data.set("defaults.email_notification_parameters.recipients", "shantall@pragmagenia.com")
+  form_data.set("defaults.email_notification_parameters.retry_times", "5")
+on_transition: ""
+views: 
+back_step: Paso 4 - Parametros Constantes
+next_step: Paso 6 -  Notificaciones
+position: 4
+ajax_calls: ""

@@ -1,0 +1,17 @@
+--- 
+id: 563
+name: "Juego de fotograf\xC3\xADas de los principales movimientos o escenas"
+description: "juego de fotograf\xC3\xADas de los principales movimientos o escenas"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-13 16:16:22 Z
+updated_at: 2013-03-13 16:16:22 Z
+label: "Juego de fotograf\xC3\xADas de los principales movimientos o escenas"
+hint: ""
+view_class: horizontal
+serial: 

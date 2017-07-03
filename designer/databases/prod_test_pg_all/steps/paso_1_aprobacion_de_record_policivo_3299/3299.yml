@@ -1,0 +1,145 @@
+--- 
+id: 3299
+name: "Paso 1- Aprobaci\xC3\xB3n de Record Policivo"
+label: "<strong style=\"color:#900C3F\"> Aprobaci\xC3\xB3n de Record Policivo </strong>"
+description: |-
+  <br><strong style="color:#FF5733"> El Director de la DIJ apruebe los record policivos que no tienen sentencias </strong>
+  <br/>
+fill_step_id: 1772
+created_at: 2017-01-05 14:18:28.079899 Z
+updated_at: 2017-01-05 21:57:47.965906 Z
+include: "{\"5166\":{\"3212\":{\"3629\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3630\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5168\":{\"3208\":{\"1973\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1474\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3715\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1475\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1479\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1477\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3209\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3267\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3268\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3269\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3294\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3271\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3272\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3273\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3369\":{\"3639\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5169\":{\"3261\":{\"3712\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3691\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3693\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3692\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3264\":{\"3722\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5172\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5173\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5174\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"5179\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3199\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |
+  # OBTENER PROVINCIA DE REVISION DE LA SOLICITUD EN ATTACHMENT#
+  _app_id = @application["id"]
+  result = WebserviceConsumer.get('/service/dij_helper/call.json?method=provincia_print_design&app_id=' + "#{_app_id}").parsed_response
+  provincia = result["response"]["provincia"]
+  form_data.set("datos_del_solicitante.datos_de_ubicacion.provincia", provincia)
+  
+  
+  # Inicializacion de datos del agente - LG
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  ## DV: COMENTADA PRIMERA LINEA 17/10/2014 - SE SETEO LA DE DIRECTOR 
+  #form_data.set("aprobacion_de_rp.datos_del_funcionario_generico.usuario", _agente["name"])
+  form_data.set("director_dij.datos_del_funcionario_generico.usuario", _agente["name"])
+  form_data.set("director_dij.datos_del_funcionario_generico.usuario2", _agente["name"])
+
+on_transition: "_obs = form_data.get(\"director_dij.datos_del_funcionario_generico.observaciones\")\r\n\
+  _aprob = form_data.get(\"director_dij.datos_del_funcionario_generico.aprobacion\")\r\n\
+  if (_aprob ==\"NO\" and _obs.blank?) \r\n   transition_errors << \"Debe indicar el motivo de su desaprobaci\xC3\xB3n en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end\r\n\
+  \r\n\
+  ######Usado para mostrar o no la tabla de sentencias en el Print designer#############\r\n\
+  \r\n\
+  \t#data= form_data.get(\"mensaje_dij.mensaje_dij.campo_data\")\r\n\
+  \t#sin_sentencia = data.blank? ? \"Si\" : \" \"\r\n        #form_data.set(\"mensaje_dij.mensaje_dij.imprimir_sin_sentencia\",sin_sentencia)\r\n\
+  \r\n\
+  \r\n\
+  ########Generar c\xC3\xB3digo unico y datos para impresi\xC3\xB3n##############\r\n\
+  \r\n\
+  codigo= form_data.get(\"codigo_unico_dij.codigo_unico_dij.dia\")\r\n\
+  \r\n\
+  #if codigo.blank?\r\n\
+  \t#############Generar fecha para impresion###########\r\n\
+  \tform_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n \r\n\
+  \tanno = Time.now.year\r\n\
+  \tmes= I18n.t(\"views.calendar.#{Time.now.strftime(\"%B\").downcase}\")\r\n\
+  \tdia = Time.now.day\r\n\
+  \r\n\
+  \tform_data.set(\"codigo_unico_dij.codigo_unico_dij.year\",anno)\r\n\
+  \tform_data.set(\"codigo_unico_dij.codigo_unico_dij.mes\",mes)\r\n\
+  \tform_data.set(\"codigo_unico_dij.codigo_unico_dij.dia\",dia)\r\n\
+  \r\n\
+  \t##############Consecutivo######################\r\n\
+  \r\n\
+  \t#codf1= form_data.get(\"codigo_unico_dij.codigo_unico_dij.consecutivo\")\r\n\
+  \t#result = WebserviceConsumer.get( '/consecutive/generador_dij_f2/generate.json').parsed_response\r\n\
+  \t#_consecutivo = result[\"response\"]\r\n\
+  \t#_consecutivo = \"#{codf1}-\"+\"#{_consecutivo[\"value\"]}\"\r\n\
+  \t#form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\",_consecutivo)\r\n\
+  \r\n\
+  \t#####c\xC3\xB3digo \xC3\xBAnico######################\r\n        #codigo_unico= form_data.get(\"datos_del_titular_rp.codigo_unico_dij.codigo_unico\")\r\n        #form_data.set(\"codigo_unico_dij.codigo_unico_dij.codigo_unico\",codigo_unico)\r\n\
+  #end\r\n\
+  \r\n\
+  \r\n\
+  ### DV: PDF DIRECTOR AGREGADA 17/10/2014 \r\n\
+  #director = form_data.get(\"director_dij.datos_del_funcionario_generico.usuario\")\r\n\
+  #form_data.set(\"director_dij.datos_del_funcionario_generico.usuario2\", director)\r\n\
+  \r\n\
+  # OBTENER PROVINCIA DE REVISION DE LA SOLICITUD EN ATTACHMENT#\r\n\
+  _app_id = @application[\"id\"]\r\n\
+  result = WebserviceConsumer.get('/service/dij_helper/call.json?method=provincia_print_design&app_id=' + \"#{_app_id}\").parsed_response\r\n\
+  provincia = result[\"response\"][\"provincia\"]\r\n\
+  form_data.set(\"datos_del_solicitante.datos_de_ubicacion.provincia\", provincia)"
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: "////////////////////// Al seleccionar que no se tiene version en fisico deshabilitar firma del director\r\n\
+  $(document).ready(function(){\r\n   valor = $(\"#field_retiro_record_policivo_retiro_record_policivo_version_fisico\");\r\n    if ($(valor).html() == \"NO\") {\r\n       $(\"#field_retiro_record_policivo_retiro_record_policivo_retiro_rp\").parent().parent().hide();\r\n       $(\"#field_retiro_record_policivo_retiro_record_policivo_retiro_record_policivo\").parent().parent().hide();\r\n       $(\"#field_retiro_record_policivo_firma_director_si_no\").parents(\".part-box\").hide();\r\n    }\r\n\
+  });\r\n\
+  \r\n\
+  ////Validaci\xC3\xB3n para ocultar seccion de confirmaci\xC3\xB3n si y motivo de solicitud\r\n\
+  $(document).ready(function(){\r\n\
+  \tvalor3 = $(\"#field_tipo_de_persona_dij_es_titular_o_no_si_no\");\r\n\
+  \tif($(valor3).html() == \"S\xC3\x8D\"){\r\n\
+  \t\t$(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().hide();\r\n\
+  \t}\r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  campoTipoDoc = $(\"#field_datos_del_titular_rp_datos_basicos_de_persona_natural_tipo_de_documento\");\r\n  campoTipoNac = $(\"#field_datos_del_titular_rp_datos_basicos_de_persona_natural_tipo_de_nacionalidad\");\r\n  campoNac   = $(\"#field_datos_del_titular_rp_datos_basicos_de_persona_natural_nacionalidad\");\r\n  if ($(campoTipoDoc).html() == \"Cedula\") {\r\n    $(campoNac).parent().parent().hide();\r\n    $(campoTipoNac).parent().parent().show();\r\n    $(campoTipoNac).html(\"Nacional\");\r\n  } else if ($(campoTipoDoc).html() == \"Pasaporte\") {\r\n    $(campoTipoNac).parent().parent().hide();\r\n    $(campoNac).html(\"Extranjero\");\r\n    $(campoNac).parent().parent().show();\r\n  }\r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  \ttipo_de_solicitante = $(\"#field_tipo_de_persona_dij_tipo_de_solicitante_juridico_tipo_de_solicitante_juridico\");\r\n\
+  \tprovincia = $(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\");\r\n\
+  \tmotivo_auto = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad\");\r\n\
+  \ttipo_auto = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad\");\r\n\
+  $( function() {\r\n\
+  if ($(tipo_de_solicitante).html() == \"MINREX\") {\r\n\
+  \t\t\t\t$(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"Panam\xC3\xA1\");\r\n\
+  \t\t\t\tprovincia.attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().show();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().show();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().hide();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().hide();\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').val('');\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').val('');\r\n\
+  \t\t\t} else if ($(tipo_de_solicitante).html() == \"Autoridades\") {\r\n\
+  \t\t\t\t//$(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"\");\r\n\
+  \t\t\t\t//provincia.removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().show();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().show();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().hide();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().hide();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').val('');\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').val('');\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n\
+  \t\t\t\t// $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n\
+  \t\t\t}\r\n\
+  \t\t\tif ($(motivo_auto).html() == \"Otros\") {\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().show();\r\n\
+  \t\t\t}else{\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n\
+  \t\t\t}\r\n\
+  \t\t\tif ($(tipo_auto).html() == \"Otros\") {\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().show();\r\n\
+  \t\t\t} else{\r\n\
+  \t\t\t\t$('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n\
+  \t\t\t}\r\n\
+  \t});\r\n\
+  });"

@@ -1,0 +1,19 @@
+--- 
+id: 3061
+section_id: 274
+part_id: 388
+name: Tipo de Co-participante
+created_at: 2014-03-27 19:16:25 Z
+updated_at: 2014-03-27 19:16:25 Z
+label: Tipo de Co-participante
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3565\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

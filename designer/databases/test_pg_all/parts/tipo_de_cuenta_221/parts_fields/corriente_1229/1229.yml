@@ -1,0 +1,30 @@
+--- 
+id: 1229
+part_id: 221
+field_id: 79
+name: Corriente
+created_at: 2012-05-07 14:35:03 Z
+updated_at: 2017-06-04 00:21:38.176014 Z
+label: Corriente
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6eab18b6-1f60-4ffd-8dd8-b7b73fb95c45
+version: 20170603-202138

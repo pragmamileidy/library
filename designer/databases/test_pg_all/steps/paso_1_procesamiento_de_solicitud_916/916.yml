@@ -1,0 +1,19 @@
+--- 
+id: 916
+name: Paso 1 - Procesamiento de Solicitud
+label: Procesamiento de Solicitud
+description: Procesamiento de Solicitud
+fill_step_id: 468
+created_at: 2012-08-30 18:12:26 Z
+updated_at: 2012-08-30 19:02:41 Z
+include: "{\"1996\":{\"580\":{\"528\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"548\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"763\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1997\":{\"2281\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2282\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2283\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2284\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2285\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2286\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2287\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2288\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2289\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2000\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

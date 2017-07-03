@@ -1,0 +1,19 @@
+--- 
+id: 2428
+section_id: 421
+part_id: 491
+name: notificacion_Evaluacion
+created_at: 2013-01-14 15:41:59 Z
+updated_at: 2014-01-14 15:42:31 Z
+label: "Notificaciones de Evaluaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2656\":{},\"2657\":{},\"2658\":{},\"2659\":{},\"2660\":{},\"2661\":{},\"2662\":{},\"2663\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

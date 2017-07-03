@@ -1,0 +1,42 @@
+--- 
+id: 1
+name: Paso 1 - Datos del Solicitante
+label: "Informaci\xC3\xB3n de la Solicitud"
+description: <br><strong style="color:#0F698D"> Verifique los datos registrados en el sistema.</strong>
+fill_step_id: 1
+created_at: 2016-10-04 22:07:57.337432 Z
+updated_at: 2016-11-14 20:54:07.595228 Z
+include: "{\"2\":{\"2\":{\"3\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"4\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"6\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"3\":{\"12\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"10\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"11\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"3\":{\"4\":{\"7\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"8\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}},\"5\":{\"12\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"10\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"11\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "#::: Generador de Consecutivos :::#\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n\
+  result = WebserviceConsumer.get('/consecutive/generador_pagoboletas/generate.json').parsed_response\r\n\
+  _consecutivo = result[\"response\"]\r\n\
+  _consecutivo = \"#{@application[\"id\"]}-\"+\"#{_consecutivo[\"value\"]}\"\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\",_consecutivo)\r\n\
+  \r\n\
+  #::: Llenado de Datos del Solicitante\r\n\
+  #::: DV: Modificada sentencia 04/10/2016 Datos del Solcitante o Representante legal\r\n\
+  _person = @application[\"person_id\"]\r\n\
+  _owner = @application[\"owner_person_id\"]\r\n\
+  if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n    if _person == _owner\r\n        tipodoc = !@owner[\"national_id\"].blank? ? \"C\xC3\xA9dula\" : \"Pasaporte\"\r\n        numdoc = !@owner[\"national_id\"].blank? ? @owner[\"national_id\"] : @owner[\"passport\"]\r\n        form_data.set(\"datos_de_la_persona.datos_de_la_persona.tipo_documento_persona_natural\",tipodoc)\r\n        form_data.set(\"datos_de_la_persona.datos_de_la_persona.nro_de_documento\",numdoc)\r\n        nombre = @owner[\"first_name\"]+\" \"+@owner[\"second_name\"]+\" \"+@owner[\"last_name\"]+\" \"+@owner[\"second_last_name\"]\r\n        form_data.set(\"datos_de_la_persona.datos_de_la_persona.nombre_completo\",nombre)\r\n    else\r\n        _idpersona = @application[\"person_id\"].to_s\r\n        result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?person_id=' + \"#{_idpersona}\" + '&include_all=true').parsed_response\r\n        _hash = result[\"hash\"]\r\n        _persona = _hash[\"response\"]\r\n        tdoc = _persona [\"person_gov_id_type\"] == \"national_id\" ? \"C\xC3\xA9dula\" : \"Pasaporte\"\r\n        form_data.set(\"datos_de_la_persona.representante.tipo_de_documento\",tdoc)\r\n        form_data.set(\"datos_de_la_persona.representante.nro_de_documento\", _persona[\"person_gov_id_number\"])\r\n        form_data.set(\"datos_de_la_persona.representante.nombre_completo\", _persona[\"name\"])\r\n\
+  \r\n        tipodoc = !@owner[\"national_id\"].blank? ? \"C\xC3\xA9dula\" : \"Pasaporte\"\r\n        numdoc = !@owner[\"national_id\"].blank? ? @owner[\"national_id\"] : @owner[\"passport\"]\r\n        form_data.set(\"datos_de_la_persona.datos_de_la_persona.tipo_documento_persona_natural\",tipodoc)\r\n        form_data.set(\"datos_de_la_persona.datos_de_la_persona.nro_de_documento\",numdoc)\r\n        nombre = @owner[\"first_name\"]+\" \"+@owner[\"second_name\"]+\" \"+@owner[\"last_name\"]+\" \"+@owner[\"second_last_name\"]\r\n        form_data.set(\"datos_de_la_persona.datos_de_la_persona.nombre_completo\",nombre)\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  #::: DV: 04/10/2016 Datos del Solcitante Juridico o Representante legal\r\n\
+  if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n    form_data.set(\"datos_de_la_empresa.datos_de_la_empresa.nro_de_ruc\",@owner[\"tax_id\"])\r\n    form_data.set(\"datos_de_la_empresa.datos_de_la_empresa.razon_social\",@owner[\"name\"])\r\n\
+  \r\n    _idpersona = @application[\"person_id\"].to_s\r\n    result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?person_id=' + \"#{_idpersona}\" + '&include_all=true').parsed_response\r\n    _hash = result[\"hash\"]\r\n    _persona = _hash[\"response\"]\r\n    tdoc = _persona [\"person_gov_id_type\"] == \"national_id\" ? \"C\xC3\xA9dula\" : \"Pasaporte\"\r\n    form_data.set(\"datos_de_la_empresa.representante.tipo_de_documento\",tdoc)\r\n    form_data.set(\"datos_de_la_empresa.representante.nro_de_documento\", _persona[\"person_gov_id_number\"])\r\n    form_data.set(\"datos_de_la_empresa.representante.nombre_completo\", _persona[\"name\"])\r\n\
+  end"
+on_transition: ""
+views: 
+back_step: ""
+next_step: "Paso 2 - Informaci\xC3\xB3n de Boletas por pagar"
+position: 1
+ajax_calls: "//::: DV: Cambiar nombre secci\xC3\xB3n y color  paso 1::://\r\n\
+  $(document).ready(function(){  \r\n  $( function() {\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Datos de la Persona que debe pagar la boleta\") {  \r\n        $(this).html(\"Datos de la Persona que debe pagar la boleta\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    var hint = \"Datos de la Persona que debe pagar la boleta\";\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == hint) {  \r\n        $(this).html(hint).css({'color':'#0F698D','font-weight':'bold'}); \r\n      }\r\n    });\r\n  })\r\n\
+  \r\n  $( function() {\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == \"Secci\xC3\xB3n: Informaci\xC3\xB3n de la Persona Jur\xC3\xADdica\") {  \r\n        $(this).html(\"Datos de la Persona Jur\xC3\xADdica que debe pagar la boleta\"); \r\n      }\r\n    });\r\n  });\r\n\
+  \r\n  $( function() {\r\n    var hint = \"Datos de la Persona Jur\xC3\xADdica que debe pagar la boleta\";\r\n    $(\"div\").each (function(){\r\n      if ($(this).html().trim() == hint) {  \r\n        $(this).html(hint).css({'color':'#0F698D','font-weight':'bold'}); \r\n      }\r\n    });\r\n  })\r\n\
+  });"

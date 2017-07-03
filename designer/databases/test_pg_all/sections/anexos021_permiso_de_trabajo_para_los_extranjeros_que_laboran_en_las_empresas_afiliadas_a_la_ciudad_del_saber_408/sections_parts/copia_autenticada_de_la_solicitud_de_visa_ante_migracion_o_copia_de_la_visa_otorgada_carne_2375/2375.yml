@@ -1,0 +1,19 @@
+--- 
+id: 2375
+section_id: 408
+part_id: 38
+name: "Copia autenticada de la solicitud de visa ante Migraci\xC3\xB3n o copia de la visa otorgada (Carn\xC3\xA9)."
+created_at: 2012-09-03 21:53:20 Z
+updated_at: 2013-08-30 18:55:24 Z
+label: "Copia autenticada de la solicitud de visa ante Migraci\xC3\xB3n o copia de la visa otorgada (Carnet)."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

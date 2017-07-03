@@ -1,0 +1,30 @@
+--- 
+id: 3890
+part_id: 736
+field_id: 10
+name: "N\xC3\xBAmero de Identificaci\xC3\xB3n"
+created_at: 2015-02-18 20:41:18 Z
+updated_at: 2017-06-04 00:25:21.686994 Z
+label: "N\xC3\xBAmero de Identificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b7971216-b440-4925-93fb-edc086036dd6
+version: 20170603-202521

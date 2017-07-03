@@ -1,0 +1,30 @@
+--- 
+id: 295
+name: Tipo de Archivo
+description: Formato en el que desean los archivos .csv o .xls
+version: 
+status: Draft
+label: Tipo de Archivo
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-07-10 17:16:21 Z
+updated_at: 2013-08-01 16:32:22 Z
+values_list: "\" \",\".CSV\",\".XLS\""
+keys_list: "\" \",\".CSV\",\".XLS\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

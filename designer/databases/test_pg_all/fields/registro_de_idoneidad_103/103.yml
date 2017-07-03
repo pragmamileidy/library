@@ -1,0 +1,30 @@
+--- 
+id: 103
+name: Registro de Idoneidad
+description: "n\xC3\xBAmero de idoneidad del Regente Farmac\xC3\xA9utico"
+version: 
+status: Draft
+label: "N\xC3\xBAmero de Registro de idoneidad"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-11 21:55:24 Z
+updated_at: 2012-05-17 23:14:44 Z
+values_list: ""
+keys_list: ""
+field_type: string
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

@@ -1,0 +1,294 @@
+--- 
+id: 52
+position: 1
+selector: "{\"743\":{\"656\":{\"758\":{},\"759\":{}}},\"739\":{\"595\":{\"567\":{},\"566\":{},\"568\":{}},\"597\":{\"805\":{},\"585\":{},\"586\":{},\"594\":{}}},\"740\":{\"595\":{\"566\":{}},\"597\":{\"805\":{},\"585\":{},\"586\":{},\"594\":{}}},\"744\":{\"1174\":{\"1019\":{},\"1020\":{},\"1021\":{},\"1022\":{}}},\"745\":{\"1175\":{\"1023\":{},\"1024\":{}}},\"1248\":{\"1779\":{\"158\":{}}},\"747\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"805\":{},\"585\":{},\"586\":{},\"594\":{}}},\"748\":{\"595\":{\"567\":{},\"566\":{}},\"597\":{\"805\":{},\"585\":{},\"586\":{},\"594\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 69px;
+  	left: 725px;
+  	width: 270px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 43px;
+  	left: 724px;
+  	width: 297px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelreexportadorjurdica_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 286px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelreexportadorjurdica_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 323px;
+  	left: 276px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelreexportadorjurdica_datosdelaempresa_dgitoverficador {
+  	position: absolute;
+  	top: 358px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelreexportadorjurdica_direccin_direccin {
+  	position: absolute;
+  	top: 393px;
+  	left: 273px;
+  	width: 684px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelreexportadorjurdica_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 428px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelreexportadorjurdica_direccin_nmerodefax {
+  	position: absolute;
+  	top: 286px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelreexportadorjurdica_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 358px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdezonalibrezonafranca_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 516px;
+  	left: 251px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdezonalibrezonafranca_direccin_direccin {
+  	position: absolute;
+  	top: 555px;
+  	left: 252px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdezonalibrezonafranca_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 593px;
+  	left: 703px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdezonalibrezonafranca_direccin_nmerodefax {
+  	position: absolute;
+  	top: 631px;
+  	left: 251px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdezonalibrezonafranca_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 593px;
+  	left: 251px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .fechasydocumentoentradasalidademercancazonalibre_fechasydocumentoentradasalidademercancazonalibre_fechadeingreso {
+  	position: absolute;
+  	top: 714px;
+  	left: 264px;
+  	width: 224px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .fechasydocumentoentradasalidademercancazonalibre_fechasydocumentoentradasalidademercancazonalibre_nmeroderegistrodeentradadelamercanca {
+  	position: absolute;
+  	top: 713px;
+  	left: 702px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .fechasydocumentoentradasalidademercancazonalibre_fechasydocumentoentradasalidademercancazonalibre_fechadesalida {
+  	position: absolute;
+  	top: 748px;
+  	left: 265px;
+  	width: 223px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .fechasydocumentoentradasalidademercancazonalibre_fechasydocumentoentradasalidademercancazonalibre_nmeroderegistrodesalidadelamercanca {
+  	position: absolute;
+  	top: 747px;
+  	left: 702px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .documentosdeingresosalidaazonalibre_documentosdeingresosalidaazonalibre_documentodeingreso {
+  	position: absolute;
+  	top: 830px;
+  	left: 264px;
+  	width: 255px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .documentosdeingresosalidaazonalibre_documentosdeingresosalidaazonalibre_documentodesalida {
+  	position: absolute;
+  	top: 830px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .pasdeorigendelasmercancassegncertificadodeorigen_pas_pas {
+  	position: absolute;
+  	top: 888px;
+  	left: 262px;
+  	width: 257px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelexportador_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 966px;
+  	left: 287px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelexportador_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 998px;
+  	left: 288px;
+  	width: 669px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelexportador_direccin_direccin {
+  	position: absolute;
+  	top: 1030px;
+  	left: 288px;
+  	width: 668px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelexportador_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 1062px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelexportador_direccin_nmerodefax {
+  	position: absolute;
+  	top: 1094px;
+  	left: 288px;
+  	width: 223px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelexportador_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 1062px;
+  	left: 287px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportador_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 1172px;
+  	left: 288px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportador_datosdelaempresa_nombre {
+  	position: absolute;
+  	top: 1205px;
+  	left: 288px;
+  	width: 669px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportador_direccin_direccin {
+  	position: absolute;
+  	top: 1237px;
+  	left: 288px;
+  	width: 671px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportador_direccin_nmerodetelfono {
+  	position: absolute;
+  	top: 1268px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportador_direccin_nmerodefax {
+  	position: absolute;
+  	top: 1301px;
+  	left: 286px;
+  	width: 224px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelimportador_direccin_correoelectrnico {
+  	position: absolute;
+  	top: 1269px;
+  	left: 288px;
+  	width: 224px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: ""
+print_design_id: 31
+created_at: 2012-04-25 15:28:08 Z
+updated_at: 2015-10-19 02:49:39 Z
+instances_selector: "{\"743\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"739\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"},\"568\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"740\":{\"value\":\"\",\"595\":{\"value\":\"\",\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"744\":{\"value\":\"\",\"1174\":{\"value\":\"\",\"1019\":{\"value\":\"\"},\"1020\":{\"value\":\"\"},\"1021\":{\"value\":\"\"},\"1022\":{\"value\":\"\"}}},\"745\":{\"value\":\"\",\"1175\":{\"value\":\"\",\"1023\":{\"value\":\"\"},\"1024\":{\"value\":\"\"}}},\"1248\":{\"value\":\"\",\"1779\":{\"value\":\"\",\"158\":{\"value\":\"\"}}},\"747\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}},\"748\":{\"value\":\"\",\"595\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"566\":{\"value\":\"\"}},\"597\":{\"value\":\"\",\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"586\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}}}"
+size: ""

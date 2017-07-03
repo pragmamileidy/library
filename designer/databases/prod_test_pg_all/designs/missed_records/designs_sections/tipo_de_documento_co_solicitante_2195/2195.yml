@@ -1,0 +1,16 @@
+--- 
+id: 2195
+design_id: 168
+section_id: 271
+name: Tipo de Documento Co-solicitante
+created_at: 2012-10-29 15:52:06 Z
+updated_at: 2012-10-29 15:52:06 Z
+label: Datos del Co-solicitante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1786\":{\"1632\":{\"required\":\"unrequired\"},\"1633\":{\"required\":\"unrequired\"}}}"
+hint: "Es obligatorio un Co-solicitante si el solicitante indic\xC3\xB3 que es tipo Arquitecto."
+help: ""
+order_input: 6

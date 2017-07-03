@@ -1,0 +1,30 @@
+--- 
+id: 791
+part_id: 119
+field_id: 10
+name: "Profesi\xC3\xB3n"
+created_at: 2012-03-21 19:19:56 Z
+updated_at: 2017-06-04 00:21:25.598039 Z
+label: "Profesi\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 100
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e5c936d8-5216-41f3-bf60-d447dcd41fe0
+version: 20170603-202125

@@ -1,0 +1,17 @@
+--- 
+id: 526
+name: "Datos de Ubicaci\xC3\xB3n de la Finca"
+description: "Datos de Ubicaci\xC3\xB3n Cortos, esta parte se creo especificamente para P5 aunque puede ser utilisada para otros formulario que lo requieran"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-17 15:57:16 Z
+updated_at: 2013-01-17 18:59:37 Z
+label: ""
+hint: ""
+view_class: horizontal
+serial: 

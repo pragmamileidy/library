@@ -1,0 +1,30 @@
+--- 
+id: 334
+name: Tipo de discapacidad
+description: Tipo de discapacidad
+version: 
+status: Draft
+label: Tipo de discapacidad
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2015-02-17 06:15:51 Z
+updated_at: 2015-02-17 06:15:51 Z
+values_list: "\" \",\"F\xC3\xADsica\", \"Ps\xC3\xADquica\", \"Sensorial\", \"Mental\""
+keys_list: "\" \",\"F\xC3\xADsica\", \"Ps\xC3\xADquica\", \"Sensorial\", \"Mental\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 3370-7467-6523-7287-4898

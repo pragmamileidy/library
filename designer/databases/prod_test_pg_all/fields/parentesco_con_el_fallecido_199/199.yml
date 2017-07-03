@@ -1,0 +1,30 @@
+--- 
+id: 199
+name: Parentesco con el Fallecido
+description: "Hijos (as), viudo o viuda, Compa\xC3\xB1era (o), madre o padre, sobrevivientes en el extranjero"
+version: 
+status: Draft
+label: Parentesco con el Fallecido
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-25 14:15:04 Z
+updated_at: 2015-08-21 20:35:14 Z
+values_list: "\"\",\"Hijos (as)\",\"Viudo o viuda\",\"Compa\xC3\xB1era (o)\",\"Madre o Padre\",\"Sobrevivientes en el extranjero\""
+keys_list: "\"\",\"Hijos (as)\",\"Viudo o viuda\",\"Compa\xC3\xB1era (o)\",\"Madre o Padre\",\"Sobrevivientes en el extranjero\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 9615-3264-3803-1371-3565

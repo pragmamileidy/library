@@ -1,0 +1,30 @@
+--- 
+id: 681
+part_id: 138
+field_id: 67
+name: Prueba campo 7 tipo radio 6 6 6 6
+created_at: 2012-03-13 22:18:14 Z
+updated_at: 2017-06-04 00:29:30.162988 Z
+label: Prueba campo 7 tipo radio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Prueba campo 7 tipo radio
+help: Prueba campo 7 tipo radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bd43244e-4494-4e4e-868e-1a825dd3168c
+version: 20170603-202930

@@ -1,0 +1,30 @@
+--- 
+id: 939
+part_id: 29
+field_id: 10
+name: Motor
+created_at: 2012-04-17 17:13:32 Z
+updated_at: 2017-06-04 00:30:30.308501 Z
+label: Nro. de Motor
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a4c03447-ca20-48c8-92ee-2f70cf0729e1
+version: 20170603-203030

@@ -1,0 +1,30 @@
+--- 
+id: 901
+part_id: 183
+field_id: 24
+name: Codeudor Solidario
+created_at: 2012-03-28 20:55:51 Z
+updated_at: 2017-06-04 00:21:29.488939 Z
+label: Codeudor Solidario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7e980700-1802-4b56-a101-85d5b9d4a91c
+version: 20170603-202129

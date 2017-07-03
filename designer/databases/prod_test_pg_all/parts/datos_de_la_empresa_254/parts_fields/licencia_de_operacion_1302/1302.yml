@@ -1,0 +1,30 @@
+--- 
+id: 1302
+part_id: 254
+field_id: 94
+name: licencia de operacion
+created_at: 2012-05-10 23:08:07 Z
+updated_at: 2017-06-04 00:21:40.244028 Z
+label: licencia de operacion
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fd6e9028-dd4a-402d-9fda-1ff9074b7328
+version: 20170603-202140

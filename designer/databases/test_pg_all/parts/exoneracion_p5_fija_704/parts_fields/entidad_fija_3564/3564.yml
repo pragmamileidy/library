@@ -1,0 +1,30 @@
+--- 
+id: 3564
+part_id: 704
+field_id: 314
+name: Entidad Fija
+created_at: 2014-02-27 14:41:37 Z
+updated_at: 2017-06-04 00:23:14.380219 Z
+label: Entidad Fija
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Seleccione en caso de exonerar esta entidad de pago
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fefeb4e1-dc21-4ed0-bae7-49aad76aa919
+version: 20170603-202314

@@ -1,0 +1,30 @@
+--- 
+id: 2949
+part_id: 546
+field_id: 10
+name: Apellido de Casada
+created_at: 2013-03-05 20:26:38 Z
+updated_at: 2017-06-04 00:30:07.063255 Z
+label: Apellido de Casada
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 50
+rows: 
+min_value: 
+max_value: 
+format: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s\\-'\xC2\xB4.]+$/"
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3ae42634-a8e6-4fa4-a191-bd605b4fe3af
+version: 20170603-203007

@@ -1,0 +1,30 @@
+--- 
+id: 1003
+part_id: 198
+field_id: 31
+name: Si no es propietario, copia de poder notariado
+created_at: 2012-04-20 16:28:19 Z
+updated_at: 2017-06-04 00:29:31.080902 Z
+label: Si no es propietario, copia de poder notariado
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b66a0cc8-7bf5-43d8-94e5-d1028653270d
+version: 20170603-202931

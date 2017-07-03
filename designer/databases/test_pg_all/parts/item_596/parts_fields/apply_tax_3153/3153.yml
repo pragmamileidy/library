@@ -1,0 +1,30 @@
+--- 
+id: 3153
+part_id: 596
+field_id: 273
+name: Apply Tax
+created_at: 2013-04-08 21:38:21 Z
+updated_at: 2017-06-04 00:28:31.090314 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bbba53dd-431f-4512-a892-34ae24018dbe
+version: 20170603-202831

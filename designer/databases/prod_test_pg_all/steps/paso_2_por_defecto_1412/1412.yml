@@ -1,0 +1,52 @@
+--- 
+id: 1412
+name: Paso 2 - Por Defecto
+label: Por Defecto
+description: ""
+fill_step_id: 703
+created_at: 2013-05-24 18:35:49 Z
+updated_at: 2013-05-24 18:35:50 Z
+include: "{\"2885\":{\"2474\":{\"239\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2475\":{\"2747\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2748\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2476\":{\"2787\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2788\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2789\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2790\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2791\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2792\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2477\":{\"2757\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2758\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2759\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2760\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2761\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2762\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2763\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2765\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2766\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2767\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2768\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2769\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2770\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2771\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save,print_form
+on_becoming: |-
+  #Llenar campos TAG
+  
+  form_data.set("defaults5.tag.introduzca_la_informacion", "defaults")
+  
+  #Llenar campos  EMAIL_SENDER
+  
+  form_data.set("defaults5.email_sender.email_sender_for_persons", "no-reply@institucion.gob.pa")
+  form_data.set("defaults5.email_sender.email_sender_for_agents", "no-reply@institucion.gob.pa")
+  
+  #Llenar campos ROLNAME_ID
+  
+  form_data.set("defaults5.roles_recibir.rolename_recibir1", "MPAPL.RECEPCION1")
+  form_data.set("defaults5.roles_recibir.rolename_recibir2", "MPAPL.RECEPCION2")
+  form_data.set("defaults5.roles_recibir.rolename_recibir3", "MPAPL.RECEPCION3")
+  form_data.set("defaults5.roles_recibir.rolename_recibir4", "MPAPL.RECEPCION4")
+  form_data.set("defaults5.roles_recibir.rolename_recibir5", "MPAPL.RECEPCION5")
+  form_data.set("defaults5.roles_recibir.rolename_recibir6", "MPAPL.RECEPCION6")
+  
+  form_data.set("defaults5.roles_procesar.rolename_procesar1", "MPAPL.PROCESAMIENTO1")
+  form_data.set("defaults5.roles_procesar.rolename_procesar2", "MPAPL.PROCESAMIENTO2")
+  form_data.set("defaults5.roles_procesar.rolename_procesar3", "MPAPL.PROCESAMIENTO3")
+  form_data.set("defaults5.roles_procesar.rolename_procesar4", "MPAPL.PROCESAMIENTO4")
+  form_data.set("defaults5.roles_procesar.rolename_procesar5", "MPAPL.PROCESAMIENTO5")
+  form_data.set("defaults5.roles_procesar.rolename_procesar6", "MPAPL.PROCESAMIENTO6")
+  form_data.set("defaults5.roles_procesar.rolename_procesar7", "MPAPL.PROCESAMIENTO7")
+  form_data.set("defaults5.roles_procesar.rolename_procesar8", "MPAPL.PROCESAMIENTO8")
+  form_data.set("defaults5.roles_procesar.rolename_procesar9", "MPAPL.PROCESAMIENTO9")
+  form_data.set("defaults5.roles_procesar.rolename_procesar10", "MPAPL.PROCESAMIENTO10")
+  form_data.set("defaults5.roles_procesar.rolename_procesar11", "MPAPL.PROCESAMIENTO11")
+  form_data.set("defaults5.roles_procesar.rolename_procesar12", "MPAPL.PROCESAMIENTO12")
+  form_data.set("defaults5.roles_procesar.rolename_procesar13", "MPAPL.PROCESAMIENTO13")
+  form_data.set("defaults5.roles_procesar.rolename_procesar14", "MPAPL.PROCESAMIENTO14")
+  form_data.set("defaults5.roles_procesar.rolename_procesar15", "MPAPL.PROCESAMIENTO15")
+on_transition: ""
+views: 
+back_step: Paso 1 - Parametros Variables
+next_step: Paso 3 - Por Defecto
+position: 1
+ajax_calls: ""

@@ -1,0 +1,30 @@
+--- 
+id: 1865
+part_id: 351
+field_id: 160
+name: Nombre del Banco
+created_at: 2012-06-15 20:51:17 Z
+updated_at: 2017-06-04 00:24:16.959834 Z
+label: Nombre del Banco
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1f335a35-1db3-4f5e-ac5f-5cd7b8183bda
+version: 20170603-202416

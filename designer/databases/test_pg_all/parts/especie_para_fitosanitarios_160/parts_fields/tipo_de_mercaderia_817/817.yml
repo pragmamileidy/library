@@ -1,0 +1,30 @@
+--- 
+id: 817
+part_id: 160
+field_id: 10
+name: "Tipo de Mercader\xC3\xADa"
+created_at: 2012-03-24 21:28:07 Z
+updated_at: 2017-06-04 00:26:58.115306 Z
+label: "Tipo de Mercader\xC3\xADa"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 48007e75-55f1-467b-a640-cbd68f70d943
+version: 20170603-202658

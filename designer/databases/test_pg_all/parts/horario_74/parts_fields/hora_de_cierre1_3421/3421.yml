@@ -1,0 +1,30 @@
+--- 
+id: 3421
+part_id: 74
+field_id: 300
+name: Hora de Cierre1
+created_at: 2013-08-14 13:45:04 Z
+updated_at: 2017-06-04 00:25:09.233183 Z
+label: Hora de Cierre
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de hora v\xC3\xA1lido, formato hh:mm  ma\xC3\xB1ana (AM) y tarde (PM). Ejemplo: 05:30 pm"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f116c881-5646-4bd0-996a-fbf2f848225c
+version: 20170603-202509

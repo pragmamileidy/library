@@ -1,0 +1,30 @@
+--- 
+id: 335
+name: Cobertura de Servicio Solicitado
+description: Cobertura de Servicio Solicitado
+version: 
+status: Draft
+label: Cobertura de Servicio Solicitado
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2015-02-17 06:29:33 Z
+updated_at: 2015-02-17 06:29:33 Z
+values_list: "\" \",\"Hospitalizaci\xC3\xB3n y Cirug\xC3\xADa\", \"Contingencias Extremas\", \"Maternidad\", \"Servicio Odontol\xC3\xB3gico\", \"Asistencia de Viaje\""
+keys_list: "\" \",\"Hospitalizaci\xC3\xB3n y Cirug\xC3\xADa\", \"Contingencias Extremas\", \"Maternidad\", \"Servicio Odontol\xC3\xB3gico\", \"Asistencia de Viaje\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 9893-1632-9285-0812-9379

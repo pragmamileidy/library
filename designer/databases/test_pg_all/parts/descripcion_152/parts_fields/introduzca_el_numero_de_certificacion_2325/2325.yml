@@ -1,0 +1,30 @@
+--- 
+id: 2325
+part_id: 152
+field_id: 10
+name: "Introduzca el n\xC3\xBAmero de Certificaci\xC3\xB3n"
+created_at: 2012-08-09 18:48:21 Z
+updated_at: 2017-06-04 00:31:30.752367 Z
+label: "Introduzca el n\xC3\xBAmero de Certificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[1-9]$/
+values_list: ""
+keys_list: ""
+order_input: 16
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fbea568a-d6e4-4b2e-9722-8e67d3f452b1
+version: 20170603-203130

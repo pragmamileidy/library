@@ -1,0 +1,30 @@
+--- 
+id: 3730
+part_id: 675
+field_id: 10
+name: picarsolicitud
+created_at: 2014-07-31 13:48:14 Z
+updated_at: 2017-06-04 00:28:36.267014 Z
+label: Picar solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4db6f776-8175-4f96-aaed-36764b65de02
+version: 20170603-202836

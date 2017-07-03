@@ -1,0 +1,30 @@
+--- 
+id: 3692
+part_id: 726
+field_id: 5
+name: Email
+created_at: 2014-06-25 19:09:45 Z
+updated_at: 2017-06-04 00:27:46.207724 Z
+label: "Correo Electr\xC3\xB3nico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Favor indicar, solo s\xC3\xAD desea recibir el r\xC3\xA9cord policivo por email"
+help: "Introduzca un valor v\xC3\xA1lido de direcci\xC3\xB3n de correo electr\xC3\xB3nico. Ejemplo: nombre@dominio.com"
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 39bf3c43-565f-4fe8-bc71-9c9d50b9e53a
+version: 20170603-202746

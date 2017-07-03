@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  background-image: url(RUTA_IMAGEN.png);
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+
+  .datosdelsolicitante_datosdeubicacin_provincia {
+	position: absolute;
+	top: 800px;
+	left: 230px;
+	width: 225px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_datosbsicosdepersonanatural_cdulapasaporte {
+	position: absolute;
+	top: 571px;
+	left: 634px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_datosbsicosdepersonanatural_nombrecompleto {
+	position: absolute;
+	top: 571px;
+	left: 101px;
+	width: 375px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_codigounicodij_codigounico {
+	position: absolute;
+	top: 306px;
+	left: 170px;
+	width: 168px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_datosdesolicitud_fechadesolicitud {
+	position: absolute;
+	top: 60px;
+	left: 51px;
+	width: 232px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .datosdeltitularrp_datosdesolicitud_numerodesolicitud {
+	position: absolute;
+	top: 58px;
+	left: 753px;
+	width: 215px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .mensajedij_mensajedij_imprimirsinsentencia {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 232px;
+    height: 20px;
+    overflow:hidden;
+  }
+  .codigounicodij_codigounicodij_year {
+	position: absolute;
+	top: 800px;
+	left: 847px;
+	width: 89px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .codigounicodij_codigounicodij_mes {
+	position: absolute;
+	top: 800px;
+	left: 682px;
+	width: 141px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .codigounicodij_codigounicodij_dia {
+	position: absolute;
+	top: 801px;
+	left: 503px;
+	width: 61px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .directordij_datosdelfuncionariogenerico_usuario {
+	position: absolute;
+	top: 380px;
+	left: 185px;
+	width: 378px;
+	height: 20px;
+	overflow: hidden;
+  }
+  .directordij_datosdelfuncionariogenerico_usuario2 {
+	position: absolute;
+	top: 1104px;
+	left: 432px;
+	width: 283px;
+	height: 20px;
+	overflow: hidden;
+  }

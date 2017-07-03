@@ -1,0 +1,19 @@
+--- 
+id: 2118
+section_id: 369
+part_id: 38
+name: Cheque Certificado o de Gerencia
+created_at: 2012-08-09 20:07:11 Z
+updated_at: 2017-02-15 17:23:36.645494 Z
+label: Cheque Certificado o de Gerencia expedido a favor del Ministerio de Comercio e Industrias
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Favor ver cuadro de "Ayuda"
+help: "Cheque Certificado o de Gerencia expedido a favor del Ministerio de Comercio e Industrias, por un monto de trescientos cincuenta balboas (B/.350.00). Que cubre la taza de expedici\xC3\xB3n de autorizaci\xC3\xB3n y la tasa de fiscalizaci\xC3\xB3n del a\xC3\xB1o en curso"
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 20

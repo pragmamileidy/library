@@ -1,0 +1,30 @@
+--- 
+id: 843
+part_id: 67
+field_id: 17
+name: "Especies animales a las que se destina, uso espec\xC3\xADfico en instalaciones, equipos, etc."
+created_at: 2012-03-26 19:36:58 Z
+updated_at: 2017-06-04 00:25:41.261402 Z
+label: "Especies animales a las que se destina, uso espec\xC3\xADfico en instalaciones, equipos, etc."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Especies animales a las cuales se destina el producto farmac\xC3\xA9utico"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e3b25759-c3bd-47f1-9616-5836fb0aca3a
+version: 20170603-202541

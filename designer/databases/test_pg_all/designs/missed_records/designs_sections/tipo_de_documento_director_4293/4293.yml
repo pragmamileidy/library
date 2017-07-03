@@ -1,0 +1,16 @@
+--- 
+id: 4293
+design_id: 188
+section_id: 546
+name: Tipo de Documento Director
+created_at: 2014-04-24 16:53:23 Z
+updated_at: 2014-04-24 22:19:42 Z
+label: Tipo de Documento del Director
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3141\":{\"3601\":{\"required\":\"required\"},\"3602\":{\"required\":\"required\"},\"3603\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 2

@@ -1,0 +1,30 @@
+--- 
+id: 2888
+part_id: 513
+field_id: 17
+name: CorregirDatos
+created_at: 2013-01-29 17:54:35 Z
+updated_at: 2017-06-04 00:22:33.622199 Z
+label: Corregir Datos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo proceso 3
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a8321fe8-8070-47f7-99b9-2e6d8bf0a1ca
+version: 20170603-202233

@@ -1,0 +1,16 @@
+--- 
+id: 1419
+design_id: 110
+section_id: 296
+name: Detalle de Valores de Balboas
+created_at: 2012-06-14 16:43:39 Z
+updated_at: 2013-03-25 15:03:28 Z
+label: Detalle de Valores de Balboas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1889\":{\"1802\":{\"required\":\"required\"},\"498\":{\"required\":\"required\"},\"499\":{\"required\":\"unrequired\"},\"500\":{\"required\":\"required\"},\"501\":{\"required\":\"unrequired\"},\"502\":{\"required\":\"required\"},\"503\":{\"required\":\"unrequired\"},\"504\":{\"required\":\"unrequired\"},\"1803\":{\"required\":\"unrequired\"},\"1804\":{\"required\":\"required\"},\"1805\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

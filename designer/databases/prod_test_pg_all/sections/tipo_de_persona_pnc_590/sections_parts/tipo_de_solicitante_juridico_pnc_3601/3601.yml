@@ -1,0 +1,21 @@
+--- 
+id: 3601
+section_id: 590
+part_id: 745
+name: Tipo de Solicitante Juridico PNC
+created_at: 2016-03-01 18:10:45.384666 Z
+updated_at: 2016-03-01 18:10:45.384666 Z
+label: Tipo de Solicitante Juridico
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  juridico= form_data.get("datos_del_propietario_tramite_juridico.datos_persona_juridica.nit")
+  @owner["kind_of_user_type"] == "JuridicalPerson" || !juridico.blank?
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

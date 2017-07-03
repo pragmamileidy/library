@@ -1,0 +1,17 @@
+--- 
+id: 289
+name: "Autorizaci\xC3\xB3n"
+description: "Datos del motivo de autorizaci\xC3\xB3n y el tiempo de la misma para LNB - Solicitud de Autorizaci\xC3\xB3n Temporal"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-05 14:59:44 Z
+updated_at: 2015-11-09 19:13:51 Z
+label: "Autorizaci\xC3\xB3n"
+hint: ""
+view_class: horizontal
+serial: 8882-4883-6646-5925-1440

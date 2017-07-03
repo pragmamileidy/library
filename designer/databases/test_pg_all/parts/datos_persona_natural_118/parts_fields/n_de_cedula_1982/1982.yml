@@ -1,0 +1,30 @@
+--- 
+id: 1982
+part_id: 118
+field_id: 31
+name: "N\xC2\xB0 de C\xC3\xA9dula "
+created_at: 2012-07-04 20:45:54 Z
+updated_at: 2017-06-04 00:27:13.789815 Z
+label: "N\xC2\xB0 de C\xC3\xA9dula "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b7587748-db35-4810-a6ad-ba0ce99fc32f
+version: 20170603-202713

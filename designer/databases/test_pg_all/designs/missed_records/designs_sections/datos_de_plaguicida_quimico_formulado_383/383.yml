@@ -1,0 +1,16 @@
+--- 
+id: 383
+design_id: 55
+section_id: 142
+name: "Datos de Plaguicida Qu\xC3\xADmico Formulado"
+created_at: 2012-03-24 15:20:13 Z
+updated_at: 2013-08-13 20:29:22 Z
+label: "Datos de Plaguicida Qu\xC3\xADmico Formulado"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"721\":{\"807\":{\"required\":\"required\"},\"3419\":{\"required\":\"required\"},\"808\":{\"required\":\"required\"},\"809\":{\"required\":\"required\"},\"810\":{\"required\":\"required\"}},\"722\":{\"800\":{\"required\":\"required\"}},\"723\":{\"800\":{\"required\":\"required\"}},\"724\":{\"800\":{\"required\":\"required\"}},\"725\":{\"811\":{\"required\":\"required\"},\"812\":{\"required\":\"required\"}},\"726\":{\"811\":{\"required\":\"required\"},\"812\":{\"required\":\"required\"}},\"727\":{\"811\":{\"required\":\"required\"},\"812\":{\"required\":\"required\"}},\"728\":{\"772\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

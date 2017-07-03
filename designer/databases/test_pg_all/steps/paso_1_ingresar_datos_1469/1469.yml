@@ -1,0 +1,19 @@
+--- 
+id: 1469
+name: Paso 1 - Ingresar Datos
+label: "Ingresar Datos de Env\xC3\xADo para Pagos"
+description: ""
+fill_step_id: 728
+created_at: 2013-07-10 18:06:21 Z
+updated_at: 2013-07-10 18:06:21 Z
+include: "{\"3163\":{\"2864\":{\"3379\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3164\":{\"2865\":{\"3380\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3165\":{\"2866\":{\"3382\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3166\":{\"2867\":{\"3381\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

@@ -1,0 +1,30 @@
+--- 
+id: 841
+part_id: 67
+field_id: 17
+name: "Uso Espec\xC3\xADfico"
+created_at: 2012-03-26 19:36:58 Z
+updated_at: 2017-06-04 00:21:27.520970 Z
+label: "Uso Espec\xC3\xADfico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique la explicaci\xC3\xB3n sobre uso espec\xC3\xADfico del producto farmac\xC3\xA9utico"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0f7a58e6-bb79-4c65-98fd-fef48afac97f
+version: 20170603-202127

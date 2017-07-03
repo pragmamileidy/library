@@ -1,0 +1,16 @@
+--- 
+id: 1247
+design_id: 90
+section_id: 108
+name: Datos del Apoderado General
+created_at: 2012-06-06 22:08:05 Z
+updated_at: 2013-03-18 21:09:00 Z
+label: Datos del Apoderado General
+min_instances: 1
+max_instances: 5
+depends_on: "form_data.get(\"apoderado_general.la_empresa_posee_apoderado_general.si_no\")==\"S\xC3\x8D\""
+manage_as_confidential: false
+include: "{\"598\":{\"2973\":{\"required\":\"required\"},\"1461\":{\"required\":\"required\"},\"1981\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"610\":{\"required\":\"required\"},\"545\":{\"required\":\"required\"},\"1996\":{\"required\":\"required\"}},\"597\":{\"2000\":{\"required\":\"required\"},\"574\":{\"required\":\"required\"},\"632\":{\"required\":\"required\"},\"633\":{\"required\":\"required\"},\"578\":{\"required\":\"required\"},\"2217\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"631\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}},\"1778\":{\"331\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

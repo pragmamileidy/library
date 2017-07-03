@@ -1,0 +1,17 @@
+--- 
+id: 110
+name: Listado de Gastos
+description: Arreglo de detalles de gastos para reflejar una serie de montos pagados por el solicitante.
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-02-17 18:23:53 Z
+updated_at: 2012-05-16 20:46:16 Z
+status: Draft
+label: Listado de Gastos
+hint: ""
+serial: 

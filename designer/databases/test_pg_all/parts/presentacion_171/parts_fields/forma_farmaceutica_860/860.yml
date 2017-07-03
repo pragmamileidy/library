@@ -1,0 +1,30 @@
+--- 
+id: 860
+part_id: 171
+field_id: 10
+name: "Forma Farmac\xC3\xA9utica"
+created_at: 2012-03-27 15:14:32 Z
+updated_at: 2017-06-04 00:25:41.630161 Z
+label: "Forma Farmac\xC3\xA9utica (inyectable, tabletas, etc)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d2c3db8a-4b03-4b95-b488-6a356ee62c58
+version: 20170603-202541

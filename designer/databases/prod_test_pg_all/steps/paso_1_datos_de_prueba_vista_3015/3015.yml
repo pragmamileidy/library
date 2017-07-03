@@ -1,0 +1,21 @@
+--- 
+id: 3015
+name: Paso 1 - Datos de prueba vista
+label: Datos de muestra
+description: ""
+fill_step_id: 1620
+created_at: 2014-11-06 20:22:22 Z
+updated_at: 2014-11-06 20:22:22 Z
+include: "{\"4597\":{\"1851\":{\"800\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2171\":{\"2370\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close
+on_becoming: |-
+  form_data.set("datos_del_proyecto.descripcion_general_del_proyecto.introduzca_la_informacion", "datos de prueba vista 360")
+  form_data.set("datos_del_proyecto.numero_referencia_geodestica", "datos de prueba 360")
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

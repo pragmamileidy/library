@@ -1,0 +1,30 @@
+--- 
+id: 760
+part_id: 149
+field_id: 10
+name: Nombre Cuenta
+created_at: 2012-03-19 20:38:29 Z
+updated_at: 2017-06-04 00:21:24.961295 Z
+label: Nombre Cuenta
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 95610c3f-78b4-4284-bb15-611877dbc3ad
+version: 20170603-202124

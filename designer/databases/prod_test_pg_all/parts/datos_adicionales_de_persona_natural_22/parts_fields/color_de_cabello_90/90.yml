@@ -1,0 +1,30 @@
+--- 
+id: 90
+part_id: 22
+field_id: 10
+name: Color de Cabello
+created_at: 2011-11-03 14:03:16 Z
+updated_at: 2017-06-04 00:27:55.512924 Z
+label: Color de Cabello
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9683bdca-215f-4e34-8d6d-69bb74526744
+version: 20170603-202755

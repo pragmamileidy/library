@@ -1,0 +1,30 @@
+--- 
+id: 3515
+part_id: 685
+field_id: 31
+name: Plano de Arquitectura
+created_at: 2014-02-18 15:26:22 Z
+updated_at: 2017-06-04 00:23:10.913559 Z
+label: Plano de Arquitectura
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3af5bee0-0ab7-4848-99fe-d4b15ad373cd
+version: 20170603-202310

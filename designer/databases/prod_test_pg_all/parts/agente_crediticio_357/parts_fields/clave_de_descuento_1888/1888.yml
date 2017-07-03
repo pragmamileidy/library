@@ -1,0 +1,30 @@
+--- 
+id: 1888
+part_id: 357
+field_id: 130
+name: Clave de descuento
+created_at: 2012-06-19 21:31:48 Z
+updated_at: 2017-06-04 00:24:18.254361 Z
+label: Clave de descuento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2fae17cc-adf8-47f8-a222-850b4212cadc
+version: 20170603-202418

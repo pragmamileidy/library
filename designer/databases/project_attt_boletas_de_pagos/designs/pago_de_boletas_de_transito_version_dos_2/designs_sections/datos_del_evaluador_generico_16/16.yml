@@ -1,0 +1,18 @@
+--- 
+id: 16
+design_id: 2
+section_id: 7
+name: Datos del Evaluador Generico
+created_at: 2016-12-23 19:39:46.851300 Z
+updated_at: 2017-01-18 15:56:11.659636 Z
+label: Datos del Evaluador
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  boletas = form_data.get("boletas_por_pagar.monto.motivo_de_la_multa")
+  boletas != "false"
+manage_as_confidential: false
+include: "{\"12\":{\"19\":{\"required\":\"required\"},\"20\":{\"required\":\"required\"}},\"13\":{\"21\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

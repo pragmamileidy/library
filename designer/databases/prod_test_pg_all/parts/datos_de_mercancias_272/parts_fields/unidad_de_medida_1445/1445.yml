@@ -1,0 +1,30 @@
+--- 
+id: 1445
+part_id: 272
+field_id: 10
+name: Unidad de Medida
+created_at: 2012-05-28 15:24:47 Z
+updated_at: 2017-06-04 00:28:08.894221 Z
+label: Unidad de Medida
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b0e0641a-f0c1-44f2-8334-f15e5b613d9b
+version: 20170603-202808

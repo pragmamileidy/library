@@ -1,0 +1,16 @@
+--- 
+id: 2073
+design_id: 158
+section_id: 129
+name: "Informaci\xC3\xB3n de Solicitud"
+created_at: 2012-08-31 15:50:54 Z
+updated_at: 2013-09-06 19:39:25 Z
+label: "Informaci\xC3\xB3n de Solicitud"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"656\":{\"758\":{\"required\":\"required\"},\"759\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 1

@@ -1,0 +1,40 @@
+--- 
+id: 3022
+name: "Paso 2 - Informaci\xC3\xB3n de la Solicitud"
+label: "Informaci\xC3\xB3n de la Solicitud"
+description: "Informaci\xC3\xB3n de la Solicitud"
+fill_step_id: 1622
+created_at: 2014-12-04 13:58:14 Z
+updated_at: 2014-12-11 14:11:12 Z
+include: "{\"4610\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1182\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3615\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4611\":{\"1391\":{\"1174\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1175\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2441\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1293\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4612\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4613\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "#::::::::Validaci\xC3\xB3n del reembolso de pago, que sea cada 2 a\xC3\xB1os:::::::::::::::#\r\n                            \r\n  subsidio = form_data.get(\"datos_del_subsidio.datos_del_subsidio.fecha_del_ultimo_subsidio\") \r\n  _diferencia = (Date.today - subsidio.to_date) / 365\r\n  if _diferencia.to_f < 2\r\n  transition_errors <<  \"La fecha del \xC3\xBAltimo subsidio no debe ser posterior a la fecha actual aunado a esto dicho subsidio tuvo que haber sido realizado en un tiempo mayor o igual a 2 a\xC3\xB1os. Por favor, verifique.\"\r\n   \r\n  end\r\n\
+  #::::::::::::::Obtener Valor del Config::::::::::::::::::::::::#\r\n\
+  \r\n  valor = @config.route(\"Rates-payment-payment-payment\")  \r\n  if valor == \"Electr\xC3\xB3nico\"  \r\n    form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")  \r\n  end\r\n  if valor == \"Manual\"  \r\n    form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")  \r\n  end\r\n\
+  \r\n #::::::::::::: Concatenar Nombre del Solicitante para el Print Designer :::::::::::::::::::::#\r\n\
+  \r\n    nombre_s1 = form_data.get(\"informacion_del_beneficiario.datos_del_solicitante.primer_nombre\")\r\n    nombre_s2 = form_data.get(\"informacion_del_beneficiario.datos_del_solicitante.segundo_nombre\")\r\n    nombre_s3 = form_data.get(\"informacion_del_beneficiario.datos_del_solicitante.primer_apellido\")\r\n    nombre_s4 = form_data.get(\"informacion_del_beneficiario.datos_del_solicitante.segundo_apellido\") \r\n    nombre_s5 = form_data.get(\"informacion_del_beneficiario.datos_del_solicitante.apellido_de_casada\")  \r\n    nombre_completo = \"#{nombre_s1} #{nombre_s2} #{nombre_s3} #{nombre_s4} #{nombre_s5}\"\r\n    form_data.set(\"informacion_del_beneficiario.datos_del_solicitante.nombre_completo\", nombre_completo) \r\n\
+  \r\n\
+  #::::::::::::: Concatenar Nombre del Beneficiario para el Print Designer :::::::::::::::::::::#\r\n\
+  \r\n    nombre_b1 = form_data.get(\"informacion_del_beneficiario.datos_de_la_persona.primer_nombre\")\r\n    nombre_b2 = form_data.get(\"informacion_del_beneficiario.datos_de_la_persona.segundo_nombre\")\r\n    nombre_b3 = form_data.get(\"informacion_del_beneficiario.datos_de_la_persona.primer_apellido\")\r\n    nombre_b4 = form_data.get(\"informacion_del_beneficiario.datos_de_la_persona.segundo_apellido\") \r\n    nombre_b5 = form_data.get(\"informacion_del_beneficiario.datos_de_la_persona.apellido_de_casada\")   \r\n    nombre_completo = \"#{nombre_b1} #{nombre_b2} #{nombre_b3} #{nombre_b4} #{nombre_b5}\"\r\n    form_data.set(\"informacion_del_beneficiario.datos_de_la_persona.nombre_completo\", nombre_completo)\r\n\
+  \r\n\
+  #:::::::: Monto m\xC3\xA1ximo del costo de los lentes B/ 125:::::::::::::::#\r\n\
+  \r\n nombre_s1 = form_data.get(\"informacion_del_beneficiario.datos_del_solicitante.primer_nombre\")                          \r\n  costo_lente = form_data.get(\"datos_del_subsidio.datos_del_subsidio.costo_de_los_lentes\")\r\n  if costo_lente.to_f > 125\r\n    transition_errors <<  \"El costo m\xC3\xA1ximo de los lentes es B/. 125.00, por favor verifique el monto ingresado.\"\r\n  end\r\n  if (costo_lente.to_f == 0)\r\n    transition_errors << \"El costo de los lentes no puede ser cero, por favor verifique el valor ingresado.\"\r\n  end\r\n"
+views: 
+back_step: Paso 1 - Ingresar Datos
+next_step: Paso 3 - Adjuntar archivo
+position: 1
+ajax_calls: "//:::::: C\xC3\xA1lculo del Descuento:::::::::::::://\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  $(\"input[type='text']\").change(function(){\r\n\
+  \tvar costo_lente =  document.getElementById(\"field_datos_del_subsidio_datos_del_subsidio_costo_de_los_lentes\").value;\r\n\
+  \tvar calculo = ((costo_lente / 100) * 50);\r\n\
+  \tdocument.getElementById(\"field_datos_del_subsidio_datos_del_subsidio_50_por_ciento_del_costo_de_los_lentes\").value= calculo;\r\n\
+  });\r\n\
+  var costo_lente =  document.getElementById(\"field_datos_del_subsidio_datos_del_subsidio_costo_de_los_lentes\").value;\r\n\
+  \tvar calculo = ((costo_lente / 100) * 50);\r\n\
+  \tdocument.getElementById(\"field_datos_del_subsidio_datos_del_subsidio_50_por_ciento_del_costo_de_los_lentes\").value= calculo;\r\n\
+  });"

@@ -1,0 +1,17 @@
+--- 
+id: 5190
+design_id: 286
+section_id: 129
+name: "Informaci\xC3\xB3n de Solicitud"
+created_at: 2017-02-22 23:47:42.283647 Z
+updated_at: 2017-02-22 23:47:42.283647 Z
+label: "Informaci\xC3\xB3n de Solicitud"
+min_instances: 1
+max_instances: 1
+depends_on: "# Se deben poblar estos campos con la fecha del ambiente (del momemto en que se incia la solicitud) y\r\n\
+  # con el n\xC3\xBAmero de solicitud generado por el sistema"
+manage_as_confidential: false
+include: "{\"656\":{\"758\":{\"required\":\"required\"},\"759\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 1

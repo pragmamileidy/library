@@ -1,0 +1,30 @@
+--- 
+id: 2387
+part_id: 443
+field_id: 21
+name: "Tipo de Identificaci\xC3\xB3n"
+created_at: 2012-08-14 18:52:23 Z
+updated_at: 2017-06-04 00:26:08.625832 Z
+label: "Tipo de Identificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c1f769fb-6d9d-4633-b10c-51d9e7b3d557
+version: 20170603-202608

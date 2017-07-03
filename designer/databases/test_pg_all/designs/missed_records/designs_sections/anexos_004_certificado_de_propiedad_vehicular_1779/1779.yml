@@ -1,0 +1,16 @@
+--- 
+id: 1779
+design_id: 117
+section_id: 371
+name: Anexos 004- Certificado de Propiedad Vehicular
+created_at: 2012-08-10 15:14:28 Z
+updated_at: 2015-10-07 14:30:02 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2133\":{\"210\":{\"required\":\"unrequired\"}},\"2134\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

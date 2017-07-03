@@ -1,0 +1,42 @@
+--- 
+id: 351
+name: Departamento_Lista
+description: "Lista de departamentos de El Salvador que se carga a trav\xC3\xA9s de un servicio almacenado del services"
+version: 
+status: Draft
+label: Departamento
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-03-03 14:57:30.146070 Z
+updated_at: 2016-03-07 15:15:13.385580 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _lista = ""
+  result = WebserviceConsumer.get('/service/ws_departamentos_el_salvador/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+   _valores.each {|departamento|
+    _lista = _lista + "," + departamento["departamento"]}
+   @values_of_list = _lista.split(",")
+   @keys_of_list =  _lista.split(",")
+  else
+   @values_of_list = [""]
+   @keys_of_list =  [""]
+  end
+serial: 3116-7539-2582-1163-8541

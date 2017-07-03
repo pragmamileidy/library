@@ -1,0 +1,16 @@
+--- 
+id: 2598
+design_id: 199
+section_id: 491
+name: Rates
+created_at: 2013-04-12 14:59:36 Z
+updated_at: 2013-09-10 19:29:29 Z
+label: Rates
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2768\":{\"3149\":{\"required\":\"required\"},\"3150\":{\"required\":\"required\"},\"3151\":{\"required\":\"required\"},\"3152\":{\"required\":\"unrequired\"},\"3153\":{\"required\":\"required\"},\"3290\":{\"required\":\"required\"}},\"2782\":{\"3157\":{\"required\":\"required\"},\"3158\":{\"required\":\"required\"},\"3159\":{\"required\":\"required\"},\"3160\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 2

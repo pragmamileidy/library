@@ -1,0 +1,16 @@
+--- 
+id: 1385
+design_id: 118
+section_id: 137
+name: "Horario de Supervisi\xC3\xB3n Farmac\xC3\xA9utica"
+created_at: 2012-06-11 19:29:12 Z
+updated_at: 2017-02-26 04:12:19.124056 Z
+label: "Horario de Supervisi\xC3\xB3n Farmac\xC3\xA9utica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"679\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}},\"680\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}},\"681\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}},\"682\":{\"508\":{\"required\":\"unrequired\"},\"509\":{\"required\":\"unrequired\"},\"4088\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 8

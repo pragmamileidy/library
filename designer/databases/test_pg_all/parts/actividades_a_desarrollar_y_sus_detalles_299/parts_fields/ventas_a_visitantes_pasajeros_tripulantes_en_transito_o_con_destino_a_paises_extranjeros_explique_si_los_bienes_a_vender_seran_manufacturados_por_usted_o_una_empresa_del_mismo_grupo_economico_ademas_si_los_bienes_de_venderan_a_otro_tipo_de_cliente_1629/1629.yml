@@ -1,0 +1,30 @@
+--- 
+id: 1629
+part_id: 299
+field_id: 68
+name: "Ventas a Visitantes, pasajeros, tripulantes en transito o con destino a pa\xC3\xADses extranjeros (Explique: si los bienes a vender ser\xC3\xA1n manufacturados por usted o una empresa del mismo grupo econ\xC3\xB3mico, adem\xC3\xA1s si los bienes de vender\xC3\xA1n a otro tipo de cliente)"
+created_at: 2012-06-08 00:22:18 Z
+updated_at: 2017-06-04 00:29:35.048031 Z
+label: "Ventas a Visitantes, pasajeros, tripulantes en transito o con destino a pa\xC3\xADses extranjeros (Explique: si los bienes a vender ser\xC3\xA1n manufacturados por usted o una empresa del mismo grupo econ\xC3\xB3mico, adem\xC3\xA1s si los bienes de vender\xC3\xA1n a otro tipo de cliente)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 97765ae7-5f5c-4e20-a8b9-99957f403673
+version: 20170603-202935

@@ -1,0 +1,16 @@
+--- 
+id: 4868
+design_id: 271
+section_id: 107
+name: Datos del Testigo
+created_at: 2015-08-03 16:22:21 Z
+updated_at: 2015-08-03 17:41:49 Z
+label: Datos del Testigo
+min_instances: 1
+max_instances: 2
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"3941\":{\"required\":\"required\"},\"610\":{\"required\":\"required\"},\"545\":{\"required\":\"required\"},\"552\":{\"required\":\"required\"},\"763\":{\"required\":\"required\"},\"3615\":{\"required\":\"required\"},\"3714\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

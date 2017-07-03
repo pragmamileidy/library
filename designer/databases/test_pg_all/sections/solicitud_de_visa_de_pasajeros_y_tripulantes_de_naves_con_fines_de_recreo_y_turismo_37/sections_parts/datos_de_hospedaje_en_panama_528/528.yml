@@ -1,0 +1,19 @@
+--- 
+id: 528
+section_id: 37
+part_id: 121
+name: "Datos de Hospedaje en Panam\xC3\xA1"
+created_at: 2011-11-28 20:25:53 Z
+updated_at: 2012-04-10 18:42:29 Z
+label: "Direcci\xC3\xB3n del hotel o sitio donde va a hospedarse en Panam\xC3\xA1"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"586\":{},\"585\":{},\"584\":{},\"583\":{},\"582\":{},\"581\":{},\"580\":{},\"579\":{},\"578\":{},\"577\":{},\"576\":{},\"575\":{},\"574\":{},\"573\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 8

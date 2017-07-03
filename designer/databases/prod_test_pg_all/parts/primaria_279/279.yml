@@ -1,0 +1,17 @@
+--- 
+id: 279
+name: Primaria
+description: Detallar Educacion
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-01 18:35:49 Z
+updated_at: 2012-06-01 18:35:49 Z
+label: Primaria
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 1584
+part_id: 137
+field_id: 72
+name: Prueba campo 12 tipo email
+created_at: 2012-06-05 17:10:42 Z
+updated_at: 2017-06-04 00:28:55.890812 Z
+label: Prueba campo 12 tipo email
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Prueba campo 12 tipo email,  ^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$
+help: ^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c9cac8e4-d15a-4581-9465-47f58b272292
+version: 20170603-202855

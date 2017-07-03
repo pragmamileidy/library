@@ -1,0 +1,30 @@
+--- 
+id: 2471
+part_id: 461
+field_id: 10
+name: Nombre del Idioma
+created_at: 2012-08-28 02:50:08 Z
+updated_at: 2017-06-04 00:22:18.720812 Z
+label: Nombre del Idioma
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a791fec8-d9ed-43c9-ab96-26bf92d8c981
+version: 20170603-202218

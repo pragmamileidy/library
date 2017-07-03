@@ -1,0 +1,21 @@
+--- 
+id: 3516
+section_id: 187
+part_id: 38
+name: Bill of loading (conocimiento de embarque)
+created_at: 2015-09-16 21:09:34 Z
+updated_at: 2015-09-16 21:09:34 Z
+label: Bill of loading (conocimiento de embarque)
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  form_data.get("tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular") == "Permiso de entrada vehicular extranjeros (solo turistas)"||
+  form_data.get("tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular") == "Permiso de salida vehicular extranjeros (solo turistas)"
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 29

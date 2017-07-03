@@ -1,0 +1,30 @@
+--- 
+id: 2854
+part_id: 528
+field_id: 17
+name: Observaciones y Recomendaciones para el Solicitante
+created_at: 2013-01-21 16:29:49 Z
+updated_at: 2017-06-04 00:29:45.227316 Z
+label: Observaciones y Recomendaciones para el Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 855ccff2-2c39-45e2-9fce-751874b618e2
+version: 20170603-202945

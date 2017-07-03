@@ -1,0 +1,19 @@
+--- 
+id: 434
+section_id: 96
+part_id: 51
+name: Puerto origen
+created_at: 2011-11-17 03:57:46 Z
+updated_at: 2012-04-10 18:42:32 Z
+label: Puerto de procedencia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"239\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 9

@@ -1,0 +1,19 @@
+--- 
+id: 1861
+section_id: 292
+part_id: 38
+name: "Carta topogr\xC3\xA1fica del sitio a escala 1:50000 o mayor, indicando la localizaci\xC3\xB3n del sitio donde realizar\xC3\xA1 la instalaci\xC3\xB3n."
+created_at: 2012-06-13 00:03:13 Z
+updated_at: 2012-06-13 00:03:13 Z
+label: "Carta topogr\xC3\xA1fica del sitio a escala 1:50000 o mayor, indicando la localizaci\xC3\xB3n del sitio donde realizar\xC3\xA1 la instalaci\xC3\xB3n."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

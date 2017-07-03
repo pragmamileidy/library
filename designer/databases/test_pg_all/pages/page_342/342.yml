@@ -1,0 +1,254 @@
+--- 
+id: 342
+position: 4
+selector: "{\"2380\":{\"656\":{\"758\":{},\"759\":{}}},\"2418\":{\"2594\":{\"2927\":{},\"2928\":{}}},\"2385\":{\"580\":{\"1461\":{},\"1981\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"926\":{}},\"581\":{\"805\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 65px;
+  	left: 696px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 39px;
+  	left: 698px;
+  	width: 324px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_1_obrasdelfonograma_nombre {
+  	position: absolute;
+  	top: 175px;
+  	left: 276px;
+  	width: 676px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_1_obrasdelfonograma_autor {
+  	position: absolute;
+  	top: 212px;
+  	left: 275px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_2_obrasdelfonograma_nombre {
+  	position: absolute;
+  	top: 298px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_2_obrasdelfonograma_autor {
+  	position: absolute;
+  	top: 335px;
+  	left: 275px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_3_obrasdelfonograma_nombre {
+  	position: absolute;
+  	top: 421px;
+  	left: 275px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_3_obrasdelfonograma_autor {
+  	position: absolute;
+  	top: 458px;
+  	left: 275px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_4_obrasdelfonograma_nombre {
+  	position: absolute;
+  	top: 545px;
+  	left: 275px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_4_obrasdelfonograma_autor {
+  	position: absolute;
+  	top: 582px;
+  	left: 275px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_5_obrasdelfonograma_nombre {
+  	position: absolute;
+  	top: 668px;
+  	left: 275px;
+  	width: 679px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .nombredelasobrasfijadasenelfonograma_instance_5_obrasdelfonograma_autor {
+  	position: absolute;
+  	top: 705px;
+  	left: 274px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_datosdelapersona_tipo_documento_string {
+  	position: absolute;
+  	top: 834px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 834px;
+  	left: 700px;
+  	width: 255px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 870px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 870px;
+  	left: 701px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 906px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 906px;
+  	left: 701px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_datosdelapersona_apellidodecasada {
+  	position: absolute;
+  	top: 942px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_1_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 979px;
+  	left: 276px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_datosdelapersona_tipo_documento_string {
+  	position: absolute;
+  	top: 1065px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 1065px;
+  	left: 700px;
+  	width: 252px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 1101px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 1101px;
+  	left: 699px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 1137px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 1137px;
+  	left: 700px;
+  	width: 254px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_datosdelapersona_apellidodecasada {
+  	position: absolute;
+  	top: 1174px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .intrpretes_instance_2_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 1210px;
+  	left: 275px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 133
+created_at: 2013-06-10 16:45:43 Z
+updated_at: 2015-11-06 18:44:28 Z
+instances_selector: "{\"2380\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2418\":{\"value\":\"1,5\",\"2594\":{\"value\":\"\",\"2927\":{\"value\":\"\"},\"2928\":{\"value\":\"\"}}},\"2385\":{\"value\":\"1,2\",\"580\":{\"value\":\"\",\"1461\":{\"value\":\"\"},\"1981\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"926\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"805\":{\"value\":\"\"}}}}"
+size: ""

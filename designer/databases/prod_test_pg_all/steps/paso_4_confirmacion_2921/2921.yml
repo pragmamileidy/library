@@ -1,0 +1,20 @@
+--- 
+id: 2921
+name: "Paso 4 - Confirmaci\xC3\xB3n"
+label: "Confirmaci\xC3\xB3n"
+description: "Usted ha culminado exitosamente el llenado de su solicitud,  favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de enviar al completar este paso para someter su solicitud a procesamiento.\r\n\
+  Todos los detalles y observaciones del procesamiento llegar\xC3\xA1n a su bandeja de notificaciones en la visualizaci\xC3\xB3n de este tr\xC3\xA1mite"
+fill_step_id: 1565
+created_at: 2014-06-26 20:27:44 Z
+updated_at: 2014-07-04 21:59:59 Z
+include: "{\"4380\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 4
+ajax_calls: ""

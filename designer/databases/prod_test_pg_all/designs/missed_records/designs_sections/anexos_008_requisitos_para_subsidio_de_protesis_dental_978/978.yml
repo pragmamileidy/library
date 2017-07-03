@@ -1,0 +1,16 @@
+--- 
+id: 978
+design_id: 92
+section_id: 228
+name: "Anexos 008- Requisitos para Subsidio de Pr\xC3\xB3tesis Dental"
+created_at: 2012-05-10 15:29:36 Z
+updated_at: 2015-09-14 13:10:41 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1401\":{\"210\":{\"required\":\"required\"}},\"1402\":{\"210\":{\"required\":\"required\"}},\"1403\":{\"210\":{\"required\":\"required\"}},\"1404\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

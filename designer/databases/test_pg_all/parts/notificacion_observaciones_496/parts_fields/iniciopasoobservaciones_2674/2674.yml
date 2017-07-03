@@ -1,0 +1,30 @@
+--- 
+id: 2674
+part_id: 496
+field_id: 10
+name: InicioPasoObservaciones
+created_at: 2013-01-14 15:30:07 Z
+updated_at: 2017-06-04 00:22:27.251386 Z
+label: Inicio Paso Observaciones
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo proceso 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 106cf3da-a689-4faf-be4f-a4345122644f
+version: 20170603-202227

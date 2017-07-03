@@ -1,0 +1,30 @@
+--- 
+id: 3016
+part_id: 563
+field_id: 31
+name: "juego de fotograf\xC3\xADas de los principales movimientos o escenas"
+created_at: 2013-03-13 16:16:22 Z
+updated_at: 2017-06-04 00:22:39.601479 Z
+label: "juego de fotograf\xC3\xADas de los principales movimientos o escenas"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Solo si la obra representado p\xC3\xBAblicamente. Sino a juicio del solicitante, un (1) soporte sonoro o audiovisual que contenga la fijaci\xC3\xB3n."
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2b577fea-0195-495b-a286-c5b5ae14e2d9
+version: 20170603-202239

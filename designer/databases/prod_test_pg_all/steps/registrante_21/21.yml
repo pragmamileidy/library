@@ -1,0 +1,19 @@
+--- 
+id: 21
+name: Registrante
+label: Registrante
+description: ""
+fill_step_id: 7
+created_at: 2012-03-09 03:57:34 Z
+updated_at: 2012-05-19 20:13:51 Z
+include: "{\"309\":{\"190\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"567\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ",Datos del Plaguicida Qu\xC3\xADmico Formulado"
+allowed_back_to_steps: ,Solicitante
+controls: ,back,next,back_steps,next_steps,close,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Solicitante
+next_step: "Datos del Plaguicida Qu\xC3\xADmico Formulado"
+position: 1
+ajax_calls: 

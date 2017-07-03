@@ -1,0 +1,16 @@
+--- 
+id: 2783
+design_id: 211
+section_id: 409
+name: Uso del Suelo
+created_at: 2013-05-09 13:40:06 Z
+updated_at: 2013-05-09 13:40:06 Z
+label: Uso del Suelo
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2380\":{\"2086\":{\"required\":\"required\"},\"2087\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 11

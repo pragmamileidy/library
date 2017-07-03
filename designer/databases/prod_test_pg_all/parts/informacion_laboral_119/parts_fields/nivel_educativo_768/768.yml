@@ -1,0 +1,30 @@
+--- 
+id: 768
+part_id: 119
+field_id: 10
+name: Nivel Educativo
+created_at: 2012-03-20 02:14:16 Z
+updated_at: 2017-06-04 00:31:44.133281 Z
+label: Nivel Educativo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 23
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d1fa464b-8ddd-40b1-9b07-ea409ba3a824
+version: 20170603-203144

@@ -1,0 +1,19 @@
+--- 
+id: 1731
+section_id: 254
+part_id: 277
+name: "Datos generales de Servicio P\xC3\xBAblico de empleo"
+created_at: 2012-05-31 21:07:08 Z
+updated_at: 2013-06-06 20:28:38 Z
+label: Datos generales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

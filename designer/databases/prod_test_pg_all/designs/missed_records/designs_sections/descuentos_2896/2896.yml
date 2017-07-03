@@ -1,0 +1,16 @@
+--- 
+id: 2896
+design_id: 193
+section_id: 312
+name: Descuentos
+created_at: 2013-05-28 20:47:02 Z
+updated_at: 2013-05-28 21:12:10 Z
+label: Agregar Descuentos
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1952\":{\"1892\":{\"required\":\"unrequired\"},\"1893\":{\"required\":\"unrequired\"},\"1894\":{\"required\":\"unrequired\"},\"1895\":{\"required\":\"unrequired\"},\"2205\":{\"required\":\"unrequired\"},\"2204\":{\"required\":\"unrequired\"},\"1898\":{\"required\":\"unrequired\"}},\"2070\":{\"2206\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 14

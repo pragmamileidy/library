@@ -1,0 +1,30 @@
+--- 
+id: 292
+part_id: 57
+field_id: 1
+name: Horas Disco Limitante
+created_at: 2011-11-09 16:35:56 Z
+updated_at: 2017-06-04 00:30:13.236477 Z
+label: "L\xC3\xADmite de Horas  de Disco Limitante"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 9
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e642d550-191d-42f0-a18d-30989567c028
+version: 20170603-203013

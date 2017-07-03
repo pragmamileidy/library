@@ -1,0 +1,16 @@
+--- 
+id: 2373
+design_id: 177
+section_id: 430
+name: Defaults5
+created_at: 2013-01-24 15:37:47 Z
+updated_at: 2014-07-01 18:00:19 Z
+label: Por defecto (Defaults)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2474\":{\"3435\":{\"required\":\"required\"}},\"2475\":{\"2747\":{\"required\":\"required\"},\"2748\":{\"required\":\"required\"}},\"2476\":{\"2787\":{\"required\":\"required\"},\"2788\":{\"required\":\"required\"},\"2789\":{\"required\":\"required\"},\"2790\":{\"required\":\"required\"},\"2791\":{\"required\":\"required\"},\"2792\":{\"required\":\"required\"}},\"2477\":{\"2757\":{\"required\":\"required\"}},\"2478\":{\"2772\":{\"required\":\"required\"}},\"2479\":{\"2752\":{\"required\":\"required\"},\"2754\":{\"required\":\"required\"}},\"2480\":{\"2755\":{\"required\":\"required\"},\"2756\":{\"required\":\"required\"}},\"2816\":{\"3282\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

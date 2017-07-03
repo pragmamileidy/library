@@ -1,0 +1,22 @@
+--- 
+id: 3648
+section_id: 373
+part_id: 38
+name: "Copia del recibo de luz, agua o tel\xC3\xA9fono fijo (empresas del estado o mixtas)"
+created_at: 2017-02-17 01:19:10.136546 Z
+updated_at: 2017-03-20 21:27:21.243896 Z
+label: "Copia del recibo de luz, agua o tel\xC3\xA9fono fijo (empresas del estado o mixtas) para comprobar el domicilio del representante legal"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Art\xC3\xADculo 9. Las personas naturales, las personas jur\xC3\xADdicas y los representantes de las personas jur\xC3\xADdicas autorizadas para desarrollar los negocios propios de una casa de dinero, deber\xC3\xA1n estar domiciliados en la Rep\xC3\xBAblica de Panam\xC3\xA1."
+help: "Copia del recibo de luz, agua o tel\xC3\xA9fono fijo (empresas del estado o mixtas) para comprobar el domicilio del representante legal.\r\n\
+  \r\n\
+  Art\xC3\xADculo 9. Las personas naturales, las personas jur\xC3\xADdicas y los representantes de las personas jur\xC3\xADdicas autorizadas para desarrollar los negocios propios de una casa de dinero, deber\xC3\xA1n estar domiciliados en la Rep\xC3\xBAblica de Panam\xC3\xA1.\r\n\
+  \r\n"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

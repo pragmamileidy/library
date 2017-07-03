@@ -1,0 +1,22 @@
+--- 
+id: 2181
+section_id: 378
+part_id: 38
+name: Copia del cheque certificado o de gerencia expedido a favor del Tesoro Nacional
+created_at: 2012-08-14 16:42:18 Z
+updated_at: 2017-02-24 16:31:08.091035 Z
+label: "Copia del cheque certificado o de gerencia expedido a favor del Tesoro Nacional / 8-NT-1-13620 DV32 por un monto de mil setecientos cincuenta balboas con 00/100 (B/.1,750.00) que cubre la tasa de expedici\xC3\xB3n y la tasa de fiscalizaci\xC3\xB3n del a\xC3\xB1o en curso."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: Por favor adjuntar archivo correspondiente
+help: "Copia del cheque certificado o de gerencia expedido a favor del Tesoro Nacional /\r\n\
+  8-NT-1-13620 DV32 por un monto de mil setecientos cincuenta balboas con\r\n\
+  00/100 (B/.1,750.00) que cubre la tasa de expedici\xC3\xB3n y la tasa de fiscalizaci\xC3\xB3n del\r\n\
+  a\xC3\xB1o en curso."
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

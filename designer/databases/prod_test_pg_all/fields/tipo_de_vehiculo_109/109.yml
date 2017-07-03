@@ -1,0 +1,30 @@
+--- 
+id: 109
+name: "Tipo de Veh\xC3\xADculo"
+description: "Tipo de Veh\xC3\xADculo"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-17 19:48:44 Z
+updated_at: 2012-05-17 23:01:00 Z
+values_list: "\"Colectivo\", \"Taxi\", \" Familiar\", \"Propio\", \"Adaptado\""
+keys_list: "\"Colectivo\", \"Taxi\", \" Familiar\", \"Propio\", \"Adaptado\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

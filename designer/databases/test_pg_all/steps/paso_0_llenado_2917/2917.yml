@@ -1,0 +1,19 @@
+--- 
+id: 2917
+name: Paso 0 - Llenado
+label: Llenado
+description: ""
+fill_step_id: 617
+created_at: 2014-06-26 14:08:10 Z
+updated_at: 2014-06-26 14:08:10 Z
+include: "{\"2581\":{\"2756\":{\"3130\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2602\":{\"2783\":{\"3143\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3144\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3145\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3146\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3147\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 1 - Notificaciones
+position: 0
+ajax_calls: ""

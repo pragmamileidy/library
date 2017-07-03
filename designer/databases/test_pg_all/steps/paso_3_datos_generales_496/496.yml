@@ -1,0 +1,383 @@
+--- 
+id: 496
+name: Paso 3 - Datos Generales
+label: Datos Generales del Apoderado y de los Directores
+description: "<br>Datos Generales del Apoderado y de los Directores</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 255
+created_at: 2012-06-09 15:53:33 Z
+updated_at: 2015-10-23 16:15:30 Z
+include: "{\"1247\":{\"598\":{\"1461\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1981\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"610\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"545\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1996\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"597\":{\"2000\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"574\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"633\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"578\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1778\":{\"331\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1259\":{\"1781\":{\"3348\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1740\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1782\":{\"1739\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1738\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1740\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1741\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1742\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3968\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3354\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1745\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #(1..3).each do |_num|
+  
+          #form_data.set("datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.tipo_documento_string","")
+  	#form_data.set("datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.nombre", "")
+  	#form_data.set("datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.nacionalidad","")
+  	#form_data.set("datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.cedula_pasaporte","")
+  #end
+on_transition: "(1..3).each do |_num|\r\n\
+  \t_tipo = form_data.get(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.tipo_identificacion\")\r\n\
+  \tform_data.set(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.tipo_documento_string\",_tipo)\r\n\
+  \tif _tipo == \"Cedula\"                         \r\n\
+  \t\t_cedula = form_data.get(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.cedula_pasaporte\")        \r\n\
+  \t\t_cedula = _cedula.strip\r\n\
+  \t\tresult = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula}\").parsed_response\r\n\
+  \t\t_persona = result[\"response\"]\r\n\
+  \t\tif !_persona.nil?\r\n\
+  \t\tform_data.set(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.cedula_pasaporte\",_cedula)\r\n\
+  \t\t   nombre1 = _persona[\"primerNombre\"] \r\n\
+  \t\t   nombre2 = _persona[\"segundoNombre\"]\r\n\
+  \t\t   nombre3 = _persona[\"primerApellido\"] \r\n\
+  \t\t   nombre4 = _persona[\"segundoApellido\"]\r\n\
+  \t\t   nombre_completo = nombre1.to_s + \" \" + nombre2.to_s + \" \" + nombre3.to_s + \" \" + nombre4.to_s\r\n\
+  \t\t   #_persona[\"primerNombre\"]  + \" \" + _persona[\"segundoNombre\"] + \" \" + _persona[\"primerApellido\"] + \" \" + _persona[\"segundoApellido\"])\r\n\
+  \t\t\tform_data.set(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.nombre\",nombre_completo)\r\n\
+  \t\t\tform_data.set(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.nacionalidad\",_persona[\"lugarNacimiento\"])\r\n\
+  \t\t\tform_data.set(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.cedula_pasaporte\",_persona[\"cedula\"])\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\ttransition_errors << \"La c\xC3\xA9dula o pasaporte suministrado no existe en el sistema, favor revise  el valor del director \" + \"#{_num}\"\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif _tipo == \"Pasaporte\"\r\n\
+  \t_tipo = form_data.get(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.tipo_identificacion\")\r\n\
+  \tform_data.set(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.tipo_documento_string\",_tipo)\r\n\
+  \t_cedula = form_data.get(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.cedula_pasaporte\")        \r\n\
+  \tform_data.set(\"datos_generales_de_los_directorios_y_abogado_idoneo.datos_generales_de_los_directores_dignatarios_de_la_sociedad_instance_#{_num}.cedula_pasaporte\",_cedula)\r\n\
+  \tend\r\n\
+  end"
+views: 
+back_step: Paso 2 - Datos del Apoderado General
+next_step: Paso 4 - Actividades a Desarrollar
+position: 2
+ajax_calls: |-
+  $( function() {
+  	
+  		 $(document).ready(function(){
+  
+  					
+  					if($("#field_datos_del_apoderado_general_instance_1_representante_legal_tipo_documento_string").val() == 'Pasaporte'){
+  						$("#field_datos_del_apoderado_general_instance_1_representante_legal_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_1_representante_legal_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_1_representante_legal_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_1_representante_legal_segundo_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_1_representante_legal_lugar_de_nacimiento").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_1_representante_legal_nacionalidad").removeAttr("disabled");		
+  						$("#field_datos_del_apoderado_general_instance_1_representante_legal_fecha_de_nacimiento_string").removeAttr("disabled");								
+  
+  					}
+   					if($("#field_datos_del_apoderado_general_instance_2_representante_legal_tipo_documento_string").val() == 'Pasaporte'){
+  						$("#field_datos_del_apoderado_general_instance_2_representante_legal_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_2_representante_legal_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_2_representante_legal_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_2_representante_legal_segundo_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_2_representante_legal_lugar_de_nacimiento").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_2_representante_legal_nacionalidad").removeAttr("disabled");		
+  						$("#field_datos_del_apoderado_general_instance_2_representante_legal_fecha_de_nacimiento_string").removeAttr("disabled");								
+  
+  					} 
+  					if($("#field_datos_del_apoderado_general_instance_3_representante_legal_tipo_documento_string").val() == 'Pasaporte'){
+  						$("#field_datos_del_apoderado_general_instance_3_representante_legal_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_3_representante_legal_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_3_representante_legal_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_3_representante_legal_segundo_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_3_representante_legal_lugar_de_nacimiento").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_3_representante_legal_nacionalidad").removeAttr("disabled");		
+  						$("#field_datos_del_apoderado_general_instance_3_representante_legal_fecha_de_nacimiento_string").removeAttr("disabled");								
+  
+  					}
+  					if($("#field_datos_del_apoderado_general_instance_4_representante_legal_tipo_documento_string").val() == 'Pasaporte'){
+  						$("#field_datos_del_apoderado_general_instance_4_representante_legal_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_4_representante_legal_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_4_representante_legal_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_4_representante_legal_segundo_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_4_representante_legal_lugar_de_nacimiento").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_4_representante_legal_nacionalidad").removeAttr("disabled");		
+  						$("#field_datos_del_apoderado_general_instance_4_representante_legal_fecha_de_nacimiento_string").removeAttr("disabled");								
+  
+  					}
+  					if($("#field_datos_del_apoderado_general_instance_5_representante_legal_tipo_documento_string").val() == 'Pasaporte'){
+  						$("#field_datos_del_apoderado_general_instance_5_representante_legal_primer_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_5_representante_legal_primer_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_5_representante_legal_segundo_nombre").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_5_representante_legal_segundo_apellido").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_5_representante_legal_lugar_de_nacimiento").removeAttr("disabled");
+  						$("#field_datos_del_apoderado_general_instance_5_representante_legal_nacionalidad").removeAttr("disabled");		
+  						$("#field_datos_del_apoderado_general_instance_5_representante_legal_fecha_de_nacimiento_string").removeAttr("disabled");								
+  
+  					}
+  					
+  		});
+  
+  		});
+  
+  
+  
+  
+  
+  $(document).ready(function(){
+  	$.each( $('[id*=datos_del_apoderado_general_]'), function(index, campo) {
+  	  
+  	 var pos = (this.id).match(/_instance_[\d][\d]/);
+  		 if (pos == null){
+  		   pos = (this.id).match(/_instance_[\d]/);
+  		 }
+  	 //alert(pos);
+  	 var mod1 = "#field_datos_del_apoderado_general";
+  	 var mod2 = "_representante_legal_cedula_pasaporte";
+  	 var tipoDocu = "_representante_legal_tipo_documento_string";
+  	 var pnombre = "_representante_legal_primer_nombre";
+  	 var snombre = "_representante_legal_segundo_nombre";
+  	 var papellido = "_representante_legal_primer_apellido";
+  	 var sapellido = "_representante_legal_segundo_apellido";
+  	 var lugarNacimiento = "_representante_legal_lugar_de_nacimiento";
+  	 var nacionalidad = "_representante_legal_nacionalidad";
+  	 var fechaNacimiento = "_representante_legal_fecha_de_nacimiento_string";
+  
+  	 var mod3 = mod1.concat(pos);
+  	 var dato = mod3.concat(mod2);
+  	 var tipoDoc = mod3.concat(tipoDocu);
+  	 var nombre1 = mod3.concat(pnombre);
+  	 var nombre2 = mod3.concat(snombre);
+  	 var apellido1 = mod3.concat(papellido);
+  	 var apellido2 = mod3.concat(sapellido);
+  	 var lugarNac = mod3.concat(lugarNacimiento);
+  	 var nac = mod3.concat(nacionalidad);
+  	 var fechaNac = mod3.concat(fechaNacimiento);
+  	 
+  	//alert(dato);
+  	if($(dato).val() == ""){
+  	    $(dato).parents(".section-box").hide();
+  	}else{
+  	    $(dato).parents(".section-box").show();
+  	}
+  
+  	 if($(tipoDoc).html() == 'Pasaporte'){
+              $(nombre1).removeAttr("disabled");
+              $(nombre2).removeAttr("disabled");
+              $(apellido1).removeAttr("disabled");
+              $(apellido2).removeAttr("disabled");
+              $(lugarNac).removeAttr("disabled");
+              $(nac).removeAttr("disabled");
+              $(fechaNac).removeAttr("disabled");   
+      }
+  
+      if($(tipoDoc).html() == 'Cedula'){
+  
+      	if($(nombre2).val() != ''){
+      		$(nombre2).attr("disabled");
+      	}else{
+      		$(nombre2).removeAttr("disabled");
+      	}
+  
+          if($(apellido2).val() != ''){
+      		$(apellido2).attr("disabled");
+      	}else{
+      		$(apellido2).removeAttr("disabled");
+      	}  
+  
+      }
+  
+  
+  	 $(dato).parents(".section-box").next().hide()
+  
+  	 });
+  	 
+  });

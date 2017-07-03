@@ -1,0 +1,30 @@
+--- 
+id: 975
+part_id: 194
+field_id: 31
+name: " Certificaci\xC3\xB3n corta y zarpe de salida (Municipio)"
+created_at: 2012-04-20 16:14:18 Z
+updated_at: 2017-06-04 00:23:55.030543 Z
+label: " Certificaci\xC3\xB3n corta y zarpe de salida (Municipio)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Por favor adjuntar archivo correspondiente
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2cb414fa-cbcb-4677-836e-c7313ead7912
+version: 20170603-202355

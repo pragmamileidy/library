@@ -1,0 +1,17 @@
+--- 
+id: 741
+name: Tipo de Solicitud PNC
+description: Tipo de Solicitud PNC
+version: 
+status: Draft
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-02-23 19:30:13.244094 Z
+updated_at: 2016-02-23 19:30:13.244094 Z
+label: Tipo de Solicitud
+hint: ""
+view_class: horizontal
+serial: 1678-3465-8437-8896-7961

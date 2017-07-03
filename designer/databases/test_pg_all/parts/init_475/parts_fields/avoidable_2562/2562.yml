@@ -1,0 +1,30 @@
+--- 
+id: 2562
+part_id: 475
+field_id: 10
+name: avoidable
+created_at: 2013-01-11 13:38:22 Z
+updated_at: 2017-06-04 00:29:10.985619 Z
+label: Evitable
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3fbd178b-ccc6-4fbf-a7b3-a6955fbb4243
+version: 20170603-202910

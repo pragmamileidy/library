@@ -1,0 +1,23 @@
+--- 
+id: 772
+name: Paso 5 - confirmacion
+label: Fin de llenado de la solicitud
+description: "Usted a culminado exitosamente el llenado de su solicitud,  favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de enviar al completar este paso para someter su solicitud a procesamiento.\r\n\
+  \r\n\
+  \r\n\
+  Todos los detalles y observaciones del procesamiento llegar\xC3\xA1n a su bandeja de notificaciones en la visualizaci\xC3\xB3n de este tr\xC3\xA1mite.\r\n"
+fill_step_id: 330
+created_at: 2012-07-30 21:00:11 Z
+updated_at: 2012-08-23 14:01:28 Z
+include: "{\"1514\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit,print_form
+on_becoming: ""
+on_transition: "if form_data.get(\"confirmacion.confirmacion_de_formulario.si_no\")==\"NO\"\r\n   transition_errors << \"Para realizar el env\xC3\xADo del formulario debe confirmar con SI el llenado del mismo.\"\r\n\
+  end"
+views: 
+back_step: Paso 4 - Anexos
+next_step: ""
+position: 5
+ajax_calls: ""

@@ -1,0 +1,30 @@
+--- 
+id: 2007
+part_id: 380
+field_id: 177
+name: Objetivo de Importacion
+created_at: 2012-07-13 05:33:41 Z
+updated_at: 2017-06-04 00:22:02.678644 Z
+label: Objetivo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a1c222db-b957-461b-a6dd-a6dd9a67eac3
+version: 20170603-202202

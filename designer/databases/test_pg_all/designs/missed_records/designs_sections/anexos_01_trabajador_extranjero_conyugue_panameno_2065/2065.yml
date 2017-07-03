@@ -1,0 +1,16 @@
+--- 
+id: 2065
+design_id: 157
+section_id: 400
+name: "Anexos 01- Trabajador extranjero Conyugue Paname\xC3\xB1o"
+created_at: 2012-08-31 14:30:22 Z
+updated_at: 2015-09-07 14:10:38 Z
+label: Requisitos de la solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3087\":{\"210\":{\"required\":\"required\"}},\"3088\":{\"210\":{\"required\":\"required\"}},\"3089\":{\"210\":{\"required\":\"required\"}},\"3090\":{\"210\":{\"required\":\"required\"}},\"3091\":{\"210\":{\"required\":\"unrequired\"}},\"3092\":{\"210\":{\"required\":\"required\"}},\"3093\":{\"210\":{\"required\":\"required\"}},\"3192\":{\"210\":{\"required\":\"required\"}},\"3193\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

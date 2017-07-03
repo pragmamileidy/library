@@ -1,0 +1,30 @@
+--- 
+id: 559
+part_id: 119
+field_id: 1
+name: "N\xC3\xBAmero de Licencia"
+created_at: 2011-11-22 19:31:35 Z
+updated_at: 2017-06-04 00:30:45.075146 Z
+label: "N\xC3\xBAmero de Licencia"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: " De Contador P\xC3\xBAblico, Representante T\xC3\xA9cnico o Corredor"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8c3c721d-3fbb-417c-8d4a-c17673b7fbac
+version: 20170603-203045

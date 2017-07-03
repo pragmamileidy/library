@@ -1,0 +1,28 @@
+--- 
+id: 3106
+name: Paso 2 - Datos del Solicitante
+label: Datos del Solicitante
+description: Datos del Solicitante
+fill_step_id: 1660
+created_at: 2015-02-16 21:30:41 Z
+updated_at: 2015-02-20 17:57:57 Z
+include: "{\"4766\":{\"3378\":{\"2198\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3812\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3814\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3813\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3815\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3818\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3806\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3809\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3816\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3379\":{\"2000\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"574\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"632\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"633\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2217\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4780\":{\"3447\":{\"2198\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3812\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3814\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3813\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3815\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3818\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3806\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3809\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3816\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3461\":{\"2000\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"574\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"632\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"633\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2217\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4781\":{\"3448\":{\"2198\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3910\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3911\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: "# Integraci\xC3\xB3n para Obtener los Datos del Grupo Familiar #\r\n\
+  \r\n\
+  (1..5).each do |_num|\r\n\
+  nro_documento = form_data.get(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.numero_de_identificacion\")\r\n\
+  result = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  data = result[\"response\"] # datos = result[\"response\"]\r\n\
+  if !data.nil?   # if datos.blank? \r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.numero_de_identificacion\",data[\"cedula\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.primer_nombre\",data[\"primerNombre\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.segundo_nombre\",data[\"segundoNombre\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.primer_apellido\",data[\"primerApellido\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.segundo_apellido\",data[\"segundoApellido\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.edad\",data[\"edad\"]) \r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.lugar_de_nacimiento\",data[\"lugarNacimiento\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.sexo\",data[\"sexo\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_grupo_familiar.fecha_de_nacimiento\",data[\"fechaNacimiento\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_ubicacion.pais_string\",data[\"pais\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_ubicacion.provincia\",data[\"provincia\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_ubicacion.distrito\",data[\"distrito\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_ubicacion.corregimiento\",data[\"corregimiento\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_ubicacion.numero_de_casa_apartamento\",data[\"nroCasaApartamento\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_ubicacion.numero_de_telefono\",data[\"tlfLocal\"])\r\n       form_data.set(\"datos_del_grupo_familiar_instance_#{_num}.datos_del_ubicacion.correo_electronico\",data[\"email\"])\r\n      \r\n\
+  else\r\n\
+  \ttransition_errors << \"Los datos del familiar no fueron encontrados, por favor verifique e intente nuevamente.\"\r\n\
+  end\r\n"
+views: 
+back_step: Paso 1 - Datos del Solicitante
+next_step: Paso 3 - Datos del Grupo Familiar
+position: 2
+ajax_calls: ""

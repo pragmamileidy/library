@@ -1,0 +1,19 @@
+--- 
+id: 1656
+section_id: 246
+part_id: 251
+name: Efectos colaterales
+created_at: 2012-05-22 13:56:37 Z
+updated_at: 2015-10-27 14:58:28 Z
+label: Efectos colaterales (locales y/o generales) posibles. Incompatibilidades y antagonismos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 21

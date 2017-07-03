@@ -1,0 +1,30 @@
+--- 
+id: 1381
+part_id: 239
+field_id: 106
+name: Tipo de solicitud de registro sanitario de alimentos
+created_at: 2012-05-17 03:58:13 Z
+updated_at: 2017-06-04 00:24:04.285904 Z
+label: "Tipo de solicitud:"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Seleccione el tipo de solicitud
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7b0e7a5f-7b01-4362-84cd-b777eccea4bd
+version: 20170603-202404

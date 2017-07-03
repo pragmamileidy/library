@@ -1,0 +1,183 @@
+--- 
+id: 147
+position: 9
+selector: "{\"949\":{\"656\":{\"758\":{},\"759\":{}}},\"1270\":{\"1440\":{\"1331\":{},\"1332\":{},\"1333\":{},\"1334\":{},\"1335\":{},\"1336\":{},\"1337\":{},\"1338\":{}}},\"2904\":{\"2827\":{\"3310\":{},\"3311\":{}},\"2828\":{\"3312\":{},\"3313\":{}},\"2829\":{\"3314\":{},\"3315\":{}},\"2830\":{\"3316\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 65px;
+  	left: 716px;
+  	width: 307px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 39px;
+  	left: 719px;
+  	width: 306px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_fechaestimadadeconstruccinsiaplica {
+  	position: absolute;
+  	top: 407px;
+  	left: 722px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_fechadeiniciodeconstruccin {
+  	position: absolute;
+  	top: 408px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_fechadeterminacindeconstruccin {
+  	position: absolute;
+  	top: 369px;
+  	left: 279px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_ubicacin {
+  	position: absolute;
+  	top: 259px;
+  	left: 276px;
+  	width: 682px;
+  	height: 47px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_edificiosn {
+  	position: absolute;
+  	top: 211px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_loteparcelaunidadn {
+  	position: absolute;
+  	top: 215px;
+  	left: 722px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_readeterreno {
+  	position: absolute;
+  	top: 328px;
+  	left: 271px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosfinancierosydeoperaciones_datosfinancieros_reaaocupar {
+  	position: absolute;
+  	top: 328px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .preguntas_pregunta1_sno {
+  	position: absolute;
+  	top: 634px;
+  	left: 279px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .preguntas_pregunta1_explique {
+  	position: absolute;
+  	top: 687px;
+  	left: 57px;
+  	width: 897px;
+  	height: 47px;
+  	overflow: hidden;
+    }
+    .preguntas_pregunta2_sno {
+  	position: absolute;
+  	top: 865px;
+  	left: 275px;
+  	width: 245px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .preguntas_pregunta2_explique {
+  	position: absolute;
+  	top: 921px;
+  	left: 57px;
+  	width: 899px;
+  	height: 49px;
+  	overflow: hidden;
+    }
+    .preguntas_pregunta3_sno {
+  	position: absolute;
+  	top: 1080px;
+  	left: 282px;
+  	width: 235px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .preguntas_pregunta3_explique {
+  	position: absolute;
+  	top: 1146px;
+  	left: 57px;
+  	width: 899px;
+  	height: 44px;
+  	overflow: hidden;
+    }
+    .preguntas_pregunta4_sno {
+  	position: absolute;
+  	top: 1295px;
+  	left: 277px;
+  	width: 253px;
+  	height: 20px;
+  	overflow: hidden;
+    }/
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_8.css\" />\r\n\
+  <title>Registro de Empresas y Declaraci\xC3\xB3n Jurada</title>\r\n\
+  </head>\r\n\
+  <body>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud\"] %>\r\n      </span>\r\n    </div>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud\"] %>\r\n      </span>\r\n    </div>\r\n    <div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas0_sno\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_SNO\"] %>      </span>    </div>\r\n    <div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas1_sno\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_SNO\"] %>      </span>    </div>\t\r\n\
+  \t\t    <div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas2_sno\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_SNO\"] %>      </span>    </div>\t\r\n\
+  \t\t    <div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas3_sno\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_SNO\"] %>      </span>    </div>\r\n    <div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas0_exqlique\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_Exqlique\"] %>      </span>    </div>\r\n\
+  \t<div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas1_exqlique\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_Exqlique\"] %>      </span>    </div>\r\n\
+  \t<div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas2_exqlique\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_Exqlique\"] %>      </span>    </div>\t\r\n\
+  \t\t<div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas2_exqlique\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_Exqlique\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas3_exqlique\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_Exqlique\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas4_exqlique\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_Exqlique\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"listadodepreguntasregistrodeempresasydeclaracinjurada_detallepreguntas4_sno\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ListadodePreguntasRegistrodeEmpresasyDeclaracinJurada_DetallePreguntas_SNO\"] %>      </span>    </div>\r\n\
+  </body>\r\n\
+  </html>\r\n"
+print_design_id: 66
+created_at: 2012-07-18 16:10:45 Z
+updated_at: 2015-10-22 01:06:32 Z
+instances_selector: "{\"949\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1270\":{\"value\":\"\",\"1440\":{\"value\":\"\",\"1331\":{\"value\":\"\"},\"1332\":{\"value\":\"\"},\"1333\":{\"value\":\"\"},\"1334\":{\"value\":\"\"},\"1335\":{\"value\":\"\"},\"1336\":{\"value\":\"\"},\"1337\":{\"value\":\"\"},\"1338\":{\"value\":\"\"}}},\"2904\":{\"value\":\"\",\"2827\":{\"value\":\"\",\"3310\":{\"value\":\"\"},\"3311\":{\"value\":\"\"}},\"2828\":{\"value\":\"\",\"3312\":{\"value\":\"\"},\"3313\":{\"value\":\"\"}},\"2829\":{\"value\":\"\",\"3314\":{\"value\":\"\"},\"3315\":{\"value\":\"\"}},\"2830\":{\"value\":\"\",\"3316\":{\"value\":\"\"}}}}"
+size: ""

@@ -1,0 +1,19 @@
+--- 
+id: 532
+section_id: 37
+part_id: 63
+name: "Estad\xC3\xADa anterior"
+created_at: 2011-11-28 20:25:53 Z
+updated_at: 2012-04-10 18:42:29 Z
+label: "Detalle si ha estado anteriormente en Panam\xC3\xA1"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 13

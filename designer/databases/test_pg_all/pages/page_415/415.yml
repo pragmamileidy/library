@@ -1,0 +1,169 @@
+--- 
+id: 415
+position: 1
+selector: "{\"3226\":{\"656\":{\"758\":{},\"759\":{}}},\"2909\":{\"2198\":{\"2373\":{}}},\"2910\":{\"2174\":{\"954\":{},\"956\":{}}},\"2911\":{\"2544\":{\"2418\":{}}},\"2912\":{\"2189\":{\"3078\":{},\"2391\":{}},\"2190\":{\"954\":{},\"956\":{}}},\"2913\":{\"2197\":{\"2393\":{},\"2394\":{},\"2395\":{},\"2397\":{}}},\"2914\":{\"2485\":{\"365\":{},\"367\":{},\"366\":{}},\"2486\":{\"3106\":{}}},\"2921\":{\"2549\":{\"3101\":{},\"2851\":{},\"2853\":{},\"2854\":{}},\"2550\":{\"3101\":{},\"2851\":{},\"2853\":{},\"2854\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n  font-family: Verdana, Geneva, sans-serif;\r\n  font-size: 16px;\r\n\
+  }\r\n\
+  .main_pdf_content {\r\n  /* main_pdf_content: estos attributos seran ignorados en rendeo */\r\n  background-image: url(RUTA_IMAGEN.png);\r\n  top: 0px;\r\n  left: 0px;\r\n  height:1344px;\r\n  width: 1024px;\r\n  position: absolute;\r\n\
+  }\r\n\
+  /* Otras clases de formatos preestablecidos que a\xC3\xBAn no se han definido */\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 73px;\r\n\
+  \tleft: 778px;\r\n\
+  \twidth: 216px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 48px;\r\n\
+  \tleft: 780px;\r\n\
+  \twidth: 215px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n  .datosgeneralesdelasolicitud_datosgeneralesdelasolicitud_tipodeplano {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 523px;\r\n\
+  \tleft: 250px;\r\n\
+  \twidth: 247px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 16px;\r\n  }\r\n  .datosdelsolicitantenatural_nombrecompleto_primernombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 308px;\r\n\
+  \tleft: 248px;\r\n\
+  \twidth: 246px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .datosdelsolicitantenatural_nombrecompleto_primerapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 309px;\r\n\
+  \tleft: 704px;\r\n\
+  \twidth: 236px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .datos_del_solicitante_jurdico {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 404px;\r\n\
+  \tleft: 247px;\r\n\
+  \twidth: 457px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 15px;\r\n  }\r\n   .datosdelcoparticipante_instance_1_datosdelcoparticipante_tipodecoparticipante_string {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 704px;\r\n\
+  \tleft: 249px;\r\n\
+  \twidth: 248px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .datosdelcoparticipante_instance_1_datosdelcoparticipante_idoneidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 795px;\r\n\
+  \tleft: 248px;\r\n\
+  \twidth: 246px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelcoparticipante_instance_1_nombrecompleto_primernombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 739px;\r\n\
+  \tleft: 248px;\r\n\
+  \twidth: 363px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .datosdelcoparticipante_instance_1_nombrecompleto_primerapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 739px;\r\n\
+  \tleft: 611px;\r\n\
+  \twidth: 329px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 18px;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_nombredelproyecto {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 557px;\r\n\
+  \tleft: 250px;\r\n\
+  \twidth: 691px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_categoradelproyecto {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 593px;\r\n\
+  \tleft: 249px;\r\n\
+  \twidth: 247px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_nmerodeplano {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 521px;\r\n\
+  \tleft: 705px;\r\n\
+  \twidth: 234px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_usodelaobra {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 595px;\r\n\
+  \tleft: 705px;\r\n\
+  \twidth: 238px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .datosdelafinca_datosdefinca_nmerodefinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 629px;\r\n\
+  \tleft: 249px;\r\n\
+  \twidth: 247px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 18px;\r\n  }\r\n  .datosdelafinca_datosdefinca_tomo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 630px;\r\n\
+  \tleft: 705px;\r\n\
+  \twidth: 238px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_datosdefinca_folio {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 665px;\r\n\
+  \tleft: 250px;\r\n\
+  \twidth: 246px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_datosdeubicacindelafinca_corregimiento_lista {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 667px;\r\n\
+  \tleft: 706px;\r\n\
+  \twidth: 237px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora0_nombredelaentidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 933px;\r\n\
+  \tleft: 285px;\r\n\
+  \twidth: 486px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 17px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora0_usuario {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 969px;\r\n\
+  \tleft: 284px;\r\n\
+  \twidth: 263px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora0_nmerodeobservacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 971px;\r\n\
+  \tleft: 772px;\r\n\
+  \twidth: 154px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora0_observacionesyrecomendacionesparaelsolicitante {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1042px;\r\n\
+  \tleft: 40px;\r\n\
+  \twidth: 945px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 44px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora1_nombredelaentidad {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1159px;\r\n\
+  \tleft: 267px;\r\n\
+  \twidth: 485px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora1_usuario {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1196px;\r\n\
+  \tleft: 263px;\r\n\
+  \twidth: 266px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora1_nmerodeobservacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1196px;\r\n\
+  \tleft: 751px;\r\n\
+  \twidth: 246px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 19px;\r\n  }\r\n  .entidadevaluadorarevisiones_entidadevaluadora1_observacionesyrecomendacionesparaelsolicitante {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1279px;\r\n\
+  \tleft: 29px;\r\n\
+  \twidth: 965px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 40px;\r\n  }"
+override_render: false
+html_render: 
+print_design_id: 151
+created_at: 2013-09-12 13:30:21 Z
+updated_at: 2013-09-12 13:30:21 Z
+instances_selector: "{\"2653\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2654\":{\"value\":\"\",\"2198\":{\"value\":\"\",\"2373\":{\"value\":\"\"}}},\"2655\":{\"value\":\"\",\"2174\":{\"value\":\"\",\"954\":{\"value\":\"\"},\"956\":{\"value\":\"\"}}},\"2656\":{\"value\":\"\",\"2544\":{\"value\":\"\",\"2418\":{\"value\":\"\"}}},\"2657\":{\"value\":\"1,1\",\"2189\":{\"value\":\"\",\"3078\":{\"value\":\"\"},\"2391\":{\"value\":\"\"}},\"2190\":{\"value\":\"\",\"954\":{\"value\":\"\"},\"956\":{\"value\":\"\"}}},\"2658\":{\"value\":\"\",\"2197\":{\"value\":\"\",\"2393\":{\"value\":\"\"},\"2394\":{\"value\":\"\"},\"2395\":{\"value\":\"\"},\"2397\":{\"value\":\"\"}}},\"2659\":{\"value\":\"\",\"2485\":{\"value\":\"\",\"365\":{\"value\":\"\"},\"367\":{\"value\":\"\"},\"366\":{\"value\":\"\"}},\"2486\":{\"value\":\"\",\"3106\":{\"value\":\"\"}}},\"2664\":{\"value\":\"\",\"2549\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"2854\":{\"value\":\"\"}},\"2550\":{\"value\":\"\",\"3101\":{\"value\":\"\"},\"2851\":{\"value\":\"\"},\"2853\":{\"value\":\"\"},\"2854\":{\"value\":\"\"}}}}"
+size: 

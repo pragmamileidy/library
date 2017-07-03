@@ -1,0 +1,30 @@
+--- 
+id: 35
+part_id: 14
+field_id: 2
+name: url
+created_at: 2016-10-06 15:10:49.562699 Z
+updated_at: 2016-10-06 15:10:49.562699 Z
+label: url
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d13f195f-ee91-4dc7-b420-2f70d13923dc
+version: 20161006-111049

@@ -1,0 +1,30 @@
+--- 
+id: 2072
+part_id: 313
+field_id: 10
+name: "Fecha de Constituci\xC3\xB3n"
+created_at: 2012-07-19 22:24:51 Z
+updated_at: 2017-06-04 00:24:25.437920 Z
+label: "Fecha de Constituci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 63c2b3df-ec97-472d-9ecc-0809e2825c0f
+version: 20170603-202425

@@ -1,0 +1,16 @@
+--- 
+id: 4553
+design_id: 255
+section_id: 564
+name: requisitos de la solicitud
+created_at: 2014-11-04 16:46:39 Z
+updated_at: 2014-11-04 16:46:39 Z
+label: requisitos de la solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3380\":{\"210\":{\"required\":\"required\"}},\"3381\":{\"210\":{\"required\":\"required\"}},\"3382\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

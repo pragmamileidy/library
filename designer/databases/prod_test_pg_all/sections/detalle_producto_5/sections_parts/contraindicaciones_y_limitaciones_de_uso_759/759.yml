@@ -1,0 +1,19 @@
+--- 
+id: 759
+section_id: 5
+part_id: 157
+name: Contraindicaciones y limitaciones de uso
+created_at: 2012-03-27 01:44:52 Z
+updated_at: 2012-05-10 00:38:10 Z
+label: "Contraindicaciones y limitaciones de uso (casos en los que su administraci\xC3\xB3n puede dar lugar a efectos nocivos)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 37

@@ -1,0 +1,20 @@
+--- 
+id: 460
+section_id: 104
+part_id: 38
+name: Licencia Comercial
+created_at: 2011-11-17 18:24:53 Z
+updated_at: 2015-11-05 19:28:46 Z
+label: Licencia Comercial
+min_instances: 1
+max_instances: 1
+depends_on: "s=form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_de_licencia_de_operaciones_de_farmacia.tipo_de_solicitud_de_licencia_de_operaciones_de_farmacia\")\r\n\
+  s==\"Renovaci\xC3\xB3n\""
+manage_as_confidential: false
+include: "{}"
+hint: Copia simple de la licencia comercial, certificada por el Ministerio de Comercio e Industrias
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

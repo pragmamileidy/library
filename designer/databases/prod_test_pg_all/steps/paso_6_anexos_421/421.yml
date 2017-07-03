@@ -1,0 +1,19 @@
+--- 
+id: 421
+name: Paso 6 - Anexos
+label: Anexos
+description: ""
+fill_step_id: 221
+created_at: 2012-05-31 19:46:09 Z
+updated_at: 2012-08-03 15:34:52 Z
+include: "{\"1191\":{\"1728\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1729\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1730\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 5 - Total de Costos
+next_step: "Ultimo Paso - Confirmaci\xC3\xB3n"
+position: 6
+ajax_calls: ""

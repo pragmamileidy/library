@@ -1,0 +1,43 @@
+--- 
+id: 217
+name: Categoria del Proyecto
+description: "Categor\xC3\xADa del Proyecto"
+version: 
+status: Draft
+label: "Categor\xC3\xADa del Proyecto"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-14 19:17:03 Z
+updated_at: 2015-01-06 15:59:26 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  @values_of_list = [""]
+  @keys_of_list = [""]
+  result = WebserviceConsumer.get('/service/ws_categoria_de_proyecto/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+  	_valores.each {
+  		|institucion|
+  		 if !institucion["siglas"].strip.empty?
+                      @values_of_list << institucion["nombre"]
+                      @keys_of_list << institucion["siglas"]
+                  end
+  		}
+  end
+serial: 2738-2814-7615-7800-9003

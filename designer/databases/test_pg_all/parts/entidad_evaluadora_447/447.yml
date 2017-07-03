@@ -1,0 +1,17 @@
+--- 
+id: 447
+name: Entidad Evaluadora
+description: Lista de Entidad Evaluadora
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-15 20:29:20 Z
+updated_at: 2012-08-15 20:29:20 Z
+label: Entidad Evaluadora
+hint: Especifique la unidad de DOYCM o la entidad que debe evaluar los planos
+view_class: horizontal
+serial: 

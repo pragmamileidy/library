@@ -1,0 +1,19 @@
+--- 
+id: 3096
+name: Paso 4 - Adjuntar Archivos
+label: Adjuntar Archivos
+description: "Adjuntar los requisitos asociados al tr\xC3\xA1mite"
+fill_step_id: 1654
+created_at: 2015-01-13 15:39:10 Z
+updated_at: 2015-01-13 15:39:10 Z
+include: "{\"4754\":{\"2883\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2884\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1768\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2885\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1769\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1770\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1771\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2886\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1772\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2887\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2888\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1835\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 3 - Datos del Deposito y Alquiler
+next_step: Paso 5 - Confirmacion
+position: 3
+ajax_calls: ""

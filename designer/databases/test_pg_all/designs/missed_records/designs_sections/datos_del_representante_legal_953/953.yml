@@ -1,0 +1,16 @@
+--- 
+id: 953
+design_id: 91
+section_id: 50
+name: Datos del Representante Legal
+created_at: 2012-05-08 16:16:28 Z
+updated_at: 2012-05-11 23:10:11 Z
+label: Datos del Representante Legal
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"235\":{\"572\":{\"required\":\"required\"},\"574\":{\"required\":\"required\"},\"632\":{\"required\":\"required\"},\"633\":{\"required\":\"required\"},\"578\":{\"required\":\"required\"},\"581\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"631\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}},\"234\":{\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"610\":{\"required\":\"required\"},\"545\":{\"required\":\"required\"},\"546\":{\"required\":\"required\"},\"1298\":{\"required\":\"required\"}}}"
+hint: Datos del Representante Legal
+help: ""
+order_input: 4

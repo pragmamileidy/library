@@ -1,0 +1,30 @@
+--- 
+id: 3444
+part_id: 670
+field_id: 303
+name: requires repair
+created_at: 2013-09-12 13:24:11 Z
+updated_at: 2017-06-04 00:23:05.768491 Z
+label: Requiere Reparo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 97bdfa68-973b-4d45-90de-85f9a267e2d2
+version: 20170603-202305

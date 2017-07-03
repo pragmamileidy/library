@@ -1,0 +1,30 @@
+--- 
+id: 270
+name: Entidad Check PRUEBA
+description: Entidad Check PRUEBA
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-20 21:06:39 Z
+updated_at: 2013-07-11 14:11:40 Z
+values_list: ""
+keys_list: ""
+field_type: national_id
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: ""
+serial: 

@@ -1,0 +1,17 @@
+--- 
+id: 68
+name: "Datos  de Preparaci\xC3\xB3n del Producto Farmac\xC3\xA9utico"
+description: "Parte que contiene informaci\xC3\xB3n de la preparaci\xC3\xB3n del producto farmac\xC3\xA9utico"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-10 16:43:22 Z
+updated_at: 2015-10-27 14:55:39 Z
+label: "Datos  de Preparaci\xC3\xB3n del Producto Farmac\xC3\xA9utico"
+hint: ""
+view_class: horizontal
+serial: 3009-8345-2934-3867-4563

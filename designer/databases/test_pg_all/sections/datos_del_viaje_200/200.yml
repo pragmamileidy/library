@@ -1,0 +1,17 @@
+--- 
+id: 200
+name: Datos del Viaje
+description: Datos del Viaje
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-26 18:54:14 Z
+updated_at: 2012-05-16 20:46:24 Z
+status: Draft
+label: Datos del Viaje
+hint: ""
+serial: 

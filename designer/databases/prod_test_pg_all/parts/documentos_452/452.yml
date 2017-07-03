@@ -1,0 +1,17 @@
+--- 
+id: 452
+name: Documentos
+description: "Selecci\xC3\xB3n de Documentos entregados"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-17 19:40:27 Z
+updated_at: 2012-08-17 19:40:27 Z
+label: Documentos
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 14
+name: Registrante
+label: Registrante
+description: ""
+fill_step_id: 5
+created_at: 2012-03-08 15:38:01 Z
+updated_at: 2012-05-19 20:13:50 Z
+include: "{\"106\":{\"190\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"567\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ,Fabricante
+allowed_back_to_steps: ,Solicitante
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Solicitante
+next_step: Fabricante
+position: 1
+ajax_calls: 

@@ -1,0 +1,19 @@
+--- 
+id: 758
+section_id: 5
+part_id: 157
+name: "Tiempo y duraci\xC3\xB3n de la inmunidad"
+created_at: 2012-03-27 01:44:52 Z
+updated_at: 2012-04-17 15:09:56 Z
+label: "Tiempo necesario para conferir inmunidad y duraci\xC3\xB3n de la misma"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 17

@@ -1,0 +1,30 @@
+--- 
+id: 3469
+part_id: 674
+field_id: 10
+name: aprobar
+created_at: 2014-01-14 15:41:46 Z
+updated_at: 2017-06-04 00:23:07.838748 Z
+label: Aprobar
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8711fddd-74c5-469f-ab58-01289d7f300d
+version: 20170603-202307

@@ -1,0 +1,19 @@
+--- 
+id: 1730
+section_id: 253
+part_id: 38
+name: Carta poder firmada por el estudiante y el representante legal
+created_at: 2012-05-31 18:14:50 Z
+updated_at: 2012-07-25 16:24:48 Z
+label: Carta poder firmada por el estudiante y el representante legal
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "La Carta de Poder es generada por el tr\xC3\xA1mite \"Carta de Poder para Estudios Superiores\", si no ha realizado ese tr\xC3\xA1mite, por favor realizarlo."
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

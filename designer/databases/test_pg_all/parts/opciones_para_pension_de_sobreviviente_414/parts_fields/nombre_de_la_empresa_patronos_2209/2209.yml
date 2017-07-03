@@ -1,0 +1,30 @@
+--- 
+id: 2209
+part_id: 414
+field_id: 201
+name: Nombre de la Empresa/Patronos
+created_at: 2012-07-31 16:15:57 Z
+updated_at: 2017-06-04 00:22:08.960611 Z
+label: Nombre de la Empresa/Patronos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6da9743f-00f2-4a87-b187-50f71d8846c7
+version: 20170603-202208

@@ -1,0 +1,607 @@
+--- 
+id: 539
+position: 2
+selector: "{\"4645\":{\"656\":{\"758\":{},\"759\":{}}},\"4733\":{\"3426\":{\"2197\":{}},\"3429\":{\"2945\":{},\"2947\":{},\"2948\":{}},\"3430\":{\"2951\":{},\"2950\":{},\"2952\":{}}},\"4734\":{\"3431\":{\"2197\":{}},\"3432\":{\"2945\":{},\"2947\":{},\"2948\":{}},\"3433\":{\"2951\":{},\"2950\":{},\"2952\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+   .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 67px;
+  	left: 773px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 40px;
+  	left: 775px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_1_tipodedocumentoautormusica_tipodeidentificacin {
+  	position: absolute;
+  	top: 221px;
+  	left: 44px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_1_autormsica_identificacin {
+  	position: absolute;
+  	top: 217px;
+  	left: 279px;
+  	width: 196px;
+  	height: 86px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_1_autormsica_nombrecompleto {
+  	position: absolute;
+  	top: 215px;
+  	left: 499px;
+  	width: 255px;
+  	height: 89px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_1_autormsica_direccin {
+  	position: absolute;
+  	top: 213px;
+  	left: 767px;
+  	width: 232px;
+  	height: 93px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_1_autormusicajuridico_ruc {
+  	position: absolute;
+  	top: 216px;
+  	left: 279px;
+  	width: 195px;
+  	height: 87px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_1_autormusicajuridico_nombre {
+  	position: absolute;
+  	top: 215px;
+  	left: 496px;
+  	width: 256px;
+  	height: 89px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_1_autormusicajuridico_direccin {
+  	position: absolute;
+  	top: 212px;
+  	left: 766px;
+  	width: 232px;
+  	height: 94px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_2_tipodedocumentoautormusica_tipodeidentificacin {
+  	position: absolute;
+  	top: 316px;
+  	left: 45px;
+  	width: 211px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_2_autormsica_identificacin {
+  	position: absolute;
+  	top: 314px;
+  	left: 278px;
+  	width: 196px;
+  	height: 100px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_2_autormsica_nombrecompleto {
+  	position: absolute;
+  	top: 314px;
+  	left: 498px;
+  	width: 252px;
+  	height: 97px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_2_autormsica_direccin {
+  	position: absolute;
+  	top: 313px;
+  	left: 766px;
+  	width: 232px;
+  	height: 98px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_2_autormusicajuridico_ruc {
+  	position: absolute;
+  	top: 314px;
+  	left: 278px;
+  	width: 194px;
+  	height: 99px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_2_autormusicajuridico_nombre {
+  	position: absolute;
+  	top: 312px;
+  	left: 497px;
+  	width: 252px;
+  	height: 98px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_2_autormusicajuridico_direccin {
+  	position: absolute;
+  	top: 312px;
+  	left: 765px;
+  	width: 232px;
+  	height: 97px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_3_tipodedocumentoautormusica_tipodeidentificacin {
+  	position: absolute;
+  	top: 424px;
+  	left: 45px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_3_autormsica_identificacin {
+  	position: absolute;
+  	top: 422px;
+  	left: 282px;
+  	width: 192px;
+  	height: 82px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_3_autormsica_nombrecompleto {
+  	position: absolute;
+  	top: 422px;
+  	left: 498px;
+  	width: 254px;
+  	height: 82px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_3_autormsica_direccin {
+  	position: absolute;
+  	top: 420px;
+  	left: 767px;
+  	width: 232px;
+  	height: 85px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_3_autormusicajuridico_ruc {
+  	position: absolute;
+  	top: 422px;
+  	left: 281px;
+  	width: 192px;
+  	height: 82px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_3_autormusicajuridico_nombre {
+  	position: absolute;
+  	top: 421px;
+  	left: 497px;
+  	width: 253px;
+  	height: 83px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_3_autormusicajuridico_direccin {
+  	position: absolute;
+  	top: 418px;
+  	left: 766px;
+  	width: 232px;
+  	height: 87px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_4_tipodedocumentoautormusica_tipodeidentificacin {
+  	position: absolute;
+  	top: 525px;
+  	left: 42px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_4_autormsica_identificacin {
+  	position: absolute;
+  	top: 524px;
+  	left: 281px;
+  	width: 192px;
+  	height: 79px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_4_autormsica_nombrecompleto {
+  	position: absolute;
+  	top: 521px;
+  	left: 494px;
+  	width: 257px;
+  	height: 80px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_4_autormsica_direccin {
+  	position: absolute;
+  	top: 519px;
+  	left: 767px;
+  	width: 232px;
+  	height: 82px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_4_autormusicajuridico_ruc {
+  	position: absolute;
+  	top: 523px;
+  	left: 280px;
+  	width: 192px;
+  	height: 78px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_4_autormusicajuridico_nombre {
+  	position: absolute;
+  	top: 521px;
+  	left: 494px;
+  	width: 257px;
+  	height: 79px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_4_autormusicajuridico_direccin {
+  	position: absolute;
+  	top: 519px;
+  	left: 766px;
+  	width: 232px;
+  	height: 81px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_5_tipodedocumentoautormusica_tipodeidentificacin {
+  	position: absolute;
+  	top: 619px;
+  	left: 40px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_5_autormsica_identificacin {
+  	position: absolute;
+  	top: 617px;
+  	left: 281px;
+  	width: 191px;
+  	height: 84px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_5_autormsica_nombrecompleto {
+  	position: absolute;
+  	top: 619px;
+  	left: 498px;
+  	width: 256px;
+  	height: 80px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_5_autormsica_direccin {
+  	position: absolute;
+  	top: 616px;
+  	left: 765px;
+  	width: 232px;
+  	height: 85px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_5_autormusicajuridico_ruc {
+  	position: absolute;
+  	top: 617px;
+  	left: 281px;
+  	width: 192px;
+  	height: 82px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_5_autormusicajuridico_nombre {
+  	position: absolute;
+  	top: 616px;
+  	left: 496px;
+  	width: 255px;
+  	height: 83px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalm_instance_5_autormusicajuridico_direccin {
+  	position: absolute;
+  	top: 615px;
+  	left: 765px;
+  	width: 232px;
+  	height: 84px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_1_tipodedocumentoautordibujo_tipodeidentificacin {
+  	position: absolute;
+  	top: 805px;
+  	left: 33px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_1_autordibujo_identificacin {
+  	position: absolute;
+  	top: 803px;
+  	left: 279px;
+  	width: 188px;
+  	height: 89px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_1_autordibujo_nombrecompleto {
+  	position: absolute;
+  	top: 802px;
+  	left: 496px;
+  	width: 252px;
+  	height: 93px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_1_autordibujo_direccin {
+  	position: absolute;
+  	top: 799px;
+  	left: 761px;
+  	width: 232px;
+  	height: 93px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_1_autordibujojurdico_ruc {
+  	position: absolute;
+  	top: 803px;
+  	left: 278px;
+  	width: 189px;
+  	height: 88px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_1_autordibujojurdico_nombre {
+  	position: absolute;
+  	top: 801px;
+  	left: 495px;
+  	width: 252px;
+  	height: 94px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_1_autordibujojurdico_direccin {
+  	position: absolute;
+  	top: 800px;
+  	left: 760px;
+  	width: 232px;
+  	height: 92px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_2_tipodedocumentoautordibujo_tipodeidentificacin {
+  	position: absolute;
+  	top: 903px;
+  	left: 34px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_2_autordibujo_identificacin {
+  	position: absolute;
+  	top: 904px;
+  	left: 276px;
+  	width: 193px;
+  	height: 85px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_2_autordibujo_nombrecompleto {
+  	position: absolute;
+  	top: 903px;
+  	left: 496px;
+  	width: 251px;
+  	height: 88px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_2_autordibujo_direccin {
+  	position: absolute;
+  	top: 901px;
+  	left: 762px;
+  	width: 232px;
+  	height: 88px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_2_autordibujojurdico_ruc {
+  	position: absolute;
+  	top: 903px;
+  	left: 276px;
+  	width: 192px;
+  	height: 84px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_2_autordibujojurdico_nombre {
+  	position: absolute;
+  	top: 901px;
+  	left: 495px;
+  	width: 251px;
+  	height: 86px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_2_autordibujojurdico_direccin {
+  	position: absolute;
+  	top: 900px;
+  	left: 761px;
+  	width: 232px;
+  	height: 88px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_3_tipodedocumentoautordibujo_tipodeidentificacin {
+  	position: absolute;
+  	top: 1008px;
+  	left: 35px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_3_autordibujo_identificacin {
+  	position: absolute;
+  	top: 1005px;
+  	left: 278px;
+  	width: 188px;
+  	height: 84px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_3_autordibujo_nombrecompleto {
+  	position: absolute;
+  	top: 1002px;
+  	left: 496px;
+  	width: 251px;
+  	height: 87px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_3_autordibujo_direccin {
+  	position: absolute;
+  	top: 1003px;
+  	left: 761px;
+  	width: 232px;
+  	height: 87px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_3_autordibujojurdico_ruc {
+  	position: absolute;
+  	top: 1004px;
+  	left: 278px;
+  	width: 187px;
+  	height: 83px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_3_autordibujojurdico_nombre {
+  	position: absolute;
+  	top: 1002px;
+  	left: 494px;
+  	width: 253px;
+  	height: 86px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_3_autordibujojurdico_direccin {
+  	position: absolute;
+  	top: 1003px;
+  	left: 761px;
+  	width: 232px;
+  	height: 86px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_4_tipodedocumentoautordibujo_tipodeidentificacin {
+  	position: absolute;
+  	top: 1107px;
+  	left: 33px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_4_autordibujo_identificacin {
+  	position: absolute;
+  	top: 1106px;
+  	left: 276px;
+  	width: 191px;
+  	height: 80px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_4_autordibujo_nombrecompleto {
+  	position: absolute;
+  	top: 1104px;
+  	left: 497px;
+  	width: 247px;
+  	height: 81px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_4_autordibujo_direccin {
+  	position: absolute;
+  	top: 1105px;
+  	left: 761px;
+  	width: 232px;
+  	height: 81px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_4_autordibujojurdico_ruc {
+  	position: absolute;
+  	top: 1106px;
+  	left: 276px;
+  	width: 191px;
+  	height: 79px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_4_autordibujojurdico_nombre {
+  	position: absolute;
+  	top: 1104px;
+  	left: 495px;
+  	width: 248px;
+  	height: 80px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_4_autordibujojurdico_direccin {
+  	position: absolute;
+  	top: 1103px;
+  	left: 760px;
+  	width: 232px;
+  	height: 83px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_5_tipodedocumentoautordibujo_tipodeidentificacin {
+  	position: absolute;
+  	top: 1209px;
+  	left: 33px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_5_autordibujo_identificacin {
+  	position: absolute;
+  	top: 1207px;
+  	left: 276px;
+  	width: 198px;
+  	height: 82px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_5_autordibujo_nombrecompleto {
+  	position: absolute;
+  	top: 1204px;
+  	left: 506px;
+  	width: 237px;
+  	height: 83px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_5_autordibujo_direccin {
+  	position: absolute;
+  	top: 1199px;
+  	left: 759px;
+  	width: 232px;
+  	height: 88px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_5_autordibujojurdico_ruc {
+  	position: absolute;
+  	top: 1206px;
+  	left: 275px;
+  	width: 198px;
+  	height: 82px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_5_autordibujojurdico_nombre {
+  	position: absolute;
+  	top: 1203px;
+  	left: 504px;
+  	width: 239px;
+  	height: 84px;
+  	overflow: hidden;
+    }
+    .datosdelautorespersonanaturalad_instance_5_autordibujojurdico_direccin {
+  	position: absolute;
+  	top: 1198px;
+  	left: 758px;
+  	width: 232px;
+  	height: 89px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 171
+created_at: 2015-01-06 21:02:50 Z
+updated_at: 2015-10-01 20:06:17 Z
+instances_selector: "{\"4645\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4733\":{\"value\":\"1,5\",\"3426\":{\"value\":\"\",\"2197\":{\"value\":\"\"}},\"3429\":{\"value\":\"\",\"2945\":{\"value\":\"\"},\"2947\":{\"value\":\"\"},\"2948\":{\"value\":\"\"}},\"3430\":{\"value\":\"\",\"2951\":{\"value\":\"\"},\"2950\":{\"value\":\"\"},\"2952\":{\"value\":\"\"}}},\"4734\":{\"value\":\"1,5\",\"3431\":{\"value\":\"\",\"2197\":{\"value\":\"\"}},\"3432\":{\"value\":\"\",\"2945\":{\"value\":\"\"},\"2947\":{\"value\":\"\"},\"2948\":{\"value\":\"\"}},\"3433\":{\"value\":\"\",\"2951\":{\"value\":\"\"},\"2950\":{\"value\":\"\"},\"2952\":{\"value\":\"\"}}}}"
+size: ""

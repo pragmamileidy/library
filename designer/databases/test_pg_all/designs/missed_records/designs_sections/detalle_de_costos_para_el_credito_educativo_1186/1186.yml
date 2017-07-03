@@ -1,0 +1,16 @@
+--- 
+id: 1186
+design_id: 101
+section_id: 154
+name: "Detalle de Costos para el Cr\xC3\xA9dito Educativo"
+created_at: 2012-05-31 17:10:27 Z
+updated_at: 2014-04-22 20:00:37 Z
+label: "Detalle de Costos para el Cr\xC3\xA9dito Educativo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"865\":{\"2519\":{\"required\":\"required\"},\"3236\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 11

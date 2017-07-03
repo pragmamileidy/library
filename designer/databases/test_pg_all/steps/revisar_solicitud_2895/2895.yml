@@ -1,0 +1,259 @@
+--- 
+id: 2895
+name: Revisar Solicitud
+label: "Revisi\xC3\xB3n de Solicitud de Record Policivo"
+description: "<br>Revisi\xC3\xB3n de Solicitud de Record Policivo</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 1554
+created_at: 2014-06-20 13:27:05 Z
+updated_at: 2016-02-11 02:56:29.527155 Z
+include: "{\"4318\":{\"3263\":{\"3702\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3698\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3211\":{\"3627\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3690\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"4467\":{\"3208\":{\"1973\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1883\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3209\":{\"2456\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"4320\":{\"2631\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3254\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"2632\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"4468\":{\"3208\":{\"1973\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1473\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1474\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3209\":{\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"4319\":{\"3212\":{\"3629\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3927\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3933\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3630\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3928\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3934\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3724\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}}},\"4315\":{\"3208\":{\"3716\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1973\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1471\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1474\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3715\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1475\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1479\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1477\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1476\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3694\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3695\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3717\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}},\"3209\":{\"572\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"805\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3267\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3268\":{\"528\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3269\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3294\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3271\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3272\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3273\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3274\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"4399\":{\"3261\":{\"3712\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3691\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3693\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3692\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3725\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}},\"3264\":{\"3722\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3726\":{\"views\":\"hidden\",\"enabled\":\"enabled\"}}},\"4335\":{\"3219\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3220\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3221\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3222\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3259\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3364\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3367\":{\"210\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}},\"3365\":{\"3719\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"4368\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3199\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  _idagente = @task["agent_id"].to_s
+  
+  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+  _hash = result["hash"]
+  _agente = _hash["response"]
+  
+  form_data.set("recibido.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: "_obs = form_data.get(\"aprobacion_de_solicitud.datos_del_funcionario_generico.observaciones\")\r\n\
+  _aprob = form_data.get(\"aprobacion_de_solicitud.datos_del_funcionario_generico.aprobacion\")\r\n\
+  if (_aprob ==\"NO\" and _obs.blank?) \r\n   transition_errors << \"Debe indicar el motivo de su desaprobaci\xC3\xB3n en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: "////Validaci\xC3\xB3n para ocultar seccion de confirmaci\xC3\xB3n si y motivo de solicitud\r\n\
+  $(document).ready(function(){\r\n  function ocultar(){\r\n    var valor3 = $('input[name=\"[field][tipo_de_persona_dij_es_titular_o_no_si_no]\"]:checked').val();\r\n  \r\n    if($(valor3).html() == \"S\xC3\x8D\"){\r\n       $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij\").parent().parent().hide();\r\n    \r\n    }\r\n  }\r\n  ocultar();\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  ///////////////////////////////////////////////// tipo pasaporte = extranjero\r\n\
+  \r\n\
+  $.each( $('[id*=field_datos_del_titular_rp_]'), function(index, campo) {\r\n\
+  \r\n  ocultarcampos(this.value,this.id);\r\n\
+  \r\n  if ($(campo).attr('id').match(/datos_basicos_de_persona_natural_tipo_de_documento/)) {\r\n    $(campo).attr('onchange', 'ocultarcampos(this.value,this.id);')\r\n  }\r\n\
+  });\r\n\
+  \r\n\
+  function ocultarcampos(valorcampo, idcampo) {\r\n  var coincide   = idcampo.match(/[\\d]_datos_basicos_de_persona_natural_tipo_de_documento/);\r\n  var pos      = \"\";\r\n  if (coincide != undefined) {\r\n    pos = coincide[0].split('_');\r\n\
+  \r\n    var inicioRuta   = \"#field_datos_del_titular_rp_instance_\";\r\n    var campoTipoDoc = \"_datos_basicos_de_persona_natural_tipo_de_documento\";\r\n    var campoTipoNac = \"_datos_basicos_de_persona_natural_tipo_de_nacionalidad\";\r\n    var campoNac   = \"_datos_basicos_de_persona_natural_nacionalidad\";\r\n\
+  \r\n    var nacionalidad = inicioRuta + pos[0] + campoNac;//#field_datos_del_titular_rp_instance_x_datos_basicos_de_persona_natural_nacionalidad\r\n    var tipoNac    = inicioRuta + pos[0] + campoTipoNac;//#field_datos_del_titular_rp_instance_x_datos_basicos_de_persona_natural_tipo_de_nacionalidad\r\n    var tidco = inicioRuta + pos[0] + campoTipoDoc;\r\n    \r\n    if ($(tidco).html() == \"Cedula\"){\r\n        $(nacionalidad).parent().parent().hide();\r\n        $(tipoNac).parent().parent().show();\r\n        $(tipoNac).html(\"Nacional\");\r\n    } else if ($(tidco).html() == \"Pasaporte\") {\r\n      $(tipoNac).parent().parent().hide();\r\n      $(nacionalidad).html(\"Extranjero\");\r\n      $(nacionalidad).parent().parent().show();\r\n    }\r\n  }\r\n\
+  }\r\n\
+  \r\n\
+  ////////////////////// Al seleccionar que no se tiene version en fisico deshabilitar firma del director\r\n\
+  $(document).ready(function(){\r\n   valor = $(\"#field_retiro_record_policivo_retiro_record_policivo_version_fisico\");\r\n    if ($(valor).html() == \"NO\") {\r\n       $(\"#field_retiro_record_policivo_retiro_record_policivo_retiro_rp\").parent().parent().hide();\r\n       $(\"#field_retiro_record_policivo_retiro_record_policivo_retiro_record_policivo\").parent().parent().hide();\r\n       $(\"#field_retiro_record_policivo_firma_director_si_no\").parents(\".part-box\").hide();\r\n    }\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  ///////////////////// Ocultar botones agregar eliminar\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  $.each( $('[id*=datos_del_titular_rp_]'), function(index, campo) {\r\n  \r\n var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n if (pos == null){\r\n   pos = (this.id).match(/_instance_[\\d]/);\r\n }\r\n //alert(pos);\r\n var mod1 = \"#field_datos_del_titular_rp\";\r\n var mod2 = \"_datos_basicos_de_persona_natural_cedula_pasaporte\";\r\n var mod3 = mod1.concat(pos);\r\n var dato = mod3.concat(mod2);\r\n $(dato).parents(\".section-box\").next().hide();\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  ///////////////////// Ocultar secciones vacias\r\n\
+  $(document).ready(function(){\r\n  $.each( $('[id*=datos_del_titular_rp_]'), function(index, campo) {  \r\n    var pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n    if (pos == null){\r\n      pos = (this.id).match(/_instance_[\\d]/);\r\n    }\r\n    var InicioRuta = \"#field_datos_del_titular_rp\";\r\n    var NroDoc = \"_datos_basicos_de_persona_natural_cedula_pasaporte\";\r\n    var coincide = InicioRuta.concat(pos);\r\n    var doc = coincide.concat(NroDoc);\r\n  \r\n    if($(doc).html() != ''){\r\n     $(doc).parents(\".section-box\").show();\r\n    }\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n  tipo_de_solicitante = $(\"#field_tipo_de_persona_dij_tipo_de_solicitante_juridico_tipo_de_solicitante_juridico\");\r\n  provincia = $(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\");\r\n  motivo_auto = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad\");\r\n  tipo_auto = $(\"#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad\");\r\n\
+  $( function() {\r\n\
+  if ($(tipo_de_solicitante).html() == \"MINREX\") {\r\n        $(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"Panam\xC3\xA1\");\r\n        provincia.attr(\"disabled\",\"disabled\");\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().hide();\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').val('');\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').val('');\r\n      } else if ($(tipo_de_solicitante).html() == \"Autoridades\") {\r\n        //$(\"#field_datos_del_solicitante_datos_de_ubicacion_provincia_lista\").val(\"\");\r\n        //provincia.removeAttr(\"disabled\",\"disabled\");\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_solicitud_autoridad').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_autoridad').parent().parent().show();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_motivo_de_la_solicitud_dij').val('');\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_tipo_de_solicitud_dij').val('');\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').val('');\r\n        // $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').val('');\r\n      }\r\n      if ($(motivo_auto).html() == \"Otros\") {\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().show();\r\n      }else{\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_motivo').parent().parent().hide();\r\n      }\r\n      if ($(tipo_auto).html() == \"Otros\") {\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().show();\r\n      } else{\r\n        $('#field_tipo_de_solicitud_dij_tipo_de_solicitud_dij_otro_tipo').parent().parent().hide();\r\n      }\r\n  });\r\n\
+  });"

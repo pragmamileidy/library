@@ -1,0 +1,17 @@
+--- 
+id: 698
+name: exoneracion p5
+description: exoneracion p5
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-02-24 18:11:39 Z
+updated_at: 2014-02-27 14:44:32 Z
+label: Exonerar Entidades Evaluadoras de Pago
+hint: Indique si desea exonerar alguna de las entidades evaluadoras, ya seleccionadas de realizar el  pago asociado.
+view_class: horizontal
+serial: 

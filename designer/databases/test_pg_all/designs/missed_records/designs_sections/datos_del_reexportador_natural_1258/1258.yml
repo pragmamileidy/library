@@ -1,0 +1,16 @@
+--- 
+id: 1258
+design_id: 79
+section_id: 107
+name: Datos del Reexportador (Natural)
+created_at: 2012-06-07 21:43:53 Z
+updated_at: 2014-04-14 15:53:16 Z
+label: Datos del Reexportador
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"1614\":{\"required\":\"unrequired\"}},\"581\":{\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"586\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

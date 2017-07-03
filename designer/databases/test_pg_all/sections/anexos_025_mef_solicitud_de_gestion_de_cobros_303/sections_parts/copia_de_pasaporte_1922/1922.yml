@@ -1,0 +1,19 @@
+--- 
+id: 1922
+section_id: 303
+part_id: 38
+name: Copia de Pasaporte
+created_at: 2012-06-14 20:26:26 Z
+updated_at: 2012-08-09 14:45:21 Z
+label: Copia de Pasaporte
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\" and @owner[\"natural_person_type\"]!=\"national_citizen\""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 3

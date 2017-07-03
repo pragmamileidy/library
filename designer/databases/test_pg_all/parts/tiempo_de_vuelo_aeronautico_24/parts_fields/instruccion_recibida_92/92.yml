@@ -1,0 +1,30 @@
+--- 
+id: 92
+part_id: 24
+field_id: 1
+name: "Instrucci\xC3\xB3n Recibida"
+created_at: 2011-11-03 14:42:26 Z
+updated_at: 2017-06-04 00:21:12.306167 Z
+label: "Instrucci\xC3\xB3n Recibida"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 97f64c7c-f62d-4ef9-8863-62707fbf4aa8
+version: 20170603-202112

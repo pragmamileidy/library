@@ -1,0 +1,30 @@
+--- 
+id: 89
+part_id: 22
+field_id: 27
+name: Peso
+created_at: 2011-11-03 14:03:16 Z
+updated_at: 2017-06-04 00:26:50.190821 Z
+label: Peso
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Introduzca un valor con el formato correcto. Ejemplo (65.2)
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 1000
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5b5daf76-ef43-464b-ab59-eb2d25024555
+version: 20170603-202650

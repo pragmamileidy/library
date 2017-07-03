@@ -1,0 +1,19 @@
+--- 
+id: 1009
+section_id: 145
+part_id: 38
+name: "Certificado de ausencia de qu\xC3\xADmicos \xC3\xB3rganoclorados,\xC3\xB3rgano fosforados, carbamatos y piretroides"
+created_at: 2012-04-09 16:11:41 Z
+updated_at: 2015-10-27 19:25:21 Z
+label: "Certificado de ausencia de qu\xC3\xADmicos \xC3\xB3rganoclorados,\xC3\xB3rgano fosforados, carbamatos y piretroides"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 24

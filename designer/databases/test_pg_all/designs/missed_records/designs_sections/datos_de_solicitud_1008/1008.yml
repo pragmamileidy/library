@@ -1,0 +1,16 @@
+--- 
+id: 1008
+design_id: 94
+section_id: 233
+name: Datos de Solicitud
+created_at: 2012-05-11 21:19:53 Z
+updated_at: 2012-05-16 20:45:39 Z
+label: Datos de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1423\":{\"1297\":{\"required\":\"required\"}},\"1424\":{\"1300\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

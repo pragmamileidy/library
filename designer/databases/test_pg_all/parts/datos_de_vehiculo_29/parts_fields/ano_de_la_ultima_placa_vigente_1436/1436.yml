@@ -1,0 +1,30 @@
+--- 
+id: 1436
+part_id: 29
+field_id: 119
+name: "A\xC3\xB1o de la \xC3\xBAltima placa vigente"
+created_at: 2012-05-27 17:28:21 Z
+updated_at: 2017-06-04 00:31:54.162852 Z
+label: "A\xC3\xB1o de la \xC3\xBAltima placa vigente"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 28
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8d71eca6-5650-4e36-a260-d043b03b572d
+version: 20170603-203154

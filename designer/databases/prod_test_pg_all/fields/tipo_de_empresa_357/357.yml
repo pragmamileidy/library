@@ -1,0 +1,30 @@
+--- 
+id: 357
+name: Tipo de empresa
+description: Tipo de empresa
+version: 
+status: Draft
+label: Tipo de empresa
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2017-02-26 01:43:14.490886 Z
+updated_at: 2017-04-11 16:04:41.061343 Z
+values_list: "\"P\xC3\xBAblica\",\"Privada\""
+keys_list: "\"P\xC3\xBAblica\",\"Privada\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 3199-5181-7227-7264-3064

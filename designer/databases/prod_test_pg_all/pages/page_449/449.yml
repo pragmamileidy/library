@@ -1,0 +1,144 @@
+--- 
+id: 449
+position: 3
+selector: "{\"1821\":{\"656\":{\"758\":{},\"759\":{}}},\"2426\":{\"2485\":{\"3979\":{},\"367\":{},\"366\":{},\"2088\":{},\"2089\":{},\"2090\":{},\"2091\":{}},\"2486\":{\"3104\":{},\"3105\":{},\"3106\":{},\"3548\":{}}}}"
+style_sheet: "/* CSS Document */\r\n\
+  \r\n\
+  @charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n  font-family: Verdana, Geneva, sans-serif;\r\n  font-size: 16px;\r\n\
+  }\r\n\
+  \r\n\
+  .main_pdf_content {\r\n  /* main_pdf_content: estos attributos seran ignorados en rendeo */\r\n\
+  \r\n  top: 0px;\r\n  left: 0px;\r\n  height:1344px;\r\n  width: 1024px;\r\n  position: absolute;\r\n\
+  }\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 66px;\r\n\
+  \tleft: 768px;\r\n\
+  \twidth: 218px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 43px;\r\n\
+  \tleft: 765px;\r\n\
+  \twidth: 260px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n   .datosdelafinca_instance_4_datosdefinca_nmerodefinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 171px;\r\n\
+  \tleft: 194px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdefinca_tomo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 240px;\r\n\
+  \tleft: 194px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdefinca_folio {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 239px;\r\n\
+  \tleft: 672px;\r\n\
+  \twidth: 264px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdefinca_nmerodeplano {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 170px;\r\n\
+  \tleft: 671px;\r\n\
+  \twidth: 268px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdefinca_valordelafinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 205px;\r\n\
+  \tleft: 194px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdefinca_linderosymedidas {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 281px;\r\n\
+  \tleft: 194px;\r\n\
+  \twidth: 743px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n   .datosdelafinca_instance_4_datosdefinca_superficie {\r\n    position: absolute;\r\n    top: 205px;\r\n    left: 673px;\r\n    width: 265px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdeubicacindelafinca_provincia_lista {\r\n    position: absolute;\r\n    top: 316px;\r\n    left: 195px;\r\n    width: 744px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdeubicacindelafinca_distrito_lista {\r\n    position: absolute;\r\n    top: 352px;\r\n    left: 196px;\r\n    width: 743px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_4_datosdeubicacindelafinca_corregimiento_lista {\r\n    position: absolute;\r\n    top: 387px;\r\n    left: 196px;\r\n    width: 741px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  } \r\n    .datosdelafinca_instance_4_datosdeubicacindelafinca_lugar {\r\n    position: absolute;\r\n    top: 421px;\r\n    left: 195px;\r\n    width: 743px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  } \r\n  \r\n     .datosdelafinca_instance_5_datosdefinca_nmerodefinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 504px;\r\n\
+  \tleft: 196px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdefinca_tomo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 572px;\r\n\
+  \tleft: 196px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdefinca_folio {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 573px;\r\n\
+  \tleft: 674px;\r\n\
+  \twidth: 264px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdefinca_nmerodeplano {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 503px;\r\n\
+  \tleft: 673px;\r\n\
+  \twidth: 268px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdefinca_valordelafinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 538px;\r\n\
+  \tleft: 197px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdefinca_linderosymedidas {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 615px;\r\n\
+  \tleft: 196px;\r\n\
+  \twidth: 743px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n   .datosdelafinca_instance_5_datosdefinca_superficie {\r\n    position: absolute;\r\n    top: 538px;\r\n    left: 673px;\r\n    width: 265px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdeubicacindelafinca_provincia_lista {\r\n    position: absolute;\r\n    top: 649px;\r\n    left: 195px;\r\n    width: 744px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdeubicacindelafinca_distrito_lista {\r\n    position: absolute;\r\n    top: 683px;\r\n    left: 195px;\r\n    width: 743px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_5_datosdeubicacindelafinca_corregimiento_lista {\r\n    position: absolute;\r\n    top: 718px;\r\n    left: 197px;\r\n    width: 741px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  } \r\n    .datosdelafinca_instance_5_datosdeubicacindelafinca_lugar {\r\n    position: absolute;\r\n    top: 753px;\r\n    left: 195px;\r\n    width: 743px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  } \r\n\
+  \r\n   .datosdelafinca_instance_6_datosdefinca_nmerodefinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 835px;\r\n\
+  \tleft: 196px;\r\n\
+  \twidth: 314px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdefinca_tomo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 903px;\r\n\
+  \tleft: 195px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdefinca_folio {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 903px;\r\n\
+  \tleft: 676px;\r\n\
+  \twidth: 264px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdefinca_nmerodeplano {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 834px;\r\n\
+  \tleft: 673px;\r\n\
+  \twidth: 268px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdefinca_valordelafinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 868px;\r\n\
+  \tleft: 195px;\r\n\
+  \twidth: 316px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdefinca_linderosymedidas {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 945px;\r\n\
+  \tleft: 197px;\r\n\
+  \twidth: 743px;\r\n\
+  \theight: 20px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n   .datosdelafinca_instance_6_datosdefinca_superficie {\r\n    position: absolute;\r\n    top: 868px;\r\n    left: 675px;\r\n    width: 265px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdeubicacindelafinca_provincia_lista {\r\n    position: absolute;\r\n    top: 981px;\r\n    left: 195px;\r\n    width: 744px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdeubicacindelafinca_distrito_lista {\r\n    position: absolute;\r\n    top: 1015px;\r\n    left: 196px;\r\n    width: 743px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  }\r\n  .datosdelafinca_instance_6_datosdeubicacindelafinca_corregimiento_lista {\r\n    position: absolute;\r\n    top: 1049px;\r\n    left: 195px;\r\n    width: 741px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  } \r\n    .datosdelafinca_instance_6_datosdeubicacindelafinca_lugar {\r\n    position: absolute;\r\n    top: 1084px;\r\n    left: 194px;\r\n    width: 743px;\r\n    height: 20px;\r\n    overflow: hidden;\r\n  } "
+override_render: false
+html_render: 
+print_design_id: 99
+created_at: 2014-03-05 00:54:13 Z
+updated_at: 2015-11-30 19:28:15.210427 Z
+instances_selector: "{\"1821\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2426\":{\"value\":\"4,6\",\"2485\":{\"value\":\"\",\"3979\":{\"value\":\"\"},\"367\":{\"value\":\"\"},\"366\":{\"value\":\"\"},\"2088\":{\"value\":\"\"},\"2089\":{\"value\":\"\"},\"2090\":{\"value\":\"\"},\"2091\":{\"value\":\"\"}},\"2486\":{\"value\":\"\",\"3104\":{\"value\":\"\"},\"3105\":{\"value\":\"\"},\"3106\":{\"value\":\"\"},\"3548\":{\"value\":\"\"}}}}"
+size: ""

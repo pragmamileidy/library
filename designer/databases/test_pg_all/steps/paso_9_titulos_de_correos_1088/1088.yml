@@ -1,0 +1,50 @@
+--- 
+id: 1088
+name: "Paso 9 - T\xC3\xADtulos de Correos"
+label: "T\xC3\xADtulos de Correos"
+description: ""
+fill_step_id: 546
+created_at: 2013-01-25 19:48:12 Z
+updated_at: 2015-07-07 14:36:09 Z
+include: "{\"2371\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2376\":{\"2445\":{\"2868\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2869\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2446\":{\"2870\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2872\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2447\":{\"2873\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2874\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2875\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2448\":{\"2880\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2881\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2882\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2883\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2884\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2885\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2453\":{\"2876\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2877\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2878\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"mail_subjects\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  CARGARTRAMITE_EMAIL\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.cargartramite_email.cargarsolicitud\", \"El tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n listo para llenado de formulario(s)\")\r\n\
+  form_data.set(\"mail_subjects.cargartramite_email.anularpaso\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n anulado.\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  SOLICITUD_EMAIL\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.solicitud_email.recibirsolicitud\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n en espera de recepci\xC3\xB3n.\")\r\n\
+  form_data.set(\"mail_subjects.solicitud_email.reparo\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n requiere reparo.\")\r\n\
+  form_data.set(\"mail_subjects.solicitud_email.rechazo\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n rechazado.\")\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.confirmarentidades\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n en espera de verificaci\xC3\xB3n de Entidades por parte del funcionario del CBP.\")\r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.repararentidades\", \"Reparo de entidades de revisi\xC3\xB3n de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n.\")\r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.revisarentidades\", \"Revisi\xC3\xB3n de Entidades por parte del Jefe de Aprobaci\xC3\xB3n de Planos.\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  PAGOTRAMITES_EMAIL\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.pagotramites_email.revisarpagos\", \"Imprima la Liquidaci\xC3\xB3n de Costos para el tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n\")\r\n\
+  form_data.set(\"mail_subjects.pagotramites_email.ingresarpagos\", \"Ingresar datos del(los) pago(s) para el tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n\")\r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.revisiontecnica\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n en espera de Revisi\xC3\xB3n T\xC3\xA9cnica en \")\r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.aprobacion\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n en espera de aprobaci\xC3\xB3n de la decisi\xC3\xB3n del t\xC3\xA9cnico de\")\r\n\
+  form_data.set(\"mail_subjects.revisiontecnica_email.observaciones\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n en espera de observaciones del \")\r\n\
+  \r\n\
+  #Llenado de campos en la parte  CERRARTRAMITE_EMAIL \r\n\
+  \r\n\
+  form_data.set(\"mail_subjects.cerrartramite_email.cerrartramite\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n en espera de completaci\xC3\xB3n\")\r\n\
+  form_data.set(\"mail_subjects.cerrartramite_email.completartramite\", \"Tr\xC3\xA1mite de solicitud de Revisi\xC3\xB3n y Registro de Documentos para Construcci\xC3\xB3n completado.\")\r\n\
+  form_data.set(\"mail_subjects.cerrartramite_email.error\", \"Ha habido errores en la aplicaci\xC3\xB3n\")"
+on_transition: ""
+views: 
+back_step: Paso 8 - Correos
+next_step: Paso 10 - Pasos
+position: 8
+ajax_calls: ""

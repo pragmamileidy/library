@@ -1,0 +1,30 @@
+--- 
+id: 1343
+part_id: 206
+field_id: 83
+name: "Es usted ciudadano de la rep\xC3\xBAblica de Panam\xC3\xA1"
+created_at: 2012-05-14 15:46:22 Z
+updated_at: 2017-06-04 00:28:07.965514 Z
+label: "Es usted ciudadano de la rep\xC3\xBAblica de Panam\xC3\xA1"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 73924a03-92f5-4ad4-a5db-4c6b64f84c1a
+version: 20170603-202807

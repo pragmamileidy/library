@@ -1,0 +1,30 @@
+--- 
+id: 4075
+part_id: 630
+field_id: 6
+name: Pasaporte
+created_at: 2017-02-16 17:54:23.737182 Z
+updated_at: 2017-06-04 00:26:45.893269 Z
+label: "N\xC3\xBAmero de Pasaporte"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7032c4a0-f687-452b-886c-03bf269833a7
+version: 20170603-202645

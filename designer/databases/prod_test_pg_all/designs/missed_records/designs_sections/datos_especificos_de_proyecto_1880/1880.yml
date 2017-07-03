@@ -1,0 +1,16 @@
+--- 
+id: 1880
+design_id: 142
+section_id: 340
+name: "Datos Espec\xC3\xADficos de Proyecto"
+created_at: 2012-08-21 19:03:13 Z
+updated_at: 2012-08-21 19:03:13 Z
+label: "Datos Espec\xC3\xADficos de Proyecto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2037\":{\"2095\":{\"required\":\"required\"},\"2096\":{\"required\":\"required\"},\"2097\":{\"required\":\"required\"},\"2098\":{\"required\":\"required\"},\"2099\":{\"required\":\"required\"},\"2100\":{\"required\":\"required\"},\"2102\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 18

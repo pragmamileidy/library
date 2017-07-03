@@ -1,0 +1,30 @@
+--- 
+id: 185
+part_id: 24
+field_id: 1
+name: "N\xC3\xBAmero de Autolanzamientos con Potencia"
+created_at: 2011-11-07 15:03:18 Z
+updated_at: 2017-06-04 00:31:34.930395 Z
+label: "N\xC3\xBAmero de Autolanzamientos con Potencia"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 18
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ef39aab7-5697-40c1-8da8-2995470fea2b
+version: 20170603-203134

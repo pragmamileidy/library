@@ -1,0 +1,19 @@
+--- 
+id: 1761
+section_id: 261
+part_id: 290
+name: "Motivo de Autorizaci\xC3\xB3n"
+created_at: 2012-06-05 15:06:54 Z
+updated_at: 2012-06-05 15:06:54 Z
+label: "Motivo de Autorizaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1577\":{},\"1578\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

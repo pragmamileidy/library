@@ -1,0 +1,30 @@
+--- 
+id: 1872
+part_id: 353
+field_id: 31
+name: "Copia simple del Registro P\xC3\xBAblico en la empresa notariada."
+created_at: 2012-06-18 15:29:38 Z
+updated_at: 2017-06-04 00:21:57.312367 Z
+label: "Copia simple del Registro P\xC3\xBAblico en la empresa notariada."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f6d5507e-7464-4cce-abec-27b22e82abe9
+version: 20170603-202157

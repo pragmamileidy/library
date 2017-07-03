@@ -1,0 +1,30 @@
+--- 
+id: 329
+part_id: 33
+field_id: 10
+name: "Ant\xC3\xADgeno Vacunal"
+created_at: 2011-11-10 14:04:48 Z
+updated_at: 2017-06-04 00:26:53.352561 Z
+label: "Ant\xC3\xADgeno Vacunal"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: indique si es tipo vacuna, bacterina, kits u otro
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7bd1c39e-56a7-4d09-86e4-2eb62847a4fe
+version: 20170603-202653

@@ -1,0 +1,30 @@
+--- 
+id: 2873
+part_id: 509
+field_id: 17
+name: RecibirSolicitud
+created_at: 2013-01-29 16:34:14 Z
+updated_at: 2017-06-04 00:22:32.893885 Z
+label: Recibir Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo para los tramites 100, procesos 1, 2, 4 y 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4383d724-044c-4e97-9924-fddce56d26db
+version: 20170603-202232

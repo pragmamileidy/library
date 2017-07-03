@@ -1,0 +1,30 @@
+--- 
+id: 123
+part_id: 29
+field_id: 10
+name: Fabricante
+created_at: 2011-11-03 21:00:23 Z
+updated_at: 2017-06-04 00:23:31.398426 Z
+label: Nombre del Fabricante
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 098cae53-b35e-48cb-8a46-8b55ed1850e7
+version: 20170603-202331

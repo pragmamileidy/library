@@ -1,0 +1,20 @@
+--- 
+id: 1309
+section_id: 217
+part_id: 224
+name: "Anexos 008- Requisitos  para Pensi\xC3\xB3n de Compa\xC3\xB1era /a"
+created_at: 2012-05-02 19:51:36 Z
+updated_at: 2012-08-09 22:18:30 Z
+label: "Requisitos  para Pensi\xC3\xB3n de Compa\xC3\xB1era /a"
+min_instances: 1
+max_instances: 1
+depends_on: "datos_del_fallecido = form_data.get(\"datos_del_solicitante.datos_del_fallecido.parentesco_con_el_fallecido\")\r\n\
+  datos_del_fallecido == \"Compa\xC3\xB1era (o)\""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

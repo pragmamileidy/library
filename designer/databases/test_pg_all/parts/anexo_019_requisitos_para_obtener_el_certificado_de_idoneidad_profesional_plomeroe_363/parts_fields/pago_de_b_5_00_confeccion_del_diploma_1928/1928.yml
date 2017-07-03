@@ -1,0 +1,30 @@
+--- 
+id: 1928
+part_id: 363
+field_id: 31
+name: "Pago de B/.5.00 Confecci\xC3\xB3n del Diploma"
+created_at: 2012-06-21 18:22:41 Z
+updated_at: 2017-06-04 00:29:37.509804 Z
+label: "Pago de B/.5.00 (Confecci\xC3\xB3n del Diploma)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1e6033ed-308f-49f5-ba1e-4034743d3846
+version: 20170603-202937

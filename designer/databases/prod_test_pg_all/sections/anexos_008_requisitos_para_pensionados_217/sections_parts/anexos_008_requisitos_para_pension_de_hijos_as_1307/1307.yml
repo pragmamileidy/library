@@ -1,0 +1,21 @@
+--- 
+id: 1307
+section_id: 217
+part_id: 222
+name: "Anexos 008- Requisitos para Pensi\xC3\xB3n de Hijos /as"
+created_at: 2012-05-02 19:49:19 Z
+updated_at: 2012-08-09 22:18:30 Z
+label: "Requisitos para Pensi\xC3\xB3n de Hijos /as"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  datos_del_fallecido = form_data.get("datos_del_solicitante.datos_del_fallecido.parentesco_con_el_fallecido")
+  datos_del_fallecido == "Hijos (as)"
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

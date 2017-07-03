@@ -1,0 +1,19 @@
+--- 
+id: 2089
+section_id: 363
+part_id: 38
+name: "C\xC3\xA9dula de Identidad"
+created_at: 2012-08-07 21:58:45 Z
+updated_at: 2014-06-21 02:09:58 Z
+label: "C\xC3\xA9dula de Identidad"
+min_instances: 1
+max_instances: 10
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Adjuntar C\xC3\xA9dula de Identidad de los miembros de la junta directiva"
+help: "Fotocopia autenticada ante el registro civil de la c\xC3\xA9dula de identidad personal de sus directores, dignatarios y representantes legal y apoderado general, si lo hubiere. En el caso de extranjeros dichos pasaportes deben ser autenticados ante el  respectivo consulado o embajada"
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 6

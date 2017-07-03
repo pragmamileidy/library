@@ -1,0 +1,30 @@
+--- 
+id: 3823
+part_id: 547
+field_id: 8
+name: "N\xC3\xBAmero de tel\xC3\xA9fono"
+created_at: 2014-11-19 16:39:23 Z
+updated_at: 2017-06-04 00:28:36.928124 Z
+label: "N\xC3\xBAmero de tel\xC3\xA9fono"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca El C\xC3\xB3digo De Pa\xC3\xADs, de \xC3\x81rea Y El N\xC3\xBAmero De Tel\xC3\xA9fono.  Ejemplos:  +507-xxxxxxx, +507 xxx xxxx, +507 xxxx xxxx, +507-xxxx-xxxx, +507-xxx-xxxx"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a2c12331-2c81-4ee2-b221-16068ddf798c
+version: 20170603-202836

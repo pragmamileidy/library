@@ -1,0 +1,16 @@
+--- 
+id: 901
+design_id: 87
+section_id: 107
+name: "Direcci\xC3\xB3n Residencial"
+created_at: 2012-05-03 16:20:41 Z
+updated_at: 2013-10-25 15:55:00 Z
+label: "Direcci\xC3\xB3n Residencial"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"581\":{\"574\":{\"required\":\"required\"},\"2456\":{\"required\":\"required\"},\"632\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"633\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"583\":{\"required\":\"required\"},\"2217\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

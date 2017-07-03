@@ -1,0 +1,30 @@
+--- 
+id: 43
+name: Tipo de Transporte Terrestre
+description: Tipos de transporte terrestre
+version: 
+status: Draft
+label: Tipo de Transporte Terrestre
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-14 18:52:17 Z
+updated_at: 2012-05-17 22:48:06 Z
+values_list: "\"Transporte Colectivo\",\"Taxi\",\"Veh\xC3\xADculo Familiar\", \"Propio\""
+keys_list: "\"Transporte Colectivo\",\"Taxi\",\"Veh\xC3\xADculo Familiar\", \"Propio\""
+field_type: checkbox
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

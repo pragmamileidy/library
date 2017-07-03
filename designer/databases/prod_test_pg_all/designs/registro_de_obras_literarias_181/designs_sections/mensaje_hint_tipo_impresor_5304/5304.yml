@@ -1,0 +1,18 @@
+--- 
+id: 5304
+design_id: 181
+section_id: 597
+name: Mensaje hint tipo impresor
+created_at: 2017-02-28 14:22:56.300832 Z
+updated_at: 2017-02-28 14:33:36.238401 Z
+label: "Tipo de Impresor  (Obra in\xC3\xA9dita / No requerido)"
+min_instances: 0
+max_instances: 1
+depends_on: "option = form_data.get(\"informacion_de_la_obra_literaria.datos_de_la_obra.estatus_de_la_obra\")\r\n\
+  \r\n\
+  option == \"In\xC3\xA9dita\""
+manage_as_confidential: false
+include: "{\"3682\":{\"4090\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 11

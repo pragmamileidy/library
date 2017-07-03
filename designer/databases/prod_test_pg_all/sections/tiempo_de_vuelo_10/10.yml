@@ -1,0 +1,17 @@
+--- 
+id: 10
+name: Tiempo de Vuelo
+description: "Secci\xC3\xB3n que contiene informaci\xC3\xB3n del tiempo de vuelo ejecutadas por el solicitante para los diferentes tipos de aeronaves"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-02 15:14:58 Z
+updated_at: 2012-05-16 20:46:12 Z
+status: Draft
+label: Tiempo de Vuelo
+hint: ""
+serial: 

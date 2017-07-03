@@ -1,0 +1,46 @@
+--- 
+id: 19
+name: "Tipo de Licencia Aeron\xC3\xA1utica"
+description: "Este campo es un campo de selecci\xC3\xB3n donde se deben mostrar los siguientes valores:\r\n\
+  Alumno Piloto\r\n\
+  Piloto Privado\r\n\
+  Piloto Comercial\r\n\
+  Piloto de Transporte A\xC3\xA9reo\r\n\
+  Instructor en Tierra\r\n\
+  Instructor de Vuelo Inicial\r\n\
+  Prueba M\xC3\xA9dica de Vuelo\r\n\
+  Licencia Restringida de Radio Operaci\xC3\xB3n a Bordo\r\n\
+  Habilitaci\xC3\xB3n de Instructor\r\n\
+  Habilitaci\xC3\xB3n  adicional\r\n\
+  Examinaci\xC3\xB3n\r\n\
+  Otro"
+version: 
+status: Draft
+label: Tipo de Licencia
+hint: "Hint Tipo de Licencia Aeron\xC3\xA1utica"
+help: Heeeelppp!!!!
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: "def field_options\r\n  SimpleList.get(\"Tipo de Licencia Aeron\xC3\xA1utica\")\r\n\
+  end\r\n\
+  \r\n\
+  def value_valid?\r\n  SimpleList.get(\"Tipo de Licencia Aeron\xC3\xA1utica\")[self].nil?  \r\n\
+  end"
+created_at: 2011-11-02 16:03:15 Z
+updated_at: 2012-05-17 22:48:39 Z
+values_list: "\"Alumno Piloto\",\"Piloto Privado\",\"Piloto Comercial\",\"Piloto de Transporte A\xC3\xA9reo\",\"Instructor en Tierra\",\"Instructor de Vuelo Inicial\",\"Prueba M\xC3\xA9dica de Vuelo\",\"Licencia Restringida de Radio Operaci\xC3\xB3n a Bordo\",\"Habilitaci\xC3\xB3n de Instructor\",\"Habilitaci\xC3\xB3n  adicional\",\"Examinaci\xC3\xB3n\",\"Otro\""
+keys_list: "\"Alumno Piloto\",\"Piloto Privado\",\"Piloto Comercial\",\"Piloto de Transporte A\xC3\xA9reo\",\"Instructor en Tierra\",\"Instructor de Vuelo Inicial\",\"Prueba M\xC3\xA9dica de Vuelo\",\"Licencia Restringida de Radio Operaci\xC3\xB3n a Bordo\",\"Habilitaci\xC3\xB3n de Instructor\",\"Habilitaci\xC3\xB3n  adicional\",\"Examinaci\xC3\xB3n\",\"Otro\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 639
+section_id: 123
+part_id: 145
+name: Prueba Parte  4 - Parte Horizontal Campos Horizontales A 3
+created_at: 2012-03-13 22:54:32 Z
+updated_at: 2012-06-10 00:49:56 Z
+label: Prueba Parte  4 - Parte Horizontal Campos Horizontales (A)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Prueba Parte  4 - Parte Horizontal Campos Horizontales (A).  "
+help: Prueba Parte  4 - Parte Horizontal Campos Horizontales (A)
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

@@ -1,0 +1,16 @@
+--- 
+id: 5127
+design_id: 278
+section_id: 594
+name: Fotos y/o Huellas Tomadas
+created_at: 2016-03-23 14:13:39.854165 Z
+updated_at: 2016-03-27 20:05:21.376272 Z
+label: Fotos y/o Huellas Tomadas
+min_instances: 1
+max_instances: 20
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3609\":{\"4009\":{\"required\":\"required\"},\"4010\":{\"required\":\"unrequired\"}}}"
+hint: Por favor indique si el titular tiene huellas y/o fotos registradas en la PNC
+help: ""
+order_input: 12

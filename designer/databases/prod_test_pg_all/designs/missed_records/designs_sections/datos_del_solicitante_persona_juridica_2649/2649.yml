@@ -1,0 +1,16 @@
+--- 
+id: 2649
+design_id: 95
+section_id: 108
+name: Datos del Solicitante Persona Juridica
+created_at: 2013-04-18 15:02:54 Z
+updated_at: 2013-06-19 21:06:21 Z
+label: "Datos del solicitante Persona Jur\xC3\xADdica"
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"595\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"},\"3342\":{\"required\":\"required\"}},\"597\":{\"805\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

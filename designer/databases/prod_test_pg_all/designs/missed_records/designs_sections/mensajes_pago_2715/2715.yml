@@ -1,0 +1,22 @@
+--- 
+id: 2715
+design_id: 207
+section_id: 493
+name: Mensajes_Pago
+created_at: 2013-05-01 19:14:23 Z
+updated_at: 2013-05-01 19:14:23 Z
+label: Mensaje
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  ["started", "successfully", "error"].include? form_data.get("variables_usadas_codigos_p5.variables_p5.estatus")
+  
+  # form_data.get("pago_manual_confirmado.pago_manual_confirmado.pago_manual_confirmado") == "No" and 
+  # (form_data.get("variables_usadas_codigos_p5.variables_p5.estatus")== "started" or 
+  # form_data.get("variables_usadas_codigos_p5.variables_p5.estatus")== "successfully" or 
+  # form_data.get("variables_usadas_codigos_p5.variables_p5.estatus")== "error")
+manage_as_confidential: false
+include: "{\"2775\":{\"3164\":{\"required\":\"unrequired\"},\"3169\":{\"required\":\"unrequired\"}},\"2777\":{\"3168\":{\"required\":\"unrequired\"}},\"2780\":{\"3172\":{\"required\":\"unrequired\"},\"3173\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 20

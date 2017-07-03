@@ -1,0 +1,19 @@
+--- 
+id: 3226
+section_id: 554
+part_id: 719
+name: Codigo unico DIJ
+created_at: 2014-06-10 18:01:47 Z
+updated_at: 2014-06-26 18:07:31 Z
+label: "C\xC3\xB3digo \xC3\xBAnico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3639\":{},\"3696\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

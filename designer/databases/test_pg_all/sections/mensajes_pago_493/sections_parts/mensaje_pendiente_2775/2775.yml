@@ -1,0 +1,19 @@
+--- 
+id: 2775
+section_id: 493
+part_id: 598
+name: Mensaje_Pendiente
+created_at: 2013-04-10 16:15:59 Z
+updated_at: 2013-08-26 22:19:57 Z
+label: ""
+min_instances: 0
+max_instances: 1
+depends_on: (form_data.get("variables_usadas_codigos_p5.variables_p5.estatus") == "started") || (form_data.get("variables_usadas_codigos_p5.variables_p5.estatus") == "created")
+manage_as_confidential: false
+include: "{\"3162\":{}}"
+hint: "Usted ser\xC3\xA1 dirigido a la Plataforma de Pagos. Por favor haga click en el siguiente enlace <A HREF=\"http://www.w3schools.com/\" id=\"pendiente\">Pagar Tramite</A>"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

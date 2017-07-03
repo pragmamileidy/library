@@ -1,0 +1,51 @@
+--- 
+id: 1296
+name: Paso 7 - Notificaciones
+label: Notificaciones
+description: ""
+fill_step_id: 649
+created_at: 2013-04-27 20:45:55 Z
+updated_at: 2013-04-27 20:45:55 Z
+include: "{\"2688\":{\"2421\":{\"2622\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2623\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2630\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2624\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2625\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2628\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2629\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2425\":{\"2644\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2645\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2646\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2647\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2648\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2649\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2428\":{\"2656\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2657\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2658\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2659\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2660\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2661\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2433\":{\"2674\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2675\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenar campos de la parte NOTIFICACION_PAGOTRAMITE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciofasepago\", \"INICIO FASE PAGO\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finfasepago\", \"FIN FASE PAGO\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciopasorevisarpago\", \"INICIO PASO IMPRIMIR LIQUIDACI\xC3\x93N DE COSTOS\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finpasorevisarpago\", \"FIN PASO IMPRIMIR LIQUIDACI\xC3\x93N DE COSTOS\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciopasopago\", \"INICIO PASO REGISTRO DE PAGO\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finpasopago\", \"FIN PASO REGISTRO DE PAGO\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.iniciopasorepararpago\", \"INICIO PASO REPARAR PAGO\")\r\n\
+  form_data.set(\"notifications.notificacion_pagotramite.finpasorepararpago\", \"FIN PASO REPARAR PAGO\")\r\n\
+  \r\n\
+  #Llenar campos de la parte NOTIFICACION_EVALUACION\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.iniciofaseevaluacion\", \"INICIO FASE REVISI\xC3\x93N EN INSTITUCIONES\")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.finfaseevaluacion\", \"FIN FASE REVISI\xC3\x93N EN INSTITUCIONES\")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.iniciopasorevisiontecnica\", \"INICIO PASO EVALUACI\xC3\x93N EN \")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.finpasorevisiontecnica\", \"FIN PASO EVALUACI\xC3\x93N EN \")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.iniciopasoaprobacion\", \"INICIO PASO CONFIRMACI\xC3\x93N DE REVISI\xC3\x93N T\xC3\x89CNICA EN \")\r\n\
+  form_data.set(\"notifications.notificacion_evaluacion.finpasoaprobacion\", \"FIN PASO CONFIRMACI\xC3\x93N DE REVISI\xC3\x93N T\xC3\x89CNICA EN  \")\r\n\
+  \r\n\
+  #Llenar campos de la parte NOTIFICACION_OBSEVACIONES\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_observaciones.iniciopasoobservaciones\", \"INICIO PASO OBSERVACIONES \")\r\n\
+  form_data.set(\"notifications.notificacion_observaciones.finpasoobservaciones\", \"FIN PASO OBSERVACIONES \")\r\n\
+  \r\n\
+  #Llenar los campos de la parte NOTIFICACION_CIERRE\r\n\
+  \r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciofasecierre\", \"INICIO FASE CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finfasecierre\", \"FIN FASE CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciopasocierre\", \"INICIO PASO CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finpasocierre\", \"FIN PASO CIERRE\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.iniciofasefinalizar\", \"INICIO FASE FINALIZAR\")\r\n\
+  form_data.set(\"notifications.notificacion_cierre.finfasefinalizar\", \"FIN FASE FINALIZAR\")"
+on_transition: ""
+views: 
+back_step: Paso 6 -  Notificaciones
+next_step: Paso 8 - Correos
+position: 6
+ajax_calls: ""

@@ -1,0 +1,30 @@
+--- 
+id: 1840
+part_id: 267
+field_id: 13
+name: "Fecha del Env\xC3\xADo  "
+created_at: 2012-06-14 22:16:54 Z
+updated_at: 2017-06-04 00:31:34.172127 Z
+label: "Fecha del Env\xC3\xADo  "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy.  Ejemplo: 01-12-2010"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 17
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 197756d1-0a08-4357-b44e-dc4d5d2f5b6f
+version: 20170603-203134

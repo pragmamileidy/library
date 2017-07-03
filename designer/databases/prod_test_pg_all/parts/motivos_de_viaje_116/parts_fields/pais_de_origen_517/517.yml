@@ -1,0 +1,30 @@
+--- 
+id: 517
+part_id: 116
+field_id: 10
+name: "Pa\xC3\xADs de Origen"
+created_at: 2011-11-22 16:01:55 Z
+updated_at: 2017-06-04 00:26:54.963023 Z
+label: "Pa\xC3\xADs de Origen"
+min_instances: 1
+max_instances: 1
+depends_on: "#Se despliega si en el Tipo de Solicitud se selecciona \"Viaje con Visa de Corta Estancia\" o \"Solicitud de Visa - Motivo de viaje\" y en Motivo de Viaje se selecciona \"Comerciantes e inversionistas de Leyes Especiales\""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 60244ffc-51af-424a-a461-fc950c99516f
+version: 20170603-202654

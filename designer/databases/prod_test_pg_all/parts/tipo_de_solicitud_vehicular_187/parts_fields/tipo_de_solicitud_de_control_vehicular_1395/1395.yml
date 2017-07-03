@@ -1,0 +1,30 @@
+--- 
+id: 1395
+part_id: 187
+field_id: 113
+name: Tipo de Solicitud de Control Vehicular
+created_at: 2012-05-21 17:15:27 Z
+updated_at: 2017-06-04 00:21:42.614763 Z
+label: Seleccione el tipo de solicitud
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f32bd575-9cc6-48a9-8d54-98095a08d3a7
+version: 20170603-202142

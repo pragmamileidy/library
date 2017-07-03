@@ -1,0 +1,16 @@
+--- 
+id: 1964
+design_id: 143
+section_id: 276
+name: Requiere Contraparte
+created_at: 2012-08-28 23:46:33 Z
+updated_at: 2012-08-28 23:46:33 Z
+label: Datos Contraparte
+min_instances: 1
+max_instances: 1
+depends_on: "\"1\"==\"2\""
+manage_as_confidential: false
+include: "{\"1795\":{\"1679\":{\"required\":\"required\"},\"1680\":{\"required\":\"required\"},\"2207\":{\"required\":\"required\"},\"2208\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 44

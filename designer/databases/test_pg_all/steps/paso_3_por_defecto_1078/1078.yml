@@ -1,0 +1,25 @@
+--- 
+id: 1078
+name: Paso 3 - Por Defecto
+label: Por Defecto
+description: ""
+fill_step_id: 546
+created_at: 2013-01-24 20:53:26 Z
+updated_at: 2014-07-01 18:05:03 Z
+include: "{\"2373\":{\"2478\":{\"2772\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2479\":{\"2752\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2754\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2480\":{\"2755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2756\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2816\":{\"3282\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  form_data.set("defaults5.roles_procesar.rolename_aprobar1", "MPAPL.APROBACION")
+  
+  #form_data.set("defaults5.rolname_id.template_id", "13065")
+  #form_data.set("defaults5.rolname_id.workflow_id", "102")
+  form_data.set("defaults5.requires.requires_pay", "true")
+  form_data.set("defaults5.requires.requires_stamps", "false")
+on_transition: ""
+views: 
+back_step: Paso 2 - Por Defecto
+next_step: Paso 4 - Parametros Constantes
+position: 2
+ajax_calls: ""

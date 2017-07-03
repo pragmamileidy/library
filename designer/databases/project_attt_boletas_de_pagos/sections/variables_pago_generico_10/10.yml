@@ -1,0 +1,17 @@
+--- 
+id: 10
+name: Variables Pago Generico
+description: Variables Pago Generico
+version: 20161006-115313
+help: ""
+layout: 
+life_cycle: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-10-06 15:53:13.620037 Z
+updated_at: 2016-10-06 15:53:13.620037 Z
+status: Draft
+label: ""
+hint: ""
+serial: 675f7921-d0ce-4dcd-b35a-5223ca0bc8c8

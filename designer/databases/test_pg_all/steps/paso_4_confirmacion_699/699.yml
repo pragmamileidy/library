@@ -1,0 +1,20 @@
+--- 
+id: 699
+name: Paso 4 - Confirmacion
+label: "Confirmaci\xC3\xB3n de la Solicitud"
+description: "<br>Usted ha culminado exitosamente el llenado de su solicitud, por favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de <strong>Enviar Formulario</strong> al completar este paso para someter su solicitud a procesamiento. Todos los detalles y observaciones del procesamiento llegar\xC3\xA1n a su bandeja de notificaciones en la visualizaci\xC3\xB3n de este tr\xC3\xA1mite."
+fill_step_id: 17
+created_at: 2012-07-13 00:00:26 Z
+updated_at: 2015-08-13 18:35:41 Z
+include: "{\"1056\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,back_steps,close,close_and_save,save,submit,print_form
+on_becoming: ""
+on_transition: "if form_data.get(\"confirmacion.confirmacion_de_formulario.si_no\")==\"NO\"\r\n   transition_errors << \"Para realizar el env\xC3\xADo del formulario debe confirmar con SI el llenado del mismo.\"\r\n\
+  end\r\n"
+views: 
+back_step: Paso 3 - Anexar Documentos
+next_step: ""
+position: 4
+ajax_calls: ""

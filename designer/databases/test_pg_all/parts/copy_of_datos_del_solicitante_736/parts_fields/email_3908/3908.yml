@@ -1,0 +1,30 @@
+--- 
+id: 3908
+part_id: 736
+field_id: 5
+name: Email
+created_at: 2015-02-18 20:41:18 Z
+updated_at: 2017-06-04 00:31:32.215694 Z
+label: "Correo Electr\xC3\xB3nico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 16
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 04698287-8086-4320-8494-4e1fdb599498
+version: 20170603-203132

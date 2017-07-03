@@ -1,0 +1,30 @@
+--- 
+id: 4091
+part_id: 753
+field_id: 10
+name: Usuario
+created_at: 2017-02-27 14:21:59.993060 Z
+updated_at: 2017-06-04 00:23:26.402761 Z
+label: Nombre del Funcionario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 35211c61-d049-43a9-bc38-da7c9c1732e4
+version: 20170603-202326

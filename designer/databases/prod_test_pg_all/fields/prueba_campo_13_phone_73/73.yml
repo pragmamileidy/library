@@ -1,0 +1,30 @@
+--- 
+id: 73
+name: Prueba campo 13 phone
+description: Prueba campo 13 phone
+version: 
+status: Draft
+label: Prueba campo 13 phone
+hint: Prueba campo 13 phone
+help: Prueba campo 13 phone
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-13 22:05:24 Z
+updated_at: 2012-03-13 22:06:49 Z
+values_list: ""
+keys_list: ""
+field_type: phone
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

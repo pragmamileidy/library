@@ -1,0 +1,22 @@
+--- 
+id: 2633
+section_id: 455
+part_id: 537
+name: En representacion de
+created_at: 2013-03-05 21:28:48 Z
+updated_at: 2013-09-10 16:16:42 Z
+label: "En representaci\xC3\xB3n de:"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  _person = @application["person_id"]
+  _owner = @application["owner_person_id"]
+  _person != _owner
+manage_as_confidential: false
+include: "{\"2925\":{}}"
+hint: "Solo s\xC3\xAD aplica"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

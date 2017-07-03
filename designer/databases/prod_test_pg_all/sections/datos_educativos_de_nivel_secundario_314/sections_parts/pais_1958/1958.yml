@@ -1,0 +1,19 @@
+--- 
+id: 1958
+section_id: 314
+part_id: 34
+name: "Pa\xC3\xADs"
+created_at: 2012-06-21 16:15:50 Z
+updated_at: 2012-06-21 16:16:26 Z
+label: "Pa\xC3\xADs"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: "Pa\xC3\xADs en que fue obtenido el Diploma por el solicitante"
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

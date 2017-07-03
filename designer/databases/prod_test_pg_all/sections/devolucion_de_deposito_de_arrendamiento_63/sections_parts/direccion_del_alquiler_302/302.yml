@@ -1,0 +1,19 @@
+--- 
+id: 302
+section_id: 63
+part_id: 121
+name: "Direcci\xC3\xB3n del Alquiler"
+created_at: 2011-11-14 19:58:09 Z
+updated_at: 2012-05-16 20:46:08 Z
+label: "Datos de Ubicaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"584\":{},\"583\":{},\"582\":{},\"581\":{},\"580\":{},\"579\":{},\"578\":{},\"577\":{},\"576\":{},\"575\":{},\"574\":{},\"573\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 2

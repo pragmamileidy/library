@@ -1,0 +1,19 @@
+--- 
+id: 3175
+section_id: 399
+part_id: 38
+name: Poder y solicitud por medio de un abogado
+created_at: 2014-05-06 15:47:28 Z
+updated_at: 2014-05-06 15:47:28 Z
+label: Poder y solicitud por medio de un abogado
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

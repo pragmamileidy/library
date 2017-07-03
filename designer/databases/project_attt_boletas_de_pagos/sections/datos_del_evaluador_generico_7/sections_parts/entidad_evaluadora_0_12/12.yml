@@ -1,0 +1,19 @@
+--- 
+id: 12
+section_id: 7
+part_id: 8
+name: Entidad Evaluadora 0
+created_at: 2016-10-06 14:52:21.240920 Z
+updated_at: 2016-10-19 14:23:32.581381 Z
+label: Entidad Evaluadora
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

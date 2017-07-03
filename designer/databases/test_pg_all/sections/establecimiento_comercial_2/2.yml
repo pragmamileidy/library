@@ -1,0 +1,17 @@
+--- 
+id: 2
+name: Establecimiento Comercial
+description: Datos de un Establecimiento Comercial
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-10-31 21:23:48 Z
+updated_at: 2011-10-31 22:58:47 Z
+status: Draft
+label: Datos Generales de un establecimiento comercial
+hint: ""
+serial: 

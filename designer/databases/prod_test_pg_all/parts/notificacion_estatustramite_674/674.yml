@@ -1,0 +1,17 @@
+--- 
+id: 674
+name: notificacion_estatusTramite
+description: "Notificaci\xC3\xB3n del estatus del Tramite"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-01-14 15:41:46 Z
+updated_at: 2014-01-14 15:41:46 Z
+label: Notificaciones de Estatus
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 658
+section_id: 131
+part_id: 38
+name: "C\xC3\xA9dula"
+created_at: 2012-03-20 02:32:33 Z
+updated_at: 2012-04-09 20:39:51 Z
+label: "C\xC3\xA9dula de Identidad"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: "Adjuntar la C\xC3\xA9dula"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,16 @@
+--- 
+id: 1575
+design_id: 124
+section_id: 318
+name: "Motivo de la solicitud certificaci\xC3\xB3n"
+created_at: 2012-06-21 21:46:13 Z
+updated_at: 2013-03-25 19:53:40 Z
+label: Motivo de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1973\":{\"1955\":{\"required\":\"required\"},\"2476\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 5

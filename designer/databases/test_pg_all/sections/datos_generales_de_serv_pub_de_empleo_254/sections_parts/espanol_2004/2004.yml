@@ -1,0 +1,19 @@
+--- 
+id: 2004
+section_id: 254
+part_id: 377
+name: "Espa\xC3\xB1ol"
+created_at: 2012-07-12 21:52:35 Z
+updated_at: 2013-06-06 20:28:38 Z
+label: "Espa\xC3\xB1ol"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

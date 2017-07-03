@@ -1,0 +1,633 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+.main_pdf_content {
+  /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  background-image: url(RUTA_IMAGEN.png);
+  top: 0px;
+  left: 0px;
+  height:1344px;
+  width: 1024px;
+  position: absolute;
+}
+  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  position: absolute;
+  top: 72px;
+  left: 677px;
+  width: 356px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  position: absolute;
+  top: 49px;
+  left: 677px;
+  width: 352px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_datosdelapersona_cdulapasaporte {
+  position: absolute;
+  top: 292px;
+  left: 250px;
+  width: 315px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_datosdelapersona_nombrecompleto {
+  position: absolute;
+  top: 318px;
+  left: 250px;
+  width: 767px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_datosdelapersona_nacionalidad {
+  position: absolute;
+  top: 292px;
+  left: 654px;
+  width: 362px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_datosdelapersona_fechadenacimiento {
+  position: absolute;
+  top: 416px;
+  left: 251px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_datosdelapersona_fechadedefuncin {
+  position: absolute;
+  top: 440px;
+  left: 250px;
+  width: 322px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_datosdelapersona_edad {
+  position: absolute;
+  top: 416px;
+  left: 654px;
+  width: 330px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_seudonimo_indiqueseudonimo {
+  position: absolute;
+  top: 440px;
+  left: 654px;
+  width: 329px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_informacinderesidencialocalizacin_pas {
+  position: absolute;
+  top: 396px;
+  left: 654px;
+  width: 321px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_informacinderesidencialocalizacin_ciudad {
+  position: absolute;
+  top: 396px;
+  left: 250px;
+  width: 318px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_1_informacinderesidencialocalizacin_direccin {
+  position: absolute;
+  top: 352px;
+  left: 250px;
+  width: 766px;
+  height: 38px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_datosdelapersona_cdulapasaporte {
+  position: absolute;
+  top: 523px;
+  left: 250px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_datosdelapersona_nombrecompleto {
+  position: absolute;
+  top: 549px;
+  left: 250px;
+  width: 770px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_datosdelapersona_nacionalidad {
+  position: absolute;
+  top: 523px;
+  left: 654px;
+  width: 357px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_datosdelapersona_fechadenacimiento {
+  position: absolute;
+  top: 647px;
+  left: 250px;
+  width: 319px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_datosdelapersona_fechadedefuncin {
+  position: absolute;
+  top: 671px;
+  left: 250px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_datosdelapersona_edad {
+  position: absolute;
+  top: 647px;
+  left: 654px;
+  width: 326px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_seudonimo_indiqueseudonimo {
+  position: absolute;
+  top: 671px;
+  left: 654px;
+  width: 320px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_informacinderesidencialocalizacin_pas {
+  position: absolute;
+  top: 627px;
+  left: 654px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_informacinderesidencialocalizacin_ciudad {
+  position: absolute;
+  top: 627px;
+  left: 250px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_2_informacinderesidencialocalizacin_direccin {
+  position: absolute;
+  top: 583px;
+  left: 250px;
+  width: 770px;
+  height: 41px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_datosdelapersona_cdulapasaporte {
+  position: absolute;
+  top: 754px;
+  left: 250px;
+  width: 322px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_datosdelapersona_nombrecompleto {
+  position: absolute;
+  top: 780px;
+  left: 250px;
+  width: 769px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_datosdelapersona_nacionalidad {
+  position: absolute;
+  top: 754px;
+  left: 654px;
+  width: 345px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_datosdelapersona_fechadenacimiento {
+  position: absolute;
+  top: 878px;
+  left: 250px;
+  width: 324px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_datosdelapersona_fechadedefuncin {
+  position: absolute;
+  top: 902px;
+  left: 250px;
+  width: 326px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_datosdelapersona_edad {
+  position: absolute;
+  top: 878px;
+  left: 654px;
+  width: 340px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_seudonimo_indiqueseudonimo {
+  position: absolute;
+  top: 902px;
+  left: 654px;
+  width: 342px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_informacinderesidencialocalizacin_pas {
+  position: absolute;
+  top: 858px;
+  left: 654px;
+  width: 338px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_informacinderesidencialocalizacin_ciudad {
+  position: absolute;
+  top: 858px;
+  left: 250px;
+  width: 319px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_3_informacinderesidencialocalizacin_direccin {
+  position: absolute;
+  top: 814px;
+  left: 250px;
+  width: 772px;
+  height: 41px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_datosdelapersona_cdulapasaporte {
+  position: absolute;
+  top: 1000px;
+  left: 250px;
+  width: 316px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_datosdelapersona_nombrecompleto {
+  position: absolute;
+  top: 1027px;
+  left: 250px;
+  width: 768px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_datosdelapersona_nacionalidad {
+  position: absolute;
+  top: 1000px;
+  left: 650px;
+  width: 321px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_datosdelapersona_fechadenacimiento {
+  position: absolute;
+  top: 1125px;
+  left: 250px;
+  width: 322px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_datosdelapersona_fechadedefuncin {
+  position: absolute;
+  top: 1147px;
+  left: 250px;
+  width: 321px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_datosdelapersona_edad {
+  position: absolute;
+  top: 1125px;
+  left: 654px;
+  width: 310px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_seudonimo_indiqueseudonimo {
+  position: absolute;
+  top: 1147px;
+  left: 654px;
+  width: 309px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_informacinderesidencialocalizacin_pas {
+  position: absolute;
+  top: 1100px;
+  left: 654px;
+  width: 310px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_informacinderesidencialocalizacin_ciudad {
+  position: absolute;
+  top: 1100px;
+  left: 250px;
+  width: 314px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_4_informacinderesidencialocalizacin_direccin {
+  position: absolute;
+  top: 1060px;
+  left: 250px;
+  width: 768px;
+  height: 40px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_datosdelapersona_cdulapasaporte {
+  position: absolute;
+  top: 1231px;
+  left: 250px;
+  width: 314px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_datosdelapersona_nombrecompleto {
+  position: absolute;
+  top: 1258px;
+  left: 250px;
+  width: 761px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_datosdelapersona_nacionalidad {
+  position: absolute;
+  top: 1231px;
+  left: 654px;
+  width: 341px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_datosdelapersona_fechadenacimiento {
+  position: absolute;
+  top: 1360px;
+  left: 250px;
+  width: 319px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_datosdelapersona_fechadedefuncin {
+  position: absolute;
+  top: 1384px;
+  left: 250px;
+  width: 319px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_datosdelapersona_edad {
+  position: absolute;
+  top: 1360px;
+  left: 654px;
+  width: 345px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_seudonimo_indiqueseudonimo {
+  position: absolute;
+  top: 1384px;
+  left: 654px;
+  width: 342px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_informacinderesidencialocalizacin_pas {
+  position: absolute;
+  top: 1332px;
+  left: 654px;
+  width: 353px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_informacinderesidencialocalizacin_ciudad {
+  position: absolute;
+  top: 1332px;
+  left: 250px;
+  width: 318px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdelautorespersonanatural_instance_5_informacinderesidencialocalizacin_direccin {
+  position: absolute;
+  top: 1290px;
+  left: 250px;
+  width: 763px;
+  height: 41px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_1_datosdelaempresa_ruc {
+  position: absolute;
+  top: 292px;
+  left: 250px;
+  width: 316px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_1_datosdelaempresa_nombre {
+  position: absolute;
+  top: 318px;
+  left: 250px;
+  width: 767px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_1_direccin_pas {
+  position: absolute;
+  top: 396px;
+  left: 654px;
+  width: 321px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_1_direccin_ciudad {
+  position: absolute;
+  top: 396px;
+  left: 250px;
+  width: 318px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_1_direccin_direccin {
+  position: absolute;
+  top: 352px;
+  left: 250px;
+  width: 766px;
+  height: 38px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_2_datosdelaempresa_ruc {
+  position: absolute;
+  top: 523px;
+  left: 250px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_2_datosdelaempresa_nombre {
+  position: absolute;
+  top: 549px;
+  left: 250px;
+  width: 770px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_2_direccin_pas {
+  position: absolute;
+  top: 627px;
+  left: 654px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_2_direccin_ciudad {
+  position: absolute;
+  top: 627px;
+  left: 250px;
+  width: 317px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_2_direccin_direccin {
+  position: absolute;
+  top: 583px;
+  left: 250px;
+  width: 770px;
+  height: 41px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_3_datosdelaempresa_ruc {
+  position: absolute;
+  top: 754px;
+  left: 250px;
+  width: 322px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_3_datosdelaempresa_nombre {
+  position: absolute;
+  top: 780px;
+  left: 250px;
+  width: 769px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_3_direccin_pas {
+  position: absolute;
+  top: 858px;
+  left: 654px;
+  width: 338px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_3_direccin_ciudad {
+  position: absolute;
+  top: 858px;
+  left: 250px;
+  width: 319px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_3_direccin_direccin {
+  position: absolute;
+  top: 814px;
+  left: 250px;
+  width: 772px;
+  height: 41px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_4_datosdelaempresa_ruc {
+  position: absolute;
+  top: 1000px;
+  left: 250px;
+  width: 316px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_4_datosdelaempresa_nombre {
+  position: absolute;
+  top: 1027px;
+  left: 250px;
+  width: 768px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_4_direccin_pas {
+  position: absolute;
+  top: 1100px;
+  left: 654px;
+  width: 310px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_4_direccin_ciudad {
+  position: absolute;
+  top: 1100px;
+  left: 250px;
+  width: 314px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_4_direccin_direccin {
+  position: absolute;
+  top: 1060px;
+  left: 250px;
+  width: 768px;
+  height: 40px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_5_datosdelaempresa_ruc {
+  position: absolute;
+  top: 1231px;
+  left: 250px;
+  width: 314px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_5_datosdelaempresa_nombre {
+  position: absolute;
+  top: 1258px;
+  left: 250px;
+  width: 761px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_5_direccin_pas {
+  position: absolute;
+  top: 1332px;
+  left: 654px;
+  width: 349px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_5_direccin_ciudad {
+  position: absolute;
+  top: 1332px;
+  left: 250px;
+  width: 318px;
+  height: 20px;
+  overflow: hidden;
+  }
+  .datosdeltitularespersonajurdica_instance_5_direccin_direccin {
+  position: absolute;
+  top: 1290px;
+  left: 250px;
+  width: 763px;
+  height: 41px;
+  overflow: hidden;
+  }

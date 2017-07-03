@@ -1,0 +1,24 @@
+--- 
+id: 506
+name: Paso 3 - Confirmacion
+label: Confirmacion
+description: "<br>Usted ha culminado exitosamente el llenado de su solicitud, por favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de <strong>Enviar Formulario</strong> al completar este paso para someter su solicitud a procesamiento. Todos los detalles y observaciones del procesamiento llegar\xC3\xA1n a su bandeja de notificaciones en la visualizaci\xC3\xB3n de este tr\xC3\xA1mite."
+fill_step_id: 270
+created_at: 2012-06-10 17:51:14 Z
+updated_at: 2015-11-04 19:37:32 Z
+include: "{\"1334\":{\"1514\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit,print_form
+on_becoming: |-
+  #############LP F2 PARA SETEAR CAMPO OCULTO (CHECK)
+  campo_oculto = form_data.decode_get("datos_de_la_actividad.datos_de_la_actividad.seleccionar_lugar_de_la_actividad")  
+  
+      form_data.set("datos_de_la_actividad.datos_de_la_actividad.campo_oculto", campo_oculto.join(","))
+on_transition: "if form_data.get(\"confirmacion_culminacion_de_tramite.confirmacion_de_formulario.si_no\")==\"NO\"\r\n   transition_errors << \"Para realizar el env\xC3\xADo del formulario debe confirmar con SI el llenado del mismo.\"\r\n\
+  end"
+views: 
+back_step: Paso 2 - Informarcion de la Solcitud
+next_step: ""
+position: 2
+ajax_calls: ""

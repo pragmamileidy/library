@@ -1,0 +1,19 @@
+--- 
+id: 1029
+name: Paso 0 - Datos de la Solicitud
+label: Datos de la Solicitud
+description: Ingrese los datos de la solicitud, del solicitante, de la finca y de los co-participantes
+fill_step_id: 533
+created_at: 2013-01-22 22:37:24 Z
+updated_at: 2013-01-22 22:37:24 Z
+include: "{\"2315\":{\"2198\":{\"2371\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2372\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2373\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2374\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2375\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2376\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

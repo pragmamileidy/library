@@ -1,0 +1,17 @@
+--- 
+id: 2
+name: Datos de la Persona
+description: "Datos b\xC3\xA1sicos de la persona"
+version: 20161004-161032
+status: Draft
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-10-04 20:10:32.660917 Z
+updated_at: 2016-10-04 20:10:32.660917 Z
+label: Datos de la Persona
+hint: ""
+view_class: horizontal
+serial: 55d07cb8-a3eb-4207-9ae9-c0baca53593a

@@ -1,0 +1,30 @@
+--- 
+id: 1369
+part_id: 261
+field_id: 88
+name: Banco
+created_at: 2012-05-15 23:02:05 Z
+updated_at: 2017-06-04 00:27:05.696369 Z
+label: Banco
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b846626a-b6df-4051-b91c-0c109bc8c7af
+version: 20170603-202705

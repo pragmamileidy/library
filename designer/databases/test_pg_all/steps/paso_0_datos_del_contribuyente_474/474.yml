@@ -1,0 +1,273 @@
+--- 
+id: 474
+name: Paso 0 - Datos del contribuyente
+label: Datos del Contribuyente
+description: "\r\n\
+  <br>Datos del Contribuyente</br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 245
+created_at: 2012-06-08 19:20:49 Z
+updated_at: 2015-11-02 23:56:43 Z
+include: "{\"1286\":{\"595\":{\"1662\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"567\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}},\"1287\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1292\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get( '/consecutive/generador_club_de_mercancia/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+  
+  #inicializar datos del solicitante
+         #form_data.set("datos_del_contribuyente.datos_de_la_empresa.nombre",@owner["name"])
+         #form_data.set("datos_del_contribuyente.direccion.direccion",@owner["full_address"])
+  
+  
+  #Obtener datos del contribuyente
+  
+  #result = WebserviceConsumer.get( '/service/bdin_registro_publico_empresas/find.json?ruc=' + "#{@owner["tax_id"]}").parsed_response
+  #_contribuyente = result["response"]
+  
+  
+  #datos del Contribuyente
+  	#form_data.set("datos_del_contribuyente.datos_de_la_empresa.numero_de_contribuyente",_contribuyente["numContribuyente"])
+          #form_data.set("datos_del_contribuyente.datos_de_la_empresa.nombre_comercial",_contribuyente["nombreComercial"])
+          #form_data.set("datos_del_contribuyente.datos_adicionales.sucursal",_contribuyente["sucursal"])
+          #form_data.set("datos_del_contribuyente.datos_adicionales.pagina_web_de_la_empresa",_contribuyente["pagWeb"])
+          #form_data.set("datos_del_contribuyente.datos_adicionales.resolucion_j_c_j",_contribuyente["resolucionJCJ"])
+  
+  
+  if @owner["kind_of_user_type"] == "JuridicalPerson"
+  
+  	 form_data.set("datos_del_contribuyente.datos_de_la_empresa.ruc",@owner["tax_id"])
+           form_data.set("datos_del_contribuyente.datos_de_la_empresa.nombre",@owner["name"])
+  end
+
+on_transition: "\r\n\
+  #avargas\r\n\
+  \r\n\
+  _cedulap = form_data.get(\"representante_legal_del_contribuyente.datos_de_la_persona.cedula\")\r\n\
+  \r\n\
+  #Obtener datos del representante legal\r\n\
+  result = WebserviceConsumer.get( \"/service/bdin_tribunal_electoral/find.json?cedula=#{_cedulap}\").parsed_response\r\n\
+  _persona = result[\"response\"]\r\n\
+  \r\n\
+  if _persona.blank?\r\n  transition_errors << \"La c\xC3\xA9dula suministrada no existe en el sistema. Favor revise el valor.\"\r\n\
+  else\r\n  #datos del representante legal\r\n  form_data.set(\"representante_legal_del_contribuyente.datos_de_la_persona.cedula\",_persona[\"cedula\"])\r\n  form_data.set(\"representante_legal_del_contribuyente.datos_de_la_persona.primer_nombre\",_persona[\"primerNombre\"])\r\n  form_data.set(\"representante_legal_del_contribuyente.datos_de_la_persona.segundo_nombre\",_persona[\"segundoNombre\"])\r\n  form_data.set(\"representante_legal_del_contribuyente.datos_de_la_persona.primer_apellido\",_persona[\"primerApellido\"])\r\n  form_data.set(\"representante_legal_del_contribuyente.datos_de_la_persona.segundo_apellido\",_persona[\"segundoApellido\"])\r\n  #form_data.set(\"representante_legal_del_contribuyente.datos_de_la_persona.apellido_de_casada\",_persona[\"apellidoCasada\"])\r\n  #form_data.set(\"representante_legal_del_contribuyente.informacion_de_residencia_localizacion.correo_electronico\",_persona[\"email\"])\r\n\
+  end\r\n\
+  \r\n\
+  #integracion de datos del contribuyente\r\n\
+  _num_con = form_data.get(\"datos_del_contribuyente.datos_de_la_empresa.numero_de_contribuyente\")\r\n\
+  #_cedulap = form_data.get(\"representante_legal_del_contribuyente.datos_de_la_persona.cedula\")\r\n\
+  \r\n\
+  if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n\
+  \r\n   form_data.set(\"datos_del_contribuyente.datos_de_la_empresa.ruc\",@owner[\"tax_id\"])\r\n         form_data.set(\"datos_del_contribuyente.datos_de_la_empresa.nombre\",@owner[\"name\"])\r\n\
+  end\r\n _ruc = form_data.get(\"datos_del_contribuyente.datos_de_la_empresa.ruc\")\r\n\
+  \r\n ### LP: Comentado en la fase 2 de psp ya que este servicio no existe dentro del services del ambiente de test_pg\r\n #result = WebserviceConsumer.get( \"/service/bdin_municipio_panama_contribuyente/find.json?cedula_ruc_pas=#{_ruc}&num_contribuyente_municipal=#{_num_con}\").parsed_response                   \r\n #_contribuyente = result[\"response\"]\r\n #Se sustituy\xC3\xB3 por el siguiente c\xC3\xB3digo:\r\n\
+  \r\n\
+  result = WebserviceConsumer.get( \"/service/bdin_municipio_panama_psp/find.json?num_contribuyente_municipal=#{_num_con}\").parsed_response\r\n\
+  _contribuyente = result[\"response\"]\r\n\
+  \r\n\
+  if !_contribuyente.nil?\r\n  form_data.set(\"datos_del_contribuyente.datos_de_la_empresa.numero_de_contribuyente\",_num_con)\r\n  form_data.set(\"datos_del_contribuyente.datos_de_la_empresa.nombre\",_contribuyente[\"nombre\"])\r\n  #form_data.set(\"datos_del_contribuyente.datos_de_la_empresa.nombre_comercial\",_contribuyente[\"segundoNombre\"])\r\n\
+  else\r\n  transition_errors << \"El N\xC3\xBAmero de Contribuyente no se encuentra en el sistema\"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: " Paso 1 - Informacion de la Solicitud"
+position: 0
+ajax_calls: ""

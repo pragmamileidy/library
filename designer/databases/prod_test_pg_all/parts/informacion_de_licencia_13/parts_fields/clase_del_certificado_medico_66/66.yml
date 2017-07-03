@@ -1,0 +1,30 @@
+--- 
+id: 66
+part_id: 13
+field_id: 10
+name: "Clase del Certificado M\xC3\xA9dico"
+created_at: 2011-11-02 18:44:56 Z
+updated_at: 2017-06-04 00:28:41.453763 Z
+label: "Clase del Certificado M\xC3\xA9dico"
+min_instances: 1
+max_instances: 1
+depends_on: "# En el caso de que el campo \"Certificado M\xC3\xA9dico\" sea igual a \"Si\" \xC3\xA9ste campo debe ser not null"
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d38f46f5-111d-4443-99cf-e092cdf3d1ca
+version: 20170603-202841

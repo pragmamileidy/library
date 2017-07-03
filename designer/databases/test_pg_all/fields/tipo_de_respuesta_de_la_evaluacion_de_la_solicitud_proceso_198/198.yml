@@ -1,0 +1,30 @@
+--- 
+id: 198
+name: Tipo de respuesta de la evaluacion de la solicitud PROCESO
+description: _
+version: 
+status: Draft
+label: "Seleccione el resultado de su evaluaci\xC3\xB3n"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 23:28:48 Z
+updated_at: 2012-07-24 08:51:11 Z
+values_list: "\"OK\",\"REPARO\",\"RECHAZO\""
+keys_list: "\"OK\",\"REPARO\",\"RECHAZO\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

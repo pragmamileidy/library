@@ -1,0 +1,30 @@
+--- 
+id: 2535
+part_id: 473
+field_id: 17
+name: Efectos colaterales Posibles
+created_at: 2012-11-20 20:45:09 Z
+updated_at: 2017-06-04 00:26:11.622928 Z
+label: Efectos colaterales Posibles
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique los efectos colaterales posibles por el consumo del producto farmac\xC3\xA9utico"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ccab09c9-5272-41a5-8435-bde57ab1452b
+version: 20170603-202611

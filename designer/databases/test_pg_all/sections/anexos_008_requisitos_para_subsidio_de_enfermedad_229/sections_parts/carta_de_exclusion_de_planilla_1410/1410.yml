@@ -1,0 +1,19 @@
+--- 
+id: 1410
+section_id: 229
+part_id: 38
+name: "Carta de Exclusi\xC3\xB3n de Planilla"
+created_at: 2012-05-10 20:30:14 Z
+updated_at: 2012-05-10 20:30:14 Z
+label: "Carta de Exclusi\xC3\xB3n de Planilla"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

@@ -1,0 +1,30 @@
+--- 
+id: 149
+name: "Clasificaci\xC3\xB3n "
+description: "Clasificaci\xC3\xB3n "
+version: 
+status: Draft
+label: "Clasificaci\xC3\xB3n "
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-11 22:17:32 Z
+updated_at: 2012-06-11 22:17:32 Z
+values_list: "\"Permanente\",\"Temporal\""
+keys_list: "\"Permanente\",\"Temporal\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

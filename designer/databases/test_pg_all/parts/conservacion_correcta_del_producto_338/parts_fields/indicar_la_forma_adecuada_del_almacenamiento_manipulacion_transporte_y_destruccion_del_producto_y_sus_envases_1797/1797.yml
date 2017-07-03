@@ -1,0 +1,30 @@
+--- 
+id: 1797
+part_id: 338
+field_id: 17
+name: "Indicar la forma adecuada del almacenamiento, manipulaci\xC3\xB3n, transporte y destrucci\xC3\xB3n del producto y sus envases:  "
+created_at: 2012-06-14 16:05:44 Z
+updated_at: 2017-06-04 00:21:54.148084 Z
+label: "Conservaci\xC3\xB3n Correcta del Producto "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar la forma adecuada del almacenamiento, manipulaci\xC3\xB3n, transporte y destrucci\xC3\xB3n del producto y sus envases. Protocolos de almacenamiento."
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 640c99b9-ebc3-41cf-a258-5af1ccd8a764
+version: 20170603-202154

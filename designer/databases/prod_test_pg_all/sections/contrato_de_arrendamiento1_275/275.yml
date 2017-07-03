@@ -1,0 +1,17 @@
+--- 
+id: 275
+name: Contrato de Arrendamiento1
+description: Contrato de Arrendamiento
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-08 16:03:47 Z
+updated_at: 2012-06-08 16:03:47 Z
+status: Draft
+label: Datos del Contrato de Arrendamiento
+hint: ""
+serial: 

@@ -1,0 +1,19 @@
+--- 
+id: 3015
+section_id: 536
+part_id: 678
+name: task
+created_at: 2014-01-14 20:01:01 Z
+updated_at: 2014-01-14 20:28:38 Z
+label: Tarea
+min_instances: 1
+max_instances: 2
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

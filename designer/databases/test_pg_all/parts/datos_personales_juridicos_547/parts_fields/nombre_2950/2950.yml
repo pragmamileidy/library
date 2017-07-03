@@ -1,0 +1,30 @@
+--- 
+id: 2950
+part_id: 547
+field_id: 10
+name: Nombre
+created_at: 2013-03-05 21:06:20 Z
+updated_at: 2017-06-04 00:26:19.535243 Z
+label: Nombre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 100
+rows: 
+min_value: 
+max_value: 
+format: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s\\-\\'\\\xC2\xB4\\.]+$/"
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2c814e10-9771-4c57-93a8-f16c576accfa
+version: 20170603-202619

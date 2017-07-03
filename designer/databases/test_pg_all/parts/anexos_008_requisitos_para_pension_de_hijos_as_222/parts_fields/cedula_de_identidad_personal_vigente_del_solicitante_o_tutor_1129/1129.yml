@@ -1,0 +1,30 @@
+--- 
+id: 1129
+part_id: 222
+field_id: 31
+name: "C\xC3\xA9dula de identidad personal vigente, del solicitante o tutor"
+created_at: 2012-05-02 13:18:18 Z
+updated_at: 2017-06-04 00:21:34.005703 Z
+label: "C\xC3\xA9dula de identidad personal vigente, del solicitante o tutor"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a0127dff-0385-4474-bee4-ff0356e21010
+version: 20170603-202134

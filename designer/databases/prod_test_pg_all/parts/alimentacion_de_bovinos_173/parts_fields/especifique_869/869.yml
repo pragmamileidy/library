@@ -1,0 +1,30 @@
+--- 
+id: 869
+part_id: 173
+field_id: 17
+name: Especifique
+created_at: 2012-03-27 17:52:01 Z
+updated_at: 2017-06-04 00:23:50.652442 Z
+label: Si la respuesta es SI, especifique.
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 199f1fe7-a032-4400-9189-47057d939a50
+version: 20170603-202350

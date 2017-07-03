@@ -1,0 +1,25 @@
+--- 
+id: 645
+name: "Paso 1 - Descuentos autom\xC3\xA1ticos"
+label: Detalle de la solicitud
+description: "Detalle de la solicitud de certificaci\xC3\xB3n de descuento"
+fill_step_id: 335
+created_at: 2012-06-21 04:54:42 Z
+updated_at: 2014-03-17 18:05:16 Z
+include: "{\"1619\":{\"1995\":{\"2056\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2021\":{\"2056\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"7\":{\"1949\":{\"2465\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1885\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1886\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2680\":{\"2790\":{\"3209\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"184\":{\"2491\":{\"1764\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |-
+  unless form_data.get("descuentos.automatico.fieldgrid").blank?
+   json = ActiveSupport::JSON.decode(form_data.get("descuentos.automatico.fieldgrid"))
+   json["config"]["readonly"] = "false"
+   _dataAuto = ActiveSupport::JSON.encode(json)
+   form_data.set("descuentos.automatico.fieldgrid", _dataAuto)
+  end
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 2 - Agregar
+position: 1
+ajax_calls: ""

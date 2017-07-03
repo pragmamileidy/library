@@ -1,0 +1,17 @@
+--- 
+id: 745
+name: Tipo de Solicitante Juridico PNC
+description: Tipo de Solicitante Juridico PNC
+version: 
+status: Draft
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-03-01 18:09:32.368615 Z
+updated_at: 2016-03-01 18:09:32.368615 Z
+label: Tipo de Solicitante Juridico
+hint: ""
+view_class: horizontal
+serial: 1738-1157-3346-8104-4206

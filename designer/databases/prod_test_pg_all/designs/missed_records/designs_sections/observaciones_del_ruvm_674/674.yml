@@ -1,0 +1,16 @@
+--- 
+id: 674
+design_id: 76
+section_id: 183
+name: Observaciones del RUVM
+created_at: 2012-04-18 16:30:09 Z
+updated_at: 2012-04-22 02:47:27 Z
+label: Observaciones del RUVM
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1102\":{\"800\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 16

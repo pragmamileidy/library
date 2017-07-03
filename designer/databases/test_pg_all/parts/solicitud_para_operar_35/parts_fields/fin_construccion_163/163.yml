@@ -1,0 +1,30 @@
+--- 
+id: 163
+part_id: 35
+field_id: 13
+name: "Fin Construcci\xC3\xB3n"
+created_at: 2011-11-04 01:42:19 Z
+updated_at: 2017-06-04 00:27:56.238644 Z
+label: "Fecha de terminaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b6714603-06f3-4000-b13f-dc765123a0fa
+version: 20170603-202756

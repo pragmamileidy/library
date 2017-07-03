@@ -1,0 +1,30 @@
+--- 
+id: 2180
+part_id: 119
+field_id: 10
+name: SIAACAP
+created_at: 2012-07-26 04:48:41 Z
+updated_at: 2017-06-04 00:32:00.768070 Z
+label: SIAACAP
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 34
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 253264bc-ed1f-49df-8a1d-606c7d812b4e
+version: 20170603-203200

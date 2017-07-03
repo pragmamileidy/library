@@ -1,0 +1,30 @@
+--- 
+id: 1452
+part_id: 272
+field_id: 10
+name: Factura Comercial
+created_at: 2012-05-28 16:07:22 Z
+updated_at: 2017-06-04 00:30:31.001147 Z
+label: Factura Comercial
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7e6edc64-ffd6-485f-94ee-b3394da63547
+version: 20170603-203031

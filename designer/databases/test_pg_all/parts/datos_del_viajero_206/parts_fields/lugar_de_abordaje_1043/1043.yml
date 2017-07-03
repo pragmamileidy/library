@@ -1,0 +1,30 @@
+--- 
+id: 1043
+part_id: 206
+field_id: 10
+name: Lugar de Abordaje
+created_at: 2012-04-26 16:34:21 Z
+updated_at: 2017-06-04 00:27:01.503790 Z
+label: Lugar de Abordaje
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 715e423f-a2b1-4c5c-ac72-47e0368dfe4f
+version: 20170603-202701

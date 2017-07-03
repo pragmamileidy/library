@@ -1,0 +1,30 @@
+--- 
+id: 244
+name: Genero
+description: Genero
+version: 
+status: Draft
+label: "G\xC3\xA9nero"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-07 13:26:50 Z
+updated_at: 2013-03-07 13:26:50 Z
+values_list: "\"Cu\xC3\xB1as\",\"Micro espacios\",\"Noticioso\",\"Cient\xC3\xADfico\",\"Educativo\",\"Musical\",\"Informativos\",\"Familiar\",\"Religioso\",\"Entrevistas\",\"Reportajes\",\"Revista\",\"Documental\",\"Deportiva\",\"Cultural\",\"Otro\""
+keys_list: ""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

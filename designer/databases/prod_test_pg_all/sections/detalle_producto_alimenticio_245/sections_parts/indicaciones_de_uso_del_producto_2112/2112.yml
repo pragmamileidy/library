@@ -1,0 +1,19 @@
+--- 
+id: 2112
+section_id: 245
+part_id: 426
+name: Indicaciones de Uso del Producto
+created_at: 2012-08-09 16:18:31 Z
+updated_at: 2015-10-27 17:07:39 Z
+label: Indicaciones de Uso del Producto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 12

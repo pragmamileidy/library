@@ -1,0 +1,292 @@
+--- 
+id: 524
+position: 2
+selector: "{\"4491\":{\"656\":{\"758\":{},\"759\":{}}},\"4604\":{\"3149\":{\"3605\":{}},\"3151\":{\"1981\":{},\"1374\":{},\"545\":{},\"546\":{},\"2983\":{},\"763\":{}},\"3152\":{\"2979\":{},\"2980\":{}},\"3154\":{\"567\":{},\"1282\":{},\"3342\":{}},\"3153\":{\"572\":{},\"805\":{},\"585\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 99px;
+  	left: 661px;
+  	width: 319px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 69px;
+  	left: 660px;
+  	width: 321px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_tipodeidentificacion_tipoidentificaciontexto {
+  	position: absolute;
+  	top: 222px;
+  	left: 230px;
+  	width: 150px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 220px;
+  	left: 567px;
+  	width: 167px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 258px;
+  	left: 252px;
+  	width: 700px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 550px;
+  	left: 170px;
+  	width: 139px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelapersona_fechadenacimiento {
+  	position: absolute;
+  	top: 551px;
+  	left: 502px;
+  	width: 155px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 593px;
+  	left: 220px;
+  	width: 134px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelapersona_edad {
+  	position: absolute;
+  	top: 550px;
+  	left: 739px;
+  	width: 86px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_seudonimo_seudonimo {
+      position:absolute;
+      top: 0px;
+      left: 0px;
+      width: 232px;
+      height: 20px;
+      overflow:hidden;
+    }
+    .datosdeautores_instance_3_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 593px;
+  	left: 507px;
+  	width: 290px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 219px;
+  	left: 564px;
+  	width: 170px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelaempresa_nombrecomercial {
+  	position: absolute;
+  	top: 259px;
+  	left: 248px;
+  	width: 706px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_datosdelaempresa_tipo_sociedad {
+  	position: absolute;
+  	top: 222px;
+  	left: 890px;
+  	width: 71px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 333px;
+  	left: 120px;
+  	width: 183px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 316px;
+  	left: 448px;
+  	width: 505px;
+  	height: 70px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_3_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 406px;
+  	left: 237px;
+  	width: 210px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_tipodeidentificacion_tipoidentificaciontexto {
+  	position: absolute;
+  	top: 728px;
+  	left: 237px;
+  	width: 154px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelapersona_cdulapasaporte {
+  	position: absolute;
+  	top: 728px;
+  	left: 580px;
+  	width: 159px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 784px;
+  	left: 261px;
+  	width: 701px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelapersona_nacionalidad {
+  	position: absolute;
+  	top: 1083px;
+  	left: 184px;
+  	width: 123px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelapersona_fechadenacimiento {
+  	position: absolute;
+  	top: 1081px;
+  	left: 520px;
+  	width: 135px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelapersona_fechadedefuncin {
+  	position: absolute;
+  	top: 1125px;
+  	left: 230px;
+  	width: 131px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelapersona_edad {
+  	position: absolute;
+  	top: 1081px;
+  	left: 754px;
+  	width: 90px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_seudonimo_seudonimo {
+  	position: absolute;
+  	top: 521px;
+  	left: 363px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_seudonimo_indiqueseudonimo {
+  	position: absolute;
+  	top: 1124px;
+  	left: 519px;
+  	width: 275px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelaempresa_ruc {
+  	position: absolute;
+  	top: 728px;
+  	left: 575px;
+  	width: 168px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelaempresa_nombrecomercial {
+  	position: absolute;
+  	top: 783px;
+  	left: 259px;
+  	width: 707px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_datosdelaempresa_tipo_sociedad {
+  	position: absolute;
+  	top: 726px;
+  	left: 908px;
+  	width: 50px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 858px;
+  	left: 124px;
+  	width: 196px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 849px;
+  	left: 461px;
+  	width: 501px;
+  	height: 70px;
+  	overflow: hidden;
+    }
+    .datosdeautores_instance_4_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 931px;
+  	left: 253px;
+  	width: 199px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_2\" />\r\n  <title>Registro de Adiciones o Modificaciones de Obra</title>\r\n  <style type=\"text/css\">\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n    body {\r\n      margin-left: 0px;\r\n      margin-top: 0px;\r\n      margin-right: 0px;\r\n      margin-bottom: 0px;\r\n      padding-left: 0px;\r\n      padding-top: 0px;\r\n      padding-right: 0px;\r\n      padding-bottom: 0px;\r\n      overflow:hidden;\r\n    }\r\n    .magicDiv {\r\n      background-image:url('<%= image_path %>');\r\n      background-repeat:no-repeat;\r\n      background-position:0% 0%;\r\n      background-size:100%; \r\n      position:absolute;\r\n      left: 32px;\r\n      top: 32px;\r\n      height:1344px;\r\n      width: 1024px;\r\n      overflow:hidden;\r\n    }\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n  </style>\r\n\
+  </head>\r\n  <body>\r\n    <div class=\"magicDiv\">\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_tipodeidentificacion_tipoidentificaciontexto\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_tipodeidentificacion_tipoidentificaciontexto\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelapersona_cdulapasaporte\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelapersona_cdulapasaporte\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelapersona_nombrecompleto\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelapersona_nombrecompleto\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelapersona_nacionalidad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelapersona_nacionalidad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelapersona_fechadenacimiento\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelapersona_fechadenacimiento\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelapersona_fechadedefuncin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelapersona_fechadedefuncin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelapersona_edad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelapersona_edad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_seudonimo_seudonimo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_seudonimo_seudonimo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_seudonimo_indiqueseudonimo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_seudonimo_indiqueseudonimo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelaempresa_ruc\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelaempresa_ruc\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelaempresa_nombrecomercial\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelaempresa_nombrecomercial\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_datosdelaempresa_tipo_sociedad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_datosdelaempresa_tipo_sociedad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_informacinderesidencialocalizacin_pas\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_informacinderesidencialocalizacin_pas\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_informacinderesidencialocalizacin_direccin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_informacinderesidencialocalizacin_direccin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_3_informacinderesidencialocalizacin_nmerodetelfono\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_3_informacinderesidencialocalizacin_nmerodetelfono\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_tipodeidentificacion_tipoidentificaciontexto\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_tipodeidentificacion_tipoidentificaciontexto\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelapersona_cdulapasaporte\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelapersona_cdulapasaporte\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelapersona_nombrecompleto\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelapersona_nombrecompleto\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelapersona_nacionalidad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelapersona_nacionalidad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelapersona_fechadenacimiento\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelapersona_fechadenacimiento\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelapersona_fechadedefuncin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelapersona_fechadedefuncin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelapersona_edad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelapersona_edad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_seudonimo_seudonimo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_seudonimo_seudonimo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_seudonimo_indiqueseudonimo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_seudonimo_indiqueseudonimo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelaempresa_ruc\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelaempresa_ruc\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelaempresa_nombrecomercial\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelaempresa_nombrecomercial\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_datosdelaempresa_tipo_sociedad\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_datosdelaempresa_tipo_sociedad\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_informacinderesidencialocalizacin_pas\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_informacinderesidencialocalizacin_pas\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_informacinderesidencialocalizacin_direccin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_informacinderesidencialocalizacin_direccin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdeautores_instance_4_informacinderesidencialocalizacin_nmerodetelfono\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdeautores_instance_4_informacinderesidencialocalizacin_nmerodetelfono\"] %>\r\n          </span>\r\n        </div>\r\n    </div>\r\n  </body>\r\n\
+  </html>\r\n\
+  \r\n"
+print_design_id: 166
+created_at: 2014-11-28 15:40:32 Z
+updated_at: 2014-11-28 19:32:29 Z
+instances_selector: "{\"4491\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"4604\":{\"value\":\"3,4\",\"3149\":{\"value\":\"\",\"3605\":{\"value\":\"\"}},\"3151\":{\"value\":\"\",\"1981\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"545\":{\"value\":\"\"},\"546\":{\"value\":\"\"},\"2983\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"3152\":{\"value\":\"\",\"2979\":{\"value\":\"\"},\"2980\":{\"value\":\"\"}},\"3154\":{\"value\":\"\",\"567\":{\"value\":\"\"},\"1282\":{\"value\":\"\"},\"3342\":{\"value\":\"\"}},\"3153\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"}}}}"
+size: 

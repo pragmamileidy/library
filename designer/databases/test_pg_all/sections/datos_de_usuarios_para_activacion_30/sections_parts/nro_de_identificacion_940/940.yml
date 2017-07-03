@@ -1,0 +1,19 @@
+--- 
+id: 940
+section_id: 30
+part_id: 51
+name: "Nro. de Identificaci\xC3\xB3n"
+created_at: 2012-04-04 22:22:33 Z
+updated_at: 2012-04-04 22:22:33 Z
+label: "Nro. de Identificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

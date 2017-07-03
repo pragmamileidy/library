@@ -1,0 +1,16 @@
+--- 
+id: 5236
+design_id: 288
+section_id: 462
+name: Datos de la Obra  Artistica
+created_at: 2017-02-26 22:58:20.250503 Z
+updated_at: 2017-02-27 00:14:27.898256 Z
+label: Datos de la Obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2654\":{\"2993\":{\"required\":\"required\"},\"2994\":{\"required\":\"required\"},\"2996\":{\"required\":\"required\"},\"2997\":{\"required\":\"required\"},\"2998\":{\"required\":\"required\"},\"2999\":{\"required\":\"unrequired\"},\"3000\":{\"required\":\"required\"}},\"2655\":{\"2969\":{\"required\":\"unrequired\"},\"2970\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

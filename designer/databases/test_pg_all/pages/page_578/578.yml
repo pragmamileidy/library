@@ -1,0 +1,231 @@
+--- 
+id: 578
+position: 1
+selector: "{\"5021\":{\"656\":{\"758\":{},\"759\":{}}},\"5022\":{\"2198\":{\"2373\":{}}},\"5023\":{\"2174\":{\"3387\":{}}},\"5024\":{\"2544\":{\"2418\":{}}},\"5025\":{\"2189\":{\"3078\":{},\"2391\":{}},\"2190\":{\"3387\":{}}},\"5026\":{\"2197\":{\"2393\":{},\"2394\":{},\"2395\":{},\"2397\":{},\"3450\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 112px;
+  	left: 614px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 87px;
+  	left: 613px;
+  	width: 347px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdelasolicitud_datosgeneralesdelasolicitud_tipodeplano {
+  	position: absolute;
+  	top: 448px;
+  	left: 206px;
+  	width: 309px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_nombrecompleto_nombrecompleto {
+  	position: absolute;
+  	top: 342px;
+  	left: 162px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantejurdico_datosdelsolicitante_nombre {
+  	position: absolute;
+  	top: 340px;
+  	left: 162px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_1_datosdelcoparticipante_tipodecoparticipante_string {
+  	position: absolute;
+  	top: 659px;
+  	left: 215px;
+  	width: 531px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_1_datosdelcoparticipante_idoneidad {
+  	position: absolute;
+  	top: 717px;
+  	left: 248px;
+  	width: 409px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_1_nombrecompleto_nombrecompleto {
+  	position: absolute;
+  	top: 683px;
+  	left: 133px;
+  	width: 743px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_2_datosdelcoparticipante_tipodecoparticipante_string {
+  	position: absolute;
+  	top: 775px;
+  	left: 213px;
+  	width: 534px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_2_datosdelcoparticipante_idoneidad {
+  	position: absolute;
+  	top: 834px;
+  	left: 248px;
+  	width: 475px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_2_nombrecompleto_nombrecompleto {
+  	position: absolute;
+  	top: 800px;
+  	left: 132px;
+  	width: 733px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_3_datosdelcoparticipante_tipodecoparticipante_string {
+  	position: absolute;
+  	top: 890px;
+  	left: 214px;
+  	width: 494px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_3_datosdelcoparticipante_idoneidad {
+  	position: absolute;
+  	top: 949px;
+  	left: 249px;
+  	width: 409px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_3_nombrecompleto_nombrecompleto {
+  	position: absolute;
+  	top: 915px;
+  	left: 133px;
+  	width: 741px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_4_datosdelcoparticipante_tipodecoparticipante_string {
+  	position: absolute;
+  	top: 1006px;
+  	left: 213px;
+  	width: 412px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_4_datosdelcoparticipante_idoneidad {
+  	position: absolute;
+  	top: 1063px;
+  	left: 250px;
+  	width: 403px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_4_nombrecompleto_nombrecompleto {
+  	position: absolute;
+  	top: 1030px;
+  	left: 132px;
+  	width: 733px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_5_datosdelcoparticipante_tipodecoparticipante_string {
+  	position: absolute;
+  	top: 1122px;
+  	left: 214px;
+  	width: 569px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_5_datosdelcoparticipante_idoneidad {
+  	position: absolute;
+  	top: 1180px;
+  	left: 247px;
+  	width: 413px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcoparticipante_instance_5_nombrecompleto_nombrecompleto {
+  	position: absolute;
+  	top: 1147px;
+  	left: 133px;
+  	width: 739px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdelproyecto_datosgeneralesdelproyecto_nombredelproyecto {
+  	position: absolute;
+  	top: 482px;
+  	left: 255px;
+  	width: 689px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdelproyecto_datosgeneralesdelproyecto_categoradelproyecto {
+  	position: absolute;
+  	top: 515px;
+  	left: 280px;
+  	width: 589px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdelproyecto_datosgeneralesdelproyecto_nmerodeplano {
+  	position: absolute;
+  	top: 448px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdelproyecto_datosgeneralesdelproyecto_usodelaobra {
+  	position: absolute;
+  	top: 549px;
+  	left: 207px;
+  	width: 309px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdelproyecto_datosgeneralesdelproyecto_otros {
+  	position: absolute;
+  	top: 549px;
+  	left: 652px;
+  	width: 309px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 185
+created_at: 2016-02-10 13:33:53.399957 Z
+updated_at: 2016-02-26 17:45:54.182334 Z
+instances_selector: "{\"5021\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"5022\":{\"value\":\"\",\"2198\":{\"value\":\"\",\"2373\":{\"value\":\"\"}}},\"5023\":{\"value\":\"\",\"2174\":{\"value\":\"\",\"3387\":{\"value\":\"\"}}},\"5024\":{\"value\":\"\",\"2544\":{\"value\":\"\",\"2418\":{\"value\":\"\"}}},\"5025\":{\"value\":\"\",\"2189\":{\"value\":\"\",\"3078\":{\"value\":\"\"},\"2391\":{\"value\":\"\"}},\"2190\":{\"value\":\"\",\"3387\":{\"value\":\"\"}}},\"5026\":{\"value\":\"\",\"2197\":{\"value\":\"\",\"2393\":{\"value\":\"\"},\"2394\":{\"value\":\"\"},\"2395\":{\"value\":\"\"},\"2397\":{\"value\":\"\"},\"3450\":{\"value\":\"\"}}}}"
+size: ""

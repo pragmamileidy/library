@@ -1,0 +1,30 @@
+--- 
+id: 2884
+part_id: 511
+field_id: 17
+name: RepararEntidades
+created_at: 2013-01-29 17:49:06 Z
+updated_at: 2017-06-04 00:28:26.520280 Z
+label: Reparar Entidades
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo para proceso 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b075df9f-dfb7-4e44-a97a-7553bf6e0c35
+version: 20170603-202826

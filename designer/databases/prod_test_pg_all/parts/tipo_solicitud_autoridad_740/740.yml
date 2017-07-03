@@ -1,0 +1,17 @@
+--- 
+id: 740
+name: tipo solicitud autoridad
+description: tipo solicitud autoridad dij
+version: 
+status: Draft
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2015-07-27 13:57:19 Z
+updated_at: 2015-07-27 13:57:19 Z
+label: Tipo de Solicitud
+hint: ""
+view_class: horizontal
+serial: 6988-1220-0097-0997-1899

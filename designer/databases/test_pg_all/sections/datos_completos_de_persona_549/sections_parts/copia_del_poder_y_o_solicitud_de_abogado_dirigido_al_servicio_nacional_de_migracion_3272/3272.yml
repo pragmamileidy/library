@@ -1,0 +1,28 @@
+--- 
+id: 3272
+section_id: 549
+part_id: 38
+name: Copia del poder y/o solicitud de abogado dirigido al servicio nacional de migracion
+created_at: 2014-07-04 22:11:25 Z
+updated_at: 2017-01-04 21:16:18.365952 Z
+label: "Copia del poder y/o solicitud de abogado dirigido al servicio nacional de migraci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: |
+  #tipoDoc = form_data.get("datos_del_titular_rp_instance_#{route.section.instance}.datos_basicos_de_persona_natural.tipo_de_documento")
+  #motivo = form_data.get("tipo_de_solicitud_dij.tipo_de_solicitud_dij.motivo_de_la_solicitud_dij")
+  #tipo1 =  form_data.get("datos_del_titular_rp.datos_basicos_de_persona_natural.tipo_de_documento")
+  #motivoautor = form_data.get("tipo_de_solicitud_dij.tipo_de_solicitud_dij.motivo_de_solicitud_autoridad")
+  
+  #((tipoDoc == "Pasaporte")  or (tipo1 == "Pasaporte")) and (((motivo == "Visas Migratorias") or (motivo == "Crisol de Razas")) or ((motivoautor == "Visas Migratorias") or (motivoautor == "Crisol de Razas")))
+  
+  @owner["natural_person_type"] == "foreign_citizen"
+
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

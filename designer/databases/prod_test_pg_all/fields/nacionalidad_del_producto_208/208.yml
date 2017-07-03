@@ -1,0 +1,30 @@
+--- 
+id: 208
+name: Nacionalidad del producto
+description: Nacionalidad del producto
+version: 
+status: Draft
+label: Origen
+hint: ""
+help: Debe seleccionar el Origen del Producto.
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-09 15:15:19 Z
+updated_at: 2012-11-19 18:27:00 Z
+values_list: "\"Nacional\", \"Importado\""
+keys_list: "\"Nacional\", \"Importado\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

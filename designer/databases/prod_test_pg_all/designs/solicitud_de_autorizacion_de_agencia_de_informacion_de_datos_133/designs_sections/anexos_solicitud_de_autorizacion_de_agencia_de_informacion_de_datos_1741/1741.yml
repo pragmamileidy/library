@@ -1,0 +1,16 @@
+--- 
+id: 1741
+design_id: 133
+section_id: 363
+name: "Anexos - Solicitud de Autorizaci\xC3\xB3n de Agencia de Informaci\xC3\xB3n de Datos"
+created_at: 2012-08-07 22:02:10 Z
+updated_at: 2017-02-25 19:00:56.730869 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2084\":{\"210\":{\"required\":\"required\"}},\"2085\":{\"210\":{\"required\":\"required\"}},\"2086\":{\"210\":{\"required\":\"required\"}},\"2087\":{\"210\":{\"required\":\"required\"}},\"2088\":{\"210\":{\"required\":\"required\"}},\"2089\":{\"210\":{\"required\":\"required\"}},\"2090\":{\"210\":{\"required\":\"required\"}},\"3662\":{\"210\":{\"required\":\"required\"}},\"3663\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

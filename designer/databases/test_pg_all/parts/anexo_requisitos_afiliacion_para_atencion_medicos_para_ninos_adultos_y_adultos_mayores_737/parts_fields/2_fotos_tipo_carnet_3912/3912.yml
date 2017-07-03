@@ -1,0 +1,30 @@
+--- 
+id: 3912
+part_id: 737
+field_id: 31
+name: 2 Fotos Tipo Carnet
+created_at: 2015-02-20 16:34:30 Z
+updated_at: 2017-06-04 00:23:21.492847 Z
+label: 2 Fotos Tipo Carnet
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ceb5b14c-bd1e-41e1-849f-e03913b689c9
+version: 20170603-202321

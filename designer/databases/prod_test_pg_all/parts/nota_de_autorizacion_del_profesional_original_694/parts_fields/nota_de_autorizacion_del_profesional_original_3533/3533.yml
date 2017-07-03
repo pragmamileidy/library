@@ -1,0 +1,30 @@
+--- 
+id: 3533
+part_id: 694
+field_id: 31
+name: "Nota de autorizaci\xC3\xB3n del profesional original"
+created_at: 2014-02-18 15:44:02 Z
+updated_at: 2017-06-04 00:23:12.569079 Z
+label: "Nota de autorizaci\xC3\xB3n del profesional original"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d3f7f98e-d775-4b69-be94-9c75fa5c377b
+version: 20170603-202312

@@ -1,0 +1,30 @@
+--- 
+id: 1076
+part_id: 212
+field_id: 13
+name: Fecha hasta
+created_at: 2012-04-26 19:22:12 Z
+updated_at: 2017-06-04 00:23:57.946837 Z
+label: Fecha hasta
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1ae104e7-c518-4f62-acc1-5f890da72e65
+version: 20170603-202357

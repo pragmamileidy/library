@@ -1,0 +1,30 @@
+--- 
+id: 3014
+part_id: 561
+field_id: 31
+name: Copia del Pasaporte
+created_at: 2013-03-13 16:06:46 Z
+updated_at: 2017-06-04 00:22:39.243661 Z
+label: Copia del Pasaporte
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Solo si el tramitante es extranjero
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ffa695d6-1d21-4623-9414-c7ae57b79b5e
+version: 20170603-202239

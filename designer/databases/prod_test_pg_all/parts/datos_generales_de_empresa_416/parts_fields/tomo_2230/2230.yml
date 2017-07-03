@@ -1,0 +1,30 @@
+--- 
+id: 2230
+part_id: 416
+field_id: 10
+name: Tomo
+created_at: 2012-08-07 19:37:02 Z
+updated_at: 2017-06-04 00:26:05.629143 Z
+label: Tomo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor introduzca un valor usando n\xC3\xBAmeros del cero (0) al nueve (9). Ejemplo: 120"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 20
+rows: 
+min_value: 0
+max_value: 
+format: /^[0-9]+$/
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 792bac41-4fe3-478e-ac97-37071dbb913d
+version: 20170603-202605

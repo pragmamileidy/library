@@ -1,0 +1,410 @@
+--- 
+id: 203
+position: 6
+selector: "{\"1821\":{\"656\":{\"758\":{},\"759\":{}}},\"2415\":{\"2585\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2586\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2587\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2590\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2591\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2599\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2600\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2601\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2602\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2603\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2604\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2605\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2606\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2607\":{\"3114\":{},\"2919\":{},\"2920\":{}},\"2608\":{\"3114\":{},\"2919\":{},\"2920\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 87px;
+  	left: 732px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 60px;
+  	left: 731px;
+  	width: 285px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora0_nombredelaentidad {
+  	position: absolute;
+  	top: 221px;
+  	left: 59px;
+  	width: 317px;
+  	height: 59px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora0_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 223px;
+  	left: 390px;
+  	width: 199px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora0_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 224px;
+  	left: 602px;
+  	width: 345px;
+  	height: 57px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora1_nombredelaentidad {
+  	position: absolute;
+  	top: 291px;
+  	left: 60px;
+  	width: 316px;
+  	height: 57px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora1_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 292px;
+  	left: 393px;
+  	width: 195px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora1_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 292px;
+  	left: 601px;
+  	width: 348px;
+  	height: 55px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora2_nombredelaentidad {
+  	position: absolute;
+  	top: 364px;
+  	left: 61px;
+  	width: 315px;
+  	height: 59px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora2_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 365px;
+  	left: 390px;
+  	width: 199px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora2_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 365px;
+  	left: 601px;
+  	width: 349px;
+  	height: 58px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora3_nombredelaentidad {
+  	position: absolute;
+  	top: 437px;
+  	left: 60px;
+  	width: 319px;
+  	height: 58px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora3_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 436px;
+  	left: 390px;
+  	width: 199px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora3_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 436px;
+  	left: 601px;
+  	width: 349px;
+  	height: 58px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora4_nombredelaentidad {
+  	position: absolute;
+  	top: 507px;
+  	left: 59px;
+  	width: 319px;
+  	height: 59px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora4_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 509px;
+  	left: 389px;
+  	width: 200px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora4_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 507px;
+  	left: 602px;
+  	width: 347px;
+  	height: 60px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora5_nombredelaentidad {
+  	position: absolute;
+  	top: 579px;
+  	left: 61px;
+  	width: 316px;
+  	height: 59px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora5_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 579px;
+  	left: 391px;
+  	width: 198px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora5_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 579px;
+  	left: 600px;
+  	width: 349px;
+  	height: 59px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora6_nombredelaentidad {
+  	position: absolute;
+  	top: 648px;
+  	left: 60px;
+  	width: 319px;
+  	height: 59px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora6_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 652px;
+  	left: 394px;
+  	width: 196px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora6_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 650px;
+  	left: 601px;
+  	width: 346px;
+  	height: 56px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora7_nombredelaentidad {
+  	position: absolute;
+  	top: 720px;
+  	left: 60px;
+  	width: 318px;
+  	height: 57px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora7_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 722px;
+  	left: 391px;
+  	width: 196px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora7_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 721px;
+  	left: 600px;
+  	width: 350px;
+  	height: 57px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora8_nombredelaentidad {
+  	position: absolute;
+  	top: 793px;
+  	left: 62px;
+  	width: 316px;
+  	height: 58px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora8_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 795px;
+  	left: 390px;
+  	width: 197px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora8_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 793px;
+  	left: 600px;
+  	width: 348px;
+  	height: 58px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora9_nombredelaentidad {
+  	position: absolute;
+  	top: 865px;
+  	left: 59px;
+  	width: 318px;
+  	height: 55px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora9_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 866px;
+  	left: 391px;
+  	width: 199px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora9_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 865px;
+  	left: 601px;
+  	width: 341px;
+  	height: 60px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora10_nombredelaentidad {
+  	position: absolute;
+  	top: 937px;
+  	left: 59px;
+  	width: 318px;
+  	height: 58px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora10_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 937px;
+  	left: 391px;
+  	width: 198px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora10_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 936px;
+  	left: 602px;
+  	width: 345px;
+  	height: 56px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora11_nombredelaentidad {
+  	position: absolute;
+  	top: 1007px;
+  	left: 61px;
+  	width: 316px;
+  	height: 56px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora11_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 1009px;
+  	left: 390px;
+  	width: 198px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora11_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 1008px;
+  	left: 606px;
+  	width: 344px;
+  	height: 56px;
+  	overflow: hidden;
+    }
+      .entidadevaluadora_entidadevaluadora12_nombredelaentidad {
+  	position: absolute;
+  	top: 1080px;
+  	left: 61px;
+  	width: 315px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora12_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 1081px;
+  	left: 393px;
+  	width: 195px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora12_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 1080px;
+  	left: 601px;
+  	width: 344px;
+  	height: 56px;
+  	overflow: hidden;
+    }
+      .entidadevaluadora_entidadevaluadora13_nombredelaentidad {
+  	position: absolute;
+  	top: 1151px;
+  	left: 60px;
+  	width: 315px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora13_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 1153px;
+  	left: 392px;
+  	width: 195px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora13_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 1151px;
+  	left: 603px;
+  	width: 344px;
+  	height: 56px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora14_nombredelaentidad {
+  	position: absolute;
+  	top: 1220px;
+  	left: 59px;
+  	width: 315px;
+  	height: 54px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora14_nmerodecomentariodelsolicitante {
+  	position: absolute;
+  	top: 1221px;
+  	left: 392px;
+  	width: 195px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .entidadevaluadora_entidadevaluadora14_observacionesyrecomendacionesparaelsolicitante {
+  	position: absolute;
+  	top: 1219px;
+  	left: 604px;
+  	width: 344px;
+  	height: 56px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_2\" />\r\n  <title>Tr\xC3\xA1mite de Urbanizaciones y Parcelaciones en Etapa de Anteproyecto</title>\r\n  <style type=\"text/css\">\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n    body {\r\n      margin-left: 0px;\r\n      margin-top: 0px;\r\n      margin-right: 0px;\r\n      margin-bottom: 0px;\r\n      padding-left: 0px;\r\n      padding-top: 0px;\r\n      padding-right: 0px;\r\n      padding-bottom: 0px;\r\n      overflow:hidden;\r\n    }\r\n    .magicDiv {\r\n      background-image:url('<%= image_path %>');\r\n      background-repeat:no-repeat;\r\n      background-position:0% 0%;\r\n      background-size:100%; \r\n      position:absolute;\r\n      left: 32px;\r\n      top: 32px;\r\n      height:1344px;\r\n      width: 1024px;\r\n      overflow:hidden;\r\n    }\r\n    /* NO TOCAR ESTE CSS, ES EL QUE DA FORMA A LA P\xC3\x81GINA */\r\n  </style>\r\n\
+  </head>\r\n  <body>\r\n    <div class=\"magicDiv\">\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"usodelsuelo_instance_1_usodelsuelo_normasdeuso\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"usodelsuelo_instance_1_usodelsuelo_normasdeuso\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"usodelsuelo_instance_1_usodelsuelo_descripcin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"usodelsuelo_instance_1_usodelsuelo_descripcin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_1_colidante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_1_colidante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_1_nmerodefinca\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_1_nmerodefinca\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_1_tomo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_1_tomo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_1_folio\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_1_folio\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_2_colidante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_2_colidante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_2_nmerodefinca\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_2_nmerodefinca\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_2_tomo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_2_tomo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_2_folio\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_2_folio\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_3_colidante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_3_colidante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_3_nmerodefinca\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_3_nmerodefinca\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_3_tomo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_3_tomo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_3_folio\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_3_folio\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_4_colidante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_4_colidante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_4_nmerodefinca\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_4_nmerodefinca\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_4_tomo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_4_tomo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_4_folio\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_4_folio\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_5_colidante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_5_colidante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_5_nmerodefinca\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_5_nmerodefinca\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_5_tomo\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_5_tomo\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"datosdelafinca_datoscatastralesdelcolindante_instance_5_folio\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"datosdelafinca_datoscatastralesdelcolindante_instance_5_folio\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"evaluacindelmiviot_observacionesyrecomendacionesparaelsolicitante_nmero\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"evaluacindelmiviot_observacionesyrecomendacionesparaelsolicitante_nmero\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"evaluacindelmiviot_observacionesyrecomendacionesparaelsolicitante_observacinrecomendacin\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"evaluacindelmiviot_observacionesyrecomendacionesparaelsolicitante_observacinrecomendacin\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadora_entidadevaluadora0_nmerodecomentariodelsolicitante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadora_entidadevaluadora0_nmerodecomentariodelsolicitante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadora_entidadevaluadora0_observacionesyrecomendacionesparaelsolicitante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadora_entidadevaluadora0_observacionesyrecomendacionesparaelsolicitante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadora_entidadevaluadora1_nmerodecomentariodelsolicitante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadora_entidadevaluadora1_nmerodecomentariodelsolicitante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadora_entidadevaluadora1_observacionesyrecomendacionesparaelsolicitante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadora_entidadevaluadora1_observacionesyrecomendacionesparaelsolicitante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadora_entidadevaluadora2_nmerodecomentariodelsolicitante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadora_entidadevaluadora2_nmerodecomentariodelsolicitante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"entidadevaluadora_entidadevaluadora2_observacionesyrecomendacionesparaelsolicitante\">\r\n          <span class=\"field_size_1\">\r\n            <%= fields[\"entidadevaluadora_entidadevaluadora2_observacionesyrecomendacionesparaelsolicitante\"] %>\r\n          </span>\r\n        </div>\r\n        <div class=\"grid_<grid_id=1>_cell_row_<m>_col_<property_name>\">\r\n            <span class=\"field_size_1\">\r\n               <%=\r\n           result = WebserviceConsumer.get( '/service/dummy_bdin_contraloria_resumen_descuentos/records.json').parsed_response\r\n           result = result[\"response\"]\r\n           @blank_form = false\r\n           @form = form\r\n           \r\n            generate_grid_cell_divs(result, 1, 9, opts = {\r\n              readonly: true,\r\n              grid_id: 1 ,\r\n              css: true ,\r\n                show_only_selected: false\r\n            })\r\n        %>\r\n             </span>\r\n           </div>\r\n    </div>\r\n  </body>\r\n\
+  </html>\r\n"
+print_design_id: 99
+created_at: 2012-10-10 21:32:39 Z
+updated_at: 2015-11-30 19:28:15.213176 Z
+instances_selector: "{\"1821\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2415\":{\"value\":\"\",\"2585\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2586\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2587\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2590\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2591\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2599\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2600\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2601\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2602\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2603\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2604\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2605\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2606\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2607\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}},\"2608\":{\"value\":\"\",\"3114\":{\"value\":\"\"},\"2919\":{\"value\":\"\"},\"2920\":{\"value\":\"\"}}}}"
+size: ""

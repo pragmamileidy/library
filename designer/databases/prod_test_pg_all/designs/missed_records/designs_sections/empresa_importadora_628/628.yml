@@ -1,0 +1,16 @@
+--- 
+id: 628
+design_id: 75
+section_id: 108
+name: Empresa Importadora
+created_at: 2012-04-18 01:07:59 Z
+updated_at: 2013-06-19 15:59:55 Z
+label: Empresa Importadora
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"595\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"},\"3342\":{\"required\":\"required\"}},\"597\":{\"805\":{\"required\":\"required\"}},\"735\":{\"839\":{\"required\":\"required\"},\"840\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

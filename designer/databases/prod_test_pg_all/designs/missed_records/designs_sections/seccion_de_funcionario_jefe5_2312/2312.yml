@@ -1,0 +1,20 @@
+--- 
+id: 2312
+design_id: 139
+section_id: 433
+name: "Secci\xC3\xB3n de Funcionario Jefe5"
+created_at: 2013-01-22 21:21:06 Z
+updated_at: 2013-01-22 21:28:05 Z
+label: "Secci\xC3\xB3n de Funcionario Director de DAPyPC"
+min_instances: 1
+max_instances: 1
+depends_on: |
+  _i = (@task["name"].to_s).split(' ')
+  _datoInicial = (_i[1]).downcase
+  _datoInicial == "director"
+
+manage_as_confidential: false
+include: "{\"2493\":{\"1401\":{\"required\":\"required\"},\"1402\":{\"required\":\"required\"},\"1403\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 16

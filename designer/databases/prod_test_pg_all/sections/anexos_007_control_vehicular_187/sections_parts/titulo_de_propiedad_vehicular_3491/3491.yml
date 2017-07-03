@@ -1,0 +1,21 @@
+--- 
+id: 3491
+section_id: 187
+part_id: 38
+name: "T\xC3\xADtulo de Propiedad vehicular"
+created_at: 2015-09-16 20:38:19 Z
+updated_at: 2015-09-16 20:38:19 Z
+label: "T\xC3\xADtulo de Propiedad vehicular"
+min_instances: 1
+max_instances: 1
+depends_on: "form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular\")== \"Permiso de salida sin veh\xC3\xADculo - extranjeros\" ||\r\n\
+  form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular\") == \"Permiso de entrada vehicular extranjeros (solo turistas)\" ||\r\n\
+  form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular\") == \"Permiso de salida vehicular extranjeros (solo turistas)\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

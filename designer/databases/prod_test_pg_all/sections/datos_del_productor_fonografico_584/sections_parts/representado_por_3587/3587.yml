@@ -1,0 +1,22 @@
+--- 
+id: 3587
+section_id: 584
+part_id: 552
+name: Representado por
+created_at: 2015-11-06 19:09:57 Z
+updated_at: 2015-11-06 19:09:57 Z
+label: Representado por
+min_instances: 1
+max_instances: 1
+depends_on: "representante =  form_data.get(\"datos_del_productor_instance_#{route.section.instance}.tipo_documento_productor.tipo_de_identificacion\")\r\n\
+  #_person = @application[\"person_id\"]\r\n\
+  #_owner = @application[\"owner_person_id\"]\r\n\
+  #((_person != _owner) and (representante == \"C\xC3\xA9dula\") or (representante == \"Pasaporte\"))"
+manage_as_confidential: false
+include: "{\"2977\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

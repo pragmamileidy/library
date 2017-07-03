@@ -1,0 +1,62 @@
+--- 
+id: 1121
+name: Paso 5 -  Participantes de la Obra
+label: Participantes de la Obra
+description: ""
+fill_step_id: 565
+created_at: 2013-03-07 19:43:15 Z
+updated_at: 2013-05-27 14:53:15 Z
+include: "{\"2438\":{\"2634\":{\"2953\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2974\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2954\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "_cibuenas = []\r\n\
+  _cimalas = []\r\n\
+  _cidupli = []\r\n\
+  (1..5).each do |_num|\r\n\
+  \t_tipo = form_data.get(\"participantes_de_la_obra.participantes_instance_#{_num}.tipo_identificacion\")\r\n\
+  \tform_data.set(\"participantes_de_la_obra.participantes_instance_#{_num}.tipo_de_documento\",_tipo)\r\n\
+  \tif _tipo == \"Cedula\"\r\n\
+  \t\tnro_documento = form_data.get(\"participantes_de_la_obra.participantes_instance_#{_num}.cedula_pasaporte\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]\r\n\
+  \t\t\tif datos.blank? \r\n\
+  \t\t\t\t_cimalas << nro_documento\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\t_cibuenas << nro_documento\r\n\
+  \t\t\t\tif !_cibuenas.blank?\r\n\
+  \t\t\t\t\t_cidupli = _cibuenas.detect{ |e| _cibuenas.count(e) > 1}\r\n\
+  \t\t\t\t\tif !_cidupli.blank?\r\n\
+  \t\t\t\t\t\ttransition_errors << \"Uno de los numeros de documento de los Productores se ingreso m\xC3\xA1s de una vez\"\r\n\
+  \t\t\t\t\t\tbreak\r\n\
+  \t\t\t\t\tend\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\t\tform_data.set(\"participantes_de_la_obra.participantes_instance_#{_num}.cedula_pasaporte\",datos[\"cedula\"])\r\n\
+  \t\t\t\t#Nombre Completo\r\n\
+  \t\t\t\tnombre_completo= \"#{datos[\"primerNombre\"]} \"+\"#{datos[\"segundoNombre\"]} \"+\"#{datos[\"primerApellido\"]} \"+\"#{datos[\"segundoApellido\"]}  \"+\"#{datos[\"apellidoCasada\"]}\"\r\n\
+  \t\t\t\tform_data.set(\"participantes_de_la_obra.participantes_instance_#{_num}.nombre\",nombre_completo)\t\t\t\r\n\
+  \t\t\t\tform_data.set(\"participantes_de_la_obra.participantes_instance_#{_num}.direccion\",datos[\"direccion\"])\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  end\r\n\
+  if _tipo == \"Pasaporte\"\r\n\
+  \tnro_documento = form_data.get(\"participantes_de_la_obra.participantes_instance_#{_num}.cedula_pasaporte\")\r\n\
+  \tform_data.set(\"participantes_de_la_obra.participantes_instance_#{_num}.cedula_pasaporte\",nro_documento)\r\n\
+  end\r\n\
+  \r\n\
+  categoria = form_data.get(\"participantes_de_la_obra.participantes_instance_#{_num}.tipo_de_presentador\")\r\n\
+  form_data.set(\"participantes_de_la_obra.participantes_instance_#{_num}.categoria\",categoria)\r\n\
+  end\r\n\
+  \r\n\
+  if !_cimalas.blank?\r\n\
+  \ttransition_errors << \"Los Numeros de documentos #{_cimalas.join(\",\")} no se encontraron en el sistema\"\r\n\
+  end\r\n\
+  \r\n\
+  \r\n"
+views: 
+back_step: Paso 4 - Datos del productor
+next_step: "Paso 6 - Informaci\xC3\xB3n de los participantes de la Obra"
+position: 6
+ajax_calls: ""

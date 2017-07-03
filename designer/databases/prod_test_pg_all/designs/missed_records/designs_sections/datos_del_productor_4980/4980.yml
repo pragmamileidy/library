@@ -1,0 +1,16 @@
+--- 
+id: 4980
+design_id: 178
+section_id: 584
+name: Datos del Productor
+created_at: 2015-11-06 19:16:11 Z
+updated_at: 2015-11-06 19:35:05 Z
+label: "Datos del Productor Fonogr\xC3\xA1fico"
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3584\":{\"2197\":{\"required\":\"required\"}},\"3585\":{\"1981\":{\"required\":\"required\"},\"1322\":{\"required\":\"unrequired\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"1374\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"}},\"3586\":{\"572\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}},\"3587\":{\"2977\":{\"required\":\"unrequired\"}},\"3588\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"}},\"3589\":{\"572\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}},\"3590\":{\"2977\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 2

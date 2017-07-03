@@ -1,0 +1,30 @@
+--- 
+id: 305
+name: payment repair
+description: Reparar pago
+version: 
+status: Draft
+label: Reparo de Pago
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-09-18 14:46:27 Z
+updated_at: 2013-11-21 19:48:12 Z
+values_list: "\"\",\"true\",\"false\""
+keys_list: "\"\",\"true\",\"false\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

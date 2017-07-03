@@ -1,0 +1,19 @@
+--- 
+id: 849
+name: Paso 0 - Recibo del Pago de la Solicitud
+label: "Recepci\xC3\xB3n del Pago de la Solicitud"
+description: "Recepci\xC3\xB3n del Pago de la Solicitud"
+fill_step_id: 
+created_at: 2012-08-21 20:52:54 Z
+updated_at: 2012-08-21 20:52:54 Z
+include: "{\"1623\":{\"2026\":{\"2079\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1624\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1625\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1627\":{\"2026\":{\"2080\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1628\":{\"1791\":{\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1629\":{\"1791\":{\"1655\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1656\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2081\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2082\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1630\":{\"2029\":{\"2083\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2084\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2085\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2030\":{\"2086\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2087\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1643\":{\"1824\":{\"1366\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1367\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1368\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1370\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1369\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2114\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1371\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1654\":{\"2054\":{\"2164\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2165\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2168\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

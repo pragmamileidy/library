@@ -1,0 +1,30 @@
+--- 
+id: 4096
+part_id: 753
+field_id: 200
+name: "S\xC3\x8D/NO"
+created_at: 2017-02-27 14:22:00.017732 Z
+updated_at: 2017-06-04 00:26:46.851981 Z
+label: Confirme
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6728d008-bcfd-4caf-a66f-5f3e9adfec13
+version: 20170603-202646

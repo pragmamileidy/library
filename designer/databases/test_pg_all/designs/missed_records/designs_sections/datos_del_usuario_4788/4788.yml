@@ -1,0 +1,16 @@
+--- 
+id: 4788
+design_id: 266
+section_id: 577
+name: Datos del Usuario
+created_at: 2015-02-18 20:15:21 Z
+updated_at: 2015-02-18 20:15:21 Z
+label: Datos del Usuario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3460\":{\"3863\":{\"required\":\"required\"},\"3864\":{\"required\":\"required\"},\"3865\":{\"required\":\"required\"},\"3866\":{\"required\":\"required\"},\"3867\":{\"required\":\"required\"},\"3868\":{\"required\":\"required\"},\"3869\":{\"required\":\"required\"},\"3870\":{\"required\":\"required\"},\"3871\":{\"required\":\"required\"},\"3872\":{\"required\":\"required\"},\"3873\":{\"required\":\"required\"},\"3874\":{\"required\":\"required\"},\"3875\":{\"required\":\"required\"},\"3876\":{\"required\":\"required\"},\"3877\":{\"required\":\"required\"},\"3878\":{\"required\":\"required\"},\"3879\":{\"required\":\"required\"},\"3880\":{\"required\":\"required\"},\"3881\":{\"required\":\"required\"},\"3882\":{\"required\":\"required\"},\"3883\":{\"required\":\"required\"},\"3884\":{\"required\":\"required\"},\"3885\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

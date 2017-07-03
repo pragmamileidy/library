@@ -1,0 +1,16 @@
+--- 
+id: 2586
+design_id: 197
+section_id: 485
+name: Name
+created_at: 2013-04-08 22:29:27 Z
+updated_at: 2013-04-12 17:45:52 Z
+label: Name
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2756\":{\"3130\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 1

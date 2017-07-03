@@ -1,0 +1,30 @@
+--- 
+id: 1892
+part_id: 358
+field_id: 165
+name: Ministerios
+created_at: 2012-06-20 22:05:39 Z
+updated_at: 2017-06-04 00:21:58.216888 Z
+label: Ministerios
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 909fe512-b4f6-4756-8f9e-db80a84a1802
+version: 20170603-202158

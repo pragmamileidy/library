@@ -1,0 +1,17 @@
+--- 
+id: 5
+name: Detalle Producto
+description: "Secci\xC3\xB3n que contiene los detalles de productos farmac\xC3\xA9uticos, biol\xC3\xB3gicos y alimenticios"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-10-31 22:27:06 Z
+updated_at: 2012-03-27 17:27:50 Z
+status: Draft
+label: "Detalle Producto  Farmac\xC3\xA9utico"
+hint: ""
+serial: 

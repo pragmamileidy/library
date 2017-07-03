@@ -1,0 +1,19 @@
+--- 
+id: 3170
+section_id: 365
+part_id: 38
+name: Poder y Solicitud mediante abogado notariado y franqueado con B/.8.00
+created_at: 2014-05-05 14:26:12 Z
+updated_at: 2015-11-02 19:06:40 Z
+label: Poder y Solicitud mediante abogado notariado y franqueado con B/.8.00
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

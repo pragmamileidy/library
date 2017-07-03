@@ -1,0 +1,17 @@
+--- 
+id: 368
+name: Datos del Contrato Orignal
+description: Datos del Contrato Orignal
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-21 23:58:01 Z
+updated_at: 2012-06-21 23:58:01 Z
+label: Datos del Contrato Orignal
+hint: ""
+view_class: horizontal
+serial: 

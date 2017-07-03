@@ -1,0 +1,30 @@
+--- 
+id: 2672
+part_id: 495
+field_id: 10
+name: InicioPasoCorregirDatos
+created_at: 2013-01-14 15:25:19 Z
+updated_at: 2017-06-04 00:22:27.050504 Z
+label: Inicio Paso Corregir Datos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo proceso 3
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d18c0049-773e-4f4e-919f-9dbc75498a66
+version: 20170603-202227

@@ -1,0 +1,30 @@
+--- 
+id: 1352
+part_id: 208
+field_id: 24
+name: Negocios
+created_at: 2012-05-14 16:52:48 Z
+updated_at: 2017-06-04 00:21:41.687292 Z
+label: Negocios
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 39bfee08-f966-4aa5-813f-f0e21a6f0bb3
+version: 20170603-202141

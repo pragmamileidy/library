@@ -1,0 +1,72 @@
+--- 
+id: 1539
+name: Paso 1 - Llenado de Datos
+label: Config General
+description: ""
+fill_step_id: 767
+created_at: 2014-01-13 18:09:10 Z
+updated_at: 2014-01-14 15:10:51 Z
+include: "{\"3419\":{\"3001\":{\"2747\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2748\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3002\":{\"2751\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2752\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2754\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3003\":{\"2595\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2596\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2597\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2598\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3004\":{\"2755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2756\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3010\":{\"3444\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3007\":{\"3395\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3008\":{\"3446\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3009\":{\"3445\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3005\":{\"2601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2603\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2604\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2605\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2606\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3006\":{\"2607\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2608\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2609\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2610\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2611\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2613\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: "#Llenar campos TAG\r\n\
+  \r\n\
+  form_data.set(\"defaults2.tag.introduzca_la_informacion\", \"defaults\")\r\n\
+  \r\n\
+  #Llenar campos  EMAIL_SENDER\r\n\
+  \r\n\
+  form_data.set(\"config_tramites_100.email_sender.email_sender_for_persons\", \"no-reply@institucion.gob.pa\")\r\n\
+  form_data.set(\"config_tramites_100.email_sender.email_sender_for_agents\", \"no-reply@institucion.gob.pa\")\r\n\
+  \r\n\
+  #Llenar campos ROLNAME_ID\r\n\
+  \r\n\
+  form_data.set(\"config_tramites_100.rolname_id.nombresolicitud\", \"Solicitud de Traspaso de Propiedad de Veh\xC3\xADculos Motorizados\")\r\n\
+  form_data.set(\"config_tramites_100.rolname_id.workflow_id\", \"53\")\r\n\
+  form_data.set(\"config_tramites_100.rolname_id.template_id\", \"9736\")\r\n\
+  \r\n\
+  #Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n\
+  form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"constant_parameters\")\r\n\
+  \r\n\
+  \r\n\
+  #Llenar campos de ROLES Y TAREAS\r\n\
+  \r\n\
+  form_data.set(\"config_tramites_100.roles_y_tareas.rolename_solicitar\", \"OWNER\")\r\n\
+  form_data.set(\"config_tramites_100.roles_y_tareas.rolename_admin\", \"PSP_ADMIN\")\r\n\
+  form_data.set(\"config_tramites_100.roles_y_tareas.retry_times_for_human_task\", \"3\")\r\n\
+  form_data.set(\"config_tramites_100.roles_y_tareas.retry_times_for_system_task\", \"5\")\r\n\
+  \r\n\
+  \r\n\
+  form_data.set(\"config_tramites_100.requires.requires_pay\", \"false\")\r\n\
+  form_data.set(\"config_tramites_100.requires.requires_stamps\", \"false\")\r\n\
+  form_data.set(\"config_tramites_100.repair_requirement.requires_repair\", \"true\")\r\n\
+  #form_data.set(\"config_tramites_100.payment_order.payment_order\", \"false\")\r\n\
+  form_data.set(\"config_tramites_100.payment_qualms.payment_repair\", \"true\")\r\n\
+  form_data.set(\"config_tramites_100.close_requirement.requires_close\", \"true\")\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  #Llenado de campos EVENT_NOTIFICATION_PARAMETERS\r\n\
+  \r\n\
+  form_data.set(\"config_tramites_100.event_notification_parameters.author\", \"FCProcess\")\r\n\
+  form_data.set(\"config_tramites_100.event_notification_parameters.sender\", \"no-reply@panamatramita.gob.pa\")\r\n\
+  form_data.set(\"config_tramites_100.event_notification_parameters.email\", \"false\")\r\n\
+  form_data.set(\"config_tramites_100.event_notification_parameters.notify\", \"false\")\r\n\
+  form_data.set(\"config_tramites_100.event_notification_parameters.event\", \"true\")\r\n\
+  form_data.set(\"config_tramites_100.event_notification_parameters.retry_times\", \"5\")\r\n\
+  \r\n\
+  #Llenado de campos EMAIL_NOTIFICATION_PARAMETERS\r\n\
+  \r\n\
+  form_data.set(\"config_tramites_100.email_notification_parameters.author\", \"FCProcess\")\r\n\
+  form_data.set(\"config_tramites_100.email_notification_parameters.sender\", \"no-reply@panamatramita.gob.pa\")\r\n\
+  form_data.set(\"config_tramites_100.email_notification_parameters.email\", \"true\")\r\n\
+  form_data.set(\"config_tramites_100.email_notification_parameters.notify\", \"true\")\r\n\
+  form_data.set(\"config_tramites_100.email_notification_parameters.event\", \"true\")\r\n\
+  form_data.set(\"config_tramites_100.email_notification_parameters.retry_times\", \"5\")\r\n"
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

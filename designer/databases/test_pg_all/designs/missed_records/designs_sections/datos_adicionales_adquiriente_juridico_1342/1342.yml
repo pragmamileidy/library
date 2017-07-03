@@ -1,0 +1,21 @@
+--- 
+id: 1342
+design_id: 112
+section_id: 280
+name: "Datos Adicionales Adquiriente Jur\xC3\xADdico"
+created_at: 2012-06-08 22:01:34 Z
+updated_at: 2014-03-24 16:25:06 Z
+label: Datos Adicionales del Adquiriente
+min_instances: 1
+max_instances: 1
+depends_on: "solicitante = form_data.get(\"tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante\")\r\n\
+  documento_contraparte = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n\
+  traspaso = form_data.get(\"tipo_de_traspaso.tipo_de_traspaso.tipo_de_traspaso\")\r\n\
+  ((solicitante == \"Adquiriente\" && @owner[\"kind_of_user_type\"] == \"JuridicalPerson\") || \r\n\
+  (solicitante == \"Vendedor\" && documento_contraparte == \"RUC\") || \r\n\
+  (traspaso == \"De un veh\xC3\xADculo oficial a una aseguradora\" && solicitante != \"Adquiriente\"))"
+manage_as_confidential: false
+include: "{\"1814\":{\"2071\":{\"required\":\"required\"},\"3197\":{\"required\":\"required\"},\"2072\":{\"required\":\"required\"},\"3198\":{\"required\":\"required\"},\"1696\":{\"required\":\"required\"},\"1697\":{\"required\":\"required\"}},\"2795\":{\"3216\":{\"required\":\"required\"},\"3217\":{\"required\":\"required\"},\"3218\":{\"required\":\"required\"},\"3219\":{\"required\":\"required\"}},\"1815\":{\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"583\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 15

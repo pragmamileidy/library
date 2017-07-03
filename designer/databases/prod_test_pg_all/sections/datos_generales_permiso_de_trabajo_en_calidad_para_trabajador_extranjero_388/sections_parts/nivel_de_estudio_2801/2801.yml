@@ -1,0 +1,19 @@
+--- 
+id: 2801
+section_id: 388
+part_id: 599
+name: nivel de estudio
+created_at: 2013-05-21 14:12:26 Z
+updated_at: 2013-05-21 14:12:26 Z
+label: Nivel de estudio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3165\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

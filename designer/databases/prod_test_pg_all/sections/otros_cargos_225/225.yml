@@ -1,0 +1,17 @@
+--- 
+id: 225
+name: Otros Cargos
+description: "Datos registrables de las otras empresas, o sociedades en que este vinculado como representante legal. "
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-08 17:22:34 Z
+updated_at: 2012-05-16 20:46:26 Z
+status: Draft
+label: Otros Cargos
+hint: ""
+serial: 

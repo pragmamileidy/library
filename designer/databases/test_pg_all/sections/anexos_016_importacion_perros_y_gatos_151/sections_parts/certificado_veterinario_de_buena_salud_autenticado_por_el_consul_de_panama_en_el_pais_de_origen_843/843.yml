@@ -1,0 +1,19 @@
+--- 
+id: 843
+section_id: 151
+part_id: 38
+name: "Certificado veterinario de buena salud autenticado por el C\xC3\xB3nsul de Panam\xC3\xA1 en el pa\xC3\xADs de origen"
+created_at: 2012-03-28 11:49:09 Z
+updated_at: 2012-04-09 15:38:05 Z
+label: "Certificado veterinario de buena salud autenticado por el C\xC3\xB3nsul de Panam\xC3\xA1 en el pa\xC3\xADs de origen"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

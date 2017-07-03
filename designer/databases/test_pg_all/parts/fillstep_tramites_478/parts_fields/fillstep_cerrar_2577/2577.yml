@@ -1,0 +1,30 @@
+--- 
+id: 2577
+part_id: 478
+field_id: 10
+name: fillstep_cerrar
+created_at: 2013-01-11 14:59:27 Z
+updated_at: 2017-06-04 00:30:05.342191 Z
+label: Fillstep Cerrar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4b39981f-ca12-4ace-bc2e-fe55a04739eb
+version: 20170603-203005

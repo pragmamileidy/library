@@ -1,0 +1,19 @@
+--- 
+id: 2735
+section_id: 478
+part_id: 580
+name: "Evaluaci\xC3\xB3n de la Entidad"
+created_at: 2013-03-18 18:28:56 Z
+updated_at: 2013-06-07 19:32:09 Z
+label: "Evaluaci\xC3\xB3n de la Entidad"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3079\":{},\"3080\":{},\"3081\":{},\"3179\":{},\"3083\":{},\"3084\":{},\"3289\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,30 @@
+--- 
+id: 391
+part_id: 83
+field_id: 24
+name: "Confirmaci\xC3\xB3n Adaptaciones"
+created_at: 2011-11-14 18:52:17 Z
+updated_at: 2017-06-04 00:21:19.381633 Z
+label: "\xC2\xBFVeh\xC3\xADculo con adaptaciones?"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 83ecb041-e81f-4a52-b091-d88e5675f483
+version: 20170603-202119

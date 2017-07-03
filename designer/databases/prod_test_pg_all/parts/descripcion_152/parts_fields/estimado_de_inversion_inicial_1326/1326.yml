@@ -1,0 +1,30 @@
+--- 
+id: 1326
+part_id: 152
+field_id: 27
+name: "Estimado de Inversi\xC3\xB3n Inicial"
+created_at: 2012-05-11 22:54:38 Z
+updated_at: 2017-06-04 00:25:50.108233 Z
+label: "Estimado de Inversi\xC3\xB3n Inicial"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar en Balboas la inversi\xC3\xB3n inicial para el negocio."
+help: "Estimado de Inversi\xC3\xB3n Inicial. Indicar en Balboas la inversi\xC3\xB3n inicial para el negocio."
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 1
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6788e98c-7a7d-4195-826d-785fbdf2e0f4
+version: 20170603-202550

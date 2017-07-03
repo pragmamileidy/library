@@ -1,0 +1,30 @@
+--- 
+id: 1072
+part_id: 211
+field_id: 10
+name: "C\xC3\xB3digo Subgrupo"
+created_at: 2012-04-26 19:19:13 Z
+updated_at: 2017-06-04 00:23:57.746155 Z
+label: "C\xC3\xB3digo Subgrupo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a50999a3-9b7a-488c-b987-2c5279d6a463
+version: 20170603-202357

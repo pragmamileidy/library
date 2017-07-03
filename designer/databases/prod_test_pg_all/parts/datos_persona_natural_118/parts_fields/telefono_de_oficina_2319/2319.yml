@@ -1,0 +1,30 @@
+--- 
+id: 2319
+part_id: 118
+field_id: 8
+name: "Tel\xC3\xA9fono de Oficina"
+created_at: 2012-08-08 18:56:06 Z
+updated_at: 2017-06-04 00:32:03.439695 Z
+label: "Tel\xC3\xA9fono de Oficina"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca el C\xC3\xB3digo de Pa\xC3\xADs, de \xC3\x81rea y el N\xC3\xBAmero de Tel\xC3\xA9fono \xC3\xB3 Introduzca s\xC3\xB3lo el N\xC3\xBAmero de Tel\xC3\xA9fono. Ejemplos: +507-xxxxxxx, +507 xxx xxxx, +507 xxxx xxxx, +507-xxxx-xxxx, +507-xxx-xxxx, xxx-xxxx, xxxx-xxxx"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 39
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8b0fa0de-1a3b-4457-8f18-70d9c71f2861
+version: 20170603-203203

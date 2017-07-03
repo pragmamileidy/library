@@ -1,0 +1,106 @@
+--- 
+id: 1181
+name: Paso 3 -  Solicitud de Datos del Productor
+label: Solicitud de Datos del Productor (es)
+description: ""
+fill_step_id: 586
+created_at: 2013-03-14 18:40:29 Z
+updated_at: 2014-05-29 04:37:04 Z
+include: "{\"4297\":{\"3141\":{\"3601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3603\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "#### INTEGRACION PARA LOS DATOS DEL PRODUCTOR NATURAL Y JURIDICO - DV####\r\n\
+  _bp = []\r\n\
+  _mp = []\r\n\
+  _dp = []\r\n\
+  ##### TIPO DE DOCUMENTO CEDULA DEL PRODUCTOR #####\r\n\
+  (1..5).each do |_num|\r\n\
+  \t_tipo = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \tif _tipo == \"C\xC3\xA9dula\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]\r\n\
+  \t\t\tif datos.blank? \r\n\
+  \t\t\t\t_mp << nro_documento\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\t_bp << nro_documento\r\n\
+  \t\t\t\t_tipo = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.tipo_documento_string\",_tipo)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\",nro_documento)\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\",datos[\"cedula\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.primer_nombre\",datos[\"primerNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.primer_apellido\",datos[\"primerApellido\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.segundo_nombre\",datos[\"segundoNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.segundo_apellido\",datos[\"segundoApellido\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.apellido_de_casada\",datos[\"apellidoCasada\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_ubicacion.direccion\",datos[\"direccion\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_ubicacion.pais\",datos[\"pais\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_ubicacion.numero_de_telefono\",datos[\"tlfLocal\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_ubicacion.correo_electronico\",datos[\"email\"])\r\n\
+  \t\t\t\tdatos = nil\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \t\t\r\n\
+  \tend\r\n\
+  \t\r\n\
+  \t##### TIPO DE DOCUMENTO PASAPORTE DEL PRODUCTOR #####\r\n\
+  \tif _tipo == \"Pasaporte\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.no_documento\")\r\n\
+  \t\t_tipo = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\r\n\
+  \t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.cedula_pasaporte\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_productor_persona_natural_instance_#{_num}.datos_de_la_persona.tipo_documento_string\",_tipo)\r\n\
+  \tend\r\n\
+  \t\r\n\
+  \t_tipo = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \t\ttipoSoc=form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_ruc/find.json?ruc=' + \"#{nro_documento}\" + '&tipo_sociedad=' + \"#{tipoSoc}\")).parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"] \r\n\
+  \t\t\t\r\n\
+  \t\t\tif datos.nil? \r\n\
+  \t\t\tform_data.set(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.no_documento\",\"\")\r\n\
+  \t\t\t\ttransition_errors << \"Los datos del Productor #{_num} no se encuentran en el sistema\"\r\n\
+  \t\t\r\n\
+  \t\t\telse\r\n                        _tipo = form_data.get(\"tipo_de_documento_productor_instance_#{_num}.tipo_documento_mici.tipo_de_documento\")\r\n                form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.tipo_documento\",_tipo)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.ruc\",nro_documento)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.tipo_sociedad\",tipoSoc)\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.ruc\",datos[\"ruc\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_personales.nombre\",datos[\"nombre_empresa\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_de_ubicacion.direccion\",datos[\"direccion\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_de_ubicacion.numero_de_telefono\",datos[\"tlf_movil\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_productor_persona_juridica_instance_#{_num}.datos_de_ubicacion.correo_electronico\",datos[\"email\"])\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  \tif !_mp.blank?\r\n\
+  \t\ttransition_errors << \"Las cedulas #{_mp.join(\",\")} de los productores no se encuentran en el sistema\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tif !_bp.blank?\r\n\
+  \t\t_dp = _bp.detect{|e| _bp.count(e) > 1}\r\n\
+  \t\tif !_dp.blank?\r\n\
+  \t\t\ttransition_errors << \"Una de las cedulas en los productores se introdujo m\xC3\xA1s de una vez\"\r\n\
+  \t\tend\r\n\
+  \tend\r\n"
+views: 
+back_step: Paso 2 - Datos del Autor (es) o Titular (es)
+next_step: "Paso 4 - Datos del Productor "
+position: 3
+ajax_calls: "/// DESABILITAR CAMPO TIPO DE SOCIEDAD CUANDO EL DOCUMENTO SEA DISTINTO DE RUC ///\r\n\
+  \r\n\
+  $.each( $('[id*=field_tipo_de_documento_productor_]'), function(index, campo) {\r\n \r\n if ($(campo).attr('id').match(/tipo_documento_mici_tipo_de_documento/)) {\r\n  $(campo).attr('onchange', 'evalua(this.value,this.id);')\r\n }\r\n\
+  \r\n  });  \r\n\
+  \r\n\
+  function evalua(productor,idsociedad) {\r\n\
+  \r\n var pos = idsociedad.match(/[\\d]/);\r\n var mod1 = \"#field_tipo_de_documento_productor_instance_\";\r\n var mod2 = \"_tipo_documento_mici_tipo_de_documento\";\r\n var mod4 = \"_tipo_documento_mici_tipo_sociedad\";\r\n var mod5 = \"_tipo_documento_mici_no_documento\";\r\n  var mod3 = mod1.concat(pos);\r\n var tipo_s = mod3.concat(mod4);\r\n var tipo_d = mod3.concat(mod2);\r\n var num = mod3.concat(mod5);\r\n        if (($(tipo_d).val() == 'C\xC3\xA9dula')||($(tipo_d).val() == 'Pasaporte')){\r\n      $(tipo_s).attr(\"disabled\",\"disabled\");\r\n\
+  \t$(tipo_s).val('');\r\n\
+  \t$(num).val('');\r\n  }  \r\n  else {\r\n      $(tipo_s).removeAttr(\"disabled\",\"disabled\");\r\n   $(tipo_s).val(''); \r\n   $(num).val('');\r\n  }\r\n\
+  }"

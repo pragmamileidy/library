@@ -1,0 +1,35 @@
+--- 
+id: 5128
+design_id: 281
+section_id: 594
+name: Fotos y/o Huellas Tomadas
+created_at: 2016-03-23 14:52:06.498885 Z
+updated_at: 2016-03-27 20:04:50.603856 Z
+label: Fotos y/o Huellas Tomadas
+min_instances: 1
+max_instances: 1
+depends_on: "#sentencias = form_data.get(\"mensaje_dij.mensaje_dij.campo_data\")\r\n\
+  sentencias = form_data.get(\"datos_del_titular.datos_basicos_de_persona_natural.campo_data\")\r\n\
+  entrega_fisico = form_data.get(\"retiro_solvencia_policial.retiro_solvencia_policial.version_en_fisico\")\r\n\
+  foto_huella = form_data.get(\"fotos_y_o_huellas_tomadas.fotos_y_o_huellas_tomadas.si_no\")\r\n\
+  \r\n\
+  \r\n\
+  # No tiene sentencias, no pidio entrega y no tiene huellas o fotos\r\n\
+  # Tiene sentencias, no pidio entrega y no tiene huellas o fotos\r\n\
+  # No tiene sentencias, pidio entrega y no tiene huellas o fotos\r\n\
+  \r\n\
+  #( sentencias.blank? && (entrega_fisico == \"NO\") && (foto_huella == \"NO\")) || \r\n\
+  #( !sentencias.blank? && (entrega_fisico == \"NO\") && (foto_huella == \"NO\")) ||\r\n\
+  #( sentencias.blank? && (entrega_fisico == \"S\xC3\x8D\") && (foto_huella == \"NO\"))\r\n\
+  \r\n\
+  #DESCOMENTAR CODIGO ANTERIOR CUANDO FUNCIONE SE VERIFIQUE LA RUTA DE CONSULTAS A LAS SENTENCIAS\r\n\
+  \r\n\
+  \r\n\
+  ( (sentencias != \"Titular existe en PNC.\") && (entrega_fisico == \"NO\") && (foto_huella == \"NO\")) || \r\n\
+  ( (sentencias == \"Titular existe en PNC.\") && (entrega_fisico == \"NO\") && (foto_huella == \"NO\")) ||\r\n\
+  ( (sentencias != \"Titular existe en PNC.\") && (entrega_fisico == \"S\xC3\x8D\") && (foto_huella == \"NO\"))\r\n"
+manage_as_confidential: false
+include: "{\"3609\":{\"4009\":{\"required\":\"required\"},\"4010\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 11

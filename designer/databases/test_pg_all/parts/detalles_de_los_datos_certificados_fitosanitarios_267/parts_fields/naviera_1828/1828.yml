@@ -1,0 +1,30 @@
+--- 
+id: 1828
+part_id: 267
+field_id: 130
+name: Naviera
+created_at: 2012-06-14 21:35:24 Z
+updated_at: 2017-06-04 00:28:59.703685 Z
+label: Naviera
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Nombre de la Naviera en caso que el env\xC3\xADo sea transportado v\xC3\xADa mar\xC3\xADtima"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cb7ed3cd-c809-42c4-865d-d5f92b016a40
+version: 20170603-202859

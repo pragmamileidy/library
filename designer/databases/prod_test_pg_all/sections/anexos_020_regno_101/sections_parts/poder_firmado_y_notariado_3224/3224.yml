@@ -1,0 +1,21 @@
+--- 
+id: 3224
+section_id: 101
+part_id: 38
+name: Poder firmado y notariado
+created_at: 2014-06-09 21:22:09 Z
+updated_at: 2017-02-28 23:00:29.300744 Z
+label: Poder firmado y notariado
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  option = form_data.get("datos_del_solicitante.datos_del_representante_legal_o_apoderado_legal.tipo_representante_oferente")
+  option == "Apoderado Legal"
+manage_as_confidential: false
+include: "{\"210\":{}}"
+hint: En caso de ser presentado por un Apoderado Legal
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

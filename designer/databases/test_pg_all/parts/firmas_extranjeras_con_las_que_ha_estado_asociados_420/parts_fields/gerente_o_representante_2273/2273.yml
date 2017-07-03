@@ -1,0 +1,30 @@
+--- 
+id: 2273
+part_id: 420
+field_id: 10
+name: Gerente o representante
+created_at: 2012-08-07 21:47:59 Z
+updated_at: 2017-06-04 00:30:03.431347 Z
+label: Gerente o representante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar el gerente o representante de las oficinas o sucursales
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: "/^[a-zA-Z\xC3\xB1\xC3\x91\xC3\xA1\xC3\xA9\xC3\xAD\xC3\xB3\xC3\xBA\xC3\xBC\xC3\x81\xC3\x89\xC3\x8D\xC3\x93\xC3\x9A\xC3\x9C\\s]+$/"
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 17cebfb4-39b3-4543-af4c-9dd71a0c49e2
+version: 20170603-203003

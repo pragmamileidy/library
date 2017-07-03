@@ -1,0 +1,30 @@
+--- 
+id: 1851
+part_id: 348
+field_id: 31
+name: "C\xC3\xA9dula de Identidad Personal del due\xC3\xB1o del auto"
+created_at: 2012-06-15 18:01:14 Z
+updated_at: 2017-06-04 00:21:56.372282 Z
+label: "C\xC3\xA9dula de Identidad Personal del due\xC3\xB1o del auto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fb14ec09-d581-43bf-87cd-acba4d48888e
+version: 20170603-202156

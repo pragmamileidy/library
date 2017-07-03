@@ -1,0 +1,30 @@
+--- 
+id: 566
+part_id: 120
+field_id: 10
+name: Nombre
+created_at: 2011-11-22 19:56:20 Z
+updated_at: 2017-06-04 00:25:36.834337 Z
+label: "Nombre o Raz\xC3\xB3n Social"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 71547701-da55-4bf8-927f-64e323cd3796
+version: 20170603-202536

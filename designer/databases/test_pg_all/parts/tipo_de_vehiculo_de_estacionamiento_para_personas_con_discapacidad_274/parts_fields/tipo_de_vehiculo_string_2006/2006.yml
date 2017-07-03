@@ -1,0 +1,30 @@
+--- 
+id: 2006
+part_id: 274
+field_id: 10
+name: Tipo de vehiculo string
+created_at: 2012-07-13 04:40:16 Z
+updated_at: 2017-06-04 00:26:00.336410 Z
+label: Tipo de vehiculo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 914eb7cb-0d7e-481e-b2e4-a45cf0180a4f
+version: 20170603-202600

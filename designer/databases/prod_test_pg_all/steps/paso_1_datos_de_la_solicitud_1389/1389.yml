@@ -1,0 +1,19 @@
+--- 
+id: 1389
+name: Paso 1 - Datos de la Solicitud
+label: Datos de la Solicitud
+description: Ingrese los Datos de la Solicitud y los Datos del Abogado Litigante
+fill_step_id: 694
+created_at: 2013-05-17 15:02:13 Z
+updated_at: 2013-05-17 15:02:13 Z
+include: "{\"2842\":{\"2098\":{\"2221\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2222\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2223\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2224\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2225\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2226\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2227\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2843\":{\"2095\":{\"2311\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2312\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2313\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2314\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2315\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2318\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 0 - Datos de la Solicitud
+next_step: Paso 2 - Datos del Local o Empresa
+position: 1
+ajax_calls: ""

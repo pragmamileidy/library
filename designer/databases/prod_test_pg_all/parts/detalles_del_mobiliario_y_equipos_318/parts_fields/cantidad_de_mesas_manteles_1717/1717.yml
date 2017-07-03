@@ -1,0 +1,30 @@
+--- 
+id: 1717
+part_id: 318
+field_id: 1
+name: Cantidad de Mesas/manteles
+created_at: 2012-06-10 17:23:02 Z
+updated_at: 2017-06-04 00:24:12.380113 Z
+label: Cantidad de Mesas/manteles
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Favor introduzca un valor entero
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2738aa8a-31ba-4248-8840-315b01ea1ecc
+version: 20170603-202412

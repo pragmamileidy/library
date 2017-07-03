@@ -1,0 +1,30 @@
+--- 
+id: 3282
+part_id: 621
+field_id: 288
+name: app code
+created_at: 2013-06-07 19:13:10 Z
+updated_at: 2017-06-04 00:22:52.055376 Z
+label: App Code
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 67cd3a00-5528-46d8-92e0-1971ae1bb395
+version: 20170603-202252

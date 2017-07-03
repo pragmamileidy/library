@@ -1,0 +1,30 @@
+--- 
+id: 2579
+part_id: 478
+field_id: 10
+name: fillstep_revisar
+created_at: 2013-01-11 15:33:02 Z
+updated_at: 2017-06-04 00:30:37.672416 Z
+label: Fillstep Revisar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Este fillstep es utilizado en los procesos 2, 4 y 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: dd7625be-9713-4cea-8972-cf80090d8cf7
+version: 20170603-203037

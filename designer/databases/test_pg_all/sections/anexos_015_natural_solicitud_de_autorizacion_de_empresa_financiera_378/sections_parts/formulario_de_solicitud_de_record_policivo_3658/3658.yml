@@ -1,0 +1,19 @@
+--- 
+id: 3658
+section_id: 378
+part_id: 38
+name: "Formulario de solicitud de r\xC3\xA9cord policivo"
+created_at: 2017-02-24 16:31:08.106879 Z
+updated_at: 2017-03-13 21:53:47.560497 Z
+label: "Formulario de solicitud de r\xC3\xA9cord policivo, seg\xC3\xBAn el \xC3\xBAltimo p\xC3\xA1rrafo del art\xC3\xADculo 3 del decreto ejecutivo 213 del 26 de octubre de 2010."
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "De ser extranjero deber\xC3\xA1n aportar historial penal y policivo, emitido por la autoridad del pa\xC3\xADs de su \xC3\xBAltima residencia debidamente legalizado y apostillado."
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

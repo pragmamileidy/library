@@ -1,0 +1,19 @@
+--- 
+id: 3449
+section_id: 572
+part_id: 732
+name: Familiar con Discapacidad
+created_at: 2015-02-17 06:20:12 Z
+updated_at: 2015-02-19 19:38:17 Z
+label: Familiar con Discapacidad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3849\":{},\"3850\":{},\"3852\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

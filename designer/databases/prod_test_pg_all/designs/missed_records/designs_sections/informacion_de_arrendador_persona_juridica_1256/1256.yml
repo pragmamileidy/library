@@ -1,0 +1,18 @@
+--- 
+id: 1256
+design_id: 111
+section_id: 108
+name: "Informaci\xC3\xB3n de Arrendador Persona Jur\xC3\xADdica"
+created_at: 2012-06-07 21:11:29 Z
+updated_at: 2014-04-08 21:22:42 Z
+label: "Informaci\xC3\xB3n de Arrendador"
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  tipoPersona = form_data.get("tipo_de_persona_de_arrendador.tipo_de_persona_del_arrendamiento.tipo")
+  tipoPersona == "Juridica"
+manage_as_confidential: false
+include: "{\"595\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"},\"568\":{\"required\":\"required\"},\"3342\":{\"required\":\"required\"}},\"598\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"}},\"597\":{\"631\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

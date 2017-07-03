@@ -1,0 +1,30 @@
+--- 
+id: 3496
+part_id: 677
+field_id: 27
+name: timeout-duration
+created_at: 2014-01-14 19:53:48 Z
+updated_at: 2017-06-04 00:25:12.235560 Z
+label: Tiempo de Espera
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 573eecd0-5b56-46ee-b46a-24bf5c77cd95
+version: 20170603-202512

@@ -1,0 +1,30 @@
+--- 
+id: 1359
+part_id: 55
+field_id: 83
+name: "Tiene usted alg\xC3\xBAn bien que declarar"
+created_at: 2012-05-14 17:00:32 Z
+updated_at: 2017-06-04 00:29:33.194288 Z
+label: "Tiene usted alg\xC3\xBAn bien que declarar"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fa5dd25f-49c7-4309-ab2e-d6e080a10751
+version: 20170603-202933

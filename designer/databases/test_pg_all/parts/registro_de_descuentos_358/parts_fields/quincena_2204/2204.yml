@@ -1,0 +1,30 @@
+--- 
+id: 2204
+part_id: 358
+field_id: 172
+name: Quincena
+created_at: 2012-07-29 03:08:06 Z
+updated_at: 2017-06-04 00:29:05.544038 Z
+label: Quincena
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7077d770-1aa3-4077-8d47-bf508324e8f3
+version: 20170603-202905

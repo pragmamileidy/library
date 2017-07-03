@@ -1,0 +1,17 @@
+--- 
+id: 557
+name: Tabla DIJ
+description: Tabla para mostrar sentencias de solicitantes del record policivo del DIJ
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-06-13 16:24:35 Z
+updated_at: 2014-06-16 14:12:39 Z
+status: Draft
+label: "Tabla din\xC3\xA1mica"
+hint: ""
+serial: 

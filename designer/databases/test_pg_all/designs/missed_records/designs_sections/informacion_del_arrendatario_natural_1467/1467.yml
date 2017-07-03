@@ -1,0 +1,18 @@
+--- 
+id: 1467
+design_id: 23
+section_id: 107
+name: "Informaci\xC3\xB3n del Arrendatario Natural"
+created_at: 2012-06-15 14:44:00 Z
+updated_at: 2013-08-14 14:42:34 Z
+label: "Informaci\xC3\xB3n del Arrendatario"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  tipoPersona = form_data.get("tipo_de_persona_del_arrendamiento.tipo_de_persona_del_arrendamiento.tipo")
+  tipoPersona=="Natural"
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"}},\"581\":{\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"583\":{\"required\":\"unrequired\"},\"2217\":{\"required\":\"unrequired\"},\"930\":{\"required\":\"unrequired\"},\"631\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 5

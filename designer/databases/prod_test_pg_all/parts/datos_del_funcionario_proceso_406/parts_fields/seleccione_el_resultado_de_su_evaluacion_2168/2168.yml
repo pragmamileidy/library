@@ -1,0 +1,30 @@
+--- 
+id: 2168
+part_id: 406
+field_id: 198
+name: "Seleccione el resultado de su evaluaci\xC3\xB3n"
+created_at: 2012-07-24 02:35:07 Z
+updated_at: 2017-06-04 00:27:16.270863 Z
+label: "Seleccione el resultado de su evaluaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 748b606f-87a4-4249-a704-c96b4b31693e
+version: 20170603-202716

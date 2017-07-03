@@ -1,0 +1,150 @@
+--- 
+id: 264
+position: 1
+selector: "{\"2010\":{\"656\":{\"758\":{},\"759\":{}}},\"2012\":{\"580\":{\"1320\":{},\"528\":{},\"529\":{},\"530\":{},\"537\":{},\"2001\":{},\"548\":{},\"763\":{}},\"581\":{\"572\":{},\"805\":{},\"585\":{},\"631\":{},\"594\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 68px;
+  	left: 703px;
+  	width: 319px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 41px;
+  	left: 704px;
+  	width: 317px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_pasaporte {
+  	position: absolute;
+  	top: 297px;
+  	left: 271px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_primernombre {
+  	position: absolute;
+  	top: 297px;
+  	left: 756px;
+  	width: 200px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_segundonombre {
+  	position: absolute;
+  	top: 338px;
+  	left: 274px;
+  	width: 240px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_primerapellido {
+  	position: absolute;
+  	top: 338px;
+  	left: 758px;
+  	width: 198px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_segundoapellido {
+  	position: absolute;
+  	top: 379px;
+  	left: 272px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_sexostring {
+  	position: absolute;
+  	top: 421px;
+  	left: 275px;
+  	width: 239px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_estadocivil {
+  	position: absolute;
+  	top: 420px;
+  	left: 757px;
+  	width: 206px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_datosdelapersona_edad {
+  	position: absolute;
+  	top: 378px;
+  	left: 754px;
+  	width: 205px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_pas {
+  	position: absolute;
+  	top: 460px;
+  	left: 270px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_direccin {
+  	position: absolute;
+  	top: 504px;
+  	left: 272px;
+  	width: 687px;
+  	height: 58px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 580px;
+  	left: 272px;
+  	width: 239px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_nmerocelular {
+  	position: absolute;
+  	top: 580px;
+  	left: 757px;
+  	width: 207px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantenatural_informacinderesidencialocalizacin_correoelectrnico {
+  	position: absolute;
+  	top: 461px;
+  	left: 756px;
+  	width: 209px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: 
+print_design_id: 119
+created_at: 2013-04-23 20:10:03 Z
+updated_at: 2015-09-07 15:20:10 Z
+instances_selector: "{\"2010\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"2012\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1320\":{\"value\":\"\"},\"528\":{\"value\":\"\"},\"529\":{\"value\":\"\"},\"530\":{\"value\":\"\"},\"537\":{\"value\":\"\"},\"2001\":{\"value\":\"\"},\"548\":{\"value\":\"\"},\"763\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"572\":{\"value\":\"\"},\"805\":{\"value\":\"\"},\"585\":{\"value\":\"\"},\"631\":{\"value\":\"\"},\"594\":{\"value\":\"\"}}}}"
+size: ""

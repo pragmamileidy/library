@@ -1,0 +1,30 @@
+--- 
+id: 1259
+part_id: 245
+field_id: 83
+name: "En caso de no tener derecho a una pensi\xC3\xB3n por vejez por edad anticipada, acepto una pensi\xC3\xB3n de vejez proporcional anticipada"
+created_at: 2012-05-07 20:23:25 Z
+updated_at: 2017-06-04 00:25:48.746230 Z
+label: "En caso de no tener derecho a una pensi\xC3\xB3n por vejez por edad anticipada, acepto una pensi\xC3\xB3n de vejez proporcional anticipada"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c778cf1c-3352-45d4-8f97-e96c3600ecb5
+version: 20170603-202548

@@ -1,0 +1,30 @@
+--- 
+id: 210
+name: Indicar la Unida
+description: Unidad de medida
+version: 
+status: Draft
+label: Indicar la Unidad
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-09 15:52:07 Z
+updated_at: 2015-09-04 18:13:27 Z
+values_list: "\"\", \"Pies\", \"Metros\""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 2736-1974-4426-9253-4314

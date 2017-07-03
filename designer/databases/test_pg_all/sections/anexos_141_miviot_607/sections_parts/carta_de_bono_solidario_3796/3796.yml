@@ -1,0 +1,20 @@
+--- 
+id: 3796
+section_id: 607
+part_id: 38
+name: Carta de Bono Solidario
+created_at: 2017-04-08 21:36:49.824469 Z
+updated_at: 2017-04-08 21:36:49.824469 Z
+label: Carta de Bono Solidario
+min_instances: 0
+max_instances: 1
+depends_on: "SelloExp = form_data.get(\"datos_de_aprobacion_de_solicitud.datos_de_solicitud_de_aprobacion.sello_de_expedito\")\r\n\
+  SelloExp == \"S\xC3\xAD\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 8

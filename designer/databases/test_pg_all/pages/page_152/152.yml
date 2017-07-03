@@ -1,0 +1,246 @@
+--- 
+id: 152
+position: 1
+selector: "{\"1610\":{\"656\":{\"758\":{},\"759\":{}}},\"1611\":{\"909\":{\"2005\":{}}},\"1612\":{\"1725\":{\"1468\":{},\"1469\":{},\"1470\":{},\"1471\":{},\"1472\":{},\"1473\":{}},\"1726\":{\"2456\":{},\"2457\":{},\"2458\":{},\"583\":{},\"2217\":{},\"585\":{}}},\"1613\":{\"1725\":{\"1468\":{},\"1469\":{},\"1470\":{},\"1471\":{},\"1472\":{},\"1473\":{}},\"1726\":{\"574\":{},\"632\":{},\"633\":{},\"583\":{},\"2217\":{},\"585\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(img/1.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 67px;
+  	left: 714px;
+  	width: 197px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 40px;
+  	left: 713px;
+  	width: 303px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .estudiosexterior_confirmacion_seleccione {
+  	position: absolute;
+  	top: 291px;
+  	left: 387px;
+  	width: 88px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_datosbsicos_cdula {
+  	position: absolute;
+  	top: 439px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_datosbsicos_primernombre {
+  	position: absolute;
+  	top: 470px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_datosbsicos_segundonombre {
+  	position: absolute;
+  	top: 471px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_datosbsicos_primerapellido {
+  	position: absolute;
+  	top: 505px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_datosbsicos_segundoapellido {
+  	position: absolute;
+  	top: 505px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_datosbsicos_apellidodecasada {
+  	position: absolute;
+  	top: 543px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_direccinactual_provincia_lista {
+  	position: absolute;
+  	top: 580px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_direccinactual_distrito_lista {
+  	position: absolute;
+  	top: 580px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_direccinactual_corregimiento_lista {
+  	position: absolute;
+  	top: 617px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_direccinactual_barrio {
+  	position: absolute;
+  	top: 652px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_direccinactual_nmerodecasaapartamento {
+  	position: absolute;
+  	top: 616px;
+  	left: 727px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelestudiante_direccinactual_nmerodetelfono {
+  	position: absolute;
+  	top: 543px;
+  	left: 728px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_datosbsicos_cdula {
+  	position: absolute;
+  	top: 729px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_datosbsicos_primernombre {
+  	position: absolute;
+  	top: 760px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_datosbsicos_segundonombre {
+  	position: absolute;
+  	top: 761px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_datosbsicos_primerapellido {
+  	position: absolute;
+  	top: 790px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_datosbsicos_segundoapellido {
+  	position: absolute;
+  	top: 790px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_datosbsicos_apellidodecasada {
+  	position: absolute;
+  	top: 816px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_direccinactual_provincia {
+  	position: absolute;
+  	top: 852px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_direccinactual_distrito {
+  	position: absolute;
+  	top: 852px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_direccinactual_corregimiento {
+  	position: absolute;
+  	top: 889px;
+  	left: 272px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_direccinactual_barrio {
+  	position: absolute;
+  	top: 926px;
+  	left: 271px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_direccinactual_nmerodecasaapartamento {
+  	position: absolute;
+  	top: 889px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelrepresentantelegal_direccinactual_nmerodetelfono {
+  	position: absolute;
+  	top: 816px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: ""
+print_design_id: 69
+created_at: 2012-07-19 21:40:48 Z
+updated_at: 2015-10-19 20:05:48 Z
+instances_selector: "{\"1610\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1611\":{\"value\":\"\",\"909\":{\"value\":\"\",\"2005\":{\"value\":\"\"}}},\"1612\":{\"value\":\"\",\"1725\":{\"value\":\"\",\"1468\":{\"value\":\"\"},\"1469\":{\"value\":\"\"},\"1470\":{\"value\":\"\"},\"1471\":{\"value\":\"\"},\"1472\":{\"value\":\"\"},\"1473\":{\"value\":\"\"}},\"1726\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"583\":{\"value\":\"\"},\"2217\":{\"value\":\"\"},\"585\":{\"value\":\"\"}}},\"1613\":{\"value\":\"\",\"1725\":{\"value\":\"\",\"1468\":{\"value\":\"\"},\"1469\":{\"value\":\"\"},\"1470\":{\"value\":\"\"},\"1471\":{\"value\":\"\"},\"1472\":{\"value\":\"\"},\"1473\":{\"value\":\"\"}},\"1726\":{\"value\":\"\",\"574\":{\"value\":\"\"},\"632\":{\"value\":\"\"},\"633\":{\"value\":\"\"},\"583\":{\"value\":\"\"},\"2217\":{\"value\":\"\"},\"585\":{\"value\":\"\"}}}}"
+size: ""

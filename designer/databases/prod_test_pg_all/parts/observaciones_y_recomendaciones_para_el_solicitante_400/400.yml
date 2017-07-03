@@ -1,0 +1,17 @@
+--- 
+id: 400
+name: Observaciones y Recomendaciones para el Solicitante
+description: Observaciones y Recomendaciones para el Solicitante
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 16:05:11 Z
+updated_at: 2012-07-23 16:05:11 Z
+label: Observaciones y Recomendaciones para el Solicitante
+hint: ""
+view_class: horizontal
+serial: 

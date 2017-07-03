@@ -1,0 +1,19 @@
+--- 
+id: 1765
+section_id: 263
+part_id: 291
+name: Tipo de persona del arrendamiento
+created_at: 2012-06-05 15:58:46 Z
+updated_at: 2012-06-05 15:58:46 Z
+label: Tipo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

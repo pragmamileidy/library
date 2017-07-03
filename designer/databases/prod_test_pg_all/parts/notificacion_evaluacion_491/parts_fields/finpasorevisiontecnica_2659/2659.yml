@@ -1,0 +1,30 @@
+--- 
+id: 2659
+part_id: 491
+field_id: 10
+name: FinPasoRevisionTecnica
+created_at: 2013-01-14 14:51:21 Z
+updated_at: 2017-06-04 00:27:26.161448 Z
+label: "Fin Paso Revisi\xC3\xB3n T\xC3\xA9cnica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Solo  para los procesos 4 y 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7b8d7be2-e833-4321-9ac6-448b2e48b95d
+version: 20170603-202726

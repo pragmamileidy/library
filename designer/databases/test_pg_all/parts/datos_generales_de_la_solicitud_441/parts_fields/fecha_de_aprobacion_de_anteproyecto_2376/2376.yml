@@ -1,0 +1,30 @@
+--- 
+id: 2376
+part_id: 441
+field_id: 13
+name: "Fecha de aprobaci\xC3\xB3n de anteproyecto"
+created_at: 2012-08-14 14:47:21 Z
+updated_at: 2017-06-04 00:29:08.359234 Z
+label: "Fecha de aprobaci\xC3\xB3n de anteproyecto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Es Requerida solo s\xC3\xAD el Tipo de Plano es \xE2\x80\x9CPlano Original de Edificaci\xC3\xB3n\xE2\x80\x9D."
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 143cec80-dc4b-492e-9b9e-8533a0ecbd56
+version: 20170603-202908

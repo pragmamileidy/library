@@ -1,0 +1,16 @@
+--- 
+id: 2416
+design_id: 178
+section_id: 108
+name: "Datos del Productor Fonogr\xC3\xA1ficoj"
+created_at: 2013-02-28 15:55:26 Z
+updated_at: 2015-11-06 15:36:04 Z
+label: "Datos del Productor Fonogr\xC3\xA1fico (Persona Jur\xC3\xADdica)"
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"595\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"},\"3342\":{\"required\":\"required\"}},\"597\":{\"572\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"},\"813\":{\"required\":\"unrequired\"}},\"2697\":{\"2977\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 3

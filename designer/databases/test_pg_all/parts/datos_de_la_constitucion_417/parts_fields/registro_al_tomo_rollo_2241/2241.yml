@@ -1,0 +1,30 @@
+--- 
+id: 2241
+part_id: 417
+field_id: 10
+name: Registro al Tomo (Rollo)
+created_at: 2012-08-07 20:05:57 Z
+updated_at: 2017-06-04 00:29:06.517270 Z
+label: Registro al Tomo (Rollo)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar el tomo de la empresa
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 4ea4a898-3677-4a84-98b7-27366a22e39d
+version: 20170603-202906

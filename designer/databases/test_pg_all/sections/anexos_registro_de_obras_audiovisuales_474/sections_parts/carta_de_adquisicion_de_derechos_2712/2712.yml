@@ -1,0 +1,21 @@
+--- 
+id: 2712
+section_id: 474
+part_id: 543
+name: "Carta de adquisici\xC3\xB3n de Derechos"
+created_at: 2013-03-14 17:39:52 Z
+updated_at: 2013-10-30 14:12:38 Z
+label: "Carta de adquisici\xC3\xB3n de Derechos"
+min_instances: 1
+max_instances: 1
+depends_on: |
+  @owner["kind_of_user_type"] == "NaturalPerson"
+
+manage_as_confidential: false
+include: 
+hint: ""
+help: "Escaneada en cualquier formato: pdf, jpg, bmp, etc."
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

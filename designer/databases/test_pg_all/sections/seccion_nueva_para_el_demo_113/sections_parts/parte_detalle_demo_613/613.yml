@@ -1,0 +1,19 @@
+--- 
+id: 613
+section_id: 113
+part_id: 134
+name: " Parte detalle demo"
+created_at: 2012-03-05 16:59:17 Z
+updated_at: 2012-04-10 18:42:32 Z
+label: " Parte detalle demo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: " "
+help: " "
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 1

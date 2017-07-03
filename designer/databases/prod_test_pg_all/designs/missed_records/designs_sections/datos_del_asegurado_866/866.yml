@@ -1,0 +1,16 @@
+--- 
+id: 866
+design_id: 85
+section_id: 107
+name: Datos del Asegurado
+created_at: 2012-05-02 18:05:13 Z
+updated_at: 2015-09-14 14:00:33 Z
+label: Datos del Asegurado - Pensionado/Jubilado -
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"1320\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"},\"2001\":{\"required\":\"required\"},\"3615\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

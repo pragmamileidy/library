@@ -1,0 +1,16 @@
+--- 
+id: 1204
+design_id: 103
+section_id: 258
+name: "Detallar Educaci\xC3\xB3n"
+created_at: 2012-06-01 20:59:14 Z
+updated_at: 2012-06-01 21:29:10 Z
+label: "Detallar Educaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1739\":{\"1531\":{\"required\":\"unrequired\"},\"1545\":{\"required\":\"unrequired\"}},\"1740\":{\"1532\":{\"required\":\"unrequired\"},\"1533\":{\"required\":\"unrequired\"}},\"1741\":{\"1534\":{\"required\":\"unrequired\"},\"1535\":{\"required\":\"unrequired\"}},\"1742\":{\"1536\":{\"required\":\"unrequired\"},\"1537\":{\"required\":\"unrequired\"}},\"1743\":{\"1538\":{\"required\":\"unrequired\"},\"1539\":{\"required\":\"unrequired\"}},\"1744\":{\"1540\":{\"required\":\"unrequired\"},\"1541\":{\"required\":\"unrequired\"}},\"1745\":{\"1542\":{\"required\":\"unrequired\"},\"1543\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

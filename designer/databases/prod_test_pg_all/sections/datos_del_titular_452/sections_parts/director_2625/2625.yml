@@ -1,0 +1,19 @@
+--- 
+id: 2625
+section_id: 452
+part_id: 547
+name: Director
+created_at: 2013-03-05 21:09:46 Z
+updated_at: 2013-03-05 21:10:18 Z
+label: Datos del Director
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2951\":{},\"2950\":{},\"2952\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

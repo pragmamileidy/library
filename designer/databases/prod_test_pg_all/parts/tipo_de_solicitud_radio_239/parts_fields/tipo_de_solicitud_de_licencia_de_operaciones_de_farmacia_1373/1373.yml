@@ -1,0 +1,30 @@
+--- 
+id: 1373
+part_id: 239
+field_id: 105
+name: Tipo de solicitud de licencia de operaciones de farmacia
+created_at: 2012-05-16 19:49:48 Z
+updated_at: 2017-06-04 00:21:42.022996 Z
+label: Tipo de solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Seleccione el tipo de su solicitud
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 882926ca-b6d0-4017-92ff-8410a2aa44c6
+version: 20170603-202142

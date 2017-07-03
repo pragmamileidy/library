@@ -1,0 +1,39 @@
+--- 
+id: 1054
+name: Paso 7 - Correos Sujetos
+label: Correos Sujetos
+description: ""
+fill_step_id: 540
+created_at: 2013-01-23 19:31:50 Z
+updated_at: 2014-04-11 14:27:34 Z
+include: "{\"2347\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2352\":{\"2434\":{\"2798\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2799\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2436\":{\"2808\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2809\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2810\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2811\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2812\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2440\":{\"2837\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2838\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2839\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "#Llenado de campos en la parte DESCRIPCION_ESTRUCT\r\n\
+  \r\n form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"mail_bodies\")\r\n\
+  \r\n\
+  #Llenar campos de la parte Cargar Solicitud\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_cargartramite.cargarsolicitud\", \"Por favor ingrese en su bandeja MIS TR\xC3\x81MITES y llene el(los) formulario(s) asociados a la Solicitud de Traspaso de Veh\xC3\xADculos. \")\r\n\
+  form_data.set(\"mail_bodies.mail_cargartramite.anularpasocarga\", \"El tr\xC3\xA1mite de solicitud de Traspaso de Veh\xC3\xADculos iniciado por Usted, ha sido anulado por errores durante la carga de la solicitud.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte MAIL_CONTRAPARTE\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_contraparte.confirmarsolicitud\", \"La Solicitud de Traspaso de Veh\xC3\xADculos se encuentra en la Bandeja de Funcionarios de la ATTT, para su revisi\xC3\xB3n. \")\r\n\
+  form_data.set(\"mail_bodies.mail_contraparte.rechazocontraparte\", \"El tr\xC3\xA1mite de Solicitud de Traspaso de Veh\xC3\xADculos ha sido rechazado porque no ha sido aprobado por su contraparte.\")\r\n\
+  form_data.set(\"mail_bodies.mail_contraparte.errorobtenercontraparte\", \"Ha fallado el servicio para obtener nuevo application_id para el proceso de Traspaso de Veh\xC3\xADculos. Favor tome acciones a fin de que el ciudadano pueda continuar su tr\xC3\xA1mite.\")\r\n\
+  \r\n\
+  #Llenar campos de la parte MAIL_SOLICITUDTRAMITE\r\n\
+  \r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.recibirsolicitud\", \"El tr\xC3\xA1mite de solicitud de Traspaso de Veh\xC3\xADculos iniciado por Usted, se encuentra en espera de recepci\xC3\xB3n.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.rechazosolicitud\", \"El tr\xC3\xA1mite de solicitud de Traspaso de Veh\xC3\xADculos iniciado por Usted, ha sido rechazado por el Funcionario. Revise su bandeja para m\xC3\xA1s detalles.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.reparosolicitud\", \"La Solicitud de Traspaso de Veh\xC3\xADculos iniciada por Usted requiere correcciones. Revise en la bandeja MIS TR\xC3\x81MITES las correcciones solicitadas por el funcionario receptor de la Instituci\xC3\xB3n. \")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.anularpasoreparosolicitud\", \"El tr\xC3\xA1mite de solicitud de Traspaso de Veh\xC3\xADculos iniciado por Usted, ha sido anulado por errores durante el reparo de la solicitud.\")\r\n\
+  form_data.set(\"mail_bodies.mail_solicitudtramite.errorrecibirsolicitud\", \"Ha habido errores en la revisi\xC3\xB3n de pagos de la Solicitud de Traspaso de Veh\xC3\xADculos, por favor solvente para que se pueda completar la revisi\xC3\xB3n de los pagos del tr\xC3\xA1mite.\")"
+on_transition: ""
+views: 
+back_step: Paso 6 - Notificaciones
+next_step: Paso 8 - Correos Sujetos
+position: 6
+ajax_calls: ""

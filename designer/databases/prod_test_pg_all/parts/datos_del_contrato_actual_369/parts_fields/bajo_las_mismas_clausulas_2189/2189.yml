@@ -1,0 +1,30 @@
+--- 
+id: 2189
+part_id: 369
+field_id: 83
+name: Bajo las mismas clausulas
+created_at: 2012-07-26 20:12:06 Z
+updated_at: 2017-06-04 00:29:05.366137 Z
+label: Bajo las mismas clausulas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ea8449c0-765f-4f72-8073-59016100072f
+version: 20170603-202905

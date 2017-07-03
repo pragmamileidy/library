@@ -1,0 +1,17 @@
+--- 
+id: 736
+name: Copy of Datos del Solicitante
+description: "Secci\xC3\xB3n S\xC3\xB3lo para mostrar Datos del Solicitante (Tipo Identificaci\xC3\xB3n, N\xC3\xBAm Identificaci\xC3\xB3n, Nombre Completo) Todos text."
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2015-02-18 20:41:18 Z
+updated_at: 2015-02-18 20:41:18 Z
+label: Datos del Solicitante
+hint: ""
+view_class: horizontal
+serial: 2463-3265-6584-9266-7918

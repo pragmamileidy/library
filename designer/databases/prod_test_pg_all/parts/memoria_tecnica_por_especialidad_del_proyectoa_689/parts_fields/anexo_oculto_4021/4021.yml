@@ -1,0 +1,30 @@
+--- 
+id: 4021
+part_id: 689
+field_id: 10
+name: anexo_oculto
+created_at: 2016-04-07 13:16:44.332441 Z
+updated_at: 2017-06-04 00:26:43.143654 Z
+label: anexo_oculto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2d6bed79-131b-4e25-86e0-efc01845074f
+version: 20170603-202643

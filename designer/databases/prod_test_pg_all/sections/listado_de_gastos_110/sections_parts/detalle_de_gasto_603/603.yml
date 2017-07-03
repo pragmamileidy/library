@@ -1,0 +1,27 @@
+--- 
+id: 603
+section_id: 110
+part_id: 132
+name: Detalle de Gasto
+created_at: 2012-02-17 18:23:54 Z
+updated_at: 2012-05-16 20:46:16 Z
+label: Detalle de Monto
+min_instances: 1
+max_instances: 1
+depends_on: "# El campo monto es requerido si el Checkbox est\xC3\xA1 marcado y de lo contrario, el valor debe ser 0,00"
+manage_as_confidential: false
+include: "{\"634\":{},\"635\":{}}"
+hint: Favor introduzca el detalle de gastos Mensuales del solicitante
+help: "Gastos del Solicitante\r\n\
+  Casa:\tMonto mensual del solicitante que corresponde a su casa\r\n\
+  Alimentaci\xC3\xB3n\t: Monto mensual de  alimentaci\xC3\xB3n del solicitante\r\n\
+  Servicios B\xC3\xA1sicos:\tMonto mensual de gasto de luz, agua y tel\xC3\xA9fono que tiene el solicitante\r\n\
+  Medicinas: Monto que gasta mensual el solicitante, en medicamentos.\r\n\
+  Transporte: Monto que  gasta mensual, el solicitante, en transporte (gasolina) o gasto de taxi.\r\n\
+  Pr\xC3\xA9stamos: Monto que gasta mensual el solicitante, en pagos de pr\xC3\xA9stamos, de forma mensual, en caso que los tuviese.\r\n\
+  Ahorros: Monto que tiene  en ahorros mensualmente.\r\n\
+  Otros: Monto de cualquier otro gasto mensual que tuviese el solicitante.\r\n"
+rows_names: "\"Casa\", \"Alimentaci\xC3\xB3n\", \"Servicios B\xC3\xA1sicos\", \"Medicinas\", \"Transporte\", \"Pr\xC3\xA9stamos\", \"Ahorros\", \"Otros\""
+rows_labels: "\"Casa\", \"Alimentaci\xC3\xB3n\", \"Servicios B\xC3\xA1sicos\", \"Medicinas\", \"Transporte\", \"Pr\xC3\xA9stamos\", \"Ahorros\", \"Otros\""
+view_class: ""
+order_input: 2

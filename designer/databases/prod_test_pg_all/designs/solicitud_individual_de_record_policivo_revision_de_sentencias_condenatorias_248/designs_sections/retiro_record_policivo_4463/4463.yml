@@ -1,0 +1,16 @@
+--- 
+id: 4463
+design_id: 248
+section_id: 558
+name: Retiro Record Policivo
+created_at: 2014-07-02 13:35:29 Z
+updated_at: 2014-10-24 16:04:45 Z
+label: "Informaci\xC3\xB3n de la Solicitud"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3261\":{\"3712\":{\"required\":\"unrequired\"},\"3691\":{\"required\":\"unrequired\"},\"3693\":{\"required\":\"unrequired\"},\"3692\":{\"required\":\"unrequired\"}},\"3264\":{\"3722\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 8

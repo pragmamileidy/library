@@ -1,0 +1,19 @@
+--- 
+id: 18
+section_id: 11
+part_id: 16
+name: es deudor o no
+created_at: 2016-12-26 15:04:12.646530 Z
+updated_at: 2017-01-16 16:30:23.996363 Z
+label: Infracciones Propias
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

@@ -1,0 +1,30 @@
+--- 
+id: 682
+part_id: 138
+field_id: 69
+name: Prueba campo 8 tipo select 7 7 7 7
+created_at: 2012-03-13 22:18:14 Z
+updated_at: 2017-06-04 00:29:55.517884 Z
+label: Prueba campo 8 tipo select
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Prueba campo 8 tipo select
+help: Prueba campo 8 tipo select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5a541670-ff0a-4c23-9577-06d738e9c06b
+version: 20170603-202955

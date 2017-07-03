@@ -1,0 +1,16 @@
+--- 
+id: 1137
+design_id: 100
+section_id: 107
+name: Datos del Padre
+created_at: 2012-05-29 20:26:49 Z
+updated_at: 2012-05-29 20:26:49 Z
+label: Datos del Padre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"}},\"586\":{\"556\":{\"required\":\"required\"},\"565\":{\"required\":\"required\"}},\"581\":{\"585\":{\"required\":\"unrequired\"},\"631\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

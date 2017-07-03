@@ -1,0 +1,239 @@
+--- 
+id: 362
+position: 3
+selector: "{\"1749\":{\"656\":{\"758\":{},\"759\":{}}},\"1756\":{\"2095\":{\"2311\":{},\"2312\":{},\"4044\":{},\"2313\":{},\"2314\":{},\"2315\":{},\"2318\":{},\"4069\":{},\"4043\":{},\"4045\":{}},\"2096\":{\"2302\":{},\"2296\":{},\"2304\":{},\"4046\":{},\"2306\":{},\"2307\":{},\"2305\":{},\"2308\":{},\"2309\":{}},\"3620\":{\"2456\":{},\"2457\":{},\"2458\":{},\"578\":{},\"579\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    background-image: url(RUTA_IMAGEN.png);
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 73px;
+  	left: 673px;
+  	width: 349px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 49px;
+  	left: 676px;
+  	width: 348px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_cdulalitigante {
+  	position: absolute;
+  	top: 376px;
+  	left: 272px;
+  	width: 469px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_nombredelabogado {
+  	position: absolute;
+  	top: 411px;
+  	left: 272px;
+  	width: 711px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_idoneidaddelabogado {
+  	position: absolute;
+  	top: 447px;
+  	left: 272px;
+  	width: 718px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_nombredelafirma {
+  	position: absolute;
+  	top: 481px;
+  	left: 272px;
+  	width: 714px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_ubicacindelafirma {
+  	position: absolute;
+  	top: 519px;
+  	left: 272px;
+  	width: 710px;
+  	height: 52px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_nombreaautorizar {
+  	position: absolute;
+  	top: 586px;
+  	left: 272px;
+  	width: 710px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_cdulaaautorizar {
+  	position: absolute;
+  	top: 635px;
+  	left: 272px;
+  	width: 477px;
+  	height: 22px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_pasaporte {
+  	position: absolute;
+  	top: 639px;
+  	left: 272px;
+  	width: 477px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_loquesedeseaoperar {
+  	position: absolute;
+  	top: 672px;
+  	left: 272px;
+  	width: 708px;
+  	height: 21px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdelabogadolitigante_leycorrespondiente {
+  	position: absolute;
+  	top: 706px;
+  	left: 272px;
+  	width: 713px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_nombrecomercial {
+  	position: absolute;
+  	top: 794px;
+  	left: 294px;
+  	width: 715px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_ruc {
+  	position: absolute;
+  	top: 831px;
+  	left: 294px;
+  	width: 461px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_dgitoverificador {
+  	position: absolute;
+  	top: 864px;
+  	left: 294px;
+  	width: 460px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_sededicaraaofrecer {
+  	position: absolute;
+  	top: 895px;
+  	left: 294px;
+  	width: 731px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_telfonoocelular {
+  	position: absolute;
+  	top: 947px;
+  	left: 294px;
+  	width: 459px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_correoelectrnico {
+  	position: absolute;
+  	top: 981px;
+  	left: 294px;
+  	width: 456px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_apartadopostal {
+  	position: absolute;
+  	top: 1017px;
+  	left: 294px;
+  	width: 457px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_capitalsuscritoypagado {
+  	position: absolute;
+  	top: 1070px;
+  	left: 294px;
+  	width: 457px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdellocal_fechadeiniciodeoperaciones {
+  	position: absolute;
+  	top: 1105px;
+  	left: 294px;
+  	width: 460px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdeubicacin_provincia_lista {
+  	position: absolute;
+  	top: 1213px;
+  	left: 294px;
+  	width: 479px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdeubicacin_distrito_lista {
+  	position: absolute;
+  	top: 1246px;
+  	left: 294px;
+  	width: 482px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdeubicacin_corregimiento_lista {
+  	position: absolute;
+  	top: 1281px;
+  	left: 294px;
+  	width: 476px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdeubicacin_calleoavenida {
+  	position: absolute;
+  	top: 1315px;
+  	left: 294px;
+  	width: 471px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .solicitantenatural_datosdeubicacin_edificiocasa {
+  	position: absolute;
+  	top: 1359px;
+  	left: 294px;
+  	width: 743px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 139
+created_at: 2013-06-11 18:14:46 Z
+updated_at: 2017-02-25 14:55:09.775303 Z
+instances_selector: "{\"1749\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"1756\":{\"value\":\"\",\"2095\":{\"value\":\"\",\"2311\":{\"value\":\"\"},\"2312\":{\"value\":\"\"},\"4044\":{\"value\":\"\"},\"2313\":{\"value\":\"\"},\"2314\":{\"value\":\"\"},\"2315\":{\"value\":\"\"},\"2318\":{\"value\":\"\"},\"4069\":{\"value\":\"\"},\"4043\":{\"value\":\"\"},\"4045\":{\"value\":\"\"}},\"2096\":{\"value\":\"\",\"2302\":{\"value\":\"\"},\"2296\":{\"value\":\"\"},\"2304\":{\"value\":\"\"},\"4046\":{\"value\":\"\"},\"2306\":{\"value\":\"\"},\"2307\":{\"value\":\"\"},\"2305\":{\"value\":\"\"},\"2308\":{\"value\":\"\"},\"2309\":{\"value\":\"\"}},\"3620\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"578\":{\"value\":\"\"},\"579\":{\"value\":\"\"}}}}"
+size: legal

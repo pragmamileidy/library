@@ -1,0 +1,30 @@
+--- 
+id: 1383
+part_id: 22
+field_id: 107
+name: Tipo de Sangre
+created_at: 2012-05-17 19:21:34 Z
+updated_at: 2017-06-04 00:29:58.189126 Z
+label: Tipo de Sangre
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Escriba su tipo desangre
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ac2aecb1-afe5-430d-a68d-8e593f8bb64b
+version: 20170603-202958

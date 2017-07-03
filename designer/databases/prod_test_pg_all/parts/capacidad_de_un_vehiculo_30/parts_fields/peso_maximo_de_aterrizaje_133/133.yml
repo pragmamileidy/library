@@ -1,0 +1,30 @@
+--- 
+id: 133
+part_id: 30
+field_id: 27
+name: "Peso M\xC3\xA1ximo de Aterrizaje"
+created_at: 2011-11-03 21:04:36 Z
+updated_at: 2017-06-04 00:27:56.059996 Z
+label: "Peso M\xC3\xA1ximo de Aterrizaje"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3a965b37-eae6-4d14-98b9-aebe6400d0b0
+version: 20170603-202756

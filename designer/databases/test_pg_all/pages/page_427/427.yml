@@ -1,0 +1,359 @@
+--- 
+id: 427
+position: 1
+selector: "{\"3421\":{\"656\":{\"758\":{},\"759\":{}}},\"3424\":{\"1791\":{\"1983\":{},\"1656\":{},\"2081\":{},\"2082\":{}}},\"3425\":{\"1791\":{\"1655\":{},\"1656\":{},\"2081\":{},\"2082\":{}}},\"3429\":{\"1791\":{\"3116\":{},\"1983\":{},\"1656\":{},\"2081\":{},\"2082\":{}}},\"3430\":{\"1791\":{\"3116\":{},\"1655\":{},\"1656\":{},\"2081\":{},\"2082\":{}}},\"3431\":{\"2029\":{\"2083\":{},\"2084\":{},\"2085\":{}}},\"3434\":{\"1791\":{\"3116\":{},\"1983\":{},\"1656\":{},\"2081\":{}}},\"3435\":{\"1791\":{\"3116\":{},\"1655\":{},\"1656\":{},\"2081\":{}}},\"3436\":{\"2485\":{\"365\":{},\"367\":{},\"366\":{},\"2088\":{},\"2089\":{},\"2090\":{},\"2091\":{}},\"2486\":{\"3104\":{},\"3105\":{},\"3106\":{}}}}"
+style_sheet: |
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+  
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 61px;
+  	left: 775px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 34px;
+  	left: 776px;
+  	width: 220px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_nombrescompletos_cdulapasaporte {
+  	position: absolute;
+  	top: 370px;
+  	left: 266px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_nombrescompletos_nombre {
+  	position: absolute;
+  	top: 410px;
+  	left: 256px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_nombrescompletos_telfono {
+  	position: absolute;
+  	top: 454px;
+  	left: 254px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonanatural_nombrescompletos_email {
+  	position: absolute;
+  	top: 450px;
+  	left: 702px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_nombrescompletos_ruc {
+  	position: absolute;
+  	top: 368px;
+  	left: 264px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_nombrescompletos_nombre {
+  	position: absolute;
+  	top: 410px;
+  	left: 256px;
+  	width: 677px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_nombrescompletos_telfono {
+  	position: absolute;
+  	top: 452px;
+  	left: 250px;
+  	width: 245px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitantepersonajurdica_nombrescompletos_email {
+  	position: absolute;
+  	top: 451px;
+  	left: 703px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonanatural_nombrescompletos_tipodeidentificacion {
+  	position: absolute;
+  	top: 547px;
+  	left: 255px;
+  	width: 243px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonanatural_nombrescompletos_cdulapasaporte {
+  	position: absolute;
+  	top: 547px;
+  	left: 705px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonanatural_nombrescompletos_nombre {
+  	position: absolute;
+  	top: 588px;
+  	left: 255px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonanatural_nombrescompletos_telfono {
+  	position: absolute;
+  	top: 628px;
+  	left: 260px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonanatural_nombrescompletos_email {
+  	position: absolute;
+  	top: 627px;
+  	left: 711px;
+  	width: 225px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonajurdica_nombrescompletos_tipodeidentificacion {
+  	position: absolute;
+  	top: 546px;
+  	left: 252px;
+  	width: 246px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonajurdica_nombrescompletos_ruc {
+  	position: absolute;
+  	top: 547px;
+  	left: 704px;
+  	width: 236px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonajurdica_nombrescompletos_nombre {
+  	position: absolute;
+  	top: 587px;
+  	left: 257px;
+  	width: 676px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonajurdica_nombrescompletos_telfono {
+  	position: absolute;
+  	top: 626px;
+  	left: 260px;
+  	width: 240px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelcosolicitantepersonajurdica_nombrescompletos_email {
+  	position: absolute;
+  	top: 626px;
+  	left: 703px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeproyecto_datosgeneralesdelproyecto_nombredelproyecto {
+  	position: absolute;
+  	top: 946px;
+  	left: 253px;
+  	width: 685px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeproyecto_datosgeneralesdelproyecto_tipodeproyecto {
+  	position: absolute;
+  	top: 987px;
+  	left: 255px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosgeneralesdeproyecto_datosgeneralesdelproyecto_ubicacin {
+  	position: absolute;
+  	top: 1028px;
+  	left: 251px;
+  	width: 682px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonanatural_nombrescompletos_tipodeidentificacion {
+  	position: absolute;
+  	top: 732px;
+  	left: 256px;
+  	width: 241px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonanatural_nombrescompletos_cdulapasaporte {
+  	position: absolute;
+  	top: 732px;
+  	left: 704px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonanatural_nombrescompletos_nombre {
+  	position: absolute;
+  	top: 772px;
+  	left: 253px;
+  	width: 686px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonanatural_nombrescompletos_telfono {
+  	position: absolute;
+  	top: 813px;
+  	left: 252px;
+  	width: 249px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonajurdica_nombrescompletos_tipodeidentificacion {
+  	position: absolute;
+  	top: 731px;
+  	left: 257px;
+  	width: 240px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonajurdica_nombrescompletos_ruc {
+  	position: absolute;
+  	top: 731px;
+  	left: 703px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonajurdica_nombrescompletos_nombre {
+  	position: absolute;
+  	top: 772px;
+  	left: 257px;
+  	width: 680px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelresponsabledeldiseopersonajurdica_nombrescompletos_telfono {
+  	position: absolute;
+  	top: 812px;
+  	left: 256px;
+  	width: 245px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdefinca_nmerodefinca {
+  	position: absolute;
+  	top: 1124px;
+  	left: 275px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdefinca_tomo {
+  	position: absolute;
+  	top: 1204px;
+  	left: 275px;
+  	width: 256px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdefinca_folio {
+  	position: absolute;
+  	top: 1205px;
+  	left: 754px;
+  	width: 242px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdefinca_nmerodeplano {
+  	position: absolute;
+  	top: 1122px;
+  	left: 750px;
+  	width: 247px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdefinca_valordelafinca {
+  	position: absolute;
+  	top: 1163px;
+  	left: 270px;
+  	width: 261px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdefinca_superficie {
+  	position: absolute;
+  	top: 1284px;
+  	left: 750px;
+  	width: 247px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdefinca_linderosymedidas {
+  	position: absolute;
+  	top: 1163px;
+  	left: 752px;
+  	width: 244px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdeubicacindelafinca_provincia_lista {
+  	position: absolute;
+  	top: 1244px;
+  	left: 268px;
+  	width: 261px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdeubicacindelafinca_distrito_lista {
+  	position: absolute;
+  	top: 1244px;
+  	left: 756px;
+  	width: 237px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelafinca_datosdeubicacindelafinca_corregimiento_lista {
+  	position: absolute;
+  	top: 1284px;
+  	left: 267px;
+  	width: 260px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+
+override_render: false
+html_render: 
+print_design_id: 155
+created_at: 2014-01-20 16:31:22 Z
+updated_at: 2014-01-21 19:45:19 Z
+instances_selector: "{\"3421\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"3424\":{\"value\":\"\",\"1791\":{\"value\":\"\",\"1983\":{\"value\":\"\"},\"1656\":{\"value\":\"\"},\"2081\":{\"value\":\"\"},\"2082\":{\"value\":\"\"}}},\"3425\":{\"value\":\"\",\"1791\":{\"value\":\"\",\"1655\":{\"value\":\"\"},\"1656\":{\"value\":\"\"},\"2081\":{\"value\":\"\"},\"2082\":{\"value\":\"\"}}},\"3429\":{\"value\":\"\",\"1791\":{\"value\":\"\",\"3116\":{\"value\":\"\"},\"1983\":{\"value\":\"\"},\"1656\":{\"value\":\"\"},\"2081\":{\"value\":\"\"},\"2082\":{\"value\":\"\"}}},\"3430\":{\"value\":\"\",\"1791\":{\"value\":\"\",\"3116\":{\"value\":\"\"},\"1655\":{\"value\":\"\"},\"1656\":{\"value\":\"\"},\"2081\":{\"value\":\"\"},\"2082\":{\"value\":\"\"}}},\"3431\":{\"value\":\"\",\"2029\":{\"value\":\"\",\"2083\":{\"value\":\"\"},\"2084\":{\"value\":\"\"},\"2085\":{\"value\":\"\"}}},\"3434\":{\"value\":\"\",\"1791\":{\"value\":\"\",\"3116\":{\"value\":\"\"},\"1983\":{\"value\":\"\"},\"1656\":{\"value\":\"\"},\"2081\":{\"value\":\"\"}}},\"3435\":{\"value\":\"\",\"1791\":{\"value\":\"\",\"3116\":{\"value\":\"\"},\"1655\":{\"value\":\"\"},\"1656\":{\"value\":\"\"},\"2081\":{\"value\":\"\"}}},\"3436\":{\"value\":\"\",\"2485\":{\"value\":\"\",\"365\":{\"value\":\"\"},\"367\":{\"value\":\"\"},\"366\":{\"value\":\"\"},\"2088\":{\"value\":\"\"},\"2089\":{\"value\":\"\"},\"2090\":{\"value\":\"\"},\"2091\":{\"value\":\"\"}},\"2486\":{\"value\":\"\",\"3104\":{\"value\":\"\"},\"3105\":{\"value\":\"\"},\"3106\":{\"value\":\"\"}}}}"
+size: 

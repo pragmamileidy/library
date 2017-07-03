@@ -1,0 +1,30 @@
+--- 
+id: 171
+part_id: 24
+field_id: 1
+name: "Instrucci\xC3\xB3n Recibida en Vuelo de Traves\xC3\xADa"
+created_at: 2011-11-07 15:03:18 Z
+updated_at: 2017-06-04 00:26:51.286375 Z
+label: "Instrucci\xC3\xB3n Recibida en Vuelo de Traves\xC3\xADa"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c93bd5d0-5887-41ca-a0c3-8dd567c9ba06
+version: 20170603-202651

@@ -1,0 +1,30 @@
+--- 
+id: 1103
+part_id: 218
+field_id: 1
+name: "A\xC3\xB1o de Emisi\xC3\xB3n"
+created_at: 2012-04-30 15:43:31 Z
+updated_at: 2017-06-04 00:25:45.542294 Z
+label: "A\xC3\xB1o de Emisi\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a426b558-8ba7-4e6e-be36-864a6540455e
+version: 20170603-202545

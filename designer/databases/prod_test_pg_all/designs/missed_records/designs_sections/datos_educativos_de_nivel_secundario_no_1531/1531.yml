@@ -1,0 +1,16 @@
+--- 
+id: 1531
+design_id: 126
+section_id: 314
+name: Datos Educativos de Nivel Secundario NO
+created_at: 2012-06-21 16:18:04 Z
+updated_at: 2013-06-14 16:09:44 Z
+label: Datos Educativos de Nivel Secundario NO
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2231\":{\"2430\":{\"required\":\"required\"}},\"2232\":{\"2430\":{\"required\":\"required\"}},\"1956\":{\"2539\":{\"required\":\"required\"}},\"2233\":{\"2430\":{\"required\":\"required\"}},\"1958\":{\"158\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

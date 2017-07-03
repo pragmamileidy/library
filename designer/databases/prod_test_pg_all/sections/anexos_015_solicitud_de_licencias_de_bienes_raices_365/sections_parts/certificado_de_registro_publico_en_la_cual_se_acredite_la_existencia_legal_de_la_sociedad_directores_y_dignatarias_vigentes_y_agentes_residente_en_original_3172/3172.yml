@@ -1,0 +1,19 @@
+--- 
+id: 3172
+section_id: 365
+part_id: 38
+name: "Certificado de Registro P\xC3\xBAblico en la cual se acredite la existencia legal de la sociedad, directores y dignatarias vigentes y agentes residente, en original"
+created_at: 2014-05-05 14:26:12 Z
+updated_at: 2015-11-02 19:06:40 Z
+label: "Certificado de Registro P\xC3\xBAblico en la cual se acredite la existencia legal de la sociedad, directores y dignatarias vigentes y agentes residente, en original"
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 10

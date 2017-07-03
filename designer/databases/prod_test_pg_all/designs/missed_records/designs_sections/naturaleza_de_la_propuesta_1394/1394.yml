@@ -1,0 +1,16 @@
+--- 
+id: 1394
+design_id: 119
+section_id: 288
+name: Naturaleza de la Propuesta
+created_at: 2012-06-11 22:12:34 Z
+updated_at: 2013-08-09 17:41:46 Z
+label: Naturaleza de la Propuesta
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1845\":{\"1732\":{\"required\":\"required\"}},\"1846\":{\"1735\":{\"required\":\"required\"},\"1736\":{\"required\":\"required\"}},\"1850\":{\"1747\":{\"required\":\"required\"},\"2049\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 4

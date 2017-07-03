@@ -1,0 +1,30 @@
+--- 
+id: 2494
+part_id: 465
+field_id: 31
+name: Examenes Generales
+created_at: 2012-08-30 19:08:48 Z
+updated_at: 2017-06-04 00:28:20.981309 Z
+label: Examenes Generales
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 8a33d955-149a-4881-b7de-4cfa6f116d8b
+version: 20170603-202820

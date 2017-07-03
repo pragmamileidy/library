@@ -1,0 +1,30 @@
+--- 
+id: 315
+name: evaluacion no viable
+description: "Campo de evaluaci\xC3\xB3n se cambia la opci\xC3\xB3n Rechazo por No viable "
+version: 
+status: Draft
+label: "Seleccione el resultado de su evaluaci\xC3\xB3n"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-03-08 15:28:42 Z
+updated_at: 2014-03-08 15:28:42 Z
+values_list: "\"OK\",\"REPARO\",\"NO VIABLE\""
+keys_list: "\"OK\",\"REPARO\",\"NO VIABLE\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

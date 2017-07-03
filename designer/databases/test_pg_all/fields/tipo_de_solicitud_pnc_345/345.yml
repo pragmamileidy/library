@@ -1,0 +1,30 @@
+--- 
+id: 345
+name: Tipo de Solicitud PNC
+description: Tipo de Solicitud PNC
+version: 
+status: Draft
+label: Tipo de Solicitud
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-02-23 18:15:14.644830 Z
+updated_at: 2016-02-23 18:15:14.644830 Z
+values_list: "\" \",\"Empleo\",\"Migraci\xC3\xB3n\",\"Arma\",\"ANSP/PNC\",\"Transporte\",\"Seguridad Privada\",\"Estudios\",\"Otros\""
+keys_list: "\" \",\"Empleo\",\"Migraci\xC3\xB3n\",\"Arma\",\"ANSP/PNC\",\"Transporte\",\"Seguridad Privada\",\"Estudios\",\"Otros\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 7174-2109-6708-1640-0164

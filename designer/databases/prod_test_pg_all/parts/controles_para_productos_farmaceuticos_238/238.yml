@@ -1,0 +1,17 @@
+--- 
+id: 238
+name: "Controles para productos farmac\xC3\xA9uticos"
+description: "Controles para productos farmac\xC3\xA9uticos"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-06 21:17:59 Z
+updated_at: 2015-10-29 16:05:25 Z
+label: Controles
+hint: ""
+view_class: horizontal
+serial: 2267-1035-3519-0480-3690

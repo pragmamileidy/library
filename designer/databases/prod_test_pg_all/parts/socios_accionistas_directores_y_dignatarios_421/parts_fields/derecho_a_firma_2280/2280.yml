@@ -1,0 +1,30 @@
+--- 
+id: 2280
+part_id: 421
+field_id: 207
+name: Derecho a firma
+created_at: 2012-08-07 22:07:39 Z
+updated_at: 2017-06-04 00:28:17.896308 Z
+label: Derecho a firma
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar si tienen derecho a la firma
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 5
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 850a0cbe-b432-48be-a994-a1ed3d8eb49f
+version: 20170603-202817

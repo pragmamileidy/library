@@ -1,0 +1,19 @@
+--- 
+id: 2996
+name: "Paso 3 - Anexos "
+label: Requisitos de la Solicitud
+description: ""
+fill_step_id: 1608
+created_at: 2014-11-05 14:49:00 Z
+updated_at: 2014-11-05 14:49:00 Z
+include: "{\"4568\":{\"3380\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3381\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3382\":{\"210\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 2- Datos de los Testigos
+next_step: ""
+position: 3
+ajax_calls: ""

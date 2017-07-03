@@ -1,0 +1,9 @@
+--- 
+id: 185
+name: "official-public_Solicitud de Aprobaci\xC3\xB3n y Registro de Planos de Construcci\xC3\xB3n"
+description: "Solicitud de Aprobaci\xC3\xB3n y Registro de Planos de Construcci\xC3\xB3n"
+created_at: 2016-02-10 13:33:53.398554 Z
+updated_at: 2016-02-10 13:33:53.398554 Z
+design_id: 277
+label: "Formulario de la Solicitud de Revisi\xC3\xB3n y Registro de Documentos de Construcci\xC3\xB3n"
+ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

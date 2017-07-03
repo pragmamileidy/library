@@ -1,0 +1,19 @@
+--- 
+id: 3019
+design_id: 150
+section_id: 511
+name: Forma de Pago
+created_at: 2013-07-03 17:03:24 Z
+updated_at: 2013-07-04 17:05:44 Z
+label: Forma de Pago
+min_instances: 0
+max_instances: 1
+depends_on: |-
+  valor = @config.route("Rates-payment-payment-payment")
+  
+  valor == "Ambos"
+manage_as_confidential: false
+include: "{\"2860\":{\"3374\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 8

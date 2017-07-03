@@ -1,0 +1,19 @@
+--- 
+id: 2831
+section_id: 506
+part_id: 636
+name: Pregunta 5
+created_at: 2013-06-11 20:21:09 Z
+updated_at: 2013-06-11 20:21:09 Z
+label: "5.\xC2\xBFTiene conocimiento si la empresa representantes o alguna sociedad a la que est\xC3\xA1n vinculados ha sido condenada por delito relacionado en el tr\xC3\xA1fico de personas?"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

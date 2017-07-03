@@ -1,0 +1,30 @@
+--- 
+id: 631
+part_id: 121
+field_id: 8
+name: "N\xC3\xBAmero Celular"
+created_at: 2012-02-17 17:46:29 Z
+updated_at: 2017-06-04 00:31:51.739195 Z
+label: "N\xC3\xBAmero Celular"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca el C\xC3\xB3digo de Pa\xC3\xADs, de \xC3\x81rea y el N\xC3\xBAmero de Tel\xC3\xA9fono \xC3\xB3 Introduzca s\xC3\xB3lo el N\xC3\xBAmero de Tel\xC3\xA9fono. Ejemplos: +507-xxxxxxx, +507 xxx xxxx, +507 xxxx xxxx, +507-xxxx-xxxx, +507-xxx-xxxx, xxx-xxxx, xxxx-xxxx"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 27
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3b4b3dd2-8f63-44f6-a9f3-3e0223f2c455
+version: 20170603-203151

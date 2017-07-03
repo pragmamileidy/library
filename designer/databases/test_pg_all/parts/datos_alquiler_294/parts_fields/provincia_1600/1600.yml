@@ -1,0 +1,30 @@
+--- 
+id: 1600
+part_id: 294
+field_id: 130
+name: provincia
+created_at: 2012-06-05 19:11:37 Z
+updated_at: 2017-06-04 00:29:58.870479 Z
+label: Provincia
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 14cacc20-0a2c-4425-892c-0abcdf215701
+version: 20170603-202958

@@ -1,0 +1,30 @@
+--- 
+id: 4088
+part_id: 74
+field_id: 10
+name: campo oculto
+created_at: 2017-02-26 04:05:19.597179 Z
+updated_at: 2017-06-04 00:29:52.147708 Z
+label: campo oculto
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d9189bbe-31c8-4175-8ff5-4e2d62a5a7bf
+version: 20170603-202952

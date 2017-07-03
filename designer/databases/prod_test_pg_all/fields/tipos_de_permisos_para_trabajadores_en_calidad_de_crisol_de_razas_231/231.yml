@@ -1,0 +1,30 @@
+--- 
+id: 231
+name: Tipos de Permisos para Trabajadores en Calidad de Crisol de Razas
+description: Tipos de Permisos para Trabajadores de Crisol de Razas,Permiso de Trabajo en Calidad de Trabajador Crisol de Razas
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-09-03 15:21:42 Z
+updated_at: 2012-09-03 15:36:11 Z
+values_list: "\"Surten efectos en el exterior.\",\"Refugiado.\",\"Ciudad del Saber.\",\"Ejecutivo de la Zona Libre de Col\xC3\xB3n.\",\"Dentro del diez porciento.\",\"Acuerdo Marrakech.\",\"Experto o t\xC3\xA9cnico dentro del 15% del personal especializado.\",\"Empleado de Confianza\",\"Alternadoras\",\"Crisol de Razas\",\"Conyugue casado con Nacional\",\"Patria Potestad\",\"Artistas y M\xC3\xBAsicos\",\"T\xC3\xA9cnicos Temporales\",\"Residente\""
+keys_list: "\"Surten efectos en el exterior.\",\"Refugiado.\",\"Ciudad del Saber.\",\"Ejecutivo de la Zona Libre de Col\xC3\xB3n.\",\"Dentro del diez porciento.\",\"Acuerdo Marrakech.\",\"Experto o t\xC3\xA9cnico dentro del 15% del personal especializado.\",\"Empleado de Confianza\",\"Alternadoras\",\"Crisol de Razas\",\"Conyugue casado con Nacional\",\"Patria Potestad\",\"Artistas y M\xC3\xBAsicos\",\"T\xC3\xA9cnicos Temporales\",\"Residente\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

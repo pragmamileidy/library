@@ -1,0 +1,19 @@
+--- 
+id: 16
+name: Empresa Importadora
+label: Empresa Importadora
+description: ""
+fill_step_id: 5
+created_at: 2012-03-08 15:38:01 Z
+updated_at: 2012-05-19 20:48:29 Z
+include: "{\"108\":{\"190\":{\"566\":{\"views\":\"default\"},\"567\":{\"views\":\"default\"}},\"555\":{\"239\":{\"views\":\"default\"}},\"556\":{\"646\":{\"views\":\"default\"}}}}"
+allowed_next_to_steps: ,Producto
+allowed_back_to_steps: ,Solicitante,Registrante,Fabricante
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Fabricante
+next_step: Producto
+position: 3
+ajax_calls: 

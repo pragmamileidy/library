@@ -1,0 +1,19 @@
+--- 
+id: 501
+section_id: 98
+part_id: 121
+name: "Datos de Ubicaci\xC3\xB3n"
+created_at: 2011-11-28 18:26:55 Z
+updated_at: 2012-09-12 15:48:28 Z
+label: "Datos de Ubicaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"577\":{},\"574\":{},\"576\":{},\"573\":{},\"583\":{},\"578\":{},\"579\":{},\"580\":{},\"575\":{},\"585\":{},\"594\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 3

@@ -1,0 +1,475 @@
+--- 
+id: 863
+name: Paso 3 - Datos del Proyecto
+label: Datos del Proyecto
+description: "<br/>\r\n\
+  Por favor, ingrese los Datos del Proyecto\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 430
+created_at: 2012-08-21 21:00:19 Z
+updated_at: 2015-10-16 01:58:39 Z
+include: "{\"1838\":{\"2037\":{\"2095\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2097\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2098\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2099\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2100\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2101\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2102\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2136\":{\"2381\":{\"3232\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3551\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3552\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3553\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3598\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3554\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2105\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2104\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1840\":{\"2039\":{\"2106\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2107\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3550\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4231\":{\"3059\":{\"3588\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1841\":{\"2040\":{\"2108\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2109\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2110\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2111\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2112\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3239\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "# Obtener valor del config\r\n\
+  #valor = @config.route(\"Rates-payment-payment-payment\")\r\n\
+  \r\n\
+  #if valor == \"Electr\xC3\xB3nico\"\r\n\
+  \r\n #form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")\r\n\
+  \r\n\
+  #end\r\n\
+  #if valor == \"Manual\"\r\n\
+  \r\n #form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")\r\n\
+  \r\n\
+  #end"
+views: 
+back_step: Paso 2 - Datos de la Finca
+next_step: Paso 4 - Archivos Adjuntos
+position: 3
+ajax_calls: "//::::: MOSTRAR Y OCULTAR CAMPOS SEGUN SELECCION DE TIPO DE USO PARA LA SUPERFICIE \r\n\
+  $(document).ready(function(){\r\n\
+  \t$.each( $('[id*=_tipo_de_uso_tipo_de_uso_para_la_superficie]'), function(index, campo) {\r\n\
+  \t\t//::::: OCULTAR TODOS LOS CAMPOS DINAMICOS ###############\r\n\
+  \t\t//DV: Comentado ocultarcombos(this.id);\r\n\
+  \t\t//:::::  MOSTRAR CAMPOS SEG\xC3\x9AN SELECCI\xC3\x93N ###############\r\n\
+  \t\tif ($(campo).attr('id').match(/_tipo_de_uso_tipo_de_uso_para_la_superficie/)) {\r\n\
+  \t\t\t//DV: Comentado $(campo).attr('onchange', 'mostrarcampos(this.id);')\r\n\
+  \t\t}\r\n\
+  \t});\r\n\
+  \r\n\
+  \t//:::: CARGAR COMBOS SEGUN SELECCION DEL ANTERIOR\r\n\
+  \t$.each( $('[id*=field_tipo_de_uso_instance_]'), function(index, campo) {\r\n\
+  \t\t//::::: LIMPIAR COMBOS\r\n\
+  \t\tif ($(campo).attr('id').match(/_tipo_de_uso_tipo_de_area/)) {\r\n\
+  \t\t\tif (this.value == '') {\r\n\
+  \t\t\t\t$(campo).html(\"\");\r\n\
+  \t\t\t}\r\n\
+  \t\t}\r\n\
+  \t\tif ($(campo).attr('id').match(/_tipo_de_uso_institucion/)) {\r\n\
+  \t\t\tif (this.value == '') {\r\n\
+  \t\t\t\t$(campo).html(\"\");\r\n\
+  \t\t\t\t$(campo).attr('onchange', 'cargarcombo(this.id,this.value);')\r\n\
+  \t\t\t}\r\n\
+  \t\t}\r\n\
+  \r\n\
+  \t\t//:::: MOSTRAR CAMPOS SEG\xC3\x9AN SELECCI\xC3\x93N\r\n\
+  \t\tif ($(campo).attr('id').match(/_tipo_de_uso_tipo_de_equipamiento/)) {\r\n\
+  \t\t\t$(campo).attr('onchange', 'cargarcombo(this.id,this.value);')\r\n\
+  \t\t}\r\n\
+  \t\tif ($(campo).attr('id').match(/_tipo_de_uso_tipo_de_area/)) {\r\n\
+  \t\t\t$(campo).attr('onchange', 'cargarcombo(this.id,this.value);')\r\n\
+  \t\t}\r\n\
+  \t});\r\n\
+  });\r\n\
+  \r\n\
+  //:::::::: DV: Validaciones varias para los combos seleccionados :::::://\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  \t//function ocultarcombos(idtipo) { \r\n\
+  \t\t$.each( $('[id*=tipo_de_uso_]'), function(index, campo) {  \r\n\
+  \t\t\tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \t\t\tif (pos == null){\r\n\
+  \t\t\t\tpos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t\t\t}\r\n\
+  \t\t\tvar inicRuta \t= \"#field_tipo_de_uso\";\r\n\
+  \t\t\tvar otra_super\t= \"_tipo_de_uso_tipo_de_uso_para_la_superficie\";\r\n\
+  \t\t\tvar otros_1\t\t= \"_tipo_de_uso_otro_instance_1\";\r\n\
+  \t\t\tvar otros_2 \t= \"_tipo_de_uso_otro_instance_2\";\r\n\
+  \t\t\tvar otros_3 \t= \"_tipo_de_uso_otro_instance_3\";\r\n\
+  \t\t\tvar otros_4 \t= \"_tipo_de_uso_otro_instance_4\";\r\n\
+  \t\t\tvar otros_5 \t= \"_tipo_de_uso_otro_instance_5\";\r\n\
+  \t\t\tvar equipa \t\t= \"_tipo_de_uso_tipo_de_equipamiento\";\r\n\
+  \t\t\tvar area \t\t= \"_tipo_de_uso_tipo_de_area\";\r\n\
+  \t\t\tvar instit \t\t= \"_tipo_de_uso_institucion\";\r\n\
+  \t\t\tvar verdes \t\t= \"_tipo_de_uso_otras_areas_verdes\";\r\n\
+  \t\t\tvar coincide \t= inicRuta.concat(pos);\r\n\
+  \t\t\tvar otra_super2\t= coincide.concat(otra_super);\r\n\
+  \t\t\tvar otros_10 \t= coincide.concat(otros_1);\r\n\
+  \t\t\tvar otros_20 \t= coincide.concat(otros_2);\r\n\
+  \t\t\tvar otros_30 \t= coincide.concat(otros_3);\r\n\
+  \t\t\tvar otros_40 \t= coincide.concat(otros_4);\r\n\
+  \t\t\tvar otros_50 \t= coincide.concat(otros_5);\r\n\
+  \t\t\tvar equipa2 \t= coincide.concat(equipa);\r\n\
+  \t\t\tvar area2 \t\t= coincide.concat(area);\r\n\
+  \t\t\tvar instit2 \t= coincide.concat(instit);\r\n\
+  \t\t\tvar verdes2 \t= coincide.concat(verdes);\r\n\
+  \r\n\
+  \t\t\t//:::::::::DV: Mnatener campos entre pasos y reparo :::::://\r\n\
+  \t\t\t$(equipa2).parents(\".field-box\").hide();\r\n\
+  \t\t\t$(area2).parents(\".field-box\").hide();\r\n\
+  \t\t\t$(instit2).parents(\".field-box\").hide();\r\n\
+  \t\t\t$(verdes2).parents(\".field-box\").hide();\r\n\
+  \t\t\t$(otros_10).parents(\".field-box\").hide();\r\n\
+  \t\t\t$(otros_10).parents(\".field-box\").next().hide();\r\n\
+  \t\t\tif ($(otra_super2).find(':selected').val() == \"Otros\"){\r\n\
+  \t\t\t\tif ($(otros_10).val() != \"\"){\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").show();\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\tif ($(otros_20).val() != \"\"){\r\n\
+  \t\t\t\t\t$(otros_20).parents(\".field-box\").show();\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\tif ($(otros_30).val() != \"\"){\r\n\
+  \t\t\t\t\t$(otros_30).parents(\".field-box\").show();\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\tif ($(otros_40).val() != \"\"){\r\n\
+  \t\t\t\t\t$(otros_40).parents(\".field-box\").show();\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\tif ($(otros_50).val() != \"\"){\r\n\
+  \t\t\t\t\t$(otros_50).parents(\".field-box\").show();\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t}else if ($(otra_super2).find(':selected').val() == \"Equipamiento comunitario\"){\r\n\
+  \t\t\t\t$(equipa2).parents(\".field-box\").show();\r\n\
+  \t\t\t\t$(area2).parents(\".field-box\").show();\r\n\
+  \t\t\t\t$(instit2).parents(\".field-box\").show();\r\n\
+  \t\t\t\tif ($(instit2).find(':selected').val() == \"Otras \xC3\x81reas Verdes\"){\r\n\
+  \t\t\t\t\t$(verdes2).parents(\".field-box\").show();\r\n\
+  \t\t\t\t}else{\r\n\
+  \t\t\t\t\t$(verdes2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(verdes2).val(\"\");\t\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t}else{\r\n\
+  \t\t\t\t$(equipa2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t$(area2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t$(instit2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t$(equipa2).val(\"\");\r\n\
+  \t\t\t\t$(area2).val(\"\");\r\n\
+  \t\t\t\t$(instit2).val(\"\");\r\n\
+  \t\t\t}\r\n\
+  \t\t\t//::::::::::::::::::::Change de Combos ::::::::::::::::::::://\r\n\
+  \t\t\t$(otra_super2).change(function(){\r\n\
+  \t\t\t\totra_super2 = $(this).val();\r\n\
+  \t\t\t\tif(otra_super2 == \"\"){\r\n\
+  \t\t\t\t\t$(otros_10).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_20).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_30).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_40).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_50).val(\"\");\r\n\
+  \t\t\t\t\t$(equipa2).val(\"\");\r\n\
+  \t\t\t\t\t$(area2).val(\"\");\r\n\
+  \t\t\t\t\t$(instit2).val(\"\");\r\n\
+  \t\t\t\t\t$(verdes2).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").next().hide();\r\n\
+  \t\t\t\t\t$(otros_20).parents(\".field-box\").hide();\t\r\n\
+  \t\t\t\t\t$(otros_30).parents(\".field-box\").hide();\t\r\n\
+  \t\t\t\t\t$(otros_40).parents(\".field-box\").hide();\t\r\n\
+  \t\t\t\t\t$(otros_50).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(equipa2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(area2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(instit2).parents(\".field-box\").hide();\t\t\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\tif(otra_super2 == \"Otros\") {\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").next().show();\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").show();\r\n\
+  \t\t\t\t\t$(equipa2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(area2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(instit2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t//$(verdes2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(equipa2).val(\"\");\r\n\
+  \t\t\t\t\t$(area2).val(\"\");\r\n\
+  \t\t\t\t\t$(instit2).val(\"\");\r\n\
+  \t\t\t\t\t$(verdes2).val(\"\");\t\t\r\n\
+  \r\n\
+  \t\t\t\t}else if (otra_super2 == \"Equipamiento comunitario\") {\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").next().hide();\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(verdes2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(otros_10).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_20).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_30).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_40).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_50).val(\"\");\r\n\
+  \t\t\t\t\t$(equipa2).parents(\".field-box\").show();\r\n\
+  \t\t\t\t\t$(area2).parents(\".field-box\").show();\r\n\
+  \t\t\t\t\t$(instit2).parents(\".field-box\").show();\r\n\
+  \t\t\t\t\t$(instit2).change(function(){\r\n\
+  \t\t\t\t\t\tinstit2 = $(this).val();\r\n\
+  \t\t\t\t\t\tif (instit2 == \"Otras \xC3\x81reas Verdes\"){\r\n\
+  \t\t\t\t\t\t\t$(verdes2).parents(\".field-box\").show();\r\n\
+  \t\t\t\t\t\t}else{\r\n\
+  \t\t\t\t\t\t\t$(verdes2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t\t\t$(verdes2).val(\"\");\r\n\
+  \t\t\t\t\t\t}\r\n\
+  \t\t\t\t\t});\r\n\
+  \t\t\t\t}else{\r\n\
+  \t\t\t\t\t$(otros_10).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_20).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_30).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_40).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_50).val(\"\");\r\n\
+  \t\t\t\t\t$(equipa2).val(\"\");\r\n\
+  \t\t\t\t\t$(area2).val(\"\");\r\n\
+  \t\t\t\t\t$(instit2).val(\"\");\r\n\
+  \t\t\t\t\t$(verdes2).val(\"\");\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(equipa2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(area2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(instit2).parents(\".field-box\").hide();\r\n\
+  \t\t\t\t\t$(otros_10).parents(\".field-box\").next().hide();\t\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t});\r\n\
+  \t\t});\r\n\
+  \t//}\r\n\
+  });\r\n\
+  \r\n\
+  \r\n\
+  function cargarcombo(idtipo,valortipo) {\r\n\
+  \tvar nombre1 = \"#field_tipo_de_uso_instance_\";\r\n\
+  \tvar pos   = \"\";\r\n\
+  \tvar combo = \"\";\r\n\
+  \tvar nombrecampo = \"\";\r\n\
+  \t//alert('id combo: ' + idtipo);\r\n\
+  \t//alert('valor: ' + valortipo);\r\n\
+  \tif (idtipo.match(/[\\d]_tipo_de_uso_institucion/)) {\r\n\
+  \t\tvar coincide = idtipo.match(/[\\d]_tipo_de_uso_institucion/);\r\n\
+  \t\tpos          = coincide[0].split('_');\r\n\
+  \t\tvar nombre2  = \"_tipo_de_uso_otras_areas_verdes\";\r\n\
+  \t\tcombo = nombre1 + pos[0] + nombre2;\r\n\
+  \t\t//alert('combo: ' + combo);\r\n\
+  \t\tif (valortipo == 'Otras \xC3\x81reas Verdes') {\r\n\
+  \t\t\t$(combo).parent().parent().show();\r\n\
+  \t\t} else {\r\n\
+  \t\t\t$(combo).parent().parent().hide();\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n\
+  \tif (idtipo.match(/[\\d]_tipo_de_uso_tipo_de_equipamiento/)) {\r\n\
+  \t\t//field_tipo_de_uso_instance_X_tipo_de_uso_tipo_de_equipamiento\r\n\
+  \t\tvar coincide = idtipo.match(/[\\d]_tipo_de_uso_tipo_de_equipamiento/);\r\n\
+  \t\tpos          = coincide[0].split('_');\r\n\
+  \t\tvar nombre2  = \"_tipo_de_uso_tipo_de_area\";\r\n\
+  \t\tcombo = nombre1 + pos[0] + nombre2;\r\n\
+  \t\tnombrecampo = \"nombres3\";\r\n\
+  \t\t///service/ws_tipouso_servicio3/where.xml?nombres2=Equipamiento\r\n\
+  \t\tparams = {\r\n\
+  \t\t\t\"service_name\":\"ws_tipouso_servicio3/where\",\r\n\
+  \t\t\t\"nombres2\":valortipo,\r\n\
+  \t\t}\r\n\
+  \t} else if (idtipo.match(/[\\d]_tipo_de_uso_tipo_de_area/)) {\r\n\
+  \t\t//field_tipo_de_uso_instance_X_tipo_de_uso_tipo_de_area\r\n\
+  \r\n\
+  \t\tvar coincide = idtipo.match(/[\\d]_tipo_de_uso_tipo_de_area/);\r\n\
+  \t\tpos          = coincide[0].split('_');\r\n\
+  \t\tvar nombre2  = \"_tipo_de_uso_institucion\";\r\n\
+  \r\n\
+  \t\tcombo = nombre1 + pos[0] + nombre2;\r\n\
+  \t\tnombrecampo = \"nombres4\";\r\n\
+  \r\n\
+  \t\t///service/ws_tipouso_servicio4/where.xml?nombres3=\xC3\x81rea educativa\r\n\
+  \t\tparams = {\r\n\
+  \t\t\t\"service_name\":\"ws_tipouso_servicio4/where\",\r\n\
+  \t\t\t\"nombres3\":valortipo,\r\n\
+  \t\t}\r\n\
+  \t}\r\n\
+  \r\n\
+  \t//alert('combo a cargar: ' + combo);\r\n\
+  \t$.post(\r\n\
+  \t\t\"/proxy_service/get_service\",\r\n\
+  \t\tparams,\r\n\
+  \t\tfunction(data){\t\t\t\r\n\
+  \t\t\tvar lista;\r\n\
+  \t\t\tvar html_options = html_options+'<option value=\"\"></option>';\r\n\
+  \t\t\tfor (x in data){\r\n\
+  \t\t\t\tlista = data[x];\r\n\
+  \t\t\t\thtml_options = html_options+'<option value=\"'+lista[nombrecampo] +'\">'+lista[nombrecampo] +'</option>';\r\n\
+  \t\t\t}\r\n\
+  \t\t\t$(combo).html(html_options);\r\n\
+  \t\t}\r\n\
+  \t);\r\n\
+  }"

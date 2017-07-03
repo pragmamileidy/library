@@ -1,0 +1,30 @@
+--- 
+id: 2507
+part_id: 467
+field_id: 31
+name: "Cuatro fotos tama\xC3\xB1o carnet con el nombre del solicitante escrito al dorso"
+created_at: 2012-08-31 14:08:29 Z
+updated_at: 2017-06-04 00:29:42.657669 Z
+label: "Cuatro fotos tama\xC3\xB1o carnet con el nombre del solicitante escrito al dorso"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Escaneada en cualquier formato: pdf, jpg, bmp, etc. Puede agregarla de forma comprimida"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2b06d947-1db5-45e1-9332-2688b749aaae
+version: 20170603-202942

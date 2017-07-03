@@ -1,0 +1,19 @@
+--- 
+id: 1351
+name: Paso 4 - Archivos Adjuntos
+label: Archivos Adjuntos
+description: ""
+fill_step_id: 675
+created_at: 2013-05-09 13:40:06 Z
+updated_at: 2013-05-09 13:40:06 Z
+include: "{\"2793\":{\"2047\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2794\":{\"2387\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2795\":{\"2388\":{\"1764\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1765\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 3 - Datos del Proyecto
+next_step: "\xC3\x9Altimo paso - Confirmaci\xC3\xB3n"
+position: 4
+ajax_calls: ""

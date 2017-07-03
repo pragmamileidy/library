@@ -1,0 +1,17 @@
+--- 
+id: 233
+name: Datos de Solicitud
+description: "Datos de Solicitud de Inscripci\xC3\xB3n de Proveedores"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-11 21:17:26 Z
+updated_at: 2012-05-16 20:46:26 Z
+status: Draft
+label: Datos de Solicitud
+hint: ""
+serial: 

@@ -1,0 +1,17 @@
+--- 
+id: 414
+name: "Opciones para Pensi\xC3\xB3n de Sobreviviente"
+description: "Opciones para Pensi\xC3\xB3n de Sobreviviente"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-31 16:14:21 Z
+updated_at: 2012-07-31 16:14:21 Z
+label: "Opciones para Pensi\xC3\xB3n de Sobreviviente"
+hint: ""
+view_class: horizontal
+serial: 

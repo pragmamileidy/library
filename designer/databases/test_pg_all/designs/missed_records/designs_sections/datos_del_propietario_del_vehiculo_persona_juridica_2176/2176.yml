@@ -1,0 +1,18 @@
+--- 
+id: 2176
+design_id: 167
+section_id: 274
+name: "Datos del Propietario del Veh\xC3\xADculo Persona Jur\xC3\xADdica"
+created_at: 2012-10-24 22:17:55 Z
+updated_at: 2012-10-24 22:17:55 Z
+label: "Datos del Propietario del Veh\xC3\xADculo"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  documento_propietario = form_data.get("tipo_de_documento_propietario.tipo_de_documento.tipo_de_documento")
+  documento_propietario == "RUC"
+manage_as_confidential: false
+include: "{\"1791\":{\"1655\":{\"required\":\"required\"},\"1656\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 12

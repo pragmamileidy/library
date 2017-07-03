@@ -1,0 +1,30 @@
+--- 
+id: 2448
+part_id: 456
+field_id: 10
+name: Evaluador
+created_at: 2012-08-20 14:45:01 Z
+updated_at: 2017-06-04 00:26:09.979230 Z
+label: Evaluador
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 383f0b64-d197-472b-a2cf-7d09f4808cbd
+version: 20170603-202609

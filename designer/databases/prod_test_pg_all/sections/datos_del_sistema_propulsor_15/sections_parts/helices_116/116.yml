@@ -1,0 +1,19 @@
+--- 
+id: 116
+section_id: 15
+part_id: 57
+name: "H\xC3\xA9lices"
+created_at: 2011-11-09 16:58:54 Z
+updated_at: 2012-04-10 18:42:28 Z
+label: "Datos de las H\xC3\xA9lices"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"289\":{},\"291\":{},\"290\":{},\"287\":{},\"286\":{},\"285\":{},\"284\":{},\"283\":{}}"
+hint: ""
+help: ""
+rows_names: "\"H\xC3\xA9lice1\",\"H\xC3\xA9lice2\",\"H\xC3\xA9lice3\""
+rows_labels: "\"H\xC3\xA9lice Nro. 1\",\"H\xC3\xA9lice Nro. 2\",\"H\xC3\xA9lice Nro. 3\""
+view_class: 
+order_input: 2

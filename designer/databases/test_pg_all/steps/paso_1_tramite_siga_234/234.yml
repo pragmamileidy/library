@@ -1,0 +1,19 @@
+--- 
+id: 234
+name: "Paso 1 - Tr\xC3\xA1mite SIGA"
+label: "Tr\xC3\xA1mite SIGA"
+description: "Tr\xC3\xA1mite SIGA"
+fill_step_id: 129
+created_at: 2012-04-27 00:27:02 Z
+updated_at: 2012-05-19 19:51:49 Z
+include: "{\"550\":{\"990\":{\"915\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"916\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"556\":{\"991\":{\"917\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"918\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"919\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"920\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"921\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"922\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"539\":{\"595\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"567\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"597\":{\"572\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"574\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"573\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"575\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"932\":{\"1341\":{\"1198\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"544\":{\"598\":{\"528\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"931\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"597\":{\"576\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"545\":{\"580\":{\"528\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"931\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"545\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"546\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"586\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"808\":{\"1119\":{\"593\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"809\":{\"1189\":{\"212\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1190\":{\"212\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1191\":{\"239\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1192\":{\"239\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"810\":{\"1191\":{\"239\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1192\":{\"239\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"811\":{\"1189\":{\"212\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1190\":{\"212\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"812\":{\"1190\":{\"212\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"1191\":{\"239\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: 

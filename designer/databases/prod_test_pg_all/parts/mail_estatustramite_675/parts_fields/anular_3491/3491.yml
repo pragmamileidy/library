@@ -1,0 +1,30 @@
+--- 
+id: 3491
+part_id: 675
+field_id: 17
+name: anular
+created_at: 2014-01-14 19:28:35 Z
+updated_at: 2017-06-04 00:23:08.166372 Z
+label: Anular
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e8720986-3b2a-4879-a010-21df79b41478
+version: 20170603-202308

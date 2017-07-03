@@ -1,0 +1,30 @@
+--- 
+id: 1307
+part_id: 256
+field_id: 95
+name: "Principales Productos que Importar\xC3\xA1n"
+created_at: 2012-05-10 23:46:23 Z
+updated_at: 2017-06-04 00:25:49.460901 Z
+label: "Principales Productos que Importar\xC3\xA1n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar los principales productos que ser\xC3\xA1n importados"
+help: "Indicar los principales productos que ser\xC3\xA1n importados"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fecf10a8-828b-4588-804a-b5bddfaaeb6d
+version: 20170603-202549

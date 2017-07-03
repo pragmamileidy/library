@@ -1,0 +1,78 @@
+--- 
+id: 3130
+name: Pago Manual de la Solicitud
+label: Pago Manual de la Solicitud
+description: Pago Manual de la Solicitud
+fill_step_id: 1675
+created_at: 2015-04-07 13:23:29 Z
+updated_at: 2015-11-11 16:04:12.297823 Z
+include: "{\"4803\":{\"2798\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4804\":{\"2549\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2550\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2551\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2552\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2553\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2554\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2555\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2558\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2559\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2560\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2561\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2562\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2563\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2564\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2565\":{\"3101\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2849\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2567\":{\"2892\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "\r\n\
+  #CODIGO PARA INVOCAR EL SERVICIO payment_computing_service\r\n _applicationId = @application[\"id\"]\r\n _configRoute = \"EntidadesEvaluadoras-rates\"\r\n _formId = @task[\"form\"]\r\n _taskId = @task[\"id\"]\r\n\
+  #result = WebserviceConsumer.get('/payments/payment_computing_service.json?application_id=' + \"#{_applicationId}\" + '&config_route=' + \"#{_configRoute}\" + '&form_id=' + \"#{_formId}\").parsed_response\r\n\
+  \r\n\
+  #  hash = {:application_id => \"#{_applicationId}\", \r\n  #            :config_route   => \"#{_configRoute}\",\r\n    #          :form_id          => \"#{_formId}\"}\r\n  #result = PaymentProxy.payment_computing_service(hash)\r\n\
+  \r\n\
+  # ***** Servicio nuevo *****\r\n  hash = {:application_id => \"#{_applicationId}\", \r\n              :config_route   => \"#{_configRoute}\",\r\n              :form_id          => \"#{_formId}\",\r\n              :task_id          => \"#{_taskId}\"}\r\n  result = PaymentProxy.manual_computing_service(hash)\r\n\
+  \r\n\
+  _payment_id= result[\"response\"][\"payment_id\"]\r\n\
+  _detail = result[\"response\"][\"detail\"]\r\n\
+  _total  = result[\"response\"][\"result\"][\"total\"] \r\n\
+  \r\n\
+  \r\n\
+  form_data.set(\"variables_usadas_codigos_p5.variables_p5.payment\",_payment_id)\r\n\
+  form_data.set(\"variables_usadas_codigos_p5.variables_p5.detail\",_detail)\r\n\
+  form_data.set(\"entidad_evaluadora_revisiones.monto_total.monto_total\", _total) \r\n\
+  \r\n\
+  \r\n\
+  result[\"response\"][\"result\"][\"items\"].each do |key, value|\r\n if(key =~ /item_instance_([\\d]+)/)\r\n  _i = $1.to_i - 1\r\n  if(value[\"description\"] == \"fija\")\r\n    form_data.set(\"entidades_fijas.entidad.nombre_de_la_entidad\", value[\"name\"])\r\n    form_data.set(\"entidades_fijas.entidad.pagada\", \"Iniciada\")\r\n    form_data.set(\"entidades_fijas.entidad.monto_a_pagar\", value[\"formula\"])\r\n     else\r\n    form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.nombre_de_la_entidad\", value[\"name\"])\r\n    form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.pagada\", \"Iniciada\")\r\n    form_data.set(\"entidad_evaluadora_revisiones.entidad_evaluadora_#{_i}.monto_a_pagar\", value[\"formula\"])\r\n  end\r\n end \r\n\
+  end"
+on_transition: "\r\n\
+  \r\n"
+views: 
+back_step: ""
+next_step: Ingresar Pago de la Solicitud
+position: 0
+ajax_calls: |-
+  $( function() {
+  	
+  	$(document).ready(function(){
+  
+  		function partContainer(obj) { 
+  			return obj.parent().parent().parent().parent().parent().children(); 
+  		};
+  		function partContainer1(obj) { 
+  			return obj.parent().parent().parent().parent().parent().parent().parent().parent().children(); 
+  		};
+  		function valueIsCero(obj) { 
+  			return ((obj.val() == "") || (obj.val() == 0)); 
+  		};
+  		function hideIfCero(obj) { 
+  			if( valueIsCero(obj) ){ partContainer(obj).hide(); partContainer(obj).parent().hide(); };
+  		};
+  
+  		function hideIfCero1(obj) { 
+  			if( valueIsCero(obj) ){ partContainer1(obj).hide(); partContainer1(obj).parent().hide(); };
+  		};
+  		
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_0_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_1_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_2_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_3_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_4_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_5_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_6_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_7_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_8_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_9_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_10_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_11_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_12_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_13_monto_a_pagar'));
+  		hideIfCero($('#field_entidad_evaluadora_revisiones_entidad_evaluadora_14_monto_a_pagar'));
+  		hideIfCero1($('#field_entidades_fijas_entidad_monto_a_pagar'));
+  	});
+  });

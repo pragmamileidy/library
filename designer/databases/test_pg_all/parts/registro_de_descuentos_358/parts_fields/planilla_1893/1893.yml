@@ -1,0 +1,30 @@
+--- 
+id: 1893
+part_id: 358
+field_id: 1
+name: " planilla"
+created_at: 2012-06-20 22:05:39 Z
+updated_at: 2017-06-04 00:24:18.455090 Z
+label: " N\xC3\xBAmero de Planilla"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: " "
+help: " "
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 346be141-6d68-447d-92d9-e5dcdf605c21
+version: 20170603-202418

@@ -1,0 +1,22 @@
+--- 
+id: 717
+section_id: 102
+part_id: 38
+name: "C\xC3\xA9dula del Apoderado"
+created_at: 2012-03-22 22:37:01 Z
+updated_at: 2017-03-02 03:39:21.505450 Z
+label: "C\xC3\xA9dula o Pasaporte del Apoderado"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  person = @application["person_id"]
+  duenio = @application["owner_person_id"]
+  person != duenio
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

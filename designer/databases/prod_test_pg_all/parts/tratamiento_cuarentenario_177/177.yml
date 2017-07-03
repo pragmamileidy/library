@@ -1,0 +1,17 @@
+--- 
+id: 177
+name: Tratamiento Cuarentenario
+description: "Sirve para indicar si la mercanc\xC3\xADa a ser exportada requiere tratamiento cuarentenario y de qu\xC3\xA9 tipo"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-27 22:58:12 Z
+updated_at: 2012-05-16 20:55:29 Z
+label: Tratamiento Cuarentenario
+hint: ""
+view_class: horizontal
+serial: 

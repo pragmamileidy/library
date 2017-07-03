@@ -1,0 +1,16 @@
+--- 
+id: 1007
+design_id: 93
+section_id: 229
+name: Anexos 008- Requisitos para Subsidio de Enfermedad
+created_at: 2012-05-11 21:13:52 Z
+updated_at: 2015-09-14 17:06:18 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1405\":{\"210\":{\"required\":\"required\"}},\"1406\":{\"210\":{\"required\":\"required\"}},\"1407\":{\"210\":{\"required\":\"required\"}},\"1408\":{\"210\":{\"required\":\"required\"}},\"1409\":{\"210\":{\"required\":\"required\"}},\"1410\":{\"210\":{\"required\":\"required\"}},\"1411\":{\"210\":{\"required\":\"unrequired\"}},\"1412\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 8

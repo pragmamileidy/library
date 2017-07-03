@@ -1,0 +1,30 @@
+--- 
+id: 2627
+part_id: 484
+field_id: 10
+name: FinPasoRecibirPago
+created_at: 2013-01-11 21:54:03 Z
+updated_at: 2017-06-04 00:30:05.532086 Z
+label: Fin Paso Recibir Pago
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Aplica a los tramites 100, proceso 1, 2, 4
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 868eec45-47bb-4aa6-be85-092fa7bc6349
+version: 20170603-203005

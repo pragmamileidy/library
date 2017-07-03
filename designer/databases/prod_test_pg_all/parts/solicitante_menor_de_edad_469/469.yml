@@ -1,0 +1,17 @@
+--- 
+id: 469
+name: solicitante menor de edad
+description: solicitante menor de edad
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-09-05 17:19:11 Z
+updated_at: 2015-09-09 19:36:17 Z
+label: "\xC2\xBFEl solicitante menor de edad?"
+hint: El presente campo se debe seccionar para indicar si el solicitante es menor de edad o no.
+view_class: horizontal
+serial: 7611-5956-3593-6206-5934

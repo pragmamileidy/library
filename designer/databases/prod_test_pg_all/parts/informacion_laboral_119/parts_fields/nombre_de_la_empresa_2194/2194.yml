@@ -1,0 +1,30 @@
+--- 
+id: 2194
+part_id: 119
+field_id: 10
+name: Nombre de la Empresa
+created_at: 2012-07-27 15:25:07 Z
+updated_at: 2017-06-04 00:26:04.737605 Z
+label: Nombre de la Empresa
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 100
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e2afcf77-30dd-423f-8cf1-23b7e741cd5d
+version: 20170603-202604

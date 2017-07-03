@@ -1,0 +1,296 @@
+--- 
+id: 1117
+name: Paso 1 - Llenar datos
+label: Llenar datos del Autor (es)
+description: ""
+fill_step_id: 565
+created_at: 2013-03-07 14:32:04 Z
+updated_at: 2014-04-27 21:16:49 Z
+include: "{\"4287\":{\"3141\":{\"3601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3603\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4288\":{\"3141\":{\"3601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3603\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4289\":{\"3141\":{\"3601\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3602\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3603\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2443\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save
+on_becoming: |-
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get( '/consecutive/generador_radiofonicas/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+on_transition: "###Integraci\xC3\xB3n Directores y autores###\r\n\
+  \r\n\
+  nro_documento = \"\"\r\n\
+  \t_num = 0\r\n  (1..5).each do |x|\r\n\
+  \t\tinstance_x = \"_instance_#{x}\"\r\n\
+  \t\t_num = x\r\n\
+  \t_tipo = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.tipo_de_documento\").strip\r\n\
+  \t                      \r\n\
+  \tif _tipo == \"C\xC3\xA9dula\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]\r\n\
+  \t\t\tif datos.nil? \r\n\
+  \t\t\t\tform_data.set(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.no_documento\",\"\")\r\n\
+  \t\t\t\ttransition_errors << \"Los datos del Director #{_num} no se encuentran en el sistema\"\t\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\t#_buenas << nro_documento\r\n\
+  \t\t\t\ttipo_doc_director = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.tipo_de_documento\",tipo_doc_director)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.identificacion\",nro_documento)\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.director_instance_#{_num}.identificacion\",datos[\"cedula\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.primer_nombre\",datos[\"primerNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.primer_apellido\",datos[\"primerApellido\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.segundo_nombre\",datos[\"segundoNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.segundo_apellido\",datos[\"segundoApellido\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.director_instance_#{_num}.apellido_de_casada\",datos[\"apellidoCasada\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.director_instance_#{_num}.direccion\",datos[\"direccion\"])\r\n\
+  #Usado para print design\r\n\
+  \r\n\
+  segundoNombre = form_data.get(\"datos_del_autor_es.director_instance_#{_num}.segundo_nombre\")\r\n\
+  apellidoCasada = form_data.get(\"datos_del_autor_es.director_instance_#{_num}.apellido_de_casada\")\r\n\
+  \t\t\t\t\t\t\r\n\
+  _nombre =  \"#{datos[\"primerNombre\"]} \"+\"#{segundoNombre} \"+\"#{datos[\"primerApellido\"]} \"+\"#{datos[\"segundoApellido\"]} \"+\"#{apellidoCasada}\"\r\n\
+  form_data.set(\"datos_del_autor_es.director_instance_#{_num}.nombre_completo\",_nombre)\r\n\
+  \r\n\
+  \r\n\
+  \t\t\t\tdatos = nil\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif _tipo == \"Pasaporte\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tdocumen = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\r\n\
+  \t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.identificacion\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_autor_es.director_instance_#{_num}.tipo_de_documento\", documen)\r\n\
+  \tend\r\n\
+  \t\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \ttipoSoc=form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \t\t\tnro_documento = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.no_documento\")\r\n\
+  \t\t\tif !nro_documento.blank?\r\n\
+  \t\t\t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_empresas/find.json?ruc=' + \"#{nro_documento}\" + '&tipo_sociedad=' + \"#{tipoSoc}\")).parsed_response\r\n\
+  \t\t\t\tdatos = result[\"response\"]  \r\n\
+  \t\t\t\tif datos.nil? \r\n\
+  \t\t\t\t\tform_data.set(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.no_documento\",\"\")\r\n\
+  \t\t\t\t\ttransition_errors << \"El ruc introducido del director #{_num} no esta registrado en el sistema o tiene tipo de sociedad incorrecta, por favor verifique\"\r\n\
+  \t\t\t\telse\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_autor_es.director_juridico_instance_#{_num}.ruc\",nro_documento)\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_autor_es.director_juridico_instance_#{_num}.tipo_sociedad\",tipoSoc)\r\n\
+  \t\t\t\t\t#form_data.set(\"datos_del_autor_es.director_juridico_instance_#{_num}.ruc\",datos[\"ruc\"])\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_autor_es.director_juridico_instance_#{_num}.nombre\",datos[\"nombre_empresa\"])\r\n\
+  \t\t\t\t\t#form_data.set(\"datos_del_autor_es.director_juridico_instance_#{_num}.direccion\",datos[\"direccion\"])\r\n\
+  \t\t\t\t\tdatos = nil\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #integracion de autor de guion\r\n\
+  nro_documento = \"\"\r\n\
+  _numg = 0\r\n  (1..5).each do |y|\r\n\
+  \t\tinstance_y = \"_instance_#{y}\"\r\n\
+  \t\t_numg = y\r\n\
+  \t\t\t\t\t\t\t\r\n\
+  \t_tipo = form_data.get(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.tipo_de_documento\").strip\r\n\
+  \tif _tipo == \"C\xC3\xA9dula\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]\r\n\
+  \t\t\tif datos.nil? \r\n\
+  \t\t\t\tform_data.set(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.no_documento\",\"\")\r\n\
+  \t\t\t\ttransition_errors << \"Los datos del Autor de gui\xC3\xB3n #{_numg} no se encuentran en el sistema\"\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\ttipo_doc_guion = form_data.get(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.tipo_de_documento\",tipo_doc_guion)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.identificacion\",nro_documento)\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.identificacion\",datos[\"cedula\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.primer_nombre\",datos[\"primerNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.primer_apellido\",datos[\"primerApellido\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.segundo_nombre\",datos[\"segundoNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.segundo_apellido\",datos[\"segundoApellido\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.apellido_de_casada\",datos[\"apellidoCasada\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.direccion\",datos[\"direccion\"])\r\n\
+  \r\n\
+  #Usado para print design\r\n\
+  segundoNombre1 = form_data.get(\"datos_del_autor_es.autor_guion_instance_#{_numg}.segundo_nombre\")\r\n\
+  apellidoCasada1 = form_data.get(\"datos_del_autor_es.autor_guion_instance_#{_numg}.apellido_de_casada\")\r\n\
+  \t\t\t\t\t\t\r\n\
+  _nombre1 =  \"#{datos[\"primerNombre\"]} \"+\"#{segundoNombre1} \"+\"#{datos[\"primerApellido\"]} \"+\"#{datos[\"segundoApellido\"]} \"+\"#{apellidoCasada1}\"\r\n\
+  form_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.nombre_completo\",_nombre1)\r\n\
+  \t\t\t\tdatos = nil\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif _tipo == \"Pasaporte\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tdocumen = form_data.get(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\r\n\
+  \t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.identificacion\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_autor_es.autor_guion_instance_#{_numg}.tipo_de_documento\",documen)\r\n\
+  \tend\r\n\
+  \t\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \r\n\
+  \t\ttipoSoc=form_data.get(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tif !nro_documento.blank? \r\n\
+  \t\t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_empresas/find.json?ruc=' + \"#{nro_documento}\" + '&tipo_sociedad=' + \"#{tipoSoc}\")).parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]  \r\n\
+  \t\t\tif datos.nil? \r\n\
+  \t\t\t\tform_data.set(\"tipo_de_documento_autor_guion#{instance_y}.tipo_documento_mici.no_documento\",\"\")\r\n\
+  \t\t\t\ttransition_errors << \"El ruc introducido del autor del guion #{_numg} no esta registrado en el sistema o tiene tipo de sociedad incorrecta, por favor verifique\"\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_juridico_instance_#{_numg}.ruc\",nro_documento)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_juridico_instance_#{_numg}.tipo_sociedad\",tipoSoc)\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_guion_juridico_instance_#{_numg}.ruc\",datos[\"ruc\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_guion_juridico_instance_#{_numg}.nombre\",datos[\"nombre_empresa\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_guion_juridico_instance_#{_numg}.direccion\",datos[\"direccion\"])\r\n\
+  \t\t\t\tdatos = nil\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  end\r\n\
+  end\r\n\
+  \r\n\
+  #integracion de autor de m\xC3\xBAsica\r\n\
+  nro_documento = \"\"\r\n\
+  _numa = 0\r\n  (1..5).each do |x|\r\n\
+  \t\tinstance_x = \"_instance_#{x}\"\r\n\
+  \t\t_numa = x\r\n\
+  \r\n\
+  \t_tipo = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.tipo_de_documento\").strip\r\n\
+  \tif _tipo == \"C\xC3\xA9dula\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\").parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]\r\n\
+  \t\t\tif datos.nil? \r\n\
+  \t\t\t\tform_data.set(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.no_documento\",\"\")\r\n\
+  \t\t\t\ttransition_errors << \"Los datos del Autor de la M\xC3\xBAsica #{_numa} no se encuentran en el sistema\"\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\t\ttipo_doc_musica = form_data.get(\"tipo_de_documento_autor_guion#{instance_x}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t\t#_bam << nro_documento\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.identificacion\",datos[\"cedula\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.tipo_de_documento\",tipo_doc_musica)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.identificacion\",nro_documento)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.primer_nombre\",datos[\"primerNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.primer_apellido\",datos[\"primerApellido\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.segundo_nombre\",datos[\"segundoNombre\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.segundo_apellido\",datos[\"segundoApellido\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.apellido_de_casada\",datos[\"apellidoCasada\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.direccion\",datos[\"direccion\"])\r\n\
+  \r\n\
+  #Usado para print design\r\n\
+  \r\n\
+  segundoNombre2 = form_data.get(\"datos_del_autor_es.autor_musica_instance_#{_numa}.segundo_nombre\")\r\n\
+  apellidoCasada2 = form_data.get(\"datos_del_autor_es.autor_musica_instance_#{_numa}.apellido_de_casada\")\r\n\
+  \t\t\t\t\t\t\r\n\
+  _nombre2 =  \"#{datos[\"primerNombre\"]} \"+\"#{segundoNombre2} \"+\"#{datos[\"primerApellido\"]} \"+\"#{datos[\"segundoApellido\"]} \"+\"#{apellidoCasada2}\"\r\n\
+  form_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.nombre_completo\",_nombre2)\r\n\
+  \r\n\
+  \t\t\t\tdatos = nil\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif _tipo == \"Pasaporte\"\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tdocumen = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  \t\t\r\n\
+  \t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.identificacion\",nro_documento)\r\n\
+  \t\tform_data.set(\"datos_del_autor_es.autor_musica_instance_#{_numa}.tipo_de_documento\", documen)\r\n\
+  \tend\r\n\
+  \t\r\n\
+  \tif _tipo == \"RUC\"\r\n\
+  \ttipoSoc = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \t\tnro_documento = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.no_documento\")\r\n\
+  \t\tif !nro_documento.blank?\r\n\
+  \t\t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_empresas/find.json?ruc=' + \"#{nro_documento}\" + '&tipo_sociedad=' + \"#{tipoSoc}\")).parsed_response\r\n\
+  \t\t\tdatos = result[\"response\"]  \r\n\
+  \t\t\tif datos.nil? \r\n\
+  \t\t\t\tform_data.set(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.no_documento\",\"\")\r\n\
+  \t\t\t\ttransition_errors << \"El ruc introducido del autor de la musica #{_numa} no esta registrado en el sistema o tiene tipo de sociedad incorrecta, por favor verifique\"\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_juridico_instance_#{_numa}.ruc\",nro_documento)\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_juridico_instance_#{_numa}.tipo_sociedad\",tipoSoc)\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_musica_juridico_instance_#{_numa}.ruc\",datos[\"ruc\"])\r\n\
+  \t\t\t\tform_data.set(\"datos_del_autor_es.autor_musica_juridico_instance_#{_numa}.nombre\",datos[\"nombre_empresa\"])\r\n\
+  \t\t\t\t#form_data.set(\"datos_del_autor_es.autor_musica_juridico_instance_#{_numa}.direccion\",datos[\"direccion\"])\r\n\
+  \t\t\t\tdatos = nil\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  end\r\n\
+  end\r\n\
+  \r\n\
+  ####Tipo de sociedad obligatorio al seleccionar tipo de documento Ruc\r\n\
+  \r\n\
+  \r\n\
+  ##Director\r\n\
+  (1..5).each do |x|\r\n\
+  \tinstance_x = \"_instance_#{x}\"\r\n\
+  \r\n\
+  _c1 = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  _c2 = form_data.get(\"tipo_de_documento_director#{instance_x}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \r\n\
+  _error = (_c1==\"RUC\" and _c2.blank?)? \"#{_error}\": _error\r\n\
+  \r\n \tif !_error.nil?\t\r\n\
+  \t\ttransition_errors << \"Al marcar la opci\xC3\xB3n de Tipo de Documento igual a RUC debe seleccionar el Tipo de Sociedad del Director\" + \"#{_error}\"\r\n  \tend\r\n\
+  end\r\n\
+  \r\n\
+  ##Autor de gui\xC3\xB3n\r\n\
+  (1..5).each do |x|\r\n\
+  \tinstance_x = \"_instance_#{x}\"\r\n\
+  \r\n\
+  _c1 = form_data.get(\"tipo_de_documento_autor_guion#{instance_x}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  _c2 = form_data.get(\"tipo_de_documento_autor_guion#{instance_x}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \r\n\
+  _error = (_c1==\"RUC\" and _c2.blank?)? \"#{_error}\": _error\r\n\
+  \r\n \tif !_error.nil?\t\r\n\
+  \t\ttransition_errors << \"Al marcar la opci\xC3\xB3n de Tipo de Documento igual a RUC debe seleccionar el Tipo de Sociedad del autor de gui\xC3\xB3n\" + \"#{_error}\"\r\n  \tend\r\n\
+  end\r\n\
+  \r\n\
+  ##Autor de m\xC3\xBAsica\r\n\
+  (1..5).each do |x|\r\n\
+  \tinstance_x = \"_instance_#{x}\"\r\n\
+  \r\n\
+  _c1 = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.tipo_de_documento\")\r\n\
+  _c2 = form_data.get(\"tipo_de_documento_autor_musica#{instance_x}.tipo_documento_mici.tipo_sociedad\")\r\n\
+  \r\n\
+  _error = (_c1==\"RUC\" and _c2.blank?)? \"#{_error}\": _error\r\n\
+  \r\n \tif !_error.nil?\t\r\n\
+  \t\ttransition_errors << \"Al marcar la opci\xC3\xB3n de Tipo de Documento igual a RUC debe seleccionar el Tipo de Sociedad del autor de m\xC3\xBAsica\" + \"#{_error}\"\r\n  \tend\r\n\
+  end\r\n"
+views: 
+back_step: ""
+next_step: Paso 2 -  Datos de los Autores
+position: 1
+ajax_calls: "$.each( $('[id*=field_tipo_de_documento_director_]'), function(index, campo) {\r\n \r\n if ($(campo).attr('id').match(/tipo_documento_mici_tipo_de_documento/)) {\r\n  $(campo).attr('onchange', 'evaluad(this.value,this.id);')\r\n }\r\n  });  \r\n\
+  \r\n\
+  function evaluad(director,idsociedad) {\r\n\
+  \r\n var pos = idsociedad.match(/[\\d]/);\r\n var mod1 = \"#field_tipo_de_documento_director_instance_\";\r\n var mod2 = \"_tipo_documento_mici_tipo_de_documento\";\r\n var mod4 = \"_tipo_documento_mici_tipo_sociedad\";\r\n var mod5 = \"_tipo_documento_mici_no_documento\";\r\n  var mod3 = mod1.concat(pos);\r\n var tipo_s = mod3.concat(mod4);\r\n var tipo_d = mod3.concat(mod2);\r\n var num = mod3.concat(mod5);\r\n $(tipo_s).attr(\"disabled\",\"disabled\");\r\n        if (($(tipo_d).val() == 'C\xC3\xA9dula')||($(tipo_d).val() == 'Pasaporte')){\r\n      $(tipo_s).attr(\"disabled\",\"disabled\");\r\n\
+  \t$(tipo_s).val('');\r\n\
+  \t$(num).val('');\r\n  }  \r\n  else {\r\n      $(tipo_s).removeAttr(\"disabled\",\"disabled\");\r\n   $(tipo_s).val(''); \r\n   $(num).val('');\r\n  }\r\n\
+  } \t\t\t\t\t   \r\n\
+  \r\n\
+  $.each( $('[id*=field_tipo_de_documento_autor_guion_]'), function(index, campo) {\r\n \r\n if ($(campo).attr('id').match(/tipo_documento_mici_tipo_de_documento/)) {\r\n  $(campo).attr('onchange', 'evaluag(this.value,this.id);')\r\n }\r\n\
+  \r\n  });  \r\n\
+  \r\n\
+  function evaluag(autor,idsociedad) {\r\n\
+  \r\n var pos = idsociedad.match(/[\\d]/);\r\n var mod1 = \"#field_tipo_de_documento_autor_guion_instance_\";\r\n var mod2 = \"_tipo_documento_mici_tipo_de_documento\";\r\n var mod4 = \"_tipo_documento_mici_tipo_sociedad\";\r\n var mod5 = \"_tipo_documento_mici_no_documento\";\r\n  var mod3 = mod1.concat(pos);\r\n var tipo_s = mod3.concat(mod4);\r\n var tipo_d = mod3.concat(mod2);\r\n var num = mod3.concat(mod5);\r\n $(tipo_s).attr(\"disabled\",\"disabled\");\r\n \r\n        if (($(tipo_d).val() == 'C\xC3\xA9dula')||($(tipo_d).val() == 'Pasaporte')){\r\n      $(tipo_s).attr(\"disabled\",\"disabled\");\r\n\
+  \t$(tipo_s).val('');\r\n\
+  \t$(num).val('');\r\n  }  \r\n  else {\r\n      $(tipo_s).removeAttr(\"disabled\",\"disabled\");\r\n   $(tipo_s).val(''); \r\n   $(num).val('');\r\n  }\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  $.each( $('[id*=field_tipo_de_documento_autor_musica_]'), function(index, campo) {\r\n \r\n if ($(campo).attr('id').match(/tipo_documento_mici_tipo_de_documento/)) {\r\n  $(campo).attr('onchange', 'evaluam(this.value,this.id);')\r\n }\r\n\
+  \r\n  });  \r\n\
+  \r\n\
+  function evaluam(autor,idsociedad) {\r\n\
+  \r\n var pos = idsociedad.match(/[\\d]/);\r\n var mod1 = \"#field_tipo_de_documento_autor_musica_instance_\";\r\n var mod2 = \"_tipo_documento_mici_tipo_de_documento\";\r\n var mod4 = \"_tipo_documento_mici_tipo_sociedad\";\r\n var mod5 = \"_tipo_documento_mici_no_documento\";\r\n  var mod3 = mod1.concat(pos);\r\n var tipo_s = mod3.concat(mod4);\r\n var tipo_d = mod3.concat(mod2);\r\n var num = mod3.concat(mod5);\r\n $(tipo_s).attr(\"disabled\",\"disabled\");\r\n        if (($(tipo_d).val() == 'C\xC3\xA9dula')||($(tipo_d).val() == 'Pasaporte')){\r\n      $(tipo_s).attr(\"disabled\",\"disabled\");\r\n\
+  \t$(tipo_s).val('');\r\n\
+  \t$(num).val('');\r\n  }  \r\n  else {\r\n      $(tipo_s).removeAttr(\"disabled\",\"disabled\");\r\n   $(tipo_s).val(''); \r\n   $(num).val('');\r\n  }\r\n\
+  }\r\n"

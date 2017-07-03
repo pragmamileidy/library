@@ -1,0 +1,442 @@
+--- 
+id: 333
+name: Paso 1 - Informacion de la Solicitud
+label: "Informaci\xC3\xB3n de la Solicitud"
+description: "<br/>\r\n\
+  Favor introduzca la informaci\xC3\xB3n b\xC3\xA1sica del tr\xC3\xA1mite para su procesamiento\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 200
+created_at: 2012-05-16 00:00:23 Z
+updated_at: 2015-10-21 16:36:03 Z
+include: "{\"1030\":{\"580\":{\"1461\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"1322\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"528\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1032\":{\"595\":{\"567\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"566\":{\"views\":\"only_view\",\"enabled\":\"enabled\"}}},\"2875\":{\"1786\":{\"1632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1633\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1031\":{\"674\":{\"782\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1038\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "#::: INICIALIZAR DATOS GENERALES DE LA SOLICITUD :::#\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n\
+  result = WebserviceConsumer.get( '/consecutive/generador_attt_dcpvh/generate.json').parsed_response\r\n\
+  _consecutivo = result[\"response\"]\r\n\
+  _consecutivo = \"#{@application[\"id\"]}-\"+\"#{_consecutivo[\"value\"]}\"\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\",_consecutivo)\r\n\
+  \r\n\
+  #::: INICIALIZAR DATOS DEL SOLICITANTE :::#\r\n\
+  #::: Datos del solicitante Natural con C\xC3\xA9dula y Pasaporte\r\n\
+  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n\
+  \t\tform_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.tipo_documento_string\",\"C\xC3\xA9dula\")\r\n\
+  \t\tform_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.documento\", @owner[\"national_id\"])\r\n\
+  else\r\n\
+  \tif ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"foreign_citizen\"))\r\n\
+  \t\tform_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.tipo_documento_string\",\"Pasaporte\")\r\n\
+  \t\tform_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.documento\", @owner[\"passport\"])\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  form_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.primer_nombre\",@owner[\"first_name\"])\r\n\
+  form_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.segundo_nombre\",@owner[\"second_name\"])\r\n\
+  form_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.primer_apellido\",@owner[\"last_name\"])\r\n\
+  form_data.set(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.segundo_apellido\",@owner[\"second_last_name\"])\r\n\
+  \r\n\
+  #::: Datos del solicitante Jur\xC3\xADdico\t\r\n\
+  if (@owner[\"kind_of_user_type\"] == \"JuridicalPerson\")\r\n\
+  \t_ruc = @owner[\"tax_id\"]\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.ruc\",_ruc)\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.nombre\",@owner[\"name\"])\r\n\
+  end"
+on_transition: "#::: DV: SETEANDO DATOS DEL SOLICITANTE: QUIEN INICIA EL TR\xC3\x81MITE ES DIFUNTO ON TRANSITION PASO 1\r\n\
+  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n\
+  \tnumdoc = form_data.get(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.documento\")\r\n\
+  \tresult = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{numdoc}\")).parsed_response\r\n\
+  \tdatos = result[\"response\"]\r\n\
+  \tif datos.blank? \r\n\
+  \t\ttransition_errors << \"La C\xC3\xA9dula del solicitante no fue encontrada en el Tribunal Electoral. Por favor, verifique.\" \r\n\
+  \telse\t\t\t\r\n\
+  \t\tdifunto = datos[\"cod_mensaje\"]\r\n\
+  \t\tif (difunto == \"534\")\r\n\
+  \t\t\ttransition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{numdoc} del Solicitante, corresponde a un ciudadano Difunto.\"\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  #::: DV: COMPROBAR LA CEDULA DEL REPRESENTANTE :::#\r\n\
+  representante = form_data.get(\"datos_del_representado_por_el_solicitante_propietario_natural.datos_de_la_persona.documento\")   \r\n\
+  _person = @application[\"person_id\"]\r\n\
+  _owner = @application[\"owner_person_id\"]\r\n\
+  if _person != _owner\r\n\
+  \tresult = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{representante}\")).parsed_response\r\n\
+  \tdatosre = result[\"response\"]\r\n\
+  \tif datosre.blank? \r\n\
+  \t\ttransition_errors << \"La C\xC3\xA9dula del representante no fue encontrada en el Tribunal Electoral. Por favor, verifique.\" \r\n\
+  \telse\t\t\t\r\n\
+  \t\tdifuntore = datosre[\"cod_mensaje\"]\r\n\
+  \t\tif (difuntore == \"534\")\r\n\
+  \t\t\ttransition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{representante} del Representante, corresponde a un ciudadano Difunto.\"\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  _error = nil\r\n\
+  _placa = form_data.get(\"datos_del_vehiculo.datos_de_vehiculo.placa\")\r\n\
+  fechaString = \"\"\r\n\
+  stipo = \"P\"\r\n\
+  \r\n\
+  #:::: Datos del propietario del veh\xC3\xADculo\r\n\
+  documento_propietario = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.tipo_de_documento\")\r\n\
+  nro_documento = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.no_documento\")\r\n\
+  \r\n\
+  if documento_propietario == \"C\xC3\xA9dula\" \r\n\
+  \tresult = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\")).parsed_response\r\n\
+  \tdatosprop = result[\"response\"]\r\n\
+  \tif datosprop.blank? \r\n\
+  \t\ttransition_errors << \"La C\xC3\xA9dula del propietario no fue encontrada en el Tribunal Electoral. Por favor, verifique.\" \r\n\
+  \telse\t\t\t\r\n\
+  \t\tdifuntore = datosprop[\"cod_mensaje\"]\r\n\
+  \t\tif (difuntore == \"534\")\r\n\
+  \t\t\ttransition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{nro_documento} del Propietario, corresponde a un ciudadano Difunto.\"\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_natural.datos_de_la_persona.tipo_documento_string\",documento_propietario)\r\n\
+  \tresult = WebserviceConsumer.get(URI.escape('/service/bdin_attt_persona_natural/find.json?tipoDocumento=CIP&numeroDocumento=' + \"#{nro_documento}\")).parsed_response\r\n\
+  \tpropietario = result[\"response\"]\r\n\
+  \tif propietario.blank?\r\n\
+  \t\ttransition_errors << \"Los datos del propietario del veh\xC3\xADculo no fueron encontrados. Por favor, verifique. \"\r\n\
+  \telse\r\n\
+  \t\tform_data.set(\"datos_del_propietario_del_vehiculo_natural.datos_de_la_persona.documento\",propietario[\"numeroDocumento\"])\r\n\
+  \t\tform_data.set(\"datos_del_propietario_del_vehiculo_natural.datos_de_la_persona.nombre_completo\",propietario[\"nombreCompleto\"])\r\n\
+  \tend\r\n\
+  end\r\n\
+  if documento_propietario == \"Pasaporte\"\r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_natural.datos_de_la_persona.tipo_documento_string\",documento_propietario)\r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_natural.datos_de_la_persona.documento\", nro_documento)\r\n\
+  end\r\n\
+  if documento_propietario == \"RUC\"\r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_natural.datos_de_la_persona.tipo_documento_string\",documento_propietario)\r\n\
+  \tresult = WebserviceConsumer.get(URI.escape('/service/bdin_attt_persona_juridico/find.json?tipoDocumento=RUC&numeroDocumento=' + \"#{nro_documento}\")).parsed_response\r\n\
+  end\r\n\
+  \r\n\
+  #:::: Obtener datos del veh\xC3\xADculo\r\n\
+  result = WebserviceConsumer.get(URI.escape('/service/bdin_attt_vehiculo_consulta_vehiculo_por_placa/find.json?placa=' + \"#{_placa}\")).parsed_response\r\n\
+  _vehiculo = result[\"response\"]\r\n\
+  # if propietario.blank?\r\n\
+  # \ttransition_errors << \"Los datos del propietario del veh\xC3\xADculo no fueron encontrados, por favor verifique. \"\r\n\
+  # else\r\n\
+  # \tform_data.set(\"datos_del_propietario_del_vehiculo_natural.datos_de_la_persona.nombre_completo\",propietario[\"nombreCompleto\"])\r\n\
+  # end\r\n\
+  if _vehiculo.blank?\r\n\
+  \ttransition_errors << \"La placa suministrada no existe en el sistema de la ATTT. Por favor, verifique el valor.\"\r\n\
+  end\r\n\
+  \r\n\
+  if !_error.nil?\t\r\n\
+  \t#:::: El veh\xC3\xADculo no se encuentra registrado en ATTT\r\n\
+  \ttransition_errors << \"#{_error}\"\r\n\
+  else\r\n    #:::: datos del vehiculo\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.placa\",_vehiculo[\"placa\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.marca\",_vehiculo[\"marca\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.modelo\",_vehiculo[\"modelo\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.motor\",_vehiculo[\"motor\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.chasis\",_vehiculo[\"chasis\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.ano\",_vehiculo[\"anio\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.tipo_de_vehiculo_string\",_vehiculo[\"tipo\"])\r\n\
+  \t#form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.numero_de_puertas\",_vehiculo[\"nro_puertas\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.color\",_vehiculo[\"color\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.aseguradora\",_vehiculo[\"aseguradora\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.fecha_de_ultimo_revisado\",_vehiculo[\"fecha_ultima_revision\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.municipio_de_procedencia\",_vehiculo[\"domiciliado_municipio\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.numero_de_puertas\",_vehiculo[\"nro_puertas\"])\r\n\
+  \tform_data.set(\"datos_del_vehiculo.datos_de_vehiculo.nro_vin\",_vehiculo[\"nro_vin\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.id_del_vehiculo\",_vehiculo[\"id_vehiculo\"])\r\n\
+  \r\n\
+  \t#:::::  Verificar Propietario\r\n\
+  \tif documento_propietario == \"C\xC3\xA9dula\" \r\n\
+  \t\tdocumento = _vehiculo[\"cedula\"]\r\n\
+  \t\tif !documento.blank?\r\n\
+  \t\t\tif (documento != nro_documento)\r\n\
+  \t\t\t\ttransition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\t\t\r\n\
+  \r\n\
+  \tif documento_propietario == \"Pasaporte\" \r\n\
+  \t\tdocumento = _vehiculo[\"cedula_pasaporte_ruc\"]\r\n\
+  \t\tif !documento.blank?\r\n\
+  \t\t\tif (documento != nro_documento)\r\n\
+  \t\t\t\ttransition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\t\t\r\n\
+  \r\n\
+  \tif documento_propietario == \"RUC\" \r\n\
+  \t\tdocumento = _vehiculo[\"ruc\"]\r\n\
+  \t\tif !documento.blank?\r\n\
+  \t\t\tif (documento != nro_documento)\r\n\
+  \t\t\t\ttransition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\t\t\t\t\t\t\r\n\
+  \t\t\t\t\t\t\t\t\r\n \t#:::: Verificar estatus del vehiculo en el Municipio de Panam\xC3\xA1 o San Miguelito seg\xC3\xBAn corresponda\r\n\
+  \tmunicipio = _vehiculo[\"domiciliado_municipio\"].downcase\t\t\r\n\
+  \tmupa = [\"panama\",\"panam\xC3\xA1\"]\r\n\
+  \tmunsa = [\"san miguelito\"]\r\n\
+  \t#numid = @owner[\"national_id\"]\r\n\
+  \tnumid = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.no_documento\")\r\n\
+  \t#(@owner[\"national_id\"].blank?) ? @owner[\"tax_id\"] : @owner[\"national_id\"]\r\n\
+  \tif (mupa.include? municipio.to_s)\r\n\
+  \t\tresultMupa = WebserviceConsumer.get(URI.escape('/service/bdin_municipio_panama_vehiculo/find.json?placa=' + \"#{_placa}\" + '&cedula_ruc=' + \"#{numid}\")).parsed_response\r\n\
+  \t\tif !(resultMupa[\"response\"]).nil?\r\n\
+  \t\t\t#::::: Fecha Actual\r\n\
+  \t\t\tfechahoy = Date.today\r\n\
+  \t\t\tfechahoy = fechahoy.strftime(\"%d-%m-%Y\")\r\n\
+  \t\t\tarreglo2 = []\r\n\
+  \t\t\tarreglo2 = fechahoy.split(\"-\")\r\n\
+  \t\t\tdia2 = arreglo2[0]\r\n\
+  \t\t\tmes2 = arreglo2[1]\r\n\
+  \t\t\tanio2  = arreglo2[2]\r\n\
+  \t\t\tanio = resultMupa[\"response\"][\"anio_placa\"]\r\n\
+  \t\t\ttiempoVigencia = anio2.to_i - anio.to_i\r\n\
+  \t\t\tif (tiempoVigencia > 1)\t\r\n\
+  \t\t\t\t#transition_errors << \"No se puede continuar con el tramite, dado que La Fecha de Ultimo Revisado es mayor a un a\xC3\xB1o\"\t\r\n\
+  \t\t\telse\r\n\
+  \t\t\t\tif (tiempoVigencia == 1)\r\n\
+  \t\t\t\t\tmes = resultMupa[\"response\"][\"mes_placa\"]\t\r\n\
+  \t\t\t\t\tif (mes != mes2)\r\n\
+  \t\t\t\t\t   if (mes > mes2) \r\n\
+  \t\t\t\t\t\t\ttransition_errors << \"No se puede continuar con el tramite, dado que La Fecha de Ultimo Revisado es mayor a un a\xC3\xB1o y no esta dentro del mes correspondiente\"\r\n\
+  \t\t\t\t\t   else\r\n\
+  \t\t\t\t\t\t   form_data.set(\"datos_del_vehiculo.datos_del_vehiculo_municipio.ano_de_la_ultima_placa_vigente\",anio)\r\n\
+  \t\t\t\t\t\tend\r\n\
+  \t\t\t\t\telse\r\n\
+  \t\t\t\t\t\tform_data.set(\"datos_del_vehiculo.datos_del_vehiculo_municipio.ano_de_la_ultima_placa_vigente\",anio)\r\n\
+  \t\t\t\t    end\r\n\
+  \t\t\t\tend\t\t\r\n\
+  \t\t\tend\r\n\
+  \t\telse\r\n\
+  \t\t\ttransition_errors << \"El vehiculo No tiene placa vigente, favor actualizar la placa en el municipio antes de continuar con este tramite.\"\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif (munsa.include? municipio.to_s)\r\n\
+  \t\t#resultMunsa = WebserviceConsumer.get( '/service/bdin_municipio_san_miguelito_natural/find.json?scriterio=' + \"#{_placa}\").parsed_response\r\n\
+  \t\t#fechaString = resultMunsa[\"response\"][\"fechatras\"]\r\n\
+  \t\tresultMunsa = WebserviceConsumer.get(URI.escape('/service/bdin_municipio_san_miguelito_natural/where.json?scriterio=' + \"#{_placa}\" + '&stipo=' + \"#{stipo}\")).parsed_response\r\n\
+  \t\tfechaString = result[\"response\"][\"fechatras\"]\r\n\
+  \t\t\r\n\
+  \t\tfecha = Date.parse(fechaString)\r\n\
+  \t\ttiempoVigencia = ((Date.today - fecha).to_f / 365).to_i\r\n\
+  \t\tuno = 1\r\n\
+  \t\tif (tiempoVigencia < uno)  \r\n\
+  \t\t\t#placa vigente\r\n\
+  \t\t\tanio = fecha.year\r\n\
+  \t\t\tmes = fecha.month\r\n\
+  \t\t\t#Set\r\n\
+  \t\t\tform_data.set(\"datos_del_vehiculo.datos_del_vehiculo_municipio.fecha_de_expedicion_de_la_placa_actual\",fecha)\r\n\
+  \t\t\tform_data.set(\"datos_del_vehiculo.datos_del_vehiculo_municipio.fecha_mes_renovacion_de_la_placa\",mes)\r\n\
+  \t\t\tform_data.set(\"datos_del_vehiculo.datos_del_vehiculo_municipio.ano_de_la_ultima_placa_vigente\",anio)\r\n\
+  \t\telse\r\n\
+  \t\t\ttransition_errors << \"El vehiculo No tiene placa vigente, favor actualizar la placa en el municipio antes de continuar con este tramite.\"\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  end"
+views: 
+back_step: ""
+next_step: Paso 2 - Detalle de la Solicitud
+position: 1
+ajax_calls: "$( function() {\r\n\
+  \t$(document).ready(function(){\r\n\
+  \t\t$('#field_tipo_de_documento_propietario_tipo_de_documento_tipo_de_documento').change(function() {\r\n\
+  \t\t\tif ($('#field_tipo_de_documento_propietario_tipo_de_documento_tipo_de_documento').val() == \"C\xC3\xA9dula\"){\r\n\
+  \t\t\t\t$(\"#field_tipo_de_documento_propietario_tipo_de_documento_no_documento\").val('');\r\n\
+  \t\t\t}else{\r\n\
+  \t\t\t\t$(\"#field_tipo_de_documento_propietario_tipo_de_documento_no_documento\").val('');\r\n\
+  \t\t\t}  \r\n\
+  \t\t});\r\n\
+  \t});\r\n\
+  });"

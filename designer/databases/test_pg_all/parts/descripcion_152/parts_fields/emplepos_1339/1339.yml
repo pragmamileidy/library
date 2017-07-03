@@ -1,0 +1,30 @@
+--- 
+id: 1339
+part_id: 152
+field_id: 1
+name: Emplepos
+created_at: 2012-05-12 20:34:00 Z
+updated_at: 2017-06-04 00:31:25.967131 Z
+label: Emplepos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indicar la cantidad de mano de obra calificada  a generar.
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 15
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 5dad9139-5c99-4668-a3c7-3c436ed74267
+version: 20170603-203125

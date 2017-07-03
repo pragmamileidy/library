@@ -1,0 +1,19 @@
+--- 
+id: 2415
+section_id: 420
+part_id: 478
+name: fillstep_tramites
+created_at: 2013-01-11 20:58:23 Z
+updated_at: 2013-03-22 19:58:11 Z
+label: "Pasos de Llenado para el Tr\xC3\xA1mite (Fillstep)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2571\":{},\"2572\":{},\"2573\":{},\"2574\":{},\"2575\":{},\"2576\":{},\"2577\":{},\"2578\":{},\"2579\":{},\"2587\":{},\"2580\":{},\"2581\":{},\"2582\":{},\"2583\":{},\"2584\":{},\"2585\":{},\"2586\":{},\"2588\":{},\"2589\":{},\"2590\":{},\"2591\":{},\"2592\":{},\"2593\":{},\"2594\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

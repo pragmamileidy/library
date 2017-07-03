@@ -1,0 +1,424 @@
+--- 
+id: 535
+name: Paso 3 - Regencia y Turnos
+label: Regencia y Turnos
+description: "Informaci\xC3\xB3n del Regente Farmac\xC3\xA9utico, de los horarios de regencia y los turnos\r\n\
+  <br></br>\r\n\
+  \r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 285
+created_at: 2012-06-12 16:20:43 Z
+updated_at: 2017-04-13 19:46:01.039475 Z
+include: "{\"1383\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"926\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"586\":{\"558\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"2456\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2457\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2458\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1384\":{\"679\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"680\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"681\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"682\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"710\":{\"2005\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4086\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"4087\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"711\":{\"2005\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1385\":{\"679\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"680\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"681\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"682\":{\"508\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"509\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3000\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3151\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "# Si se selecciona Horario corrido, las dem\xC3\xA1s opciones deben estar desmarcadas. Igualmente, si se \r\n\
+  # selecciona(n) alguna(s) de las opciones de horario detallado, no puede estar seleccionado el \r\n\
+  # HORARIO \r\n\
+  # CORRIDO. \r\n\
+  # Si existe el conflicto de que est\xC3\xA1 seleccionado el HORARIO CORRIDO y alguna(s) de las otras \r\n\
+  # opciones, desplegar un mensaje explicando el error y pidiendo solventar. NO PERMITIR AVANZAR.\r\n\
+  \r\n\
+  \r\n\
+  _error = nil\r\n\
+  _h2 = \"\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.lunes_a_viernes.hora_de_apertura\")}\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.lunes_a_viernes.hora_de_cierre\")}\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.sabados.hora_de_apertura\")}\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.sabados.hora_de_cierre\")}\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.domingos.hora_de_apertura\")}\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.domingos.hora_de_cierre\")}\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.feriados.hora_de_apertura\")}\"\r\n\
+  _h2 += \"#{form_data.get(\"horario_de_regencia.feriados.hora_de_cierre\") }\"\r\n\
+  #_h3 = \"#{form_data.get(\"horario_de_regencia.trabaja_en_otra_empresa.seleccione\")}\"\r\n\
+  #_h3 += \"#{form_data.get(\"horario_de_regencia.rotacion_de_horario.seleccione\")}\"\r\n\
+  \r\n\
+  #if (_h3.blank? && _h2.blank?)\r\n\
+  if _h2.blank?\r\n    _error = \"Debe indicar los horarios de Regencia.\"\r\n        transition_errors << \"#{_error}\"\r\n\
+  end\r\n\
+  \r\n\
+  if !_h2.blank?\r\n    _error = nil\r\n    _error1 = nil\r\n    ##VALIDACION HORAS DE REGENCIA\r\n    hora1 = form_data.get(\"horario_de_regencia.lunes_a_viernes.hora_de_apertura\")\r\n    hora2 = form_data.get(\"horario_de_regencia.lunes_a_viernes.hora_de_cierre\")\r\n    hora3 = form_data.get(\"horario_de_regencia.sabados.hora_de_apertura\")\r\n    hora4 = form_data.get(\"horario_de_regencia.sabados.hora_de_cierre\")\r\n    hora5 = form_data.get(\"horario_de_regencia.domingos.hora_de_apertura\")\r\n    hora6 = form_data.get(\"horario_de_regencia.domingos.hora_de_cierre\")\r\n    hora7 = form_data.get(\"horario_de_regencia.feriados.hora_de_apertura\")\r\n    hora8 = form_data.get(\"horario_de_regencia.feriados.hora_de_cierre\")\r\n\
+  \r\n    _error = (!hora1.blank? and hora2.blank?)? \"#{_error}\" +\"1\" : _error\r\n    _error = (!hora3.blank? and hora4.blank?)? \"#{_error}\" +\" ,2\" : _error\r\n    _error = (!hora5.blank? and hora6.blank?)? \"#{_error}\" +\" ,3\" : _error\r\n    _error = (!hora7.blank? and hora8.blank?)? \"#{_error}\" +\" ,4\" : _error\r\n    _error1 = (hora1.blank? and !hora2.blank?)? \"#{_error1}\" +\"1\" : _error1\r\n    _error1 = (hora3.blank? and !hora4.blank?)? \"#{_error1}\" +\" ,2\" : _error1\r\n    _error1 = (hora5.blank? and !hora6.blank?)? \"#{_error1}\" +\" ,3\" : _error1\r\n    _error1 = (hora7.blank? and !hora8.blank?)? \"#{_error1}\" +\" ,4\" : _error1\r\n\
+  \r\n    if !_error.nil? || !_error1.nil?\r\n        transition_errors << \"Por favor verifique. El Horario de Regencia debe indicarse correctamente tanto Hora de Apertura como Hora de Cierre\" \r\n    end\r\n\
+  \r\n    if (Time.parse(hora1) > Time.parse(hora2))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Regencia, por favor verifique la hora de apertura del horario de lunes a viernes. No puede ser mayor a la hora de cierre\"\r\n    end if (hora1.present? && hora2.present?)\r\n\
+  \r\n    if (Time.parse(hora3) > Time.parse(hora4))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Regencia, por favor verifique la hora de apertura del horario del S\xC3\xA1bado. No puede ser mayor a la hora de cierre\"\r\n    end if (hora3.present? && hora4.present?)\r\n\
+  \r\n    if (Time.parse(hora5) > Time.parse(hora6))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Regencia, por favor verifique la hora de apertura del horario del Domingo. No puede ser mayor a la hora de cierre\"\r\n    end if (hora5.present? && hora6.present?)\r\n\
+  \r\n    if (Time.parse(hora7) > Time.parse(hora8))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Regencia, por favor verifique la hora de apertura de los d\xC3\xADas Feriados. No puede ser mayor a la hora de cierre\"\r\n    end if (hora7.present? && hora8.present?)\r\n\
+  end\r\n\
+  \r\n\
+  \r\n\
+  #Horario de Supervisi\xC3\xB3n Farmac\xC3\xA9utica\r\n\
+  \r\n\
+  _err = nil\r\n\
+  #_h4 = form_data.get(\"horario_de_supervision_farmaceutica.horario_corrido.seleccione\")\r\n\
+  _h5 = \"\"\r\n\
+  _h5 += \"#{form_data.get(\"horario_de_supervision_farmaceutica.lunes_a_viernes.hora_de_apertura\")}\"\r\n\
+  _h5 +=    \"#{form_data.get(\"horario_de_supervision_farmaceutica.lunes_a_viernes.hora_de_cierre\")}\"\r\n\
+  _h5 +=    \"#{form_data.get(\"horario_de_supervision_farmaceutica.sabados.hora_de_apertura\")}\"\r\n\
+  _h5 +=    \"#{form_data.get(\"horario_de_supervision_farmaceutica.sabados.hora_de_cierre\")}\"\r\n\
+  _h5 +=    \"#{form_data.get(\"horario_de_supervision_farmaceutica.domingos.hora_de_apertura\")}\"\r\n\
+  _h5 +=    \"#{form_data.get(\"horario_de_supervision_farmaceutica.domingos.hora_de_cierre\")}\"\r\n\
+  _h5 +=    \"#{form_data.get(\"horario_de_supervision_farmaceutica.feriados.hora_de_apertura\")}\"\r\n\
+  _h5 +=    \"#{form_data.get(\"horario_de_supervision_farmaceutica.feriados.hora_de_cierre\") }\"\r\n\
+  #_h6 = form_data.get(\"horario_de_supervision_farmaceutica.trabaja_en_otra_empresa.seleccione\")+\r\n\
+  #       form_data.get(\"horario_de_supervision_farmaceutica.rotacion_de_horario.seleccione\")\r\n\
+  \r\n\
+  #if (_h6.blank? && _h5.blank? && _h4.blank?)\r\n\
+  if _h5.blank?\r\n    _err = \"Debe indicar los horarios de la Supervisi\xC3\xB3n Farmac\xC3\xA9utica.\"\r\n        transition_errors << \"#{_err}\"\r\n\
+  end\r\n\
+  \r\n\
+  if !_h5.blank?\r\n    ##VALIDACION HORAS DE SUPERVISION\r\n    hora9 = form_data.get(\"horario_de_supervision_farmaceutica.lunes_a_viernes.hora_de_apertura\")\r\n    hora10 = form_data.get(\"horario_de_supervision_farmaceutica.lunes_a_viernes.hora_de_cierre\")\r\n    hora11 = form_data.get(\"horario_de_supervision_farmaceutica.sabados.hora_de_apertura\")\r\n    hora12 = form_data.get(\"horario_de_supervision_farmaceutica.sabados.hora_de_cierre\")\r\n    hora13 = form_data.get(\"horario_de_supervision_farmaceutica.domingos.hora_de_apertura\")\r\n    hora14 = form_data.get(\"horario_de_supervision_farmaceutica.domingos.hora_de_cierre\")\r\n    hora15 = form_data.get(\"horario_de_supervision_farmaceutica.feriados.hora_de_apertura\")\r\n    hora16 = form_data.get(\"horario_de_supervision_farmaceutica.feriados.hora_de_cierre\")\r\n\
+  \r\n    _errorS = nil\r\n    _errorS1 = nil\r\n\
+  \r\n    _errorS = (!hora9.blank? and hora10.blank?)? \"#{_errorS}\" +\"1\" : _errorS\r\n    _errorS = (!hora11.blank? and hora12.blank?)? \"#{_errorS}\" +\" ,2\" : _errorS\r\n    _errorS = (!hora13.blank? and hora14.blank?)? \"#{_errorS}\" +\" ,3\" : _errorS\r\n    _errorS = (!hora15.blank? and hora16.blank?)? \"#{_errorS}\" +\" ,4\" : _errorS\r\n    _errorS1 = (hora9.blank? and !hora10.blank?)? \"#{_errorS1}\" +\"1\" : _errorS1\r\n    _errorS1 = (hora11.blank? and !hora12.blank?)? \"#{_errorS1}\" +\" ,2\" : _errorS1\r\n    _errorS1 = (hora13.blank? and !hora14.blank?)? \"#{_errorS1}\" +\" ,3\" : _errorS1\r\n    _errorS1 = (hora15.blank? and !hora16.blank?)? \"#{_errorS1}\" +\" ,4\" : _errorS1\r\n\
+  \r\n    if !_errorS.nil? || !_errorS1.nil?\r\n        transition_errors << \"Por favor verifique. El horario de Supervici\xC3\xB3n Farmac\xC3\xA9utica debe indicarse correctamente tanto Hora de Apertura como Hora de Cierre\" \r\n    end\r\n\
+  \r\n    if (Time.parse(hora9) > Time.parse(hora10))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Supervici\xC3\xB3n Farmac\xC3\xA9utica, por favor verifique la hora de apertura del horario de lunes a viernes. No puede ser mayor a la hora de cierre\"\r\n    end if (hora9.present? && hora10.present?)\r\n\
+  \r\n    if (Time.parse(hora11) > Time.parse(hora12))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Supervici\xC3\xB3n Farmac\xC3\xA9utica, por favor verifique la hora de apertura del horario del S\xC3\xA1bado. No puede ser mayor a la hora de cierre\"\r\n    end if (hora11.present? && hora12.present?)\r\n\
+  \r\n    if (Time.parse(hora13) > Time.parse(hora14))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Supervici\xC3\xB3n Farmac\xC3\xA9utica, por favor verifique la hora de apertura del horario del Domingo. No puede ser mayor a la hora de cierre\"\r\n    end if (hora13.present? && hora14.present?)\r\n\
+  \r\n    if (Time.parse(hora15) > Time.parse(hora16))\r\n        transition_errors <<  \"En la Secci\xC3\xB3n Horario de Supervici\xC3\xB3n Farmac\xC3\xA9utica, por favor verifique la hora de apertura de los d\xC3\xADas Feriados. No puede ser mayor a la hora de cierre\"\r\n    end if (hora15.present? && hora16.present?)\r\n\
+  end\r\n\
+  \r\n\
+  # Obtener valor del config\r\n\
+  valor = @config.route(\"Rates-payment-payment-payment\")\r\n\
+  \r\n\
+  if valor == \"Electr\xC3\xB3nico\"\r\n\
+  \r\n        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Electr\xC3\xB3nico\")\r\n\
+  \r\n\
+  end\r\n\
+  if valor == \"Manual\"\r\n\
+  \r\n        form_data.set(\"forma_de_pago.forma_de_pago.indique_la_forma_de_pago\", \"Pago Manual\")\r\n\
+  \r\n\
+  end\r\n\
+  \r\n\
+  # Chantal Valverde. 13-Abr-2017\r\n\
+  #Nombre del regente\r\n\
+  \r\n\
+  primer_nombre = form_data.get(\"datos_del_regente.datos_de_la_persona.primer_nombre\")\r\n\
+  segundo_nombre = form_data.get(\"datos_del_regente.datos_de_la_persona.segundo_nombre\")\r\n\
+  primer_apellido = form_data.get(\"datos_del_regente.datos_de_la_persona.primer_apellido\")\r\n\
+  segundo_apellido = form_data.get(\"datos_del_regente.datos_de_la_persona.segundo_apellido\")\r\n\
+  apellido_casada = form_data.get(\"datos_del_regente.datos_de_la_persona.apellido_de_casada\")\r\n\
+  nombre_completo = \"#{primer_nombre} #{segundo_nombre} #{primer_apellido} #{segundo_apellido} #{apellido_casada}\"\r\n\
+  form_data.set(\"datos_del_regente.datos_de_la_persona.nombre_completo\",nombre_completo)\r\n"
+views: 
+back_step: Paso 2 - Horario de Operacion
+next_step: Paso 4 - Adjuntar Archivos
+position: 3
+ajax_calls: "$( function() {\r\n\
+  \t$(\"#field_datos_del_regente_informacion_de_residencia_localizacion_provincia_lista\").change(function(){\r\n\
+  \t\tvar prov = $(\"#field_datos_del_regente_informacion_de_residencia_localizacion_provincia_lista\").find(':selected').val();\r\n\
+  \t\tdistritos(prov);\r\n\
+  \t});\r\n\
+  \t$(\"#field_datos_del_regente_informacion_de_residencia_localizacion_distrito_lista\").change(function(){\r\n\
+  \t\tvar distrito = $(\"#field_datos_del_regente_informacion_de_residencia_localizacion_distrito_lista\").find(':selected').val();\r\n\
+  \t\tcorregimientos(distrito);\r\n\
+  \t});\r\n\
+  \t});\r\n\
+  \r\n\
+  function distritos(provincia) {\r\n params = {\r\n            \"service_name\":\"ws_panama_distritos/where\",\r\n            \"provincia\":provincia\r\n          }\r\n\
+  $.post(\r\n            \"/proxy_service/get_service\",\r\n            params,\r\n            function(data){\r\n\
+  \t\t\t\tvar dist;\r\n\
+  \t\t\t\tvar html_options = \"\";\r\n\
+  \t\t\t\tfor (x in data){\r\n\
+  \t\t\t\t\tdist = data[x];\r\n\
+  \t\t\t\t\thtml_options = html_options+'<option value=\"'+dist[\"distrito\"] +'\">'+dist[\"distrito\"] +'</option>'\r\n\
+  \t\t\t\t}\t\r\n\
+  \t\t\t\t$(\"#field_datos_del_regente_informacion_de_residencia_localizacion_distrito_lista\").html(html_options);\r\n\
+  \t\t\t\t$(\"#field_datos_del_regente_informacion_de_residencia_localizacion_corregimiento_lista\").html(\"\");\r\n            }\r\n          );\r\n\
+  }\r\n\
+  function corregimientos(distrito) {\r\n params = {\r\n            \"service_name\":\"ws_panama_corregimientos/where\",\r\n            \"distrito\":distrito\r\n          }\r\n\
+  $.post(\r\n            \"/proxy_service/get_service\",\r\n            params,\r\n            function(data){\r\n\
+  \t\t\t\tvar corr;\r\n\
+  \t\t\t\tvar html_options = \"\";\r\n\
+  \t\t\t\tfor (x in data){\r\n\
+  \t\t\t\t\tcorr = data[x];\r\n\
+  \t\t\t\t\thtml_options = html_options+'<option value=\"'+corr[\"corregimiento\"] +'\">'+corr[\"corregimiento\"] +'</option>'\r\n\
+  \t\t\t\t}\t\r\n\
+  \t\t\t\t$(\"#field_datos_del_regente_informacion_de_residencia_localizacion_corregimiento_lista\").html(html_options);\r\n            }\r\n          );\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  // //Comentado LP 09-03-17\r\n\
+  // /////////////////// validacion activar y esconder campos de empresa\r\n\
+  // function esconderCamposEmpresa(){\r\n\
+  //      $(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").attr('disabled',true);\r\n\
+  //      $(document.getElementsByName(\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\")).attr('disabled',true);\r\n\
+  // }\r\n\
+  \r\n\
+  // if ($(\"input[name='[field][horario_de_regencia_trabaja_en_otra_empresa_seleccione]']:checked\").val() != \"S\xC3\xAD\" ){\r\n\
+  //     esconderCamposEmpresa();\r\n\
+  // }\r\n\
+  \r\n\
+  // $(function() {\r\n\
+  //     $( \"input:radio\" ).click(function() {\r\n\
+  //         console.log(\"checkkkk\")\r\n\
+  //         checkHideField(this);\r\n\
+  //     });\r\n\
+  // });\r\n\
+  \r\n\
+  // function checkHideField(obj) {\r\n\
+  //     if (obj.value == \"S\xC3\xAD\" && obj.name==\"[field][horario_de_regencia_trabaja_en_otra_empresa_seleccione]\"){\r\n\
+  //         $(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").attr('disabled',false);\r\n\
+  //         $(document.getElementsByName(\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\")).attr('disabled',false);\r\n\
+  //     }else if (obj.value == \"No\" && obj.name==\"[field][horario_de_regencia_trabaja_en_otra_empresa_seleccione]\"){ \r\n\
+  //         $(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").val(\"\");\r\n\
+  //         $(document.getElementsByName(\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\")).prop('checked', false);\r\n\
+  //         $(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").attr('disabled',true);\r\n\
+  //         $(document.getElementsByName(\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\")).attr('disabled',true);\r\n\
+  //     }\r\n\
+  // }\r\n\
+  \r\n\
+  \r\n\
+  //-------------------------------------------------------------------------------------------\r\n\
+  // LP Para ocultar o mostrar campo dependiendo dependiendo del valor del radio seleccionado 09/03/17\r\n\
+  //-------------------------------------------------------------------------------------------\r\n\
+  $(document).ready(function(){\r\n\
+  \t//ocultar campos pordefecto\r\n\
+  \t$(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").parents(\".field-box\").hide();\r\n\
+  \t$('input[name=\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\"]').parents(\".field-box\").hide();\r\n\
+  \t//Comportamiento al cambiar selecci\xC3\xB3n del radio\r\n\
+  \t$('input[name=\"[field][horario_de_regencia_trabaja_en_otra_empresa_seleccione]\"]').change(function() {  \r\n\
+  \t//Meter el valor seleccionado del radio butonn en una variable\t\r\n\
+  \t\tvar dato = $(\"input[name='[field][horario_de_regencia_trabaja_en_otra_empresa_seleccione]']:checked\").val();     \r\n\
+  \t\tif(dato ==\"S\xC3\xAD\"){\r\n\
+  \t\t\t//mostrar campo especificar\r\n\
+  \t\t\t\t$(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").parents(\".field-box\").show();\r\n\
+  \t\t\t\t$('input[name=\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\"]').parents(\".field-box\").show();\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t} else {\r\n\
+  \t\t\t//Limpiar campo nombre\r\n\
+  \t\t\t$('#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa').val(\"\");\r\n\
+  \t\t\t//ocultar campo nombre\r\n\
+  \t\t\t$(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").parents(\".field-box\").hide();\r\n\
+  \t\t\t//Limpiar tipo empresa\r\n\
+  \t\t\t$(\"input[name='[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]']:checked\").prop('checked', false);\r\n\
+  \t\t\t//ocultar tipo empresa\r\n\
+  \t\t\t$('input[name=\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\"]').parents(\".field-box\").hide();\r\n\
+  \r\n\
+  \t\t} \t\r\n\
+  \t}); \r\n\
+  \t//Mantener cambios entre pasos\r\n\
+  \t\t//Meter el valor seleccionado del radio butonn en una variable\t\r\n\
+  \t\tvar dato = $(\"input[name='[field][horario_de_regencia_trabaja_en_otra_empresa_seleccione]']:checked\").val();     \r\n\
+  \t\tif(dato ==\"S\xC3\xAD\"){\r\n\
+  \t\t\t//mostrar campo especificar\r\n\
+  \t\t\t\t$(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").parents(\".field-box\").show();\r\n\
+  \t\t\t\t$('input[name=\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\"]').parents(\".field-box\").show();\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t} else {\r\n\
+  \t\t\t//Limpiar campo nombre\r\n\
+  \t\t\t$('#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa').val(\"\");\r\n\
+  \t\t\t//ocultar campo nombre\r\n\
+  \t\t\t$(\"#field_horario_de_regencia_trabaja_en_otra_empresa_nombre_de_la_empresa\").parents(\".field-box\").hide();\r\n\
+  \t\t\t//Limpiar tipo empresa\r\n\
+  \t\t\t$(\"input[name='[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]']:checked\").val(\"\");\r\n\
+  \t\t\t//ocultar tipo empresa\r\n\
+  \t\t\t$('input[name=\"[field][horario_de_regencia_trabaja_en_otra_empresa_tipo_de_empresa]\"]').parents(\".field-box\").hide();\r\n\
+  \r\n\
+  \t\t} \t\r\n\
+  });\r\n\
+  \r\n\
+  // Chantal Valverde 12-Abr-2017, modificaci\xC3\xB3n de etiquetas\r\n\
+  \r\n\
+  $( function() {\r\n  $(\".field-label\").each (function(){\r\n      if ($(this).html().trim() == \"N\xC3\xBAmero de Tel\xC3\xA9fono*\") {\r\n          $(this).html(\"N\xC3\xBAmero de tel\xC3\xA9fono Fijo*\");\r\n      }\r\n  });\r\n\
+  });\r\n\
+  \r\n\
+  $( function() {\r\n  $(\".field-label\").each (function(){\r\n      if ($(this).html().trim() == \"N\xC3\xBAmero Celular\") {\r\n          $(this).html(\"N\xC3\xBAmero de tel\xC3\xA9fono M\xC3\xB3vil\");\r\n      }\r\n  });\r\n\
+  });"

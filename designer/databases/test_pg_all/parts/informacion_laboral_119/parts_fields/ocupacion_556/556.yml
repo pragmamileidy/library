@@ -1,0 +1,30 @@
+--- 
+id: 556
+part_id: 119
+field_id: 10
+name: "Ocupaci\xC3\xB3n"
+created_at: 2011-11-22 19:31:35 Z
+updated_at: 2017-06-04 00:23:40.035121 Z
+label: "Ocupaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 150
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0a13d86d-0140-4dc9-88e6-a2bd6afd6706
+version: 20170603-202340

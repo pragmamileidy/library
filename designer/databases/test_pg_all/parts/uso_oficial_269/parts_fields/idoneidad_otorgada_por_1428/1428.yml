@@ -1,0 +1,30 @@
+--- 
+id: 1428
+part_id: 269
+field_id: 10
+name: Idoneidad Otorgada Por
+created_at: 2012-05-26 15:01:27 Z
+updated_at: 2017-06-04 00:24:05.549807 Z
+label: "Idoneidad Otorgada por la Junta T\xC3\xA9cnica de"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d7b5924c-08c5-4b20-af4a-983e721f8038
+version: 20170603-202405

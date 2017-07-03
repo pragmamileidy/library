@@ -1,0 +1,30 @@
+--- 
+id: 647
+name: Paso 1 - Descuentos
+label: "Certificaci\xC3\xB3n de Descuentos"
+description: "Favor indique si est\xC3\xA1 de acuerdo o no con los descuentos indicados en la certificaci\xC3\xB3n de descuento.\r\n\
+  \r\n\
+  En caso de no estar de acuerdo favor ingrese las observaciones en el campo de observaci\xC3\xB3n y seleccione la opci\xC3\xB3n de \"NO\" para enviar sus comentarios al personal de la Controlar\xC3\xADa  General de la Rep\xC3\xBAblica para su revisi\xC3\xB3n."
+fill_step_id: 337
+created_at: 2012-06-21 05:07:21 Z
+updated_at: 2014-03-17 18:20:40 Z
+include: "{\"1619\":{\"1995\":{\"2056\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2021\":{\"2056\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2680\":{\"2790\":{\"3209\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2895\":{\"2810\":{\"3264\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1515\":{\"1710\":{\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1521\":{\"1710\":{\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1891\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  unless form_data.get("descuentos.automatico.fieldgrid").blank?
+   json = ActiveSupport::JSON.decode(form_data.get("descuentos.automatico.fieldgrid"))
+   json["config"]["readonly"] = "true"
+   _dataAuto = ActiveSupport::JSON.encode(json)
+   form_data.set("descuentos.automatico.fieldgrid", _dataAuto)
+  end
+on_transition: "_obs = form_data.get(\"aprobacion_del_ciudadano.datos_del_funcionario_generico.observaciones\")\r\n\
+  _aprob = form_data.get(\"aprobacion_del_ciudadano.datos_del_funcionario_generico.aprobacion\")\r\n\
+  if (_aprob ==\"NO\" and _obs.blank?) \r\n   transition_errors << \"Debe indicar el motivo de su desaprobaci\xC3\xB3n en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

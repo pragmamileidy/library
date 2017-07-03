@@ -1,0 +1,19 @@
+--- 
+id: 11
+section_id: 6
+part_id: 13
+name: Mensaje_Fallido
+created_at: 2016-10-06 14:49:52.736207 Z
+updated_at: 2017-02-23 20:33:32.638176 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: form_data.get("variables_pago_generico.variables_pago_generico.estatus")== "error"
+manage_as_confidential: false
+include: 
+hint: <strong style="color:#088A08">Para procesar su pago, por favor haga clik en el siguiente enlace <br><br><div id="section-plink"> <A HREF="http://www.w3schools.com/" id="fallido">Pagar Tramite</A></div><br></strong>
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

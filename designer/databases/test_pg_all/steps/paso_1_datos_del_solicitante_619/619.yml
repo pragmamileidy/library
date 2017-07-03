@@ -1,0 +1,47 @@
+--- 
+id: 619
+name: Paso 1 - Datos del Solicitante
+label: Datos del Solicitante
+description: "Datos de la persona que realiza la solicitud del tr\xC3\xA1mite"
+fill_step_id: 318
+created_at: 2012-06-18 15:36:37 Z
+updated_at: 2013-05-14 21:14:23 Z
+include: "{\"1495\":{\"580\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"528\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1496\":{\"1941\":{\"1323\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,next_steps,close,close_and_save,save
+on_becoming: "#Avargas\r\n\
+  #Datos de la secci\xC3\xB3n del solicitante\r\n\
+  #Invocaci\xC3\xB3n al servicio\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \t#inicializar datos del solicitante\r\n\
+  \tform_data.set(\"informacion_de_persona_natural.datos_de_la_persona.primer_nombre\",@owner[\"first_name\"])\r\n\
+  \tform_data.set(\"informacion_de_persona_natural.datos_de_la_persona.primer_apellido\",@owner[\"second_name\"])\r\n        form_data.set(\"informacion_de_persona_natural.datos_de_la_persona.cedula\", @owner[\"national_id\"])\r\n\
+  \r\n        form_data.set(\"informacion_de_persona_natural.informacion_de_residencia_localizacion.numero_de_telefono\", @owner[\"fixed_number\"])\r\n        form_data.set(\"informacion_de_persona_natural.informacion_de_residencia_localizacion.correo_electronico\", @owner[\"email\"])\r\n"
+on_transition: "_error = nil\r\n\
+  _cedula= form_data.get(\"detalle_de_la_solicitud.datos_del_instructor.cedula\")\r\n\
+  \r\n\
+  #Obtener datos del instructor\r\n\
+  result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{_cedula}\").parsed_response\r\n\
+  _instructor = result[\"response\"]\r\n\
+  if _instructor.nil?\r\n\
+  \t_error = \"#{_error}\" + \"Los datos del instructor no fueron encontrados. Favor verifique.\"\r\n\
+  end\r\n\
+  \r\n\
+  if !_error.nil?\t\r\n\
+  \ttransition_errors<< \"#{_error}\"\r\n\
+  else\r\n\
+  \r\n    # Asignaci\xC3\xB3n de datos del instructor\r\n\
+  \r\n\
+  \r\n\
+  form_data.set(\"detalle_de_la_solicitud.datos_del_instructor.cedula\",_instructor[\"cedula\"])\r\n\
+  form_data.set(\"detalle_de_la_solicitud.datos_del_instructor.nombre_completo\",_instructor[\"primerNombre\"])\r\n\
+  \r\n\
+  end\r\n"
+views: 
+back_step: ""
+next_step: Paso 2 - Detalle de la Solicitud
+position: 1
+ajax_calls: 

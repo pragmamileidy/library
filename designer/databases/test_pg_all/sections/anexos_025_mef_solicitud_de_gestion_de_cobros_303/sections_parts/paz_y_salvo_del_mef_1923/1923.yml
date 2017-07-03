@@ -1,0 +1,19 @@
+--- 
+id: 1923
+section_id: 303
+part_id: 38
+name: Paz y Salvo del MEF
+created_at: 2012-06-14 20:26:26 Z
+updated_at: 2012-06-14 20:26:26 Z
+label: Paz y Salvo del MEF
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 4

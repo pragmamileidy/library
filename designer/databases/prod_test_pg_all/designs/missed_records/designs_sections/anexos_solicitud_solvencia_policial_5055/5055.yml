@@ -1,0 +1,16 @@
+--- 
+id: 5055
+design_id: 278
+section_id: 586
+name: Anexos - Solicitud Solvencia Policial
+created_at: 2016-02-22 20:42:07.461149 Z
+updated_at: 2016-03-27 00:09:21.196899 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3611\":{\"210\":{\"required\":\"required\"}},\"3612\":{\"210\":{\"required\":\"required\"}},\"3613\":{\"210\":{\"required\":\"required\"}},\"3614\":{\"210\":{\"required\":\"required\"}},\"3615\":{\"210\":{\"required\":\"required\"}},\"3616\":{\"210\":{\"required\":\"required\"}},\"3617\":{\"210\":{\"required\":\"required\"}},\"3618\":{\"3640\":{\"required\":\"required\"},\"3641\":{\"required\":\"required\"},\"3642\":{\"required\":\"required\"},\"3652\":{\"required\":\"required\"},\"3710\":{\"required\":\"required\"},\"3709\":{\"required\":\"required\"},\"3711\":{\"required\":\"required\"},\"3713\":{\"required\":\"required\"},\"3718\":{\"required\":\"required\"},\"3719\":{\"required\":\"unrequired\"},\"3942\":{\"required\":\"unrequired\"},\"3943\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 11

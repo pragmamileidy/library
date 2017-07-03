@@ -1,0 +1,30 @@
+--- 
+id: 3913
+part_id: 737
+field_id: 31
+name: "C\xC3\xA9dula de Identidad "
+created_at: 2015-02-20 16:34:30 Z
+updated_at: 2017-06-04 00:25:21.876556 Z
+label: "C\xC3\xA9dula de Identidad "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3bab0257-3947-4c3b-ab7f-5a138736c37b
+version: 20170603-202521

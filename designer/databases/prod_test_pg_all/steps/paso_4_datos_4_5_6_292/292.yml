@@ -1,0 +1,23 @@
+--- 
+id: 292
+name: "Paso 4  - datos 4 5 6 "
+label: "Label de Paso 4  - datos 4 5 6 "
+description: "Descripci\xC3\xB3n de Paso 4  - datos 4 5 6 \r\n\
+  Prueba Parte 4 - Parte Horizontal Campos Horizontal B 1 con todos los campos disabled\r\n\
+  Prueba Parte 4 - Parte Horizontal Campos Horizontales A 0 solo con los campos 1, 2  y 3  el 4 y 5 no seleccionados\r\n\
+  \r\n\
+  Con opcionales de back y next pero son marcar los pasos"
+fill_step_id: 168
+created_at: 2012-05-04 22:42:10 Z
+updated_at: 2012-05-19 20:48:33 Z
+include: "{\"926\":{\"644\":{\"707\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"706\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"704\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"705\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"703\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"645\":{\"723\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"724\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"725\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"646\":{\"723\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"724\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"725\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"927\":{\"647\":{\"707\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"706\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"704\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"705\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"703\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"649\":{\"723\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"724\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"725\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"648\":{\"723\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"724\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"725\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"928\":{\"650\":{\"746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"745\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"747\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"651\":{\"750\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"751\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"752\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"652\":{\"753\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"754\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"756\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"757\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 3 - datos 2
+next_step: ""
+position: 3
+ajax_calls: 

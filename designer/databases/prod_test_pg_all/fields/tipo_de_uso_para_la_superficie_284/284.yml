@@ -1,0 +1,44 @@
+--- 
+id: 284
+name: Tipo de Uso para la Superficie
+description: Tipo de Uso para la Superficie
+version: 
+status: Draft
+label: Tipo de Uso para la Superficie
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-05-12 00:56:06 Z
+updated_at: 2014-03-07 23:33:17 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _lista = ""
+  _cod = ""
+  result = WebserviceConsumer.get('/service/ws_tipouso_servicio1/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+   _valores.each {|servicio1|
+    _cod = _cod + "," + servicio1["cod"]
+    _lista = _lista + "," + servicio1["nombres1"]}
+   @values_of_list = _lista.split(",")
+    @keys_of_list = _cod.split(",")
+  else
+   @values_of_list = [""]
+   @keys_of_list =  [""]
+  end
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 651
+part_id: 139
+field_id: 17
+name: "Forma Farmac\xC3\xA9utica"
+created_at: 2012-03-08 15:03:02 Z
+updated_at: 2017-06-04 00:21:23.205137 Z
+label: "Forma Farmac\xC3\xA9utica"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "La forma farmac\xC3\xA9utica del producto"
+help: "La forma farmac\xC3\xA9utica del producto"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: efe47f56-d33d-4b4f-b004-61c5b8435ba6
+version: 20170603-202123

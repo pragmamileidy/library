@@ -1,0 +1,477 @@
+--- 
+id: 3223
+name: Paso 3 - Datos de la Finca
+label: Datos del Proyecto y Datos de la Finca
+description: "<br/>Por favor, ingrese los Datos del Proyecto y verifique los Datos de la Finca. Solo s\xC3\xAD es necesario realice modificaciones.\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 1725
+created_at: 2016-02-10 13:33:53.378053 Z
+updated_at: 2016-02-10 13:33:53.489556 Z
+include: "{\"5026\":{\"2197\":{\"2393\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2394\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2396\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2397\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3450\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2398\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2400\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2401\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"5027\":{\"2485\":{\"3919\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3979\":{\"views\":\"only_view\",\"enabled\":\"enabled\"},\"3102\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3103\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"367\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"366\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2089\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2090\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3375\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2486\":{\"3104\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3105\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3106\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2488\":{\"2845\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2846\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2847\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2848\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2792\":{\"3209\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2791\":{\"3209\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "\r\n\
+  \r\n\
+  \r\n    (1..10).each do |x|\r\n #////////////////////////////////////// FINCA ///////////////////////////////////////////\r\n #ESTA INVOCACION VIENE DEL SERVICIO REGISTRO PUBLICO\r\n nro_finca = form_data.get(\"datos_de_la_finca_instance_#{x}.datos_de_finca.numero_de_finca\")\r\n cod_ubi = form_data.get(\"datos_de_la_finca_instance_#{x}.datos_de_finca.cod_ubicacion\")\r\n tipo_p = form_data.get(\"datos_de_la_finca_instance_#{x}.datos_de_finca.tipo_propiedad\")\r\n tipo_nro = form_data.get(\"datos_de_la_finca_instance_#{x}.datos_de_finca.numero_de_registro\")\r\n next if (nro_finca.blank? || cod_ubi.blank? || tipo_p.blank?)\r\n\
+  \r\n  # Carga de tabla de Propietarios de finca\r\n  ####propietarios = WebserviceConsumer.get( '/service/bdin_propietarios_finca/records.json').parsed_response\r\n    if tipo_nro == \"N\xC3\xBAmero de Finca\"\r\n    propietarios = WebserviceConsumer.get(URI.escape('/service/bdin_propietarios_finca/where.json?finca=' + \"#{nro_finca}\" + '&codUbicacion=' + \"#{cod_ubi}\" + '&tipoPropiedad=' + \"#{tipo_p}\")).parsed_response\r\n    else\r\n    propietarios = WebserviceConsumer.get(URI.escape('/service/bdin_propietarios_finca/where.json?cedula_catastral=' + \"#{nro_finca}\" + '&codUbicacion=' + \"#{cod_ubi}\" + '&tipoPropiedad=' + \"#{tipo_p}\")).parsed_response    \r\n    end\r\n  propietarios = propietarios[\"response\"]\r\n  \r\n  _dataPropietarios = { 'config' => {\r\n     \"readonly\" => \"true\",\r\n    },\r\n    'data' => propietarios,\r\n    'citizen_selection' => [],\r\n    'agent_selection' => []\r\n  }\r\n  \r\n  _dataPropietarios = ActiveSupport::JSON.encode(_dataPropietarios)\r\n  form_data.set(\"datos_de_la_finca_instance_#{x}.propietarios.fieldgrid\", _dataPropietarios)\r\n  \r\n  \r\n  \r\n  # Carga de tabla de Gravamenes de finca\r\n  ####gravamenes = WebserviceConsumer.get( '/service/bdin_gravamenes_finca/records.json').parsed_response\r\n    if tipo_nro == \"N\xC3\xBAmero de Finca\"\r\n      gravamenes = WebserviceConsumer.get(URI.escape('/service/bdin_gravamenes_finca/where.json?finca=' + \"#{nro_finca}\" + '&codUbicacion=' + \"#{cod_ubi}\" + '&tipoPropiedad=' + \"#{tipo_p}\")).parsed_response\r\n    else\r\n      gravamenes = WebserviceConsumer.get(URI.escape('/service/bdin_gravamenes_finca/where.json?cedula_catastral=' + \"#{nro_finca}\" + '&codUbicacion=' + \"#{cod_ubi}\" + '&tipoPropiedad=' + \"#{tipo_p}\")).parsed_response    \r\n    end\r\n  gravamenes = gravamenes[\"response\"]\r\n  \r\n  _dataGrav = { 'config' => {\r\n     \"readonly\" => \"true\",\r\n    },\r\n    'data' => gravamenes,\r\n    'citizen_selection' => [],\r\n    'agent_selection' => []\r\n  }\r\n  \r\n  _dataGrav = ActiveSupport::JSON.encode(_dataGrav)\r\n  form_data.set(\"datos_de_la_finca_instance_#{x}.gravamenes.fieldgrid\", _dataGrav)\r\n\
+  end\r\n"
+on_transition: |-
+  #Validar que ingrese los datos generales de la solicitud si es necesario y esta vacio
+  #_valor_estimado_de_la_obra = form_data.get("datos_generales_del_proyecto.datos_generales_del_proyecto.valor_estimado_de_la_obra")
+  #_valor_aproximado_de_las_instalaciones_de_seguridad = form_data.get("datos_generales_del_proyecto.datos_generales_del_proyecto.valor_aproximado_de_las_instalaciones_de_seguridad")
+  
+  # if 	(_valor_estimado_de_la_obra.to_f > 100000.00)
+  #	if _valor_aproximado_de_las_instalaciones_de_seguridad.blank?
+  #		transition_errors << "Debe introducir el Valor aproximado de las instalaciones de seguridad."
+  #	end
+  #end
+  
+  ####Para el print
+  (1..5).each do |x|
+      instance_x = "_instance_#{x}"
+  	_pirmerNombre = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.primer_nombre")
+  	_segundoNombre = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.segundo_nombre")
+  	_primerApellido = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.primer_apellido")
+  	_segundoApellido = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.segundo_apellido")
+  	_apellidoCasada = form_data.get("datos_del_co_participante#{instance_x}.nombre_completo.apellido_de_casada")
+  
+  
+  nombre_completo= "#{_pirmerNombre} "+"#{_segundoNombre} "+"#{_primerApellido} "+"#{_segundoApellido} "+"#{_apellidoCasada}"
+  form_data.set("datos_del_co_participante#{instance_x}.nombre_completo.nombre_completo", nombre_completo)
+  end
+views: 
+back_step: Paso 2 - Datos del Solicitante y Co-Participantes
+next_step: Paso 4 - Datos del Proyecto
+position: 3
+ajax_calls: "///ocultar o mostrar campo otro dependiendo de la selecci\xC3\xB3n\r\n\
+  \t$(document).ready(function(){\r\n\
+  \t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").parent().parent().hide();\r\n\
+  \t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_uso_de_la_obra\").change(function(){\r\n\
+  \t\tdato= $(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_uso_de_la_obra\").find(':selected').val();\r\n\
+  \t\t\tif(dato != 'Otros'){\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").val('');\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").parent().parent().hide();\r\n\
+  \t\t\t}\r\n\
+  \t\t\telse{\r\n  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").val('');\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").parent().parent().show();\r\n\
+  \t\t\t}\r\n\
+  \t\t});\r\n\
+  \t\tdato= $(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_uso_de_la_obra\").find(':selected').val();\r\n\
+  \t\tif(dato != 'Otros'){\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").val('');\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").parent().parent().hide();\r\n\
+  \t\t\t}\r\n\
+  \t\t\telse{\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_otros\").parent().parent().show();\r\n\
+  \t\t\t}\r\n\
+  \t  });\r\n\
+  \r\n\
+  \r\n\
+  \t\t\t$(document).ready(function(){\r\n\
+  \t\t\t\r\n\
+  \t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_valor_estimado_de_la_obra\").keyup(function(event) {\r\n\
+  \t\t\t\tif ( event.which == 13 ) {\r\n\
+  \t\t\t\t\tevent.preventDefault();\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\testimado_de_la_obra = $(this).val();\r\n\
+  \t\t\t\tnewDato1= \"\";\r\n\
+  \t\t\t\tfor (var i=0;i<estimado_de_la_obra.length;i++){\r\n\
+  \t\t\t\t\tif(estimado_de_la_obra[i]>=0 && estimado_de_la_obra[i]<=9){\r\n\
+  \t\t\t\t\t\tif((estimado_de_la_obra.length-2)==i)\r\n\
+  \t\t\t\t\t\t\tnewDato1 =newDato1 +\".\"\r\n\
+  \t\t\t\t\t\tnewDato1 = newDato1+estimado_de_la_obra[i];\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_valor_estimado_de_la_obra\").val(newDato1);\r\n\
+  \t\t\t\t\r\n\
+  \t\t\r\n\
+  \t\t\t});\r\n\
+  \t\t});\r\n\
+  \t\t\r\n\
+  \t\t\r\n\
+  \t\t\t\r\n\
+  \t\t$(document).ready(function(){\r\n\
+  \t\t\t\r\n\
+  \t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_valor_aproximado_de_las_instalaciones_de_seguridad\").keyup(function(event) {\r\n\
+  \t\t\t\tif ( event.which == 13 ) {\r\n\
+  \t\t\t\t\tevent.preventDefault();\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\tinstalaciones_de_seguridad = $(this).val();\r\n\
+  \t\t\t\tnewDato2= \"\";\r\n\
+  \t\t\t\tfor (var i=0;i<instalaciones_de_seguridad.length;i++){\r\n\
+  \t\t\t\t\tif(instalaciones_de_seguridad[i]>=0 && instalaciones_de_seguridad[i]<=9){\r\n\
+  \t\t\t\t\t\tif((instalaciones_de_seguridad.length-2)==i)\r\n\
+  \t\t\t\t\t\t\tnewDato2 =newDato2 +\".\"\r\n\
+  \t\t\t\t\t\tnewDato2 = newDato2+instalaciones_de_seguridad[i];\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t}\r\n\
+  \t\t\t\t$(\"#field_datos_generales_del_proyecto_datos_generales_del_proyecto_valor_aproximado_de_las_instalaciones_de_seguridad\").val(newDato2);\r\n\
+  \t\t\r\n\
+  \t\t\t});\r\n\
+  \t\t});\r\n\
+  \r\n\
+  $(function() {\r\n\
+  $('#id_del_combo_distritos').html(\"\");\r\n\
+  $('#id_del_combo_corregimientos').html(\"\");\r\n\
+  })\r\n\
+  \r\n\
+  \r\n\
+  $.each( $('[id*=field_datos_de_la_finca_instance_]'), function(index, campo) {\r\n\
+  \r\n\
+  \t//############### LIMPIAR COMBOS ###############\r\n\
+  \tif ($(campo).attr('id').match(/_datos_de_ubicacion_de_la_finca_distrito_lista/)) { \r\n\
+  \t\t//alert(this.id);\r\n\
+  \t\tif ($(campo).val() == ''){\r\n\
+  \t\t$(campo).html(\"\");}\r\n\
+  \t}\r\n\
+  \tif ($(campo).attr('id').match(/_datos_de_ubicacion_de_la_finca_corregimiento_lista/)) { \r\n\
+  \t\t//alert(this.id);\r\n\
+  \t\tif ($(campo).val() == ''){\r\n\
+  \t\t$(campo).html(\"\");}\r\n\
+  \t}\t\r\n\
+  \t//############### LLAMANDO A LAS FUNCIONES DE CARGA PARA DISTRITO Y CORREGIMIENTO###############\r\n\
+  \tif ($(campo).attr('id').match(/datos_de_ubicacion_de_la_finca_provincia_lista/)) {\r\n\
+  \t\t$(campo).attr('onchange', 'distritos(this.value,this.id);')\r\n\
+  \t}\r\n\
+  \r\n\
+  \t//############### CARGAR MODELOS SEG\xC3\x9AN SELECCI\xC3\x93N DEL MARCA DE EQUIPO ###############\r\n\
+  \tif ($(campo).attr('id').match(/datos_de_ubicacion_de_la_finca_distrito_lista/)) {\r\n\
+  \t\t$(campo).attr('onchange', 'corregimientos(this.value,this.id);')\r\n\
+  \t}\r\n\
+  \r\n\
+  });\r\n\
+  //############### M\xC3\x89TODO PARA CARGAR DISTRITOS SEGUN LA PROVINCIA SELECCIONADA ############### \r\n\
+  function distritos(provincia,idmarca) {\r\n\
+  \t//alert(idmarca);\r\n\
+  \tvar pos = idmarca.match(/[\\d][\\d]/);\r\n\
+  \tif (pos == null) {\r\n\
+  \t  pos = idmarca.match(/[\\d]/);\r\n\
+  \t }\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_datos_de_la_finca_instance_\";\r\n\
+  \r\n\
+  \r\n\
+  \t \tparams = {\r\n\
+  \t\t\t\"service_name\":\"ws_panama_distritos/where\",\r\n\
+  \t\t\t\"provincia\":provincia\r\n\
+  \t\t}\r\n\
+  \t\tvar mod2 = \"_datos_de_ubicacion_de_la_finca_distrito_lista\";\r\n \r\n\
+  \r\n\
+  \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \t//\talert(lista_modelo);\r\n\
+  \t$.post(\r\n\
+  \t\t\"/proxy_service/get_service\",\r\n\
+  \t\tparams,\r\n\
+  \t\tfunction(data){\t\t\t\r\n\
+  \t\t\tvar model;\r\n\
+  \t\t\tvar html_options = html_options+'<option value=\"\"></option>';\r\n\
+  \t\t\tfor (x in data){\r\n\
+  \t\t\t\tmodel = data[x];\r\n\
+  \t\t\t\thtml_options = html_options+'<option value=\"'+model[\"distrito\"] +'\">'+model[\"distrito\"] +'</option>';\r\n\
+  \t\t\t}\r\n\
+  \t\t\t$(lista_modelo).html(html_options);\r\n\
+  \t\t}\r\n\
+  \t);\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  //############### M\xC3\x89TODO PARA CARGAR CORREGIMIENTOS SEGUN DISTRITO SELECCIONADO############### \r\n\
+  function corregimientos(distrito,idmarca) {\r\n\
+  \t\r\n\
+  \tvar pos = idmarca.match(/[\\d][\\d]/);\r\n\
+  \tif (pos == null) {\r\n\
+  \t  pos = idmarca.match(/[\\d]/);\r\n\
+  \t }\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_datos_de_la_finca_instance_\";\r\n\
+  \r\n\
+  \r\n\
+  \t \tparams = {\r\n\
+  \t\t\t\"service_name\":\"ws_panama_corregimientos/where\",\r\n\
+  \t\t\t\"distrito\":distrito\r\n\
+  \t\t}\r\n\
+  \t\tvar mod2 = \"_datos_de_ubicacion_de_la_finca_corregimiento_lista\";\r\n \r\n\
+  \r\n\
+  \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar lista_modelo = mod3.concat(mod2);\r\n\
+  \t\t//alert(lista_modelo);\r\n\
+  \t$.post(\r\n\
+  \t\t\"/proxy_service/get_service\",\r\n\
+  \t\tparams,\r\n\
+  \t\tfunction(data){\t\t\t\r\n\
+  \t\t\tvar model;\r\n\
+  \t\t\tvar html_options = html_options+'<option value=\"\"></option>';\r\n\
+  \t\t\tfor (x in data){\r\n\
+  \t\t\t\tmodel = data[x];\r\n\
+  \t\t\t\thtml_options = html_options+'<option value=\"'+model[\"corregimiento\"] +'\">'+model[\"corregimiento\"] +'</option>';\r\n\
+  \t\t\t}\r\n\
+  \t\t\t$(lista_modelo).html(html_options);\r\n\
+  \t\t}\r\n\
+  \t);\r\n\
+  }\r\n\
+  \r\n\
+  $(document).ready(function(){\r\n\
+  $.each( $('[id*=field_datos_de_la_finca_]'), function(index, campo) {\r\n\
+  \t\t\r\n\
+  \tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \tif (pos == null){\r\n\
+  \t  pos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t}\r\n\
+  \t//alert(pos);\r\n\
+  \tvar mod1 = \"#field_datos_de_la_finca\";\r\n\
+  \tvar mod2 = \"_datos_de_finca_numero_de_finca\";\r\n \tvar mod3 = mod1.concat(pos);\r\n\
+  \tvar dato = mod3.concat(mod2);\r\n\
+  \r\n\
+  \t\t//alert(dato);\r\n  $(dato).parents(\".section-box\").next().hide()\r\n  });\r\n \r\n  \r\n\
+  }); \r\n\
+  \r\n\
+  ////////////////LP Ocultar Secciones vac\xC3\xADas\r\n\
+  \t$(document).ready(function(){\t\t\t\r\n\
+  \t\t\t$.each( $('[id*=datos_de_la_finca_]'), function(index, campo) {\r\n\
+  \t\t\t\tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \t\t\t\tif (pos == null){\r\n\
+  \t\t\t\t\tpos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t\t\t\t}\t\r\n\
+  \t\t\t\tvar productor = \"#field_datos_de_la_finca\";\r\n\
+  \t\t\t\tvar mod1 = productor.concat(pos)\r\n\
+  \t\t\t\tvar docs = \"_datos_de_finca_numero_de_plano_catastral\";\r\n\
+  \t\t\t\tvar documento_d = mod1.concat(docs);\r\n\
+  \t\t\t\t\t\tif($(documento_d).val()== ''){\r\n\
+  \t\t\t\t\t\t\t//$(documento_d).parents(\".section-box\").hide()\r\n\
+  \t\t\t\t\t\t}\r\n\
+  \t\t\t});\r\n\
+  \t});\r\n\
+  \r\n\
+  //////////////////Habilitar o deshabilitar campos si est\xC3\xA1n llenos o vac\xC3\xADos FINCA\r\n\
+  tarea= $('#field_datos_generales_del_proyecto_datos_generales_del_proyecto_oculto').val();\r\n\
+  if(tarea == \"true\"){\r\n\
+  \t$(document).ready(function(){\t\t\t\r\n\
+  \t\t\t$.each( $('[id*=datos_de_la_finca_]'), function(index, campo) {\r\n\
+  \t\t\t\tvar pos = (this.id).match(/_instance_[\\d][\\d]/);\r\n\
+  \t\t\t\tif (pos == null){\r\n\
+  \t\t\t\t\tpos = (this.id).match(/_instance_[\\d]/);\r\n\
+  \t\t\t\t}\t\r\n\
+  \t\t\t\tvar productor = \"#field_datos_de_la_finca\";\r\n\
+  \t\t\t\tvar mod1 = productor.concat(pos)\r\n\
+  \t\t\t\tvar docs = \"_datos_de_finca_folio\";\r\n\
+  \t\t\t\tvar docs1 = \"_datos_de_finca_tomo\";\r\n\
+  \t\t\t\tvar docs2 = \"_datos_de_finca_numero_de_plano_catastral\";\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t\tvar folio = mod1.concat(docs);\r\n\
+  \t\t\t\tvar tomo = mod1.concat(docs1);\r\n\
+  \t\t\t\tvar catastro = mod1.concat(docs2);\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t\t\t\t//if($(folio).val()== ''){\r\n\
+  \t\t\t\t\t\t\t//$(folio).removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t//}else{ \r\n\
+  \t\t\t\t\t\t\t//$(folio).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t//}\r\n\
+  \t\t\t\t\t\t//if($(tomo).val()== ''){\r\n\
+  \t\t\t\t\t\t//\t$(tomo).removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t//}else{ \r\n\
+  \t\t\t\t\t\t//\t$(tomo).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t//}\r\n\
+  \t\t\t\t\t\t//if($(catastro).val()== ''){\r\n\
+  \t\t\t\t\t\t//\t$(catastro).removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t//}else{ \r\n\
+  \t\t\t\t\t\t//\t$(catastro).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t\t\t\t//}\r\n\
+  \t\t\t});\r\n\
+  \t});\r\n\
+  }\t\t"

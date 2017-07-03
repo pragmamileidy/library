@@ -1,0 +1,21 @@
+--- 
+id: 73
+name: "Anexos Certificaci\xC3\xB3n de Descuento"
+description: "Secci\xC3\xB3n que contiene los anexos de los requisitos para el tr\xC3\xA1mite de Certificaci\xC3\xB3n de Descuentos, los requisitos son:\r\n\
+  * Estampillas nacionales por valor de - [ Costo: B/. 4.75 ] \r\n\
+  * Juego de copias de talonarios de cheques del per\xC3\xADodo solicitado, si los tiene\r\n\
+  * Requisitos B\xC3\xA1sicos (funcionario del Gobierno Central)\r\n\
+  * Requisitos B\xC3\xA1sicos (jubilado del Gobierno Central)"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-15 19:30:42 Z
+updated_at: 2011-11-15 19:45:06 Z
+status: Draft
+label: "Anexos y Requisitos para el tr\xC3\xA1mite de Certificaci\xC3\xB3n de Descuento"
+hint: ""
+serial: 

@@ -1,0 +1,16 @@
+--- 
+id: 2338
+design_id: 173
+section_id: 383
+name: "Anexos 139 - Solicitud de Aprobaci\xC3\xB3n y Registro de Planos de Construcci\xC3\xB3n"
+created_at: 2013-01-23 13:43:01 Z
+updated_at: 2013-03-11 20:07:50 Z
+label: Archivos Adjuntos
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2212\":{\"210\":{\"required\":\"required\"}},\"2215\":{\"210\":{\"required\":\"required\"}},\"2214\":{\"210\":{\"required\":\"required\"}},\"2213\":{\"210\":{\"required\":\"required\"}},\"2216\":{\"210\":{\"required\":\"unrequired\"}},\"2209\":{\"210\":{\"required\":\"required\"}},\"2217\":{\"210\":{\"required\":\"unrequired\"}},\"2218\":{\"210\":{\"required\":\"required\"}},\"2219\":{\"210\":{\"required\":\"required\"}},\"2220\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 8

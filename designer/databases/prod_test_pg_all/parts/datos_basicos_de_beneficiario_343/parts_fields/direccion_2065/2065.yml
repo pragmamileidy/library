@@ -1,0 +1,30 @@
+--- 
+id: 2065
+part_id: 343
+field_id: 17
+name: "Direcci\xC3\xB3n"
+created_at: 2012-07-18 20:06:36 Z
+updated_at: 2017-06-04 00:30:50.267554 Z
+label: "Direcci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fe821a09-bf92-40b5-b14c-d36995806a55
+version: 20170603-203050

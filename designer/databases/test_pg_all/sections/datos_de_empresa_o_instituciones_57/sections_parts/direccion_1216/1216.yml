@@ -1,0 +1,19 @@
+--- 
+id: 1216
+section_id: 57
+part_id: 157
+name: "Direcci\xC3\xB3n"
+created_at: 2012-04-27 15:21:12 Z
+updated_at: 2012-04-27 15:21:12 Z
+label: "Direcci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Indique la Direcci\xC3\xB3n de la Empresa o Instituci\xC3\xB3n donde labor\xC3\xB3 anteriormente"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 13

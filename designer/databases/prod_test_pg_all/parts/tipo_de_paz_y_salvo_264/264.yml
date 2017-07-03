@@ -1,0 +1,17 @@
+--- 
+id: 264
+name: Tipo de Paz y Salvo
+description: Tipo de Paz y Salvo
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-22 16:33:42 Z
+updated_at: 2012-05-22 16:33:42 Z
+label: Tipo de Paz y Salvo
+hint: Seleccione el tipo de Paz y Salvo
+view_class: horizontal
+serial: 

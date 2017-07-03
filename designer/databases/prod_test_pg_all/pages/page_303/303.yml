@@ -1,0 +1,57 @@
+--- 
+id: 303
+position: 11
+selector: "{\"2811\":{\"656\":{\"758\":{},\"759\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n\
+  \r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xEF\xBF\xBDl es el formato b\xEF\xBF\xBDsico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xEF\xBF\xBDn no se han definido */\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n    position:absolute;\r\n    top:96px;\r\n    left:602px;\r\n    width:169px;\r\n    overflow:hidden;\r\n    height: 15px;\r\n    font-size: 11px;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n    position:absolute;\r\n    top:80px;\r\n    left:601px;\r\n    width:169px;\r\n    overflow:hidden;\r\n    height: 15px;\r\n    font-size: 11px;\r\n  }\r\n  .referenciascomercialesybancarias_referenciascomercialesdelaempresa_empresa {\r\n    position:absolute;\r\n    top:173px;\r\n    left:224px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n  .referenciascomercialesybancarias_referenciascomercialesdelaempresa1_empresa {\r\n    position:absolute;\r\n    top:237px;\r\n    left:222px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n\
+  \r\n  .referenciascomercialesybancarias_referenciascomercialesdelaempresa_direccin {\r\n    position:absolute;\r\n    top:130px;\r\n    left:225px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciascomercialesdelaempresa1_direccin {\r\n    position:absolute;\r\n    top:194px;\r\n    left:224px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciascomercialesdelaempresa2_direccin {\r\n    position:absolute;\r\n    top:258px;\r\n    left:223px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n  .referenciascomercialesybancarias_referenciascomercialesdelaempresa_telfono {\r\n    position:absolute;\r\n    top:214px;\r\n    left:225px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciascomercialesdelaempresa1_telfono {\r\n    position:absolute;\r\n    top:151px;\r\n    left:225px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciascomercialesdelaempresa2_telfono {\r\n    position:absolute;\r\n    top:279px;\r\n    left:225px;\r\n    width:517px;\r\n    overflow:hidden;\r\n  }\r\n  .referenciascomercialesybancarias_referenciasbancariasdelaempresa_empresa {\r\n    position:absolute;\r\n    top:354px;\r\n    left:226px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciasbancariasdelaempresa1_empresa {\r\n    position:absolute;\r\n    top:436px;\r\n    left:225px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n      .referenciascomercialesybancarias_referenciasbancariasdelaempresa2_empresa {\r\n    position:absolute;\r\n    top:520px;\r\n    left:223px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n  .referenciascomercialesybancarias_referenciasbancariasdelaempresa_direccin {\r\n    position:absolute;\r\n    top:373px;\r\n    left:227px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciasbancariasdelaempresa1_direccin {\r\n    position:absolute;\r\n    top:542px;\r\n    left:224px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n      .referenciascomercialesybancarias_referenciasbancariasdelaempresa2_direccin {\r\n    position:absolute;\r\n    top:455px;\r\n    left:226px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n  .referenciascomercialesybancarias_referenciasbancariasdelaempresa_telfono {\r\n    position:absolute;\r\n    top:395px;\r\n    left:227px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciasbancariasdelaempresa1_telfono {\r\n    position:absolute;\r\n    top:475px;\r\n    left:227px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n    .referenciascomercialesybancarias_referenciasbancariasdelaempresa2_telfono {\r\n    position:absolute;\r\n    top:563px;\r\n    left:223px;\r\n    width:516px;\r\n    overflow:hidden;\r\n  }\r\n"
+override_render: false
+html_render: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n\
+  <html>\r\n\
+  <head>\r\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\
+  <link rel=\"stylesheet\" type=\"text/css\" href=\"PrintDesign_0_Page_10.css\" />\r\n\
+  <title>Registro de Empresas y Declaraci\xC3\xB3n Jurada</title>\r\n\
+  </head>\r\n\
+  <body>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_fechadesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_FechadeSolicitud\"] %>\r\n      </span>\r\n    </div>\r\n    <div class=\"informacindesolicitud_datosdelasolicitud_numerodesolicitud\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"InformacindeSolicitud_DatosdelaSolicitud_NumerodeSolicitud\"] %>\r\n      </span>\r\n    </div>\r\n    <div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa_empresa\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa_Empresa\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa1_empresa\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa_Empresa\"] %>      </span>    </div>\r\n    <div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa_Direccin\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa_Direccin\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa1_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa1_Direccin\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa2_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa1_Direccin\"] %>      </span>    </div>\r\n    <div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa_Telfono\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa1_Telfono\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa1_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa1_Telfono\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa_Telfono\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa1_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa1_Telfono\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciascomercialesdelaempresa2_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasComercialesdelaEmpresa2_Telfono\"] %>      </span>    </div>\r\n\
+  <div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa_empresa\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_Empresa\"] %>      </span>    </div>\r\n\
+  <div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa2_empresa\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_Empresa\"] %>      </span>    </div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa1_empresa\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_Empresa\"] %>      </span>    </div>\r\n\
+  \t\t\r\n\
+  <div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_Direccin\"] %></span></div>\r\n\
+  <div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_telfono\"] %></span></div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa1_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_telfono\"] %></span></div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa2_telfono\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_telfono\"] %></span></div>\r\n\
+  <div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa1_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_Direccin\"] %></span></div>\r\n\
+  \t\t<div class=\"referenciascomercialesybancarias_referenciasbancariasdelaempresa2_direccin\">\r\n      <span class=\"field_size_1\">\r\n        <%= fields[\"ReferenciasComercialesyBancarias_ReferenciasBancariasdelaEmpresa_Direccin\"] %></span></div>\r\n\
+  </body>\r\n\
+  </html>\r\n\
+  \r\n"
+print_design_id: 127
+created_at: 2013-05-13 16:41:36 Z
+updated_at: 2013-11-15 13:59:05 Z
+instances_selector: "{\"2811\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}}}"
+size: 

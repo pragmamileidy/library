@@ -1,0 +1,16 @@
+--- 
+id: 4789
+design_id: 266
+section_id: 193
+name: "Requisitos Afiliaci\xC3\xB3n para Atenci\xC3\xB3n de Servicios M\xC3\xA9dicos para Ni\xC3\xB1os, Adultos y Adultos Mayores."
+created_at: 2015-02-20 16:52:10 Z
+updated_at: 2015-02-20 16:53:06 Z
+label: "Requisitos Afiliaci\xC3\xB3n para Atenci\xC3\xB3n de Servicios M\xC3\xA9dicos para Ni\xC3\xB1os, Adultos y Adultos Mayores."
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1169\":{\"210\":{\"required\":\"required\"}},\"1170\":{\"210\":{\"required\":\"required\"}},\"1171\":{\"210\":{\"required\":\"required\"}},\"1172\":{\"210\":{\"required\":\"required\"}},\"1872\":{\"210\":{\"required\":\"required\"}},\"1873\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

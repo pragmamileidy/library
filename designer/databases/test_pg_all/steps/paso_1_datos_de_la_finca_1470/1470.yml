@@ -1,0 +1,81 @@
+--- 
+id: 1470
+name: Paso 1 - Datos de la Finca
+label: Datos de la Finca
+description: Datos de la Finca
+fill_step_id: 729
+created_at: 2013-07-17 16:33:09 Z
+updated_at: 2014-02-26 17:59:46 Z
+include: "{\"3181\":{\"1824\":{\"1371\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3464\":{\"580\":{\"552\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3501\":{\"2228\":{\"2556\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save,submit,print_form
+on_becoming: "# Carga de tabla de Gravamenes de finca\r\n\
+  gravamenes = WebserviceConsumer.get( '/service/bdin_gravamenes_finca/records.json').parsed_response\r\n\
+  gravamenes = gravamenes[\"response\"]\r\n\
+  \r\n\
+  _dataGrav = { 'config' => {\r\n            \"readonly\" => \"true\",\r\n           },\r\n         'data' => gravamenes,\r\n         'citizen_selection' => [],\r\n         'agent_selection' => []\r\n\
+  }\r\n\
+  \r\n\
+  _dataGrav = ActiveSupport::JSON.encode(_dataGrav)\r\n\
+  form_data.set(\"datos_de_la_finca.gravamenes.fieldgrid\", _dataGrav)\r\n\
+  \r\n\
+  _textoCondiciones =  \"El SICEP y su contenido son de propiedad exclusiva de MRE y est\xC3\xA1 prohibida su reproducci\xC3\xB3n total o parcial, as\xC3\xAD como la transmisi\xC3\xB3n, inclusi\xC3\xB3n o el almacenamiento a trav\xC3\xA9s de cualquier medio, sistema o tecnolog\xC3\xADa creada o por crearse, sin autorizaci\xC3\xB3n previa y escrita de MRE. El acceso al SICEP por Internet, es un servicio de car\xC3\xA1cter permanente que presta el MRE, con el \xC3\xA1nimo que los ciudadanos mediante un sistema centralizado puedan solicitar la expedici\xC3\xB3n de su pasaporte. El uso de la informaci\xC3\xB3n suministrada por el MRE est\xC3\xA1 limitada a fines privados y personales, cualquier uso para una finalidad diferente, como la obtenci\xC3\xB3n de un beneficio econ\xC3\xB3mico o la consulta de informaci\xC3\xB3n personal de un tercero, ser\xC3\xA1 considerado irregular y estar\xC3\xA1 sujeto al inicio de las acciones legales pertinentes. Para ser un usuario del SICEP es obligatorio completar los campos marcados con (*) en el formulario de registro con su informaci\xC3\xB3n personal de manera exacta, veraz y precisa. Salvo en los campos en que se indique lo contrario. La informaci\xC3\xB3n proporcionada por el usuario al registrarse en el SICEP est\xC3\xA1 resguardada mediante un sistema de seguridad tecnol\xC3\xB3gica y es de car\xC3\xA1cter reservado. Los usuarios son los \xC3\xBAnicos responsables de mantener su nombre de usuario y contrase\xC3\xB1a de su cuenta. Para disminuir los riesgos, El MRE recomienda a los usuarios realizar las operaciones desde un sitio \xC3\xB3 computador seguro y abstenerse de utilizar computadores de servicio p\xC3\xBAblico como los del caf\xC3\xA9 Internet. (Utilice siempre el computador personal de su casa u oficina. Aseg\xC3\xBArese de cerrar la sesi\xC3\xB3n una vez realizada cada consulta en el sistema.)  El usuario registrado se compromete a notificar al MRE, en forma inmediata y por medio fehaciente, cualquier uso no autorizado de su clave o usuario. Se proh\xC3\xADbe expresamente a cualquier persona natural o jur\xC3\xADdica diferente del titular de los datos, la utilizaci\xC3\xB3n de la informaci\xC3\xB3n personal contenida en este sistema y sus secciones, as\xC3\xAD como de los aplicativos que permiten su acceso. El SICEP cuenta con mecanismos de seguridad para controlar el acceso y la utilizaci\xC3\xB3n de la informaci\xC3\xB3n contenida en ella, por lo tanto el MRE podr\xC3\xA1 bloquear el acceso al sistema por cualquier utilizaci\xC3\xB3n que considere irregular y entablar las acciones legales correspondientes.  Para el pago por el concepto del pasaporte el MRE atreves del SICEP ha dispuesto de un sistema de pagos electr\xC3\xB3nicos por medio de la plataforma de PSE, el Usuario podr\xC3\xA1 acceder y utilizar las p\xC3\xA1ginas de los terceros con los que el MRE tenga convenios para pago por Internet. Una vez se encuentre en la p\xC3\xA1gina Web del tercero, el Usuario podr\xC3\xA1 realizar el pago respectivo, siguiendo las instrucciones y dando cumplimiento a los t\xC3\xA9rminos y condiciones de ese sitio. En todo caso, El MRE no ser\xC3\xA1 responsable por los da\xC3\xB1os o perjuicios sufridos por el Usuario al realizar pagos o transacciones a trav\xC3\xA9s de la p\xC3\xA1gina Web del tercero.\"\r\n\
+  \r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\", _textoCondiciones)\r\n"
+on_transition: "entidades = form_data.get(\"asignacion_de_entidades.entidad_evaluadora.entidad_evaluadora_check\")\r\n\
+  entidades = JSON.parse(entidades)\r\n\
+  datos1 = form_data.get(\"datos_de_pago_instance_1.datos_de_pago.observaciones\")\r\n\
+  \r\n\
+  \r\n\
+  if (datos1 != entidades) \r\n if (((datos1.include?(\"CBP-OS. Secci\xC3\xB3n de Arquitectura\")) && (!entidades.include?(\"CBP-OS. Secci\xC3\xB3n de Arquitectura\"))) ||\r\n\
+  \t((datos1.include?(\"CBP-OS. Secci\xC3\xB3n de Electricidad\")) && (!entidades.include?(\"CBP-OS. Secci\xC3\xB3n de Electricidad\"))) ||\r\n\
+  \t((datos1.include?(\"CBP-OS. Secci\xC3\xB3n de Plomer\xC3\xADa\")) && (!entidades.include?(\"CBP-OS. Secci\xC3\xB3n de Plomer\xC3\xADa\"))))\r\n\
+  \t\r\n\
+  \ttransition_errors << \"repara\"\r\n end\r\n\
+  end"
+views: 
+back_step: Paso2
+next_step: Paso2
+position: 1
+ajax_calls: "\t$(document).ready(function(){\r\n\
+  \t\t$(\"#field_requires_requires_pay_requires_pay\").change(function(){\r\n\
+  \t\t\tdato = $(this).val();\r\n\
+  \t\t\tif(dato == 'false'){\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").val('');\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").attr(\"disabled\",\"disabled\");\r\n               ($(\"[name='[field][payment_order_payment_order_payment_order]']\")).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t}\r\n\
+  \t\t\tif(dato == 'true') {\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").val('');\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").removeAttr(\"disabled\",\"disabled\");\r\n               ($(\"[name='[field][payment_order_payment_order_payment_order]']\")).removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t}\r\n\
+  \t\t});\r\n\
+  \t  });\r\n\
+  \r\n\
+  \r\n\
+  $( function() {\r\n\
+  \t\r\n\
+  \t\t ($(\"[name='[field][informacion_de_persona_natural_datos_de_la_persona_fecha_de_nacimiento]']\")).change(function(){\r\n\
+  \t\t\t\t\r\n   // var fecha=document.getElementById(\"user_date\").value;\r\n\
+  \tvar fecha = ($(\"[name='[field][informacion_de_persona_natural_datos_de_la_persona_fecha_de_nacimiento]']\")).val();\r\n\
+  \r\n        var values=fecha.split(\"-\");\r\n        var dia = values[0];\r\n\
+  \t\t // alert(dia);\r\n        var mes = values[1];\r\n\
+  \t\t // alert(mes);\r\n        var ano = values[2];\r\n\
+  \t\t // alert(ano);\r\n\
+  \r\n        // cogemos los valores actuales\r\n        var fecha_hoy = new Date();\r\n\
+  \t\t //  alert(fecha_hoy);\r\n        var ahora_ano = fecha_hoy.getYear();\r\n\
+  \t\t // alert(ahora_ano);\r\n        var ahora_mes = fecha_hoy.getMonth();\r\n\
+  \t\t // alert(ahora_mes);\r\n        var ahora_dia = fecha_hoy.getDate();\r\n\
+  \t\t // alert(ahora_dia);\r\n        \r\n        // realizamos el calculo\r\n        var edad = (ahora_ano + 1900) - ano;\r\n        if ( ahora_mes < (mes - 1))\r\n        {\r\n            edad--;\r\n\
+  \t\t\t// alert(edad);\r\n        }\r\n        if (((mes - 1) == ahora_mes) && (ahora_dia < dia))\r\n        {\r\n            edad--;\r\n\
+  \t\t//\t alert(edad);\r\n        }\r\n        if (((mes) == ahora_mes) && (ahora_dia < dia))\r\n        {\r\n            edad--;\r\n\
+  \t\t//\t alert(edad);\r\n        }\r\n        if (edad > 1900)\r\n        {\r\n            edad -= 1900;\r\n        }\r\n\
+  \r\n      //  alert(edad);\r\n\
+  \t\t$(\"#field_informacion_de_persona_natural_datos_de_la_persona_profesion\").val(edad);\r\n\
+  \r\n\
+  \t\t\t\t\r\n\
+  \t\t\t\t\r\n\
+  \t\t});\r\n\
+  \t  });\r\n\
+  \r\n\
+  \r\n"

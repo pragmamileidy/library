@@ -1,0 +1,30 @@
+--- 
+id: 2062
+part_id: 385
+field_id: 164
+name: Categoria
+created_at: 2012-07-18 18:07:04 Z
+updated_at: 2017-06-04 00:22:03.953579 Z
+label: "Categor\xC3\xADa del descuento"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: dd7e4d81-9c34-4ed1-89f6-dda1d2316ced
+version: 20170603-202203

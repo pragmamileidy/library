@@ -1,0 +1,175 @@
+--- 
+id: 204
+position: 1
+selector: "{\"1795\":{\"656\":{\"758\":{},\"759\":{}}},\"1796\":{\"2198\":{\"2373\":{}}},\"1797\":{\"2174\":{\"954\":{},\"955\":{},\"956\":{},\"957\":{}}},\"1798\":{\"2175\":{\"2418\":{}}},\"1799\":{\"2190\":{\"954\":{},\"955\":{},\"956\":{},\"957\":{}}},\"1800\":{\"2197\":{\"2393\":{},\"2394\":{},\"2395\":{},\"2397\":{}}}}"
+style_sheet: "@charset \"utf-8\";\r\n\
+  /* CSS Document */\r\n\
+  \r\n\
+  body {\r\n\
+  \tmargin-left: 0px;\r\n\
+  \tmargin-top: 0px;\r\n\
+  \tmargin-right: 0px;\r\n\
+  \tmargin-bottom: 0px;\r\n\
+  \r\n\
+  }\r\n\
+  .basico {\r\n\
+  \tfont-family: Verdana, Geneva, sans-serif;  /* Falta establecer cu\xC3\xA1l es el formato b\xC3\xA1sico de un campo */\r\n\
+  \tfont-size: 10px;\r\n\
+  }\t\r\n\
+  /* Otras clases de formatos preestablecidos que a\xC3\xBAn no se han definido */\r\n\
+  \r\n  .informacindesolicitud_datosdelasolicitud_fechadesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 72px;\r\n\
+  \tleft: 819px;\r\n\
+  \twidth: 235px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .informacindesolicitud_datosdelasolicitud_numerodesolicitud {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 45px;\r\n\
+  \tleft: 818px;\r\n\
+  \twidth: 234px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralesdelasolicitud_datosgeneralesdelasolicitud_tipodeplano {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 356px;\r\n\
+  \tleft: 272px;\r\n\
+  \twidth: 258px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelsolicitantenatural_nombrecompleto_primernombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 553px;\r\n\
+  \tleft: 274px;\r\n\
+  \twidth: 189px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelsolicitantenatural_nombrecompleto_segundonombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 554px;\r\n\
+  \tleft: 465px;\r\n\
+  \twidth: 171px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelsolicitantenatural_nombrecompleto_primerapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 553px;\r\n\
+  \tleft: 638px;\r\n\
+  \twidth: 198px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelsolicitantenatural_nombrecompleto_segundoapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 552px;\r\n\
+  \tleft: 837px;\r\n\
+  \twidth: 156px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelsolicitantejurdico_datosdelsolicitante_nombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 552px;\r\n\
+  \tleft: 275px;\r\n\
+  \twidth: 714px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelcoparticipante_nombrecompleto_primernombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 593px;\r\n\
+  \tleft: 272px;\r\n\
+  \twidth: 187px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelcoparticipante_nombrecompleto_segundonombre {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 593px;\r\n\
+  \tleft: 464px;\r\n\
+  \twidth: 177px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelcoparticipante_nombrecompleto_primerapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 594px;\r\n\
+  \tleft: 643px;\r\n\
+  \twidth: 196px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelcoparticipante_nombrecompleto_segundoapellido {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 594px;\r\n\
+  \tleft: 842px;\r\n\
+  \twidth: 146px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_nombredelproyecto {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 396px;\r\n\
+  \tleft: 273px;\r\n\
+  \twidth: 710px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_categoradelproyecto {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 435px;\r\n\
+  \tleft: 272px;\r\n\
+  \twidth: 253px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_nmerodeplano {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 356px;\r\n\
+  \tleft: 741px;\r\n\
+  \twidth: 249px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosgeneralesdelproyecto_datosgeneralesdelproyecto_usodelaobra {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 434px;\r\n\
+  \tleft: 744px;\r\n\
+  \twidth: 238px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_datosdefinca_nmerodefinca {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 474px;\r\n\
+  \tleft: 274px;\r\n\
+  \twidth: 251px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_datosdefinca_tomo {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 474px;\r\n\
+  \tleft: 742px;\r\n\
+  \twidth: 240px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_datosdefinca_folio {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 513px;\r\n\
+  \tleft: 271px;\r\n\
+  \twidth: 255px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .datosdelafinca_ubicacinregionaldelafinca_corregimiento {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 512px;\r\n\
+  \tleft: 745px;\r\n\
+  \twidth: 244px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .evaluacindeentidadn1_datosdelevaluador_evaluador {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 784px;\r\n\
+  \tleft: 811px;\r\n\
+  \twidth: 215px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .evaluacindeentidadn1_observacionesyrecomendacionesparaelsolicitante_nmero {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 785px;\r\n\
+  \tleft: 309px;\r\n\
+  \twidth: 270px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .evaluacindeentidadn1_observacionesyrecomendacionesparaelsolicitante_observacinrecomendacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 852px;\r\n\
+  \tleft: 58px;\r\n\
+  \twidth: 970px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 56px;\r\n  }\r\n  .evaluacindeentidadn2_datosdelevaluador_evaluador {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 996px;\r\n\
+  \tleft: 289px;\r\n\
+  \twidth: 268px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .evaluacindeentidadn2_observacionesyrecomendacionesparaelsolicitante_nmero {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 997px;\r\n\
+  \tleft: 790px;\r\n\
+  \twidth: 260px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .evaluacindeentidadn2_observacionesyrecomendacionesparaelsolicitante_observacinrecomendacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1065px;\r\n\
+  \tleft: 39px;\r\n\
+  \twidth: 1011px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 61px;\r\n  }\r\n  .evaluacindeentidadn3_datosdelevaluador_evaluador {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1204px;\r\n\
+  \tleft: 288px;\r\n\
+  \twidth: 273px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .evaluacindeentidadn3_observacionesyrecomendacionesparaelsolicitante_nmero {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1204px;\r\n\
+  \tleft: 792px;\r\n\
+  \twidth: 254px;\r\n\
+  \toverflow: hidden;\r\n  }\r\n  .evaluacindeentidadn3_observacionesyrecomendacionesparaelsolicitante_observacinrecomendacin {\r\n\
+  \tposition: absolute;\r\n\
+  \ttop: 1267px;\r\n\
+  \tleft: 39px;\r\n\
+  \twidth: 1004px;\r\n\
+  \toverflow: hidden;\r\n\
+  \theight: 68px;\r\n  }\r\n"
+override_render: false
+html_render: 
+print_design_id: 100
+created_at: 2012-12-14 23:44:36 Z
+updated_at: 2013-01-21 20:33:53 Z
+instances_selector: 
+size: 

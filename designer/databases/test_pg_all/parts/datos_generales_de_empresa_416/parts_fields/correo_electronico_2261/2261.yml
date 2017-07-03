@@ -1,0 +1,30 @@
+--- 
+id: 2261
+part_id: 416
+field_id: 5
+name: "Correo Electr\xC3\xB3nico"
+created_at: 2012-08-07 21:29:49 Z
+updated_at: 2017-06-04 00:31:16.521690 Z
+label: "Correo Electr\xC3\xB3nico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Correo Electr\xC3\xB3nico de la Sociedad o del Representante Legal"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 13
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 30d22c32-0e16-44a4-b9e4-6de9bd76a4a7
+version: 20170603-203116

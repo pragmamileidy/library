@@ -1,0 +1,16 @@
+--- 
+id: 5233
+design_id: 288
+section_id: 107
+name: Datos del Autor (es) Persona Natural
+created_at: 2017-02-26 22:58:20.244876 Z
+updated_at: 2017-02-27 00:14:27.894294 Z
+label: Datos del Autor (es) Persona Natural
+min_instances: 1
+max_instances: 10
+depends_on: "\r\n"
+manage_as_confidential: false
+include: "{\"2595\":{\"2929\":{\"required\":\"required\"},\"2930\":{\"required\":\"required\"}},\"580\":{\"1461\":{\"required\":\"required\"},\"1981\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"1374\":{\"required\":\"required\"},\"926\":{\"required\":\"unrequired\"},\"545\":{\"required\":\"required\"},\"546\":{\"required\":\"required\"},\"2983\":{\"required\":\"unrequired\"},\"763\":{\"required\":\"required\"}},\"2646\":{\"2979\":{\"required\":\"unrequired\"},\"2980\":{\"required\":\"unrequired\"}},\"581\":{\"572\":{\"required\":\"required\"},\"573\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

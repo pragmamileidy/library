@@ -1,0 +1,18 @@
+--- 
+id: 1183
+design_id: 104
+section_id: 107
+name: Datos del Conyugue
+created_at: 2012-05-31 16:32:53 Z
+updated_at: 2013-10-25 13:49:22 Z
+label: Datos del Conyugue
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  conyugue=form_data.get("indique_conyugue.indique_conyugue.cedula")
+  !conyugue.blank?
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"}}}"
+hint: Ingrese los datos del conyugue
+help: ""
+order_input: 6

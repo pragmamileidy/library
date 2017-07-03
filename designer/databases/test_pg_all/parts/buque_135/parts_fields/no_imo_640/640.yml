@@ -1,0 +1,30 @@
+--- 
+id: 640
+part_id: 135
+field_id: 10
+name: No. IMO
+created_at: 2012-03-07 18:49:03 Z
+updated_at: 2017-06-04 00:25:38.029901 Z
+label: No. IMO
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "N\xC3\xBAmero de IMO (International MaritimeOrganization) del buque"
+help: "N\xC3\xBAmero de IMO (International MaritimeOrganization) del buque. N\xC3\xBAmero de identificaci\xC3\xB3n del buque"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bfa36f13-4ed9-4652-bc16-038ef011e4cd
+version: 20170603-202538

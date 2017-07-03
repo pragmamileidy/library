@@ -1,0 +1,30 @@
+--- 
+id: 665
+part_id: 139
+field_id: 17
+name: "Garant\xC3\xADa"
+created_at: 2012-03-08 15:03:02 Z
+updated_at: 2017-06-04 00:31:25.788110 Z
+label: "Garant\xC3\xADa del producto"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Garant\xC3\xADa del producto"
+help: "Garant\xC3\xADa del producto"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 15
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 573ee1bf-0fb0-4c6f-942d-178423596006
+version: 20170603-203125

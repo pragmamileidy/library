@@ -1,0 +1,30 @@
+--- 
+id: 3107
+part_id: 78
+field_id: 10
+name: Tipo de Propiedad Tex
+created_at: 2013-03-29 19:17:56 Z
+updated_at: 2017-06-04 00:27:34.715828 Z
+label: Tipo de Propiedad
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ba1ee064-0f6c-4060-a842-681595c5092e
+version: 20170603-202734

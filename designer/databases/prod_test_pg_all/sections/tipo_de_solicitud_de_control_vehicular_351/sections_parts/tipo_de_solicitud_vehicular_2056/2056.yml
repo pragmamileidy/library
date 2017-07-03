@@ -1,0 +1,19 @@
+--- 
+id: 2056
+section_id: 351
+part_id: 187
+name: Tipo de Solicitud Vehicular
+created_at: 2012-07-26 20:13:31 Z
+updated_at: 2013-03-15 19:56:37 Z
+label: Tipo de Solicitud Vehicular
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 1

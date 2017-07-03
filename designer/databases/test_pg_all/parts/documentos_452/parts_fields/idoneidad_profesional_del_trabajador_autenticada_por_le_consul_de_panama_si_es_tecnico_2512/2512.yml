@@ -1,0 +1,30 @@
+--- 
+id: 2512
+part_id: 452
+field_id: 31
+name: "Idoneidad profesional del trabajador, autenticada por le c\xC3\xB3nsul de Panam\xC3\xA1 ( si es t\xC3\xA9cnico)"
+created_at: 2012-08-31 17:26:59 Z
+updated_at: 2017-06-04 00:30:52.108028 Z
+label: "Idoneidad profesional del trabajador, autenticada por el c\xC3\xB3nsul de Panam\xC3\xA1 ( si es t\xC3\xA9cnico)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Adjuntar certificaciones refrendadas por el Consejo T\xC3\xA9cnico o una entidad especializada de Panam\xC3\xA1."
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3fbe0529-8022-409b-8d3d-d8eb0d3ad4e1
+version: 20170603-203052

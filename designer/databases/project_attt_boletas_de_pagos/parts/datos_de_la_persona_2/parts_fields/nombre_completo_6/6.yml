@@ -1,0 +1,30 @@
+--- 
+id: 6
+part_id: 2
+field_id: 4
+name: nombre completo
+created_at: 2016-10-04 20:13:47.951691 Z
+updated_at: 2016-10-04 20:13:47.951691 Z
+label: Nombres y Apellidos
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Por favor ingresar un valor v\xC3\xA1lido. Ejemplo: Mar\xC3\xADa Liset Valery P\xC3\xA9rez"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: e08690f4-a536-435a-ae2e-f5b2dbc23122
+version: 20161004-161347

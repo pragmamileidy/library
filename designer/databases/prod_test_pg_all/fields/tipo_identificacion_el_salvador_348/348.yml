@@ -1,0 +1,30 @@
+--- 
+id: 348
+name: "Tipo identificaci\xC3\xB3n El Salvador"
+description: "DUI o Pasaporte para el pa\xC3\xADs El Salvador"
+version: 
+status: Draft
+label: "Tipo identificaci\xC3\xB3n El Salvador"
+hint: ""
+help: ""
+layout: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2016-03-01 14:41:40.435218 Z
+updated_at: 2016-03-16 15:42:54.692634 Z
+values_list: "\"\",\"Cedula\",\"Pasaporte\""
+keys_list: "\"\",\"Cedula\",\"Pasaporte\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 1836-1147-6291-1746-5617

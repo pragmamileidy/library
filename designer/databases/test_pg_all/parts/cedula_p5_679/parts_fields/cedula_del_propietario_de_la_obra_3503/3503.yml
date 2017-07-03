@@ -1,0 +1,30 @@
+--- 
+id: 3503
+part_id: 679
+field_id: 31
+name: "C\xC3\xA9dula del Propietario de la Obra"
+created_at: 2014-02-18 14:51:49 Z
+updated_at: 2017-06-04 00:23:09.368897 Z
+label: "C\xC3\xA9dula del Propietario de la Obra"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f384e4e5-666f-4130-a76f-674a067dec5c
+version: 20170603-202309

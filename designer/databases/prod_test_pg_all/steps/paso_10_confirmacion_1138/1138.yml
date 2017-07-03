@@ -1,0 +1,20 @@
+--- 
+id: 1138
+name: "Paso 10- Confirmaci\xC3\xB3n"
+label: "Confirmaci\xC3\xB3n."
+description: "<br>Usted ha culminado exitosamente el llenado de su solicitud, por favor realice las confirmaciones solicitadas y presione el bot\xC3\xB3n de <strong>Enviar Formulario</strong> al completar este paso para someter su solicitud a procesamiento. Todos los detalles y observaciones del procesamiento llegar\xC3\xA1n a su bandeja de notificaciones en la visualizaci\xC3\xB3n de este tr\xC3\xA1mite."
+fill_step_id: 568
+created_at: 2013-03-11 22:29:24 Z
+updated_at: 2017-02-27 14:12:04.782793 Z
+include: "{\"2458\":{\"2873\":{\"1390\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,back_steps,next_steps,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: "if form_data.get(\"confirmacion.confirmacion_de_formulario.si_no\")==\"NO\"\r\n   transition_errors << \"Para realizar el env\xC3\xADo del formulario debe confirmar con SI el llenado del mismo.\"\r\n\
+  end"
+views: 
+back_step: Paso 9 - Anexos
+next_step: ""
+position: 10
+ajax_calls: ""

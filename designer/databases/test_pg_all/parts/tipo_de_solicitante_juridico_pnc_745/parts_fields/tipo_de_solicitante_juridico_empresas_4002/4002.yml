@@ -1,0 +1,32 @@
+--- 
+id: 4002
+part_id: 745
+field_id: 323
+name: Tipo de Solicitante Juridico empresas
+created_at: 2016-03-01 18:09:32.371958 Z
+updated_at: 2017-06-04 00:25:25.593760 Z
+label: "Tipo de Solicitante Jur\xC3\xADdico"
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  tipoje= form_data.get("tipo_de_persona.tipo_de_solicitante_juridico.tipo_de_solicitante_juridico_empresas")
+  @owner["juridical_person_type"] != "national_go" || !tipoje.blank?
+manage_as_confidential: false
+hint: "Seleccione el tipo de Solicitante Jur\xC3\xADdico"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ef73b896-8747-4fbc-b7d6-38f920352b3e
+version: 20170603-202525

@@ -1,0 +1,30 @@
+--- 
+id: 80
+name: Unidad de Medida
+description: Sirve para indicar la unidad de medida de un animal o un producto
+version: 
+status: Draft
+label: Unidad de Medida
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-05 19:18:38 Z
+updated_at: 2012-05-18 18:15:10 Z
+values_list: "\"Kilogramos\", \"Litros\", \"Unidades\", \"Cabezas\""
+keys_list: "\"Kilogramos\", \"Litros\", \"Unidades\", \"Cabezas\""
+field_type: select
+view_class: vertical
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: 
+list_code: 
+serial: 

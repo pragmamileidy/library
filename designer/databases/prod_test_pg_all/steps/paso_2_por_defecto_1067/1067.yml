@@ -1,0 +1,43 @@
+--- 
+id: 1067
+name: Paso 2 - Por Defecto
+label: Defaults
+description: ""
+fill_step_id: 545
+created_at: 2013-01-24 16:31:34 Z
+updated_at: 2014-07-10 15:59:42 Z
+include: "{\"2365\":{\"2469\":{\"3435\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2470\":{\"2747\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2748\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2471\":{\"2749\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2750\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2752\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2754\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2472\":{\"2757\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3122\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3123\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3121\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2473\":{\"2755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2756\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2978\":{\"3444\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2900\":{\"3282\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |
+  #Llenar campos TAG
+  
+  form_data.set("defaults4.tag.introduzca_la_informacion", "defaults")
+  
+  #Llenar campos  EMAIL_SENDER
+  
+  form_data.set("defaults4.email_sender.email_sender_for_persons", "no-reply@panamatramita.gob.pa")
+  form_data.set("defaults4.email_sender.email_sender_for_agents", "no-reply@panamatramita.gob.pa")
+  
+  form_data.set("defaults4.rolname_id.rolename_recibir", "ACMIV.RECEPCION")
+  
+  form_data.set("defaults4.roles_procesar.rolename_procesar1", "ACMIV.PROCESAMIENTOMIVIOT")
+  
+  form_data.set("defaults4.roles_procesar.rolename_recibir1", "ACMIV.RECEPCION1")
+  form_data.set("defaults4.roles_procesar.rolename_recibir2", "ACMIV.RECEPCION2")
+  
+  form_data.set("defaults4.roles_procesar.rolename_aprobar1", "ACMIV.APROBACIONMIVIOT")
+  form_data.set("defaults4.rolname_id.rolename_cerrar", "ACMIV.CIERRE")
+  #form_data.set("defaults4.rolname_id.template_id", "62e6493f14d851f05a5952e783609def")
+  #form_data.set("defaults4.rolname_id.workflow_id", "101")
+  form_data.set("defaults4.requires.requires_pay", "true")
+  form_data.set("defaults4.requires.requires_stamps", "false")
+  form_data.set("defaults4.repair_requirement.requires_repair", "true")
+
+on_transition: ""
+views: 
+back_step: Paso 1 - Parametros de Variables
+next_step: Paso 3 - Fillstep y Rolenames
+position: 1
+ajax_calls: ""

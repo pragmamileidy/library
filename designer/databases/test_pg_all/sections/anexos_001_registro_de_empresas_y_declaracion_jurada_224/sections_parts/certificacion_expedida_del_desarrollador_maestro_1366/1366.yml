@@ -1,0 +1,19 @@
+--- 
+id: 1366
+section_id: 224
+part_id: 38
+name: "Certificaci\xC3\xB3n expedida del Desarrollador Maestro"
+created_at: 2012-05-07 20:11:49 Z
+updated_at: 2012-05-07 20:11:49 Z
+label: "Certificaci\xC3\xB3n expedida del Desarrollador Maestro"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Adjuntar certificaci\xC3\xB3n expedida por el Desarrollador Maestro del \xC3\xA1rea donde pretende instalarse el solicitante."
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

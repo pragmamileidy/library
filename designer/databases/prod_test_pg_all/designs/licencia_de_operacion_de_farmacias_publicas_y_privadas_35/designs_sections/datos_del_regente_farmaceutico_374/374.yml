@@ -1,0 +1,16 @@
+--- 
+id: 374
+design_id: 35
+section_id: 107
+name: "Datos del Regente Farmac\xC3\xA9utico"
+created_at: 2012-03-22 22:15:28 Z
+updated_at: 2017-03-29 17:17:02.357075 Z
+label: "Datos del Regente Farmac\xC3\xA9utico"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"1374\":{\"required\":\"required\"}},\"586\":{\"558\":{\"required\":\"required\"}},\"581\":{\"2456\":{\"required\":\"required\"},\"2457\":{\"required\":\"required\"},\"2458\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"586\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

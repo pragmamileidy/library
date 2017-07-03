@@ -1,0 +1,30 @@
+--- 
+id: 1562
+part_id: 68
+field_id: 17
+name: "Para productos administrados en el agua de bebida se indicar\xC3\xA1 su estabilidad, compatibilidad y tiempo de permanencia eficaz en la soluci\xC3\xB3n."
+created_at: 2012-06-03 18:52:53 Z
+updated_at: 2017-06-04 00:28:55.132306 Z
+label: "Para productos administrados en el agua de bebida se indicar\xC3\xA1 su estabilidad, compatibilidad y tiempo de permanencia eficaz en la soluci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 875c6c89-79d9-4e97-9a34-fc77223f8220
+version: 20170603-202855

@@ -1,0 +1,17 @@
+--- 
+id: 256
+name: Actividades a Desarrollar
+description: Actividades a Desarrollar
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-05-10 23:06:29 Z
+updated_at: 2012-05-16 20:55:33 Z
+label: Actividades a Desarrollar
+hint: ""
+view_class: horizontal
+serial: 

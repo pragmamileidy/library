@@ -1,0 +1,30 @@
+--- 
+id: 1850
+part_id: 347
+field_id: 31
+name: Boleta de pago.
+created_at: 2012-06-15 16:12:43 Z
+updated_at: 2017-06-04 00:24:15.819776 Z
+label: Boleta de pago.
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: bab2dc16-3260-410d-a99d-1cb99e0ef58a
+version: 20170603-202415

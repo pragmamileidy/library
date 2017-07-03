@@ -1,0 +1,30 @@
+--- 
+id: 1280
+part_id: 249
+field_id: 10
+name: Emulsificantes
+created_at: 2012-05-08 15:36:22 Z
+updated_at: 2017-06-04 00:28:52.048898 Z
+label: Emulsificantes y otras sustancias
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 955415eb-fc0d-40b8-ae1c-8cbf625a2bea
+version: 20170603-202852

@@ -1,0 +1,30 @@
+--- 
+id: 3722
+part_id: 230
+field_id: 326
+name: "S\xC3\xAD/No"
+created_at: 2014-07-07 21:49:33 Z
+updated_at: 2017-06-04 00:25:20.311454 Z
+label: Seleccione
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f6fd77f4-3a2a-47ae-8380-32257026b18b
+version: 20170603-202520

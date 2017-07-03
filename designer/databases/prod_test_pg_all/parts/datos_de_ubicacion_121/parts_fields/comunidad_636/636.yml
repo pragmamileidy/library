@@ -1,0 +1,30 @@
+--- 
+id: 636
+part_id: 121
+field_id: 10
+name: Comunidad
+created_at: 2012-02-20 14:50:03 Z
+updated_at: 2017-06-04 00:30:29.257275 Z
+label: Comunidad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c4135e80-4093-479b-88dd-513fbdeb81f1
+version: 20170603-203029

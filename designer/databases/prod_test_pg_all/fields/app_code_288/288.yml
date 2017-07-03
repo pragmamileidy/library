@@ -1,0 +1,46 @@
+--- 
+id: 288
+name: app code
+description: "c\xC3\xB3digo del tramite"
+version: 
+status: Draft
+label: App Code
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-06-07 19:12:13 Z
+updated_at: 2013-06-13 15:38:17 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _lista = ""
+  _clave = ""
+  result = WebserviceConsumer.get('/service/ws_evertec_workflow_codes/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+   _valores.each {|workflow|
+    _lista = _lista + "," + workflow["institucion"] + " - " + workflow["tramite"]
+    _clave = _clave + "," + workflow["codeApp"]}
+    _lista = _lista.chop
+    _clave = _clave.chop
+   @values_of_list = _clave.split(",")
+   @keys_of_list =  _clave.split(",")
+  else
+   @values_of_list = [""]
+   @keys_of_list =  [""]
+  end
+serial: 

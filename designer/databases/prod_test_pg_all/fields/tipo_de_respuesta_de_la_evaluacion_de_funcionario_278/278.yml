@@ -1,0 +1,30 @@
+--- 
+id: 278
+name: "Tipo de respuesta de la evaluaci\xC3\xB3n de Funcionario"
+description: "Tipo de respuesta de la evaluaci\xC3\xB3n de Funcionario. P5 Direcctor"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-04-24 20:43:29 Z
+updated_at: 2013-04-24 20:43:29 Z
+values_list: "\"OK\",\"RECHAZO\""
+keys_list: "\"OK\",\"RECHAZO\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 2754
+part_id: 518
+field_id: 10
+name: workflow_id
+created_at: 2013-01-15 16:39:37 Z
+updated_at: 2017-06-04 00:29:14.315439 Z
+label: Workflow ID
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: solo proceso 2, 4 y 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3e976733-fefc-428d-9031-f32d160e657c
+version: 20170603-202914

@@ -1,0 +1,30 @@
+--- 
+id: 4082
+part_id: 750
+field_id: 355
+name: firma
+created_at: 2017-02-22 14:46:11.167790 Z
+updated_at: 2017-06-04 00:25:27.960546 Z
+label: ""
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: <strong style="color:#088A08">Seleccione si requiere que el Record Policivo sea firmado por el Director de la DIJ</strong>
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0393bee6-fe75-4e2b-bc25-a4731a9786e8
+version: 20170603-202527

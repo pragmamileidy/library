@@ -1,0 +1,30 @@
+--- 
+id: 103
+part_id: 21
+field_id: 14
+name: "Pa\xC3\xADs"
+created_at: 2011-11-03 18:53:19 Z
+updated_at: 2017-06-04 00:21:12.853548 Z
+label: "Pa\xC3\xADs"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: 
+help: 
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d3290685-e4d8-497b-9b8f-3ae0af06a996
+version: 20170603-202112

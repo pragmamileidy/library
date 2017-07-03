@@ -1,0 +1,16 @@
+--- 
+id: 1607
+design_id: 120
+section_id: 166
+name: Tipo de Solicitud
+created_at: 2012-07-16 22:52:37 Z
+updated_at: 2013-05-06 18:17:07 Z
+label: Tipo de Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1448\":{\"1381\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

@@ -1,0 +1,16 @@
+--- 
+id: 495
+design_id: 63
+section_id: 154
+name: Ingreso Familiar/Mensualidad de Vivienda
+created_at: 2012-03-28 23:27:23 Z
+updated_at: 2013-05-22 18:44:54 Z
+label: Detalle de Costos
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"875\":{\"2519\":{\"required\":\"required\"}},\"874\":{\"2519\":{\"required\":\"required\"}}}"
+hint: Por favor, ingrese los gastos de vivienda
+help: ""
+order_input: 10

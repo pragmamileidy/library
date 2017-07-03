@@ -1,0 +1,16 @@
+--- 
+id: 2136
+design_id: 141
+section_id: 410
+name: Tipo de Uso
+created_at: 2012-09-05 16:17:58 Z
+updated_at: 2015-10-08 20:07:15 Z
+label: Desglose de superficies por Tipo de Uso
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2381\":{\"3232\":{\"required\":\"required\"},\"3551\":{\"required\":\"unrequired\"},\"3552\":{\"required\":\"unrequired\"},\"3553\":{\"required\":\"unrequired\"},\"3598\":{\"required\":\"unrequired\"},\"3554\":{\"required\":\"required\"},\"2105\":{\"required\":\"required\"},\"3233\":{\"required\":\"required\"},\"3234\":{\"required\":\"required\"},\"2104\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 16

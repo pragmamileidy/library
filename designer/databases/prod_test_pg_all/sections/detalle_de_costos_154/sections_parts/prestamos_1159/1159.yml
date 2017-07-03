@@ -1,0 +1,19 @@
+--- 
+id: 1159
+section_id: 154
+part_id: 50
+name: "Pr\xC3\xA9stamos"
+created_at: 2012-04-22 16:41:29 Z
+updated_at: 2012-08-16 18:44:41 Z
+label: "Pr\xC3\xA9stamos"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 12

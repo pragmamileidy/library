@@ -1,0 +1,16 @@
+--- 
+id: 4258
+design_id: 245
+section_id: 376
+name: Datos del Solicitante Natural
+created_at: 2014-04-10 18:37:46 Z
+updated_at: 2014-04-10 18:37:46 Z
+label: Datos del Solicitante
+min_instances: 0
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"NaturalPerson\""
+manage_as_confidential: false
+include: "{\"2173\":{\"3124\":{\"required\":\"required\"},\"2379\":{\"required\":\"required\"},\"2380\":{\"required\":\"required\"},\"2381\":{\"required\":\"required\"},\"2382\":{\"required\":\"unrequired\"},\"2383\":{\"required\":\"unrequired\"},\"3182\":{\"required\":\"required\"},\"3183\":{\"required\":\"required\"},\"3204\":{\"required\":\"required\"}},\"2174\":{\"954\":{\"required\":\"required\"},\"955\":{\"required\":\"unrequired\"},\"956\":{\"required\":\"required\"},\"957\":{\"required\":\"unrequired\"},\"958\":{\"required\":\"unrequired\"},\"3387\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

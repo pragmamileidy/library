@@ -1,0 +1,32 @@
+--- 
+id: 3630
+part_id: 717
+field_id: 321
+name: Motivo de la Solicitud DIJ
+created_at: 2014-06-04 14:31:01 Z
+updated_at: 2017-06-04 00:27:44.922491 Z
+label: Motivo de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: "\r\n\
+  \r\n\
+  \r\n"
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 37b77968-f39a-48ca-8707-43a5b579fc53
+version: 20170603-202744

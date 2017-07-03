@@ -1,0 +1,19 @@
+--- 
+id: 3036
+section_id: 384
+part_id: 699
+name: confirma exoneracion
+created_at: 2014-02-24 18:15:06 Z
+updated_at: 2014-02-24 18:15:06 Z
+label: Desea Exoneracion?
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3541\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

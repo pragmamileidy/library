@@ -1,0 +1,19 @@
+--- 
+id: 769
+name: "Paso 1 - Descuentos autom\xC3\xA1ticos"
+label: Detalle de la solicitud
+description: "Detalle de la solicitud de certificaci\xC3\xB3n de descuento"
+fill_step_id: 388
+created_at: 2012-07-30 20:52:44 Z
+updated_at: 2014-03-17 13:35:56 Z
+include: "{\"1619\":{\"1995\":{\"2056\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2021\":{\"2056\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2057\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2058\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"7\":{\"1949\":{\"2465\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1885\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1886\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2895\":{\"2810\":{\"3264\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1521\":{\"1710\":{\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,next_steps,close,close_and_save,save
+on_becoming: form_data.set("recibido_por.datos_del_funcionario_generico.observaciones"," ")
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 2 - Agregar
+position: 1
+ajax_calls: ""

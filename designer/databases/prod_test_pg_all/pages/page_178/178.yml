@@ -1,0 +1,245 @@
+--- 
+id: 178
+position: 2
+selector: "{\"843\":{\"656\":{\"758\":{},\"759\":{}}},\"947\":{\"1364\":{\"2175\":{},\"1233\":{},\"1234\":{},\"1235\":{},\"2145\":{},\"1240\":{},\"1241\":{},\"2132\":{}}},\"855\":{\"580\":{\"1323\":{},\"1374\":{},\"926\":{},\"1996\":{}},\"586\":{\"608\":{}},\"581\":{\"2456\":{},\"2457\":{},\"2458\":{},\"583\":{},\"585\":{}},\"1323\":{\"2174\":{}}},\"856\":{\"1380\":{\"1257\":{},\"1258\":{},\"1259\":{},\"1260\":{},\"1261\":{}}}}"
+style_sheet: |-
+  @charset "utf-8";
+  /* CSS Document */
+  
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+  }
+  
+  .main_pdf_content {
+    /* main_pdf_content: estos attributos seran ignorados en rendeo */
+    top: 0px;
+    left: 0px;
+    height:1344px;
+    width: 1024px;
+    position: absolute;
+  }
+  
+    .informacindesolicitud_datosdelasolicitud_fechadesolicitud {
+  	position: absolute;
+  	top: 55px;
+  	left: 696px;
+  	width: 320px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .informacindesolicitud_datosdelasolicitud_numerodesolicitud {
+  	position: absolute;
+  	top: 29px;
+  	left: 697px;
+  	width: 320px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_ubicacindepago {
+  	position: absolute;
+  	top: 166px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_nombredelainstitucin {
+  	position: absolute;
+  	top: 202px;
+  	left: 273px;
+  	width: 681px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_nmerodecuenta {
+  	position: absolute;
+  	top: 239px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_tipodecuenta {
+  	position: absolute;
+  	top: 239px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_apartadopostaldelasegurado {
+  	position: absolute;
+  	top: 277px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_zona {
+  	position: absolute;
+  	top: 277px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_ciudad {
+  	position: absolute;
+  	top: 314px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_seleccindecentro {
+  	position: absolute;
+  	top: 350px;
+  	left: 273px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .ubicacindepago_ubicacindepago_girosalexterior {
+  	position: absolute;
+  	top: 350px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+  .datosdelsolicitante_datosdelapersona_cdula {
+  	position: absolute;
+  	top: 515px;
+  	left: 278px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+      .datosdelsolicitante_datosdelapersona_nombrecompleto {
+  	position: absolute;
+  	top: 438px;
+  	left: 277px;
+  	width: 678px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_apellidodecasada {
+  	position: absolute;
+  	top: 472px;
+  	left: 724px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelapersona_fechadenacimientostring {
+  	position: absolute;
+  	top: 514px;
+  	left: 725px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinlaboral_nmerodesegurosocial {
+  	position: absolute;
+  	top: 550px;
+  	left: 722px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_provincia_lista {
+  	position: absolute;
+  	top: 623px;
+  	left: 275px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_distrito_lista {
+  	position: absolute;
+  	top: 623px;
+  	left: 727px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_corregimiento_lista {
+  	position: absolute;
+  	top: 659px;
+  	left: 274px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_barrio {
+  	position: absolute;
+  	top: 659px;
+  	left: 726px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_informacinderesidencialocalizacin_nmerodetelfono {
+  	position: absolute;
+  	top: 551px;
+  	left: 277px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .datosdelsolicitante_datosdelfallecido_parentescoconelfallecido {
+  	position: absolute;
+  	top: 477px;
+  	left: 278px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opciones_opcionesparaprestacioneseconmicasalargoplazo_encasodenotenerderechoaunapensinporvejeznormalaceptounapensindevejezproporcional {
+  	position: absolute;
+  	top: 804px;
+  	left: 277px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opciones_opcionesparaprestacioneseconmicasalargoplazo_encasodenotenerderechoaunapensinporvejeznormaloproporcionalaceptounaindemnizacinporvejez {
+  	position: absolute;
+  	top: 916px;
+  	left: 277px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opciones_opcionesparaprestacioneseconmicasalargoplazo_encasodenotenerderechoaunapensinporvejezporedadanticipadaaceptounapensindevejezproporcionalanticipada {
+  	position: absolute;
+  	top: 1031px;
+  	left: 278px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opciones_opcionesparaprestacioneseconmicasalargoplazo_encasodenotenerderechoaunapensinporinvalidezaceptounaindemnizacinporinvalidez {
+  	position: absolute;
+  	top: 1144px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+    .opciones_opcionesparaprestacioneseconmicasalargoplazo_encasodenotenerderechoaunapensinporsobrevivienteaceptounaindemnizacinsobreviviente {
+  	position: absolute;
+  	top: 1257px;
+  	left: 276px;
+  	width: 232px;
+  	height: 20px;
+  	overflow: hidden;
+    }
+override_render: false
+html_render: 
+print_design_id: 84
+created_at: 2012-07-25 21:02:48 Z
+updated_at: 2014-06-03 14:21:51 Z
+instances_selector: "{\"843\":{\"value\":\"\",\"656\":{\"value\":\"\",\"758\":{\"value\":\"\"},\"759\":{\"value\":\"\"}}},\"947\":{\"value\":\"\",\"1364\":{\"value\":\"\",\"2175\":{\"value\":\"\"},\"1233\":{\"value\":\"\"},\"1234\":{\"value\":\"\"},\"1235\":{\"value\":\"\"},\"2145\":{\"value\":\"\"},\"1240\":{\"value\":\"\"},\"1241\":{\"value\":\"\"},\"2132\":{\"value\":\"\"}}},\"855\":{\"value\":\"\",\"580\":{\"value\":\"\",\"1323\":{\"value\":\"\"},\"1374\":{\"value\":\"\"},\"926\":{\"value\":\"\"},\"1996\":{\"value\":\"\"}},\"586\":{\"value\":\"\",\"608\":{\"value\":\"\"}},\"581\":{\"value\":\"\",\"2456\":{\"value\":\"\"},\"2457\":{\"value\":\"\"},\"2458\":{\"value\":\"\"},\"583\":{\"value\":\"\"},\"585\":{\"value\":\"\"}},\"1323\":{\"value\":\"\",\"2174\":{\"value\":\"\"}}},\"856\":{\"value\":\"\",\"1380\":{\"value\":\"\",\"1257\":{\"value\":\"\"},\"1258\":{\"value\":\"\"},\"1259\":{\"value\":\"\"},\"1260\":{\"value\":\"\"},\"1261\":{\"value\":\"\"}}}}"
+size: 

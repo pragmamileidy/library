@@ -1,0 +1,17 @@
+--- 
+id: 560
+name: Datos del Solicitante Yelitza
+description: "Utilizado para prueba dise\xC3\xB1o yelitza"
+version: 
+help: Ingrese los datos del solicitante
+layout: 
+life_cycle: 
+helper: 
+controller_extension: 
+model_extension: 
+created_at: 2014-09-16 15:02:12 Z
+updated_at: 2014-09-16 15:02:12 Z
+status: Draft
+label: Datos del Solicitante
+hint: Por favor ingrese los datos del solicitante
+serial: 1930-0118-3350-4355-9545

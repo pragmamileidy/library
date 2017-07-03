@@ -1,0 +1,16 @@
+--- 
+id: 2369
+design_id: 176
+section_id: 423
+name: mail_subjects
+created_at: 2013-01-24 15:20:53 Z
+updated_at: 2013-05-12 02:12:55 Z
+label: Correos Sujetos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2445\":{\"2868\":{\"required\":\"required\"},\"2869\":{\"required\":\"required\"}},\"2446\":{\"2870\":{\"required\":\"required\"},\"3110\":{\"required\":\"required\"}},\"2447\":{\"2873\":{\"required\":\"required\"},\"2874\":{\"required\":\"required\"},\"2875\":{\"required\":\"required\"}},\"2448\":{\"2880\":{\"required\":\"required\"},\"2881\":{\"required\":\"required\"}},\"2451\":{\"2889\":{\"required\":\"required\"},\"2890\":{\"required\":\"required\"}},\"2452\":{\"2891\":{\"required\":\"required\"}},\"2453\":{\"2876\":{\"required\":\"required\"},\"2877\":{\"required\":\"required\"},\"2878\":{\"required\":\"required\"},\"2879\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 7

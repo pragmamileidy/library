@@ -1,0 +1,30 @@
+--- 
+id: 4083
+part_id: 119
+field_id: 10
+name: "Actua en condici\xC3\xB3n de"
+created_at: 2017-02-26 01:21:01.893293 Z
+updated_at: 2017-06-04 00:32:04.645985 Z
+label: "Act\xC3\xBAa en condici\xC3\xB3n de"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar si est\xC3\xA1 actuando en condici\xC3\xB3n de; Propietario, Representante Legal o Apoderado legal"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 42
+encripted_store: false
+use: oficial-public
+printable: true
+serial: cac027af-c1fe-44c0-9060-fde43a718131
+version: 20170603-203204

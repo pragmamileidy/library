@@ -1,0 +1,9 @@
+--- 
+id: 93
+name: "official-public_Solicitud de Autorizaci\xC3\xB3n De Empresa Financiera"
+description: "Solicitud de Autorizaci\xC3\xB3n De Empresa Financiera"
+created_at: 2012-08-22 20:13:54 Z
+updated_at: 2015-11-04 18:46:30 Z
+design_id: 137
+label: "Formulario de la Solicitud de Autorizaci\xC3\xB3n De Empresa Financiera"
+ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

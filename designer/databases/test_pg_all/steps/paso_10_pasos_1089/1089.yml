@@ -1,0 +1,68 @@
+--- 
+id: 1089
+name: Paso 10 - Pasos
+label: Pasos
+description: ""
+fill_step_id: 546
+created_at: 2013-01-25 19:49:49 Z
+updated_at: 2015-07-08 15:11:33 Z
+include: "{\"2371\":{\"2484\":{\"2797\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"2378\":{\"2454\":{\"3435\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2455\":{\"2742\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2743\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2744\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2745\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2746\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,close,close_and_save,save,submit
+on_becoming: " form_data.set(\"descripcion_estruct.descripcion_estructura.nombre_estructura\", \"phases\")\r\n\
+  \r\n\
+  \r\n\
+  form_data.set(\"steps_instance_1.name.introduzca_la_informacion\", \"LlenarFormularios\")\r\n\
+  form_data.set(\"steps_instance_2.name.introduzca_la_informacion\", \"AnalisisDeIngreso\")\r\n\
+  form_data.set(\"steps_instance_3.name.introduzca_la_informacion\", \"RecepcionSolicitud\")\r\n\
+  form_data.set(\"steps_instance_4.name.introduzca_la_informacion\", \"IngresarPago\")\r\n\
+  form_data.set(\"steps_instance_5.name.introduzca_la_informacion\", \"ProcesarSolicitud\")\r\n\
+  form_data.set(\"steps_instance_6.name.introduzca_la_informacion\", \"Cierre\")\r\n \r\n\
+  form_data.set(\"steps_instance_1.tasks_instance_1.name\", \"CrearLlenarSolicitud\") \r\n\
+  form_data.set(\"steps_instance_1.tasks_instance_1.timeout_duration\", \"90\") \r\n\
+  form_data.set(\"steps_instance_1.tasks_instance_1.timeout_type\", \"calendar\") \r\n\
+  form_data.set(\"steps_instance_1.tasks_instance_1.sla_duration\", \"5\")\r\n\
+  form_data.set(\"steps_instance_1.tasks_instance_1.sla_type\", \"calendar\") \r\n\
+  form_data.set(\"steps_instance_1.tasks_instance_2.name\", \"CompletarLlenarSolicitud\") \r\n\
+  \r\n\
+  form_data.set(\"steps_instance_2.tasks_instance_1.name\", \"CrearRecibirSolicitud\") \r\n\
+  form_data.set(\"steps_instance_2.tasks_instance_1.timeout_duration\", \"90\") \r\n\
+  form_data.set(\"steps_instance_2.tasks_instance_1.timeout_type\", \"working\") \r\n\
+  form_data.set(\"steps_instance_2.tasks_instance_1.sla_duration\", \"2\")\r\n\
+  form_data.set(\"steps_instance_2.tasks_instance_1.sla_type\", \"working\") \r\n\
+  form_data.set(\"steps_instance_2.tasks_instance_2.name\", \"CompletarRecibirSolicitud\") \r\n\
+  \r\n\
+  form_data.set(\"steps_instance_3.tasks_instance_1.name\", \"CrearReparoSolicitud\") \r\n\
+  form_data.set(\"steps_instance_3.tasks_instance_1.timeout_duration\", \"90\") \r\n\
+  form_data.set(\"steps_instance_3.tasks_instance_1.timeout_type\", \"calendar\") \r\n\
+  form_data.set(\"steps_instance_3.tasks_instance_1.sla_duration\", \"2\")\r\n\
+  form_data.set(\"steps_instance_3.tasks_instance_1.sla_type\", \"calendar\") \r\n\
+  form_data.set(\"steps_instance_3.tasks_instance_2.name\", \"CompletarReparoSolicitud\") \r\n\
+  \r\n\
+  form_data.set(\"steps_instance_4.tasks_instance_1.name\", \"CrearIngresarPago\")\r\n\
+  form_data.set(\"steps_instance_4.tasks_instance_1.timeout_duration\", \"90\") \r\n\
+  form_data.set(\"steps_instance_4.tasks_instance_1.timeout_type\", \"calendar\") \r\n\
+  form_data.set(\"steps_instance_4.tasks_instance_1.sla_duration\", \"2\")\r\n\
+  form_data.set(\"steps_instance_4.tasks_instance_1.sla_type\", \"calendar\") \r\n\
+  form_data.set(\"steps_instance_4.tasks_instance_2.name\", \"CompletarIngresarPago\")\r\n\
+  \r\n\
+  form_data.set(\"steps_instance_5.tasks_instance_1.name\", \"CrearProcesarSolicitud\")\r\n\
+  form_data.set(\"steps_instance_5.tasks_instance_1.timeout_duration\", \"90\")\r\n\
+  form_data.set(\"steps_instance_5.tasks_instance_1.timeout_type\", \"working\")\r\n\
+  form_data.set(\"steps_instance_5.tasks_instance_1.sla_duration\", \"2\")\r\n\
+  form_data.set(\"steps_instance_5.tasks_instance_1.sla_type\", \"working\")\r\n\
+  form_data.set(\"steps_instance_5.tasks_instance_2.name\", \"CompletarProcesarSolicitud\")\r\n\
+  \r\n\
+  form_data.set(\"steps_instance_6.tasks_instance_1.name\", \"CrearCerrarSolicitud\")\r\n\
+  form_data.set(\"steps_instance_6.tasks_instance_1.timeout_duration\", \"90\")\r\n\
+  form_data.set(\"steps_instance_6.tasks_instance_1.timeout_type\", \"working\")\r\n\
+  form_data.set(\"steps_instance_6.tasks_instance_1.sla_duration\", \"2\")\r\n\
+  form_data.set(\"steps_instance_6.tasks_instance_1.sla_type\", \"working\")\r\n\
+  form_data.set(\"steps_instance_6.tasks_instance_2.name\", \"CompletarCerrarSolicitud\")"
+on_transition: ""
+views: 
+back_step: "Paso 9 - T\xC3\xADtulos de Correos"
+next_step: ""
+position: 9
+ajax_calls: ""

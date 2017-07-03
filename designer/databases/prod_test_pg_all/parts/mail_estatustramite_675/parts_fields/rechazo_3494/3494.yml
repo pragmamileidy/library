@@ -1,0 +1,30 @@
+--- 
+id: 3494
+part_id: 675
+field_id: 17
+name: rechazo
+created_at: 2014-01-14 19:28:35 Z
+updated_at: 2017-06-04 00:27:42.431475 Z
+label: Rechazo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b93dd8bf-e377-419b-9d81-d897c91b04ab
+version: 20170603-202742

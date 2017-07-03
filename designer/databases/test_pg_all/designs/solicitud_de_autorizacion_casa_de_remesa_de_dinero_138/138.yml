@@ -1,0 +1,33 @@
+--- 
+id: 138
+name: "Solicitud de Autorizaci\xC3\xB3n Casa de Remesa de Dinero"
+status: Draft
+version: 20170609-011538
+description: "Solicitud de Autorizaci\xC3\xB3n Casa de Remesa de Dinero\r\n\
+  Ministerio de Comercio e Industria"
+help: ""
+layout: 
+life_cycle: 
+tags: "Solicitud, autorizaci\xC3\xB3n,casa,empe\xC3\xB1o,ministerio,comercio,industria"
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-10 19:12:41 Z
+updated_at: 2017-06-09 05:15:38.992437 Z
+label: "Solicitud de Autorizaci\xC3\xB3n Casa de Remesa de Dinero"
+hint: ""
+project: 
+organization: 
+process: 
+ext_template_id: 
+- :name_store: test_sinpapeles
+  :id_template: "19487"
+- :name_store: dev_aig
+  :id_template: "4665"
+- :name_store: test_aig
+  :id_template: "4134"
+- :name_store: prod_aig
+  :id_template: "28332"
+namespace: ""
+custom: 
+serial: 1081-0370-5480-4776-7050

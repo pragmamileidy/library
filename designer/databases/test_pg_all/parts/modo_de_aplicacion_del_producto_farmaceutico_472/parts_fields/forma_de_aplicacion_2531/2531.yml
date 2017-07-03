@@ -1,0 +1,30 @@
+--- 
+id: 2531
+part_id: 472
+field_id: 10
+name: "Forma de Aplicaci\xC3\xB3n "
+created_at: 2012-11-20 20:20:18 Z
+updated_at: 2017-06-04 00:22:21.266794 Z
+label: "Forma de Aplicaci\xC3\xB3n "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique la forma de aplicaci\xC3\xB3n del producto"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: d965413d-48c7-4d2c-86ea-fa1a33882081
+version: 20170603-202221

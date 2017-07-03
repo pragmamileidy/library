@@ -1,0 +1,30 @@
+--- 
+id: 2596
+part_id: 479
+field_id: 10
+name: rolename_admin
+created_at: 2013-01-11 16:23:49 Z
+updated_at: 2017-06-04 00:24:41.877841 Z
+label: Nombre del Rol Administrador
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 901cb654-37a5-4c8e-be62-d4d36893d00c
+version: 20170603-202441

@@ -1,0 +1,30 @@
+--- 
+id: 1404
+part_id: 266
+field_id: 117
+name: Prueba Observaciones
+created_at: 2012-05-24 20:38:25 Z
+updated_at: 2017-06-04 00:24:05.069406 Z
+label: Indique las observaciones
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indique el detalle de sus observaciones
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1b48c350-5fcd-4e03-a450-cff9db2fd15f
+version: 20170603-202405

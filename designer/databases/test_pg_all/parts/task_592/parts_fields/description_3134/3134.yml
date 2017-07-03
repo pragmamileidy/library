@@ -1,0 +1,30 @@
+--- 
+id: 3134
+part_id: 592
+field_id: 10
+name: description
+created_at: 2013-04-08 15:11:35 Z
+updated_at: 2017-06-04 00:26:23.434677 Z
+label: "Descripci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a0666c2a-4ce4-44e9-8f44-c94d628a3870
+version: 20170603-202623

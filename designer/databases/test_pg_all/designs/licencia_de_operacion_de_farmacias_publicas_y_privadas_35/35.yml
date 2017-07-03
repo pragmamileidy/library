@@ -1,0 +1,32 @@
+--- 
+id: 35
+name: "Licencia de Operaci\xC3\xB3n de Farmacias P\xC3\xBAblicas y Privadas"
+status: Draft
+version: 20170609-011127
+description: "Solicitud de Licencia de Operaci\xC3\xB3n de Farmacias P\xC3\xBAblicas y Privadas"
+help: ""
+layout: 
+life_cycle: ""
+tags: "Licencia de Operaci\xC3\xB3n, Farmacias, P\xC3\xBAblicas y Privadas, Ministerio de Salud, MINSA"
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-15 21:08:51 Z
+updated_at: 2017-06-09 05:11:27.079819 Z
+label: "Licencia de Operaci\xC3\xB3n de Farmacias P\xC3\xBAblicas y Privadas"
+hint: ""
+project: 
+organization: 
+process: 
+ext_template_id: 
+- :name_store: test_sinpapeles
+  :id_template: "35528"
+- :name_store: dev_aig
+  :id_template: "3970"
+- :name_store: test_aig
+  :id_template: "2573"
+- :name_store: prod_aig
+  :id_template: "28326"
+namespace: ""
+custom: 
+serial: 1707-8328-7638-8757-4144

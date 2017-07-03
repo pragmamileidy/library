@@ -1,0 +1,30 @@
+--- 
+id: 1904
+part_id: 360
+field_id: 31
+name: Timbres Fiscales B/.50.00
+created_at: 2012-06-21 16:44:42 Z
+updated_at: 2017-06-04 00:29:01.463170 Z
+label: Timbres Fiscales (B/.50.00)
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 664229b1-04cc-4913-b2f5-95204ba3d91d
+version: 20170603-202901

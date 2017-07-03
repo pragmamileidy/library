@@ -1,0 +1,19 @@
+--- 
+id: 2404
+section_id: 416
+part_id: 68
+name: "Datos  de Preparaci\xC3\xB3n del Producto Farmac\xC3\xA9utico"
+created_at: 2012-11-20 20:22:45 Z
+updated_at: 2012-11-20 20:22:45 Z
+label: "Datos  de Preparaci\xC3\xB3n del Producto Farmac\xC3\xA9utico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"347\":{},\"1801\":{},\"1782\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

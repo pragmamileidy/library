@@ -1,0 +1,30 @@
+--- 
+id: 653
+part_id: 139
+field_id: 17
+name: "F\xC3\xB3rmula de los Ingredientes"
+created_at: 2012-03-08 15:03:02 Z
+updated_at: 2017-06-04 00:25:38.386833 Z
+label: "F\xC3\xB3rmula de los Ingredientes"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "F\xC3\xB3rmula de los ingredientes del producto"
+help: "F\xC3\xB3rmula de los ingredientes del producto"
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a8166d9d-4f12-4657-9a3e-d816384f2f5f
+version: 20170603-202538

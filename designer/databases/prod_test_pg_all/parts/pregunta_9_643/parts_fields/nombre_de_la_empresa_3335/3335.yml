@@ -1,0 +1,30 @@
+--- 
+id: 3335
+part_id: 643
+field_id: 10
+name: Nombre de la Empresa
+created_at: 2013-06-11 20:15:28 Z
+updated_at: 2017-06-04 00:27:38.613386 Z
+label: Nombre de la Empresa
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0fee6ef9-8fc8-43f1-8ee4-5c67f2438408
+version: 20170603-202738

@@ -1,0 +1,23 @@
+--- 
+id: 3612
+section_id: 586
+part_id: 38
+name: DUI de la persona autorizada en la misiva
+created_at: 2016-03-26 23:59:17.896713 Z
+updated_at: 2016-03-26 23:59:17.896713 Z
+label: DUI de la persona autorizada en la misiva
+min_instances: 1
+max_instances: 1
+depends_on: |-
+  person = @application["person_id"]
+  duenio = @application["owner_person_id"]
+  
+  (person != duenio) && (@owner["kind_of_user_type"] == "NaturalPerson")
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

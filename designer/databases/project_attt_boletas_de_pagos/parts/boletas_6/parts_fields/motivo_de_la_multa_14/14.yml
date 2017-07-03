@@ -1,0 +1,30 @@
+--- 
+id: 14
+part_id: 6
+field_id: 2
+name: " Motivo de la Multa"
+created_at: 2016-10-04 21:10:35.761414 Z
+updated_at: 2016-12-26 20:25:46.220010 Z
+label: " Motivo de la Multa"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: " Descripci\xC3\xB3n de las causas por las que se aplic\xC3\xB3 la multa"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 21ee3baa-8f69-46f6-99df-02c224101faa
+version: 20161226-162546

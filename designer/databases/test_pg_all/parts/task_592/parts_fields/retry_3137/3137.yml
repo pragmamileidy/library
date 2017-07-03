@@ -1,0 +1,30 @@
+--- 
+id: 3137
+part_id: 592
+field_id: 1
+name: Retry
+created_at: 2013-04-08 15:11:35 Z
+updated_at: 2017-06-04 00:29:19.520577 Z
+label: Retry
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Favor introduzca un valor entero, solo se admitir\xC3\xA1n n\xC3\xBAmeros del cero (0) al nueve (9)"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 37addbfa-5e04-49a4-94bd-75c73937eea5
+version: 20170603-202919

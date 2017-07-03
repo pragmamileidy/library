@@ -1,0 +1,16 @@
+--- 
+id: 1116
+design_id: 99
+section_id: 108
+name: Datos de la Empresa
+created_at: 2012-05-29 18:37:28 Z
+updated_at: 2013-04-15 17:24:34 Z
+label: Datos de la Empresa
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"595\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"}},\"597\":{\"2000\":{\"required\":\"required\"},\"574\":{\"required\":\"required\"},\"573\":{\"required\":\"required\"},\"575\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"586\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}},\"1723\":{\"1198\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

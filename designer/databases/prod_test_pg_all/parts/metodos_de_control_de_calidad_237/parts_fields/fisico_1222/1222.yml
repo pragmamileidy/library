@@ -1,0 +1,30 @@
+--- 
+id: 1222
+part_id: 237
+field_id: 10
+name: "F\xC3\xADsico"
+created_at: 2012-05-06 20:57:10 Z
+updated_at: 2017-06-04 00:27:03.683902 Z
+label: "F\xC3\xADsico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indique la descripci\xC3\xB3n de m\xC3\xA9todos f\xC3\xADsico de control de calidad del producto"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2f5574a2-e8c2-46f5-9a55-a0286eb71696
+version: 20170603-202703

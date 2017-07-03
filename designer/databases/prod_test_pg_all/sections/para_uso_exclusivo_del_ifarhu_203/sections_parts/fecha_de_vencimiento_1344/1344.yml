@@ -1,0 +1,19 @@
+--- 
+id: 1344
+section_id: 203
+part_id: 44
+name: Fecha de Vencimiento
+created_at: 2012-05-06 05:01:11 Z
+updated_at: 2012-05-06 05:01:11 Z
+label: Fecha de Vencimiento
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Indique la fecha de vencimiento del cr\xC3\xA9dito"
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9

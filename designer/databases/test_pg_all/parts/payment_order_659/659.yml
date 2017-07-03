@@ -1,0 +1,17 @@
+--- 
+id: 659
+name: payment order
+description: orden de pago config rates
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-07-22 22:14:34 Z
+updated_at: 2013-07-22 22:18:43 Z
+label: "El pago de efectuar\xC3\xA1"
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 736
+part_id: 144
+field_id: 66
+name: Prueba campo 6 tipo date
+created_at: 2012-03-13 22:28:18 Z
+updated_at: 2017-06-04 00:21:24.067819 Z
+label: Prueba campo 6 tipo date
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Prueba campo 6 tipo date
+help: Prueba campo 6 tipo date
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6af54a58-623c-4084-a734-913ba4f44f09
+version: 20170603-202124

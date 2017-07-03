@@ -1,0 +1,30 @@
+--- 
+id: 286
+part_id: 57
+field_id: 1
+name: "N\xC3\xBAmero de Serie"
+created_at: 2011-11-09 16:35:55 Z
+updated_at: 2017-06-04 00:26:52.593359 Z
+label: "N\xC3\xBAmero de Serie"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: 
+java_script_validation: 
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: 
+values_list: 
+keys_list: 
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a25aab46-c140-4d17-9601-8f3153796b2d
+version: 20170603-202652

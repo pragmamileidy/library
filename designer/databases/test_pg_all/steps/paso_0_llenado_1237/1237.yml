@@ -1,0 +1,40 @@
+--- 
+id: 1237
+name: Paso 0 - Llenado
+label: ""
+description: ""
+fill_step_id: 618
+created_at: 2013-04-08 21:54:04 Z
+updated_at: 2013-12-04 19:04:13 Z
+include: "{\"2587\":{\"2756\":{\"3130\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"2598\":{\"2768\":{\"3149\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3150\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3151\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3152\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3153\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3290\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2782\":{\"3157\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3158\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3159\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3160\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3222\":{\"2910\":{\"3442\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2921\":{\"3446\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3018\":{\"2861\":{\"3376\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"3177\":{\"2874\":{\"3395\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: |
+  dato = form_data.get("requires.payment_requirement.requires_pay")
+  
+  if (dato == "false")
+      form_data.set("payment.payment.payment", " ")
+      form_data.set("requires.payment_qualms.payment_repair", "false")
+  end
+
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: "\t$(document).ready(function(){\r\n\
+  \t\t$(\"#field_requires_payment_requirement_requires_pay\").change(function(){\r\n\
+  \t\t\tdato = $(this).val();\r\n\
+  \t\t\tif(dato == 'false'){\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").val('');\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").attr(\"disabled\",\"disabled\");\r\n                $(\"#field_requires_payment_qualms_payment_repair\").val('false');\r\n\
+  \t\t\t\t$(\"#field_requires_payment_qualms_payment_repair\").attr(\"disabled\",\"disabled\");\r\n               ($(\"[name='[field][order_pay_order_payment_order]']\")).attr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t}\r\n\
+  \t\t\tif(dato == 'true') {\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").val('');\r\n\
+  \t\t\t\t$(\"#field_payment_payment_payment\").removeAttr(\"disabled\",\"disabled\");\r\n                $(\"#field_requires_payment_qualms_payment_repair\").val('');\r\n\
+  \t\t\t    $(\"#field_requires_payment_qualms_payment_repair\").removeAttr(\"disabled\",\"disabled\");\r\n               ($(\"[name='[field][order_pay_order_payment_order]']\")).removeAttr(\"disabled\",\"disabled\");\r\n\
+  \t\t\t}\r\n\
+  \t\t});\r\n\
+  \t  });"

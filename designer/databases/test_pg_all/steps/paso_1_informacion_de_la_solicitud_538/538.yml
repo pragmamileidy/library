@@ -1,0 +1,384 @@
+--- 
+id: 538
+name: Paso 1 - Informacion de la Solicitud
+label: "Informaci\xC3\xB3n de la Solicitud"
+description: "<br/>\r\n\
+  Informaci\xC3\xB3n b\xC3\xA1sica del tr\xC3\xA1mite para su procesamiento\r\n\
+  <br/>\r\n\
+  <style type=\"text/css\">\r\n\
+  .panel-title {\r\n    padding-left: 6px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n\
+  }\r\n\
+  .panel-controls2 {\r\n    float: right;\r\n    display: block;\r\n    cursor: pointer;\r\n\
+  \tpadding-right: 10px;\r\n\
+  }\r\n\
+  .panel-controls2 > a {\r\n    padding-top: 1px;\r\n    display: inline-block;\r\n    opacity: 0.7;\r\n    width: 30px;\r\n    color: #999;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    text-align: center;\r\n\
+  \t -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n margin-bottom:5px !important; \r\n    padding-left: 12px;\r\n\
+  }\r\n\
+  .full-screen-preview {\r\n    height: 100%;\r\n    padding: 0px;\r\n    margin: 0px;\r\n    overflow: hidden;\r\n\
+  }\r\n\
+  .panel-fullscreen {\r\n    display: block !important;\r\n    z-index: 9999 !important;\r\n    position: fixed !important;\r\n    width: 100% !important;\r\n    height: 100% !important;\r\n    top: 0px !important;\r\n    right: 0px !important;\r\n    left: 0px !important;\r\n    bottom: 0px !important;\r\n\
+  \tmargin:0px !important;\r\n\
+  \tbackground:#FFF;\r\n\
+  \toverflow:scroll !important;\r\n\
+  }\r\n\
+  \r\n\
+  .only_view_label {\r\n\
+  \tfont-size:12px; !importante\r\n\
+  \t}\r\n\
+  .part-box.colapsado{\r\n\
+  \tbackground: #F3F3F3; !important;\r\n\
+  \tborder:1px solid #E5E5E5;-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t}\r\n\
+  .section-box.colapsado{\r\n\
+  \tbackground: #FBFBFB; !important;\r\n\
+  \tborder:2px dotted #999;\r\n\
+  \t-moz-border-radius:6px;\r\n\
+  \tborder-radius:6px;\r\n\
+  \t//padding-top:0px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  }\r\n\
+  .colapsado.error{\r\n\
+  \tbackground:#FFF0F0;\r\n\
+  }\r\n\
+  .part-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  .section-box .label2 .panel-title{\r\n\
+  \twidth: 90%;\r\n    font-variant:normal;\r\n\
+  \tfont-weight:bold;\r\n\
+  \tfont-size: 1.45em;\r\n\
+  \tpadding-left:10px;\r\n\
+  \tpadding-bottom:10px;\r\n\
+  \t\r\n\
+  }\r\n\
+  a.nounderline:link   \r\n\
+  {   \r\n text-decoration:none;   \r\n\
+  }   \r\n\
+  .btnE {\r\n  -webkit-border-radius: 3;\r\n  -moz-border-radius: 3;\r\n  border-radius: 3px;\r\n  border:1px solid #999;\r\n  font-family: Arial;\r\n  color: #ffffff;\r\n  font-size: 18px;\r\n  background: lightgray;\r\n  padding-left:7px;\r\n  padding-right:7px;\r\n  padding-top:0px;\r\n  padding-bottom:0px;\r\n  text-decoration: none; !important;\r\n \r\n\
+  }\r\n\
+  \r\n\
+  .btnE:hover {\r\n  background: #afb4b8;\r\n  text-decoration: none;\r\n\
+  }\r\n\
+  /* controls */\r\n\
+  .panel-controls {\r\n\
+  }\r\n\
+  \r\n\
+  \r\n\
+  .panel-control-collapse{\r\n\
+  }\r\n\
+  \r\n\
+  </style>\r\n\
+  <script type=\"text/javascript\">\r\n\
+  $(document).ready(function(){\r\n\
+  \t/**  VDIAZ **/\t\t\t\t\t\t   \r\n\
+  \t/*   Aplica la  presentaci\xC3\xB3n de paneles colapsables para secciones y partes*/\r\n\
+  \t/*   Gestion de */\r\n\
+  \t/**  Version Betta**/\r\n\
+  \t\r\n\
+  \t// Indicar los ids de las secciones que se desean presentar expandidas\r\n\
+  \tvar seccionArr = [\"recibido_por\"];\r\n\
+  \r\n\
+  \t// Indicar los ids de las partes que se desean presentar expandidas\r\n\
+  \tvar parteArr = [\"datos_del_funcionario_generico\"];\r\n\
+  \r\n\
+  \t// Indicar SI o NO se desea presentar las secciones contraidas\r\n\
+  \tvar seccionContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t// Indicar SI o NO se desea presentar las partes contraidas\r\n\
+  \tvar parteContraido = \"NO\";\r\n\
+  \t\r\n\
+  \t\r\n\
+  \t//Inicia logica para aplicar el control de contraer/extender\r\n\
+  \tvar labels = document.querySelectorAll(\".label\");\r\n\
+  \t\r\n\
+  \tfor(i=0; i<labels.length; i++){\r\n\
+  \t\tvar l = labels[i].innerHTML;\r\n\
+  \t\tvar c=labels[i].parentElement; \t\r\n\
+  \t\tvar ocultar=\"\";\r\n\
+  \t\tvar clase=\"\";\r\n\
+  \t\tvar icono = \"<span class='ui-icon ui-icon-plusthick'></span>\";\t\t\r\n\
+  \t\tvar newhtml =\"\";\t\r\n\
+  \t\tvar obj = \"\";\r\n\
+  \t\tvar arrobj=\"\";\r\n\
+  \t\tif (c.className.trim().indexOf(\"section-box\") > -1){\r\n\
+  \t\t\tobj = seccionContraido;\r\n\
+  \t\t\tarrobj =  seccionArr;\r\n\
+  \t\t}else{\r\n\
+  \t\t\tobj = parteContraido;\r\n\
+  \t\t\tarrobj =  parteArr;\r\n\
+  \r\n\
+  \t\t}\r\n\
+  \t\tif ( obj == \"SI\"){\r\n\
+  \t\t\t\ticono =  \"<span class='ui-icon ui-icon-plusthick'></span>\";\r\n\
+  \t\t\t\tclase = \" colapsado\";\r\n\
+  \t\t\t\tocultar = \"none\";\r\n\
+  \t\t}else{\r\n\
+  \t\t\t\ticono =\"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\tif (jQuery.inArray( c.id.trim(), arrobj ) != -1){\r\n\
+  \t\t\t\ticono = \"<span class='ui-icon ui-icon-minusthick'></span>\";\r\n\
+  \t\t\t\tclase = \"\";\r\n\
+  \t\t\t\tocultar = \"\";\r\n\
+  \t\t}\r\n\
+  \t\t\r\n\
+  \r\n\
+  \t\tnewhtml = \"<span class='panel-title'>\"+\r\n\
+  \t\tl+\"</span><span class='panel-controls2'> \"+\r\n\
+  \t\t//\"<a href='#col\"+i+\"' class='panel-control-collapse btnE nounderline'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-collapse'>\"+icono+\"</a>\"+\r\n\
+  \t\t\"<a href='#col\"+i+\"' class='panel-control-fullscreen2 nounderline'><span class='ui-icon ui-icon-arrowthick-1-ne'></span></a>\"+\r\n\
+  \t\t\"</span>\";\r\n\
+  \t\tlabels[i].innerHTML = newhtml;\r\n\
+  \t\tlabels[i].className = \"label2\";\r\n\
+  \t\tlabels[i].nextSibling.style.display = ocultar;\r\n\
+  \t\tlabels[i].parentElement.className += clase;\r\n\
+  \t}\r\n\
+  \r\n\
+  \t/*  Expande o contrae el panel*/\r\n\
+  \t$(\".panel-control-collapse\").click(function(){\r\n\
+  \t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-minusthick\") > -1 ){\r\n\
+  \t\t\tconsole.log(\"Validando error\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-plusthick'></span>\");\t\r\n\
+  \t\t\te.parent().parent().next().hide();\r\n\
+  \t\t\te.parent().parent().parent().addClass(\" colapsado\");\r\n\
+  \t\t\t//console.log(\"Numero de errores: \" + e.parent().parent().parent().find( \".error\" ).length);\r\n\
+  \t\t\tif (e.parent().parent().parent().find( \".field-errorx\" ).length > 0){\r\n\
+  \t\t\t\te.parent().parent().parent().addClass(\" error\");\r\n\
+  \t\t\t\t\r\n\
+  \t\t\t}\r\n\
+  \t\t}else{\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-minusthick'></span>\");\t\t\t\r\n\
+  \t\t\te.parent().parent().next().show();\r\n\
+  \t\t\te.parent().parent().parent().removeClass('colapsado');\r\n\
+  \t\t\te.parent().parent().parent().removeClass('error');\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \t\r\n\
+  \t//AQUI\r\n\
+  \t/*  Maximiza o minimiza el panel*/\r\n\
+  \t$(\".panel-control-fullscreen2\").click(function(){\t\t\r\n\
+  \t\tvar e = $(this);\r\n\
+  \t\tif ( e.html().indexOf(\"ui-icon-arrowthick-1-ne\") > -1 ){\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-sw'></span>\");\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('body').addClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\t\t\t\r\n\
+  \t\t\te.parent().parent().parent().addClass(\"panel-fullscreen\");\r\n\
+  \t\t}else{\t\r\n\
+  \t\t\t$('body').removeClass(\"full-screen-preview\");\r\n\
+  \t\t\t$('.panel-fullscreen').removeClass(\"panel-fullscreen\");\r\n\
+  \t\t\t$('.ui-icon-arrowthick-1-sw').removeClass(\"ui-icon-arrowthick-1-sw\").addClass(\"icon-arrowthick-1-ne\");\r\n\
+  \t\t\te.html(\"<span class='ui-icon ui-icon-arrowthick-1-ne'></span>\");\r\n\
+  \t\t}\r\n\
+  \t\te.focus();\r\n\
+  \t});\r\n\
+  \r\n\
+  \t/*  Expande los paneles cuando se realiza el submit esto es porque  s\xC3\xB3lo se validan los campos no ocultos*/\r\n\
+  \t$('input[value=\"Guardar y Cerrar\"],input[value=\"Guardar\"],input[value=\"Enviar Formulario\"],input[value=\"Pr\xC3\xB3ximo\"],input[value=\"Anterior\"]').click(function(){\r\n\
+  \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t\t$( \".colapsado, .section-box\" ).children( \".section-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).children( \".part-body\" ).show();\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('colapsado');\r\n\
+  \t\t$( \".colapsado, .part-box\" ).removeClass('error');\r\n\
+  \t\t$( \".colapsado, .section-box\" ).removeClass('error');\r\n\
+  \t\t$( \".panel-control-collapse.nounderline\").html(\"<span class='ui-icon ui-icon-minusthick'></span>\"); \r\n \t    console.log('Guardar y Cerrar');\t\r\n\
+  \t});\r\n\
+  \t\r\n\
+  });\r\n\
+  </script>"
+fill_step_id: 289
+created_at: 2012-06-12 23:58:36 Z
+updated_at: 2015-12-14 16:27:27.517528 Z
+include: "{\"1295\":{\"1780\":{\"1612\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1500\":{\"1811\":{\"1688\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1282\":{\"1791\":{\"1983\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1283\":{\"1791\":{\"1655\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"3350\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1273\":{\"1786\":{\"1632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1633\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3352\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1279\":{\"674\":{\"782\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1280\":{\"1786\":{\"1632\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1633\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3352\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"1354\":{\"1710\":{\"1401\":{\"views\":\"only_view\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"only_view\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "#::: INICIALIZAR DATOS GENERALES DE LA SOLICITUD :::#\r\n\
+  form_data.set(\"tipo_de_traspaso.tipo_de_traspaso.tipo_de_traspaso\",\"Regular\")\r\n\
+  \r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n\
+  result = WebserviceConsumer.get( '/consecutive/generador_attt_traspaso/generate.json').parsed_response\r\n\
+  _consecutivo = result[\"response\"]\r\n\
+  _consecutivo = \"#{@application[\"id\"]}-\"+\"#{_consecutivo[\"value\"]}\"\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\",_consecutivo)\r\n\
+  \r\n\
+  form_data.set(\"datos_de_pago.pago_manual_confirmado.pago_manual_confirmado\", \"S\xC3\xAD\")\r\n\
+  \r\n\
+  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{@owner[\"national_id\"]}\").parsed_response\r\n\
+  \tdatos = result[\"response\"]\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.tipo_de_identificacion\",\"C\xC3\xA9dula\")\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.cedula_pasaporte\",@owner[\"national_id\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.primer_nombre\",datos[\"primerNombre\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_nombre\",datos[\"segundoNombre\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.primer_apellido\",datos[\"primerApellido\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_apellido\",datos[\"segundoApellido\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.apellido_de_casada\",@owner[\"married_name\"])\r\n\
+  \t\t#::: UTILIZADO PARA PRINT DESIGNS :::#\r\n\
+  \t\tnombre_c = \"#{datos[\"primerNombre\"]} \"+\"#{datos[\"segundoNombre\"]} \"+\"#{datos[\"primerApellido\"]} \"+\"#{datos[\"segundoApellido\"]} \"+\"#{@owner[\"married_name\"]}\"\r\n\
+  \t\t#::: SE UTILIZA .squish PARA ELIMINAR LAS CADENAS EN BLANCO DEL LA VARIABLE nombre :::#\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.nombre\", nombre_c)\r\n\
+  else\r\n\
+  \tif ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"foreign_citizen\"))\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.tipo_de_identificacion\",\"Pasaporte\")\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.cedula_pasaporte\",@owner[\"passport\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.primer_nombre\",@owner[\"first_name\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_nombre\",@owner[\"second_name\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.primer_apellido\",@owner[\"last_name\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_apellido\",@owner[\"second_last_name\"])\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.apellido_de_casada\",@owner[\"married_name\"])\r\n\
+  \t\t#::: UTILIZADO PARA PRINT DESIGNS :::#\r\n\
+  \t\tnombre = \"#{@owner[\"first_name\"]} \"+\"#{@owner[\"second_name\"]} \"+\"#{@owner[\"last_name\"]} \"+\"#{@owner[\"second_last_name\"]} \"+\"#{@owner[\"married_name\"]}\"\r\n\
+  \t\t#::: SE UTILIZA .squish PARA ELIMINAR LAS CADENAS EN BLANCO DEL LA VARIABLE nombre :::#\r\n\
+  \t\tform_data.set(\"datos_del_solicitante_persona_natural.nombres_completos.nombre\", nombre)\r\n\
+  \tend\r\n\
+  end\r\n\
+  \t\r\n\
+  if (@owner[\"kind_of_user_type\"] == \"JuridicalPerson\")\r\n\
+  \t_ruc = @owner[\"tax_id\"]\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.ruc\",_ruc)\r\n\
+  \tform_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.nombre\",@owner[\"name\"])\r\n\
+  end"
+on_transition: "#::: DV: SETEANDO DATOS DEL SOLICITANTE: QUIEN INICIA EL TR\xC3\x81MITE ES DIFUNTO ON TRANSITION PASO 1\r\n\
+  if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n    numdoc = form_data.get(\"datos_del_solicitante.persona_natural_nombres_completos.cedula_pasaporte\")\r\n    result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{numdoc}\")).parsed_response\r\n    datos1 = result[\"response\"]\r\n    if datos1.blank? \r\n        transition_errors << \"La C\xC3\xA9dula del solicitante no fue encontrada. Por favor, verifique.\" \r\n    else            \r\n        difunto = datos1[\"cod_mensaje\"]\r\n        if (difunto == \"534\")\r\n            transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{numdoc} corresponde a un ciudadano Difunto.\"\r\n        end\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  #:::::Para poder obtener el dato en el campo dos y habilitar los campos cuando el solicitante sea vendedor y la contraparte sea pasaporte\r\n\
+  tip = form_data.get(\"tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante\")      \r\n\
+  form_data.set(\"requiere_contraparte.datos_contraparte.tipo_de_identificacion\",tip)\r\n\
+  form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_sociedad_string\",tip)\r\n\
+  \r\n\
+  soll = form_data.get(\"datos_del_solicitante_persona_natural.nombres_completos.tipo_de_identificacion\")      \r\n\
+  form_data.set(\"requiere_contraparte.datos_contraparte.solicitante\",soll)\r\n\
+  \r\n\
+  cont = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")      \r\n\
+  form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.nro_idoneidad\",cont)\r\n\
+  \r\n\
+  traspaso = form_data.get(\"tipo_de_traspaso.tipo_de_traspaso.tipo_de_traspaso\")\r\n\
+  #:::: DATOS SOLICITANTE JURIDICO ::::#\r\n\
+  if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n    _tipo = \"RUC\"\r\n    tipo_so = form_data.get(\"datos_del_solicitante_persona_juridica.nombres_completos.tipo_sociedad\")\r\n    _ruc = form_data.get(\"datos_del_solicitante_persona_juridica.nombres_completos.ruc\")\r\n    result = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_ruc/find.json?ruc=' + _ruc + '&tipo_sociedad=' + tipo_so)).parsed_response\r\n    data = result[\"response\"]\r\n    if !data.nil?\r\n        form_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.ruc\",data[\"ruc\"])\r\n        form_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.nombre\",data[\"nombre_empresa\"])\r\n        #::: USADO PARA LA SECCI\xC3\x93N DE DATOS DEL SOLICITANTE QUE VE LA CONTRAPARTE :::#\r\n        form_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.tipo_de_identificacion\",\"RUC\")\r\n        form_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.ruc\",data[\"ruc\"])\r\n        form_data.set(\"datos_del_solicitante_persona_juridica.nombres_completos.nombre\",data[\"nombre_empresa\"])\r\n        transition_errors << \"Para el tipo de traspaso Regular, una persona Jur\xC3\xADdica no puede ser Vendedor o Adquiriente del veh\xC3\xADculo. Por favor, verifique\"\r\n    else  \r\n        transition_errors << \"Los datos del solicitante no fueron hallados. Por favor, verifique.\"\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  #::::: VALIDAR QUE EL TRAMITE NO REQUIERA CONTRAPARTE\r\n\
+  form_data.set(\"requiere_contraparte.datos_contraparte.requierecontraparte\",\"\")\r\n\
+  #:::: En caso de que el tr\xC3\xA1mite no lleve una contraparte, mostrar error si el solicitante seleccion\xC3\xB3 que es un vendedor\r\n\
+  form_data.set(\"datos_del_vehiculo.tipo_traspaso.texto\",traspaso)\r\n\
+  solicitante = form_data.get(\"tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante\")\r\n\
+  if (traspaso != \"Regular\" and traspaso != \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" and traspaso != \"No efectuado durante el t\xC3\xA9rmino correspondiente\") and solicitante==\"Vendedor\"\r\n    if (traspaso != \"De un veh\xC3\xADculo oficial a una aseguradora\") \r\n        transition_errors << \"Para el tipo de traspaso que seleccion\xC3\xB3, el solicitante solo puede ser adquiriente. Por favor, verifique.\"\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  if (traspaso == \"De un veh\xC3\xADculo oficial a una aseguradora\" && solicitante !=\"Vendedor\") \r\n    transition_errors << \"Para el tipo de traspaso que seleccion\xC3\xB3, el solicitante solo puede ser Vendedor. Por favor, verifique.\"\r\n\
+  end\r\n\
+  \r\n\
+  #::::: SOLICITANTE ADQUIRIENTE\r\n\
+  adquiriente_tipo = \"\"\r\n\
+  adquiriente_num = \"\"\r\n\
+  propietario_tipo = \"\"\r\n\
+  propietario_num = \"\"\r\n\
+  \r\n\
+  #:::: Datos adicionales del adquiriente\r\n\
+  #:::: solicitante = form_data.get(\"tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante\")\r\n\
+  if (solicitante == \"Adquiriente\")\r\n    #::: aqui codigo de representante valida traspaso :::#\r\n    contra = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n    ## DETERMINANDO VALORES PARA PROPIETARIO O REPRESENTANTE DEL SERVICIO VALIDA TRASPASO CON LA CONTRAPARTE\r\n    propietario_num = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.no_documento\") \r\n    if contra == \"C\xC3\xA9dula\"\r\n        propietario_tipo = \"CIP\"  \r\n    end\r\n    if contra == \"RUC\"\r\n        propietario_tipo = \"RUC\" \r\n    end\r\n    if contra == \"Pasaporte\"\r\n        propietario_tipo = \"PAS\"\r\n    end\r\n\
+  \r\n    if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n        adquiriente_tipo = \"RUC\"\r\n        adquiriente_num = form_data.get(\"datos_del_solicitante_persona_juridica.nombres_completos.ruc\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_de_identificacion\", \"RUC\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\",data[\"ruc\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_sociedad\",tipo_so)\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales.pais_de_constitucion\",@owner[\"incorporation_country\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales.fecha_de_constitucion\",@owner[\"incorporation_date\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales.telefono_1\",@owner[\"fixed_number\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales.telefono_2\",@owner[\"movil_number\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.direccion.provincia\",@owner[\"province\"])\r\n    end\r\n    if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\"))\r\n        adquiriente_tipo = \"CIP\"\r\n        adquiriente_num = @owner[\"national_id\"]  \r\n        #_ci = @owner[\"national_id\"]\r\n        result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{adquiriente_num}\")).parsed_response\r\n        datos = result[\"response\"]\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_de_identificacion\", \"C\xC3\xA9dula\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\", adquiriente_num)\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_nombre\", @owner[\"first_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_nombre\", @owner[\"second_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_apellido\", @owner[\"last_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_apellido\", @owner[\"second_last_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.apellido_de_casada\", @owner[\"married_name\"])\r\n        if !datos.nil?\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.nacionalidad\",@owner[\"citizen_ship\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.pais_de_nacimiento\",datos[\"lugarNacimiento\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.fecha_de_nacimiento\",datos[\"fechaNacimiento\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.sexo\",datos[\"sexo\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono\",@owner[\"fixed_number\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono_laboral\",datos[\"tlfLocal\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.direccion.provincia_lista\",datos[\"provincia\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.direccion.distrito_lista\",datos[\"distrito\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.direccion.corregimiento_lista\",datos[\"corregimiento\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.direccion.barrio\",datos[\"calle-avenida\"])\r\n            form_data.set(\"datos_adicionales_adquiriente_natural.direccion.direccion\",datos[\"direccionNacimiento\"])\r\n            form_data.set(\"requiere_contraparte.datos_contraparte.email\",datos[\"email\"])\r\n            difunto = datos[\"cod_mensaje\"]\r\n            if (difunto == \"534\")\r\n                transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{_ci} asociado al adquiriente, corresponde a un ciudadano Difunto.\"\r\n            end\r\n        end\r\n    end\r\n    #::: para print designs nombre del contraparte:::\r\n    if ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"foreign_citizen\"))\r\n        adquiriente_tipo = \"PAS\"\r\n        adquiriente_num = @owner[\"passport\"]  \r\n        _pas = @owner[\"passport\"]\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_de_identificacion\", \"Pasaporte\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\", _pas)\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_nombre\", @owner[\"first_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_nombre\", @owner[\"second_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_apellido\", @owner[\"last_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_apellido\", @owner[\"second_last_name\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.apellido_de_casada\", @owner[\"married_name\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.nacionalidad\",@owner[\"citizen_ship\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.pais_de_nacimiento\",@owner[\"birth_country\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.fecha_de_nacimiento\",@owner[\"birthday\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.sexo\",@owner[\"gender\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono\",@owner[\"fixed_number\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono_laboral\",@owner[\"movil_number\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.provincia_lista\",@owner[\"province\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.distrito_lista\",@owner[\"district\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.direccion\",@owner[\"full_address\"])\r\n        form_data.set(\"requiere_contraparte.datos_contraparte.email\",@owner[\"email\"]) \r\n    end\r\n    aa = form_data.get(\"datos_del_solicitante_persona_natural.nombres_completos.primer_nombre\")\r\n    bb = form_data.get(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_nombre\")\r\n    cc = form_data.get(\"datos_del_solicitante_persona_natural.nombres_completos.primer_apellido\")\r\n    dd = form_data.get(\"datos_del_solicitante_persona_natural.nombres_completos.segundo_apellido\")\r\n    ee = form_data.get(\"datos_del_solicitante_persona_natural.nombres_completos.apellido_de_casada\")\r\n    nombre_co = aa +\" \"+ bb + \" \" + cc +\" \"+ dd +\" \"+ ee\r\n    form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.nombre\", nombre_co.squish)  \r\n    # if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n    #     propietario_tipo = \"RUC\"\r\n    #     propietario_num = @owner[\"tax_id\"]\r\n    # end\r\n    # if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n    #     if @owner[\"natural_person_type\"]==\"national_citizen\"\r\n    #         propietario_tipo = \"CIP\"\r\n    #         propietario_num = @owner[\"national_id\"]\r\n    #     else\r\n    #         propietario_tipo = \"PAS\"\r\n    #         propietario_num = @owner[\"passport\"]\r\n    #     end \r\n    # end\r\n\
+  end\r\n\
+  \r\n\
+  #:::: DATOS DEL VEHICULO ::::#\r\n\
+  placa = form_data.get(\"datos_del_vehiculo.datos_de_vehiculo.placa\")\r\n\
+  result = WebserviceConsumer.get(URI.escape('/service/bdin_attt_vehiculo_consulta_vehiculo_por_placa/find.json?placa=' + \"#{placa}\")).parsed_response\r\n\
+  vehiculo = result[\"response\"]\r\n\
+  if (vehiculo.nil?) \r\n    transition_errors << \"El n\xC3\xBAmero de placa del veh\xC3\xADculo no fue encontrada. Por favor, verifique.\"\r\n\
+  else\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.placa\",vehiculo[\"placa\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.marca\",vehiculo[\"marca\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.modelo\",vehiculo[\"modelo\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.ano_de_fabricacion\",vehiculo[\"anio\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.color\",vehiculo[\"color\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.fecha_de_ultimo_revisado\",vehiculo[\"fecha_ultima_revision\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.municipio_de_procedencia\",vehiculo[\"domiciliado_municipio\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.motor\",vehiculo[\"motor\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.chasis\",vehiculo[\"chasis\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.tipo_de_vehiculo_string\",vehiculo[\"tipo\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.aseguradora\",vehiculo[\"aseguradora\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.numero_de_puertas\",vehiculo[\"nro_puertas\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.nro_vin\",vehiculo[\"nro_vin\"])\r\n    form_data.set(\"datos_del_vehiculo.datos_de_vehiculo.id_del_vehiculo\",vehiculo[\"id_vehiculo\"])\r\n\
+  end\r\n\
+  \r\n\
+  #:::: EN CASO QUE EL SOLICITANTE SEA ADQUIRIENTE Y NO TENGA CONTRAPARTE\r\n\
+  if (traspaso != \"Regular\" && traspaso != \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" && traspaso != \"No efectuado durante el t\xC3\xA9rmino correspondiente\" && solicitante !=\"Vendedor\")\r\n    #::: Datos del propietario del veh\xC3\xADculo\r\n    documento_propietario = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.tipo_de_documento\")\r\n    #form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",documento_propietario)\r\n    if  @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n        form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"RUC\")\r\n    else\r\n        if @owner[\"natural_person_type\"]==\"national_citizen\"\r\n            form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"C\xC3\xA9dula\")\r\n        end\r\n        if @owner[\"natural_person_type\"] != \"national_citizen\"\r\n            form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"Pasaporte\")\r\n        end \r\n    end\r\n\
+  \r\n    nro_documento = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.no_documento\")\r\n    if (!nro_documento.blank?)\r\n        if documento_propietario == \"C\xC3\xA9dula\" \r\n            documento = vehiculo[\"cedula\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n        if documento_propietario == \"Pasaporte\"\r\n            documento = vehiculo[\"pasaporte\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n        if documento_propietario == \"RUC\"\r\n            documento = vehiculo[\"ruc\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n    else\r\n        transition_errors << \"Debe inidicar el n\xC3\xBAmero de documento del propietario\"\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  #:::: CONTRAPARTE OBLIGATORIO\r\n\
+  if ((traspaso == \"Regular\" || traspaso == \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" || traspaso == \"No efectuado durante el t\xC3\xA9rmino correspondiente\" ) &&   (traspaso !=  \"De un veh\xC3\xADculo oficial a una aseguradora\"))\r\n    #:::: Contraparte obligatorio\r\n    form_data.set(\"requiere_contraparte.datos_contraparte.requierecontraparte\",\"S\xC3\xAD\")\r\n    documento_contraparte = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n    form_data.set(\"requiere_contraparte.datos_contraparte.tipo_de_documento\",documento_contraparte)\r\n    #:::: Obtener Contraparte\r\n    nro_documento = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.no_documento\")\r\n    tipo_soc = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_sociedad\")\r\n    form_data.set(\"requiere_contraparte.datos_contraparte.documento\",nro_documento)\r\n    #Si era necesaria una contraparte pero no ingres\xC3\xB3 su # documento\r\n    if nro_documento.blank?\r\n        transition_errors << \"Para el tipo de traspaso que seleccion\xC3\xB3, una contraparte es obligatorio, por favor ingrese la informaci\xC3\xB3n requerida.\"\r\n    else\r\n        result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.json?identification_user=' + \"#{nro_documento}\").parsed_response\r\n        if result[\"response\"][\"person_id\"].nil? \r\n            form_data.set(\"requiere_contraparte.datos_contraparte.documento\",\"\")\r\n            transition_errors << \"Los datos de la Contraparte no fueron encontrados en el sistema, por favor verifique. \"\r\n        else\r\n            if documento_contraparte == \"C\xC3\xA9dula\" \r\n                form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.cedula_pasaporte\",nro_documento)\r\n                result = WebserviceConsumer.get(URI.escape('/service/bdin_tribunal_electoral/find.json?cedula=' + \"#{nro_documento}\")).parsed_response\r\n            end\r\n            if documento_contraparte == \"Pasaporte\"\r\n                form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.cedula_pasaporte\",nro_documento)\r\n            end\r\n            if documento_contraparte == \"RUC\"\r\n                form_data.set(\"datos_de_la_contraparte_persona_juridica.nombres_completos.ruc\",nro_documento)\r\n                result = WebserviceConsumer.get(URI.escape('/service/bdin_registro_publico_ruc/find.json?ruc=' + nro_documento + '&tipo_sociedad=' + tipo_soc)).parsed_response\r\n            end     \r\n        end\r\n        contraparte = result[\"response\"]\r\n        #:::: Datos de la Contraparte Persona Natural\r\n        if documento_contraparte == \"C\xC3\xA9dula\" \r\n            form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.cedula_pasaporte\",nro_documento)\r\n            if !contraparte.nil?\r\n                form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.primer_nombre\",contraparte[\"primerNombre\"])\r\n                form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.primer_apellido\",contraparte[\"primerApellido\"])\r\n                form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.segundo_apellido\",contraparte[\"segundoApellido\"])\r\n                difunto = contraparte[\"mensaje\"]\r\n                if (difunto != \"ND\")\r\n                    transition_errors << \"No puede continuar con el tr\xC3\xA1mite, ya que el nro. de documento #{nro_documento} asociado a la contraparte, corresponde a un ciudadano Difunto.\"\r\n                end\r\n                #:::: Utilizado para print design\r\n                nombre2 = form_data.get(\"datos_de_la_contraparte_persona_natural.nombres_completos.segundo_nombre\")\r\n                apellido3 = form_data.get(\"datos_de_la_contraparte_persona_natural.nombres_completos.apellido_de_casada\")\r\n                _nombre =  \"#{contraparte[\"primerNombre\"]} \"+\"#{nombre2} \"+\"#{contraparte[\"primerApellido\"]} \"+\"#{contraparte[\"segundoApellido\"]} \"+\"#{apellido3}\"\r\n                form_data.set(\"datos_de_la_contraparte_persona_natural.nombres_completos.nombre\",_nombre)\r\n            else\r\n                transition_errors << \"Los datos de la contraparte no fueron encontrados. Por favor, verifique.\"\r\n            end\r\n        end\r\n\
+  \r\n        if documento_contraparte == \"RUC\" \r\n            form_data.set(\"datos_de_la_contraparte_persona_juridica.nombres_completos.ruc\",nro_documento)\r\n            if !contraparte.nil?\r\n                form_data.set(\"datos_de_la_contraparte_persona_juridica.nombres_completos.ruc\",contraparte[\"ruc\"])\r\n                form_data.set(\"datos_de_la_contraparte_persona_juridica.nombres_completos.nombre\",contraparte[\"nombre_empresa\"])\r\n            else\r\n                transition_errors << \"Los datos de la contraparte no fueron encontrados, por favor verifique.\"\r\n            end\r\n        end\r\n    end\r\n\
+  \r\n    #:::: EN CASO QUE LA CONTRAPARTE SEA EL VENDEDOR SE DEBE VALIDAR QUE SEA EL PROPIETARIO DEL VEHICULO\r\n    opcion = form_data.get(\"tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante\")\r\n    if (opcion != \"Vendedor\")\r\n        form_data.set(\"tipo_de_contraparte.tipo_de_solicitante.tipo_de_contraparte\",\"Vendedor\")\r\n        if  @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n            form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"RUC\")\r\n        else    \r\n            @owner[\"natural_person_type\"] == \"national_citizen\" ? form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"C\xC3\xA9dula\") :\r\n            form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"Pasaporte\")\r\n        end\r\n        if documento_contraparte == \"C\xC3\xA9dula\" \r\n            documento = vehiculo[\"cedula\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n        if documento_contraparte == \"Pasaporte\"\r\n            documento = vehiculo[\"pasaporte\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n        if documento_contraparte == \"RUC\"\r\n            documento = vehiculo[\"ruc\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n    end\r\n    \r\n    #:::: EN CASO QUE EL SOLICITANTE SEA EL VENDEDOR\r\n    if (opcion == \"Vendedor\")\r\n        form_data.set(\"tipo_de_contraparte.tipo_de_solicitante.tipo_de_contraparte\",\"Adquiriente\")\r\n        if documento_contraparte == \"C\xC3\xA9dula\" \r\n            form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"C\xC3\xA9dula\")\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_de_identificacion\", \"C\xC3\xA9dula\")\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\", nro_documento)   \r\n        end\r\n        if documento_contraparte == \"Pasaporte\" \r\n            form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"Pasaporte\")\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_de_identificacion\", \"Pasaporte\")\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\", nro_documento)\r\n        end\r\n        if documento_contraparte == \"RUC\" \r\n            form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"RUC\")\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_de_identificacion\", \"RUC\")\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\", nro_documento)   \r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_sociedad\",tipo_soc)\r\n        end\r\n\
+  \r\n        if  @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n            adquiriente_tipo = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n            adquiriente_num = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.no_documento\")\r\n            nro_documento = @owner[\"tax_id\"]\r\n            documento = vehiculo[\"ruc\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n        if @owner[\"natural_person_type\"]==\"national_citizen\"\r\n            adquiriente_tipo = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n            adquiriente_num = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.no_documento\")\r\n            nro_documento = @owner[\"national_id\"]\r\n            documento = vehiculo[\"cedula\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n        if @owner[\"natural_person_type\"] != \"national_citizen\"\r\n            adquiriente_tipo = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n            adquiriente_num = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.no_documento\")\r\n            nro_documento = @owner[\"passport\"]\r\n            documento = vehiculo[\"pasaporte\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end \r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  #:::: SOLICITANTE VENEDEDOR\r\n\
+  #:::: Datos adicionales del adquiriente\r\n\
+  #solicitante = form_data.get(\"tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante\")\r\n\
+  if solicitante == \"Vendedor\"\r\n    documento_contraparte = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n    form_data.set(\"tipo_de_contraparte.tipo_de_solicitante.tipo_de_contraparte\",\"Adquiriente\")\r\n    adquiriente_num = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.no_documento\")\r\n    if documento_contraparte == \"C\xC3\xA9dula\"\r\n        adquiriente_tipo = \"CIP\"\r\n        form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"C\xC3\xA9dula\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_de_identificacion\", \"C\xC3\xA9dula\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\", adquiriente_num)\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_nombre\", contraparte[\"primerNombre\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_nombre\", contraparte[\"segundoNombre\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_apellido\", contraparte[\"primerApellido\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_apellido\", contraparte[\"segundoApellido\"])\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.apellido_de_casada\", contraparte[\"apellidoCasada\"])\r\n        form_data.set(\"requiere_contraparte.datos_contraparte.email\",contraparte[\"email\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.pais_de_nacimiento\",contraparte[\"lugarNacimiento\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.fecha_de_nacimiento\",contraparte[\"fechaNacimiento\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.nacionalidad\",contraparte[\"nacionalidad\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.sexo\",contraparte[\"sexo\"]) \r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono\",contraparte[\"tlfCelular\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono_laboral\",contraparte[\"tlfLocal\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.provincia_lista\",contraparte[\"provincia\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.distrito_lista\",contraparte[\"distrito\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.corregimiento_lista\",contraparte[\"corregimiento\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.barrio\",contraparte[\"calle-avenida\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_natural.direccion.direccion\",contraparte[\"direccionNacimiento\"])\r\n        nombre_completo = \"#{contraparte[\"primerNombre\"]} \" + \" #{contraparte[\"segundoNombre\"]} \" + \" #{contraparte[\"primerApellido\"]} \" + \" #{contraparte[\"segundoApellido\"]} \" + \" #{contraparte[\"apellidoCasada\"]}\"\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.nombre\", nombre_completo.squish)\r\n    end\r\n    if documento_contraparte == \"Pasaporte\" \r\n        adquiriente_tipo = \"PAS\"\r\n        form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"Pasaporte\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_de_identificacion\", \"Pasaporte\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\", adquiriente_num)\r\n        idpersona = @application[\"person_id\"].to_s\r\n        result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?person_id=' + \"#{idpersona}&include_all=true\").parsed_response\r\n        hash = result[\"hash\"]\r\n        persona = hash[\"response\"]\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.nombre\", persona[\"name\"])\r\n        # form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_nombre\", dataOwner[\"first_name\"])\r\n        # form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_nombre\", dataOwner[\"second_name\"])\r\n        # form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_apellido\", dataOwner[\"last_name\"])\r\n        # form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_apellido\", dataOwner[\"second_last_name\"])\r\n        # form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.apellido_de_casada\", dataOwner[\"married_name\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.nacionalidad\",dataOwner[\"citizen_ship\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.pais_de_nacimiento\",dataOwner[\"birth_country\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.fecha_de_nacimiento\",dataOwner[\"birthday\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.sexo\",dataOwner[\"gender\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono\",dataOwner[\"fixed_number\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.datos_adicionales.telefono_laboral\",dataOwner[\"movil_number\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.direccion.provincia_lista\",dataOwner[\"province\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.direccion.distrito_lista\",dataOwner[\"district\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.direccion.corregimiento_lista\",dataOwner[\"corregimiento\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.direccion.barrio\",dataOwner[\"calle_venida\"])\r\n        # form_data.set(\"datos_adicionales_adquiriente_natural.direccion.direccion\",dataOwner[\"full_address\"])\r\n        # form_data.set(\"requiere_contraparte.datos_contraparte.email\",dataOwner[\"email\"]) \r\n    end\r\n    if documento_contraparte == \"RUC\" \r\n        adquiriente_tipo = \"RUC\"\r\n        tipo_so = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_sociedad\")\r\n        _ruc = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.no_documento\")\r\n        result = WebserviceConsumer.get( '/service/bdin_registro_publico_ruc/find.json?ruc=' + _ruc + '&tipo_sociedad=' + tipo_so).parsed_response\r\n        data = result[\"response\"]\r\n        form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"RUC\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_de_identificacion\", \"RUC\")\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\", nro_documento)\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_sociedad\",tipo_soc)\r\n        form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.nombre\", data[\"nombre_empresa\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales_adquiriente_juridico_lista.pais_de_constitucion\",data[\"pais\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales_adquiriente_juridico_lista.fecha_de_constitucion\",data[\"fechaConstitucion\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales_adquiriente_juridico_lista.telefono_1\",data[\"tlf_movil\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.datos_adicionales_adquiriente_juridico_lista.telefono_2\",data[\"tlf_celular\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.direccion.provincia_lista\",data[\"provincia\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.direccion.distrito_lista\",data[\"distrito\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.direccion.corregimiento_lista\",data[\"corregimiento\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.direccion.barrio\",data[\"calle\"])\r\n        form_data.set(\"datos_adicionales_adquiriente_juridico.direccion.direccion\",data[\"direccion\"])\r\n        form_data.set(\"requiere_contraparte.datos_contraparte.email\",data[\"email\"])\r\n    end\r\n    # if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n    #     nro_documento = @owner[\"tax_id\"]\r\n    #     documento = vehiculo[\"ruc\"]\r\n    #     if !documento.blank?\r\n    #         if (documento != nro_documento)\r\n    #             transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de veh\xC3\xADculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada. Por favor, verifique. \"\r\n    #         end\r\n    #     end\r\n    # else\r\n    #     if @owner[\"natural_person_type\"]==\"national_citizen\"\r\n    #         nro_documento = @owner[\"national_id\"]\r\n    #         documento = vehiculo[\"cedula\"]\r\n    #         if !documento.blank?\r\n    #             if (documento != nro_documento)\r\n    #                 transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de veh\xC3\xADculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada. Por favor, verifique.\"\r\n    #             end\r\n    #         end\r\n    #     end\r\n    #     if @owner[\"natural_person_type\"] != \"national_citizen\"\r\n    #         nro_documento = @owner[\"passport\"]\r\n    #         documento = vehiculo[\"pasaporte\"]\r\n    #         if !documento.blank?\r\n    #             if (documento != nro_documento)\r\n    #                 transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de veh\xC3\xADculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n    #             end\r\n    #         end\r\n    #     end \r\n    # end\r\n    if @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n        propietario_tipo = \"RUC\"\r\n        propietario_num = @owner[\"tax_id\"]\r\n    end\r\n    if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n        if (@owner[\"natural_person_type\"] == \"national_citizen\")\r\n            propietario_tipo = \"CIP\"\r\n            propietario_num = @owner[\"national_id\"]\r\n        else\r\n            propietario_tipo = \"PAS\"\r\n            propietario_num = @owner[\"passport\"]\r\n        end\r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  #:::: DATOS del Vendedor por Aseguradora\r\n\
+  if (traspaso == \"De un veh\xC3\xADculo oficial a una aseguradora\")\r\n    _tipo = \"RUC\"\r\n    form_data.set(\"tipo_de_documento_propietario.tipo_de_documento.tipo\",\"RUC\")\r\n    tipo_so = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.tipo_sociedad\")\r\n    tipo_doc = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.tipo_de_documento\")\r\n    if tipo_doc !=  \"RUC\"\r\n        transition_errors << \"Para el tipo de tramite que seleccion\xC3\xB3, el adquiriente solo puede ser juridico. Por favor, verifique. \"\r\n    else \r\n        _ruc = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.no_documento\")\r\n        result = WebserviceConsumer.get( '/service/bdin_registro_publico_ruc/find.json?ruc=' + _ruc + '&tipo_sociedad=' + tipo_so).parsed_response\r\n        data = result[\"response\"]\r\n        if !data.nil?\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_de_identificacion\", \"RUC\")\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\",data[\"ruc\"])\r\n            form_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_sociedad\",tipo_so)\r\n        else    \r\n            transition_errors << \"Los datos del Adquiriente no fueron hallados en el Registro P\xC3\xBAblico\"\r\n        end\r\n        \r\n    end\r\n    if  @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n        adquiriente_tipo = \"RUC\"\r\n        adquiriente_num = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.no_documento\")\r\n        nro_documento = @owner[\"tax_id\"]\r\n        documento = vehiculo[\"ruc\"]\r\n        if !documento.blank?\r\n            if (documento != nro_documento)\r\n                transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n            end\r\n        end\r\n    else \r\n        if @owner[\"natural_person_type\"]==\"national_citizen\"\r\n            adquiriente_tipo = \"RUC\"\r\n            adquiriente_num = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.no_documento\")\r\n            nro_documento = @owner[\"national_id\"]\r\n            documento = vehiculo[\"cedula\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end\r\n        if @owner[\"natural_person_type\"] != \"national_citizen\"\r\n            adquiriente_tipo = \"RUC\"\r\n            adquiriente_num = form_data.get(\"tipo_de_documento_propietario.tipo_de_documento.no_documento\")\r\n            nro_documento = @owner[\"passport\"]\r\n            documento = vehiculo[\"pasaporte\"]\r\n            if !documento.blank?\r\n                if (documento != nro_documento)\r\n                    transition_errors << \"El n\xC3\xBAmero de documento introducido del propietario de vehiculo, no coinciden con la informaci\xC3\xB3n de la placa proporcionada \"\r\n                end\r\n            end\r\n        end \r\n    end\r\n\
+  end\r\n\
+  \r\n\
+  #:::: SERVICIO VALIDA TRASPASO\r\n\
+  \r\n\
+  tipo_tram = \"02\"\r\n\
+  tipo_sol = \"PRI\"\r\n\
+  distri = 1\r\n\
+  #Validando traspaso\r\n\
+  result = WebserviceConsumer.get('/service/bdin_attt_valida_traspaso_psp_vehiculo/find.json?placa=' + \"#{placa}\"  + '&tipoTramite=' + \"#{tipo_tram}\" + '&tipoDocNuevoPropietario=' + \"#{adquiriente_tipo}\" + '&numDocNuevoPropietario=' + \"#{adquiriente_num}\"  + '&tipoDocRepresentante=' + \"#{propietario_tipo}\" + '&numDocRepresentante=' + \"#{propietario_num}\" + '&tipoSolicitante=' + \"#{tipo_sol}\" + '&distribuidoraAutorizada=' + \"#{distri}\").parsed_response\r\n\
+  valida = result[\"response\"]\r\n\
+  if (!valida.nil?) \r\n    edo_vehiculo = valida[\"estadoVehiculo\"].downcase\r\n    pertenencia = valida[\"tipoPertenenciaVehiculo\"]\r\n    med_cautelar = valida[\"existeMedidaCautelar\"].downcase\r\n    gravamen = valida[\"existeGravamen\"].downcase\r\n    cupo_relacionado = valida[\"existeCupoRelacionado\"].downcase\r\n    tramite_sruvm = valida[\"existeTramiteVehEnSRUVM\"].downcase\r\n    tramite_pyd = valida[\"existeTramiteVehEnPYD\"].downcase\r\n    pazysalvo = valida[\"existePazYSalvoVehiculo\"].downcase\r\n    rst_transito = valida[\"exiteRestriccionTransito\"].downcase\r\n    nvo_propietario = valida[\"existeNuvPropietario\"].downcase\r\n    usr_contraloria = valida[\"esUsuarioContraloria\"].downcase\r\n    usr_plazac = valida[\"esUsuarioPlazaConcordia\"].downcase\r\n    vlda_distri = valida[\"esValidoTramiteDistribuidora\"].downcase\r\n    tra_docpyd = valida[\"existeTramiteEnPYD\"].downcase\r\n    uso_vehiculo = valida[\"tipoUsoVehiculo\"]\r\n\
+  \r\n    if edo_vehiculo != \"alta\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Estado del Vehicul\xC3\xB3 es DISTINTO de ALTA\"\r\n    end\r\n    if pertenencia.to_i != 1\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Tipo de Pertenencia del Vehicul\xC3\xB3 es distinto a 1\"\r\n    end\r\n    if med_cautelar != \"no\" && med_cautelar != \"na\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que existe una Medida Cautelar, asignada al Vehicul\xC3\xB3\"\r\n    end\r\n    if gravamen != \"no\" && gravamen != \"na\"\r\n       transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Vehicul\xC3\xB3 tiene asociado(s) Gravamen(es)\"\r\n    end \r\n    if cupo_relacionado != \"no\" && cupo_relacionado != \"na\"\r\n       transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Vehicul\xC3\xB3 tiene Cupos Relacionados\"\r\n    end \r\n    if tramite_sruvm != \"no\" && tramite_sruvm != \"na\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el tramite existe en SRUVM\"\r\n    end \r\n    if tramite_pyd != \"no\" && tramite_pyd != \"na\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el tramite existe en PYD\"\r\n    end \r\n    if pazysalvo != \"si\" && pazysalvo != \"na\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Vehicul\xC3\xB3 posee Paz y Salvo\"\r\n    end \r\n    if rst_transito != \"no\" && rst_transito != \"na\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Vehicul\xC3\xB3 tiene Restricci\xC3\xB3n de Transito\"\r\n    end \r\n    if nvo_propietario != \"si\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Vehicul\xC3\xB3 No Pose\xC3\xA9 Nuevo Propietario\"\r\n    end \r\n    if usr_contraloria == \"si\" && (uso_vehiculo != 4 || uso_vehiculo != 5 || uso_vehiculo != 8)\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Usuario Contraloria no coincide con los valores de Tipo de Uso de Vehicul\xC3\xB3\"\r\n    end \r\n    if usr_plazac == \"si\" && (uso_vehiculo.to_i != 1 && uso_vehiculo.to_i != 2 && uso_vehiculo.to_i != 3 && uso_vehiculo.to_i != 5 && uso_vehiculo.to_i != 6)\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el Usuario Plaza Concordia no coincide con los valores de Tipo de Uso de Vehicul\xC3\xB3\"\r\n    end \r\n    if tra_docpyd != \"no\" && tra_docpyd != \"na\"\r\n        transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que el tramite existe en  DOCPYD\"\r\n    end\r\n\
+  \r\n    #::: Fecha Ultimo Revisado\r\n    fecha = valida[\"fechaUltRevisado\"] \r\n    fechahoy = Date.today\r\n    fechahoy = fechahoy.strftime(\"%d-%m-%Y\")\r\n    tiempo = ((fechahoy.to_date - valida[\"fechaUltRevisado\"].to_date).to_f / 365)\r\n\
+  \r\n    if (tiempo > 1)\r\n        #:::: Fecha de ultimo revisado\r\n        fecha = fecha.to_s \r\n        arreglo = []\r\n        arreglo = fecha.split(\"-\")\r\n        dia = arreglo[0]\r\n        mes = arreglo[1]\r\n        anio  = arreglo[2]\r\n        #::: Fecha Actual\r\n        arreglo2 = []\r\n        arreglo2 = fechahoy.split(\"-\")\r\n        dia2 = arreglo2[0]\r\n        mes2 = arreglo2[1]\r\n        anio2  = arreglo2[2]\r\n        if ((anio2.to_i - anio.to_i) <= 1)\r\n            if mes != mes2\r\n                transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que La Fecha de Ultimo Revisado es mayor a un a\xC3\xB1o y no esta dentro del mes correspondiente\"\r\n            end\r\n        else\r\n            transition_errors << \"No se puede realizar el Traspaso Vehicular, dado que La Fecha de Ultimo Revisado es mayor a un a\xC3\xB1o\"\r\n        end\r\n    end\r\n\
+  else\r\n    transition_errors << \"Los datos suministrados, no fueron encontrados en el servicio de Validar Traspaso\"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: Paso 2 - Datos Adicionales
+position: 0
+ajax_calls: "//::::::::::::: DV: Validaciones varias PASO 1 ::::::::::://\r\n\
+  $(document).ready(function(){\r\n    tipo_documento_pro  = $('#field_tipo_de_documento_propietario_tipo_de_documento_tipo_de_documento');\r\n    tipo_sociedad_pro   = $('#field_tipo_de_documento_propietario_tipo_de_documento_tipo_sociedad');\r\n    nro_documento_pro   = $('#field_tipo_de_documento_propietario_tipo_de_documento_no_documento');\r\n    tipo_documento_cont = $('#field_tipo_de_documento_contraparte_tipo_de_documento_tipo_de_documento');\r\n    tipo_sociedad_cont  = $('#field_tipo_de_documento_contraparte_tipo_de_documento_tipo_sociedad');\r\n    nro_documento_cont  = $('#field_tipo_de_documento_contraparte_tipo_de_documento_no_documento');\r\n    tipo_traspaso \t\t= $(\"#field_tipo_de_traspaso_tipo_de_traspaso_tipo_de_traspaso\");\r\n\
+  \r\n    //:::::::: Mantener campos entre pasos y reparo :::::://\r\n    if($(tipo_documento_pro).find(':selected').val() == \"\"){\r\n        $(tipo_sociedad_pro).parents(\".field-box\").hide();    \r\n    }\r\n    if($(tipo_documento_pro).find(':selected').val() == \"RUC\"){\r\n        $(tipo_sociedad_pro).parents(\".field-box\").show();\r\n    }else{\r\n        $(tipo_sociedad_pro).parents(\".field-box\").hide();\r\n    }\r\n\
+  \r\n    if($(tipo_documento_cont).find(':selected').val() == \"\"){\r\n        $(tipo_sociedad_cont).parents(\".field-box\").hide();    \r\n    }\r\n    if($(tipo_documento_cont).find(':selected').val() == \"RUC\"){\r\n        $(tipo_sociedad_cont).parents(\".field-box\").show();\r\n    }else{\r\n        $(tipo_sociedad_cont).parents(\".field-box\").hide();\r\n    }\r\n\
+  \r\n    if($(tipo_traspaso).find(':selected').val() == \"\"){\r\n        $(tipo_documento_cont).parents(\".section-box\").hide();\r\n        $(tipo_documento_pro).parents(\".section-box\").hide();\r\n    }\r\n    if($(tipo_traspaso).find(':selected').val() == 'Regular' || $(tipo_traspaso).find(':selected').val() == 'De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora' || $(tipo_traspaso).find(':selected').val() == 'No efectuado durante el t\xC3\xA9rmino correspondiente') {\r\n        $(tipo_documento_cont).parents(\".section-box\").show();\r\n        $(tipo_documento_pro).parents(\".section-box\").hide();\r\n    }else if($(tipo_traspaso).find(':selected').val() == \"\") {\r\n        $(tipo_documento_cont).parents(\".section-box\").hide();\r\n        $(tipo_documento_pro).parents(\".section-box\").hide();\r\n    }else{\r\n    \t$(tipo_documento_cont).parents(\".section-box\").hide();\r\n        $(tipo_documento_pro).parents(\".section-box\").show();\r\n    }\r\n\
+  \r\n    //::::::::: Change para limpiar campos ::::::://\r\n    $( function() {\r\n        tipo_documento_pro.change(function() {\r\n            if ($(tipo_documento_pro).find(':selected').val() == \"\") {\r\n                $(tipo_sociedad_pro).parents(\".field-box\").hide();\r\n                $(tipo_sociedad_pro).val('');\r\n                $(nro_documento_pro).val(''); \r\n            }\r\n            if ($(tipo_documento_pro).find(':selected').val() != \"RUC\") {\r\n            \t$(tipo_sociedad_pro).parents(\".field-box\").hide();\r\n                $(tipo_sociedad_pro).val('');\r\n                $(nro_documento_pro).val(''); \r\n            }else{\r\n            \t$(tipo_sociedad_pro).parents(\".field-box\").show();\r\n            \t$(nro_documento_pro).val(''); \t\r\n            }\r\n        });\r\n    });\r\n\
+  \r\n    $( function() {\r\n        tipo_documento_cont.change(function() {\r\n            if ($(tipo_documento_cont).find(':selected').val() == \"\") {\r\n                $(tipo_sociedad_cont).parents(\".field-box\").hide();\r\n                $(tipo_sociedad_cont).val('');\r\n                $(nro_documento_cont).val(''); \r\n            }\r\n            if ($(tipo_documento_cont).find(':selected').val() != \"RUC\") {\r\n            \t$(tipo_sociedad_cont).parents(\".field-box\").hide();\r\n                $(tipo_sociedad_cont).val('');\r\n                $(nro_documento_cont).val(''); \r\n            }else{\r\n            \t$(tipo_sociedad_cont).parents(\".field-box\").show();\r\n            \t$(nro_documento_cont).val(''); \t\r\n            }\r\n        });\r\n    });\r\n\
+  \r\n    $( function() {\r\n        tipo_traspaso.change(function() {\r\n            if ($(tipo_traspaso).find(':selected').val() == \"\") {\r\n\
+  \t\t\t\t$(tipo_documento_cont).parents(\".section-box\").hide();\r\n\
+  \t\t\t\t$(tipo_documento_pro).parents(\".section-box\").hide();\r\n            }\r\n            if ($(tipo_traspaso).find(':selected').val() == 'Regular' || $(tipo_traspaso).find(':selected').val() == 'De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora' || $(tipo_traspaso).find(':selected').val() == 'No efectuado durante el t\xC3\xA9rmino correspondiente'){\r\n\
+  \t\t\t\t$(tipo_documento_cont).parents(\".section-box\").show();\r\n\
+  \t\t\t\t$(tipo_documento_pro).parents(\".section-box\").hide();\r\n\
+  \t\t\t\t$(tipo_sociedad_pro).val('');\r\n                $(nro_documento_pro).val(''); \r\n                $(tipo_documento_pro).val('');\r\n            }else if($(tipo_traspaso).find(':selected').val() == ''){\r\n                $(tipo_documento_cont).parents(\".section-box\").hide();\r\n\
+  \t\t\t\t$(tipo_documento_pro).parents(\".section-box\").hide();\r\n\
+  \t\t\t\t$(tipo_sociedad_cont).val('');\r\n                $(nro_documento_cont).val(''); \r\n                $(tipo_documento_cont).val('');\r\n            }else{\r\n                $(tipo_documento_cont).parents(\".section-box\").hide();\r\n\
+  \t\t\t\t$(tipo_documento_pro).parents(\".section-box\").show();\r\n\
+  \t\t\t\t$(tipo_sociedad_cont).val('');\r\n                $(nro_documento_cont).val(''); \r\n                $(tipo_documento_cont).val('');\r\n            }\r\n        });\r\n    });\r\n\
+  \r\n\
+  \t$(\"#field_tipo_de_solicitante_tipo_de_solicitante_tipo_de_solicitante\").change(function(){\r\n\
+  \t\tdato4 = $(this).val();\r\n\
+  \t\tif(dato4 == 'Adquiriente'){\r\n\
+  \t\t\t$( function() {\r\n\
+  \t\t\t\t$(\"div\").each (function(){\r\n\
+  \t\t\t\t\tif ($(this).html().trim() == \"Secci\xC3\xB3n: Datos del Nuevo Propietario del Veh\xC3\xADculo\") {  // aqu\xC3\xAD colocas el nombre que deseas cambiar\r\n\
+  \t\t\t\t\t\t$(this).html(\"Secci\xC3\xB3n: Datos del Propietario del Veh\xC3\xADculo\"); // Aqu\xC3\xAD colocas el Nombre que deseas que se muestre\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t});\r\n\
+  \t\t\t});   \r\n\
+  \t\t} else{\r\n\
+  \t\t\t$( function() {\r\n\
+  \t\t\t\t$(\"div\").each (function(){\r\n\
+  \t\t\t\t\tif ($(this).html().trim() == \"Secci\xC3\xB3n: Datos del Propietario del Veh\xC3\xADculo\") {  // aqu\xC3\xAD colocas el nombre que deseas cambiar\r\n\
+  \t\t\t\t\t\t$(this).html(\"Secci\xC3\xB3n: Datos del Nuevo Propietario del Veh\xC3\xADculo\"); // Aqu\xC3\xAD colocas el Nombre que deseas que se muestre\r\n\
+  \t\t\t\t\t}\r\n\
+  \t\t\t\t});\r\n\
+  \t\t\t});   \r\n\
+  \t\t}\r\n\
+  \t}); \r\n\
+  });"

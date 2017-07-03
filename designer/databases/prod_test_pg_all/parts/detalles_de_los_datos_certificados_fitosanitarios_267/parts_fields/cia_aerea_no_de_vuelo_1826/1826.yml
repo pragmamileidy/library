@@ -1,0 +1,30 @@
+--- 
+id: 1826
+part_id: 267
+field_id: 130
+name: "C\xC3\xADa A\xC3\xA9rea No De Vuelo"
+created_at: 2012-06-14 21:31:24 Z
+updated_at: 2017-06-04 00:29:36.468482 Z
+label: "C\xC3\xADa. A\xC3\xA9rea Nro.de Vuelo"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Nombre de la Compa\xC3\xB1\xC3\xADa A\xC3\xA9rea y N\xC3\xBAmero de vuelo, en caso que el env\xC3\xADo  sea transportado v\xC3\xADa a\xC3\xA9rea"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2dcbf0be-53c2-4366-81db-48882a9e2c03
+version: 20170603-202936

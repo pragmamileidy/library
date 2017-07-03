@@ -1,0 +1,18 @@
+--- 
+id: 4302
+design_id: 181
+section_id: 547
+name: Tipo de Impresor
+created_at: 2014-04-25 14:27:10 Z
+updated_at: 2017-02-27 13:19:32.928663 Z
+label: Tipo de Impresor
+min_instances: 1
+max_instances: 5
+depends_on: "option = form_data.get(\"informacion_de_la_obra_literaria.datos_de_la_obra.estatus_de_la_obra\")\r\n\
+  \r\n\
+  option != \"In\xC3\xA9dita\""
+manage_as_confidential: false
+include: "{\"3143\":{\"3112\":{\"required\":\"required\"},\"3113\":{\"required\":\"required\"},\"3604\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 11

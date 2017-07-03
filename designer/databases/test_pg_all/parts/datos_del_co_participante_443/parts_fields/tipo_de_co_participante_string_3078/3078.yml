@@ -1,0 +1,30 @@
+--- 
+id: 3078
+part_id: 443
+field_id: 10
+name: Tipo de Co-Participante_string
+created_at: 2013-03-14 21:20:33 Z
+updated_at: 2017-06-04 00:22:42.978080 Z
+label: Tipo de Co-Participante
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: deab5d54-fb96-4fae-b06e-99247ed4177b
+version: 20170603-202242

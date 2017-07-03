@@ -1,0 +1,19 @@
+--- 
+id: 1201
+section_id: 201
+part_id: 49
+name: "Centro - T\xC3\xA9cnico de Servicio al Cliente"
+created_at: 2012-04-26 19:31:47 Z
+updated_at: 2012-04-26 19:31:47 Z
+label: "Centro - T\xC3\xA9cnico de Servicio al Cliente"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 13

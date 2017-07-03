@@ -1,0 +1,30 @@
+--- 
+id: 3704
+part_id: 518
+field_id: 10
+name: rolename_recibir1
+created_at: 2014-06-30 18:42:17 Z
+updated_at: 2017-06-04 00:30:10.922559 Z
+label: Rolename Recibir1
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 915e89ff-b7eb-4716-a3ec-cd487bc4dc11
+version: 20170603-203010

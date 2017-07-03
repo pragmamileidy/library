@@ -1,0 +1,16 @@
+--- 
+id: 1757
+design_id: 135
+section_id: 368
+name: "Anexos Jur\xC3\xADdico"
+created_at: 2012-08-08 21:30:32 Z
+updated_at: 2017-02-25 13:25:20.044795 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"2105\":{\"210\":{\"required\":\"required\"}},\"2106\":{\"210\":{\"required\":\"required\"}},\"2107\":{\"210\":{\"required\":\"required\"}},\"2108\":{\"210\":{\"required\":\"required\"}},\"2109\":{\"210\":{\"required\":\"required\"}},\"2110\":{\"210\":{\"required\":\"required\"}},\"2111\":{\"210\":{\"required\":\"required\"}},\"3661\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

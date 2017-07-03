@@ -1,0 +1,34 @@
+--- 
+id: 1478
+name: Paso 2 - Por Defecto
+label: Defaults
+description: ""
+fill_step_id: 733
+created_at: 2013-09-06 16:34:41 Z
+updated_at: 2013-09-06 16:34:41 Z
+include: "{\"3184\":{\"2456\":{\"3435\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2457\":{\"2747\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2748\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2458\":{\"2749\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2750\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2751\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2752\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2459\":{\"2755\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2756\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: |-
+  #Llenar campos TAG
+  
+  form_data.set("defaults100.tag.introduzca_la_informacion", "defaults")
+  
+  
+  #Llenar campos  EMAIL_SENDER
+  
+  form_data.set("defaults100.email_sender.email_sender_for_persons", "no-reply@institucion.gob.pa")
+  form_data.set("defaults100.email_sender.email_sender_for_agents", "no-reply@institucion.gob.pa")
+  
+  
+  #Llenar campos REQUIRES
+  
+  form_data.set("defaults100.requires.requires_pay", "false")
+  form_data.set("defaults100.requires.requires_stamps", "false")
+on_transition: ""
+views: 
+back_step: Paso 1 - Cargar Parametros
+next_step: Paso 3 - Parametro de Constantes
+position: 1
+ajax_calls: ""

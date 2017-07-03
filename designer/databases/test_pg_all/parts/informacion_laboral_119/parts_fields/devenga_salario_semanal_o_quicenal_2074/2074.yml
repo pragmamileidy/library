@@ -1,0 +1,30 @@
+--- 
+id: 2074
+part_id: 119
+field_id: 10
+name: Devenga Salario  Semanal o Quicenal
+created_at: 2012-07-20 00:52:19 Z
+updated_at: 2017-06-04 00:31:58.228278 Z
+label: Devenga Salario  Semanal o Quicenal
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 31
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 963cfb9a-1c87-4782-a268-e404bd2402a8
+version: 20170603-203158

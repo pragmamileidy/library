@@ -1,0 +1,30 @@
+--- 
+id: 1707
+part_id: 316
+field_id: 13
+name: "Fecha de la Certificaci\xC3\xB3n"
+created_at: 2012-06-10 15:37:16 Z
+updated_at: 2017-06-04 00:24:11.933714 Z
+label: "Fecha de la Certificaci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7a01b5e0-871b-4822-9c79-3203f8303ac6
+version: 20170603-202411

@@ -1,0 +1,30 @@
+--- 
+id: 1827
+part_id: 267
+field_id: 130
+name: Puerto de Entrada
+created_at: 2012-06-14 21:33:29 Z
+updated_at: 2017-06-04 00:30:00.446873 Z
+label: Puerto de Entrada
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Puerto de entrada del env\xC3\xADo"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 8
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a48467c9-a701-4897-9dae-3b239f427564
+version: 20170603-203000

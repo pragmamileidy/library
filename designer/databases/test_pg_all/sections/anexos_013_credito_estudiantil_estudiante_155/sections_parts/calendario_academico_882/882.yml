@@ -1,0 +1,19 @@
+--- 
+id: 882
+section_id: 155
+part_id: 38
+name: "Calendario Acad\xC3\xA9mico"
+created_at: 2012-03-28 20:22:42 Z
+updated_at: 2012-04-10 01:25:46 Z
+label: "Calendario Acad\xC3\xA9mico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 8

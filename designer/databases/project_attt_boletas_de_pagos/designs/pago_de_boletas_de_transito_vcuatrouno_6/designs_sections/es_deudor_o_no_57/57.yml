@@ -1,0 +1,16 @@
+--- 
+id: 57
+design_id: 6
+section_id: 11
+name: es deudor o no
+created_at: 2017-03-24 14:47:03.356664 Z
+updated_at: 2017-03-24 14:47:03.356664 Z
+label: Datos de la Consulta
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"19\":{\"68\":{\"required\":\"required\"},\"3\":{\"required\":\"required\"},\"4\":{\"required\":\"required\"},\"6\":{\"required\":\"unrequired\"},\"71\":{\"required\":\"unrequired\"},\"51\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 2

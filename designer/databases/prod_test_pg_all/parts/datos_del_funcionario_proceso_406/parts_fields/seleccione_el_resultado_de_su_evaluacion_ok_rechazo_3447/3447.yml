@@ -1,0 +1,30 @@
+--- 
+id: 3447
+part_id: 406
+field_id: 306
+name: "Seleccione el resultado de su evaluaci\xC3\xB3n ok rechazo"
+created_at: 2013-09-19 14:01:30 Z
+updated_at: 2017-06-04 00:27:40.657882 Z
+label: "Seleccione el resultado de su evaluaci\xC3\xB3n"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: b03d0593-f216-4d49-b4c4-29cb5d788f6f
+version: 20170603-202740

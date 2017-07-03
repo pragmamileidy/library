@@ -1,0 +1,19 @@
+--- 
+id: 1948
+section_id: 311
+part_id: 38
+name: "Copia de la C\xC3\xA9dula de uno de los padres"
+created_at: 2012-06-19 19:58:35 Z
+updated_at: 2015-10-20 18:26:26 Z
+label: "C\xC3\xA9dula de uno de los padres"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Si el solicitante es menor de edad, por favor adjuntar la copia de la c\xC3\xA9dula de uno de los padres de la persona a quien va dirigida la Donaci\xC3\xB3n"
+help: "Se debe anexar en caso de que la persona que necesita la donaci\xC3\xB3n sea menor de edad"
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 3

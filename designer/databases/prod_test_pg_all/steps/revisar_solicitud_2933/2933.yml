@@ -1,0 +1,30 @@
+--- 
+id: 2933
+name: Revisar Solicitud
+label: "Revisi\xC3\xB3n de Solicitud de Record Policivo"
+description: ""
+fill_step_id: 1572
+created_at: 2014-06-28 14:25:15 Z
+updated_at: 2014-06-28 14:25:16 Z
+include: "{\"4411\":{\"2631\":{\"567\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3342\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3254\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2632\":{\"805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4414\":{\"3211\":{\"3627\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4415\":{\"3212\":{\"3629\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3630\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4417\":{\"3261\":{\"3691\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3693\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3692\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4419\":{\"3259\":{\"210\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4422\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1891\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: |-
+  _idagente = @task["agent_id"].to_s
+  
+                  result = WebserviceConsumer.get( '/preconfigured_services/get_user_info.xml?agent_id=' + "#{_idagente}" + '&include_all=true').parsed_response
+                  _hash = result["hash"]
+                  _agente = _hash["response"]
+  
+  
+                  form_data.set("aprobacion_de_solicitud.datos_del_funcionario_generico.usuario", _agente["name"])
+on_transition: "_obs = form_data.get(\"aprobacion_de_solicitud.datos_del_funcionario_generico.observaciones\")\r\n\
+  _aprob = form_data.get(\"aprobacion_de_solicitud.datos_del_funcionario_generico.aprobacion\")\r\n\
+  if (_aprob ==\"NO\" and _obs.blank?) \r\n   transition_errors << \"Debe indicar el motivo de su desaprobaci\xC3\xB3n en el campo (Observaci\xC3\xB3n). \"\r\n\
+  end"
+views: 
+back_step: ""
+next_step: ""
+position: 1
+ajax_calls: ""

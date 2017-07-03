@@ -1,0 +1,9 @@
+--- 
+id: 121
+name: official-public_Solicitud de Autorizacion Casa de Remesa de Dinero
+description: ""
+created_at: 2013-04-23 20:37:59 Z
+updated_at: 2015-11-04 18:48:21 Z
+design_id: 138
+label: "Formulario de la Solicitud de Autorizaci\xC3\xB3n Casa de Remesa de Dinero"
+ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

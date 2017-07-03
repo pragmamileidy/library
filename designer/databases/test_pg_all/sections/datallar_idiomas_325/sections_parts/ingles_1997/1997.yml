@@ -1,0 +1,19 @@
+--- 
+id: 1997
+section_id: 325
+part_id: 377
+name: Ingles
+created_at: 2012-07-09 15:05:58 Z
+updated_at: 2012-07-09 15:05:58 Z
+label: Detalle del Idioma
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 2

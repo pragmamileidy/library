@@ -1,0 +1,21 @@
+--- 
+id: 33
+name: Datos Generales (Paso 3)
+label: Datos Generales (Paso 3)
+description: "Contiene tel\xC3\xA9fonos, correo electr\xC3\xB3nico, nivel educativo, tiempo de desempleo, disponibilidad para trabajar, Nro del Carnet de Salud y Nro. de Idoneidad del solicitante"
+fill_step_id: 10
+created_at: 2012-03-21 03:28:39 Z
+updated_at: 2012-05-19 20:48:29 Z
+include: "{\"332\":{\"586\":{\"558\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"768\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"767\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"765\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"766\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"581\":{\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"631\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: "# Si el solicitante existe en el Tribunal Electoral, cargar los datos Registro de Idoneidad y Carnet de Salud"
+on_transition: |-
+  # Si el solicitante no se encuentra en la BDIN del Tribunal Electoral, desplegar un mensaje de error y no
+  # permitir avanzar
+views: 
+back_step: Direccion Actual (Paso 2)
+next_step: Anexos (Paso 4)
+position: 2
+ajax_calls: 

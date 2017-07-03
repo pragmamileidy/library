@@ -1,0 +1,30 @@
+--- 
+id: 152
+name: Tipo Documento Persona Otro
+description: "C\xC3\xA9dula/RUC (SIN pasaporte)"
+version: 
+status: Draft
+label: Tipo Documento
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-14 15:04:36 Z
+updated_at: 2012-06-14 21:43:52 Z
+values_list: "\"C\xC3\xA9dula\",\"RUC\""
+keys_list: "\"C\xC3\xA9dula\",\"RUC\""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

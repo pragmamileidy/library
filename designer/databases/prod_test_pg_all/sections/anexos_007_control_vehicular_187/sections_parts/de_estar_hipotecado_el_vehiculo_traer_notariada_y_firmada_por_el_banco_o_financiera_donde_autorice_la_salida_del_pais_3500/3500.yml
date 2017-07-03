@@ -1,0 +1,19 @@
+--- 
+id: 3500
+section_id: 187
+part_id: 38
+name: "De estar hipotecado el veh\xC3\xADculo, traer notariada y firmada por el banco o financiera donde autorice la salida del pa\xC3\xADs"
+created_at: 2015-09-16 20:50:28 Z
+updated_at: 2015-09-16 20:50:28 Z
+label: "De estar hipotecado el veh\xC3\xADculo, traer notariada y firmada por el banco o financiera donde autorice la salida del pa\xC3\xADs"
+min_instances: 1
+max_instances: 1
+depends_on: "form_data.get(\"tipo_de_solicitud.tipo_de_solicitud_vehicular.tipo_de_solicitud_de_control_vehicular\") == \"Certificaci\xC3\xB3n de aduanas\""
+manage_as_confidential: false
+include: 
+hint: Por favor adjuntar archivo correspondiente
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 13

@@ -1,0 +1,16 @@
+--- 
+id: 4311
+design_id: 184
+section_id: 548
+name: Datos del autor
+created_at: 2014-04-28 14:46:36 Z
+updated_at: 2014-04-28 14:48:50 Z
+label: Datos del(os) Autor(es)
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3149\":{\"3605\":{\"required\":\"required\"}},\"3162\":{\"3002\":{\"required\":\"required\"},\"3017\":{\"required\":\"required\"}},\"3151\":{\"1981\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"1374\":{\"required\":\"required\"},\"926\":{\"required\":\"unrequired\"},\"545\":{\"required\":\"required\"},\"546\":{\"required\":\"required\"},\"2983\":{\"required\":\"unrequired\"}},\"3152\":{\"2979\":{\"required\":\"unrequired\"},\"2980\":{\"required\":\"unrequired\"}},\"3154\":{\"567\":{\"required\":\"required\"},\"1282\":{\"required\":\"required\"},\"3342\":{\"required\":\"required\"}},\"3153\":{\"572\":{\"required\":\"required\"},\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

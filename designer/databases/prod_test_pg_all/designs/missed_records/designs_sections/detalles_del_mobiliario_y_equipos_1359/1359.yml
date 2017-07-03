@@ -1,0 +1,44 @@
+--- 
+id: 1359
+design_id: 115
+section_id: 285
+name: Detalles del Mobiliario y Equipos
+created_at: 2012-06-10 17:35:26 Z
+updated_at: 2013-06-21 20:31:37 Z
+label: Detalles del Mobiliario y Equipos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2057\":{\"2190\":{\"required\":\"unrequired\"},\"2191\":{\"required\":\"unrequired\"}}}"
+hint: "Dep\xC3\xB3sito de Garant\xC3\xADa (50%) (Ver Ayuda)"
+help: "- El Deposito de Garant\xC3\xADa es del 50% del Total del Contrato, ser\xC3\xA1 devuelto una vez se recibe a satisfacci\xC3\xB3n de la Administraci\xC3\xB3n, las instalaciones, equipos, mobiliario u otros, solicitado para realizar la actividad.\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  - Dependiendo del Tipo de Actividad que se realice se cobrara un dep\xC3\xB3sito de garant\xC3\xADa, el cual ser\xC3\xA1 devuelto 48 horas despu\xC3\xA9s del evento previo aceptaci\xC3\xB3n de las partes.\r\n\
+  - Para separar una fecha a fin de realizar una actividad se requiere el abono del 50% del costo total del Contrato.\r\n\
+  - La totalidad del Contrato deber\xC3\xA1 ser cancelada 48 horas de anticipaci\xC3\xB3n del evento.\r\n\
+  - Si el evento es cancelado se deber\xC3\xA1 notificar con 1 mes de anticipaci\xC3\xB3n por escrito, de lo contrario la Administraci\xC3\xB3n no devolver\xC3\xA1 el abono del 50%.\r\n\
+  - La Administraci\xC3\xB3n no se hace responsable por mobiliario o equipo olvidado o abandonado dentro de nuestras instalaciones.\r\n\
+  - La Administraci\xC3\xB3n cobrara un costo por almacenaje de equipo o mobiliario dejado al finalizar el evento.\r\n\
+  - Cada evento tendr\xC3\xA1 una duraci\xC3\xB3n de 4 horas, pasado el periodo sujeto del contrato, se cobrara BS 50/00 por fracci\xC3\xB3n de hora.\r\n\
+  - Todo contrato de espect\xC3\xA1culo p\xC3\xBAblico, baile, venta de licor y venta de comidas, deber\xC3\xA1 pagar el impuesto\r\n\
+  \r\n"
+order_input: 5

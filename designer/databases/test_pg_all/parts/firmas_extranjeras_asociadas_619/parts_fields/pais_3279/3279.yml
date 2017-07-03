@@ -1,0 +1,30 @@
+--- 
+id: 3279
+part_id: 619
+field_id: 10
+name: Pais
+created_at: 2013-06-07 18:57:02 Z
+updated_at: 2017-06-04 00:25:03.013121 Z
+label: Pais
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Indicar el pa\xC3\xADs de origen de la firma extranjera"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fd22f7d2-c056-4a85-8750-f8de62173b3e
+version: 20170603-202503

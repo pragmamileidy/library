@@ -1,0 +1,295 @@
+--- 
+id: 2937
+name: Paso 1 - Ingresar tipo de Solicitante y de Solicitud
+label: Ingresar tipo de Solicitante y de Solicitud
+description: ""
+fill_step_id: 1576
+created_at: 2014-07-01 19:13:40 Z
+updated_at: 2014-07-01 19:13:40 Z
+include: "{\"4438\":{\"3263\":{\"3702\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3698\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3211\":{\"3627\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3690\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3213\":{\"2929\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2930\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3631\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4443\":{\"3212\":{\"3629\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3630\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4453\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4454\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: "# Inicializacion de datos generales\r\n\
+  \r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud\",@application[\"created_at\"])\r\n\
+  result = WebserviceConsumer.get( '/consecutive/generador_css_crtcu/generate.json').parsed_response\r\n\
+  _consecutivo = result[\"response\"]\r\n\
+  _consecutivo = \"#{@application[\"id\"]}-\"+\"#{_consecutivo[\"value\"]}\"\r\n\
+  form_data.set(\"informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud\",_consecutivo)\r\n\
+  \r\n\
+  \r\n\
+  if @owner[\"kind_of_user_type\"] == \"NaturalPerson\"\r\n     form_data.set(\"tipo_de_persona_dij.pregunta.cedula\",  \"#{@owner[\"national_id\"]}\"+\"#{@owner[\"passport\"]}\")\r\n\
+  end\r\n   \r\n\
+  form_data.set(\"tipo_de_persona_dij.tipo_de_identificacion._tipo_identificacion\",\"\")\r\n\
+  form_data.set(\"tipo_de_persona_dij.tipo_de_identificacion.numero_documento\",\"\")\r\n\
+  form_data.set(\"tipo_de_persona_dij.tipo_de_identificacion.tipo_de_persona_natural_dij\",\"\")\r\n\
+  \r\n\
+  \r\n\
+  \r\n\
+  ### BUSQUEDA DE PERSONAS CON RECORD POLICIVO EN CURSO O VIGENTE ###\r\n\
+  # TOMAR EN CUENTA QUE LAS BUSQUEDAS DE VARIOS RECORD SON SOLICITADOS POR PERSONA JURIDICA #\r\n\
+  if  @owner[\"kind_of_user_type\"] == \"JuridicalPerson\"\r\n\
+  \t_rp_vigente = false\r\n\
+  \t(1..20).each do |_num|\r\n\
+  \t#instance_num = \"_instance_#{_num}\"\r\n\
+  \t\ttip_doc = form_data.get(\"tipo_de_persona_dij.tipo_de_identificacion_instance_#{_num}.tipo_identificacion\")\r\n\
+  \t\tnro_doc = form_data.get(\"tipo_de_persona_dij.tipo_de_identificacion_instance_#{_num}.numero_documento\")\r\n\
+  \t\tunless nro_doc.blank?\r\n\
+  \t\t\t_rp_vigente = true ## INDICA QUE HAY AL MENOS UN RECORD POLICIVO\r\n\
+  \t\t\tif tip_doc = \"C\xC3\xA9dula\"\r\n\
+  \t\t\t\tresult = WebserviceConsumer.get( '/service/bdin_dij_datos_vigentes/find.json?tipoDocumento=CIP&nroDocumento=' + \"#{nro_doc}\").parsed_response\r\n\
+  \t\t\t\t\tdata = result[\"response\"]\r\n\
+  \t\t\t\tif !data.blank?\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\",nro_doc)\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.tipo_documento\",tip_doc)\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\",data[\"PrimerNombre\"])\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\",data[\"PrimerApellido\"])\r\n\
+  \t\t\t\t\trec_vig = data[\"recordVigente\"]\r\n\
+  \t\t\t\t\t\tif rec_vig = true\r\n\
+  \t\t\t\t\t\t\t_rv = \"Record Vigente\"\r\n\
+  \t\t\t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto\",_rv)\r\n\
+  \t\t\t\t\t\tend\r\n\
+  \t\t\t\t\trec_cur = data[\"recordCurso\"]\r\n\
+  \t\t\t\t\t\tif rec_cur = true\r\n\
+  \t\t\t\t\t\t\t_rc = \"Record en Curso\"\r\n\
+  \t\t\t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto\",_rc)\r\n\
+  \t\t\t\t\t\tend\r\n\
+  \t\t\t\telse\r\n\
+  \t\t\t\t\t_rp = \"No tiene Record Policivo\"\r\n\
+  \t\t\t\t       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto\",_rp)\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\",nro_doc)\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.tipo_documento\",tip_doc)\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\")\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\")\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\telse                                      \r\n\
+  \t\t\t\tresult = WebserviceConsumer.get('/service/bdin_dij_datos_vigentes/find.json?tipoDocumento=PAS&nroDocumento=' + \"#{nro_doc}\").parsed_response\r\n\
+  \t\t\t\t_datap = result[\"response\"]\t\r\n\
+  \t\t\t\tif !datap.blank?\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\",nro_doc)\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.tipo_documento\",tip_doc)\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\",datap[\"PrimerNombre\"])\r\n\
+  \t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\",datap[\"PrimerApellido\"])\r\n\
+  \t\t\t\t\trec_vig = datap[\"recordVigente\"]\r\n\
+  \t\t\t\t\t\tif rec_vig = true\r\n\
+  \t\t\t\t\t\t\t_rv = \"Record Vigente\"\r\n\
+  \t\t\t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto\",_rv)\r\n\
+  \t\t\t\t\t\tend\r\n\
+  \t\t\t\t\trec_cur = datap[\"recordCurso\"]\r\n\
+  \t\t\t\t\t\tif rec_cur = true\r\n\
+  \t\t\t\t\t\t\t_rc = \"Record en Curso\"\r\n\
+  \t\t\t\t\t\t\tform_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto\",_rc)\r\n\
+  \t\t\t\t\t\tend\r\n\
+  \t\t\t\telse\r\n\
+  \t\t\t\t\t_rp = \"No tiene Record Policivo\"\r\n\
+  \t\t\t\t       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto\",_rp)\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte\",nro_doc)\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.tipo_documento\",tip_doc)\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre\")\r\n                                       form_data.set(\"datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido\")\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\t\r\n\
+  \t\tend\r\n  \tend\r\n\
+  end"
+on_transition: |-
+  if  @owner["kind_of_user_type"] == "JuridicalPerson"
+     form_data.set("tipo_de_persona_dij.pregunta.si_no","JuridicalPerson")
+  end
+  
+  if @owner["kind_of_user_type"] == "NaturalPerson"
+       form_data.set("tipo_de_persona_dij.pregunta.cedula",  "#{@owner["national_id"]}"+"#{@owner["passport"]}")
+  end
+  
+  
+  # TRAMITE EN CURSO, VIGENTE             # VALIDA DATOS EN TE                 # PERSONA NATURAL
+  ###################################################################
+  # P6
+  
+  if @owner["kind_of_user_type"] == "NaturalPerson"
+  	if @owner["natural_person_type"]=="national_citizen"
+  		nro_documento=@owner["national_id"]
+          tipo_documento="Cedula"
+  		dato="true"
+  			result = WebserviceConsumer.get('/service/bdin_dij_datos_vigentes/find.json?tipoDocumento=CIP&nroDocumento=' + "#{nro_documento}").parsed_response
+  	        _solicitante = result["response"]
+  			record = _solicitante["recordVigente"]
+  			curso = _solicitante["recordCurso"]
+  				if record == "true"
+  					form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte","")
+  					rp_vigente = _solicitante["recordVigente"]
+  					if rp_vigente == "true"
+  						vigente = "Record Vigente"
+  						form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.campo_oculto",vigente)
+  					end
+  				end
+  					if curso == "true"
+  						form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte","")
+  						rp_curso = _solicitante["recordCurso"]
+  						if rp_curso == "true"
+  							curso = "Record en Curso"
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.campo_oculto",curso)
+  						end
+  					end
+  		
+  		    		result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + "#{nro_documento}").parsed_response
+  		    		data = result["response"]
+  						if data.nil? 
+  							transition_errors << "Los datos del solicitante no fueron encontrados, por favor verifique."
+  						else
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.tipo_documento",tipo_documento)
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte",data["cedula"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.primer_nombre",data["primerNombre"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.segundo_nombre",data["segundoNombre"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.primer_apellido",data["primerApellido"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.segundo_apellido",data["segundoApellido"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.apellido_de_casada",data["apellidoCasada"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_de_ubicacion.direccion",data["direccionNacimiento"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_de_ubicacion.numero_de_telefono",data["tlfLocal"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_de_ubicacion.correo_electronico",data["email"])
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_de_ubicacion.pais",data["pais"])
+  							form_data.set("datos_del_padre_instance_1.datos_de_la_persona.primer_nombre",data["primerNombrePadre"])
+  							form_data.set("datos_del_padre_instance_1.datos_de_la_persona.primer_apellido",data["apellidoPaternoPadre"])
+  							form_data.set("datos_de_la_madre_instance_1.datos_de_la_persona.primer_nombre",data["primerNombreMadre"])
+  							form_data.set("datos_de_la_madre_instance_1.datos_de_la_persona.primer_apellido",data["apellidoPaternoMadre"])
+  							form_data.set("datos_del_padre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  							form_data.set("datos_de_la_madre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  							fecha = data["fechaNacimiento"]
+  							fecha_n = Time.parse(fecha).strftime("%d-%m-%Y")
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.fecha_de_nacimiento",fecha_n)
+  
+  							edad = ((Date.today - fecha_n.to_date).to_f / 365).to_i
+  							form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.edad",edad)
+  						end        
+  	    
+  		else
+  			nro_documento=@owner["passport"]
+  			tipo_documento="Pasaporte"	
+  			result = WebserviceConsumer.get('/service/bdin_dij_datos_vigentes/find.json?tipoDocumento=PAS&nroDocumento=' + "#{nro_documento}").parsed_response
+  	        _solicitante = result["response"]
+  			record=_solicitante["recordVigente"]
+  			curso = _solicitante["recordCurso"]
+  			if record=="true"
+  				rp_vigente = _solicitante["recordVigente"]
+  				if rp_vigente == "true"
+  					vigente = "Record Vigente"
+  					form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.campo_oculto",vigente)
+  				end
+  				form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte",nro_documento)
+  				form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.tipo_documento",tipo_documento)
+  				form_data.set("datos_del_padre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  				form_data.set("datos_de_la_madre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  	    	else
+  				dato="false"
+  	            form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte",nro_documento)
+  				form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.tipo_documento",tipo_documento)
+  				form_data.set("datos_del_padre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  				form_data.set("datos_de_la_madre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  			end		
+  			if curso=="true"
+  				rp_curso = _solicitante["recordCurso"]
+  				if rp_curso == "true"
+  					_curso = "Record en Curso"
+  					form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.campo_oculto",_curso)
+  				end
+  				form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte",nro_documento)
+  				form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.tipo_documento",tipo_documento)
+  				form_data.set("datos_del_padre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  				form_data.set("datos_de_la_madre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  	    	else
+  				dato="false"
+  	            form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.cedula_pasaporte",nro_documento)
+  				form_data.set("datos_del_solicitante_dij_instance_1.datos_basicos_de_persona_natural.tipo_documento",tipo_documento)
+  				form_data.set("datos_del_padre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  				form_data.set("datos_de_la_madre_instance_1.datos_de_la_persona.documento_hijo",nro_documento)
+  			end
+  		end
+  	end 
+  
+  
+  if  @owner["kind_of_user_type"] == "JuridicalPerson"
+     _ruc = @owner["tax_id"]
+  		rp_vigente = "true"
+  		(1..20).each do |_num|
+  			tipo_documento = form_data.get("tipo_de_persona_dij.tipo_de_identificacion_instance_#{_num}.tipo_identificacion")
+  			nro_documento = form_data.get("tipo_de_persona_dij.tipo_de_identificacion_instance_#{_num}.numero_documento")
+  			if (!nro_documento.blank? && !tipo_documento.blank?)
+  				# if tipo_documento == "Cedula"  
+  				# 	result = WebserviceConsumer.get('/service/bdin_dij_datos_vigentes/find.json?tipoDocumento=CIP&nroDocumento=' + "#{nro_documento}").parsed_response
+  				# 	_solicit = result["response"]
+  				# 	record = _solicit["recordVigente"]
+  				# 	curso = _solicit["recordCurso"]
+  				# 		if record == "true"
+  				# 			form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte","")
+  				# 			rp_vigente = _solicit["recordVigente"]
+  				# 			if rp_vigente == "true"
+  				# 				vigente = "Record Vigente"
+  				# 				form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto",vigente)
+  				# 			end
+  				# 		end
+  				# 			if curso == "true"
+  				# 				form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte","")
+  				# 				rp_curso = _solicit["recordCurso"]
+  				# 				if rp_curso == "true"
+  				# 					curso = "Record en Curso"
+  				# 					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto",curso)
+  				# 				end
+  				# 			end
+  				# else                                       
+  				# 	result = WebserviceConsumer.get('/service/bdin_dij_datos_vigentes/find.json?tipoDocumento=PAS&nroDocumento=' + "#{nro_documento}").parsed_response
+  				# 	_solicitan = result["response"]				
+  				# 	record = _solicitan["recordVigente"]
+  				# 		curso = _solicitan["recordCurso"]
+  				# 		if record == "true"
+  				# 			form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte","")
+  				# 			rp_vigente = _solicitan["recordVigente"]
+  				# 			if rp_vigente == "true"
+  				# 				vigente = "Record Vigente"
+  				# 				form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto",vigente)
+  				# 			end
+  				# 		end
+  				# 			if curso == "true"
+  				# 				form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte","")
+  				# 				rp_curso = _solicitan["recordCurso"]
+  				# 				if rp_curso == "true"
+  				# 					curso = "Record en Curso"
+  				# 					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.campo_oculto",curso)
+  				# 				end
+  				# 			end
+  				# end
+  
+  			if tipo_documento == "Cedula"
+  				result = WebserviceConsumer.get( '/service/bdin_tribunal_electoral/find.json?cedula=' + "#{nro_documento}").parsed_response
+  				data = result["response"]
+  				if data.blank?
+  					form_data.set("tipo_de_persona_dij.tipo_de_identificacion_instance_#{_num}.numero_documento","")				
+  					transition_errors << "Los datos del solicitante #{_num}, no fueron encontrados, por favor verifique."
+  				else
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.tipo_documento",tipo_documento)
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte",data["cedula"])
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_nombre",data["primerNombre"])
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.segundo_nombre",data["segundoNombre"])
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.primer_apellido",data["primerApellido"])
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.segundo_apellido",data["segundoApellido"])
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.apellido_de_casada",data["apellidoCasada"])
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_de_ubicacion.direccion",data["direccionNacimiento"])
+  					form_data.set("datos_del_padre_instance_#{_num}.datos_de_la_persona.documento_hijo",data["cedula"])
+  					form_data.set("datos_del_padre_instance_#{_num}.datos_de_la_persona.primer_nombre",data["primerNombrePadre"])
+  					form_data.set("datos_del_padre_instance_#{_num}.datos_de_la_persona.primer_apellido",data["apellidoPaternoPadre"])
+  					form_data.set("datos_de_la_madre_instance_#{_num}.datos_de_la_persona.documento_hijo",data["cedula"])
+  					form_data.set("datos_de_la_madre_instance_#{_num}.datos_de_la_persona.primer_nombre",data["primerNombreMadre"])
+  					form_data.set("datos_de_la_madre_instance_#{_num}.datos_de_la_persona.primer_apellido",data["apellidoPaternoMadre"])
+  					# CONVERSION FECHA DE NACIEMIENTO #
+  					fecha = data["fechaNacimiento"]
+  					fecha_n = Time.parse(fecha).strftime("%d-%m-%Y")
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.fecha_de_nacimiento",fecha_n)
+  					# VALIDA EDAD #
+  					edad = ((Date.today - fecha.to_date).to_f / 365).to_i
+  					form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.edad",edad)
+  				end			 
+  			else
+  				form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.cedula_pasaporte",nro_documento)
+  				form_data.set("datos_del_solicitante_dij_instance_#{_num}.datos_basicos_de_persona_natural.tipo_documento",tipo_documento)
+  				form_data.set("datos_del_padre_instance_#{_num}.datos_de_la_persona.documento_hijo",nro_documento)
+  				form_data.set("datos_de_la_madre_instance_#{_num}.datos_de_la_persona.documento_hijo",nro_documento)				
+  			end
+  		end
+  	end			
+  end
+views: 
+back_step: ""
+next_step: Paso 2 - Datos del Solicitante
+position: 1
+ajax_calls: ""

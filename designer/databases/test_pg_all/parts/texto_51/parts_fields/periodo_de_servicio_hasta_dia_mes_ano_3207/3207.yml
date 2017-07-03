@@ -1,0 +1,30 @@
+--- 
+id: 3207
+part_id: 51
+field_id: 13
+name: "Per\xC3\xADodo de Servicio Hasta D\xC3\xADa/Mes/A\xC3\xB1o"
+created_at: 2013-04-25 14:29:23 Z
+updated_at: 2017-06-04 00:27:36.738039 Z
+label: "Per\xC3\xADodo de Servicio Hasta D\xC3\xADa/Mes/A\xC3\xB1o"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy.  Ejemplo: 01-12-2010"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f5e6fc65-37e4-4413-9165-f4b3083dac04
+version: 20170603-202736

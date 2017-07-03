@@ -1,0 +1,17 @@
+--- 
+id: 514
+name: "Direcci\xC3\xB3n de Correos"
+description: "Direcci\xC3\xB3n de Correos para el remitente config pagos"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-07-10 17:52:34 Z
+updated_at: 2013-07-10 17:52:34 Z
+status: Draft
+label: "Direcci\xC3\xB3n de Correos para el Remitente"
+hint: ""
+serial: 

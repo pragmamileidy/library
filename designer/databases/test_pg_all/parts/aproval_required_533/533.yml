@@ -1,0 +1,17 @@
+--- 
+id: 533
+name: aproval_required
+description: aproval required para proceso 5
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-02-13 14:53:26 Z
+updated_at: 2013-02-13 14:53:26 Z
+label: Aproval_Required
+hint: ""
+view_class: horizontal
+serial: 

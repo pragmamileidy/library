@@ -1,0 +1,30 @@
+--- 
+id: 2283
+part_id: 422
+field_id: 31
+name: Poder y solicitud mediante abogado con B/.8.00 franqueados o boletas DGI y notariado
+created_at: 2012-08-08 16:28:37 Z
+updated_at: 2017-06-04 00:26:06.522402 Z
+label: Poder y solicitud mediante abogado con B/.8.00 franqueados o boletas DGI y notariado
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Adjuntar Documento
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: fd45ef19-c100-4201-b0ee-fab14b496ebb
+version: 20170603-202606

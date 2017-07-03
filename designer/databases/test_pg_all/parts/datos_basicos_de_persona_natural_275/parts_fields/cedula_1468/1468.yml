@@ -1,0 +1,30 @@
+--- 
+id: 1468
+part_id: 275
+field_id: 12
+name: "C\xC3\xA9dula"
+created_at: 2012-05-31 01:46:58 Z
+updated_at: 2017-06-04 00:24:06.622123 Z
+label: "C\xC3\xA9dula"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /^(([1-9]-AV)|([14589]-PI)|(3-SB)|(^(E|EE|N|PE))|((1|2|3|4|5|6|7|8|9|10|11|12|13)))-(\d{1,4}-\d{1,7})$/
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c468694e-4b45-40c0-bd24-71a1bacd09f2
+version: 20170603-202406

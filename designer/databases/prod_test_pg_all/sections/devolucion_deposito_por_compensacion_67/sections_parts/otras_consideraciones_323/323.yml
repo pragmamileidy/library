@@ -1,0 +1,19 @@
+--- 
+id: 323
+section_id: 67
+part_id: 63
+name: Otras Consideraciones
+created_at: 2011-11-14 21:39:16 Z
+updated_at: 2012-05-16 20:46:10 Z
+label: Area de Texto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"331\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: 
+order_input: 9

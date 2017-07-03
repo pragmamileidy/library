@@ -1,0 +1,30 @@
+--- 
+id: 3947
+part_id: 528
+field_id: 10
+name: hora de reparo
+created_at: 2015-08-19 20:43:03 Z
+updated_at: 2017-06-04 00:31:11.739361 Z
+label: Hora de Reparo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 12
+encripted_store: false
+use: oficial-public
+printable: true
+serial: f73d8bed-80c6-48cd-8e93-5114d7879b4d
+version: 20170603-203111

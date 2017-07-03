@@ -1,0 +1,30 @@
+--- 
+id: 183
+name: "Registro de Obras Art\xC3\xADsticas"
+status: Draft
+version: 008-REGOA-0001-2013
+description: "Registro de Obras Art\xC3\xADsticas\r\n\
+  Ministerio de Comercio e Industria\r\n\
+  MICI\r\n"
+help: ""
+layout: 
+life_cycle: 
+tags: obras, artisticas, MICI
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-12 19:58:08 Z
+updated_at: 2017-05-29 14:36:27.045868 Z
+label: "Registro de Obras Art\xC3\xADsticas"
+hint: ""
+project: 
+organization: 
+process: 
+ext_template_id: 
+  http://store.test.sinpapeles.pragmagenia.net/: "6424"
+  http://dev-aig.store.panamaenlinea.gob.pa/: "3926"
+  https://test-aig.store.panamaenlinea.gob.pa/: "2348"
+  https://prod-aig.store.panamaenlinea.gob.pa/: 28336
+namespace: ""
+custom: 
+serial: 5160-0090-9010-5770-8296

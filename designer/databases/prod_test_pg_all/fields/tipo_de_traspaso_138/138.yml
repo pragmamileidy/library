@@ -1,0 +1,30 @@
+--- 
+id: 138
+name: Tipo de Traspaso
+description: Tipo de Traspaso
+version: 
+status: Draft
+label: Tipo de Traspaso
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-07 19:18:30 Z
+updated_at: 2015-10-19 14:53:29 Z
+values_list: "\"\",\"Regular\",\"Por juicio de sucesi\xC3\xB3n\",\"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\",\"Ordenado por un juez\",\"No efectuado durante el t\xC3\xA9rmino correspondiente\",\"De un veh\xC3\xADculo oficial a una aseguradora\",\"Veh\xC3\xADculos subastados por el Estado con placa particular\"\r\n"
+keys_list: "\"\",\"Regular\",\"Por juicio de sucesi\xC3\xB3n\",\"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\",\"Ordenado por un juez\",\"No efectuado durante el t\xC3\xA9rmino correspondiente\",\"De un veh\xC3\xADculo oficial a una aseguradora\",\"Veh\xC3\xADculos subastados por el Estado con placa particular\"\r\n"
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 1601-9052-9599-7878-5172

@@ -1,0 +1,17 @@
+--- 
+id: 350
+name: Persona Contacto en la Empresa
+description: "Persona Contacto en la Empresa (Documento, Nombre, Tel\xC3\xA9fono)"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-06-15 20:38:07 Z
+updated_at: 2015-09-10 16:14:50 Z
+label: Persona Contacto en la Empresa
+hint: Persona Contacto en la Empresa para Actividades Relacionadas con Bancos
+view_class: horizontal
+serial: 7194-1216-4558-4691-8075

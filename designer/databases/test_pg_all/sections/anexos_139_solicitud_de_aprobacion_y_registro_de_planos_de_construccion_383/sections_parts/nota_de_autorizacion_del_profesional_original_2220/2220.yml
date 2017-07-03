@@ -1,0 +1,19 @@
+--- 
+id: 2220
+section_id: 383
+part_id: 38
+name: "Nota de autorizaci\xC3\xB3n del profesional original"
+created_at: 2012-08-15 21:22:20 Z
+updated_at: 2013-03-11 19:52:03 Z
+label: "Nota de autorizaci\xC3\xB3n del profesional original"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Nota de autorizaci\xC3\xB3n del profesional original, en caso de que el profesional responsable actual sea diferente"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 17

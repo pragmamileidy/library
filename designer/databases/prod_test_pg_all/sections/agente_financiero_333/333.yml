@@ -1,0 +1,17 @@
+--- 
+id: 333
+name: Agente Financiero
+description: Agente Financiero
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-18 18:18:10 Z
+updated_at: 2012-07-18 18:18:10 Z
+status: Draft
+label: Datos del Agente Financiero  o Entidad Retenedora
+hint: ""
+serial: 

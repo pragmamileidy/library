@@ -1,0 +1,30 @@
+--- 
+id: 2999
+part_id: 557
+field_id: 10
+name: Otro arte
+created_at: 2013-03-12 20:48:17 Z
+updated_at: 2017-06-04 00:29:46.724004 Z
+label: Otro
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7a996ff3-f415-4ba1-a8d9-cc1185fc9411
+version: 20170603-202946

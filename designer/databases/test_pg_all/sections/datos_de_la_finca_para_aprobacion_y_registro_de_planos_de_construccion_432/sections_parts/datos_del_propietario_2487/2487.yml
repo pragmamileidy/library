@@ -1,0 +1,19 @@
+--- 
+id: 2487
+section_id: 432
+part_id: 304
+name: Datos del Propietario
+created_at: 2013-01-17 19:01:16 Z
+updated_at: 2013-04-11 22:52:49 Z
+label: Datos del Propietario
+min_instances: 1
+max_instances: 10
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

@@ -1,0 +1,19 @@
+--- 
+id: 1880
+section_id: 294
+part_id: 334
+name: Datos del Adjudicatario
+created_at: 2012-06-14 15:22:57 Z
+updated_at: 2014-04-05 02:37:28 Z
+label: Datos del Adjudicatario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1823\":{},\"1791\":{},\"1778\":{},\"1779\":{},\"1780\":{},\"1781\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: vertical
+order_input: 2

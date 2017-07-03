@@ -1,0 +1,30 @@
+--- 
+id: 3097
+part_id: 493
+field_id: 10
+name: InicioPasoRevision
+created_at: 2013-03-22 18:23:39 Z
+updated_at: 2017-06-04 00:26:22.163341 Z
+label: "Inicio Paso Revisi\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 7e139774-de62-4fbc-ac7f-d2227a66fceb
+version: 20170603-202622

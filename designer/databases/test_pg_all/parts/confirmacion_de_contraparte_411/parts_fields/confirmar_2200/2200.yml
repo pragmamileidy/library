@@ -1,0 +1,30 @@
+--- 
+id: 2200
+part_id: 411
+field_id: 200
+name: Confirmar
+created_at: 2012-07-27 19:01:32 Z
+updated_at: 2017-06-04 00:22:08.315309 Z
+label: Confirmar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 209cc4b0-9e1b-4c95-bfac-fd5ab3949449
+version: 20170603-202208

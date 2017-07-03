@@ -1,0 +1,19 @@
+--- 
+id: 2264
+section_id: 152
+part_id: 460
+name: Edad Animal
+created_at: 2012-08-27 18:54:04 Z
+updated_at: 2013-04-29 21:17:31 Z
+label: Edad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

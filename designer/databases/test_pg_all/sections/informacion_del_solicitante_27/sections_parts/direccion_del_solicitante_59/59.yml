@@ -1,0 +1,19 @@
+--- 
+id: 59
+section_id: 27
+part_id: 121
+name: "Direcci\xC3\xB3n del Solicitante"
+created_at: 2011-11-07 19:12:04 Z
+updated_at: 2015-10-28 21:44:54 Z
+label: "Direcci\xC3\xB3n del Solicitante"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"572\":{},\"577\":{},\"574\":{},\"576\":{},\"573\":{},\"583\":{},\"578\":{},\"579\":{},\"580\":{},\"575\":{},\"585\":{},\"586\":{},\"594\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 3

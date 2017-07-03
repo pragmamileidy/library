@@ -1,0 +1,30 @@
+--- 
+id: 1137
+part_id: 223
+field_id: 31
+name: "C\xC3\xA9dula de identidad personal vigente"
+created_at: 2012-05-02 13:28:43 Z
+updated_at: 2017-06-04 00:21:34.162178 Z
+label: "C\xC3\xA9dula de identidad personal vigente"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ff345a17-055c-43c5-95a4-80e57377695b
+version: 20170603-202134

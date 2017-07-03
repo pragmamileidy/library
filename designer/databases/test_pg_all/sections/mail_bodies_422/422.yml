@@ -1,0 +1,17 @@
+--- 
+id: 422
+name: mail_bodies
+description: "seccion que contiene todos los mensajes de correo electronico que se enviaran de acuerdo al inicio de un tramite asta su finalizaci\xC3\xB3n"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-01-14 19:09:14 Z
+updated_at: 2013-01-14 19:09:14 Z
+status: Draft
+label: Cuerpos de Correo
+hint: ""
+serial: 

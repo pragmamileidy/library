@@ -1,0 +1,62 @@
+--- 
+id: 3041
+name: "Paso 3 - Datos del Subsidio "
+label: ""
+description: ""
+fill_step_id: 1626
+created_at: 2014-12-04 21:03:07 Z
+updated_at: 2014-12-12 15:35:29 Z
+include: "{\"4624\":{\"3408\":{\"1174\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1175\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2441\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1293\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: "#:::  VALIDACION DE FECHA  :::#\r\n\
+  fecha = form_data.get(\"datos_del_subsidio.datos_del_subsidio.fecha_del_ultimo_subsidio\")\r\n\
+  valor = ((Date.today - fecha.to_date).to_f / 365).to_i\r\n\
+  form_data.set(\"datos_del_subsidio.datos_del_subsidio.fecha_string\", valor)\r\n\
+  \r\n\
+  \r\n\
+  valor = form_data.get(\"datos_del_subsidio.datos_del_subsidio.fecha_string\")\r\n\
+  \r\n\
+  if (valor.to_i < 2.to_i )  \r\n\
+  \t\ttransition_errors << \"La fecha del ultimo subsidio ingresada no es valida . Favor, verifique que el tiempo transcurrido no sea menor de 2 a\xC3\xB1os  ni posterior a la fecha actual\"\r\n\
+  else\r\n\
+  \t\tform_data.set(\"datos_del_subsidio.datos_del_subsidio.fecha_string\", valor)\r\n\
+  end\t\r\n\
+  \r\n\
+  #:::  VALIDACION DE PRECIO :::#\r\n\
+  precio = form_data.get(\"datos_del_subsidio.datos_del_subsidio.costo_de_los_lentes\")\r\n\
+  rebaja = (precio.to_f / 2.to_f)\r\n\
+  form_data.set(\"datos_del_subsidio.datos_del_subsidio.50_por_ciento_del_costo_de_los_lentes\", rebaja)\r\n\
+  \r\n\
+  \r\n\
+  rebaja = form_data.get(\"datos_del_subsidio.datos_del_subsidio.50_por_ciento_del_costo_de_los_lentes\")\r\n\
+  if (precio.to_f == 0)\r\n                transition_errors << \"el monto de los lentes no puede poseer valor 0, favor verifique\"\r\n\
+  end\r\n\
+  if (rebaja.to_f > 62.5.to_f)  \r\n\
+  \t\ttransition_errors << \"el monto de los lentes no debe ser mayor a B/. 125.00, favor verifique\"\r\n\
+  else\r\n\
+  \t\tform_data.set(\"datos_del_subsidio.datos_del_subsidio.50_por_ciento_del_costo_de_los_lentes\", rebaja)\r\n\
+  end"
+views: 
+back_step: Paso 2 - Datos del Asegurado
+next_step: "Paso 4 - Requisitos de la Solicitud "
+position: 3
+ajax_calls: |-
+  //::Calcular Edad:://
+  $(document).ready(function(){
+  $(document).change(function(){
+  	var iniciorut = "#field_datos_del_subsidio";
+  	var costo = "_datos_del_subsidio_costo_de_los_lentes";
+  	var rebaja = "_datos_del_subsidio_50_por_ciento_del_costo_de_los_lentes";
+  	var coincide = iniciorut;
+  	var costo1 = coincide.concat(costo);
+  	var rebaja1 = coincide.concat(rebaja);
+      var costo2 = $(costo1).val(); 
+  	//:: REALIZAR EL CALCULO :://
+  	var rebaja2 = (costo2 / 2);	
+  	$(rebaja1).val(rebaja2);
+  });
+  
+  });

@@ -1,0 +1,30 @@
+--- 
+id: 352
+part_id: 69
+field_id: 10
+name: Margen de Seguridad
+created_at: 2011-11-10 19:20:22 Z
+updated_at: 2017-06-04 00:28:44.891845 Z
+label: Margen de Seguridad
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Indique el margen de seguridad de consumo en el tratamiento con el producto
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 268c6030-bf92-4d0d-a5f0-abde2b5dd307
+version: 20170603-202844

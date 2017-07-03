@@ -1,0 +1,16 @@
+--- 
+id: 4307
+design_id: 189
+section_id: 546
+name: "Tipo de Documento Autor-Animaci\xC3\xB3n"
+created_at: 2014-04-27 17:02:15 Z
+updated_at: 2014-04-27 17:08:33 Z
+label: "Tipo de Documento del Autor de Animaci\xC3\xB3n"
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3141\":{\"3601\":{\"required\":\"required\"},\"3602\":{\"required\":\"required\"},\"3603\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 3

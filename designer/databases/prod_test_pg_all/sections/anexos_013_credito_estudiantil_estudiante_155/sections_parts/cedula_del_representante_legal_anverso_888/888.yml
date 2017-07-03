@@ -1,0 +1,19 @@
+--- 
+id: 888
+section_id: 155
+part_id: 38
+name: "C\xC3\xA9dula del representante legal (anverso)"
+created_at: 2012-03-28 20:22:42 Z
+updated_at: 2012-04-10 01:25:46 Z
+label: "C\xC3\xA9dula del representante legal (anverso)"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 14

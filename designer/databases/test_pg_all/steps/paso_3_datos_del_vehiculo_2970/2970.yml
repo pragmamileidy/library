@@ -1,0 +1,278 @@
+--- 
+id: 2970
+name: "Paso 3 - Datos del Veh\xC3\xADculo"
+label: "Datos del Veh\xC3\xADculo"
+description: ""
+fill_step_id: 1595
+created_at: 2014-10-10 15:58:15 Z
+updated_at: 2015-04-23 13:27:57 Z
+include: "{\"4526\":{\"2766\":{\"3148\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"674\":{\"782\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"783\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"126\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"939\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"940\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2055\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"947\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"948\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1100\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1465\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1362\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1386\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1387\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"4528\":{\"1791\":{\"3116\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1983\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1657\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1658\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1659\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1660\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1661\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3357\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3464\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4530\":{\"1823\":{\"1706\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1707\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4543\":{\"2860\":{\"3374\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4544\":{\"2862\":{\"3377\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2863\":{\"3378\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: "documento_contraparte = form_data.get(\"tipo_de_documento_contraparte.tipo_de_documento.tipo_de_documento\")\r\n\
+  traspaso = form_data.get(\"tipo_de_traspaso.tipo_de_traspaso.tipo_de_traspaso\")\r\n\
+  solicitante = form_data.get(\"tipo_de_solicitante.tipo_de_solicitante.tipo_de_solicitante\")\r\n\
+  tipo = \"\"\r\n\
+  \tif ((traspaso != \"Regular\" || traspaso != \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" || traspaso != \"No efectuado durante el t\xC3\xA9rmino correspondiente\" || traspaso != \"De un veh\xC3\xADculo oficial a una aseguradora\") && ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\")))\r\n\
+  \t\ttipo = \"C\xC3\xA9dula\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tif ((traspaso == \"Regular\" || traspaso == \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" || traspaso == \"No efectuado durante el t\xC3\xA9rmino correspondiente\") && (solicitante != \"Adquiriente\" && documento_contraparte == \"C\xC3\xA9dula\"))\r\n\
+  \t\ttipo = \"C\xC3\xA9dula\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tif ((traspaso == \"Regular\" || traspaso == \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" || traspaso == \"No efectuado durante el t\xC3\xA9rmino correspondiente\") && ((solicitante == \"Adquiriente\" && ((@owner[\"kind_of_user_type\"] == \"NaturalPerson\") && (@owner[\"natural_person_type\"] == \"national_citizen\")))\r\n\
+  \t\ttipo = \"C\xC3\xA9dula\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tif (((traspaso != \"Regular\" && traspaso != \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" && traspaso != \"No efectuado durante el t\xC3\xA9rmino correspondiente\") && (kind_of_user_type == \"JuridicalPerson\")) || (traspaso == \"De un veh\xC3\xADculo oficial a una aseguradora\" && solicitante != \"Adquiriente\"))\r\n\
+  \t\ttipo = \"RUC\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tif ((traspaso == \"Regular\" || traspaso == \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" || traspaso == \"No efectuado durante el t\xC3\xA9rmino correspondiente\") && (solicitante != \"Adquiriente\" && documento_contraparte == \"RUC\")) \r\n\
+  \t\ttipo = \"RUC\"\r\n\
+  \tend\r\n\
+  \r\n\
+  \tif ((traspaso == \"Regular\" || traspaso == \"De un veh\xC3\xADculo declarado p\xC3\xA9rdida total por aseguradora\" || traspaso == \"No efectuado durante el t\xC3\xA9rmino correspondiente\") && ((solicitante == \"Adquiriente\" && @owner[\"kind_of_user_type\"] == \"JuridicalPerson\")))\r\n\
+  \t\ttipo = \"RUC\"\r\n\
+  \tend\r\n\
+  \r\n\
+  #::: Datos del propietario del veh\xC3\xADculo :::#\r\n\
+  nro_documento = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\")\r\n\
+  if nro_documento.blank?\r\n\
+  \tnro_documento = form_data.get(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\")\r\n\
+  end\r\n\
+  \r\n\
+  if tipo == \"C\xC3\xA9dula\" \r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_attt_persona_natural/find.json?tipoDocumento=CIP&numeroDocumento=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  if tipo == \"RUC\"\r\n\
+  \tresult = WebserviceConsumer.get( '/service/bdin_attt_persona_juridico/find.json?tipoDocumento=RUC&numeroDocumento=' + \"#{nro_documento}\").parsed_response\r\n\
+  end\r\n\
+  propietario = result[\"response\"]\r\n\
+  if tipo == \"RUC\"\r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\",propietario[\"ruc\"])\r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.nombre\",propietario[\"nombreCompleto\"])\r\n\
+  end\r\n\
+  if tipo == \"C\xC3\xA9dula\" \r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\",nro_documento)\r\n\
+  \tform_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.nombre\",propietario[\"nombreCompleto\"])\r\n\
+  end "
+on_transition: "primerN = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_nombre\")\r\n\
+  segundoN = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_nombre\")\r\n\
+  primerA = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.primer_apellido\")\r\n\
+  segundoA = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.segundo_apellido\")\r\n\
+  casada = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.apellido_de_casada\")\r\n\
+  \r\n\
+  nomb = \"#{primerN}\"+\" \"+\"#{segundoN}\"+\" \"+\"#{primerA}\"+\" \"+\"#{segundoA}\"+\" \"+\"#{casada}\"\r\n\
+  \r\n\
+  form_data.set(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.nombre\",nomb)\r\n\
+  \r\n\
+  documento = \" \"\r\n\
+  placa = form_data.get(\"datos_del_vehiculo.datos_de_vehiculo.placa\")\r\n\
+  municipio = form_data.get(\"datos_del_vehiculo.datos_de_vehiculo.municipio_de_procedencia\").downcase\r\n\
+  mupa = [\"panama\",\"panam\xC3\xA1\"]\r\n\
+  munsa = [\"san miguelito\"]\r\n\
+  cedula = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.cedula_pasaporte\")\r\n\
+  stipo = \"P\"\r\n\
+  \r\n\
+  #::: BUSCANDO SI ES EL TRASPASO CORRESPONDIENTE A LA VALIDACION :::#\r\n\
+  tipo = form_data.get(\"datos_del_vehiculo.tipo_traspaso.texto\")\r\n\
+  valida = \"NO\"\r\n\
+  if tipo == \"No efectuado durante el t\xC3\xA9rmino correspondiente\"\r\n\
+  \tvalida = \"SI\"\r\n\
+  end\r\n\
+  \r\n\
+  #::: BUSCANDO SI ES EL TRASPASO CORRESPONDIENTE A LA VALIDACION :::#\r\n\
+  tipo1 = form_data.get(\"datos_del_vehiculo.tipo_traspaso.texto\")\r\n\
+  valida1 = \"NO\"\r\n\
+  if tipo1 == \"Regular\"\r\n\
+  \tvalida1 = \"SI\"\r\n\
+  end\r\n\
+  \r\n\
+  #::: OBTENIENDO EL TIPO DE IDENTIFICACION :::#\r\n\
+  documento = form_data.get(\"datos_del_propietario_del_vehiculo_persona_natural.nombres_completos.tipo_de_identificacion\")\r\n\
+  if documento == \" \"  || documento == \"\"\r\n\
+  \tdocumento = form_data.get(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.tipo_de_identificacion\")\r\n\
+  end\r\n\
+  \r\n\
+  if (mupa.include? municipio.to_s)\r\n\
+  \tif documento == \"C\xC3\xA9dula\" \r\n\
+  \t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_municipio_panama_natural/find.json?placa=' + \"#{placa}\" + '&cedula_ruc=' + \"#{cedula}\")).parsed_response\r\n\
+  \t\tdatos = result[\"response\"]\r\n\
+  \t\tif datos.nil? || datos[\"nombre\"] == \"El veh\xC3\xADculo que est\xC3\xA1 consultando no est\xC3\xA1 asociado al contribuyente\"\r\n\
+  \t\t\ttransition_errors << \"No se ha realizado el traspaso en el municipio correspondiente. Por favor dir\xC3\xADjase al municipio correspondiente para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\telse\r\n\
+  \t\t\tif valida == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fecha\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tuno = 1\r\n\
+  \t\t\t\tif (edad < uno)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso menor a 1 a\xC3\xB1o, por favor seleccione otro Tipo de Traspaso para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida1 == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fecha\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tdos = 1\r\n\
+  \t\t\t\tif (edad > dos)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso mayor a 1 a\xC3\xB1o, por favor seleccione el Tipo de Traspaso No efectuado durante el t\xC3\xA9rmino correspondiente.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif documento == \"RUC\"  \r\n\
+  \t\truc = form_data.get(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\")\r\n\
+  \t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_municipio_panama_juridico/find.json?placa=' + \"#{placa}\" + '&cedula_ruc=' + \"#{ruc}\")).parsed_response\r\n\
+  \t\tdatos = result[\"response\"]\r\n\
+  \t\tif datos.nil? || datos[\"nombre\"] == \"El veh\xC3\xADculo que est\xC3\xA1 consultando no est\xC3\xA1 asociado al contribuyente\"\r\n\
+  \t\t\ttransition_errors << \"No se ha realizado el traspaso en el municipio correspondiente. Por favor dir\xC3\xADjase al municipio correspondiente para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\telse\r\n\
+  \t\t\tif valida == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fecha\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tuno = 1\r\n\
+  \t\t\t\tif (edad < uno)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso menor a 1 a\xC3\xB1o, por favor seleccione otro Tipo de Traspaso para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida1 == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fecha\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tdos = 1\r\n\
+  \t\t\t\tif (edad > dos)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso mayor a 1 a\xC3\xB1o, por favor seleccione el Tipo de Traspaso No efectuado durante el t\xC3\xA9rmino correspondiente.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  #::: VALIDACIONES PARA EL MUNICIPIO SAN MIGUELITO :::#\r\n\
+  if (munsa.include? municipio.to_s)\r\n\
+  \tif documento == \"C\xC3\xA9dula\"  \r\n\
+  \t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_municipio_san_miguelito_natural/find.json?scriterio=' + \"#{placa}\" + '&stipo=' + \"#{stipo}\")).parsed_response\r\n\
+  \t\tdatos = result[\"response\"]\r\n\
+  \t\tif datos.nil?\r\n\
+  \t\t\ttransition_errors << \"No se encontraron los datos\"\r\n\
+  \t\telse\r\n\
+  \t\t\tcedula1 = datos[\"cedula\"]\r\n\
+  \t\t\tif cedula1 != cedula\r\n\
+  \t\t\t\ttransition_errors << \"No se ha realizado el traspaso en el municipio correspondiente. Por favor dir\xC3\xADjase al municipio correspondiente para poder continuar con el tr\xC3\xA1mite\"\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fechatras\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tuno = 1\r\n\
+  \t\t\t\tif (edad < uno)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso menor a 1 a\xC3\xB1o, por favor seleccione otro Tipo de Traspaso para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida1 == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fechatras\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tdos = 1\r\n\
+  \t\t\t\tif (edad > dos)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso mayor a 1 a\xC3\xB1o, por favor seleccione el Tipo de Traspaso No efectuado durante el t\xC3\xA9rmino correspondiente.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\tend\r\n\
+  \tend\r\n\
+  \tif documento == \"Pasaporte\"  \r\n\
+  \t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_municipio_san_miguelito_natural/find.json?scriterio=' + \"#{placa}\" + '&stipo=' + \"#{stipo}\")).parsed_response\r\n\
+  \t\tdatos = result[\"response\"]\r\n\
+  \t\tif datos.nil?\r\n\
+  \t\t\ttransition_errors << \"Los datos no han sido encontrados.\"\r\n\
+  \t\telse\r\n\
+  \t\t\tpasaporte = datos[\"pasaporte\"]\r\n\
+  \t\t\tif pasaporte != cedula\r\n\
+  \t\t\t\ttransition_errors << \"No se ha realizado el traspaso en el municipio correspondiente. Por favor dir\xC3\xADjase al municipio correspondiente para poder continuar con el tr\xC3\xA1mite\"\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fechatras\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tuno = 1\r\n\
+  \t\t\t\tif (edad < uno)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso menor a 1 a\xC3\xB1o, por favor seleccione otro Tipo de Traspaso para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida1 == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fechatras\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tdos = 1\r\n\
+  \t\t\t\tif (edad > dos)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso mayor a 1 a\xC3\xB1o, por favor seleccione el Tipo de Traspaso No efectuado durante el t\xC3\xA9rmino correspondiente.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\tend\t\t\r\n\
+  \tend\r\n\
+  \tif documento == \"RUC\" \r\n\
+  \t\truc = form_data.get(\"datos_del_propietario_del_vehiculo_persona_juridica.nombres_completos.ruc\")\r\n\
+  \t\tresult = WebserviceConsumer.get(URI.escape('/service/bdin_municipio_san_miguelito_juridico/find.json?scriterio=' + \"#{placa}\" + '&stipo=' + \"#{stipo}\")).parsed_response\r\n\
+  \t\tdatos = result[\"response\"]\r\n\
+  \t\tif datos.nil?\r\n\
+  \t\t\ttransition_errors << \"Los datos no han sido encontrados.\"\r\n\
+  \t\telse\r\n\
+  \t\t\truc1 = datos[\"ruc\"]\r\n\
+  \t\t\tif ruc1 != ruc\r\n\
+  \t\t\t\ttransition_errors << \"No se ha realizado el traspaso en el municipio correspondiente. Por favor dir\xC3\xADjase al municipio correspondiente para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fechatras\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tuno = 1\r\n\
+  \t\t\t\tif (edad < uno)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso menor a 1 a\xC3\xB1o, por favor seleccione otro Tipo de Traspaso para poder continuar con el tr\xC3\xA1mite.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\t\tif valida1 == \"SI\"\r\n\
+  \t\t\t\tedad = ((Date.today - datos[\"fechatras\"].to_date).to_f / 365).to_i\r\n\
+  \t\t\t\tdos = 1\r\n\
+  \t\t\t\tif (edad > dos)  \r\n\
+  \t\t\t\t\ttransition_errors << \"El traspaso en el municipio correspondiente ha sido realizado en un lapso mayor a 1 a\xC3\xB1o, por favor seleccione el Tipo de Traspaso No efectuado durante el t\xC3\xA9rmino correspondiente.\"\r\n\
+  \t\t\t\tend\r\n\
+  \t\t\tend\r\n\
+  \t\tend\t\t\r\n\
+  \tend\r\n\
+  end\r\n\
+  \r\n\
+  #::: OBTENER VALOR DEL CONFIG :::#\r\n\
+  valor = @config.route(\"Rates-payment-payment-payment\")\r\n\
+  if valor == \"Electr\xC3\xB3nico\"\r\n\
+  \tform_data.set(\"forma_de_pago.indique_la_forma_de_pago_generico.indique_la_forma_de_pago\", \"Electr\xC3\xB3nico\")\r\n\
+  end\r\n\
+  if valor == \"Manual\"\r\n\
+  \tform_data.set(\"forma_de_pago.indique_la_forma_de_pago_generico.indique_la_forma_de_pago\", \"Manual\")\r\n\
+  end"
+views: 
+back_step: Paso 2 - Datos Adicionales
+next_step: Paso 4 - Archivos Adjuntos
+position: 3
+ajax_calls: |-
+  $(function(){
+  	$(document).ready(function(){
+  		if($("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_tipo_de_identificacion").val() == 'Pasaporte'){
+  			$("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_nombre").removeAttr("disabled");
+  		}
+  	});
+  });
+  
+  
+  $(function() {
+  
+  $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_nro_idoneidad").parent().parent().hide();
+  $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_tipo_sociedad_string").parent().parent().hide();
+  
+  var contra_doc = $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_nro_idoneidad").val();
+  var tipo = $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_tipo_de_identificacion").val();
+  var tip = $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_tipo_sociedad_string").val();
+  
+  
+    if (contra_doc == 'Pasaporte' && tipo == 'Pasaporte' && tip == 'Vendedor'){
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_primer_nombre").removeAttr("disabled");
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_segundo_nombre").removeAttr("disabled");
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_primer_apellido").removeAttr("disabled");
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_segundo_apellido").removeAttr("disabled");
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_apellido_de_casada").removeAttr("disabled");
+  
+  
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_primer_nombre").val('');
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_segundo_nombre").val('');
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_primer_apellido").val('');
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_segundo_apellido").val('');
+    $("#field_datos_del_propietario_del_vehiculo_persona_natural_nombres_completos_apellido_de_casada").val('');
+  
+    } 
+  });

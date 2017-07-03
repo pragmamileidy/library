@@ -1,0 +1,30 @@
+--- 
+id: 759
+part_id: 148
+field_id: 10
+name: Numero de Solicitud
+created_at: 2012-03-19 20:31:04 Z
+updated_at: 2017-06-04 00:23:46.320001 Z
+label: "N\xC3\xBAmero de Solicitud"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "N\xC3\xBAmero consecutivo generado para la solicitud por PSP"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 0379a79a-ce8d-4187-9d97-6398a0dce6b1
+version: 20170603-202346

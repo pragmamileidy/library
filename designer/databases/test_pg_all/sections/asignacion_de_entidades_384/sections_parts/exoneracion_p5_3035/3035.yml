@@ -1,0 +1,19 @@
+--- 
+id: 3035
+section_id: 384
+part_id: 698
+name: exoneracion p5
+created_at: 2014-02-24 18:12:34 Z
+updated_at: 2014-02-27 14:48:56 Z
+label: Exonerar Entidades Evaluadoras de Pago
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3540\":{}}"
+hint: Indique si desea exonerar alguna de las entidades evaluadoras, ya seleccionadas de realizar el  pago asociado.
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 6

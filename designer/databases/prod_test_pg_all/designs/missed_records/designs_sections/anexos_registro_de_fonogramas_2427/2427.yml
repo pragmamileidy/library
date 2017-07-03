@@ -1,0 +1,16 @@
+--- 
+id: 2427
+design_id: 178
+section_id: 447
+name: Anexos - Registro de Fonogramas
+created_at: 2013-03-04 20:56:51 Z
+updated_at: 2014-06-19 21:32:23 Z
+label: Requisitos para Registro de Fonogramas
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3086\":{\"210\":{\"required\":\"required\"}},\"2916\":{\"210\":{\"required\":\"required\"}},\"3085\":{\"210\":{\"required\":\"required\"}},\"2894\":{\"210\":{\"required\":\"required\"}},\"3084\":{\"210\":{\"required\":\"required\"}},\"3083\":{\"210\":{\"required\":\"required\"}},\"3082\":{\"210\":{\"required\":\"required\"}},\"3248\":{\"210\":{\"required\":\"unrequired\"}},\"3249\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 13

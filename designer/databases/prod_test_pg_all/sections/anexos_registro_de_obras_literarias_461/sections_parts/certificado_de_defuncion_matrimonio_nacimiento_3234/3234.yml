@@ -1,0 +1,19 @@
+--- 
+id: 3234
+section_id: 461
+part_id: 38
+name: "Certificado de defunci\xC3\xB3n / matrimonio / nacimiento"
+created_at: 2014-06-19 19:53:38 Z
+updated_at: 2017-03-13 18:41:43.418432 Z
+label: "Certificado de defunci\xC3\xB3n / matrimonio / nacimiento"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: "Por favor adjuntar el certificado de defunci\xC3\xB3n del autor, nacimiento del representante en caso de ser hijo (a) o matrimonio en caso de ser esposo (a)"
+help: Por favor adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 5

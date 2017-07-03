@@ -1,0 +1,30 @@
+--- 
+id: 2594
+part_id: 478
+field_id: 10
+name: fillstep_aprobar
+created_at: 2013-01-11 15:58:06 Z
+updated_at: 2017-06-04 00:31:48.669520 Z
+label: Fillstep Aprobar
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: Este fillstep es utilizado en el proceso 5
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 25
+encripted_store: false
+use: oficial-public
+printable: true
+serial: c991e7d8-fda3-423a-b548-1fcbd0ae3131
+version: 20170603-203148

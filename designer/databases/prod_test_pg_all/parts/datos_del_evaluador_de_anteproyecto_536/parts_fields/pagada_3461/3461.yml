@@ -1,0 +1,30 @@
+--- 
+id: 3461
+part_id: 536
+field_id: 10
+name: Pagada
+created_at: 2013-11-05 14:49:08 Z
+updated_at: 2017-06-04 00:30:41.568034 Z
+label: Pagada
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 54d1ca58-519c-4e92-858f-3cbb5bc6710a
+version: 20170603-203041

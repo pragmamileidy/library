@@ -1,0 +1,19 @@
+--- 
+id: 1535
+section_id: 244
+part_id: 157
+name: "Precauciones y Advertencias "
+created_at: 2012-05-20 15:39:16 Z
+updated_at: 2012-06-14 15:55:34 Z
+label: "Precauciones y Advertencias "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 21

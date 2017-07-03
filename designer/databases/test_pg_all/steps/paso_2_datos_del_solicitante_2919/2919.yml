@@ -1,0 +1,19 @@
+--- 
+id: 2919
+name: Paso 2 - Datos del Solicitante
+label: Datos del Solicitante
+description: ""
+fill_step_id: 1565
+created_at: 2014-06-26 20:27:44 Z
+updated_at: 2016-01-21 21:21:12.432180 Z
+include: "{\"4465\":{\"3208\":{\"1973\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"3209\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4466\":{\"3208\":{\"3638\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1973\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1469\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1470\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4372\":{\"2631\":{\"567\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"566\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3254\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"2632\":{\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4371\":{\"3208\":{\"3716\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1973\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1469\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1470\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1471\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1472\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1473\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1475\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1479\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1477\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1476\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3209\":{\"572\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"805\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3267\":{\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3268\":{\"528\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"529\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"530\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"537\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4463\":{\"3261\":{\"3712\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,back,next,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 1 - Ingresar tipo de Solicitante y de Solicitud
+next_step: "Paso 4 - Confirmaci\xC3\xB3n"
+position: 2
+ajax_calls: ""

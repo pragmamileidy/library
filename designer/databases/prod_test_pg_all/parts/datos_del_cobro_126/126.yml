@@ -1,0 +1,17 @@
+--- 
+id: 126
+name: Datos del Cobro
+description: "Informaci\xC3\xB3n de emisi\xC3\xB3n del Cobro y de endoso (si lo tiene)"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2011-11-24 18:46:49 Z
+updated_at: 2012-05-16 20:55:14 Z
+label: Datos del Cobro
+hint: ""
+view_class: 
+serial: 

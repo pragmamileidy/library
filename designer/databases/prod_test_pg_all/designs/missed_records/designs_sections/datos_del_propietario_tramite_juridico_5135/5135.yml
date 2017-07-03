@@ -1,0 +1,16 @@
+--- 
+id: 5135
+design_id: 283
+section_id: 455
+name: datos_del_propietario_tramite_juridico
+created_at: 2016-12-08 13:28:51.420999 Z
+updated_at: 2016-12-08 13:28:51.420999 Z
+label: "Datos del Propietario del Tr\xC3\xA1mite"
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"2631\":{\"567\":{\"required\":\"required\"},\"566\":{\"required\":\"required\"},\"3254\":{\"required\":\"required\"}},\"2632\":{\"805\":{\"required\":\"required\"},\"585\":{\"required\":\"required\"},\"594\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 4

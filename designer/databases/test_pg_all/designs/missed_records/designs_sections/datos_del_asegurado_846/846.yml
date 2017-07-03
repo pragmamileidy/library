@@ -1,0 +1,16 @@
+--- 
+id: 846
+design_id: 83
+section_id: 107
+name: Datos del Asegurado
+created_at: 2012-04-30 20:19:52 Z
+updated_at: 2015-09-21 16:06:53 Z
+label: Datos del Asegurado Solicitante
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"580\":{\"1981\":{\"required\":\"required\"},\"1323\":{\"required\":\"required\"},\"528\":{\"required\":\"required\"},\"529\":{\"required\":\"unrequired\"},\"530\":{\"required\":\"required\"},\"537\":{\"required\":\"unrequired\"},\"926\":{\"required\":\"unrequired\"},\"1996\":{\"required\":\"required\"},\"2001\":{\"required\":\"required\"},\"2002\":{\"required\":\"required\"},\"3427\":{\"required\":\"unrequired\"},\"3614\":{\"required\":\"unrequired\"},\"3615\":{\"required\":\"required\"},\"3616\":{\"required\":\"unrequired\"},\"3617\":{\"required\":\"unrequired\"}},\"586\":{\"608\":{\"required\":\"required\"}},\"1323\":{\"1170\":{\"required\":\"required\"}},\"2644\":{\"2977\":{\"required\":\"required\"},\"3953\":{\"required\":\"required\"},\"3950\":{\"required\":\"required\"},\"3951\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 3

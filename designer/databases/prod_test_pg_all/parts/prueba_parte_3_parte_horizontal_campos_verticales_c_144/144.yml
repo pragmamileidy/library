@@ -1,0 +1,17 @@
+--- 
+id: 144
+name: Prueba Parte  3 - Parte Horizontal Campos Verticales C
+description: Prueba Parte  3 - Parte Horizontal Campos Verticales (C)
+version: 
+status: Draft
+help: Prueba Parte  3 - Parte Horizontal Campos Verticales (C)
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-13 22:28:18 Z
+updated_at: 2012-03-13 22:45:20 Z
+label: Prueba Parte  3 - Parte Horizontal Campos Verticales (C)
+hint: "Prueba Parte  3 - Parte Horizontal Campos Verticales (C).   El campo 1 tiene configuraci\xC3\xB3n de instancias 3-5"
+view_class: horizontal
+serial: 

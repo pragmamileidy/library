@@ -1,0 +1,16 @@
+--- 
+id: 2787
+design_id: 211
+section_id: 432
+name: Datos de la Finca
+created_at: 2013-05-09 13:40:06 Z
+updated_at: 2013-05-09 13:40:06 Z
+label: Datos de la Finca
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2485\":{\"365\":{\"required\":\"required\"},\"3102\":{\"required\":\"required\"},\"3103\":{\"required\":\"required\"},\"3107\":{\"required\":\"required\"},\"367\":{\"required\":\"required\"},\"366\":{\"required\":\"required\"},\"2088\":{\"required\":\"required\"},\"2089\":{\"required\":\"required\"},\"2090\":{\"required\":\"required\"},\"2091\":{\"required\":\"required\"}},\"2486\":{\"3104\":{\"required\":\"required\"},\"3105\":{\"required\":\"required\"},\"3106\":{\"required\":\"required\"}},\"2487\":{\"1983\":{\"required\":\"required\"},\"1656\":{\"required\":\"required\"},\"1657\":{\"required\":\"required\"},\"1658\":{\"required\":\"unrequired\"},\"1659\":{\"required\":\"required\"},\"1660\":{\"required\":\"unrequired\"},\"1661\":{\"required\":\"unrequired\"}},\"2748\":{\"1983\":{\"required\":\"required\"},\"1657\":{\"required\":\"required\"},\"1658\":{\"required\":\"unrequired\"},\"1659\":{\"required\":\"required\"},\"1660\":{\"required\":\"unrequired\"},\"1661\":{\"required\":\"unrequired\"}},\"2749\":{\"1983\":{\"required\":\"required\"},\"1657\":{\"required\":\"required\"},\"1658\":{\"required\":\"unrequired\"},\"1659\":{\"required\":\"required\"},\"1660\":{\"required\":\"unrequired\"},\"1661\":{\"required\":\"unrequired\"}},\"2488\":{\"2845\":{\"required\":\"required\"},\"2846\":{\"required\":\"required\"},\"2847\":{\"required\":\"required\"},\"2848\":{\"required\":\"required\"}},\"2489\":{\"2093\":{\"required\":\"required\"},\"2094\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 14

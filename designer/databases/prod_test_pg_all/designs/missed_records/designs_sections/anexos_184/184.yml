@@ -1,0 +1,16 @@
+--- 
+id: 184
+design_id: 2
+section_id: 73
+name: "Anexos "
+created_at: 2011-11-15 19:30:42 Z
+updated_at: 2013-05-28 20:10:37 Z
+label: Requisitos  y Anexos
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2491\":{\"1764\":{\"required\":\"unrequired\"},\"1765\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 14

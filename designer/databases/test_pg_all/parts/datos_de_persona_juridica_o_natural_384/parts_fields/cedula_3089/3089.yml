@@ -1,0 +1,30 @@
+--- 
+id: 3089
+part_id: 384
+field_id: 12
+name: "C\xC3\xA9dula"
+created_at: 2013-03-19 15:11:56 Z
+updated_at: 2017-06-04 00:29:18.929661 Z
+label: "C\xC3\xA9dula"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 89e1481e-2b3a-47db-8225-82abd6174f62
+version: 20170603-202918

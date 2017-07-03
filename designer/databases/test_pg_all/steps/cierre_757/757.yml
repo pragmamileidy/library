@@ -1,0 +1,19 @@
+--- 
+id: 757
+name: Cierre
+label: Cierre de la Solicitud
+description: Cierre de la Solicitud
+fill_step_id: 385
+created_at: 2012-07-24 17:42:49 Z
+updated_at: 2012-10-25 15:35:13 Z
+include: "{\"1696\":{\"2044\":{\"2124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2125\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2045\":{\"2126\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2127\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1697\":{\"2044\":{\"2124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2125\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2045\":{\"2126\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2127\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1698\":{\"2044\":{\"2124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2125\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2045\":{\"2126\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2127\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1699\":{\"2044\":{\"2124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2125\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2045\":{\"2126\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2127\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1700\":{\"2044\":{\"2124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2125\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2045\":{\"2126\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2127\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1701\":{\"2044\":{\"2124\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2125\":{\"views\":\"default\",\"enabled\":\"disabled\"}},\"2045\":{\"2126\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2127\":{\"views\":\"default\",\"enabled\":\"disabled\"}}},\"1709\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"1403\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,close,close_and_save,save,submit
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: ""
+next_step: ""
+position: 0
+ajax_calls: ""

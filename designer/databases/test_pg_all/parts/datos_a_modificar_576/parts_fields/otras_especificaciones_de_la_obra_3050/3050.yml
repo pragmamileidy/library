@@ -1,0 +1,30 @@
+--- 
+id: 3050
+part_id: 576
+field_id: 17
+name: Otras Especificaciones de la obra
+created_at: 2013-03-13 22:57:59 Z
+updated_at: 2017-06-04 00:29:18.259232 Z
+label: Otras Especificaciones de la obra
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 6
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 3d0e1d13-679a-47a0-8ba0-abf9120fda2a
+version: 20170603-202918

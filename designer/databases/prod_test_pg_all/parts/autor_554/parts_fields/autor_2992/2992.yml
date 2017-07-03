@@ -1,0 +1,30 @@
+--- 
+id: 2992
+part_id: 554
+field_id: 10
+name: "Autor "
+created_at: 2013-03-11 22:09:06 Z
+updated_at: 2017-06-04 00:24:53.378214 Z
+label: Tipo de Autor
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 614157e4-3770-407a-bf08-0b9f0de116d1
+version: 20170603-202453

@@ -1,0 +1,16 @@
+--- 
+id: 5101
+design_id: 280
+section_id: 27
+name: "Informaci\xC3\xB3n del Solicitante"
+created_at: 2016-02-27 14:13:04.267484 Z
+updated_at: 2016-02-27 14:13:04.267484 Z
+label: "Informaci\xC3\xB3n del Solicitante"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"273\":{\"844\":{\"required\":\"required\"},\"845\":{\"required\":\"required\"}},\"1698\":{\"3432\":{\"required\":\"unrequired\"},\"3435\":{\"required\":\"unrequired\"},\"3618\":{\"required\":\"required\"},\"3205\":{\"required\":\"required\"},\"3206\":{\"required\":\"required\"},\"3207\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 2

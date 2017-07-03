@@ -1,0 +1,19 @@
+--- 
+id: 3097
+section_id: 386
+part_id: 38
+name: "Certificado expedido por la Direcci\xC3\xB3n General de Registro P\xC3\xBAblico"
+created_at: 2014-03-28 20:10:13 Z
+updated_at: 2014-03-28 20:10:13 Z
+label: "Certificado expedido por la Direcci\xC3\xB3n General de Registro P\xC3\xBAblico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

@@ -1,0 +1,19 @@
+--- 
+id: 2957
+section_id: 427
+part_id: 621
+name: APP-CODE
+created_at: 2013-11-01 19:17:03 Z
+updated_at: 2013-11-01 19:17:03 Z
+label: "C\xC3\xB3digo del Tr\xC3\xA1mite"
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3282\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 4

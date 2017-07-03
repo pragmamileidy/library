@@ -1,0 +1,30 @@
+--- 
+id: 1643
+part_id: 300
+field_id: 130
+name: Folio
+created_at: 2012-06-08 14:40:06 Z
+updated_at: 2017-06-04 00:30:32.701190 Z
+label: Folio
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 10
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ac226e29-8306-41cf-91a6-3a7127fe1a8d
+version: 20170603-203032

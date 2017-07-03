@@ -1,0 +1,16 @@
+--- 
+id: 7
+design_id: 2
+section_id: 7
+name: Entidad donde se Labora
+created_at: 2011-11-01 13:31:01 Z
+updated_at: 2014-02-24 21:23:54 Z
+label: "Datos de la Entidad donde se Labora(\xC3\xB3)"
+min_instances: 1
+max_instances: 5
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1949\":{\"1884\":{\"required\":\"required\"},\"2465\":{\"required\":\"required\"},\"1885\":{\"required\":\"unrequired\"},\"1886\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

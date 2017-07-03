@@ -1,0 +1,16 @@
+--- 
+id: 675
+design_id: 76
+section_id: 183
+name: "Diagn\xC3\xB3stico de la Solicitud"
+created_at: 2012-04-18 16:30:09 Z
+updated_at: 2012-04-22 02:47:27 Z
+label: "Diagn\xC3\xB3stico de la Solicitud"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1103\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1104\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1105\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1106\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1107\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1108\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1109\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1110\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1111\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}},\"1112\":{\"959\":{\"required\":\"required\"},\"960\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 17

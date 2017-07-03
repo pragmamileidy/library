@@ -1,0 +1,30 @@
+--- 
+id: 3427
+part_id: 118
+field_id: 10
+name: Otro
+created_at: 2013-08-14 20:19:36 Z
+updated_at: 2017-06-04 00:32:04.488997 Z
+label: Otro
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "El solicitante debe indicar si tiene otra identificaci\xC3\xB3n del asegurado (a) fallecido(a)"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 42
+encripted_store: false
+use: oficial-public
+printable: true
+serial: dc3136bb-2da5-44a0-bce6-217dff5c57a0
+version: 20170603-203204

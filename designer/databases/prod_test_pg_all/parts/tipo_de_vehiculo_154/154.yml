@@ -1,0 +1,17 @@
+--- 
+id: 154
+name: "Tipo de Veh\xC3\xADculo"
+description: "Contiene informaci\xC3\xB3n del tip de veh\xC3\xADculo (Colectivo, Taxi, Familiar, Propio y si est\xC3\xA1 adapatado para discapacitados)"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-03-21 04:41:00 Z
+updated_at: 2012-05-29 23:47:14 Z
+label: "Tipo de Veh\xC3\xADculo de Solicitud de Permiso de Estacionamiento para Personas con Discapacidad"
+hint: ""
+view_class: horizontal
+serial: 

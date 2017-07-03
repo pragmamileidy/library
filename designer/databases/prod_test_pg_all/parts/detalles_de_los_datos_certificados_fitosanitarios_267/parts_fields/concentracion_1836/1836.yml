@@ -1,0 +1,30 @@
+--- 
+id: 1836
+part_id: 267
+field_id: 130
+name: "Concentraci\xC3\xB3n "
+created_at: 2012-06-14 22:09:38 Z
+updated_at: 2017-06-04 00:31:41.303325 Z
+label: "Concentraci\xC3\xB3n "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 21
+encripted_store: false
+use: oficial-public
+printable: true
+serial: ae6e585a-c2a4-48d5-951a-26f198d29b3f
+version: 20170603-203141

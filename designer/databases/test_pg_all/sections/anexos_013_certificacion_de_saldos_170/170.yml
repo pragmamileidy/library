@@ -1,0 +1,17 @@
+--- 
+id: 170
+name: "Anexos 013-Certificaci\xC3\xB3n de Saldos"
+description: "Anexos para la Solicitud de Certificaci\xC3\xB3n de Saldos del IFARHU"
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-10 14:27:34 Z
+updated_at: 2012-04-20 19:29:51 Z
+status: Draft
+label: Anexos
+hint: "Favor introduzca los documentos de anexos necesarios para el tr\xC3\xA1mite"
+serial: 

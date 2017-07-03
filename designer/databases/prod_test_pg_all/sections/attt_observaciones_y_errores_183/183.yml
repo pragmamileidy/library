@@ -1,0 +1,17 @@
+--- 
+id: 183
+name: ATTT - Observaciones y Errores
+description: "Secci\xC3\xB3n para reflejar las obsevaciones del Registro \xC3\x9Anico de Veh\xC3\xADculos Motorizados a una solicitud de traspaso vehicular y para desplegar los errores con c\xC3\xB3digo y descripci\xC3\xB3n."
+version: 
+help: ""
+layout: 
+life_cycle: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-04-18 16:25:03 Z
+updated_at: 2012-05-16 20:46:22 Z
+status: Draft
+label: ATTT - Observaciones y Errores
+hint: ""
+serial: 

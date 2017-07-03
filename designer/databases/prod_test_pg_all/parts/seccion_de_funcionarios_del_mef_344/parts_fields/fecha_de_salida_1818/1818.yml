@@ -1,0 +1,30 @@
+--- 
+id: 1818
+part_id: 344
+field_id: 13
+name: Fecha de Salida
+created_at: 2012-06-14 19:42:17 Z
+updated_at: 2017-06-04 00:24:14.725472 Z
+label: Fecha de Salida
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 2
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 27b10a86-9489-4c33-b1ee-662f85261cbf
+version: 20170603-202414

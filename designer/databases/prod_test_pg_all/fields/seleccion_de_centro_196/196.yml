@@ -1,0 +1,886 @@
+--- 
+id: 196
+name: "Selecci\xC3\xB3n de Centro"
+description: "Selecci\xC3\xB3n del Centro:\r\n\
+  - Centros:\r\n\
+  ESTAFETA DEL CHORRILLO\r\n\
+  ESTAFETA DE CALIDONIA\r\n\
+  ESTAFETA DE AVE. BALBOA\r\n\
+  ESTAFETA DE BETHANIA\r\n\
+  ESTAFETA DE PLAZA CONCORDIA\r\n\
+  ESTAFETA DE PUEBLO NUEVO\r\n\
+  ESTAFETA DE SAN FRANCISCO\r\n\
+  ESTAFETA DE PARQUE LEFEVRE\r\n\
+  ESTAFETA DE SAN MIGUELITO\r\n\
+  ESTAFETA DE JUAN D\xC3\x8DAZ\r\n\
+  ESTAFETA DE PEDREGAL\r\n\
+  ESTAFETA DE GAMBOA\r\n\
+  ESTAFETA DE LAS CUMBRES\r\n\
+  ESTAFETA DE BALBOA HEIGHTS\r\n\
+  ESTAFETA DE BALBOA\r\n\
+  ESTAFETA DE ALBROOK\r\n\
+  ESTAFETA DE HOWARD\r\n\
+  ESTAFETA UNIVERSITARIA\r\n\
+  ESTAFETA DE FORT CLAYTON\r\n\
+  ESTAFETA DE PARAISO\r\n\
+  ESTAFETA SECTOR DE TOCUMEN\r\n\
+  ESTAFETA DE COLON\r\n\
+  ESTAFETA DE MARBELLA\r\n\
+  ESTAFETA DE VILLA LUCRE\r\n\
+  ESTAFETA DE PAITILLA\r\n\
+  ESTAFETA DEL DORADO\r\n\
+  ESTAFETA DE CARRASQUILLA\r\n\
+  EL PORVENIR - SAN BLAS\r\n\
+  NARGANA - SAN BLAS\r\n\
+  USTUPO - SAN BLAS\r\n\
+  ALIGANDI - SAN BLAS\r\n\
+  CORAZON DE JESUS - SAN BLAS\r\n\
+  MULATUPO - SAN BLAS\r\n\
+  RIO DE AZUCAR - SAN BLAS\r\n\
+  CARTISOSTUPO - SAN BLAS\r\n\
+  PLAYON CHICO - SAN BLAS\r\n\
+  SAN IGNACIO TULIPE - SAN BLAS\r\n\
+  PUERTO OBALDIA\r\n\
+  TICANTIKI\r\n\
+  RIO SIDRA\r\n\
+  ALMIRANTE\r\n\
+  BOCAS DEL TORO\r\n\
+  CHANGUINOLA\r\n\
+  CHIRIQU\xC3\x8D GRANDE\r\n\
+  GUABITO\r\n\
+  LAS TABLAS (BOCAS DEL TORO)\r\n\
+  SUPER ROMERO\r\n\
+  CRISTO - AGUADULCE\r\n\
+  AGUADULCE\r\n\
+  EL ROBLE DE AGUADULCE\r\n\
+  POCRI DE AGUADULCE\r\n\
+  NATA\r\n\
+  S/M 99 PENONOME\r\n\
+  LA PINTADA - PENONOME\r\n\
+  ANTON\r\n\
+  EL VALLE DE ANTON\r\n\
+  RIO HATO\r\n\
+  MACHETAZO DE PENONOME\r\n\
+  LA LOMA - AGUADULCE\r\n\
+  EL JAGUITO AGUADULCE\r\n\
+  COLON\r\n\
+  HOGAR SANTA LUISA\r\n\
+  SUPER 99 COLON 2000\r\n\
+  HOGAR ATLANTICO\r\n\
+  REY SABANITAS, COLON\r\n\
+  SUPER 99 - PTO. ESCONDIDO\r\n\
+  REY 4 ALTOS\r\n\
+  REY CALLE 13\r\n\
+  BANCO NACIONAL ( COLON )\r\n\
+  BOQUETE\r\n\
+  BUGABA\r\n\
+  ROMERO PARQUE\r\n\
+  DOLEGA\r\n\
+  EL BRE\xC3\x91ON CHIRIQUI\r\n\
+  TOLE - DAVID\r\n\
+  REMEDIOS\r\n\
+  SAN FELIX\r\n\
+  PUERTO ARMUELLES\r\n\
+  VOLCAN\r\n\
+  ROMERO DOLEGUITA\r\n\
+  GUALACA\r\n\
+  LAS LAJAS\r\n\
+  SAN LORENZO\r\n\
+  ROMERO SAN MATEO\r\n\
+  BARU INTERAMERICANA\r\n\
+  99 SAN MATEO\r\n\
+  BARU DOS PINOS\r\n\
+  CHEPIGANA\r\n\
+  EL REAL (DARIEN)\r\n\
+  GARACHINE (DARIEN)\r\n\
+  LA PALMA (DARIEN)\r\n\
+  PINOGANA (DARIEN)\r\n\
+  YAVIZA (DARIEN)\r\n\
+  JAQUE\r\n\
+  SAMBU - DARIEN\r\n\
+  SANTA FE\r\n\
+  CHITRE\r\n\
+  HOGAR DE ANCIANOS DE CHITRE\r\n\
+  LOS POZOS, CHITRE\r\n\
+  OCU\r\n\
+  PARITA\r\n\
+  PESE\r\n\
+  SANTA MARIA\r\n\
+  DIVISA\r\n\
+  LAS MINAS\r\n\
+  MACHETAZO DE CHITRE\r\n\
+  COOP. EDUC. HERRERANO\r\n\
+  LAS TABLAS\r\n\
+  EL PARAISO (LAS TABLAS)\r\n\
+  GUARARE\r\n\
+  LOS SANTOS\r\n\
+  LAJAMINA, POCRI DE LOS SANTOS\r\n\
+  MACARACAS\r\n\
+  PEDASI\r\n\
+  SABANA GRANDE, LOS SANTOS\r\n\
+  TONOS\xC3\x8D\r\n\
+  SUPER CENTRO ROSA\r\n\
+  REY CHORRERA\r\n\
+  CHEPO\r\n\
+  PACORA\r\n\
+  XTRA DE ARRAIJAN\r\n\
+  LA CHORRERA\r\n\
+  SAN CARLOS\r\n\
+  CHAME\r\n\
+  CAPIRA\r\n\
+  XTRA LAS ACACIAS\r\n\
+  BINGO NAL\r\n\
+  POL  PEDIATRICA\r\n\
+  MERCADO EMEX\r\n\
+  99 VIA PORRAS\r\n\
+  PARQUE LEFEVRE\r\n\
+  99-BETHANIA\r\n\
+  99-PLAZA CAROLINA\r\n\
+  PARROQUIA NTRA. SRA. DE FATIMA\r\n\
+  FUNDACI\xC3\x93N NUEVA VIDA\r\n\
+  COOPERATIVA PROFESIONALES\r\n\
+  HOGAR BELEN\r\n\
+  TRABAJO SOCIAL\r\n\
+  AGENCIA SAN MGTO. - P.R.A.A.\r\n\
+  HOGAR BOLIVAR\r\n\
+  CASA PENSIONADO-SAN MIGUELITO\r\n\
+  99 SAN MGTO\r\n\
+  EXTRA OJO DE AGUA\r\n\
+  MACHETAZO DE CALIDONIA\r\n\
+  XTRA LOS PUEBLOS\r\n\
+  99 PEDREGAL\r\n\
+  REY DEL DORADO\r\n\
+  XTRA 24 DE DIC\r\n\
+  XTRA SAN MGTO\r\n\
+  POLICLINICA SAN MIGUELITO\r\n\
+  ETERNA JUVENTUD\r\n\
+  XTRA JUAN DIAZ\r\n\
+  99 SAN FRANCISCO\r\n\
+  SUPERMERCADO EL FUERTE\r\n\
+  99 EL FARO\r\n\
+  AGENCIA DE PEREJIL - P.R.A.A.\r\n\
+  SUPER 99 TOCUMEN\r\n\
+  MACHETAZO DE SAN MGTO.\r\n\
+  S/M EL PUEBLO - SOGO\r\n\
+  S/M PUEBLO MERC\r\n\
+  99-LA CHORRERA\r\n\
+  XTRA CHORRERA\r\n\
+  REY - V. ALEGRE\r\n\
+  AGENCIA DEL DORADO - P.R.A.A.\r\n\
+  AGENCIA 24 DE DICIEMBRE\r\n\
+  AGENCIA JUAN DIAZ - P.R.A.A.\r\n\
+  AGENCIA DE SAN FCO. - P.R.A.A.\r\n\
+  RES. HOGAR TINA\r\n\
+  LOS A\xC3\x91OS DORADOS\r\n\
+  HOSPITAL SAN MIGUEL\r\n\
+  BANCO UNIVERSAL\r\n\
+  MULTI CREDIT BANK\r\n\
+  PANABANK\r\n\
+  HOGAR ADELA\r\n\
+  GLOBAL BANK\r\n\
+  HOSPITAL LARGA ESTANCIA\r\n\
+  BANISTMO\r\n\
+  BANESCO\r\n\
+  BAC\r\n\
+  BANCO BILBAO VISCAYA\r\n\
+  TOWERBANK\r\n\
+  CREDICORP BANK\r\n\
+  COOP. NAL. DE AHORRO Y CR. JUB\r\n\
+  BANCO DE PARIS VIA ESPA\xC3\x91A\r\n\
+  BANCO GENERAL\r\n\
+  BANCO NACIONAL 7A. CENTRAL\r\n\
+  BANCO NACIONAL DE BETANIA\r\n\
+  BANCO NACIONAL CL.16 OESTE\r\n\
+  BANCO NACIONAL CASA MATRIZ\r\n\
+  BANCO NACIONAL RIO ABAJO\r\n\
+  BANCO NACIONAL SAN FRANCISCO\r\n\
+  BANCO NACIONAL LAS SABANAS\r\n\
+  CAJA DE AHORROS CASA MATRIZ\r\n\
+  COOPEVE\r\n\
+  COOPEDUC\r\n\
+  C.A.C.E.C.H.I.\r\n\
+  BANCO UNIVERSAL\r\n\
+  H.S.B.C. MARBELLA\r\n\
+  BANCO UNO\r\n\
+  COOP. AHORRO-CREDITO CRISTOBAL\r\n\
+  BANCO AZTECA\r\n\
+  CITIBANK\r\n\
+  COOP. JOSE DEL C. DOMINGUEZ\r\n\
+  MMG BANK\r\n\
+  BANCO NACIONAL LA EXPOSICION\r\n\
+  C.O.E.D.U.C.O.\r\n\
+  BANCO TRASATLANTICO\r\n\
+  BANCO NACIONAL DE BALBOA\r\n\
+  ABN-AMRO BANK\r\n\
+  BANCOMER\r\n\
+  LLOYD BANK\r\n\
+  BANCO ALIADO, S.A.\r\n\
+  BANVIVIENDA\r\n\
+  PANAMA - P.R.A.A.\r\n\
+  99 DE SANTIAGO\r\n\
+  MACHETAZO DE SANTIAGO\r\n\
+  SUPERCARNES\r\n\
+  DIVISA\r\n\
+  HOGAR STA.  ISABEL (SANTIAGO)\r\n\
+  HOGAR SAN JUAN DE DIOS (SANTIAGO)\r\n\
+  LA MESA (VERAGUAS)\r\n\
+  LAS PALMAS (VERAGUAS)\r\n\
+  MONTIJO\r\n\
+  PONUGA\r\n\
+  RIO DE JESUS\r\n\
+  SANTA FE\r\n\
+  ATALAYA DE VERAGUAS\r\n\
+  SONA\r\n\
+  CANADA\r\n\
+  ALASKA\r\n\
+  ESTADOS UNIDOS\r\n\
+  MEXICO\r\n\
+  BELIZE O GUATEMALA\r\n\
+  SALVADOR\r\n\
+  HONDURAS\r\n\
+  NICARAGUA\r\n\
+  COSTA RICA\r\n\
+  CUBA\r\n\
+  HAITI\r\n\
+  BARBADOS\r\n\
+  BAHAMAS\r\n\
+  JAMAICA\r\n\
+  TRINIDAD Y TOBAGO\r\n\
+  MARTINIQUE\r\n\
+  PUERTO RICO\r\n\
+  REP. DOMINICANA\r\n\
+  COLOMBIA\r\n\
+  ECUADOR\r\n\
+  VENEZUELA\r\n\
+  BRAZIL\r\n\
+  URUGUAY\r\n\
+  ARGENTINA\r\n\
+  BOLIVIA\r\n\
+  PARAGUAY\r\n\
+  PERU\r\n\
+  CHILE\r\n\
+  URUGUAY\r\n\
+  ALEMANIA\r\n\
+  AUSTRALIA\r\n\
+  BELGICA\r\n\
+  CHECOSLOVAQUIA\r\n\
+  INGLATERRA\r\n\
+  ESPA\xC3\x91A\r\n\
+  PORTUGAL\r\n\
+  ARUBA\r\n\
+  AUSTRIA\r\n\
+  FRANCIA\r\n\
+  GRECIA\r\n\
+  ITALIA\r\n\
+  HUNGRIA\r\n\
+  CHINA\r\n\
+  ISRAEL\r\n\
+  SUECIA\r\n\
+  SUIZA\r\n\
+  YUGOSLAVIA\r\n\
+  HOLANDA\r\n\
+  FILIPINAS\r\n\
+  HONG KONG\r\n\
+  JAPON\r\n\
+  ISRAEL\r\n\
+  INDIA\r\n\
+  SIRIA\r\n\
+  KOREA\r\n\
+  MACAO\r\n\
+  TAIWAN\r\n\
+  HAWAI\r\n\
+  PANAMA\r\n"
+version: 
+status: Draft
+label: ""
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 16:33:21 Z
+updated_at: 2015-09-15 15:10:18 Z
+values_list: "\"\",\r\n\
+  \"ESTAFETA DEL CHORRILLO\",\r\n\
+  \"ESTAFETA DE CALIDONIA\",\r\n\
+  \"ESTAFETA DE AVE. BALBOA\",\r\n\
+  \"ESTAFETA DE BETHANIA\",\r\n\
+  \"ESTAFETA DE PLAZA CONCORDIA\",\r\n\
+  \"ESTAFETA DE PUEBLO NUEVO\",\r\n\
+  \"ESTAFETA DE SAN FRANCISCO\",\r\n\
+  \"ESTAFETA DE PARQUE LEFEVRE\",\r\n\
+  \"ESTAFETA DE SAN MIGUELITO\",\r\n\
+  \"ESTAFETA DE JUAN D\xC3\x8DAZ\",\r\n\
+  \"ESTAFETA DE PEDREGAL\",\r\n\
+  \"ESTAFETA DE GAMBOA\",\r\n\
+  \"ESTAFETA DE LAS CUMBRES\",\r\n\
+  \"ESTAFETA DE BALBOA HEIGHTS\",\r\n\
+  \"ESTAFETA DE BALBOA\",\r\n\
+  \"ESTAFETA DE ALBROOK\",\r\n\
+  \"ESTAFETA DE HOWARD\",\r\n\
+  \"ESTAFETA UNIVERSITARIA\",\r\n\
+  \"ESTAFETA DE FORT CLAYTON\",\r\n\
+  \"ESTAFETA DE PARAISO\",\r\n\
+  \"ESTAFETA SECTOR DE TOCUMEN\",\r\n\
+  \"ESTAFETA DE COLON\",\r\n\
+  \"ESTAFETA DE MARBELLA\",\r\n\
+  \"ESTAFETA DE VILLA LUCRE\",\r\n\
+  \"ESTAFETA DE PAITILLA\",\r\n\
+  \"ESTAFETA DEL DORADO\",\r\n\
+  \"ESTAFETA DE CARRASQUILLA\",\r\n\
+  \"EL PORVENIR - SAN BLAS\",\r\n\
+  \"NARGANA - SAN BLAS\",\r\n\
+  \"USTUPO - SAN BLAS\",\r\n\
+  \"ALIGANDI - SAN BLAS\",\r\n\
+  \"CORAZON DE JESUS - SAN BLAS\",\r\n\
+  \"MULATUPO - SAN BLAS\",\r\n\
+  \"RIO DE AZUCAR - SAN BLAS\",\r\n\
+  \"CARTISOSTUPO - SAN BLAS\",\r\n\
+  \"PLAYON CHICO - SAN BLAS\",\r\n\
+  \"SAN IGNACIO TULIPE - SAN BLAS\",\r\n\
+  \"PUERTO OBALDIA\",\r\n\
+  \"TICANTIKI\",\r\n\
+  \"RIO SIDRA\",\r\n\
+  \"ALMIRANTE\",\r\n\
+  \"BOCAS DEL TORO\",\r\n\
+  \"CHANGUINOLA\",\r\n\
+  \"CHIRIQU\xC3\x8D GRANDE\",\r\n\
+  \"GUABITO\",\r\n\
+  \"LAS TABLAS (BOCAS DEL TORO)\",\r\n\
+  \"SUPER ROMERO\",\r\n\
+  \"CRISTO - AGUADULCE\",\r\n\
+  \"AGUADULCE\",\r\n\
+  \"EL ROBLE DE AGUADULCE\",\r\n\
+  \"POCRI DE AGUADULCE\",\r\n\
+  \"NATA\",\r\n\
+  \"S/M 99 PENONOME\",\r\n\
+  \"LA PINTADA - PENONOME\",\r\n\
+  \"ANTON\",\r\n\
+  \"EL VALLE DE ANTON\",\r\n\
+  \"RIO HATO\",\r\n\
+  \"MACHETAZO DE PENONOME\",\r\n\
+  \"LA LOMA - AGUADULCE\",\r\n\
+  \"EL JAGUITO AGUADULCE\",\r\n\
+  \"COLON\",\r\n\
+  \"HOGAR SANTA LUISA\",\r\n\
+  \"SUPER 99 COLON 2000\",\r\n\
+  \"HOGAR ATLANTICO\",\r\n\
+  \"REY SABANITAS, COLON\",\r\n\
+  \"SUPER 99 - PTO. ESCONDIDO\",\r\n\
+  \"REY 4 ALTOS\",\r\n\
+  \"REY CALLE 13\",\r\n\
+  \"BANCO NACIONAL ( COLON )\",\r\n\
+  \"BOQUETE\",\r\n\
+  \"BUGABA\",\r\n\
+  \"ROMERO PARQUE\",\r\n\
+  \"DOLEGA\",\r\n\
+  \"EL BRE\xC3\x91ON CHIRIQUI\",\r\n\
+  \"TOLE - DAVID\",\r\n\
+  \"REMEDIOS\",\r\n\
+  \"SAN FELIX\",\r\n\
+  \"PUERTO ARMUELLES\",\r\n\
+  \"VOLCAN\",\r\n\
+  \"ROMERO DOLEGUITA\",\r\n\
+  \"GUALACA\",\r\n\
+  \"LAS LAJAS\",\r\n\
+  \"SAN LORENZO\",\r\n\
+  \"ROMERO SAN MATEO\",\r\n\
+  \"BARU INTERAMERICANA\",\r\n\
+  \"99 SAN MATEO\",\r\n\
+  \"BARU DOS PINOS\",\r\n\
+  \"CHEPIGANA\",\r\n\
+  \"EL REAL (DARIEN)\",\r\n\
+  \"GARACHINE (DARIEN)\",\r\n\
+  \"LA PALMA (DARIEN)\",\r\n\
+  \"PINOGANA (DARIEN)\",\r\n\
+  \"YAVIZA (DARIEN)\",\r\n\
+  \"JAQUE\",\r\n\
+  \"SAMBU - DARIEN\",\r\n\
+  \"SANTA FE\",\r\n\
+  \"CHITRE\",\r\n\
+  \"HOGAR DE ANCIANOS DE CHITRE\",\r\n\
+  \"LOS POZOS, CHITRE\",\r\n\
+  \"OCU\",\r\n\
+  \"PARITA\",\r\n\
+  \"PESE\",\r\n\
+  \"SANTA MARIA\",\r\n\
+  \"DIVISA\",\r\n\
+  \"LAS MINAS\",\r\n\
+  \"MACHETAZO DE CHITRE\",\r\n\
+  \"COOP. EDUC. HERRERANO\",\r\n\
+  \"LAS TABLAS\",\r\n\
+  \"EL PARAISO (LAS TABLAS)\",\r\n\
+  \"GUARARE\",\r\n\
+  \"LOS SANTOS\",\r\n\
+  \"LAJAMINA, POCRI DE LOS SANTOS\",\r\n\
+  \"MACARACAS\",\r\n\
+  \"PEDASI\",\r\n\
+  \"SABANA GRANDE, LOS SANTOS\",\r\n\
+  \"TONOS\xC3\x8D\",\r\n\
+  \"SUPER CENTRO ROSA\",\r\n\
+  \"REY CHORRERA\",\r\n\
+  \"CHEPO\",\r\n\
+  \"PACORA\",\"XTRA DE ARRAIJAN\",\"LA CHORRERA\",\r\n\
+  \"SAN CARLOS\",\r\n\
+  \"CHAME\",\r\n\
+  \"CAPIRA\",\r\n\
+  \"XTRA LAS ACACIAS\",\r\n\
+  \"BINGO NAL\",\r\n\
+  \"POL  PEDIATRICA\",\r\n\
+  \"MERCADO EMEX\",\r\n\
+  \"99 VIA PORRAS\",\r\n\
+  \"PARQUE LEFEVRE\",\r\n\
+  \"99-BETHANIA\",\r\n\
+  \"99-PLAZA CAROLINA\",\r\n\
+  \"PARROQUIA NTRA. SRA. DE FATIMA\",\r\n\
+  \"FUNDACI\xC3\x93N NUEVA VIDA\",\r\n\
+  \"COOPERATIVA PROFESIONALES\",\r\n\
+  \"HOGAR BELEN\",\r\n\
+  \"TRABAJO SOCIAL\",\r\n\
+  \"AGENCIA SAN MGTO. - P.R.A.A.\",\r\n\
+  \"HOGAR BOLIVAR\",\r\n\
+  \"CASA PENSIONADO-SAN MIGUELITO\",\r\n\
+  \"99 SAN MGTO\",\r\n\
+  \"EXTRA OJO DE AGUA\",\r\n\
+  \"MACHETAZO DE CALIDONIA\",\r\n\
+  \"XTRA LOS PUEBLOS\",\r\n\
+  \"99 PEDREGAL\",\r\n\
+  \"REY DEL DORADO\",\r\n\
+  \"XTRA 24 DE DIC\",\r\n\
+  \"XTRA SAN MGTO\",\r\n\
+  \"POLICLINICA SAN MIGUELITO\",\r\n\
+  \"ETERNA JUVENTUD\",\r\n\
+  \"XTRA JUAN DIAZ\",\r\n\
+  \"99 SAN FRANCISCO\",\r\n\
+  \"SUPERMERCADO EL FUERTE\",\r\n\
+  \"99 EL FARO\",\r\n\
+  \"AGENCIA DE PEREJIL - P.R.A.A.\",\r\n\
+  \"SUPER 99 TOCUMEN\",\r\n\
+  \"MACHETAZO DE SAN MGTO.\",\r\n\
+  \"S/M EL PUEBLO - SOGO\",\r\n\
+  \"S/M PUEBLO MERC\",\r\n\
+  \"99-LA CHORRERA\",\r\n\
+  \"XTRA CHORRERA\",\r\n\
+  \"REY - V. ALEGRE\",\r\n\
+  \"AGENCIA DEL DORADO - P.R.A.A.\",\r\n\
+  \"AGENCIA 24 DE DICIEMBRE\",\r\n\
+  \"AGENCIA JUAN DIAZ - P.R.A.A.\",\r\n\
+  \"AGENCIA DE SAN FCO. - P.R.A.A.\",\r\n\
+  \"RES. HOGAR TINA\",\r\n\
+  \"LOS A\xC3\x91OS DORADOS\",\r\n\
+  \"HOSPITAL SAN MIGUEL\",\r\n\
+  \"BANCO UNIVERSAL\",\r\n\
+  \"MULTI CREDIT BANK\",\r\n\
+  \"PANABANK\",\r\n\
+  \"HOGAR ADELA\",\r\n\
+  \"GLOBAL BANK\",\r\n\
+  \"HOSPITAL LARGA ESTANCIA\",\r\n\
+  \"BANISTMO\",\r\n\
+  \"BANESCO\",\r\n\
+  \"BAC\",\r\n\
+  \"BANCO BILBAO VISCAYA\",\r\n\
+  \"TOWERBANK\",\"CREDICORP BANK\",\r\n\
+  \"COOP. NAL. DE AHORRO Y CR. JUB\",\r\n\
+  \"BANCO DE PARIS VIA ESPA\xC3\x91A\",\r\n\
+  \"BANCO GENERAL\",\r\n\
+  \"BANCO NACIONAL 7A. CENTRAL\",\r\n\
+  \"BANCO NACIONAL DE BETANIA\",\r\n\
+  \"BANCO NACIONAL CL.16 OESTE\",\r\n\
+  \"BANCO NACIONAL CASA MATRIZ\",\r\n\
+  \"BANCO NACIONAL RIO ABAJO\",\r\n\
+  \"BANCO NACIONAL SAN FRANCISCO\",\r\n\
+  \"BANCO NACIONAL LAS SABANAS\",\r\n\
+  \"CAJA DE AHORROS CASA MATRIZ\",\r\n\
+  \"COOPEVE\",\r\n\
+  \"COOPEDUC\",\r\n\
+  \"C.A.C.E.C.H.I.\",\r\n\
+  \"BANCO UNIVERSAL\",\r\n\
+  \"H.S.B.C. MARBELLA\",\r\n\
+  \"BANCO UNO\",\r\n\
+  \"COOP. AHORRO-CREDITO CRISTOBAL\",\r\n\
+  \"BANCO AZTECA\",\r\n\
+  \"CITIBANK\",\r\n\
+  \"COOP. JOSE DEL C. DOMINGUEZ\",\r\n\
+  \"MMG BANK\",\r\n\
+  \"BANCO NACIONAL LA EXPOSICION\",\r\n\
+  \"C.O.E.D.U.C.O.\",\r\n\
+  \"BANCO TRASATLANTICO\",\r\n\
+  \"BANCO NACIONAL DE BALBOA\",\r\n\
+  \"ABN-AMRO BANK\",\r\n\
+  \"BANCOMER\",\r\n\
+  \"LLOYD BANK\",\r\n\
+  \"BANCO ALIADO, S.A.\",\r\n\
+  \"BANVIVIENDA\",\r\n\
+  \"PANAMA - P.R.A.A.\",\r\n\
+  \"99 DE SANTIAGO\",\r\n\
+  \"MACHETAZO DE SANTIAGO\",\r\n\
+  \"SUPERCARNES\",\r\n\
+  \"DIVISA\",\r\n\
+  \"HOGAR STA.  ISABEL (SANTIAGO)\",\r\n\
+  \"HOGAR SAN JUAN DE DIOS (SANTIAGO)\",\r\n\
+  \"LA MESA (VERAGUAS)\",\r\n\
+  \"LAS PALMAS (VERAGUAS)\",\r\n\
+  \"MONTIJO\",\r\n\
+  \"PONUGA\",\r\n\
+  \"RIO DE JESUS\",\r\n\
+  \"SANTA FE\",\r\n\
+  \"ATALAYA DE VERAGUAS\",\r\n\
+  \"SONA\",\r\n\
+  \"CANADA\",\r\n\
+  \"ALASKA\",\r\n\
+  \"ESTADOS UNIDOS\",\r\n\
+  \"MEXICO\",\r\n\
+  \"BELIZE O GUATEMALA\",\r\n\
+  \"SALVADOR\",\r\n\
+  \"HONDURAS\",\r\n\
+  \"NICARAGUA\",\r\n\
+  \"COSTA RICA\",\r\n\
+  \"CUBA\",\r\n\
+  \"HAITI\",\r\n\
+  \"BARBADOS\",\r\n\
+  \"BAHAMAS\",\r\n\
+  \"JAMAICA\",\r\n\
+  \"TRINIDAD Y TOBAGO\",\r\n\
+  \"MARTINIQUE\",\r\n\
+  \"PUERTO RICO\",\r\n\
+  \"REP. DOMINICANA\",\r\n\
+  \"COLOMBIA\",\r\n\
+  \"ECUADOR\",\r\n\
+  \"VENEZUELA\",\r\n\
+  \"BRAZIL\",\r\n\
+  \"URUGUAY\",\r\n\
+  \"ARGENTINA\",\r\n\
+  \"BOLIVIA\",\r\n\
+  \"PARAGUAY\",\r\n\
+  \"PERU\",\r\n\
+  \"CHILE\",\r\n\
+  \"URUGUAY\",\r\n\
+  \"ALEMANIA\",\r\n\
+  \"AUSTRALIA\",\r\n\
+  \"BELGICA\",\r\n\
+  \"CHECOSLOVAQUIA\",\r\n\
+  \"INGLATERRA\",\r\n\
+  \"ESPA\xC3\x91A\",\r\n\
+  \"PORTUGAL\",\r\n\
+  \"ARUBA\",\r\n\
+  \"AUSTRIA\",\r\n\
+  \"FRANCIA\",\r\n\
+  \"GRECIA\",\r\n\
+  \"ITALIA\",\r\n\
+  \"HUNGRIA\",\r\n\
+  \"CHINA\",\r\n\
+  \"ISRAEL\",\r\n\
+  \"SUECIA\",\r\n\
+  \"SUIZA\",\r\n\
+  \"YUGOSLAVIA\",\r\n\
+  \"HOLANDA\",\r\n\
+  \"FILIPINAS\",\r\n\
+  \"HONG KONG\",\r\n\
+  \"JAPON\",\r\n\
+  \"ISRAEL\",\r\n\
+  \"INDIA\",\r\n\
+  \"SIRIA\",\r\n\
+  \"KOREA\",\r\n\
+  \"MACAO\",\r\n\
+  \"TAIWAN\",\r\n\
+  \"HAWAI\",\r\n\
+  \"PANAMA\".\r\n"
+keys_list: "\"\",\r\n\
+  \"ESTAFETA DEL CHORRILLO\",\r\n\
+  \"ESTAFETA DE CALIDONIA\",\r\n\
+  \"ESTAFETA DE AVE. BALBOA\",\r\n\
+  \"ESTAFETA DE BETHANIA\",\r\n\
+  \"ESTAFETA DE PLAZA CONCORDIA\",\r\n\
+  \"ESTAFETA DE PUEBLO NUEVO\",\r\n\
+  \"ESTAFETA DE SAN FRANCISCO\",\r\n\
+  \"ESTAFETA DE PARQUE LEFEVRE\",\r\n\
+  \"ESTAFETA DE SAN MIGUELITO\",\r\n\
+  \"ESTAFETA DE JUAN D\xC3\x8DAZ\",\r\n\
+  \"ESTAFETA DE PEDREGAL\",\r\n\
+  \"ESTAFETA DE GAMBOA\",\r\n\
+  \"ESTAFETA DE LAS CUMBRES\",\r\n\
+  \"ESTAFETA DE BALBOA HEIGHTS\",\r\n\
+  \"ESTAFETA DE BALBOA\",\r\n\
+  \"ESTAFETA DE ALBROOK\",\r\n\
+  \"ESTAFETA DE HOWARD\",\r\n\
+  \"ESTAFETA UNIVERSITARIA\",\r\n\
+  \"ESTAFETA DE FORT CLAYTON\",\r\n\
+  \"ESTAFETA DE PARAISO\",\r\n\
+  \"ESTAFETA SECTOR DE TOCUMEN\",\r\n\
+  \"ESTAFETA DE COLON\",\r\n\
+  \"ESTAFETA DE MARBELLA\",\r\n\
+  \"ESTAFETA DE VILLA LUCRE\",\r\n\
+  \"ESTAFETA DE PAITILLA\",\r\n\
+  \"ESTAFETA DEL DORADO\",\r\n\
+  \"ESTAFETA DE CARRASQUILLA\",\r\n\
+  \"EL PORVENIR - SAN BLAS\",\r\n\
+  \"NARGANA - SAN BLAS\",\r\n\
+  \"USTUPO - SAN BLAS\",\r\n\
+  \"ALIGANDI - SAN BLAS\",\r\n\
+  \"CORAZON DE JESUS - SAN BLAS\",\r\n\
+  \"MULATUPO - SAN BLAS\",\r\n\
+  \"RIO DE AZUCAR - SAN BLAS\",\r\n\
+  \"CARTISOSTUPO - SAN BLAS\",\r\n\
+  \"PLAYON CHICO - SAN BLAS\",\r\n\
+  \"SAN IGNACIO TULIPE - SAN BLAS\",\r\n\
+  \"PUERTO OBALDIA\",\r\n\
+  \"TICANTIKI\",\r\n\
+  \"RIO SIDRA\",\r\n\
+  \"ALMIRANTE\",\r\n\
+  \"BOCAS DEL TORO\",\r\n\
+  \"CHANGUINOLA\",\r\n\
+  \"CHIRIQU\xC3\x8D GRANDE\",\r\n\
+  \"GUABITO\",\r\n\
+  \"LAS TABLAS (BOCAS DEL TORO)\",\r\n\
+  \"SUPER ROMERO\",\r\n\
+  \"CRISTO - AGUADULCE\",\r\n\
+  \"AGUADULCE\",\r\n\
+  \"EL ROBLE DE AGUADULCE\",\r\n\
+  \"POCRI DE AGUADULCE\",\r\n\
+  \"NATA\",\r\n\
+  \"S/M 99 PENONOME\",\r\n\
+  \"LA PINTADA - PENONOME\",\r\n\
+  \"ANTON\",\r\n\
+  \"EL VALLE DE ANTON\",\r\n\
+  \"RIO HATO\",\r\n\
+  \"MACHETAZO DE PENONOME\",\r\n\
+  \"LA LOMA - AGUADULCE\",\r\n\
+  \"EL JAGUITO AGUADULCE\",\r\n\
+  \"COLON\",\r\n\
+  \"HOGAR SANTA LUISA\",\r\n\
+  \"SUPER 99 COLON 2000\",\r\n\
+  \"HOGAR ATLANTICO\",\r\n\
+  \"REY SABANITAS, COLON\",\r\n\
+  \"SUPER 99 - PTO. ESCONDIDO\",\r\n\
+  \"REY 4 ALTOS\",\r\n\
+  \"REY CALLE 13\",\r\n\
+  \"BANCO NACIONAL ( COLON )\",\r\n\
+  \"BOQUETE\",\r\n\
+  \"BUGABA\",\r\n\
+  \"ROMERO PARQUE\",\r\n\
+  \"DOLEGA\",\r\n\
+  \"EL BRE\xC3\x91ON CHIRIQUI\",\r\n\
+  \"TOLE - DAVID\",\r\n\
+  \"REMEDIOS\",\r\n\
+  \"SAN FELIX\",\r\n\
+  \"PUERTO ARMUELLES\",\r\n\
+  \"VOLCAN\",\r\n\
+  \"ROMERO DOLEGUITA\",\r\n\
+  \"GUALACA\",\r\n\
+  \"LAS LAJAS\",\r\n\
+  \"SAN LORENZO\",\r\n\
+  \"ROMERO SAN MATEO\",\r\n\
+  \"BARU INTERAMERICANA\",\r\n\
+  \"99 SAN MATEO\",\r\n\
+  \"BARU DOS PINOS\",\r\n\
+  \"CHEPIGANA\",\r\n\
+  \"EL REAL (DARIEN)\",\r\n\
+  \"GARACHINE (DARIEN)\",\r\n\
+  \"LA PALMA (DARIEN)\",\r\n\
+  \"PINOGANA (DARIEN)\",\r\n\
+  \"YAVIZA (DARIEN)\",\r\n\
+  \"JAQUE\",\r\n\
+  \"SAMBU - DARIEN\",\r\n\
+  \"SANTA FE\",\r\n\
+  \"CHITRE\",\r\n\
+  \"HOGAR DE ANCIANOS DE CHITRE\",\r\n\
+  \"LOS POZOS, CHITRE\",\r\n\
+  \"OCU\",\r\n\
+  \"PARITA\",\r\n\
+  \"PESE\",\r\n\
+  \"SANTA MARIA\",\r\n\
+  \"DIVISA\",\r\n\
+  \"LAS MINAS\",\r\n\
+  \"MACHETAZO DE CHITRE\",\r\n\
+  \"COOP. EDUC. HERRERANO\",\r\n\
+  \"LAS TABLAS\",\r\n\
+  \"EL PARAISO (LAS TABLAS)\",\r\n\
+  \"GUARARE\",\r\n\
+  \"LOS SANTOS\",\r\n\
+  \"LAJAMINA, POCRI DE LOS SANTOS\",\r\n\
+  \"MACARACAS\",\r\n\
+  \"PEDASI\",\r\n\
+  \"SABANA GRANDE, LOS SANTOS\",\r\n\
+  \"TONOS\xC3\x8D\",\r\n\
+  \"SUPER CENTRO ROSA\",\r\n\
+  \"REY CHORRERA\",\r\n\
+  \"CHEPO\",\r\n\
+  \"PACORA\",\"XTRA DE ARRAIJAN\",\"LA CHORRERA\",\r\n\
+  \"SAN CARLOS\",\r\n\
+  \"CHAME\",\r\n\
+  \"CAPIRA\",\r\n\
+  \"XTRA LAS ACACIAS\",\r\n\
+  \"BINGO NAL\",\r\n\
+  \"POL  PEDIATRICA\",\r\n\
+  \"MERCADO EMEX\",\r\n\
+  \"99 VIA PORRAS\",\r\n\
+  \"PARQUE LEFEVRE\",\r\n\
+  \"99-BETHANIA\",\r\n\
+  \"99-PLAZA CAROLINA\",\r\n\
+  \"PARROQUIA NTRA. SRA. DE FATIMA\",\r\n\
+  \"FUNDACI\xC3\x93N NUEVA VIDA\",\r\n\
+  \"COOPERATIVA PROFESIONALES\",\r\n\
+  \"HOGAR BELEN\",\r\n\
+  \"TRABAJO SOCIAL\",\r\n\
+  \"AGENCIA SAN MGTO. - P.R.A.A.\",\r\n\
+  \"HOGAR BOLIVAR\",\r\n\
+  \"CASA PENSIONADO-SAN MIGUELITO\",\r\n\
+  \"99 SAN MGTO\",\r\n\
+  \"EXTRA OJO DE AGUA\",\r\n\
+  \"MACHETAZO DE CALIDONIA\",\r\n\
+  \"XTRA LOS PUEBLOS\",\r\n\
+  \"99 PEDREGAL\",\r\n\
+  \"REY DEL DORADO\",\r\n\
+  \"XTRA 24 DE DIC\",\r\n\
+  \"XTRA SAN MGTO\",\r\n\
+  \"POLICLINICA SAN MIGUELITO\",\r\n\
+  \"ETERNA JUVENTUD\",\r\n\
+  \"XTRA JUAN DIAZ\",\r\n\
+  \"99 SAN FRANCISCO\",\r\n\
+  \"SUPERMERCADO EL FUERTE\",\r\n\
+  \"99 EL FARO\",\r\n\
+  \"AGENCIA DE PEREJIL - P.R.A.A.\",\r\n\
+  \"SUPER 99 TOCUMEN\",\r\n\
+  \"MACHETAZO DE SAN MGTO.\",\r\n\
+  \"S/M EL PUEBLO - SOGO\",\r\n\
+  \"S/M PUEBLO MERC\",\r\n\
+  \"99-LA CHORRERA\",\r\n\
+  \"XTRA CHORRERA\",\r\n\
+  \"REY - V. ALEGRE\",\r\n\
+  \"AGENCIA DEL DORADO - P.R.A.A.\",\r\n\
+  \"AGENCIA 24 DE DICIEMBRE\",\r\n\
+  \"AGENCIA JUAN DIAZ - P.R.A.A.\",\r\n\
+  \"AGENCIA DE SAN FCO. - P.R.A.A.\",\r\n\
+  \"RES. HOGAR TINA\",\r\n\
+  \"LOS A\xC3\x91OS DORADOS\",\r\n\
+  \"HOSPITAL SAN MIGUEL\",\r\n\
+  \"BANCO UNIVERSAL\",\r\n\
+  \"MULTI CREDIT BANK\",\r\n\
+  \"PANABANK\",\r\n\
+  \"HOGAR ADELA\",\r\n\
+  \"GLOBAL BANK\",\r\n\
+  \"HOSPITAL LARGA ESTANCIA\",\r\n\
+  \"BANISTMO\",\r\n\
+  \"BANESCO\",\r\n\
+  \"BAC\",\r\n\
+  \"BANCO BILBAO VISCAYA\",\r\n\
+  \"TOWERBANK\",\"CREDICORP BANK\",\r\n\
+  \"COOP. NAL. DE AHORRO Y CR. JUB\",\r\n\
+  \"BANCO DE PARIS VIA ESPA\xC3\x91A\",\r\n\
+  \"BANCO GENERAL\",\r\n\
+  \"BANCO NACIONAL 7A. CENTRAL\",\r\n\
+  \"BANCO NACIONAL DE BETANIA\",\r\n\
+  \"BANCO NACIONAL CL.16 OESTE\",\r\n\
+  \"BANCO NACIONAL CASA MATRIZ\",\r\n\
+  \"BANCO NACIONAL RIO ABAJO\",\r\n\
+  \"BANCO NACIONAL SAN FRANCISCO\",\r\n\
+  \"BANCO NACIONAL LAS SABANAS\",\r\n\
+  \"CAJA DE AHORROS CASA MATRIZ\",\r\n\
+  \"COOPEVE\",\r\n\
+  \"COOPEDUC\",\r\n\
+  \"C.A.C.E.C.H.I.\",\r\n\
+  \"BANCO UNIVERSAL\",\r\n\
+  \"H.S.B.C. MARBELLA\",\r\n\
+  \"BANCO UNO\",\r\n\
+  \"COOP. AHORRO-CREDITO CRISTOBAL\",\r\n\
+  \"BANCO AZTECA\",\r\n\
+  \"CITIBANK\",\r\n\
+  \"COOP. JOSE DEL C. DOMINGUEZ\",\r\n\
+  \"MMG BANK\",\r\n\
+  \"BANCO NACIONAL LA EXPOSICION\",\r\n\
+  \"C.O.E.D.U.C.O.\",\r\n\
+  \"BANCO TRASATLANTICO\",\r\n\
+  \"BANCO NACIONAL DE BALBOA\",\r\n\
+  \"ABN-AMRO BANK\",\r\n\
+  \"BANCOMER\",\r\n\
+  \"LLOYD BANK\",\r\n\
+  \"BANCO ALIADO, S.A.\",\r\n\
+  \"BANVIVIENDA\",\r\n\
+  \"PANAMA - P.R.A.A.\",\r\n\
+  \"99 DE SANTIAGO\",\r\n\
+  \"MACHETAZO DE SANTIAGO\",\r\n\
+  \"SUPERCARNES\",\r\n\
+  \"DIVISA\",\r\n\
+  \"HOGAR STA.  ISABEL (SANTIAGO)\",\r\n\
+  \"HOGAR SAN JUAN DE DIOS (SANTIAGO)\",\r\n\
+  \"LA MESA (VERAGUAS)\",\r\n\
+  \"LAS PALMAS (VERAGUAS)\",\r\n\
+  \"MONTIJO\",\r\n\
+  \"PONUGA\",\r\n\
+  \"RIO DE JESUS\",\r\n\
+  \"SANTA FE\",\r\n\
+  \"ATALAYA DE VERAGUAS\",\r\n\
+  \"SONA\",\r\n\
+  \"CANADA\",\r\n\
+  \"ALASKA\",\r\n\
+  \"ESTADOS UNIDOS\",\r\n\
+  \"MEXICO\",\r\n\
+  \"BELIZE O GUATEMALA\",\r\n\
+  \"SALVADOR\",\r\n\
+  \"HONDURAS\",\r\n\
+  \"NICARAGUA\",\r\n\
+  \"COSTA RICA\",\r\n\
+  \"CUBA\",\r\n\
+  \"HAITI\",\r\n\
+  \"BARBADOS\",\r\n\
+  \"BAHAMAS\",\r\n\
+  \"JAMAICA\",\r\n\
+  \"TRINIDAD Y TOBAGO\",\r\n\
+  \"MARTINIQUE\",\r\n\
+  \"PUERTO RICO\",\r\n\
+  \"REP. DOMINICANA\",\r\n\
+  \"COLOMBIA\",\r\n\
+  \"ECUADOR\",\r\n\
+  \"VENEZUELA\",\r\n\
+  \"BRAZIL\",\r\n\
+  \"URUGUAY\",\r\n\
+  \"ARGENTINA\",\r\n\
+  \"BOLIVIA\",\r\n\
+  \"PARAGUAY\",\r\n\
+  \"PERU\",\r\n\
+  \"CHILE\",\r\n\
+  \"URUGUAY\",\r\n\
+  \"ALEMANIA\",\r\n\
+  \"AUSTRALIA\",\r\n\
+  \"BELGICA\",\r\n\
+  \"CHECOSLOVAQUIA\",\r\n\
+  \"INGLATERRA\",\r\n\
+  \"ESPA\xC3\x91A\",\r\n\
+  \"PORTUGAL\",\r\n\
+  \"ARUBA\",\r\n\
+  \"AUSTRIA\",\r\n\
+  \"FRANCIA\",\r\n\
+  \"GRECIA\",\r\n\
+  \"ITALIA\",\r\n\
+  \"HUNGRIA\",\r\n\
+  \"CHINA\",\r\n\
+  \"ISRAEL\",\r\n\
+  \"SUECIA\",\r\n\
+  \"SUIZA\",\r\n\
+  \"YUGOSLAVIA\",\r\n\
+  \"HOLANDA\",\r\n\
+  \"FILIPINAS\",\r\n\
+  \"HONG KONG\",\r\n\
+  \"JAPON\",\r\n\
+  \"ISRAEL\",\r\n\
+  \"INDIA\",\r\n\
+  \"SIRIA\",\r\n\
+  \"KOREA\",\r\n\
+  \"MACAO\",\r\n\
+  \"TAIWAN\",\r\n\
+  \"HAWAI\",\r\n\
+  \"PANAMA\".\r\n"
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 9707-2525-8709-7188-1827

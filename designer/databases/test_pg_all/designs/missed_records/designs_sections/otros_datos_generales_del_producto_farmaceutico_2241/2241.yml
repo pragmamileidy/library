@@ -1,0 +1,16 @@
+--- 
+id: 2241
+design_id: 58
+section_id: 417
+name: "Otros Datos Generales del Producto Farmac\xC3\xA9utico"
+created_at: 2012-11-20 21:31:27 Z
+updated_at: 2012-11-20 21:47:23 Z
+label: "Otros Datos Generales del Producto Farmac\xC3\xA9utico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2406\":{\"2533\":{\"required\":\"required\"},\"2534\":{\"required\":\"required\"},\"2535\":{\"required\":\"required\"},\"2536\":{\"required\":\"required\"},\"2537\":{\"required\":\"required\"},\"2538\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 9

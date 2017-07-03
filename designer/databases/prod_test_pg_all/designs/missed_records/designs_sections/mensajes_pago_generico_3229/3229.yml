@@ -1,0 +1,16 @@
+--- 
+id: 3229
+design_id: 236
+section_id: 510
+name: Mensajes Pago Generico
+created_at: 2013-09-12 13:30:21 Z
+updated_at: 2013-12-16 13:52:24 Z
+label: ""
+min_instances: 0
+max_instances: 1
+depends_on: "[\"started\", \"successfully\", \"error\"].include? form_data.get(\"variables_pago_generico.variables_pago_generico.estatus\")"
+manage_as_confidential: false
+include: "{\"2857\":{\"3367\":{\"required\":\"unrequired\"},\"3368\":{\"required\":\"unrequired\"}},\"2858\":{\"3369\":{\"required\":\"unrequired\"}},\"2859\":{\"3370\":{\"required\":\"unrequired\"},\"3371\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 2

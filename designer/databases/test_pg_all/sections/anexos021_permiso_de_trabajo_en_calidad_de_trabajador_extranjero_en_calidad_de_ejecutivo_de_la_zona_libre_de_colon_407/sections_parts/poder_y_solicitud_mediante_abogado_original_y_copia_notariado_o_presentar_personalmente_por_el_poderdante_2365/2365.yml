@@ -1,0 +1,19 @@
+--- 
+id: 2365
+section_id: 407
+part_id: 38
+name: Poder y solicitud mediante abogado, original y copia, notariado o presentar personalmente por el poderdante.
+created_at: 2012-09-03 20:56:34 Z
+updated_at: 2013-08-30 19:10:09 Z
+label: "Poder y solicitud mediante abogado, original y copia, notariado o presentar personalmente por el poderdante. "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: 
+hint: Favor  adjuntar archivo correspondiente
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 1

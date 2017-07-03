@@ -1,0 +1,21 @@
+--- 
+id: 291
+name: Paso 3 - datos 2
+label: Label Paso 3 - datos 2
+description: "Descripci\xC3\xB3n de Label Paso 3 - datos 2\r\n\
+  <br>\r\n\
+  S\xC3\xB3lo son opcionales los pasos anteriores no se selecciono el control de next_steps"
+fill_step_id: 168
+created_at: 2012-05-04 22:42:10 Z
+updated_at: 2012-05-19 20:48:33 Z
+include: "{\"925\":{\"640\":{\"674\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"675\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"677\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"678\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"679\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"680\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"681\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"682\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"683\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"684\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"685\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"686\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"687\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"643\":{\"746\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"745\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"747\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"748\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"749\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"641\":{\"691\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"690\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"689\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"692\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"693\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"694\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"695\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"696\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"697\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"701\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"698\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"699\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"700\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"702\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"642\":{\"707\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"706\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"704\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"705\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"703\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ,Paso 2 - Datos 1
+controls: ,back,next,back_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Paso 2 - Datos 1
+next_step: ""
+position: 2
+ajax_calls: 

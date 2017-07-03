@@ -1,0 +1,34 @@
+--- 
+id: 2983
+name: "Paso 1 - Datos del Solicitante "
+label: "Datos del Solicitante "
+description: ""
+fill_step_id: 1602
+created_at: 2014-11-04 18:03:09 Z
+updated_at: 2014-11-05 21:00:14 Z
+include: "{\"4551\":{\"3378\":{\"3805\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"2199\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3804\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"3806\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3807\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3808\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3809\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"3810\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"3379\":{\"572\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2456\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2457\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"578\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"579\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"2217\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"580\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"585\":{\"views\":\"default\",\"enabled\":\"enabled\"},\"594\":{\"views\":\"default\",\"enabled\":\"enabled\"}}},\"4555\":{\"1710\":{\"1401\":{\"views\":\"default\",\"enabled\":\"disabled\"},\"1402\":{\"views\":\"default\",\"enabled\":\"disabled\"}}}}"
+allowed_next_to_steps: ""
+allowed_back_to_steps: ""
+controls: ,next,close,close_and_save,save
+on_becoming: |-
+  # Inicializacion de datos generales
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.fecha_de_solicitud",@application["created_at"])
+  result = WebserviceConsumer.get( '/consecutive/consecutivo_solteria/generate.json').parsed_response
+  _consecutivo = result["response"]
+  _consecutivo = "#{@application["id"]}-"+"#{_consecutivo["value"]}"
+  form_data.set("informacion_de_solicitud.datos_de_la_solicitud.numero_de_solicitud",_consecutivo)
+  
+  
+  
+  form_data.set("datos_del_solicitante.datos_del_solicitante.cedula", @owner["national_id"])
+  nombre = form_data.set("datos_del_solicitante.datos_del_solicitante.nombre", @owner["first_name"])
+  apellido = form_data.set("datos_del_solicitante.datos_del_solicitante.apellidos", @owner["last_name"])
+  
+  nombre_completo = "#{nombre} + #{apellido}"
+  form_data.set("datos_del_solicitante.datos_del_solicitante.nombre_completo", nombre_completo)
+on_transition: ""
+views: 
+back_step: ""
+next_step: Paso 2- Datos de los Testigos
+position: 1
+ajax_calls: ""

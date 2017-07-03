@@ -1,0 +1,30 @@
+--- 
+id: 4173
+part_id: 758
+field_id: 13
+name: "Fecha de Constituci\xC3\xB3n"
+created_at: 2017-02-28 02:16:06.186624 Z
+updated_at: 2017-06-04 00:26:47.889657 Z
+label: "Fecha de Constituci\xC3\xB3n de la Empresa"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Introduzca un valor de fecha v\xC3\xA1lido, formato dd-mm-yyyy. Ejemplo: 01-12-2010"
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: a814c09e-99a1-4e2b-a36b-6fb646ac338e
+version: 20170603-202647

@@ -1,0 +1,45 @@
+--- 
+id: 312
+name: area servidumbre publica
+description: "\xC3\x81rea de Servidumbre P\xC3\xBAblicas "
+version: 
+status: Draft
+label: "\xC3\x81rea de Servidumbre P\xC3\xBAblica"
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-02-26 15:14:35 Z
+updated_at: 2014-02-26 15:14:35 Z
+values_list: ""
+keys_list: ""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: dynamic_values
+list_code: |-
+  _lista = ""
+  _cod = ""
+  result = WebserviceConsumer.get('/service/ws_area_servidumbre_publicas/records.json').parsed_response
+  _valores = result["response"]
+  if !_valores.empty?      
+   _valores.each {|servicio|
+    _cod = _cod + "," + servicio["id"]
+    _lista = _lista + "," + servicio["nombre"]}
+    _lista = _lista.chop
+   @values_of_list = _lista.split(",")
+    @keys_of_list = _cod.split(",")
+  else
+   @values_of_list = [""]
+   @keys_of_list =  [""]
+  end
+serial: 

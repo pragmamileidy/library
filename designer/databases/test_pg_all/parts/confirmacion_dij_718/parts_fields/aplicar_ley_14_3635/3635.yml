@@ -1,0 +1,30 @@
+--- 
+id: 3635
+part_id: 718
+field_id: 60
+name: Aplicar ley 14
+created_at: 2014-06-05 20:54:37 Z
+updated_at: 2017-06-04 00:27:45.089880 Z
+label: Aplicar la Ley 14
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: Seleccione "SI", para aplicar la Ley 14.
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 6bca8325-cbeb-4e22-87a7-6d42070582f3
+version: 20170603-202745

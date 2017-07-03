@@ -1,0 +1,30 @@
+--- 
+id: 1358
+part_id: 209
+field_id: 17
+name: Especifique el Tipo Instrumento monetario
+created_at: 2012-05-14 17:00:31 Z
+updated_at: 2017-06-04 00:29:33.013370 Z
+label: Especifique el Tipo Instrumento monetario
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 95530060-cbde-4f73-a10b-ca7b84cd732c
+version: 20170603-202933

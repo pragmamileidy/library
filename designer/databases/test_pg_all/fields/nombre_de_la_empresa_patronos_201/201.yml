@@ -1,0 +1,30 @@
+--- 
+id: 201
+name: Nombre de la Empresa/Patronos
+description: Campo con reglas para Nombre de la Empresa/Patronos
+version: 
+status: Draft
+label: Nombre de la Empresa/Patronos
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-31 16:09:29 Z
+updated_at: 2012-07-31 16:09:29 Z
+values_list: ""
+keys_list: ""
+field_type: string
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

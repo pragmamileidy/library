@@ -1,0 +1,16 @@
+--- 
+id: 1538
+design_id: 127
+section_id: 252
+name: "Informaci\xC3\xB3n del Codeudor"
+created_at: 2012-06-21 17:18:18 Z
+updated_at: 2012-06-21 17:18:18 Z
+label: "Informaci\xC3\xB3n del Codeudor"
+min_instances: 1
+max_instances: 3
+depends_on: ""
+manage_as_confidential: false
+include: "{\"1725\":{\"1468\":{\"required\":\"required\"},\"1478\":{\"required\":\"required\"},\"1469\":{\"required\":\"required\"},\"1470\":{\"required\":\"unrequired\"},\"1471\":{\"required\":\"required\"},\"1472\":{\"required\":\"unrequired\"},\"1473\":{\"required\":\"unrequired\"}},\"1726\":{\"585\":{\"required\":\"unrequired\"},\"631\":{\"required\":\"unrequired\"},\"594\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 6

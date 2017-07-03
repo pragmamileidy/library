@@ -1,0 +1,30 @@
+--- 
+id: 1837
+part_id: 267
+field_id: 130
+name: "Nombre Bot\xC3\xA1nico"
+created_at: 2012-06-14 22:11:24 Z
+updated_at: 2017-06-04 00:30:49.752115 Z
+label: "Nombre Bot\xC3\xA1nico"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Nombre bot\xC3\xA1nico del env\xC3\xADo"
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 11
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 1903030d-9f54-4350-933f-9642c5b3edfd
+version: 20170603-203049

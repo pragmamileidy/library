@@ -1,0 +1,30 @@
+--- 
+id: 1588
+part_id: 292
+field_id: 130
+name: Cheque a nombre de
+created_at: 2012-06-05 18:13:57 Z
+updated_at: 2017-06-04 00:25:53.618340 Z
+label: Cheque a nombre de
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: /[^0-9]$/
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 2c35e6fd-4e1b-4baa-b3b8-756b4d39b7e1
+version: 20170603-202553

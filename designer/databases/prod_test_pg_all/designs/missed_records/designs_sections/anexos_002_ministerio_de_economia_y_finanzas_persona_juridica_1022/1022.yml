@@ -1,0 +1,16 @@
+--- 
+id: 1022
+design_id: 94
+section_id: 237
+name: "Anexos 002 - Ministerio de Econom\xC3\xADa y Finanzas, Persona Jur\xC3\xADdica"
+created_at: 2012-05-11 22:51:32 Z
+updated_at: 2015-10-15 20:05:32 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"]==\"JuridicalPerson\""
+manage_as_confidential: false
+include: "{\"1432\":{\"210\":{\"required\":\"required\"}},\"1433\":{\"800\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 10

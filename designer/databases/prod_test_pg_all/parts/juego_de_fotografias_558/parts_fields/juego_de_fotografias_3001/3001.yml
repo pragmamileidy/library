@@ -1,0 +1,30 @@
+--- 
+id: 3001
+part_id: 558
+field_id: 31
+name: "Juego de Fotograf\xC3\xADas "
+created_at: 2013-03-12 21:34:50 Z
+updated_at: 2017-06-04 00:22:38.685764 Z
+label: "Juego de Fotograf\xC3\xADas "
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: "Adjuntar en un archivos tantas im\xC3\xA1genes sean posibles para su identificaci\xC3\xB3n."
+help: "En el caso de que se trate de obra de artes pl\xC3\xA1sticas, deber\xC3\xA1 aportarse (1) juego de tantas fotograf\xC3\xADas como sean necesarias para su identificaci\xC3\xB3n. En caso de las fotograf\xC3\xADas, deber\xC3\xA1 aportarse una (1) reproducci\xC3\xB3n de la obra. En las obras art\xC3\xADsticas, tales como cuadros, esculturas, pinturas, dibujos y otros, se deber\xC3\xA1 aportar una (1) fotograf\xC3\xADa, un (1) juego de ellas si fuere necesario, a los efectos de identificarlas perfectamente, o seg\xC3\xBAn el caso, una copia de ella. En las obras de arquitectura, ingenier\xC3\xADa, mapas, croquis y otras de naturaleza semejante, se deber\xC3\xA1 aportar una (1) copia de los planos; una (1) fotograf\xC3\xADa o un (1) juego de ellas, que de modo suficiente permita identificar sus elementos esenciales. "
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 1
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 9e239b26-d82a-4e92-9a2b-b228773607e5
+version: 20170603-202238

@@ -1,0 +1,16 @@
+--- 
+id: 2291
+design_id: 170
+section_id: 421
+name: notifications
+created_at: 2013-01-16 15:20:32 Z
+updated_at: 2013-01-16 19:21:24 Z
+label: Notificaciones
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2419\":{\"2614\":{\"required\":\"required\"},\"2615\":{\"required\":\"required\"},\"2616\":{\"required\":\"required\"},\"2617\":{\"required\":\"required\"}},\"2420\":{\"2618\":{\"required\":\"required\"},\"2619\":{\"required\":\"required\"},\"2620\":{\"required\":\"required\"},\"2621\":{\"required\":\"required\"}},\"2421\":{\"2622\":{\"required\":\"required\"},\"2623\":{\"required\":\"required\"},\"2624\":{\"required\":\"required\"},\"2625\":{\"required\":\"required\"},\"2626\":{\"required\":\"required\"},\"2627\":{\"required\":\"required\"},\"2628\":{\"required\":\"required\"},\"2629\":{\"required\":\"required\"}},\"2422\":{\"2632\":{\"required\":\"required\"},\"2633\":{\"required\":\"required\"},\"2634\":{\"required\":\"required\"},\"2635\":{\"required\":\"required\"},\"2636\":{\"required\":\"required\"},\"2637\":{\"required\":\"required\"}},\"2423\":{\"2638\":{\"required\":\"required\"},\"2639\":{\"required\":\"required\"},\"2640\":{\"required\":\"required\"},\"2641\":{\"required\":\"required\"}},\"2424\":{\"2642\":{\"required\":\"required\"},\"2643\":{\"required\":\"required\"}},\"2425\":{\"2644\":{\"required\":\"required\"},\"2645\":{\"required\":\"required\"},\"2646\":{\"required\":\"required\"},\"2647\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 5

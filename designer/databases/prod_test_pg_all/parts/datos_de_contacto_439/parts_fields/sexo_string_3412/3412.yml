@@ -1,0 +1,30 @@
+--- 
+id: 3412
+part_id: 439
+field_id: 10
+name: Sexo_String
+created_at: 2013-08-09 22:12:32 Z
+updated_at: 2017-06-04 00:29:48.669396 Z
+label: Sexo
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 7
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 32a1099f-6954-4360-8465-ecb592113b02
+version: 20170603-202948

@@ -1,0 +1,30 @@
+--- 
+id: 3357
+part_id: 304
+field_id: 10
+name: tipo_sociedad_String
+created_at: 2013-06-27 20:22:45 Z
+updated_at: 2017-06-04 00:26:30.626818 Z
+label: Tipo de Sociedad
+min_instances: 0
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 3
+encripted_store: false
+use: oficial-public
+printable: true
+serial: aa52c2eb-a277-43a5-a289-565582c82557
+version: 20170603-202630

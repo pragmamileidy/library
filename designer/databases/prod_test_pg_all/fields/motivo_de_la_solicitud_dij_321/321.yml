@@ -1,0 +1,30 @@
+--- 
+id: 321
+name: Motivo de la Solicitud DIJ
+description: Motivo de la Solicitud DIJ
+version: 
+status: Draft
+label: Motivo de la Solicitud
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-06-04 14:20:54 Z
+updated_at: 2014-08-21 16:29:13 Z
+values_list: "\" \",\"Trabajo\",\"Visas Migratorias\",\"Crisol de Razas\",\"Record para uso exclusivo en el extranjero\""
+keys_list: "\" \",\"Trabajo\",\"Visas Migratorias\",\"Crisol de Razas\",\"Record para uso exclusivo en el extranjero\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 1822-8426-6939-2278-6324

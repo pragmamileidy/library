@@ -1,0 +1,16 @@
+--- 
+id: 4479
+design_id: 252
+section_id: 552
+name: Anexos Solicitud de Record Policivo
+created_at: 2014-07-03 01:51:19 Z
+updated_at: 2014-07-03 01:51:19 Z
+label: Solicitud de Record Policivo
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"3214\":{\"210\":{\"required\":\"required\"}},\"3215\":{\"210\":{\"required\":\"required\"}},\"3216\":{\"210\":{\"required\":\"required\"}},\"3217\":{\"210\":{\"required\":\"required\"}},\"3218\":{\"210\":{\"required\":\"required\"}},\"3219\":{\"210\":{\"required\":\"required\"}},\"3220\":{\"210\":{\"required\":\"required\"}},\"3221\":{\"210\":{\"required\":\"required\"}},\"3222\":{\"210\":{\"required\":\"required\"}},\"3259\":{\"210\":{\"required\":\"required\"}},\"3266\":{\"210\":{\"required\":\"unrequired\"}}}"
+hint: ""
+help: ""
+order_input: 10

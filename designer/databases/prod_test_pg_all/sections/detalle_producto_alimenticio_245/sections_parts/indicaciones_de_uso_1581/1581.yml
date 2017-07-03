@@ -1,0 +1,19 @@
+--- 
+id: 1581
+section_id: 245
+part_id: 67
+name: Indicaciones de Uso
+created_at: 2012-05-21 00:03:13 Z
+updated_at: 2015-10-27 17:07:39 Z
+label: Indicaciones de Uso del porducto
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"344\":{},\"345\":{},\"346\":{}}"
+hint: ""
+help: ""
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 12

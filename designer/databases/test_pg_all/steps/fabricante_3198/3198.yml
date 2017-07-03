@@ -1,0 +1,19 @@
+--- 
+id: 3198
+name: Fabricante
+label: Fabricante
+description: ""
+fill_step_id: 1712
+created_at: 2015-11-11 16:01:52.290719 Z
+updated_at: 2015-11-11 16:01:52.323809 Z
+include: "{\"4986\":{\"190\":{\"566\":{\"views\":\"default\",\"enabled\":\"enabled\"}},\"553\":{\"572\":{\"views\":\"default\",\"enabled\":\"enabled\"}}}}"
+allowed_next_to_steps: ,Empresa Importadora
+allowed_back_to_steps: ,Solicitante,Registrante
+controls: ,back,next,back_steps,next_steps,close,close_and_save,save
+on_becoming: ""
+on_transition: ""
+views: 
+back_step: Empresa Importadora
+next_step: Registrante
+position: 2
+ajax_calls: 

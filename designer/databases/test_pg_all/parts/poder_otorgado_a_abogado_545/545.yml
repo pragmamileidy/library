@@ -1,0 +1,17 @@
+--- 
+id: 545
+name: Poder otorgado a abogado
+description: Poder otorgado a abogado
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2013-03-05 17:23:07 Z
+updated_at: 2013-03-05 17:23:07 Z
+label: Poder otorgado a abogado
+hint: ""
+view_class: horizontal
+serial: 

@@ -1,0 +1,16 @@
+--- 
+id: 2087
+design_id: 155
+section_id: 404
+name: "Anexos021 - Permiso de Trabajo en Calidad de Trabajador Extranjero con C\xC3\xB3nyuge de Nacionalidad Paname\xC3\xB1a en Virtud de Patria Potestad"
+created_at: 2012-08-31 16:44:16 Z
+updated_at: 2015-09-07 15:51:59 Z
+label: Requisitos de la Solicitud
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+include: "{\"2333\":{\"210\":{\"required\":\"required\"}},\"2345\":{\"210\":{\"required\":\"required\"}},\"2346\":{\"210\":{\"required\":\"required\"}},\"2347\":{\"210\":{\"required\":\"required\"}},\"2348\":{\"210\":{\"required\":\"required\"}},\"2349\":{\"210\":{\"required\":\"required\"}},\"2350\":{\"210\":{\"required\":\"required\"}}}"
+hint: ""
+help: ""
+order_input: 6

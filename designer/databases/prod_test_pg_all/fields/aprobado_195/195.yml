@@ -1,0 +1,30 @@
+--- 
+id: 195
+name: Aprobado
+description: "\"Aprobado\",\"Rechazado\""
+version: 
+status: Draft
+label: Aprobado
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-07-23 16:09:07 Z
+updated_at: 2012-07-23 16:09:07 Z
+values_list: "\"Aprobado\",\"Rechazado\""
+keys_list: "\"Aprobado\",\"Rechazado\""
+field_type: select
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

@@ -1,0 +1,30 @@
+--- 
+id: 1941
+part_id: 365
+field_id: 31
+name: "Diploma de Refrigeraci\xC3\xB3n"
+created_at: 2012-06-21 18:45:42 Z
+updated_at: 2017-06-04 00:27:13.432242 Z
+label: "Diploma de Refrigeraci\xC3\xB3n"
+min_instances: 1
+max_instances: 1
+depends_on: ""
+manage_as_confidential: false
+hint: ""
+help: ""
+view_class: ""
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+format: ""
+values_list: ""
+keys_list: ""
+order_input: 4
+encripted_store: false
+use: oficial-public
+printable: true
+serial: 763b8a1f-e52d-4a3e-823d-285e2f501aa2
+version: 20170603-202713

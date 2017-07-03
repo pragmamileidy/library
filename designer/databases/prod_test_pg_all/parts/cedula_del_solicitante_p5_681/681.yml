@@ -1,0 +1,17 @@
+--- 
+id: 681
+name: "C\xC3\xA9dula del Solicitante p5"
+description: "C\xC3\xA9dula del Solicitante"
+version: 
+status: Draft
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2014-02-18 15:02:41 Z
+updated_at: 2015-02-25 15:05:00 Z
+label: "C\xC3\xA9dula del Solicitante"
+hint: ""
+view_class: horizontal
+serial: 2042-2155-8076-0293-5857

@@ -1,0 +1,30 @@
+--- 
+id: 220
+name: Tipo de Permiso Mitrael
+description: Tipo de Permiso
+version: 
+status: Draft
+label: Tipo
+hint: ""
+help: ""
+layout: 
+helper: ""
+controller_extension: ""
+model_extension: ""
+created_at: 2012-08-17 16:36:18 Z
+updated_at: 2013-05-09 13:40:52 Z
+values_list: "\"Surten efectos en el exterior\",\"Refugiado\",\"Ciudad del Saber\",\"Ejecutivo de la Zona Libre de Col\xC3\xB3n\",\"Dentro del diez porciento\",\"T\xC3\xA9cnico Temporal\",\"Patria Potestad\",\"Acuerdo Marrakech\",\"Experto o t\xC3\xA9cnico dentro del 15% del personal especializado\",\"Residente\",\"Conyuge con Nacionalidad paname\xC3\xB1a\",\"Alternadoras\",\"Artistas y m\xC3\xBAsicos\",\"Crisol de Razas\""
+keys_list: ""
+field_type: radio
+view_class: horizontal
+java_script: ""
+java_script_validation: ""
+max_size: 
+rows: 
+min_value: 
+max_value: 
+char_set: ""
+format: ""
+kind_of_list: fix_values
+list_code: ""
+serial: 

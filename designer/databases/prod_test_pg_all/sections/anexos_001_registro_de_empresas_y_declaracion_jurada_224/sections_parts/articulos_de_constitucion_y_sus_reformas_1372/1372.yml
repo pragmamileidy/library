@@ -1,0 +1,19 @@
+--- 
+id: 1372
+section_id: 224
+part_id: 38
+name: "Art\xC3\xADculos de Constituci\xC3\xB3n y sus reformas"
+created_at: 2012-05-07 20:11:49 Z
+updated_at: 2012-07-30 16:18:40 Z
+label: "Art\xC3\xADculos de Constituci\xC3\xB3n y sus reformas"
+min_instances: 1
+max_instances: 1
+depends_on: "@owner[\"kind_of_user_type\"] == \"JuridicalPerson\""
+manage_as_confidential: false
+include: 
+hint: "Adjuntar los art\xC3\xADculos de constituci\xC3\xB3n y sus reformas"
+help: Favor  adjuntar archivo correspondiente
+rows_names: ""
+rows_labels: ""
+view_class: ""
+order_input: 9
