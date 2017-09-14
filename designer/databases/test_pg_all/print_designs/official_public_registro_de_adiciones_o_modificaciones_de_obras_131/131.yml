@@ -1,9 +1,0 @@
---- 
-id: 131
-name: official-public_Registro de Adiciones o Modificaciones de Obras
-description: Formulario de Registro de Adiciones o Modificaciones de Obras
-created_at: 2013-06-06 15:18:14 Z
-updated_at: 2015-10-26 01:16:08 Z
-design_id: 187
-label: Formulario de Registro de Adiciones o Modificaciones de Obras
-ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

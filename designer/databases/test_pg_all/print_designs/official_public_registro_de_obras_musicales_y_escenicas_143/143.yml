@@ -1,9 +1,0 @@
---- 
-id: 143
-name: "official-public_Registro de Obras Musicales y Esc\xC3\xA9nicas"
-description: "Registro de Obras Musicales y Esc\xC3\xA9nicas"
-created_at: 2013-06-13 14:18:18 Z
-updated_at: 2014-04-29 16:26:10 Z
-design_id: 184
-label: "Registro de Obras Musicales y Esc\xC3\xA9nicas"
-ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

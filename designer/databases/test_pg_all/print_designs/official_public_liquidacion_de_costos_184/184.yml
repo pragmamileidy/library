@@ -1,9 +1,0 @@
---- 
-id: 184
-name: "official-public_Liquidaci\xC3\xB3n de Costos"
-description: "Liquidaci\xC3\xB3n de Costos"
-created_at: 2015-12-22 23:23:07.221173 Z
-updated_at: 2015-12-22 23:23:07.221173 Z
-design_id: 276
-label: "Informe de Liquidaci\xC3\xB3n de Costos de la Solicitud"
-ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

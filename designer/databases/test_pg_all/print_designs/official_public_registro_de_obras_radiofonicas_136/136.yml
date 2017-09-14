@@ -1,9 +1,0 @@
---- 
-id: 136
-name: "official-public_Registro de Obras Radiof\xC3\xB3nicas"
-description: "Registro de Obras Radiof\xC3\xB3nicas"
-created_at: 2013-06-10 21:09:11 Z
-updated_at: 2014-03-21 14:54:09 Z
-design_id: 180
-label: "Registro de Obras Radiof\xC3\xB3nicas"
-ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

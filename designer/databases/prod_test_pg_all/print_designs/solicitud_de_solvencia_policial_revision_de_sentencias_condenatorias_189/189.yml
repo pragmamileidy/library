@@ -1,9 +1,0 @@
---- 
-id: 189
-name: "Solicitud de Solvencia Policial Revisi\xC3\xB3n de Sentencias condenatorias"
-description: "Solicitud Individual de Solvencia Policial - Revisi\xC3\xB3n de Sentencias condenatorias"
-created_at: 2016-03-31 20:22:45.455337 Z
-updated_at: 2016-04-05 14:47:07.131217 Z
-design_id: 281
-label: Formulario de la Solicitud de Solvencia Policial
-ignored_fields: datosdeltitular_datosdesolicitud_fechadesolicitud,datosdeltitular_datosdesolicitud_numerodesolicitud,datosdeltitular_datosbsicosdepersonanatural_cdulapasaporte,datosdeltitular_datosbsicosdepersonanatural_nombrecompleto,codigounicopnc_codigounicopnc_year,codigounicopnc_codigounicopnc_mes,codigounicopnc_codigounicopnc_dia,directorpnc_datosdelfuncionariogenerico_usuario,directorpnc_datosdelfuncionariogenerico_usuario2,datosdeltitular_codigounicopnc_codigounico,datosdelsolicitante_datosdeubicacin_departamento_lista,datosdelsolicitante_datosdeubicacin_departamento,tipodesolicitudpnc_tipodesolicitudpnc_tipodesolicitudpnc

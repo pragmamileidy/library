@@ -1,9 +1,0 @@
---- 
-id: 10
-name: Llenado
-label: Fillstep de Llenado
-description: Especifica los pasos de llenado del formulario
-design_id: 53
-created_at: 2012-03-21 03:28:38 Z
-updated_at: 2012-03-21 03:28:38 Z
-helper: 

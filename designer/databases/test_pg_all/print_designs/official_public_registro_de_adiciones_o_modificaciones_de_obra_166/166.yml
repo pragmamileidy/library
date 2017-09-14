@@ -1,9 +1,0 @@
---- 
-id: 166
-name: official-public_Registro de Adiciones o Modificaciones de Obra
-description: Registro de Adiciones o Modificaciones de Obra
-created_at: 2014-11-27 14:28:47 Z
-updated_at: 2014-11-27 14:28:47 Z
-design_id: 253
-label: Registro de Adiciones o Modificaciones de Obra
-ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud

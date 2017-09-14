@@ -1,9 +1,0 @@
---- 
-id: 54
-name: "official-public_Inscripci\xC3\xB3n al Servicio P\xC3\xBAblico de empleo"
-description: "Dise\xC3\xB1o de impresi\xC3\xB3n para la solicitud de Inscripci\xC3\xB3n al Servicio P\xC3\xBAblico de empleo"
-created_at: 2012-07-15 03:53:27 Z
-updated_at: 2015-10-18 03:22:47 Z
-design_id: 104
-label: "Formaulario de Inscripci\xC3\xB3n al Servicio P\xC3\xBAblico de empleo"
-ignored_fields: informacindesolicitud_datosdelasolicitud_fechadesolicitud,informacindesolicitud_datosdelasolicitud_numerodesolicitud
